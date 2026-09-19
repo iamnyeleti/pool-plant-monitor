@@ -1,0 +1,37 @@
+# ============================================================
+# .gitignore -- tells Git which files/folders NOT to track.
+# These are things that are either regenerated automatically,
+# personal to your machine, or sensitive -- none of them belong
+# in a shared repository.
+# ============================================================
+
+# PlatformIO's build output. This gets rebuilt every time you
+# compile, so there's no point storing it -- it also gets large.
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# VS Code's workspace settings are often personal (your window
+# layout, your specific extensions setup). We ignore all of
+# .vscode/ EXCEPT extensions.json, which is useful to share since
+# it tells anyone who clones this repo which extensions to install.
+.vscode/*
+!.vscode/extensions.json
+
+# Compiled build artifacts -- object files, compiled binaries.
+# These are outputs of the build process, not source code.
+*.o
+*.elf
+*.bin
+
+# Operating system clutter files that get auto-created and are
+# not related to your project at all.
+.DS_Store
+Thumbs.db
+
+# If you later store WiFi passwords or API keys in a separate file
+# (good practice, instead of hardcoding them in main.cpp), list
+# that filename here so it never accidentally gets committed and
+# published publicly.
+secrets.h
+.env
