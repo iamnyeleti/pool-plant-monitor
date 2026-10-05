@@ -1,10 +1,50 @@
 // vibration.cpp
 #include "vibration.h"
 #include <Wire.h>
-#include <Adafruit_MPU6050.h>
-#include <Adafruit_Sensor.h>
 
-static Adafruit_MPU6050 mpu;
+// AD0 is wired to 3.3V, shifting the MPU6050 from 0x68 to 0x69,
+// since the DS3231 now occupies 0x68 on the same shared bus.
+static const uint8_t MPU_ADDR = 0x69;
+
+static bool mpuInit() {
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x6B);
+  Wire.write(0x00);
+  if (Wire.endTransmission() != 0) return false;
+
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x1C);
+  Wire.write(0x08);
+  if (Wire.endTransmission() != 0) return false;
+
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x1A);
+  Wire.write(0x00); // widest bandwidth, minimal filtering
+  if (Wire.endTransmission() != 0) return false;
+
+  return true;
+}
+
+static bool mpuReadAccel(float &x, float &y, float &z) {
+  Wire.beginTransmission(MPU_ADDR);
+  Wire.write(0x3B);
+  if (Wire.endTransmission(false) != 0) return false;
+
+  Wire.requestFrom((int)MPU_ADDR, 6);
+  if (Wire.available() < 6) return false;
+
+  int16_t rawX = (Wire.read() << 8) | Wire.read();
+  int16_t rawY = (Wire.read() << 8) | Wire.read();
+  int16_t rawZ = (Wire.read() << 8) | Wire.read();
+
+  const float LSB_PER_G = 8192.0;
+  const float G_TO_MS2 = 9.8;
+
+  x = (rawX / LSB_PER_G) * G_TO_MS2;
+  y = (rawY / LSB_PER_G) * G_TO_MS2;
+  z = (rawZ / LSB_PER_G) * G_TO_MS2;
+  return true;
+}
 
 static const bool CALIBRATION_MODE = false;
 static const unsigned long CALIBRATION_WARMUP_MS = 20000;
@@ -17,7 +57,8 @@ static double calibrationSum = 0;
 static unsigned long calibrationCount = 0;
 static unsigned long lastCalibrationPrint = 0;
 
-static const float BASELINE_RUNNING_RMS = 1.0; // m/s^2, PLACEHOLDER
+// Real measured baseline from the fan calibration run.
+static const float BASELINE_RUNNING_RMS = 1.0747;
 
 static const float CAUTION_MULTIPLIER = 1.2;
 static const float WARNING_MULTIPLIER = 1.5;
@@ -58,14 +99,6 @@ static unsigned long activeEventStart = 0;
 static float activeEventPeak = 0;
 static bool activeEventReachedWarning = false;
 
-// ==================================================================
-// TREND BUFFER -- one averaged RMS point per minute, for a day-view
-// graph. 1440 points = 24 hours at 1 point/minute.
-// PLACEHOLDER TIMEBASE -- "minute" here means "60 real seconds since
-// boot," not clock time, since there's no RTC wired in yet. Once the
-// RTC module is in, this same buffer gets real timestamps alongside
-// it, the averaging logic itself doesn't need to change.
-// ==================================================================
 static const unsigned long TREND_INTERVAL_MS = 60UL * 1000UL;
 static const int TREND_BUFFER_SIZE = 1440;
 static float trendBuffer[TREND_BUFFER_SIZE];
@@ -74,13 +107,6 @@ static bool trendBufferFull = false;
 static unsigned long lastTrendTime = 0;
 static double trendAccumulator = 0;
 static unsigned long trendSampleCount = 0;
-
-static float computeMagnitude(sensors_event_t &accel) {
-  float x = accel.acceleration.x;
-  float y = accel.acceleration.y;
-  float z = accel.acceleration.z;
-  return sqrt(x * x + y * y + z * z);
-}
 
 static float computeRMS() {
   float sumSquares = 0;
@@ -102,12 +128,12 @@ static void logEventEnd() {
 }
 
 void vibrationSetup() {
-  if (!mpu.begin()) {
+  Wire.begin();
+
+  if (!mpuInit()) {
     Serial.println("MPU6050 not found. Check wiring (SDA/SCL) and power.");
     while (1) delay(10);
   }
-  mpu.setAccelerometerRange(MPU6050_RANGE_4_G);
-  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
   Serial.println("Vibration module ready.");
 
   if (CALIBRATION_MODE) {
@@ -147,10 +173,12 @@ static void calibrationUpdate(float rms) {
 }
 
 void vibrationUpdate() {
-  sensors_event_t accel, gyro, temp;
-  mpu.getEvent(&accel, &gyro, &temp);
+  float ax, ay, az;
+  if (!mpuReadAccel(ax, ay, az)) {
+    return;
+  }
 
-  float magnitude = computeMagnitude(accel);
+  float magnitude = sqrt(ax * ax + ay * ay + az * az);
   float vibration = magnitude - 9.8;
 
   sampleBuffer[sampleIndex] = vibration;
@@ -207,7 +235,6 @@ void vibrationUpdate() {
     logEventEnd();
   }
 
-  // ---- Trend buffer: average RMS over each 1-minute window ----
   trendAccumulator += rms;
   trendSampleCount++;
   if (millis() - lastTrendTime >= TREND_INTERVAL_MS) {
@@ -229,7 +256,13 @@ void vibrationUpdate() {
     Serial.print(" | RMS: ");
     Serial.print(rms, 3);
     Serial.print(" | Magnitude: ");
-    Serial.println(magnitude, 3);
+    Serial.print(magnitude, 3);
+    Serial.print(" | X: ");
+    Serial.print(ax, 3);
+    Serial.print(" Y: ");
+    Serial.print(ay, 3);
+    Serial.print(" Z: ");
+    Serial.println(az, 3);
   }
 }
 
