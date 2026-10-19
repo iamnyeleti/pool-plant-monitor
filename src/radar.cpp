@@ -8,12 +8,14 @@ static const int RADAR_OUT_PIN = 5;
 // radar TX → ESP32 RX (GPIO16), radar RX → ESP32 TX (GPIO17)
 ld2410 radar;
 static bool radarReady = false;
+static bool radarSetupRun = false;
 
 static bool presenceDetected = false;
 static unsigned long lastPrintTime = 0;
 static const unsigned long PRINT_INTERVAL_MS = 500;
 
 void radarSetup() {
+  radarSetupRun = true;
   pinMode(RADAR_OUT_PIN, INPUT);
 
   Serial2.begin(256000, SERIAL_8N1, 16, 17);
@@ -74,5 +76,9 @@ bool radarPresenceDetected() {
 }
 
 bool radarIsActive() {
+  return radarSetupRun;
+}
+
+bool radarUartReady() {
   return radarReady;
 }

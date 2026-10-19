@@ -5,5 +5,6 @@ void radarSetup();
 void radarUpdate();
 bool radarPresenceDetected();
 bool radarIsActive();
+bool radarUartReady();
 
 #endif
