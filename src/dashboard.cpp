@@ -5,6 +5,7 @@
 #include "schedule.h"
 
 static unsigned long lastOccupancyHeartbeat = 0;
+static unsigned long lastOccPrint = 0;
 static String occupancySenderIP = "";
 static int occupancyEventCount = 0;
 static bool occupancyEventActive = false;
@@ -134,15 +135,33 @@ static void handleOccupancyHeartbeat() {
   occupancyChangePercent = networkServer().arg("changePercent").toFloat();
 
   if (incomingCount < occupancyEventCount) {
-    Serial.println("[Dashboard] Camera node restarted (eventCount dropped).");
+    Serial.println("[Occ] camera restart detected");
     occupancyLastEventTime = "";
   }
 
   if (incomingCount > occupancyEventCount) {
     occupancyLastEventTime = scheduleGetTimeString();
+    Serial.print("[Occ] event #");
+    Serial.print(incomingCount);
+    Serial.print(" at ");
+    Serial.println(occupancyLastEventTime);
   }
 
   occupancyEventCount = incomingCount;
+
+  if (millis() - lastOccPrint >= 5000) {
+    lastOccPrint = millis();
+    Serial.print("[Occ] online ip=");
+    Serial.print(occupancySenderIP);
+    Serial.print(" count=");
+    Serial.print(occupancyEventCount);
+    Serial.print(" active=");
+    Serial.print(occupancyEventActive ? "1" : "0");
+    Serial.print(" chg=");
+    Serial.print(occupancyChangePercent, 1);
+    Serial.print(" last=");
+    Serial.println(occupancyLastEventTime);
+  }
 
   networkServer().send(200, "application/json", "{\"ok\":true}");
 }
