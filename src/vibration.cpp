@@ -1,3 +1,4 @@
+
 // vibration.cpp
 #include "vibration.h"
 #include <Wire.h>
@@ -5,6 +6,9 @@
 // AD0 is wired to 3.3V, shifting the MPU6050 from 0x68 to 0x69,
 // since the DS3231 now occupies 0x68 on the same shared bus.
 static const uint8_t MPU_ADDR = 0x69;
+
+// Added so the dashboard can access the most recent RMS value.
+static float currentRMS = 0.0f;
 
 static bool mpuInit() {
   Wire.beginTransmission(MPU_ADDR);
@@ -19,7 +23,7 @@ static bool mpuInit() {
 
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x1A);
-  Wire.write(0x00); // widest bandwidth, minimal filtering
+  Wire.write(0x00); // DLPF_CFG=4, ~21Hz, below the measured ~22.6Hz Nyquist limit
   if (Wire.endTransmission() != 0) return false;
 
   return true;
@@ -43,10 +47,11 @@ static bool mpuReadAccel(float &x, float &y, float &z) {
   x = (rawX / LSB_PER_G) * G_TO_MS2;
   y = (rawY / LSB_PER_G) * G_TO_MS2;
   z = (rawZ / LSB_PER_G) * G_TO_MS2;
+
   return true;
 }
 
-static const bool CALIBRATION_MODE = false;
+static const bool CALIBRATION_MODE = false; // Set to true to enable calibration mode.
 static const unsigned long CALIBRATION_WARMUP_MS = 20000;
 static const unsigned long CALIBRATION_DURATION_MS = 90000;
 
@@ -58,18 +63,28 @@ static unsigned long calibrationCount = 0;
 static unsigned long lastCalibrationPrint = 0;
 
 // Real measured baseline from the fan calibration run.
-static const float BASELINE_RUNNING_RMS = 1.0747;
+static const float BASELINE_RUNNING_RMS = 0.7854;
 
+// Threshold multipliers
 static const float CAUTION_MULTIPLIER = 1.2;
 static const float WARNING_MULTIPLIER = 1.5;
-static float cautionThreshold() { return BASELINE_RUNNING_RMS * CAUTION_MULTIPLIER; }
-static float warningThreshold() { return BASELINE_RUNNING_RMS * WARNING_MULTIPLIER; }
 
-static const unsigned long WARNING_DURATION_MS = 2UL * 60UL * 1000UL;
+static float cautionThreshold() {
+  return BASELINE_RUNNING_RMS * CAUTION_MULTIPLIER;
+}
+
+static float warningThreshold() {
+  return BASELINE_RUNNING_RMS * WARNING_MULTIPLIER;
+}
+
+static const unsigned long WARNING_DURATION_MS =
+    2UL * 60UL * 1000UL;
+
 static const float WARNING_FRACTION_THRESHOLD = 0.5;
 
 static const int SAMPLE_WINDOW = 50;
 static float sampleBuffer[SAMPLE_WINDOW];
+
 static int sampleIndex = 0;
 static bool bufferFull = false;
 
@@ -77,8 +92,12 @@ static unsigned long lastPrintTime = 0;
 static const unsigned long PRINT_INTERVAL_MS = 250;
 
 static const unsigned long ASSUMED_LOOP_INTERVAL_MS = 20;
-static const int ELEVATED_HISTORY_SIZE = WARNING_DURATION_MS / ASSUMED_LOOP_INTERVAL_MS;
+
+static const int ELEVATED_HISTORY_SIZE =
+    WARNING_DURATION_MS / ASSUMED_LOOP_INTERVAL_MS;
+
 static bool elevatedHistory[ELEVATED_HISTORY_SIZE];
+
 static int elevatedIndex = 0;
 static int elevatedCount = 0;
 static bool elevatedHistoryFull = false;
@@ -91,193 +110,454 @@ struct VibrationEvent {
   float peakRMS;
   bool reachedWarning;
 };
+
 static const int EVENT_LOG_SIZE = 10;
 static VibrationEvent eventLog[EVENT_LOG_SIZE];
+
 static int eventLogIndex = 0;
 static bool loggingActiveEvent = false;
+
 static unsigned long activeEventStart = 0;
 static float activeEventPeak = 0;
 static bool activeEventReachedWarning = false;
 
-static const unsigned long TREND_INTERVAL_MS = 60UL * 1000UL;
+static const unsigned long TREND_INTERVAL_MS =
+    60UL * 1000UL;
+
 static const int TREND_BUFFER_SIZE = 1440;
+
 static float trendBuffer[TREND_BUFFER_SIZE];
+
 static int trendIndex = 0;
 static bool trendBufferFull = false;
+
 static unsigned long lastTrendTime = 0;
+
 static double trendAccumulator = 0;
 static unsigned long trendSampleCount = 0;
 
 static float computeRMS() {
   float sumSquares = 0;
-  int count = bufferFull ? SAMPLE_WINDOW : sampleIndex;
-  if (count == 0) return 0;
+
+  int count = bufferFull
+                  ? SAMPLE_WINDOW
+                  : sampleIndex;
+
+  if (count == 0)
+    return 0;
+
   for (int i = 0; i < count; i++) {
     sumSquares += sampleBuffer[i] * sampleBuffer[i];
   }
+
   return sqrt(sumSquares / count);
 }
 
 static void logEventEnd() {
-  eventLog[eventLogIndex].timestamp = activeEventStart;
-  eventLog[eventLogIndex].durationMs = millis() - activeEventStart;
-  eventLog[eventLogIndex].peakRMS = activeEventPeak;
-  eventLog[eventLogIndex].reachedWarning = activeEventReachedWarning;
-  eventLogIndex = (eventLogIndex + 1) % EVENT_LOG_SIZE;
+
+  eventLog[eventLogIndex].timestamp =
+      activeEventStart;
+
+  eventLog[eventLogIndex].durationMs =
+      millis() - activeEventStart;
+
+  eventLog[eventLogIndex].peakRMS =
+      activeEventPeak;
+
+  eventLog[eventLogIndex].reachedWarning =
+      activeEventReachedWarning;
+
+  eventLogIndex =
+      (eventLogIndex + 1) % EVENT_LOG_SIZE;
+
   loggingActiveEvent = false;
 }
 
 void vibrationSetup() {
+
   Wire.begin();
 
   if (!mpuInit()) {
-    Serial.println("MPU6050 not found. Check wiring (SDA/SCL) and power.");
-    while (1) delay(10);
+
+    Serial.println(
+        "MPU6050 not found. Check wiring "
+        "(SDA/SCL) and power.");
+
+    while (1)
+      delay(10);
   }
+
   Serial.println("Vibration module ready.");
 
   if (CALIBRATION_MODE) {
-    Serial.println("=== CALIBRATION MODE ===");
-    calibrationPhaseStart = millis();
+
+    Serial.println(
+        "=== CALIBRATION MODE ===");
+
+    calibrationPhaseStart =
+        millis();
   }
 }
 
 static void calibrationUpdate(float rms) {
-  unsigned long elapsed = millis() - calibrationPhaseStart;
+
+  unsigned long elapsed =
+      millis() - calibrationPhaseStart;
+
   if (!calibrationWarmedUp) {
-    if (elapsed >= CALIBRATION_WARMUP_MS) {
+
+    if (elapsed >=
+        CALIBRATION_WARMUP_MS) {
+
       calibrationWarmedUp = true;
-      calibrationPhaseStart = millis();
+
+      calibrationPhaseStart =
+          millis();
+
       calibrationSum = 0;
       calibrationCount = 0;
-      Serial.println("Warm-up done. Recording now...");
+
+      Serial.println(
+          "Warm-up done. Recording now...");
     }
+
     return;
   }
+
   if (calibrationDone) {
-    if (millis() - lastCalibrationPrint >= 2000) {
-      lastCalibrationPrint = millis();
-      Serial.print("===== CALIBRATION COMPLETE ===== Average RMS: ");
-      Serial.println(calibrationSum / calibrationCount, 4);
+
+    if (millis() -
+            lastCalibrationPrint >=
+        2000) {
+
+      lastCalibrationPrint =
+          millis();
+
+      Serial.print(
+          "===== CALIBRATION COMPLETE ===== "
+          "Average RMS: ");
+
+      Serial.println(
+          calibrationSum /
+              calibrationCount,
+          4);
     }
+
     return;
   }
+
   calibrationSum += rms;
   calibrationCount++;
-  if (millis() - lastCalibrationPrint >= 2000) {
-    lastCalibrationPrint = millis();
-    Serial.print("Calibrating... RMS: ");
-    Serial.println(rms, 3);
+
+  if (millis() -
+          lastCalibrationPrint >=
+      2000) {
+
+    lastCalibrationPrint =
+        millis();
+
+    Serial.print(
+        "Calibrating... RMS: ");
+
+    Serial.println(
+        rms,
+        3);
   }
-  if (elapsed >= CALIBRATION_DURATION_MS) calibrationDone = true;
+
+  if (elapsed >=
+      CALIBRATION_DURATION_MS) {
+
+    calibrationDone = true;
+  }
 }
 
 void vibrationUpdate() {
+
   float ax, ay, az;
-  if (!mpuReadAccel(ax, ay, az)) {
+
+  if (!mpuReadAccel(
+          ax,
+          ay,
+          az)) {
+
     return;
   }
 
-  float magnitude = sqrt(ax * ax + ay * ay + az * az);
-  float vibration = magnitude - 9.8;
+  float magnitude =
+      sqrt(
+          ax * ax +
+          ay * ay +
+          az * az);
 
-  sampleBuffer[sampleIndex] = vibration;
+  float vibration =
+      magnitude - 9.8;
+
+  sampleBuffer[sampleIndex] =
+      vibration;
+
   sampleIndex++;
-  if (sampleIndex >= SAMPLE_WINDOW) {
+
+  if (sampleIndex >=
+      SAMPLE_WINDOW) {
+
     sampleIndex = 0;
     bufferFull = true;
   }
 
-  float rms = computeRMS();
+  float rms =
+      computeRMS();
+
+  // Save the latest RMS reading for the dashboard.
+  currentRMS = rms;
 
   if (CALIBRATION_MODE) {
+
     calibrationUpdate(rms);
     return;
   }
 
-  bool isElevatedNow = (rms > warningThreshold());
-  elevatedCount -= elevatedHistory[elevatedIndex];
-  elevatedHistory[elevatedIndex] = isElevatedNow;
-  elevatedCount += isElevatedNow ? 1 : 0;
+  bool isElevatedNow =
+      (rms >
+       warningThreshold());
+
+  elevatedCount -=
+      elevatedHistory[
+          elevatedIndex];
+
+  elevatedHistory[
+      elevatedIndex] =
+      isElevatedNow;
+
+  elevatedCount +=
+      isElevatedNow
+          ? 1
+          : 0;
+
   elevatedIndex++;
-  if (elevatedIndex >= ELEVATED_HISTORY_SIZE) {
+
+  if (elevatedIndex >=
+      ELEVATED_HISTORY_SIZE) {
+
     elevatedIndex = 0;
-    elevatedHistoryFull = true;
+    elevatedHistoryFull =
+        true;
   }
 
-  bool warningCondition = false;
+  bool warningCondition =
+      false;
+
   if (elevatedHistoryFull) {
-    float elevatedFraction = (float)elevatedCount / ELEVATED_HISTORY_SIZE;
-    warningCondition = (elevatedFraction >= WARNING_FRACTION_THRESHOLD);
+
+    float elevatedFraction =
+        (float)elevatedCount /
+        ELEVATED_HISTORY_SIZE;
+
+    warningCondition =
+        (elevatedFraction >=
+         WARNING_FRACTION_THRESHOLD);
   }
 
-  bool aboveCautionNow = (rms > cautionThreshold());
+  bool aboveCautionNow =
+      (rms >
+       cautionThreshold());
 
   if (warningCondition) {
-    currentStatus = "WARNING";
-  } else if (aboveCautionNow) {
-    currentStatus = "CAUTION";
+
+    currentStatus =
+        "WARNING";
+
+  } else if (
+      aboveCautionNow) {
+
+    currentStatus =
+        "CAUTION";
+
   } else {
-    currentStatus = "OK";
+
+    currentStatus =
+        "OK";
   }
 
   if (aboveCautionNow) {
+
     if (!loggingActiveEvent) {
-      loggingActiveEvent = true;
-      activeEventStart = millis();
-      activeEventPeak = rms;
-      activeEventReachedWarning = false;
-    } else if (rms > activeEventPeak) {
-      activeEventPeak = rms;
+
+      loggingActiveEvent =
+          true;
+
+      activeEventStart =
+          millis();
+
+      activeEventPeak =
+          rms;
+
+      activeEventReachedWarning =
+          false;
+
+    } else if (
+        rms >
+        activeEventPeak) {
+
+      activeEventPeak =
+          rms;
     }
-    if (currentStatus == "WARNING") activeEventReachedWarning = true;
-  } else if (loggingActiveEvent) {
+
+    if (currentStatus ==
+        "WARNING") {
+
+      activeEventReachedWarning =
+          true;
+    }
+
+  } else if (
+      loggingActiveEvent) {
+
     logEventEnd();
   }
 
-  trendAccumulator += rms;
+  trendAccumulator +=
+      rms;
+
   trendSampleCount++;
-  if (millis() - lastTrendTime >= TREND_INTERVAL_MS) {
-    lastTrendTime = millis();
-    trendBuffer[trendIndex] = trendAccumulator / trendSampleCount;
-    trendIndex++;
-    if (trendIndex >= TREND_BUFFER_SIZE) {
-      trendIndex = 0;
-      trendBufferFull = true;
+
+  if (millis() -
+          lastTrendTime >=
+      TREND_INTERVAL_MS) {
+
+    lastTrendTime =
+        millis();
+
+    if (trendSampleCount > 0) {
+
+      trendBuffer[
+          trendIndex] =
+          trendAccumulator /
+          trendSampleCount;
+
+      trendIndex++;
+
+      if (trendIndex >=
+          TREND_BUFFER_SIZE) {
+
+        trendIndex = 0;
+        trendBufferFull =
+            true;
+      }
     }
-    trendAccumulator = 0;
-    trendSampleCount = 0;
+
+    trendAccumulator =
+        0;
+
+    trendSampleCount =
+        0;
   }
 
-  if (millis() - lastPrintTime >= PRINT_INTERVAL_MS) {
-    lastPrintTime = millis();
-    Serial.print("[Vibration] Status: ");
-    Serial.print(currentStatus);
-    Serial.print(" | RMS: ");
-    Serial.print(rms, 3);
-    Serial.print(" | Magnitude: ");
-    Serial.print(magnitude, 3);
-    Serial.print(" | X: ");
-    Serial.print(ax, 3);
-    Serial.print(" Y: ");
-    Serial.print(ay, 3);
-    Serial.print(" Z: ");
-    Serial.println(az, 3);
+  if (millis() -
+          lastPrintTime >=
+      PRINT_INTERVAL_MS) {
+
+    lastPrintTime =
+        millis();
+
+    Serial.print(
+        "[Vibration] Status: ");
+
+    Serial.print(
+        currentStatus);
+
+    Serial.print(
+        " | RMS: ");
+
+    Serial.print(
+        rms,
+        3);
+
+    Serial.print(
+        " | Magnitude: ");
+
+    Serial.print(
+        magnitude,
+        3);
+
+    Serial.print(
+        " | X: ");
+
+    Serial.print(
+        ax,
+        3);
+
+    Serial.print(
+        " Y: ");
+
+    Serial.print(
+        ay,
+        3);
+
+    Serial.print(
+        " Z: ");
+
+    Serial.println(
+        az,
+        3);
   }
 }
+
+
+// ======================================================
+// DASHBOARD ACCESS FUNCTIONS
+// ======================================================
 
 String vibrationGetStatus() {
   return currentStatus;
 }
 
-int vibrationGetTrendCount() {
-  return trendBufferFull ? TREND_BUFFER_SIZE : trendIndex;
+float vibrationGetRMS() {
+  return currentRMS;
 }
 
-float vibrationGetTrendPoint(int minutesAgo) {
-  int count = vibrationGetTrendCount();
-  if (minutesAgo < 0 || minutesAgo >= count) return -1;
-  int idx = trendIndex - 1 - minutesAgo;
-  if (idx < 0) idx += TREND_BUFFER_SIZE;
+float vibrationGetBaseline() {
+  return BASELINE_RUNNING_RMS;
+}
+
+float vibrationGetCautionThreshold() {
+  return cautionThreshold();
+}
+
+float vibrationGetWarningThreshold() {
+  return warningThreshold();
+}
+
+
+// ======================================================
+// TREND ACCESS FUNCTIONS
+// ======================================================
+
+int vibrationGetTrendCount() {
+  return trendBufferFull
+             ? TREND_BUFFER_SIZE
+             : trendIndex;
+}
+
+float vibrationGetTrendPoint(
+    int minutesAgo) {
+
+  int count =
+      vibrationGetTrendCount();
+
+  if (minutesAgo < 0 ||
+      minutesAgo >= count) {
+
+    return -1;
+  }
+
+  int idx =
+      trendIndex -
+      1 -
+      minutesAgo;
+
+  if (idx < 0)
+    idx +=
+        TREND_BUFFER_SIZE;
+
   return trendBuffer[idx];
 }

@@ -3,5 +3,6 @@
 
 void scheduleSetup();
 void scheduleUpdate();
-
+bool scheduleIsReady();
+String scheduleGetTimeString();
 #endif
