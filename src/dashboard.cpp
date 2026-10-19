@@ -5,6 +5,11 @@
 #include "schedule.h"
 
 static unsigned long lastOccupancyHeartbeat = 0;
+static String occupancySenderIP = "";
+static int occupancyEventCount = 0;
+static bool occupancyEventActive = false;
+static float occupancyChangePercent = 0.0;
+static String occupancyLastEventTime = "";
 
 static const char DASHBOARD_HTML[] PROGMEM = R"HTML(
 <!doctype html>
@@ -122,6 +127,23 @@ static void handleStatus() {
 
 static void handleOccupancyHeartbeat() {
   lastOccupancyHeartbeat = millis();
+  occupancySenderIP = networkServer().client().remoteIP().toString();
+
+  int incomingCount = networkServer().arg("eventCount").toInt();
+  occupancyEventActive = (networkServer().arg("eventActive") == "1");
+  occupancyChangePercent = networkServer().arg("changePercent").toFloat();
+
+  if (incomingCount < occupancyEventCount) {
+    Serial.println("[Dashboard] Camera node restarted (eventCount dropped).");
+    occupancyLastEventTime = "";
+  }
+
+  if (incomingCount > occupancyEventCount) {
+    occupancyLastEventTime = scheduleGetTimeString();
+  }
+
+  occupancyEventCount = incomingCount;
+
   networkServer().send(200, "application/json", "{\"ok\":true}");
 }
 
@@ -134,4 +156,28 @@ void dashboardSetup() {
 }
 
 void dashboardUpdate() {
+}
+
+bool dashboardOccupancyOnline() {
+  return lastOccupancyHeartbeat != 0 && (millis() - lastOccupancyHeartbeat < 10000);
+}
+
+int dashboardOccupancyEventCount() {
+  return occupancyEventCount;
+}
+
+bool dashboardOccupancyEventActive() {
+  return occupancyEventActive;
+}
+
+float dashboardOccupancyChangePercent() {
+  return occupancyChangePercent;
+}
+
+String dashboardOccupancySenderIP() {
+  return occupancySenderIP;
+}
+
+String dashboardOccupancyLastEventTime() {
+  return occupancyLastEventTime;
 }
