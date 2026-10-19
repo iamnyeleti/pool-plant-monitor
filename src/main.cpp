@@ -7,12 +7,12 @@
 #include "dashboard.h"
 #include "network.h"
 
-static const bool VIBRATION_CONNECTED = true;
+static const bool VIBRATION_CONNECTED = false;
 static const bool RTC_CONNECTED = false;
-static const bool RADAR_CONNECTED = false;
-static const bool RADAR_SERVER_CONNECTED = false;
+static const bool RADAR_CONNECTED = true;
+static const bool RADAR_SERVER_CONNECTED = true;
 static const bool WATER_QUALITY_CONNECTED = false;
-static const bool DASHBOARD_CONNECTED = false;
+static const bool DASHBOARD_CONNECTED = true;
 
 void setup() {
   Serial.begin(115200);
