@@ -1,0 +1,31 @@
+Water Quality Stage 1 — Baseline
+Date: 2026-10-20
+HEAD: 9a6ae31 (network-bench: enable RADAR_CONNECTED for bench test)
+Branch: wq-stage1 (created from network-bench)
+Tag: wq-stage1-baseline
+
+main.cpp flags:
+  VIBRATION_CONNECTED    = false
+  RTC_CONNECTED          = false
+  RADAR_CONNECTED        = true
+  RADAR_SERVER_CONNECTED = true
+  WATER_QUALITY_CONNECTED = false
+  DASHBOARD_CONNECTED    = true
+
+Library versions (platformio.ini):
+  adafruit/RTClib@^2.1.4
+  paulstoffregen/OneWire@^2.3.8
+  milesburton/DallasTemperature@^3.11.0
+  ncmreynolds/ld2410@^0.2.2
+
+handleStatus() source (dashboard.cpp:104-127):
+  Builds JSON with three objects: vibration, rtc, occupancy.
+  vibration: status, rms, baseline, cautionThreshold, warningThreshold
+  rtc: ready, time
+  occupancy: moduleOnline, detectionImplemented (hardcoded false)
+  No water quality section yet.
+
+water_quality.cpp confirmation:
+  Header says "At this step pH is only a voltage in millivolts.
+  Converting it to a pH number (calibration) comes in the next step."
+  This matches the expected raw-readings version.

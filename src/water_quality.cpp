@@ -3,6 +3,8 @@
 // STEP 3a: turbidity and the DS18B20 temperature sensor (from steps 1 and 2),
 // plus the raw pH board voltage. At this step pH is only a voltage in millivolts.
 // Converting it to a pH number (calibration) comes in the next step.
+//
+// Water quality stage 1: per-channel state machine (disabled/unavailable/stale/live).
 
 #include "water_quality.h"
 #include <math.h>
@@ -21,6 +23,27 @@ static const float DIVIDER_FACTOR = 2.0;  // two equal 10k resistors halve the t
 
 static const unsigned long PRINT_INTERVAL_MS = 1000;
 static unsigned long lastPrintTime = 0;
+
+// ---------------------------------------------------------------
+// Compile-time enable constants (PROVISIONAL — stage 1)
+// ---------------------------------------------------------------
+static const bool WQ_TEMP_ENABLED     = true;
+static const bool WQ_PH_ENABLED       = true;
+static const bool WQ_TURBIDITY_ENABLED = true;
+
+// ---------------------------------------------------------------
+// Provisional validity ranges
+// ---------------------------------------------------------------
+static const float WQ_PH_MV_MIN          = 1.0;
+static const float WQ_PH_MV_MAX          = 3050.0;
+static const float WQ_TURB_VOLTS_MIN     = 0.05;
+static const float WQ_TURB_VOLTS_MAX     = 4.6;
+static const unsigned long WQ_MAX_AGE_MS = 3000;
+
+// ---------------------------------------------------------------
+// Module active flag
+// ---------------------------------------------------------------
+static bool wqSetupDone = false;
 
 // ---------------------------------------------------------------
 // Turbidity averaging (unchanged from step 1)
@@ -47,6 +70,23 @@ static bool tempFound = false;
 static bool tempConverting = false;
 static unsigned long tempRequestTime = 0;
 static float lastTempC = NAN;
+static unsigned long lastTempValidTime = 0;
+
+// ---------------------------------------------------------------
+// pH and turbidity latest values + timestamps
+// ---------------------------------------------------------------
+static float lastPhMv = NAN;
+static unsigned long lastPhValidTime = 0;
+
+static float lastTurbVolts = NAN;
+static unsigned long lastTurbValidTime = 0;
+
+// ---------------------------------------------------------------
+// Per-channel state tracking for event-only logging
+// ---------------------------------------------------------------
+static const char* prevTempState  = nullptr;
+static const char* prevPhState    = nullptr;
+static const char* prevTurbState  = nullptr;
 
 // Starts a measurement, then comes back later to collect the result.
 // It never waits inside the loop, so the other modules keep their timing.
@@ -74,13 +114,14 @@ static void temperatureUpdate() {
       lastTempC = NAN;
     } else {
       lastTempC = t;
+      lastTempValidTime = millis();
     }
   }
 }
 
 float waterQualityGetTemperatureC() {
   return lastTempC;
-  
+
 }
 
 // ---------------------------------------------------------------
@@ -103,6 +144,15 @@ void waterQualitySetup() {
   }
 
   Serial.println("Water quality module ready (turbidity, temperature and raw pH voltage).");
+
+  Serial.print("[WQ] stage1 build ");
+  Serial.print(__DATE__);
+  Serial.print(" ");
+  Serial.print(__TIME__);
+  Serial.print(" heap=");
+  Serial.println(ESP.getFreeHeap());
+
+  wqSetupDone = true;
 }
 
 void waterQualityUpdate() {
@@ -119,6 +169,14 @@ void waterQualityUpdate() {
 
     float pinVolts = (sumMilliVolts / (float)sampleCount) / 1000.0;
     float sensorVolts = pinVolts * DIVIDER_FACTOR;
+
+    // Update turbidity latest value
+    if (WQ_TURBIDITY_ENABLED && sensorVolts >= WQ_TURB_VOLTS_MIN && sensorVolts <= WQ_TURB_VOLTS_MAX) {
+      lastTurbVolts = sensorVolts;
+      lastTurbValidTime = millis();
+    } else if (WQ_TURBIDITY_ENABLED) {
+      lastTurbVolts = NAN;
+    }
 
     Serial.print("[Turbidity] At G35 pin: ");
     Serial.print(pinVolts, 3);
@@ -142,6 +200,15 @@ void waterQualityUpdate() {
     }
 
     float phMilliVolts = phSumMilliVolts / (float)phSampleCount;
+
+    // Update pH latest value
+    if (WQ_PH_ENABLED && phMilliVolts >= WQ_PH_MV_MIN && phMilliVolts <= WQ_PH_MV_MAX) {
+      lastPhMv = phMilliVolts;
+      lastPhValidTime = millis();
+    } else if (WQ_PH_ENABLED) {
+      lastPhMv = NAN;
+    }
+
     Serial.print("[pH] Board output at G34: ");
     Serial.print(phMilliVolts, 1);
     Serial.print(" mV");
@@ -153,4 +220,187 @@ void waterQualityUpdate() {
     phSumMilliVolts = 0;
     phSampleCount = 0;
   }
+}
+
+// ---------------------------------------------------------------
+// Stage 1 public API
+// ---------------------------------------------------------------
+
+bool waterQualityActive() {
+  return wqSetupDone;
+}
+
+static const char* computeTempState(const char** reason) {
+  if (!WQ_TEMP_ENABLED)           { *reason = "disabled";        return "disabled"; }
+  if (!wqSetupDone)               { *reason = "disabled";        return "disabled"; }
+  if (!tempFound)                 { *reason = "not_found";       return "unavailable"; }
+  if (lastTempValidTime == 0)     { *reason = "no_reading_yet";  return "unavailable"; }
+  if (isnan(lastTempC))           { *reason = "invalid_reading"; return "unavailable"; }
+  unsigned long age = millis() - lastTempValidTime;
+  if (age > WQ_MAX_AGE_MS)       { *reason = "stale";           return "stale"; }
+  *reason = nullptr;
+  return "live";
+}
+
+static const char* computePhState(const char** reason) {
+  if (!WQ_PH_ENABLED)            { *reason = "disabled";            return "disabled"; }
+  if (!wqSetupDone)              { *reason = "disabled";            return "disabled"; }
+  if (lastPhValidTime == 0)      { *reason = "no_reading_yet";     return "unavailable"; }
+  if (isnan(lastPhMv))           {
+    if (lastPhMv != lastPhMv) {
+      *reason = "above_valid_range";
+    }
+    *reason = "invalid_reading";
+    return "unavailable";
+  }
+  if (lastPhMv < WQ_PH_MV_MIN)  { *reason = "below_valid_range";  return "unavailable"; }
+  if (lastPhMv > WQ_PH_MV_MAX)  { *reason = "above_valid_range";  return "unavailable"; }
+  unsigned long age = millis() - lastPhValidTime;
+  if (age > WQ_MAX_AGE_MS)      { *reason = "stale";              return "stale"; }
+  *reason = nullptr;
+  return "live";
+}
+
+static const char* computeTurbState(const char** reason) {
+  if (!WQ_TURBIDITY_ENABLED)          { *reason = "disabled";            return "disabled"; }
+  if (!wqSetupDone)                   { *reason = "disabled";            return "disabled"; }
+  if (lastTurbValidTime == 0)         { *reason = "no_reading_yet";     return "unavailable"; }
+  if (isnan(lastTurbVolts))           { *reason = "invalid_reading";    return "unavailable"; }
+  if (lastTurbVolts < WQ_TURB_VOLTS_MIN) { *reason = "below_valid_range";  return "unavailable"; }
+  if (lastTurbVolts > WQ_TURB_VOLTS_MAX) { *reason = "above_valid_range";  return "unavailable"; }
+  unsigned long age = millis() - lastTurbValidTime;
+  if (age > WQ_MAX_AGE_MS)           { *reason = "stale";              return "stale"; }
+  *reason = nullptr;
+  return "live";
+}
+
+static void logStateChange(const char* channel, const char* prev, const char* next, const char* reason) {
+  if (prev == nullptr || strcmp(prev, next) != 0) {
+    Serial.print("[WQ] ");
+    Serial.print(channel);
+    Serial.print(": ");
+    Serial.print(next);
+    if (reason) {
+      Serial.print(" (");
+      Serial.print(reason);
+      Serial.print(")");
+    }
+    Serial.println();
+  }
+}
+
+static String nullOrFloat(float v, int decimals) {
+  if (isnan(v)) return "null";
+  return String(v, decimals);
+}
+
+static String nullOrUlong(unsigned long v) {
+  if (v == 0) return "null";
+  unsigned long age = millis() - v;
+  return String(age);
+}
+
+String waterQualityStatusJson() {
+  const char* tempReason = nullptr;
+  const char* phReason = nullptr;
+  const char* turbReason = nullptr;
+
+  const char* tempState = computeTempState(&tempReason);
+  const char* phState   = computePhState(&phReason);
+  const char* turbState = computeTurbState(&turbReason);
+
+  logStateChange("temp", prevTempState, tempState, tempReason);
+  logStateChange("ph",   prevPhState,   phState,   phReason);
+  logStateChange("turb", prevTurbState, turbState, turbReason);
+  prevTempState  = tempState;
+  prevPhState    = phState;
+  prevTurbState  = turbState;
+
+  bool isLiveTemp = (strcmp(tempState, "live") == 0);
+  bool isLivePh   = (strcmp(phState,   "live") == 0);
+  bool isLiveTurb = (strcmp(turbState, "live") == 0);
+
+  String tempStatus;
+  if (strcmp(tempState, "live") == 0) {
+    tempStatus = "NOT_SET";
+  } else {
+    tempStatus = "UNAVAILABLE";
+  }
+
+  String json;
+  json.reserve(512);
+
+  json += "{\"active\":";
+  json += wqSetupDone ? "true" : "false";
+  json += ",\"simulated\":false";
+
+  // temperature
+  json += ",\"temperature\":{";
+  json += "\"enabled\":";
+  json += WQ_TEMP_ENABLED ? "true" : "false";
+  json += ",\"state\":\"";
+  json += tempState;
+  json += "\"";
+  if (tempReason) {
+    json += ",\"reason\":\"";
+    json += tempReason;
+    json += "\"";
+  } else {
+    json += ",\"reason\":null";
+  }
+  json += ",\"valueC\":";
+  json += isLiveTemp ? nullOrFloat(lastTempC, 2) : "null";
+  json += ",\"ageMs\":";
+  json += (lastTempValidTime != 0) ? nullOrUlong(lastTempValidTime) : "null";
+  json += ",\"rangeSet\":false";
+  json += ",\"status\":\"";
+  json += tempStatus;
+  json += "\"}";
+
+  // ph
+  json += ",\"ph\":{";
+  json += "\"enabled\":";
+  json += WQ_PH_ENABLED ? "true" : "false";
+  json += ",\"state\":\"";
+  json += phState;
+  json += "\"";
+  if (phReason) {
+    json += ",\"reason\":\"";
+    json += phReason;
+    json += "\"";
+  } else {
+    json += ",\"reason\":null";
+  }
+  json += ",\"rawMv\":";
+  json += isLivePh ? nullOrFloat(lastPhMv, 1) : "null";
+  json += ",\"ageMs\":";
+  json += (lastPhValidTime != 0) ? nullOrUlong(lastPhValidTime) : "null";
+  json += ",\"calibration\":\"unavailable\"";
+  json += ",\"value\":null";
+  json += ",\"status\":\"UNAVAILABLE\"}";
+
+  // turbidity
+  json += ",\"turbidity\":{";
+  json += "\"enabled\":";
+  json += WQ_TURBIDITY_ENABLED ? "true" : "false";
+  json += ",\"state\":\"";
+  json += turbState;
+  json += "\"";
+  if (turbReason) {
+    json += ",\"reason\":\"";
+    json += turbReason;
+    json += "\"";
+  } else {
+    json += ",\"reason\":null";
+  }
+  json += ",\"rawVolts\":";
+  json += isLiveTurb ? nullOrFloat(lastTurbVolts, 3) : "null";
+  json += ",\"ageMs\":";
+  json += (lastTurbValidTime != 0) ? nullOrUlong(lastTurbValidTime) : "null";
+  json += ",\"baseline\":\"unavailable\"";
+  json += ",\"percentBelowBaseline\":null";
+  json += ",\"status\":\"UNAVAILABLE\"}";
+
+  json += "}";
+  return json;
 }

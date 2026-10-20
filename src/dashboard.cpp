@@ -3,6 +3,7 @@
 #include "network.h"
 #include "vibration.h"
 #include "schedule.h"
+#include "water_quality.h"
 
 static unsigned long lastOccupancyHeartbeat = 0;
 static unsigned long lastOccPrint = 0;
@@ -119,7 +120,8 @@ static void handleStatus() {
   json += "\"occupancy\":{";
   json += "\"moduleOnline\":" + boolJson(occupancyOnline) + ",";
   json += "\"detectionImplemented\":false";
-  json += "}";
+  json += "},";
+  json += "\"water\":" + waterQualityStatusJson();
   json += "}";
 
   networkServer().sendHeader("Cache-Control", "no-store");
