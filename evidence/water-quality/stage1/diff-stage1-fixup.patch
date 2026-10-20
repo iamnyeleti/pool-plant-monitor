@@ -1,0 +1,331 @@
+diff --git a/include/water_quality.h b/include/water_quality.h
+index 88c9dbc..0346ad4 100644
+--- a/include/water_quality.h
++++ b/include/water_quality.h
+@@ -7,6 +7,8 @@
+ void waterQualitySetup();
+ void waterQualityUpdate();
+ 
++// Latest water temperature in degrees Celsius.
++// Returns NAN if the sensor is missing or has not given a valid reading yet.
+ float waterQualityGetTemperatureC();
+ 
+ bool waterQualityActive();
+diff --git a/src/water_quality.cpp b/src/water_quality.cpp
+index 0b303cf..d9c810f 100644
+--- a/src/water_quality.cpp
++++ b/src/water_quality.cpp
+@@ -73,20 +73,103 @@ static float lastTempC = NAN;
+ static unsigned long lastTempValidTime = 0;
+ 
+ // ---------------------------------------------------------------
+-// pH and turbidity latest values + timestamps
++// pH and turbidity latest values + timestamps + rejection reasons
+ // ---------------------------------------------------------------
+ static float lastPhMv = NAN;
+ static unsigned long lastPhValidTime = 0;
++static const char* lastPhRejectReason = nullptr;
+ 
+ static float lastTurbVolts = NAN;
+ static unsigned long lastTurbValidTime = 0;
++static const char* lastTurbRejectReason = nullptr;
++
++// Track whether any reading (valid or rejected) has been attempted
++static bool tempReadingAttempted = false;
++static bool phReadingAttempted = false;
++static bool turbReadingAttempted = false;
+ 
+ // ---------------------------------------------------------------
+ // Per-channel state tracking for event-only logging
+ // ---------------------------------------------------------------
+ static const char* prevTempState  = nullptr;
++static const char* prevTempReason = nullptr;
+ static const char* prevPhState    = nullptr;
++static const char* prevPhReason   = nullptr;
+ static const char* prevTurbState  = nullptr;
++static const char* prevTurbReason = nullptr;
++
++// ---------------------------------------------------------------
++// Heap diagnostic
++// ---------------------------------------------------------------
++static const unsigned long HEAP_DIAG_INTERVAL_MS = 60000;
++static unsigned long lastHeapDiagTime = 0;
++
++// ---------------------------------------------------------------
++// State computation (shared between update logging and JSON)
++// ---------------------------------------------------------------
++
++static const char* computeTempState(const char** reason) {
++  if (!WQ_TEMP_ENABLED)           { *reason = "disabled";        return "disabled"; }
++  if (!wqSetupDone)               { *reason = "module_inactive"; return "disabled"; }
++  if (!tempFound)                 { *reason = "not_found";       return "unavailable"; }
++  if (!tempReadingAttempted)      { *reason = "no_reading_yet";  return "unavailable"; }
++  if (isnan(lastTempC))           { *reason = "invalid_reading"; return "unavailable"; }
++  unsigned long age = millis() - lastTempValidTime;
++  if (age > WQ_MAX_AGE_MS)       { *reason = "stale";           return "stale"; }
++  *reason = nullptr;
++  return "live";
++}
++
++static const char* computePhState(const char** reason) {
++  if (!WQ_PH_ENABLED)            { *reason = "disabled";            return "disabled"; }
++  if (!wqSetupDone)              { *reason = "module_inactive";     return "disabled"; }
++  if (!phReadingAttempted)       { *reason = "no_reading_yet";     return "unavailable"; }
++  if (isnan(lastPhMv)) {
++    *reason = lastPhRejectReason ? lastPhRejectReason : "invalid_reading";
++    return "unavailable";
++  }
++  unsigned long age = millis() - lastPhValidTime;
++  if (age > WQ_MAX_AGE_MS)      { *reason = "stale";              return "stale"; }
++  *reason = nullptr;
++  return "live";
++}
++
++static const char* computeTurbState(const char** reason) {
++  if (!WQ_TURBIDITY_ENABLED)          { *reason = "disabled";            return "disabled"; }
++  if (!wqSetupDone)                   { *reason = "module_inactive";     return "disabled"; }
++  if (!turbReadingAttempted)          { *reason = "no_reading_yet";     return "unavailable"; }
++  if (isnan(lastTurbVolts)) {
++    *reason = lastTurbRejectReason ? lastTurbRejectReason : "invalid_reading";
++    return "unavailable";
++  }
++  unsigned long age = millis() - lastTurbValidTime;
++  if (age > WQ_MAX_AGE_MS)           { *reason = "stale";              return "stale"; }
++  *reason = nullptr;
++  return "live";
++}
++
++static void logStateChange(const char* channel, const char* prevState, const char* prevRsn,
++                           const char* nextState, const char* nextRsn) {
++  bool stateChanged = (prevState == nullptr || strcmp(prevState, nextState) != 0);
++  bool reasonChanged = false;
++  if (!stateChanged && prevRsn && nextRsn) {
++    reasonChanged = (strcmp(prevRsn, nextRsn) != 0);
++  } else if (!stateChanged) {
++    reasonChanged = (prevRsn != nextRsn);
++  }
++  if (stateChanged || reasonChanged) {
++    Serial.print("[WQ] ");
++    Serial.print(channel);
++    Serial.print(": ");
++    Serial.print(nextState);
++    if (nextRsn) {
++      Serial.print(" (");
++      Serial.print(nextRsn);
++      Serial.print(")");
++    }
++    Serial.println();
++  }
++}
+ 
+ // Starts a measurement, then comes back later to collect the result.
+ // It never waits inside the loop, so the other modules keep their timing.
+@@ -107,6 +190,7 @@ static void temperatureUpdate() {
+   if (now - tempRequestTime >= TEMP_CONVERSION_MS + TEMP_MARGIN_MS) {
+     float t = tempSensor.getTempCByIndex(0);
+     tempConverting = false;
++    tempReadingAttempted = true;
+ 
+     // -127 means the chip did not answer. Exactly 85.00 is the value the chip
+     // holds at power-up before it has measured anything, so it is not a real reading.
+@@ -121,7 +205,6 @@ static void temperatureUpdate() {
+ 
+ float waterQualityGetTemperatureC() {
+   return lastTempC;
+-
+ }
+ 
+ // ---------------------------------------------------------------
+@@ -164,18 +247,28 @@ void waterQualityUpdate() {
+   phSumMilliVolts += analogReadMilliVolts(PH_PIN);
+   phSampleCount++;
+ 
+-  if (millis() - lastPrintTime >= PRINT_INTERVAL_MS) {
+-    lastPrintTime = millis();
++  unsigned long now = millis();
++
++  if (now - lastPrintTime >= PRINT_INTERVAL_MS) {
++    lastPrintTime = now;
+ 
+     float pinVolts = (sumMilliVolts / (float)sampleCount) / 1000.0;
+     float sensorVolts = pinVolts * DIVIDER_FACTOR;
+ 
+-    // Update turbidity latest value
+-    if (WQ_TURBIDITY_ENABLED && sensorVolts >= WQ_TURB_VOLTS_MIN && sensorVolts <= WQ_TURB_VOLTS_MAX) {
+-      lastTurbVolts = sensorVolts;
+-      lastTurbValidTime = millis();
+-    } else if (WQ_TURBIDITY_ENABLED) {
+-      lastTurbVolts = NAN;
++    // Update turbidity latest value, preserving rejection reason
++    turbReadingAttempted = true;
++    if (WQ_TURBIDITY_ENABLED) {
++      if (sensorVolts < WQ_TURB_VOLTS_MIN) {
++        lastTurbVolts = NAN;
++        lastTurbRejectReason = "below_valid_range";
++      } else if (sensorVolts > WQ_TURB_VOLTS_MAX) {
++        lastTurbVolts = NAN;
++        lastTurbRejectReason = "above_valid_range";
++      } else {
++        lastTurbVolts = sensorVolts;
++        lastTurbValidTime = now;
++        lastTurbRejectReason = nullptr;
++      }
+     }
+ 
+     Serial.print("[Turbidity] At G35 pin: ");
+@@ -201,12 +294,20 @@ void waterQualityUpdate() {
+ 
+     float phMilliVolts = phSumMilliVolts / (float)phSampleCount;
+ 
+-    // Update pH latest value
+-    if (WQ_PH_ENABLED && phMilliVolts >= WQ_PH_MV_MIN && phMilliVolts <= WQ_PH_MV_MAX) {
+-      lastPhMv = phMilliVolts;
+-      lastPhValidTime = millis();
+-    } else if (WQ_PH_ENABLED) {
+-      lastPhMv = NAN;
++    // Update pH latest value, preserving rejection reason
++    phReadingAttempted = true;
++    if (WQ_PH_ENABLED) {
++      if (phMilliVolts < WQ_PH_MV_MIN) {
++        lastPhMv = NAN;
++        lastPhRejectReason = "below_valid_range";
++      } else if (phMilliVolts > WQ_PH_MV_MAX) {
++        lastPhMv = NAN;
++        lastPhRejectReason = "above_valid_range";
++      } else {
++        lastPhMv = phMilliVolts;
++        lastPhValidTime = now;
++        lastPhRejectReason = nullptr;
++      }
+     }
+ 
+     Serial.print("[pH] Board output at G34: ");
+@@ -219,6 +320,30 @@ void waterQualityUpdate() {
+ 
+     phSumMilliVolts = 0;
+     phSampleCount = 0;
++
++    // State-change logging at reporting interval
++    const char* tempReason = nullptr;
++    const char* phReason = nullptr;
++    const char* turbReason = nullptr;
++    const char* tempState = computeTempState(&tempReason);
++    const char* phState   = computePhState(&phReason);
++    const char* turbState = computeTurbState(&turbReason);
++
++    logStateChange("temp", prevTempState, prevTempReason, tempState, tempReason);
++    logStateChange("ph",   prevPhState,   prevPhReason,   phState,   phReason);
++    logStateChange("turb", prevTurbState, prevTurbReason, turbState, turbReason);
++    prevTempState  = tempState;  prevTempReason = tempReason;
++    prevPhState    = phState;    prevPhReason   = phReason;
++    prevTurbState  = turbState;  prevTurbReason = turbReason;
++  }
++
++  // Heap diagnostic approximately every 60 seconds
++  if (now - lastHeapDiagTime >= HEAP_DIAG_INTERVAL_MS) {
++    lastHeapDiagTime = now;
++    Serial.print("[WQ] heap=");
++    Serial.print(ESP.getFreeHeap());
++    Serial.print(" minheap=");
++    Serial.println(ESP.getMinFreeHeap());
+   }
+ }
+ 
+@@ -230,73 +355,14 @@ bool waterQualityActive() {
+   return wqSetupDone;
+ }
+ 
+-static const char* computeTempState(const char** reason) {
+-  if (!WQ_TEMP_ENABLED)           { *reason = "disabled";        return "disabled"; }
+-  if (!wqSetupDone)               { *reason = "disabled";        return "disabled"; }
+-  if (!tempFound)                 { *reason = "not_found";       return "unavailable"; }
+-  if (lastTempValidTime == 0)     { *reason = "no_reading_yet";  return "unavailable"; }
+-  if (isnan(lastTempC))           { *reason = "invalid_reading"; return "unavailable"; }
+-  unsigned long age = millis() - lastTempValidTime;
+-  if (age > WQ_MAX_AGE_MS)       { *reason = "stale";           return "stale"; }
+-  *reason = nullptr;
+-  return "live";
+-}
+-
+-static const char* computePhState(const char** reason) {
+-  if (!WQ_PH_ENABLED)            { *reason = "disabled";            return "disabled"; }
+-  if (!wqSetupDone)              { *reason = "disabled";            return "disabled"; }
+-  if (lastPhValidTime == 0)      { *reason = "no_reading_yet";     return "unavailable"; }
+-  if (isnan(lastPhMv))           {
+-    if (lastPhMv != lastPhMv) {
+-      *reason = "above_valid_range";
+-    }
+-    *reason = "invalid_reading";
+-    return "unavailable";
+-  }
+-  if (lastPhMv < WQ_PH_MV_MIN)  { *reason = "below_valid_range";  return "unavailable"; }
+-  if (lastPhMv > WQ_PH_MV_MAX)  { *reason = "above_valid_range";  return "unavailable"; }
+-  unsigned long age = millis() - lastPhValidTime;
+-  if (age > WQ_MAX_AGE_MS)      { *reason = "stale";              return "stale"; }
+-  *reason = nullptr;
+-  return "live";
+-}
+-
+-static const char* computeTurbState(const char** reason) {
+-  if (!WQ_TURBIDITY_ENABLED)          { *reason = "disabled";            return "disabled"; }
+-  if (!wqSetupDone)                   { *reason = "disabled";            return "disabled"; }
+-  if (lastTurbValidTime == 0)         { *reason = "no_reading_yet";     return "unavailable"; }
+-  if (isnan(lastTurbVolts))           { *reason = "invalid_reading";    return "unavailable"; }
+-  if (lastTurbVolts < WQ_TURB_VOLTS_MIN) { *reason = "below_valid_range";  return "unavailable"; }
+-  if (lastTurbVolts > WQ_TURB_VOLTS_MAX) { *reason = "above_valid_range";  return "unavailable"; }
+-  unsigned long age = millis() - lastTurbValidTime;
+-  if (age > WQ_MAX_AGE_MS)           { *reason = "stale";              return "stale"; }
+-  *reason = nullptr;
+-  return "live";
+-}
+-
+-static void logStateChange(const char* channel, const char* prev, const char* next, const char* reason) {
+-  if (prev == nullptr || strcmp(prev, next) != 0) {
+-    Serial.print("[WQ] ");
+-    Serial.print(channel);
+-    Serial.print(": ");
+-    Serial.print(next);
+-    if (reason) {
+-      Serial.print(" (");
+-      Serial.print(reason);
+-      Serial.print(")");
+-    }
+-    Serial.println();
+-  }
+-}
+-
+ static String nullOrFloat(float v, int decimals) {
+   if (isnan(v)) return "null";
+   return String(v, decimals);
+ }
+ 
+-static String nullOrUlong(unsigned long v) {
+-  if (v == 0) return "null";
+-  unsigned long age = millis() - v;
++static String nullOrUlong(unsigned long validTime) {
++  if (validTime == 0) return "null";
++  unsigned long age = millis() - validTime;
+   return String(age);
+ }
+ 
+@@ -309,19 +375,12 @@ String waterQualityStatusJson() {
+   const char* phState   = computePhState(&phReason);
+   const char* turbState = computeTurbState(&turbReason);
+ 
+-  logStateChange("temp", prevTempState, tempState, tempReason);
+-  logStateChange("ph",   prevPhState,   phState,   phReason);
+-  logStateChange("turb", prevTurbState, turbState, turbReason);
+-  prevTempState  = tempState;
+-  prevPhState    = phState;
+-  prevTurbState  = turbState;
+-
+   bool isLiveTemp = (strcmp(tempState, "live") == 0);
+   bool isLivePh   = (strcmp(phState,   "live") == 0);
+   bool isLiveTurb = (strcmp(turbState, "live") == 0);
+ 
+   String tempStatus;
+-  if (strcmp(tempState, "live") == 0) {
++  if (isLiveTemp) {
+     tempStatus = "NOT_SET";
+   } else {
+     tempStatus = "UNAVAILABLE";

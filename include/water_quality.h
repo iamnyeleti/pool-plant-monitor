@@ -7,6 +7,8 @@
 void waterQualitySetup();
 void waterQualityUpdate();
 
+// Latest water temperature in degrees Celsius.
+// Returns NAN if the sensor is missing or has not given a valid reading yet.
 float waterQualityGetTemperatureC();
 
 bool waterQualityActive();

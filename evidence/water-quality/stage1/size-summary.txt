@@ -1,0 +1,3 @@
+pre-fixup  (f07b531): RAM 46048  Flash 818813  firmware.bin 825392
+post-fixup:            RAM 46048  Flash 818717  firmware.bin 825296
+stage1 baseline (9a6ae31, build-before.txt): RAM 46000 Flash 815149
