@@ -1,0 +1,748 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+WiFi AP started: PoolPlantRadar
+IP: 192.168.4.1
+Radar UART failed. OUT pin still works.
+Radar server route registered.
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage1 build Oct 21 2026 01:16:11 heap=251628
+Dashboard routes registered.
+Web server started on port 80.
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.725 V | Sensor output: 3.450 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.0 mV
+[WQ] temp: unavailable (not_found)
+[WQ] ph: live
+[WQ] turb: live
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.414 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1572.5 mV
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.708 V | Sensor output: 3.416 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.706 V | Sensor output: 3.411 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1571.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.706 V | Sensor output: 3.413 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.413 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1572.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.706 V | Sensor output: 3.413 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1573.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.708 V | Sensor output: 3.416 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.414 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.414 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.414 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1576.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.701 V | Sensor output: 3.402 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+WiFi AP started: PoolPlantRadar
+IP: 192.168.4.1
+Radar UART failed. OUT pin still works.
+Radar server route registered.
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage1 build Oct 21 2026 01:16:11 heap=251628
+Dashboard routes registered.
+Web server started on port 80.
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.0 mV
+[WQ] temp: unavailable (not_found)
+[WQ] ph: live
+[WQ] turb: live
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1576.5 mV
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1574.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1576.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1577.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1576.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1577.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1577.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1578.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1580.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1579.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1581.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1582.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.2 mV
+[Radar] OUT: LOW
+[WQ] heap=250524 minheap=249136
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1583.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1585.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1585.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1584.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1585.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1585.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1585.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1586.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1587.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1588.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.7 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1589.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.2 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.8 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.707 V | Sensor output: 3.415 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.4 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.422 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1591.4 mV
+[Radar] OUT: LOW
+[WQ] heap=250524 minheap=249136
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.726 V | Sensor output: 3.451 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.5 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1591.6 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1591.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1592.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.723 V | Sensor output: 3.446 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1590.9 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.436 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1592.0 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1592.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1592.1 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1592.3 mV
+[Radar] OUT: LOW
+[Radar] OUT: LOW
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1591.4 mV
+[Radar] OUT: LOW
