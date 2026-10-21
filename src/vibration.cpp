@@ -10,6 +10,8 @@ static const uint8_t MPU_ADDR = 0x69;
 // Added so the dashboard can access the most recent RMS value.
 static float currentRMS = 0.0f;
 
+static const uint8_t DLPF_REG_VALUE = 0x00;
+
 static bool mpuInit() {
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x6B);
@@ -23,7 +25,7 @@ static bool mpuInit() {
 
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x1A);
-  Wire.write(0x00); // DLPF_CFG=4, ~21Hz, below the measured ~22.6Hz Nyquist limit
+  Wire.write(DLPF_REG_VALUE); // DLPF_CFG=4, ~21Hz, below the measured ~22.6Hz Nyquist limit
   if (Wire.endTransmission() != 0) return false;
 
   return true;
@@ -89,6 +91,14 @@ static const unsigned long WARNING_DURATION_MS =
     2UL * 60UL * 1000UL;
 
 static const float WARNING_FRACTION_THRESHOLD = 0.5;
+
+#ifndef VIB_STOPPED_STD
+#define VIB_STOPPED_STD 0.05f
+#endif
+// PLACEHOLDER: unvalidated, not measured against a real running/stopped pump.
+static const float STOPPED_STD_THRESHOLD = VIB_STOPPED_STD;
+static const unsigned long STOPPED_HOLD_MS = 60000UL;
+static const float STOPPED_EXIT_FACTOR = 2.0f;
 
 static const int SAMPLE_WINDOW = 50;
 static float sampleBuffer[SAMPLE_WINDOW];
@@ -216,6 +226,15 @@ void vibrationSetup() {
     currentStatus = "SENSOR ERROR";
     Serial.println("[Vibration] SENSOR ERROR: init failed");
   }
+
+  Serial.printf(
+      "[CFG] dlpf=0x%02X baseline=%.4f caution_mult=%.2f warning_mult=%.2f "
+      "window=%d fraction=%.2f sample_delay_ms=%lu calibration=%d "
+      "stopped_std=%.3f stopped_hold_s=%lu build=%s %s\n",
+      DLPF_REG_VALUE, BASELINE_RUNNING_RMS, CAUTION_MULTIPLIER,
+      WARNING_MULTIPLIER, ELEVATED_HISTORY_SIZE, WARNING_FRACTION_THRESHOLD,
+      ASSUMED_LOOP_INTERVAL_MS, CALIBRATION_MODE ? 1 : 0,
+      STOPPED_STD_THRESHOLD, STOPPED_HOLD_MS / 1000UL, __DATE__, __TIME__);
 
   if (CALIBRATION_MODE) {
 
