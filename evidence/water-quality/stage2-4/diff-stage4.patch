@@ -1,0 +1,581 @@
+diff --git a/src/water_quality.cpp b/src/water_quality.cpp
+index ea77dec..4422f91 100644
+--- a/src/water_quality.cpp
++++ b/src/water_quality.cpp
+@@ -7,6 +7,7 @@
+ // Water quality stage 2: two-point pH calibration, pH zones with a 30 s hold,
+ // preferred pH, temperature range with a 30 s hold.
+ // Water quality stage 3: turbidity baseline and percent below baseline (no NTU).
++// Water quality stage 4: serial-triggered simulation scenarios (default off, cleared at reboot).
+ 
+ #include "water_quality.h"
+ #include <math.h>
+@@ -14,7 +15,7 @@
+ #include <OneWire.h>
+ #include <DallasTemperature.h>
+ 
+-#define WQ_STAGE_NAME "stage3"
++#define WQ_STAGE_NAME "stage4"
+ 
+ // ---------------------------------------------------------------
+ // Pins
+@@ -69,6 +70,15 @@ static const float TURB_CLOUDY_PCT       = 5.0;     // CLOUDIER when percent bel
+ static const float TURB_PCT_EPS          = 0.001;   // float tolerance on the inclusive threshold
+ static const float TURB_BASELINE_MAX_SPREAD_V = 0.05; // max-min allowed across the 30 baseline samples
+ 
++// Stage 4 simulation constants (TEST ONLY, never used outside a running scenario)
++static const float SIM_TURB_BASELINE_V   = 4.000;   // sensor-side volts
++static const float SIM_TEMP_LOW          = 20.0;    // bench range for the 't' scenario
++static const float SIM_TEMP_HIGH         = 30.0;
++static const float SIM_PH7_MV            = 1429.5;  // simulated calibration for the 'c' scenario
++static const float SIM_PH4_MV            = 1936.3;
++static const float SIM_CAL_TEMP_C        = 25.0;
++static const float SIM_CONVERT_TOL       = 0.01;    // pH units
++
+ // ---------------------------------------------------------------
+ // Module active flag
+ // ---------------------------------------------------------------
+@@ -227,6 +237,15 @@ static bool tempRangeSet = false;
+ static float tempRangeLow = NAN;
+ static float tempRangeHigh = NAN;
+ 
++// Active simulation scenario: 0 none, 'c' convert, 'p' pH, 't' temperature, 'u' turbidity.
++static char simScen = 0;
++
++static bool  effRangeSet()   { return simScen == 't' || tempRangeSet; }
++static float effRangeLow()   { return simScen == 't' ? SIM_TEMP_LOW : tempRangeLow; }
++static float effRangeHigh()  { return simScen == 't' ? SIM_TEMP_HIGH : tempRangeHigh; }
++static bool  effBaselineSet(){ return simScen == 'u' || turbBaselineSet; }
++static float effBaselineV()  { return simScen == 'u' ? SIM_TURB_BASELINE_V : turbBaselineV; }
++
+ static const char* const PH_ZONE_NAMES[] = {"OK", "CAUTION", "WARNING"};
+ static const char* const PH_DIR_NAMES[]  = {"OK", "LOW", "HIGH"};
+ static const char* const TEMP_STATUS_NAMES[] = {"IN_RANGE", "BELOW_RANGE", "ABOVE_RANGE"};
+@@ -240,8 +259,8 @@ static bool isLive(const char* state) { return strcmp(state, "live") == 0; }
+ static const char* computeTempState(const char** reason) {
+   if (!WQ_TEMP_ENABLED)           { *reason = "disabled";        return "disabled"; }
+   if (!wqSetupDone)               { *reason = "module_inactive"; return "disabled"; }
+-  if (!tempFound)                 { *reason = "not_found";       return "unavailable"; }
+-  if (!tempReadingAttempted)      { *reason = "no_reading_yet";  return "unavailable"; }
++  if (!tempFound && simScen != 't') { *reason = "not_found";     return "unavailable"; }
++  if (!tempReadingAttempted)     { *reason = "no_reading_yet";  return "unavailable"; }
+   if (isnan(lastTempC))           { *reason = "invalid_reading"; return "unavailable"; }
+   unsigned long age = millis() - lastTempValidTime;
+   if (age > WQ_MAX_AGE_MS)       { *reason = "stale";           return "stale"; }
+@@ -279,6 +298,7 @@ static const char* computeTurbState(const char** reason) {
+ 
+ // Live water temperature, or NAN when the temperature channel is not live.
+ static float tempLiveC() {
++  if (simScen == 't') return NAN;   // a simulated temperature must not compensate the real pH
+   const char* r;
+   return isLive(computeTempState(&r)) ? lastTempC : NAN;
+ }
+@@ -311,6 +331,15 @@ static int phCalLevel() {
+ 
+ // Current pH number from the latest valid reading; false when it cannot be given.
+ static bool phValueNow(float* v, bool* assumed) {
++  if (simScen == 'p') {            // lastPhMv carries the simulated pH value itself
++    *v = lastPhMv;
++    *assumed = false;
++    return true;
++  }
++  if (simScen == 'c') {            // simulated calibration; the real one is untouched
++    *v = phConvert(lastPhMv, SIM_PH7_MV, SIM_PH4_MV, SIM_CAL_TEMP_C, SIM_CAL_TEMP_C, assumed);
++    return true;
++  }
+   if (phCalLevel() != 2) return false;
+   *v = phConvert(lastPhMv, ph7Mv, ph4Mv, phTcal, tempLiveC(), assumed);
+   return true;
+@@ -333,7 +362,7 @@ static void phClassify(float v, int* zone, int* dir) {
+ 
+ // Percent below baseline; negative when clearer than the baseline.
+ static float turbPercentBelow(float volts) {
+-  return (turbBaselineV - volts) / turbBaselineV * 100.0;
++  return (effBaselineV() - volts) / effBaselineV() * 100.0;
+ }
+ 
+ static int turbClassify(float volts) {
+@@ -341,8 +370,8 @@ static int turbClassify(float volts) {
+ }
+ 
+ static int tempClassify(float t) {
+-  if (t < tempRangeLow)  return 1;
+-  if (t > tempRangeHigh) return 2;
++  if (t < effRangeLow())  return 1;
++  if (t > effRangeHigh()) return 2;
+   return 0;
+ }
+ 
+@@ -426,8 +455,278 @@ static void baselineCapture() {
+   Serial.printf("[CAL] stored turbidity baseline mean=%.3f V spread=%.3f V\n", mean, spread);
+ }
+ 
++// ---------------------------------------------------------------
++// Status views, shared by the JSON builder and the simulation checks
++// ---------------------------------------------------------------
++struct PhView {
++  bool live, have, assumed, breach;
++  float v;
++  int zone, dir;
++  const char* status;
++  const char* statusReason;
++  const char* dirName;
++};
++
++static PhView phView(const char* state, const char* reason) {
++  PhView p = {};
++  p.v = NAN;
++  p.live = isLive(state);
++  p.have = p.live && phValueNow(&p.v, &p.assumed);
++  p.status = "UNAVAILABLE";
++  p.statusReason = reason;
++  if (p.have) {
++    phClassify(p.v, &p.zone, &p.dir);
++    if (!phHold.held) {
++      p.statusReason = "no_status_yet";
++    } else {
++      p.status = PH_ZONE_NAMES[phHold.heldKey / 4];
++      p.dirName = PH_DIR_NAMES[phHold.heldKey % 4];
++      p.statusReason = nullptr;
++      p.breach = (p.zone == 2) && (phHold.heldKey / 4) != 2;
++    }
++  } else if (p.live) {
++    p.statusReason = "calibration_unavailable";
++  }
++  return p;
++}
++
++static const char* tempStatusText(bool live) {
++  if (!live) return "UNAVAILABLE";
++  if (!effRangeSet()) return "NOT_SET";
++  return tempHold.held ? TEMP_STATUS_NAMES[tempHold.heldKey] : "UNAVAILABLE";
++}
++
++static const char* turbStatusText(bool live) {
++  if (!live) return "UNAVAILABLE";
++  if (!effBaselineSet()) return "NO_BASELINE";
++  return turbHold.held ? TURB_STATUS_NAMES[turbHold.heldKey] : "UNAVAILABLE";
++}
++
++// ---------------------------------------------------------------
++// Simulation scenarios (TEST ONLY). Each step feeds one value per second through
++// the same state, hold and status code that real readings use.
++// in = mV ('c'), pH ('p'), degrees C ('t') or percent below baseline ('u').
++// ---------------------------------------------------------------
++struct SimStep {
++  float in;
++  bool valid;
++  uint16_t secs;
++  const char* expect;   // expected held status text, null for 'c'
++  int8_t breach;        // expected possibleBreach, -1 = not checked
++  float expVal;         // expected pH for 'c'
++};
++
++static const SimStep SIM_C[] = {
++  {1429.5f, true, 2, nullptr, -1, 7.00f},
++  {1936.3f, true, 2, nullptr, -1, 4.00f},
++  {1395.7f, true, 2, nullptr, -1, 7.20f},
++  {1294.4f, true, 2, nullptr, -1, 7.80f},
++};
++
++static const SimStep SIM_P[] = {
++  {7.50f, true, 40, "OK", -1, 0},
++  {7.19f, true, 40, "WARNING LOW", -1, 0},
++  {7.20f, true, 40, "CAUTION LOW", -1, 0},
++  {7.21f, true, 40, "CAUTION LOW", -1, 0},
++  {7.50f, true, 40, "OK", -1, 0},
++  {7.79f, true, 40, "CAUTION HIGH", -1, 0},
++  {7.80f, true, 40, "CAUTION HIGH", -1, 0},
++  {7.81f, true, 40, "WARNING HIGH", -1, 0},
++  {7.50f, true, 40, "OK", -1, 0},
++  {7.90f, true, 5,  "OK", 1, 0},
++  {7.50f, true, 40, "OK", 0, 0},
++  {7.90f, true, 40, "WARNING HIGH", -1, 0},
++  {7.50f, true, 40, "OK", -1, 0},
++  {7.10f, true, 40, "WARNING LOW", -1, 0},
++  {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++  {7.50f, true, 40, "OK", -1, 0},
++};
++
++static const SimStep SIM_T[] = {
++  {25.0f, true, 40, "IN_RANGE", -1, 0},
++  {30.0f, true, 40, "IN_RANGE", -1, 0},
++  {30.1f, true, 40, "ABOVE_RANGE", -1, 0},
++  {25.0f, true, 40, "IN_RANGE", -1, 0},
++  {19.9f, true, 40, "BELOW_RANGE", -1, 0},
++  {25.0f, true, 40, "IN_RANGE", -1, 0},      // return to normal before the spike
++  {30.1f, true, 5,  "IN_RANGE", -1, 0},      // 5 s spike: status must not change
++  {25.0f, true, 10, "IN_RANGE", -1, 0},      // return after the spike
++  {30.1f, true, 40, "ABOVE_RANGE", -1, 0},   // sustained
++  {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++};
++
++static const SimStep SIM_U[] = {
++  {0.0f, true, 40, "CLEAR", -1, 0},
++  {4.9f, true, 40, "CLEAR", -1, 0},
++  {5.0f, true, 40, "CLOUDIER", -1, 0},
++  {5.1f, true, 40, "CLOUDIER", -1, 0},
++  {20.0f, true, 40, "CLOUDIER", -1, 0},
++  {0.0f, true, 40, "CLEAR", -1, 0},          // return to clear before the spike
++  {20.0f, true, 5,  "CLEAR", -1, 0},         // 5 s spike: status must not change
++  {0.0f, true, 10, "CLEAR", -1, 0},          // return after the spike
++  {20.0f, true, 40, "CLOUDIER", -1, 0},      // sustained
++  {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++};
++
++static int simIdx = 0;
++static int simElapsed = 0;
++static int simPass = 0;
++static int simFail = 0;
++static unsigned long simTotalS = 0;
++
++static const char* simName() {
++  switch (simScen) {
++    case 'c': return "convert";
++    case 'p': return "ph";
++    case 't': return "temp";
++    case 'u': return "turb";
++    default:  return "none";
++  }
++}
++
++static const SimStep* simSteps(int* n) {
++  switch (simScen) {
++    case 'c': *n = sizeof(SIM_C) / sizeof(SIM_C[0]); return SIM_C;
++    case 'p': *n = sizeof(SIM_P) / sizeof(SIM_P[0]); return SIM_P;
++    case 't': *n = sizeof(SIM_T) / sizeof(SIM_T[0]); return SIM_T;
++    default:  *n = sizeof(SIM_U) / sizeof(SIM_U[0]); return SIM_U;
++  }
++}
++
++// Feeds the current step's input into the same variables a real reading would set.
++static void simApply(unsigned long now) {
++  int n;
++  const SimStep& s = simSteps(&n)[simIdx];
++  switch (simScen) {
++    case 'c':
++    case 'p':
++      phReadingAttempted = true;
++      if (s.valid) { lastPhMv = s.in; lastPhValidTime = now; lastPhRejectReason = nullptr; }
++      else         { lastPhMv = NAN;  lastPhRejectReason = "invalid_reading"; }
++      break;
++    case 't':
++      tempReadingAttempted = true;
++      if (s.valid) { lastTempC = s.in; lastTempValidTime = now; }
++      else         { lastTempC = NAN; }
++      break;
++    case 'u':
++      turbReadingAttempted = true;
++      if (s.valid) { lastTurbVolts = SIM_TURB_BASELINE_V * (1.0f - s.in / 100.0f); lastTurbValidTime = now; lastTurbRejectReason = nullptr; }
++      else         { lastTurbVolts = NAN; lastTurbRejectReason = "invalid_reading"; }
++      break;
++  }
++}
++
++static void simText(char* out, size_t n, const char* status, const char* dir, int breach) {
++  if (dir && strcmp(dir, "OK") != 0) snprintf(out, n, "%s %s", status, dir);
++  else snprintf(out, n, "%s", status);
++  if (breach >= 0) {
++    size_t l = strlen(out);
++    snprintf(out + l, n - l, " breach=%d", breach);
++  }
++}
++
++// Runs after the classification tick: one [SIM] line per second, one check per step.
++static void simAfter() {
++  int n;
++  const SimStep* steps = simSteps(&n);
++  const SimStep& s = steps[simIdx];
++  const char* r;
++  char got[48];
++  char exp[48];
++  float val = NAN;
++  const char* zoneNow = "-";
++  int breach = 0;
++
++  if (simScen == 'c' || simScen == 'p') {
++    PhView p = phView(computePhState(&r), r);
++    val = p.v;
++    zoneNow = p.have ? PH_ZONE_NAMES[p.zone] : "-";
++    breach = p.breach ? 1 : 0;
++    simText(got, sizeof(got), p.status, p.dirName, simScen == 'p' && s.breach >= 0 ? breach : -1);
++  } else if (simScen == 't') {
++    snprintf(got, sizeof(got), "%s", tempStatusText(isLive(computeTempState(&r))));
++  } else {
++    snprintf(got, sizeof(got), "%s", turbStatusText(isLive(computeTurbState(&r))));
++  }
++
++  simTotalS++;
++  Serial.printf("[SIM] %s t=%lus step=%d/%d in=", simName(), simTotalS, simIdx + 1, n);
++  if (s.valid) Serial.printf("%.3f", s.in); else Serial.print("invalid");
++  if (simScen == 'c') Serial.printf(" pH=%.3f", val);
++  else if (simScen == 'p') Serial.printf(" zoneNow=%s status=%s breach=%d", zoneNow, got, breach);
++  else Serial.printf(" status=%s", got);
++  Serial.println();
++
++  simElapsed++;
++  if (simElapsed < s.secs) return;
++
++  bool pass;
++  if (simScen == 'c') {
++    pass = !isnan(val) && fabsf(val - s.expVal) <= SIM_CONVERT_TOL;
++    Serial.printf("[SIMCHK] %s step %d expect %.2f got %.2f %s\n", simName(), simIdx + 1, s.expVal, val, pass ? "PASS" : "FAIL");
++  } else {
++    char e[24];
++    snprintf(e, sizeof(e), "%s", s.expect);
++    if (s.breach >= 0) snprintf(exp, sizeof(exp), "%s breach=%d", e, s.breach);
++    else snprintf(exp, sizeof(exp), "%s", e);
++    pass = strcmp(exp, got) == 0;
++    Serial.printf("[SIMCHK] %s step %d expect %s got %s %s\n", simName(), simIdx + 1, exp, got, pass ? "PASS" : "FAIL");
++  }
++  if (pass) simPass++; else simFail++;
++  simIdx++;
++  simElapsed = 0;
++}
++
++static void simEnd() {
++  Serial.printf("[SIMCHK] %s summary pass=%d fail=%d\n", simName(), simPass, simFail);
++  Serial.printf("#SCEN %s end\n", simName());
++  // Remove simulated data from the channels it drove so real readings take over.
++  switch (simScen) {
++    case 'c':
++    case 'p':
++      lastPhMv = NAN; lastPhValidTime = 0; lastPhRejectReason = nullptr; phReadingAttempted = false;
++      holdReset(phHold);
++      break;
++    case 't':
++      lastTempC = NAN; lastTempValidTime = 0; tempReadingAttempted = false;
++      holdReset(tempHold);
++      break;
++    case 'u':
++      lastTurbVolts = NAN; lastTurbValidTime = 0; lastTurbRejectReason = nullptr; turbReadingAttempted = false;
++      holdReset(turbHold);
++      break;
++  }
++  simScen = 0;
++}
++
++static void simStart(char key) {
++  if (simScen) simEnd();
++  simScen = key;
++  simIdx = 0;
++  simElapsed = 0;
++  simPass = 0;
++  simFail = 0;
++  simTotalS = 0;
++  holdReset(key == 't' ? tempHold : (key == 'u' ? turbHold : phHold));
++  Serial.printf("#SCEN %s start\n", simName());
++  if (key == 't') Serial.printf("[SIM] temp TEST ONLY bench range %.1f to %.1f C\n", SIM_TEMP_LOW, SIM_TEMP_HIGH);
++  if (key == 'u') Serial.printf("[SIM] turb baseline %.3f V (simulated)\n", SIM_TURB_BASELINE_V);
++  if (key == 'c') Serial.printf("[SIM] convert simulated calibration %.1f mV = 7.0, %.1f mV = 4.0\n", SIM_PH7_MV, SIM_PH4_MV);
++  simApply(millis());
++}
++
+ static void handleKey(int c) {
++  if (simScen && (c == '7' || c == '4' || c == 'r' || c == 'b')) {
++    Serial.println("[CAL] ignored: simulation active");
++    return;
++  }
+   switch (c) {
++    case 'c': case 'p': case 't': case 'u': simStart((char)c); break;
++    case 'x':
++      if (simScen) simEnd();
++      else Serial.println("[SIM] no scenario active");
++      break;
+     case '7': calCapture(true);  break;
+     case '4': calCapture(false); break;
+     case 'r': calReset();        break;
+@@ -477,13 +776,13 @@ static void classifyTick(unsigned long now) {
+   }
+ 
+   // Temperature
+-  bool tLive = isLive(computeTempState(&r)) && tempRangeSet;
++  bool tLive = isLive(computeTempState(&r)) && effRangeSet();
+   if (holdUpdate(tempHold, tLive, tLive ? tempClassify(lastTempC) : 0, now)) {
+     Serial.printf("[WQ] temperature status: %s (%.2f C)\n", TEMP_STATUS_NAMES[tempHold.heldKey], lastTempC);
+   }
+ 
+   // Turbidity
+-  bool uLive = isLive(computeTurbState(&r)) && turbBaselineSet;
++  bool uLive = isLive(computeTurbState(&r)) && effBaselineSet();
+   if (holdUpdate(turbHold, uLive, uLive ? turbClassify(lastTurbVolts) : 0, now)) {
+     Serial.printf("[WQ] turbidity status: %s (%.1f%% below baseline)\n", TURB_STATUS_NAMES[turbHold.heldKey], turbPercentBelow(lastTurbVolts));
+   }
+@@ -492,7 +791,7 @@ static void classifyTick(unsigned long now) {
+ // Starts a measurement, then comes back later to collect the result.
+ // It never waits inside the loop, so the other modules keep their timing.
+ static void temperatureUpdate() {
+-  if (!tempFound) return;
++  if (!tempFound || simScen == 't') return;
+ 
+   unsigned long now = millis();
+ 
+@@ -597,7 +896,7 @@ void waterQualityUpdate() {
+ 
+     // Update turbidity latest value, preserving rejection reason
+     turbReadingAttempted = true;
+-    if (WQ_TURBIDITY_ENABLED) {
++    if (WQ_TURBIDITY_ENABLED && simScen != 'u') {
+       if (sensorVolts < WQ_TURB_VOLTS_MIN) {
+         lastTurbVolts = NAN;
+         lastTurbRejectReason = "below_valid_range";
+@@ -639,7 +938,7 @@ void waterQualityUpdate() {
+     // Update pH latest value, preserving rejection reason
+     phReadingAttempted = true;
+     bool phInRange = false;
+-    if (WQ_PH_ENABLED) {
++    if (WQ_PH_ENABLED && simScen != 'c' && simScen != 'p') {
+       if (phMilliVolts < WQ_PH_MV_MIN) {
+         lastPhMv = NAN;
+         lastPhRejectReason = "below_valid_range";
+@@ -666,6 +965,8 @@ void waterQualityUpdate() {
+     phSumMilliVolts = 0;
+     phSampleCount = 0;
+ 
++    if (simScen) simApply(now);
++
+     // State-change logging at reporting interval
+     const char* tempReason = nullptr;
+     const char* phReason = nullptr;
+@@ -682,6 +983,13 @@ void waterQualityUpdate() {
+     prevTurbState  = turbState;  prevTurbReason = turbReason;
+ 
+     classifyTick(now);
++
++    if (simScen) {
++      simAfter();
++      int n;
++      simSteps(&n);
++      if (simIdx >= n) simEnd();
++    }
+   }
+ 
+   // Heap diagnostic approximately every 60 seconds
+@@ -749,63 +1057,53 @@ String waterQualityStatusJson() {
+   bool liveTurb = isLive(turbState);
+ 
+   String j;
+-  j.reserve(1280);
++  j.reserve(1536);
+ 
+   j += "{\"active\":";
+   jb(j, wqSetupDone);
+-  j += ",\"simulated\":false";
++  j += ",\"simulated\":";
++  jb(j, simScen != 0);
+ 
+   // ---- temperature ----
+   j += ",\"temperature\":{";
+   jstate(j, WQ_TEMP_ENABLED, tempState, tempReason);
++  j += ",\"simulated\":";
++  jb(j, simScen == 't');
+   j += ",\"valueC\":";
+   jf(j, liveTemp ? lastTempC : NAN, 2);
+   j += ",\"ageMs\":";
+   jage(j, lastTempValidTime);
+   j += ",\"rangeSet\":";
+-  jb(j, tempRangeSet);
++  jb(j, effRangeSet());
+   j += ",\"low\":";
+-  jf(j, tempRangeSet ? tempRangeLow : NAN, 1);
++  jf(j, effRangeSet() ? effRangeLow() : NAN, 1);
+   j += ",\"high\":";
+-  jf(j, tempRangeSet ? tempRangeHigh : NAN, 1);
+-  const char* tempNow = (liveTemp && tempRangeSet) ? TEMP_STATUS_NAMES[tempClassify(lastTempC)] : nullptr;
++  jf(j, effRangeSet() ? effRangeHigh() : NAN, 1);
++  const char* tempNow = (liveTemp && effRangeSet()) ? TEMP_STATUS_NAMES[tempClassify(lastTempC)] : nullptr;
+   j += ",\"statusNow\":";
+   js(j, tempNow);
+-  const char* tempStatus = "UNAVAILABLE";
+-  if (liveTemp) {
+-    if (!tempRangeSet) tempStatus = "NOT_SET";
+-    else if (tempHold.held) tempStatus = TEMP_STATUS_NAMES[tempHold.heldKey];
+-  }
+   j += ",\"status\":";
+-  js(j, tempStatus);
++  js(j, tempStatusText(liveTemp));
+   j += "}";
+ 
+   // ---- pH ----
+-  float pv = NAN;
+-  bool assumed = false;
+-  bool havePh = livePh && phValueNow(&pv, &assumed);
+-  int zone = 0, dir = 0;
+-  if (havePh) phClassify(pv, &zone, &dir);
+-
+-  const char* phStatus = "UNAVAILABLE";
+-  const char* phStatusReason = phReason;
+-  const char* phDir = nullptr;
+-  if (livePh && !havePh) {
+-    phStatusReason = "calibration_unavailable";
+-  } else if (havePh && !phHold.held) {
+-    phStatusReason = "no_status_yet";
+-  } else if (havePh) {
+-    phStatus = PH_ZONE_NAMES[phHold.heldKey / 4];
+-    phDir = PH_DIR_NAMES[phHold.heldKey % 4];
+-    phStatusReason = nullptr;
+-  }
+-  bool possibleBreach = havePh && phHold.held && zone == 2 && (phHold.heldKey / 4) != 2;
++  PhView pw = phView(phState, phReason);
++  bool havePh = pw.have;
++  float pv = pw.v;
++  bool assumed = pw.assumed;
++  bool possibleBreach = pw.breach;
++  const char* phStatus = pw.status;
++  const char* phStatusReason = pw.statusReason;
++  const char* phDir = pw.dirName;
++  int zone = pw.zone;
+   int cal = phCalLevel();
+ 
+   j += ",\"ph\":{";
+   jstate(j, WQ_PH_ENABLED, phState, phReason);
++  j += ",\"simulated\":";
++  jb(j, simScen == 'c' || simScen == 'p');
+   j += ",\"rawMv\":";
+-  jf(j, livePh ? lastPhMv : NAN, 1);
++  jf(j, (livePh && simScen != 'p') ? lastPhMv : NAN, 1);
+   j += ",\"ageMs\":";
+   jage(j, lastPhValidTime);
+   j += ",\"calibration\":";
+@@ -831,7 +1129,7 @@ String waterQualityStatusJson() {
+   j += ",\"possibleBreach\":";
+   jb(j, possibleBreach);
+   j += ",\"tempCompensation\":";
+-  js(j, havePh ? (assumed ? "assumed" : "live") : nullptr);
++  js(j, (havePh && simScen != 'p') ? (assumed ? "assumed" : "live") : nullptr);
+ 
+   const char* prefStatus = "NOT_SET";
+   float prefDev = NAN;
+@@ -856,26 +1154,23 @@ String waterQualityStatusJson() {
+   // ---- turbidity ----
+   j += ",\"turbidity\":{";
+   jstate(j, WQ_TURBIDITY_ENABLED, turbState, turbReason);
++  j += ",\"simulated\":";
++  jb(j, simScen == 'u');
+   j += ",\"rawVolts\":";
+   jf(j, liveTurb ? lastTurbVolts : NAN, 3);
+   j += ",\"ageMs\":";
+   jage(j, lastTurbValidTime);
+   j += ",\"baseline\":";
+-  js(j, turbBaselineSet ? "set" : "unavailable");
++  js(j, effBaselineSet() ? "set" : "unavailable");
+   j += ",\"baselineVolts\":";
+-  jf(j, turbBaselineSet ? turbBaselineV : NAN, 3);
+-  bool haveTurb = liveTurb && turbBaselineSet;
++  jf(j, effBaselineSet() ? effBaselineV() : NAN, 3);
++  bool haveTurb = liveTurb && effBaselineSet();
+   j += ",\"percentBelowBaseline\":";
+   jf(j, haveTurb ? turbPercentBelow(lastTurbVolts) : NAN, 2);
+   j += ",\"statusNow\":";
+   js(j, haveTurb ? TURB_STATUS_NAMES[turbClassify(lastTurbVolts)] : nullptr);
+-  const char* turbStatus = "UNAVAILABLE";
+-  if (liveTurb) {
+-    if (!turbBaselineSet) turbStatus = "NO_BASELINE";
+-    else if (turbHold.held) turbStatus = TURB_STATUS_NAMES[turbHold.heldKey];
+-  }
+   j += ",\"status\":";
+-  js(j, turbStatus);
++  js(j, turbStatusText(liveTurb));
+   j += "}";
+ 
+   j += "}";

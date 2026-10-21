@@ -1,0 +1,13 @@
+Sizes (RAM static B / Flash B / firmware.bin B)
+
+A. working-tree main.cpp (WQ on; radar, radar server, dashboard OFF; no Wi-Fi; JSON builder not linked)
+ baseline wq-stage2-baseline: 26648 / 416745 / 417104
+ stage2: 26864 / 419633 / 420000
+ stage3: 27040 / 420413 / 420784
+ stage4: 27056 / 424457 / 424816
+
+B. isolated copy built with committed main.cpp (all modules on), see fullcfg-build-*.txt
+ baseline: 46272 / 832193 / 838768
+ stage2: 46512 / 835561 / 842176
+ stage3: 46680 / 836617 / 843200
+ stage4: 46704 / 840621 / 847200
