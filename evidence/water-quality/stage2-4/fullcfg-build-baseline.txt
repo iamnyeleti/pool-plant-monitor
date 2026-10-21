@@ -1,0 +1,160 @@
+Processing esp32doit-devkit-v1 (platform: espressif32; board: esp32doit-devkit-v1; framework: arduino)
+--------------------------------------------------------------------------------
+Library Manager: Installing adafruit/RTClib @ ^2.1.4
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: RTClib@2.1.4 has been installed!
+Library Manager: Resolving dependencies...
+Library Manager: Installing Adafruit BusIO
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: Adafruit BusIO@1.17.4 has been installed!
+Library Manager: Installing paulstoffregen/OneWire @ ^2.3.8
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: OneWire@2.3.8 has been installed!
+Library Manager: Installing milesburton/DallasTemperature @ ^3.11.0
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: DallasTemperature@3.11.0 has been installed!
+Library Manager: Resolving dependencies...
+Library Manager: Installing ncmreynolds/ld2410 @ ^0.2.2
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: ld2410@0.2.2 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32doit-devkit-v1.html
+PLATFORM: Espressif 32 (7.1.2) > DOIT ESP32 DEVKIT V1
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 4.20017.260907+sha.dcc1105b 
+ - tool-esptoolpy @ 2.41100.260830 (4.11.0) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 38 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- RTClib @ 2.1.4
+|-- OneWire @ 2.3.8
+|-- DallasTemperature @ 3.11.0
+|-- ld2410 @ 0.2.2
+|-- WiFi @ 2.0.0
+|-- Wire @ 2.0.0
+|-- WebServer @ 2.0.0
+Building in release mode
+Compiling .pio\build\esp32doit-devkit-v1\src\dashboard.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\main.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\network.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\radar.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\radar_server.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\schedule.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\vibration.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\src\water_quality.cpp.o
+Building .pio\build\esp32doit-devkit-v1\bootloader.bin
+Generating partitions .pio\build\esp32doit-devkit-v1\partitions.bin
+Compiling .pio\build\esp32doit-devkit-v1\lib9ed\Wire\Wire.cpp.o
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio\build\esp32doit-devkit-v1\lib91b\SPI\SPI.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libe1c\Adafruit BusIO\Adafruit_BusIO_Register.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libe1c\Adafruit BusIO\Adafruit_GenericDevice.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libe1c\Adafruit BusIO\Adafruit_I2CDevice.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libe1c\Adafruit BusIO\Adafruit_SPIDevice.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_DS1307.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_DS3231.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\lib91b\libSPI.a
+Archiving .pio\build\esp32doit-devkit-v1\lib9ed\libWire.a
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_Micros.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_Millis.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_PCF8523.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTC_PCF8563.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib1ce\RTClib\RTClib.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib477\OneWire\OneWire.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libe54\DallasTemperature\DallasTemperature.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libcf9\ld2410\ld2410.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFi.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\libe1c\libAdafruit BusIO.a
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiAP.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiClient.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiGeneric.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiMulti.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiSTA.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiScan.cpp.o
+.pio/libdeps/esp32doit-devkit-v1/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+ #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+                      ^
+.pio/libdeps/esp32doit-devkit-v1/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+ #  undef interrupts() portEXIT_CRITICAL(&mux);}
+                    ^
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiServer.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\lib1ce\libRTClib.a
+Compiling .pio\build\esp32doit-devkit-v1\lib289\WiFi\WiFiUdp.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\lib477\libOneWire.a
+Compiling .pio\build\esp32doit-devkit-v1\libbf5\FS\FS.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\libe54\libDallasTemperature.a
+Archiving .pio\build\esp32doit-devkit-v1\libcf9\libld2410.a
+Compiling .pio\build\esp32doit-devkit-v1\libbf5\FS\vfs_api.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libd45\WebServer\Parsing.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libd45\WebServer\WebServer.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\libd45\WebServer\detail\mimetable.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\Esp.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\FirmwareMSC.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\FunctionalInterrupt.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\HWCDC.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\HardwareSerial.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\IPAddress.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\IPv6Address.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\MD5Builder.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\Print.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\lib289\libWiFi.a
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\Stream.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\StreamString.cpp.o
+Archiving .pio\build\esp32doit-devkit-v1\libbf5\libFS.a
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\Tone.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\USB.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\USBCDC.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\USBMSC.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\WMath.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\WString.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\base64.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\cbuf.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-adc.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-bt.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-cpu.c.o
+Archiving .pio\build\esp32doit-devkit-v1\libd45\libWebServer.a
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-dac.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-gpio.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-i2c-slave.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-i2c.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-ledc.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-matrix.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-misc.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-psram.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-rgb-led.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-rmt.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-sigmadelta.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-spi.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-time.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-timer.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-tinyusb.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-touch.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\esp32-hal-uart.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\firmware_msc_fat.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\libb64\cdecode.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\libb64\cencode.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\main.cpp.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\stdlib_noniso.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\wiring_pulse.c.o
+Compiling .pio\build\esp32doit-devkit-v1\FrameworkArduino\wiring_shift.c.o
+Archiving .pio\build\esp32doit-devkit-v1\libFrameworkArduino.a
+Linking .pio\build\esp32doit-devkit-v1\firmware.elf
+Retrieving maximum program size .pio\build\esp32doit-devkit-v1\firmware.elf
+Checking size .pio\build\esp32doit-devkit-v1\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.1% (used 46272 bytes from 327680 bytes)
+Flash: [======    ]  63.5% (used 832193 bytes from 1310720 bytes)
+Building .pio\build\esp32doit-devkit-v1\firmware.bin
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 96.78 seconds =========================
