@@ -318,11 +318,66 @@ static void calibrationUpdate(float rms) {
   }
 }
 
+static const unsigned long TIMING_PRINT_MS = 60000UL;
+static unsigned long timingWindowStart = 0;
+static unsigned long lastGoodReadUs = 0;
+static unsigned long timingN = 0;
+static unsigned long timingOver50 = 0;
+static unsigned long timingReadErrors = 0;
+static double timingSum = 0;
+static double timingSumSq = 0;
+static float timingMin = 0;
+static float timingMax = 0;
+
+static void timingRecordRead(bool ok) {
+  if (!ok) {
+    timingReadErrors++;
+    return;
+  }
+  unsigned long nowUs = micros();
+  if (lastGoodReadUs != 0) {
+    float dtMs = (unsigned long)(nowUs - lastGoodReadUs) / 1000.0f;
+    if (timingN == 0 || dtMs < timingMin) timingMin = dtMs;
+    if (timingN == 0 || dtMs > timingMax) timingMax = dtMs;
+    timingSum += dtMs;
+    timingSumSq += (double)dtMs * dtMs;
+    if (dtMs > 50.0f) timingOver50++;
+    timingN++;
+  }
+  lastGoodReadUs = nowUs;
+}
+
+static void timingPrintIfDue(unsigned long nowMs) {
+  if (nowMs - timingWindowStart < TIMING_PRINT_MS) return;
+  timingWindowStart = nowMs;
+
+  double mean = timingN ? timingSum / timingN : 0.0;
+  double var = timingN ? timingSumSq / timingN - mean * mean : 0.0;
+  if (var < 0) var = 0;
+
+  Serial.printf(
+      "[TIMING] n=%lu mean_ms=%.3f min_ms=%.3f max_ms=%.3f std_ms=%.3f "
+      "over_50ms=%lu read_errors=%lu\n",
+      timingN, mean, timingN ? timingMin : 0.0f, timingN ? timingMax : 0.0f,
+      sqrt(var), timingOver50, timingReadErrors);
+
+  timingN = 0;
+  timingOver50 = 0;
+  timingReadErrors = 0;
+  timingSum = 0;
+  timingSumSq = 0;
+  timingMin = 0;
+  timingMax = 0;
+}
+
 void vibrationUpdate() {
 
   float ax, ay, az;
   bool readOk = mpuReadAccel(ax, ay, az);
   unsigned long nowMs = millis();
+
+  timingRecordRead(readOk);
+  timingPrintIfDue(nowMs);
 
   if (!sensorOk) {
     if (nowMs - lastInitAttempt >= SENSOR_REINIT_MS) {
@@ -348,6 +403,7 @@ void vibrationUpdate() {
       currentStatus = "SENSOR ERROR";
       lastInitAttempt = nowMs;
       recoverStart = 0;
+      lastGoodReadUs = 0;
       loggingActiveEvent = false;
       Serial.println("[Vibration] SENSOR ERROR: no valid read for 2000 ms");
     }
