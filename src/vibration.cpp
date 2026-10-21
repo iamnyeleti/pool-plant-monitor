@@ -1,6 +1,7 @@
 
 // vibration.cpp
 #include "vibration.h"
+#include "vib_history.h"
 #include <Wire.h>
 
 // AD0 is wired to 3.3V, shifting the MPU6050 from 0x68 to 0x69,
@@ -195,6 +196,14 @@ static void logEventEnd() {
       (eventLogIndex + 1) % EVENT_LOG_SIZE;
 
   loggingActiveEvent = false;
+}
+
+static vh::StoppedDetector stoppedDetector(
+    STOPPED_STD_THRESHOLD, STOPPED_HOLD_MS, STOPPED_EXIT_FACTOR);
+
+// Replaced by the pump-schedule check in the next change; until then STOPPED is never reported.
+static bool pumpExpectedRunning() {
+  return false;
 }
 
 static const unsigned long SENSOR_REINIT_MS = 5000;
@@ -496,7 +505,18 @@ void vibrationUpdate() {
       (rms >
        cautionThreshold());
 
-  if (warningCondition) {
+  int windowCount = bufferFull ? SAMPLE_WINDOW : sampleIndex;
+  float windowSpread = vh::windowStd(sampleBuffer, windowCount);
+
+  bool stopped = stoppedDetector.update(
+      nowMs, windowSpread, pumpExpectedRunning(), bufferFull);
+
+  if (stopped) {
+
+    currentStatus =
+        "STOPPED";
+
+  } else if (warningCondition) {
 
     currentStatus =
         "WARNING";
@@ -537,8 +557,7 @@ void vibrationUpdate() {
           rms;
     }
 
-    if (currentStatus ==
-        "WARNING") {
+    if (warningCondition) {
 
       activeEventReachedWarning =
           true;
