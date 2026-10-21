@@ -137,6 +137,7 @@ struct VibrationEvent {
   unsigned long durationMs;
   float peakRMS;
   bool reachedWarning;
+  char when[24];
 };
 
 static const int EVENT_LOG_SIZE = 10;
@@ -148,6 +149,17 @@ static bool loggingActiveEvent = false;
 static unsigned long activeEventStart = 0;
 static float activeEventPeak = 0;
 static bool activeEventReachedWarning = false;
+static char activeEventWhen[24] = "";
+
+static void formatEventTime(char* out, size_t n, unsigned long nowMs) {
+  if (scheduleIsReady()) {
+    String t = scheduleGetTimeString();
+    snprintf(out, n, "%s", t.c_str());
+  } else {
+    unsigned long s = nowMs / 1000UL;
+    snprintf(out, n, "T+%02lu:%02lu:%02lu", s / 3600UL, (s / 60UL) % 60UL, s % 60UL);
+  }
+}
 
 static const unsigned long TREND_INTERVAL_MS =
     60UL * 1000UL;
@@ -194,6 +206,16 @@ static void logEventEnd() {
 
   eventLog[eventLogIndex].reachedWarning =
       activeEventReachedWarning;
+
+  snprintf(eventLog[eventLogIndex].when,
+           sizeof(eventLog[eventLogIndex].when), "%s", activeEventWhen);
+
+  Serial.printf(
+      "[EVENT] %s elevated_vibration duration_ms=%lu peak_rms=%.3f warning=%d\n",
+      eventLog[eventLogIndex].when,
+      eventLog[eventLogIndex].durationMs,
+      eventLog[eventLogIndex].peakRMS,
+      eventLog[eventLogIndex].reachedWarning ? 1 : 0);
 
   eventLogIndex =
       (eventLogIndex + 1) % EVENT_LOG_SIZE;
@@ -681,6 +703,8 @@ void vibrationUpdate() {
 
       activeEventStart =
           millis();
+
+      formatEventTime(activeEventWhen, sizeof(activeEventWhen), activeEventStart);
 
       activeEventPeak =
           rms;
