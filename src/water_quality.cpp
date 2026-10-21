@@ -6,6 +6,7 @@
 // Water quality stage 1: per-channel state machine (disabled/unavailable/stale/live).
 // Water quality stage 2: two-point pH calibration, pH zones with a 30 s hold,
 // preferred pH, temperature range with a 30 s hold.
+// Water quality stage 3: turbidity baseline and percent below baseline (no NTU).
 
 #include "water_quality.h"
 #include <math.h>
@@ -13,7 +14,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define WQ_STAGE_NAME "stage2"
+#define WQ_STAGE_NAME "stage3"
 
 // ---------------------------------------------------------------
 // Pins
@@ -62,6 +63,11 @@ static const float PH_CAUTION_MARGIN     = 0.2;     // CAUTION within this of a 
 static const float PH_MIDPOINT           = 7.5;     // LOW/HIGH side
 static const float PH_EDGE_EPS           = 0.0005;  // float tolerance on inclusive boundaries
 static const float PH_PREFERRED_MARGIN   = 0.2;     // ON_TARGET within this of preferred
+
+// Stage 3 constants (all PROVISIONAL)
+static const float TURB_CLOUDY_PCT       = 5.0;     // CLOUDIER when percent below baseline >= this
+static const float TURB_PCT_EPS          = 0.001;   // float tolerance on the inclusive threshold
+static const float TURB_BASELINE_MAX_SPREAD_V = 0.05; // max-min allowed across the 30 baseline samples
 
 // ---------------------------------------------------------------
 // Module active flag
@@ -138,6 +144,7 @@ struct Ring {
 };
 
 static Ring phRing = {};
+static Ring turbRing = {};
 
 static void ringPush(Ring& r, float v, bool ok) {
   r.v[r.head] = v;
@@ -195,6 +202,12 @@ static bool holdUpdate(Hold& h, bool live, int key, unsigned long now) {
 
 static Hold phHold = {};
 static Hold tempHold = {};
+static Hold turbHold = {};
+
+static bool turbBaselineSet = false;
+static float turbBaselineV = NAN;        // sensor-side volts
+
+static const char* const TURB_STATUS_NAMES[] = {"CLEAR", "CLOUDIER"};
 
 // ---------------------------------------------------------------
 // pH calibration and preferred value
@@ -318,6 +331,15 @@ static void phClassify(float v, int* zone, int* dir) {
   else                       *dir = 2;
 }
 
+// Percent below baseline; negative when clearer than the baseline.
+static float turbPercentBelow(float volts) {
+  return (turbBaselineV - volts) / turbBaselineV * 100.0;
+}
+
+static int turbClassify(float volts) {
+  return turbPercentBelow(volts) >= TURB_CLOUDY_PCT - TURB_PCT_EPS ? 1 : 0;
+}
+
 static int tempClassify(float t) {
   if (t < tempRangeLow)  return 1;
   if (t > tempRangeHigh) return 2;
@@ -388,11 +410,28 @@ static void calReset() {
   Serial.println("[CAL] reset: pH calibration cleared");
 }
 
+static void baselineCapture() {
+  float mean, spread;
+  if (!ringStats(turbRing, &mean, &spread)) {
+    Serial.printf("[CAL] rejected turbidity baseline reason=need_%d_valid_samples\n", CAL_SAMPLES);
+    return;
+  }
+  if (spread > TURB_BASELINE_MAX_SPREAD_V) {
+    Serial.printf("[CAL] rejected turbidity baseline reason=unstable_spread_%.3f_V_over_%.3f\n", spread, TURB_BASELINE_MAX_SPREAD_V);
+    return;
+  }
+  turbBaselineV = mean;
+  turbBaselineSet = true;
+  holdReset(turbHold);
+  Serial.printf("[CAL] stored turbidity baseline mean=%.3f V spread=%.3f V\n", mean, spread);
+}
+
 static void handleKey(int c) {
   switch (c) {
     case '7': calCapture(true);  break;
     case '4': calCapture(false); break;
     case 'r': calReset();        break;
+    case 'b': baselineCapture(); break;
     default: break;
   }
 }
@@ -441,6 +480,12 @@ static void classifyTick(unsigned long now) {
   bool tLive = isLive(computeTempState(&r)) && tempRangeSet;
   if (holdUpdate(tempHold, tLive, tLive ? tempClassify(lastTempC) : 0, now)) {
     Serial.printf("[WQ] temperature status: %s (%.2f C)\n", TEMP_STATUS_NAMES[tempHold.heldKey], lastTempC);
+  }
+
+  // Turbidity
+  bool uLive = isLive(computeTurbState(&r)) && turbBaselineSet;
+  if (holdUpdate(turbHold, uLive, uLive ? turbClassify(lastTurbVolts) : 0, now)) {
+    Serial.printf("[WQ] turbidity status: %s (%.1f%% below baseline)\n", TURB_STATUS_NAMES[turbHold.heldKey], turbPercentBelow(lastTurbVolts));
   }
 }
 
@@ -565,6 +610,8 @@ void waterQualityUpdate() {
         lastTurbRejectReason = nullptr;
       }
     }
+
+    ringPush(turbRing, sensorVolts, WQ_TURBIDITY_ENABLED && sensorVolts >= WQ_TURB_VOLTS_MIN && sensorVolts <= WQ_TURB_VOLTS_MAX);
 
     Serial.print("[Turbidity] At G35 pin: ");
     Serial.print(pinVolts, 3);
@@ -813,9 +860,23 @@ String waterQualityStatusJson() {
   jf(j, liveTurb ? lastTurbVolts : NAN, 3);
   j += ",\"ageMs\":";
   jage(j, lastTurbValidTime);
-  j += ",\"baseline\":\"unavailable\"";
-  j += ",\"percentBelowBaseline\":null";
-  j += ",\"status\":\"UNAVAILABLE\"}";
+  j += ",\"baseline\":";
+  js(j, turbBaselineSet ? "set" : "unavailable");
+  j += ",\"baselineVolts\":";
+  jf(j, turbBaselineSet ? turbBaselineV : NAN, 3);
+  bool haveTurb = liveTurb && turbBaselineSet;
+  j += ",\"percentBelowBaseline\":";
+  jf(j, haveTurb ? turbPercentBelow(lastTurbVolts) : NAN, 2);
+  j += ",\"statusNow\":";
+  js(j, haveTurb ? TURB_STATUS_NAMES[turbClassify(lastTurbVolts)] : nullptr);
+  const char* turbStatus = "UNAVAILABLE";
+  if (liveTurb) {
+    if (!turbBaselineSet) turbStatus = "NO_BASELINE";
+    else if (turbHold.held) turbStatus = TURB_STATUS_NAMES[turbHold.heldKey];
+  }
+  j += ",\"status\":";
+  js(j, turbStatus);
+  j += "}";
 
   j += "}";
   return j;
