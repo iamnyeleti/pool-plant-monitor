@@ -275,6 +275,8 @@ static void pumpHandleCommand(String s) {
 
   if (s == "PUMP?") {
     pumpPrint();
+  } else if (s == "PUMP") {
+    Serial.println("[Vibration] PUMP usage: PUMP HH:MM HH:MM | PUMP CLEAR | PUMP?");
   } else if (s == "PUMP CLEAR") {
     pumpSet = false;
     pumpSave();
