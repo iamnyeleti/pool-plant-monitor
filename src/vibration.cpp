@@ -486,6 +486,29 @@ static void calibrationUpdate(float rms) {
   }
 }
 
+// Diagnostic fault injection (off unless -DVIB_FAULT_AT_S is set): every read is
+// treated as failed from VIB_FAULT_AT_S seconds after boot for VIB_FAULT_MS ms.
+#ifdef VIB_FAULT_AT_S
+#ifndef VIB_FAULT_MS
+#define VIB_FAULT_MS 5000
+#endif
+static bool faultInjectActive(unsigned long nowMs) {
+  static int phase = 0;
+  const unsigned long startMs = (unsigned long)(VIB_FAULT_AT_S) * 1000UL;
+  if (phase == 0 && nowMs >= startMs) {
+    phase = 1;
+    Serial.println("[FAULT-INJECT] start");
+  }
+  if (phase == 1 && nowMs >= startMs + (unsigned long)(VIB_FAULT_MS)) {
+    phase = 2;
+    Serial.println("[FAULT-INJECT] stop");
+  }
+  return phase == 1;
+}
+#else
+static bool faultInjectActive(unsigned long) { return false; }
+#endif
+
 static const unsigned long TIMING_PRINT_MS = 60000UL;
 static unsigned long timingWindowStart = 0;
 static unsigned long lastGoodReadUs = 0;
@@ -541,8 +564,8 @@ static void timingPrintIfDue(unsigned long nowMs) {
 void vibrationUpdate() {
 
   float ax, ay, az;
-  bool readOk = mpuReadAccel(ax, ay, az);
   unsigned long nowMs = millis();
+  bool readOk = !faultInjectActive(nowMs) && mpuReadAccel(ax, ay, az);
 
   timingRecordRead(readOk);
   timingPrintIfDue(nowMs);
