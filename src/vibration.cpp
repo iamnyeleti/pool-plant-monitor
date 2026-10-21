@@ -35,11 +35,19 @@ static bool mpuReadAccel(float &x, float &y, float &z) {
   if (Wire.endTransmission(false) != 0) return false;
 
   Wire.requestFrom((int)MPU_ADDR, 6);
-  if (Wire.available() < 6) return false;
+  if (Wire.available() < 6) {
+    while (Wire.available()) Wire.read();
+    return false;
+  }
 
   int16_t rawX = (Wire.read() << 8) | Wire.read();
   int16_t rawY = (Wire.read() << 8) | Wire.read();
   int16_t rawZ = (Wire.read() << 8) | Wire.read();
+
+  // All-zero or all-0xFFFF is what a dead or floating bus returns, not real data.
+  if ((rawX == 0 && rawY == 0 && rawZ == 0) ||
+      (rawX == -1 && rawY == -1 && rawZ == -1))
+    return false;
 
   const float LSB_PER_G = 8192.0;
   const float G_TO_MS2 = 9.8;
@@ -174,8 +182,24 @@ static void logEventEnd() {
 }
 
 static const unsigned long SENSOR_REINIT_MS = 5000;
+static const unsigned long SENSOR_TIMEOUT_MS = 2000;
+static const unsigned long SENSOR_RECOVER_MS = 1000;
 static bool sensorOk = false;
 static unsigned long lastInitAttempt = 0;
+static unsigned long lastGoodMs = 0;
+static unsigned long recoverStart = 0;
+
+// After an outage the RMS window and the 6000-sample WARNING history hold
+// pre-outage samples, so both are cleared; WARNING cannot fire until the
+// history has refilled with new valid samples.
+static void resetSampleHistory() {
+  sampleIndex = 0;
+  bufferFull = false;
+  for (int i = 0; i < ELEVATED_HISTORY_SIZE; i++) elevatedHistory[i] = false;
+  elevatedIndex = 0;
+  elevatedCount = 0;
+  elevatedHistoryFull = false;
+}
 
 void vibrationSetup() {
 
@@ -185,6 +209,7 @@ void vibrationSetup() {
 
   if (mpuInit()) {
     sensorOk = true;
+    lastGoodMs = millis();
     Serial.println("Vibration module ready.");
   } else {
     sensorOk = false;
@@ -276,28 +301,40 @@ static void calibrationUpdate(float rms) {
 
 void vibrationUpdate() {
 
+  float ax, ay, az;
+  bool readOk = mpuReadAccel(ax, ay, az);
+  unsigned long nowMs = millis();
+
   if (!sensorOk) {
-    if (millis() - lastInitAttempt >= SENSOR_REINIT_MS) {
-      lastInitAttempt = millis();
-      if (mpuInit()) {
-        sensorOk = true;
-        currentStatus = "OK";
-        sampleIndex = 0;
-        bufferFull = false;
-        Serial.println("[Vibration] sensor recovered");
-      }
+    if (nowMs - lastInitAttempt >= SENSOR_REINIT_MS) {
+      lastInitAttempt = nowMs;
+      mpuInit();
+    }
+    if (!readOk) {
+      recoverStart = 0;
+      return;
+    }
+    if (recoverStart == 0) recoverStart = nowMs;
+    if (nowMs - recoverStart < SENSOR_RECOVER_MS) return;
+
+    sensorOk = true;
+    lastGoodMs = nowMs;
+    recoverStart = 0;
+    resetSampleHistory();
+    currentStatus = "OK";
+    Serial.println("[Vibration] sensor recovered");
+  } else if (!readOk) {
+    if (nowMs - lastGoodMs >= SENSOR_TIMEOUT_MS) {
+      sensorOk = false;
+      currentStatus = "SENSOR ERROR";
+      lastInitAttempt = nowMs;
+      recoverStart = 0;
+      loggingActiveEvent = false;
+      Serial.println("[Vibration] SENSOR ERROR: no valid read for 2000 ms");
     }
     return;
-  }
-
-  float ax, ay, az;
-
-  if (!mpuReadAccel(
-          ax,
-          ay,
-          az)) {
-
-    return;
+  } else {
+    lastGoodMs = nowMs;
   }
 
   float magnitude =
