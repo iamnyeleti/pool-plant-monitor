@@ -694,6 +694,13 @@ void vibrationUpdate() {
         "OK";
   }
 
+  static unsigned long lastStdPrint = 0;
+  if (nowMs - lastStdPrint >= 1000) {
+    lastStdPrint = nowMs;
+    Serial.printf("[STD] std=%.4f n=%d stopped=%d\n",
+                  windowSpread, windowCount, stopped ? 1 : 0);
+  }
+
   if (aboveCautionNow) {
 
     if (!loggingActiveEvent) {
