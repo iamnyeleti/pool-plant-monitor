@@ -61,7 +61,10 @@ static bool mpuReadAccel(float &x, float &y, float &z) {
   return true;
 }
 
-static const bool CALIBRATION_MODE = false; // Set to true to enable calibration mode.
+#ifndef VIB_CALIBRATION_MODE
+#define VIB_CALIBRATION_MODE 0
+#endif
+static const bool CALIBRATION_MODE = (VIB_CALIBRATION_MODE != 0); // Select with -DVIB_CALIBRATION_MODE=1.
 static const unsigned long CALIBRATION_WARMUP_MS = 20000;
 static const unsigned long CALIBRATION_DURATION_MS = 90000;
 
@@ -73,7 +76,10 @@ static unsigned long calibrationCount = 0;
 static unsigned long lastCalibrationPrint = 0;
 
 // Real measured baseline from the fan calibration run.
-static const float BASELINE_RUNNING_RMS = 0.7854;
+#ifndef VIB_BASELINE
+#define VIB_BASELINE 0.7854
+#endif
+static const float BASELINE_RUNNING_RMS = VIB_BASELINE;
 
 // Threshold multipliers
 static const float CAUTION_MULTIPLIER = 1.2;

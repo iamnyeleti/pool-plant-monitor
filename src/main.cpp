@@ -6,14 +6,14 @@
 #include "water_quality.h"
 #include "dashboard.h"
 #include "network.h"
+#include "module_flags.h"
 
-static const bool VIBRATION_CONNECTED = false;
-static const bool RTC_CONNECTED = false;
-static const bool RADAR_CONNECTED = false;
-static const bool RADAR_SERVER_CONNECTED = false;
-static const bool WATER_QUALITY_CONNECTED = true
-;
-static const bool DASHBOARD_CONNECTED = true;
+static const bool VIBRATION_CONNECTED = CFG_VIBRATION_CONNECTED;
+static const bool RTC_CONNECTED = CFG_RTC_CONNECTED;
+static const bool RADAR_CONNECTED = CFG_RADAR_CONNECTED;
+static const bool RADAR_SERVER_CONNECTED = CFG_RADAR_SERVER_CONNECTED;
+static const bool WATER_QUALITY_CONNECTED = CFG_WATER_QUALITY_CONNECTED;
+static const bool DASHBOARD_CONNECTED = CFG_DASHBOARD_CONNECTED;
 
 void setup() {
   Serial.begin(115200);
