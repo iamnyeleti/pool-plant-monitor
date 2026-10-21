@@ -19,7 +19,7 @@ void scheduleSetup() {
   if (!rtc.begin()) {
     Serial.println("DS3231 not found. Check wiring (SDA/SCL) and power.");
     rtcReady = false;
-    while (1) delay(10);
+    return;
   }
 
   rtcReady = true;
@@ -50,6 +50,14 @@ void scheduleUpdate() {
 
 bool scheduleIsReady() {
   return RTC_INSTALLED && rtcReady;
+}
+
+bool scheduleGetMinuteOfDay(int* minuteOfDay) {
+  if (!RTC_INSTALLED || !rtcReady) return false;
+
+  DateTime now = rtc.now();
+  *minuteOfDay = now.hour() * 60 + now.minute();
+  return true;
 }
 
 String scheduleGetTimeString() {

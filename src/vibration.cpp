@@ -2,7 +2,10 @@
 // vibration.cpp
 #include "vibration.h"
 #include "vib_history.h"
+#include "schedule.h"
+#include "module_flags.h"
 #include <Wire.h>
+#include <Preferences.h>
 
 // AD0 is wired to 3.3V, shifting the MPU6050 from 0x68 to 0x69,
 // since the DS3231 now occupies 0x68 on the same shared bus.
@@ -201,9 +204,135 @@ static void logEventEnd() {
 static vh::StoppedDetector stoppedDetector(
     STOPPED_STD_THRESHOLD, STOPPED_HOLD_MS, STOPPED_EXIT_FACTOR);
 
-// Replaced by the pump-schedule check in the next change; until then STOPPED is never reported.
+// ---- Pump run window (separate from any pool access schedule) ----
+enum PumpState { PS_UNKNOWN, PS_NO_WINDOW, PS_NO_RTC, PS_OFF, PS_INSIDE };
+static PumpState pumpState = PS_UNKNOWN;
+static bool pumpSet = false;
+static uint16_t pumpStart = 0;  // minute of day
+static uint16_t pumpEnd = 0;
+static bool pumpDirty = true;
+static unsigned long lastPumpEval = 0;
+
 static bool pumpExpectedRunning() {
-  return false;
+  return pumpState == PS_INSIDE;
+}
+
+static void pumpLoad() {
+  Preferences p;
+  if (p.begin("pump", false)) {
+    pumpSet = p.getBool("set", false);
+    pumpStart = p.getUShort("start", 0);
+    pumpEnd = p.getUShort("end", 0);
+    p.end();
+  }
+  if (pumpStart >= 1440 || pumpEnd >= 1440 || pumpStart == pumpEnd) pumpSet = false;
+}
+
+static void pumpSave() {
+  Preferences p;
+  if (p.begin("pump", false)) {
+    p.putBool("set", pumpSet);
+    p.putUShort("start", pumpStart);
+    p.putUShort("end", pumpEnd);
+    p.end();
+  }
+}
+
+static void pumpPrint() {
+  if (!pumpSet) {
+    Serial.println("[Vibration] PUMP window: not set");
+  } else {
+    Serial.printf("[Vibration] PUMP window: %02u:%02u-%02u:%02u\n",
+                  pumpStart / 60, pumpStart % 60, pumpEnd / 60, pumpEnd % 60);
+  }
+}
+
+static void pumpHandleCommand(String s) {
+  s.trim();
+  s.toUpperCase();
+
+  if (s == "PUMP?") {
+    pumpPrint();
+  } else if (s == "PUMP CLEAR") {
+    pumpSet = false;
+    pumpSave();
+    pumpDirty = true;
+    stoppedDetector.reset();
+    pumpPrint();
+  } else if (s.startsWith("PUMP ")) {
+    int h1, m1, h2, m2;
+    if (sscanf(s.c_str() + 5, "%d:%d %d:%d", &h1, &m1, &h2, &m2) == 4 &&
+        h1 >= 0 && h1 < 24 && h2 >= 0 && h2 < 24 &&
+        m1 >= 0 && m1 < 60 && m2 >= 0 && m2 < 60 &&
+        (h1 * 60 + m1) != (h2 * 60 + m2)) {
+      pumpStart = h1 * 60 + m1;
+      pumpEnd = h2 * 60 + m2;
+      pumpSet = true;
+      pumpSave();
+      pumpDirty = true;
+      stoppedDetector.reset();
+      pumpPrint();
+    } else {
+      Serial.println("[Vibration] PUMP usage: PUMP HH:MM HH:MM | PUMP CLEAR | PUMP?");
+    }
+  }
+}
+
+// The water-quality module drains the whole serial buffer, so the PUMP commands are
+// only compiled in when it is disabled.
+static void pumpPollSerial() {
+#if !CFG_WATER_QUALITY_CONNECTED
+  static String line;
+  while (Serial.available() > 0) {
+    char c = Serial.read();
+    if (c == '\n' || c == '\r') {
+      if (line.length() > 0) {
+        pumpHandleCommand(line);
+        line = "";
+      }
+    } else if (line.length() < 40) {
+      line += c;
+    }
+  }
+#endif
+}
+
+static void pumpStateUpdate(unsigned long nowMs) {
+  if (!pumpDirty && nowMs - lastPumpEval < 1000) return;
+  pumpDirty = false;
+  lastPumpEval = nowMs;
+
+  PumpState s;
+  int m = 0;
+  if (!pumpSet) {
+    s = PS_NO_WINDOW;
+  } else if (!scheduleGetMinuteOfDay(&m)) {
+    s = PS_NO_RTC;
+  } else {
+    bool inside = (pumpStart < pumpEnd) ? (m >= pumpStart && m < pumpEnd)
+                                        : (m >= pumpStart || m < pumpEnd);
+    s = inside ? PS_INSIDE : PS_OFF;
+  }
+
+  if (s == pumpState) return;
+  pumpState = s;
+
+  switch (s) {
+    case PS_NO_WINDOW:
+      Serial.println("[Vibration] Stopped detection off: no pump schedule");
+      break;
+    case PS_NO_RTC:
+      Serial.println("[Vibration] Stopped detection off: RTC not ready");
+      break;
+    case PS_OFF:
+      Serial.println("[Vibration] OFF SCHEDULE");
+      break;
+    case PS_INSIDE:
+      Serial.println("[Vibration] Inside pump window: STOPPED detection on");
+      break;
+    default:
+      break;
+  }
 }
 
 static const unsigned long SENSOR_REINIT_MS = 5000;
@@ -231,6 +360,8 @@ void vibrationSetup() {
   Wire.begin();
 
   lastInitAttempt = millis();
+
+  pumpLoad();
 
   if (mpuInit()) {
     sensorOk = true;
@@ -393,6 +524,8 @@ void vibrationUpdate() {
 
   timingRecordRead(readOk);
   timingPrintIfDue(nowMs);
+  pumpPollSerial();
+  pumpStateUpdate(nowMs);
 
   if (!sensorOk) {
     if (nowMs - lastInitAttempt >= SENSOR_REINIT_MS) {
@@ -419,6 +552,7 @@ void vibrationUpdate() {
       lastInitAttempt = nowMs;
       recoverStart = 0;
       lastGoodReadUs = 0;
+      stoppedDetector.reset();
       loggingActiveEvent = false;
       Serial.println("[Vibration] SENSOR ERROR: no valid read for 2000 ms");
     }
@@ -511,7 +645,12 @@ void vibrationUpdate() {
   bool stopped = stoppedDetector.update(
       nowMs, windowSpread, pumpExpectedRunning(), bufferFull);
 
-  if (stopped) {
+  if (pumpState == PS_OFF) {
+
+    currentStatus =
+        "OFF SCHEDULE";
+
+  } else if (stopped) {
 
     currentStatus =
         "STOPPED";
