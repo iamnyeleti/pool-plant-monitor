@@ -8,14 +8,17 @@
 // preferred pH, temperature range with a 30 s hold.
 // Water quality stage 3: turbidity baseline and percent below baseline (no NTU).
 // Water quality stage 4: serial-triggered simulation scenarios (default off, cleared at reboot).
+// Water quality stage 5: re-adopt after outages, revised electrical limits,
+// stored temperature range / preferred pH (Preferences namespace "wq").
 
 #include "water_quality.h"
 #include <math.h>
 #include <string.h>
+#include <Preferences.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define WQ_STAGE_NAME "stage4"
+#define WQ_STAGE_NAME "stage5"
 
 // ---------------------------------------------------------------
 // Pins
@@ -40,9 +43,12 @@ static const bool WQ_TURBIDITY_ENABLED = true;
 // ---------------------------------------------------------------
 // Provisional validity ranges (electrical plausibility only)
 // ---------------------------------------------------------------
-static const float WQ_PH_MV_MIN          = 1.0;
+// PROVISIONAL minimums: chosen from one set of disconnection runs (about 142 mV at the
+// ADC pin). The lowest connected readings logged were 1260 mV (pH) and about 1.7 V at
+// the pin (turbidity). These are not universal limits.
+static const float WQ_PH_MV_MIN          = 500.0;   // pH board output, mV at the pin
 static const float WQ_PH_MV_MAX          = 3050.0;
-static const float WQ_TURB_VOLTS_MIN     = 0.05;
+static const float WQ_TURB_VOLTS_MIN     = 1.0;     // reconstructed sensor side (pin volts x DIVIDER_FACTOR)
 static const float WQ_TURB_VOLTS_MAX     = 4.6;
 static const unsigned long WQ_MAX_AGE_MS = 3000;
 
@@ -69,6 +75,10 @@ static const float PH_PREFERRED_MARGIN   = 0.2;     // ON_TARGET within this of 
 static const float TURB_CLOUDY_PCT       = 5.0;     // CLOUDIER when percent below baseline >= this
 static const float TURB_PCT_EPS          = 0.001;   // float tolerance on the inclusive threshold
 static const float TURB_BASELINE_MAX_SPREAD_V = 0.05; // max-min allowed across the 30 baseline samples
+
+// Stage 5 constants (PROVISIONAL)
+static const float CFG_TEMP_INPUT_MIN_C  = 0.0;     // input sanity for a stored range, not an operating limit
+static const float CFG_TEMP_INPUT_MAX_C  = 50.0;
 
 // Stage 4 simulation constants (TEST ONLY, never used outside a running scenario)
 static const float SIM_TURB_BASELINE_V   = 4.000;   // sensor-side volts
@@ -192,8 +202,9 @@ struct Hold {
 static void holdReset(Hold& h) { h.held = false; h.pending = false; }
 
 // Returns true when the held key changed (or was first adopted).
+// Not live: the held status is dropped, so the next live classification is adopted at once.
 static bool holdUpdate(Hold& h, bool live, int key, unsigned long now) {
-  if (!live) { h.pending = false; return false; }          // timer resets when not live
+  if (!live) { h.held = false; h.pending = false; return false; }
   if (!h.held) { h.held = true; h.heldKey = key; h.pending = false; return true; }
   if (key == h.heldKey) { h.pending = false; return false; }
   if (!h.pending || h.pendKey != key) {
@@ -539,6 +550,7 @@ static const SimStep SIM_P[] = {
   {7.50f, true, 40, "OK", -1, 0},
   {7.10f, true, 40, "WARNING LOW", -1, 0},
   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
+  {7.90f, true, 5,  "WARNING HIGH", -1, 0},   // first live value after an outage is adopted at once
   {7.50f, true, 40, "OK", -1, 0},
 };
 
@@ -553,6 +565,8 @@ static const SimStep SIM_T[] = {
   {25.0f, true, 10, "IN_RANGE", -1, 0},      // return after the spike
   {30.1f, true, 40, "ABOVE_RANGE", -1, 0},   // sustained
   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
+  {30.1f, true, 5,  "ABOVE_RANGE", -1, 0},   // adopted at once after the outage
+  {25.0f, true, 40, "IN_RANGE", -1, 0},
 };
 
 static const SimStep SIM_U[] = {
@@ -566,6 +580,8 @@ static const SimStep SIM_U[] = {
   {0.0f, true, 10, "CLEAR", -1, 0},          // return after the spike
   {20.0f, true, 40, "CLOUDIER", -1, 0},      // sustained
   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
+  {20.0f, true, 5,  "CLOUDIER", -1, 0},      // adopted at once after the outage
+  {0.0f, true, 40, "CLEAR", -1, 0},
 };
 
 static int simIdx = 0;
@@ -841,6 +857,62 @@ bool waterQualitySetTempRange(float low, float high) {
 }
 
 // ---------------------------------------------------------------
+// Stored preferences (Preferences namespace "wq": tSet, tLow, tHigh, pSet, pPref).
+// Written only by a valid config request that changes a value; never periodically.
+// Calibration and the turbidity baseline are session-only and are not stored.
+// ---------------------------------------------------------------
+static Preferences prefs;
+static bool cfgRestored = false;
+
+static bool cfgTempValid(float low, float high) {
+  return !isnan(low) && !isnan(high) && !isinf(low) && !isinf(high) &&
+         low >= CFG_TEMP_INPUT_MIN_C && low <= CFG_TEMP_INPUT_MAX_C &&
+         high >= CFG_TEMP_INPUT_MIN_C && high <= CFG_TEMP_INPUT_MAX_C &&
+         low < high;
+}
+
+static bool cfgPhValid(float ph) {
+  return !isnan(ph) && !isinf(ph) && ph >= PH_LIMIT_LOW && ph <= PH_LIMIT_HIGH;
+}
+
+static void cfgLoad() {
+  cfgRestored = false;
+  if (!prefs.begin("wq", true)) {          // namespace does not exist yet
+    Serial.println("[CFG] no saved preferences");
+    return;
+  }
+  bool tSet = prefs.getBool("tSet", false);
+  float tLow = prefs.getFloat("tLow", NAN);
+  float tHigh = prefs.getFloat("tHigh", NAN);
+  bool pSet = prefs.getBool("pSet", false);
+  float pPref = prefs.getFloat("pPref", NAN);
+  prefs.end();
+
+  if (tSet) {
+    if (cfgTempValid(tLow, tHigh)) {
+      tempRangeLow = tLow;
+      tempRangeHigh = tHigh;
+      tempRangeSet = true;
+      cfgRestored = true;
+      Serial.printf("[CFG] restored temperature range %.1f to %.1f C\n", tLow, tHigh);
+    } else {
+      Serial.println("[CFG] ignored invalid stored temperature range");
+    }
+  }
+  if (pSet) {
+    if (cfgPhValid(pPref)) {
+      prefPh = pPref;
+      prefPhSet = true;
+      cfgRestored = true;
+      Serial.printf("[CFG] restored preferred pH %.2f\n", pPref);
+    } else {
+      Serial.println("[CFG] ignored invalid stored preferred pH");
+    }
+  }
+  if (!tSet && !pSet) Serial.println("[CFG] no saved preferences");
+}
+
+// ---------------------------------------------------------------
 // Setup and update
 // ---------------------------------------------------------------
 void waterQualitySetup() {
@@ -867,6 +939,8 @@ void waterQualitySetup() {
   Serial.print(__TIME__);
   Serial.print(" heap=");
   Serial.println(ESP.getFreeHeap());
+
+  cfgLoad();
 
   wqSetupDone = true;
 }
@@ -1008,6 +1082,70 @@ void waterQualityUpdate() {
 
 bool waterQualityActive() {
   return wqSetupDone;
+}
+
+// Validates a preferences request and applies it only if everything is valid.
+// A blank field is passed as absent (hasTemp / hasPh false, NAN for a missing temperature end).
+// Messages already in *errors (parse failures) also block the change.
+WaterConfigResult waterQualityApplyConfig(bool hasTemp, float low, float high, bool hasPh, float ph, String* errors) {
+  WaterConfigResult r = {false, false, false};
+  String local;
+  String& e = errors ? *errors : local;
+
+  if (!wqSetupDone) e += "Water quality monitoring is not active.\n";
+  if (hasTemp) {
+    if (isnan(low) || isnan(high)) {
+      e += "Temperature range needs both a minimum and a maximum.\n";
+    } else {
+      if (isinf(low) || isinf(high) || low < CFG_TEMP_INPUT_MIN_C || low > CFG_TEMP_INPUT_MAX_C ||
+          high < CFG_TEMP_INPUT_MIN_C || high > CFG_TEMP_INPUT_MAX_C) {
+        e += "Temperature must be between 0.0 and 50.0 C.\n";
+      }
+      if (low >= high) e += "Temperature minimum must be below the maximum.\n";
+    }
+  }
+  if (hasPh && !cfgPhValid(ph)) {
+    e += "Preferred pH must be between 7.2 and 7.8. The pH operating limits cannot be changed here.\n";
+  }
+  if (e.length() > 0) {
+    String line = e;
+    line.replace('\n', ' ');
+    line.trim();
+    Serial.print("[CFG] rejected: ");
+    Serial.println(line);
+    return r;
+  }
+
+  r.ok = true;
+  bool tNew = hasTemp && !tempRangeSet;
+  bool lowChanged = hasTemp && (!tempRangeSet || tempRangeLow != low);
+  bool highChanged = hasTemp && (!tempRangeSet || tempRangeHigh != high);
+  bool pNew = hasPh && !prefPhSet;
+  bool prefChanged = hasPh && (!prefPhSet || prefPh != ph);
+  if (!lowChanged && !highChanged && !prefChanged) return r;   // nothing differs: no write
+  r.changed = true;
+
+  bool wrote = prefs.begin("wq", false);
+  if (wrote) {
+    if (tNew)        wrote = (prefs.putBool("tSet", true) > 0) && wrote;
+    if (lowChanged)  wrote = (prefs.putFloat("tLow", low) > 0) && wrote;
+    if (highChanged) wrote = (prefs.putFloat("tHigh", high) > 0) && wrote;
+    if (pNew)        wrote = (prefs.putBool("pSet", true) > 0) && wrote;
+    if (prefChanged) wrote = (prefs.putFloat("pPref", ph) > 0) && wrote;
+    prefs.end();
+  }
+
+  if (lowChanged || highChanged) waterQualitySetTempRange(low, high);
+  if (prefChanged) waterQualitySetPreferredPh(ph);
+  r.saved = wrote;
+
+  if (hasTemp && (lowChanged || highChanged)) {
+    Serial.printf("[CFG] %s temperature range %.1f to %.1f C\n", wrote ? "saved" : "applied (NOT saved)", low, high);
+  }
+  if (prefChanged) {
+    Serial.printf("[CFG] %s preferred pH %.2f\n", wrote ? "saved" : "applied (NOT saved)", ph);
+  }
+  return r;
 }
 
 // JSON helpers. Read-only: they never change monitoring state.
@@ -1173,6 +1311,28 @@ String waterQualityStatusJson() {
   js(j, turbStatusText(liveTurb));
   j += "}";
 
+  j += ",\"settings\":{\"restoredFromFlash\":";
+  jb(j, cfgRestored);
+  j += "}";
+
+  j += "}";
+  return j;
+}
+
+// Current stored preferences, for the dashboard form.
+String waterQualityConfigJson() {
+  String j;
+  j.reserve(128);
+  j += "{\"tempSet\":";
+  jb(j, tempRangeSet);
+  j += ",\"tempLow\":";
+  jf(j, tempRangeSet ? tempRangeLow : NAN, 1);
+  j += ",\"tempHigh\":";
+  jf(j, tempRangeSet ? tempRangeHigh : NAN, 1);
+  j += ",\"phSet\":";
+  jb(j, prefPhSet);
+  j += ",\"phPref\":";
+  jf(j, prefPhSet ? prefPh : NAN, 2);
   j += "}";
   return j;
 }
