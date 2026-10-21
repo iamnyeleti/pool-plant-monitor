@@ -173,21 +173,24 @@ static void logEventEnd() {
   loggingActiveEvent = false;
 }
 
+static const unsigned long SENSOR_REINIT_MS = 5000;
+static bool sensorOk = false;
+static unsigned long lastInitAttempt = 0;
+
 void vibrationSetup() {
 
   Wire.begin();
 
-  if (!mpuInit()) {
+  lastInitAttempt = millis();
 
-    Serial.println(
-        "MPU6050 not found. Check wiring "
-        "(SDA/SCL) and power.");
-
-    while (1)
-      delay(10);
+  if (mpuInit()) {
+    sensorOk = true;
+    Serial.println("Vibration module ready.");
+  } else {
+    sensorOk = false;
+    currentStatus = "SENSOR ERROR";
+    Serial.println("[Vibration] SENSOR ERROR: init failed");
   }
-
-  Serial.println("Vibration module ready.");
 
   if (CALIBRATION_MODE) {
 
@@ -272,6 +275,20 @@ static void calibrationUpdate(float rms) {
 }
 
 void vibrationUpdate() {
+
+  if (!sensorOk) {
+    if (millis() - lastInitAttempt >= SENSOR_REINIT_MS) {
+      lastInitAttempt = millis();
+      if (mpuInit()) {
+        sensorOk = true;
+        currentStatus = "OK";
+        sampleIndex = 0;
+        bufferFull = false;
+        Serial.println("[Vibration] sensor recovered");
+      }
+    }
+    return;
+  }
 
   float ax, ay, az;
 
