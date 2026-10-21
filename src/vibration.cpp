@@ -29,7 +29,7 @@ static bool mpuInit() {
 
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x1A);
-  Wire.write(DLPF_REG_VALUE); // DLPF_CFG=4, ~21Hz, below the measured ~22.6Hz Nyquist limit
+  Wire.write(DLPF_REG_VALUE); // 0x00 = ~260 Hz bandwidth (effectively unfiltered); 0x04 would be ~21 Hz
   if (Wire.endTransmission() != 0) return false;
 
   return true;
