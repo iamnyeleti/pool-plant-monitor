@@ -1,0 +1,475 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+WiFi AP started: PoolPlantRadar
+IP: 192.168.4.1
+DS18B20 temperature sensor found.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage5 build Oct 21 2026 17:10:39 heap=252956
+[CFG] restored temperature range 20.0 to 30.0 C
+[CFG] restored preferred pH 7.50
+Dashboard routes registered.
+Web server started on port 80.
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.498 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[WQ] temp: unavailable (no_reading_yet)
+[WQ] ph: unavailable (below_valid_range)
+[WQ] turb: live
+[Turbidity] At G35 pin: 1.750 V | Sensor output: 3.500 V
+[Temperature] 22.81 C
+[pH] Board output at G34: 142.0 mV
+[WQ] temp: live
+[WQ] temperature status: IN_RANGE (22.81 C)
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.499 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.740 V | Sensor output: 3.480 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.738 V | Sensor output: 3.477 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.743 V | Sensor output: 3.485 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+WiFi AP started: PoolPlantRadar
+IP: 192.168.4.1
+DS18B20 temperature sensor found.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage5 build Oct 21 2026 17:10:39 heap=252956
+[CFG] restored temperature range 20.0 to 30.0 C
+[CFG] restored preferred pH 7.50
+Dashboard routes registered.
+Web server started on port 80.
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.497 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[WQ] temp: unavailable (no_reading_yet)
+[WQ] ph: unavailable (below_valid_range)
+[WQ] turb: live
+[Turbidity] At G35 pin: 1.750 V | Sensor output: 3.501 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[WQ] temp: live
+[WQ] temperature status: IN_RANGE (22.75 C)
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.498 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.752 V | Sensor output: 3.504 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.750 V | Sensor output: 3.499 V
+[Temperature] 22.81 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.750 V | Sensor output: 3.501 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.750 V | Sensor output: 3.500 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.499 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.751 V | Sensor output: 3.502 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.499 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.498 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.499 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.498 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.749 V | Sensor output: 3.498 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.497 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.729 V | Sensor output: 3.457 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.742 V | Sensor output: 3.484 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.741 V | Sensor output: 3.481 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.731 V | Sensor output: 3.462 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.732 V | Sensor output: 3.464 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.733 V | Sensor output: 3.465 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.743 V | Sensor output: 3.487 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.742 V | Sensor output: 3.484 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.75 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.743 V | Sensor output: 3.487 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[WQ] heap=242820 minheap=228564
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.740 V | Sensor output: 3.481 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.496 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.495 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.748 V | Sensor output: 3.495 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.743 V | Sensor output: 3.487 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.747 V | Sensor output: 3.494 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.493 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.492 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.489 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.746 V | Sensor output: 3.493 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[WQ] heap=242748 minheap=228564
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.489 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.490 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.742 V | Sensor output: 3.485 V
+[Temperature] 22.69 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.744 V | Sensor output: 3.488 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV
+[Turbidity] At G35 pin: 1.745 V | Sensor output: 3.491 V
+[Temperature] 22.62 C
+[pH] Board output at G34: 142.0 mV

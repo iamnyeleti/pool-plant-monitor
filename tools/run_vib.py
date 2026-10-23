@@ -22,6 +22,7 @@ Scenarios (flash the build named for each BEFORE running):
   VP04-STOP     STOPPED and pump window verification, build esp32doit-bench
   VP05-FAULT    simulated sensor loss at 90 s, build esp32doit-bench-fault
   VP05-NOSENSOR boot with the sensor disconnected (power OFF while you unplug it)
+  VP07-ALL      acquisition timing with every module running, build esp32doit-all
 
 Options: --port COM5  --out <folder>  --note "text"  --yes  --force
          --dry-run [--speed 20]  synthetic test without hardware (NOT evidence)
@@ -142,10 +143,19 @@ def build(name):
         add(st, 0, "state nosensor", "SENSOR DISCONNECTED. Do nothing for 90 s.")
         add(st, 90, "end", "FINISHED. UNPLUG THE USB BEFORE you reconnect the sensor.", "end")
         return dict(env="esp32doit-bench", cal=0, pre=pre, steps=st, desc="Boot with the sensor disconnected")
+    if name == "VP07-ALL":
+        pre = ["Flash esp32doit-all first (every module on: vibration, clock, radar, radar server, water quality, dashboard).",
+               "Fan ON at the calibrated speed, rig untouched for the whole run. The camera board is plugged into power.",
+               "Have your phone ready to join the Wi-Fi called PoolPlantRadar. Do nothing else until the screen tells you."]
+        add(st, 0, "state running win=none", "FAN ON. Hands off the rig for the whole run (6 minutes).")
+        add(st, 20, "load camera_reset", "NOW: press the camera board's reset button once.", "in")
+        add(st, 45, "load phone_page", "NOW: join your phone to PoolPlantRadar and open http://192.168.4.1/ . Leave the page open and the phone awake.", "in")
+        add(st, 360, "end", "FINISHED. You can close the page on your phone.", "end")
+        return dict(env="esp32doit-all", cal=0, pre=pre, steps=st, desc="Acquisition timing with every module running")
     raise SystemExit("Unknown scenario: " + name)
 
 
-SCENARIO_NAMES = ["VP01-CAL", "VP01-STAB", "VP02-ONOFF", "VP03-DIST", "VP04-STOP", "VP05-FAULT", "VP05-NOSENSOR"]
+SCENARIO_NAMES = ["VP01-CAL", "VP01-STAB", "VP02-ONOFF", "VP03-DIST", "VP04-STOP", "VP05-FAULT", "VP05-NOSENSOR", "VP07-ALL"]
 
 
 class FakeSerial:
