@@ -978,11 +978,27 @@ function eventCaptureSource(oc){
  }
  return null;
 }
-function eventCaptureHtml(oc){
+function eventCaptureHtmlOld(oc){
  var src=eventCaptureSource(oc);
  var inner=src?'<img class="capture-image" src="'+esc(src)+'" alt="Camera image captured during the high-change and radar event" loading="lazy"><p class="capture-caption">Image supplied by the board for this event.</p>':
   '<div class="capture-empty"><span class="capture-symbol">▧</span><div><strong>Capture required</strong><p>High scene change and radar presence coincide. The current board response does not include an image yet.</p></div></div><p class="capture-caption">Camera firmware/API must return a capture image before it can appear here.</p>';
  return '<section class="capture-panel" aria-label="Event camera capture"><div class="capture-head"><strong>Event capture</strong><span class="capture-trigger">Trigger condition met</span></div>'+inner+'</section>';
+}
+
+/* ---- Event picture: the BROWSER asks the camera for one picture per event and keeps it in this tab only. Nothing is stored on either board. ---- */
+var capCache={src:null,img:null,failed:false};
+function capPanel(src,live){
+ return '<section class="capture-panel" aria-label="Event camera capture"><div class="capture-head"><strong>Event capture</strong><span class="capture-trigger">'+(live?'Trigger condition met':'Last event')+'</span></div>'+
+  '<div id="capSlot" data-src="'+esc(src)+'"></div><p class="capture-caption">'+(live?'Picture taken by the camera when this event was first seen.':'Picture from the most recent event.')+' It is held only in this browser tab. The board does not store it.</p></section>';
+}
+function eventCaptureHtml(oc){var src=eventCaptureSource(oc);return src?capPanel(src,true):eventCaptureHtmlOld(oc);}
+function lastCaptureHtml(){return capCache.src?capPanel(capCache.src,false):'';}
+function attachCap(){
+ var s=$('capSlot');if(!s)return;
+ var src=s.getAttribute('data-src');
+ if(capCache.src!==src){capCache.src=src;capCache.failed=false;var im=new Image();im.className='capture-image';im.alt='Camera picture from the event';im.onerror=function(){capCache.failed=true;attachCap();};im.src=src;capCache.img=im;}
+ if(capCache.failed){s.innerHTML='<div class="capture-empty"><div><strong>No picture</strong><p>The camera did not return a picture for this event.</p></div></div>';return;}
+ if(capCache.img&&!s.contains(capCache.img))s.appendChild(capCache.img);
 }
 function occCard(d){
  var rd=d.radar,oc=d.occupancy,r={items:[]},worst='ok',rank={ok:0,caution:1,attention:2};
@@ -1011,7 +1027,7 @@ function occCard(d){
   else if(rd.presence)line='Presence detected by radar only. No scene change observed.';
  }
  if(line)h+='<p class="msg" style="color:var(--caution);font-weight:700">'+esc(line)+'</p>';
- if(radarLive&&rd.presence===true&&camLive&&oc.eventActive===true)h+=eventCaptureHtml(oc);
+ if(radarLive&&rd.presence===true&&camLive&&oc.eventActive===true)h+=eventCaptureHtml(oc);else if(capCache.img)h+=lastCaptureHtml();
  h+='<p class="note">Presence is not identification, and scene change alone does not identify a person. Event capture is displayed only when an image is supplied by the board.</p>';
  r.html=h;r.worst=worst;
  var act=radarLive&&rd.presence;
@@ -1061,7 +1077,7 @@ function render(d,recordSample){
  lastData=d;
  if(recordSample!==false)recordVibrationSample(d);
  var c=[safe(vibCard,d,'Vibration'),safe(waterCard,d,'Water quality'),safe(occCard,d,'Occupancy'),safe(sysCard,d,'System')];
- paint(c[0],'pVib','bVib','cVib');paint(c[1],'pWat','bWat','cWat');paint(c[2],'pOcc','bOcc','cOcc');paint(c[3],'pSys','bSys','cSys');
+ paint(c[0],'pVib','bVib','cVib');paint(c[1],'pWat','bWat','cWat');paint(c[2],'pOcc','bOcc','cOcc');paint(c[3],'pSys','bSys','cSys');attachCap();
  var engToggle=document.querySelector('[data-engineering-toggle]');
  if(engToggle)engToggle.onclick=function(){showEngineeringValues=!showEngineeringValues;if(lastData)render(lastData,false);};
  var o=overall(c);
@@ -1195,7 +1211,6 @@ poll();
 </script>
 </body>
 </html>
-
 )HTML";
 
 static String boolJson(bool v) { return v ? "true" : "false"; }
@@ -1272,7 +1287,11 @@ static String occupancyJson() {
          ",\"eventActive\":" + numOrNull(live, boolJson(dashboardOccupancyEventActive())) +
          ",\"changePercent\":" + numOrNull(live, String(dashboardOccupancyChangePercent(), 1)) +
          ",\"lastEvent\":" + (le.length() ? "\"" + le + "\"" : String("null")) +
-         ",\"heartbeatAgeMs\":" + (age >= 0 ? String(age) : String("null")) + "}";
+         ",\"heartbeatAgeMs\":" + (age >= 0 ? String(age) : String("null")) +
+         ",\"cameraIp\":" + (occupancySenderIP.length() ? "\"" + occupancySenderIP + "\"" : String("null")) +
+         ",\"captureUrl\":" + ((live && dashboardOccupancyEventActive() && occupancySenderIP.length())
+             ? "\"http://" + occupancySenderIP + "/capture?e=" + String(dashboardOccupancyEventCount()) + "\""
+             : String("null")) + "}";
 }
 
 static String scheduleJson() {
