@@ -9,6 +9,8 @@ static const int RADAR_OUT_PIN = 5;
 ld2410 radar;
 static bool radarReady = false;
 static bool radarSetupRun = false;
+static unsigned long lastFrameMs = 0;
+static const unsigned long RADAR_FRAME_FRESH_MS = 1000;
 
 static bool presenceDetected = false;
 static unsigned long lastPrintTime = 0;
@@ -35,6 +37,7 @@ void radarUpdate() {
 
   if (radarReady) {
     radar.read();
+    if (radar.isConnected()) lastFrameMs = millis();
   }
 
   if (millis() - lastPrintTime >= PRINT_INTERVAL_MS) {
@@ -81,4 +84,24 @@ bool radarIsActive() {
 
 bool radarUartReady() {
   return radarReady;
+}
+
+bool radarMoving() {
+  return radarReady && radar.movingTargetDetected();
+}
+
+bool radarStationary() {
+  return radarReady && radar.stationaryTargetDetected();
+}
+
+int radarDistanceCm() {
+  return radarReady ? radar.detectionDistance() : 0;
+}
+
+bool radarFrameFresh() {
+  return radarReady && lastFrameMs != 0 && millis() - lastFrameMs < RADAR_FRAME_FRESH_MS;
+}
+
+long radarLastFrameAgeMs() {
+  return lastFrameMs == 0 ? -1 : (long)(millis() - lastFrameMs);
 }

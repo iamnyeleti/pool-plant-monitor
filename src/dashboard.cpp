@@ -6,6 +6,8 @@
 #include "vibration.h"
 #include "schedule.h"
 #include "water_quality.h"
+#include "radar.h"
+#include "module_flags.h"
 
 static unsigned long lastOccupancyHeartbeat = 0;
 static unsigned long lastOccPrint = 0;
@@ -168,28 +170,97 @@ static void handleRoot() {
   networkServer().send_P(200, "text/html", DASHBOARD_HTML);
 }
 
+// Same state/reason/ageMs pattern as the water channels. reason and ageMs are null when not meaningful.
+static String stateFields(const char* state, const char* reason, long ageMs) {
+  String s = "\"state\":\"" + String(state) + "\",\"reason\":";
+  s += reason ? "\"" + String(reason) + "\"" : String("null");
+  s += ",\"ageMs\":" + (ageMs >= 0 ? String(ageMs) : String("null"));
+  return s;
+}
+
+static String numOrNull(bool live, String v) { return live ? v : String("null"); }
+
+// 3 x the ~22 ms read interval is below the 2000 ms floor, so the floor applies.
+static const long VIB_STALE_MS = 2000;
+
+static String vibrationJson() {
+  String status = vibrationGetStatus(), st;
+#if CFG_VIBRATION_CONNECTED
+  long age = vibrationGetLastGoodAgeMs();
+  if (status == "SENSOR ERROR") st = stateFields("unavailable", "sensor_error", age);
+  else if (age > VIB_STALE_MS)  st = stateFields("stale", "stale", age);
+  else                          st = stateFields("live", nullptr, age);
+#else
+  status = "DISABLED";
+  st = stateFields("disabled", "disabled", -1);
+#endif
+  return "{" + st + ",\"status\":\"" + status + "\"," +
+    "\"rms\":" + String(vibrationGetRMS(), 4) + ",\"baseline\":" + String(vibrationGetBaseline(), 4) +
+    ",\"cautionThreshold\":" + String(vibrationGetCautionThreshold(), 4) +
+    ",\"warningThreshold\":" + String(vibrationGetWarningThreshold(), 4) + "}";
+}
+
+static String rtcJson() {
+  String st = !CFG_RTC_CONNECTED ? stateFields("disabled", "disabled", -1)
+            : scheduleIsReady()  ? stateFields("live", nullptr, -1)
+                                 : stateFields("unavailable", "not_found", -1);
+  return "{" + st + ",\"ready\":" + boolJson(scheduleIsReady()) +
+         ",\"time\":\"" + scheduleGetTimeString() + "\"}";
+}
+
+static String radarJson() {
+  bool live = false;
+  String st;
+#if CFG_RADAR_CONNECTED
+  if (!radarUartReady())       st = stateFields("unavailable", "uart_failed", -1);
+  else if (!radarFrameFresh()) st = stateFields("stale", "stale", radarLastFrameAgeMs());
+  else { st = stateFields("live", nullptr, radarLastFrameAgeMs()); live = true; }
+#else
+  st = stateFields("disabled", "disabled", -1);
+#endif
+  return "{" + st + ",\"presence\":" + numOrNull(live, boolJson(radarPresenceDetected())) +
+         ",\"distanceCm\":" + numOrNull(live, String(radarDistanceCm())) +
+         ",\"moving\":" + numOrNull(live, boolJson(radarMoving())) +
+         ",\"stationary\":" + numOrNull(live, boolJson(radarStationary())) + "}";
+}
+
+static String occupancyJson() {
+  bool never = lastOccupancyHeartbeat == 0;
+  long age = never ? -1 : (long)(millis() - lastOccupancyHeartbeat);
+  bool live = !never && age < 10000;
+  String st = never ? stateFields("unavailable", "no_heartbeat_yet", -1)
+            : live  ? stateFields("live", nullptr, age)
+                    : stateFields("stale", "stale", age);
+  String le = dashboardOccupancyLastEventTime();
+  // Count and last event are kept when stale; eventActive and changePercent are only meaningful live.
+  return "{" + st + ",\"moduleOnline\":" + boolJson(live) +
+         ",\"eventCount\":" + numOrNull(!never, String(dashboardOccupancyEventCount())) +
+         ",\"eventActive\":" + numOrNull(live, boolJson(dashboardOccupancyEventActive())) +
+         ",\"changePercent\":" + numOrNull(live, String(dashboardOccupancyChangePercent(), 1)) +
+         ",\"lastEvent\":" + (le.length() ? "\"" + le + "\"" : String("null")) +
+         ",\"heartbeatAgeMs\":" + (age >= 0 ? String(age) : String("null")) + "}";
+}
+
+static String scheduleJson() {
+#if CFG_VIBRATION_CONNECTED
+  bool set = vibrationPumpWindowSet();
+  int w = vibrationPumpWindowState();
+  int sm = vibrationPumpStartMinute(), em = vibrationPumpEndMinute();
+  return "{" + stateFields("live", nullptr, -1) + ",\"windowSet\":" + boolJson(set) +
+         ",\"startHour\":" + numOrNull(set, String(sm / 60)) + ",\"startMinute\":" + numOrNull(set, String(sm % 60)) +
+         ",\"endHour\":" + numOrNull(set, String(em / 60)) + ",\"endMinute\":" + numOrNull(set, String(em % 60)) +
+         ",\"monitoringNow\":" + (w < 0 ? String("null") : boolJson(w == 1)) + "}";
+#else
+  return "{" + stateFields("disabled", "vibration_module_disabled", -1) + ",\"windowSet\":false,\"monitoringNow\":null}";
+#endif
+}
+
 static void handleStatus() {
-  bool occupancyOnline = lastOccupancyHeartbeat != 0 && (millis() - lastOccupancyHeartbeat < 10000);
-
-  String json = "{";
-  json += "\"vibration\":{";
-  json += "\"status\":\"" + vibrationGetStatus() + "\",";
-  json += "\"rms\":" + String(vibrationGetRMS(), 4) + ",";
-  json += "\"baseline\":" + String(vibrationGetBaseline(), 4) + ",";
-  json += "\"cautionThreshold\":" + String(vibrationGetCautionThreshold(), 4) + ",";
-  json += "\"warningThreshold\":" + String(vibrationGetWarningThreshold(), 4);
-  json += "},";
-  json += "\"rtc\":{";
-  json += "\"ready\":" + boolJson(scheduleIsReady()) + ",";
-  json += "\"time\":\"" + scheduleGetTimeString() + "\"";
-  json += "},";
-  json += "\"occupancy\":{";
-  json += "\"moduleOnline\":" + boolJson(occupancyOnline) + ",";
-  json += "\"detectionImplemented\":false";
-  json += "},";
-  json += "\"water\":" + waterQualityStatusJson();
-  json += "}";
-
+  String json;
+  json.reserve(2048);
+  json = "{\"vibration\":" + vibrationJson() + ",\"rtc\":" + rtcJson() +
+         ",\"radar\":" + radarJson() + ",\"occupancy\":" + occupancyJson() +
+         ",\"schedule\":" + scheduleJson() + ",\"water\":" + waterQualityStatusJson() + "}";
   networkServer().sendHeader("Cache-Control", "no-store");
   networkServer().send(200, "application/json", json);
 }

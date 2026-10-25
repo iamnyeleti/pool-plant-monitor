@@ -876,6 +876,12 @@ float vibrationGetWarningThreshold() {
   return warningThreshold();
 }
 
+long vibrationGetLastGoodAgeMs() { return lastGoodMs == 0 ? -1 : (long)(millis() - lastGoodMs); }
+bool vibrationPumpWindowSet()    { return pumpSet; }
+int  vibrationPumpStartMinute()  { return pumpStart; }
+int  vibrationPumpEndMinute()    { return pumpEnd; }
+int  vibrationPumpWindowState()  { return pumpState == PS_INSIDE ? 1 : pumpState == PS_OFF ? 0 : -1; }
+
 
 // ======================================================
 // TREND ACCESS FUNCTIONS
