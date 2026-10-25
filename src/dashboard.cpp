@@ -251,7 +251,7 @@ static String scheduleJson() {
          ",\"endHour\":" + numOrNull(set, String(em / 60)) + ",\"endMinute\":" + numOrNull(set, String(em % 60)) +
          ",\"monitoringNow\":" + (w < 0 ? String("null") : boolJson(w == 1)) + "}";
 #else
-  return "{" + stateFields("disabled", "vibration_module_disabled", -1) + ",\"windowSet\":false,\"monitoringNow\":null}";
+  return "{" + stateFields("disabled", "vibration_module_disabled", -1) + ",\"windowSet\":false,\"startHour\":null,\"startMinute\":null,\"endHour\":null,\"endMinute\":null,\"monitoringNow\":null}";
 #endif
 }
 
