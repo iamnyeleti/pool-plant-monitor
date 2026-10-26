@@ -1,0 +1,19 @@
+# VP07-ALL: criteria fixed before the run
+
+Written Monday 26 October 2026, **before** VP07-ALL is run. This file is committed to Git before the run, so the commit time shows the criteria were fixed in advance. It supplements the dated entries in `Vibration_Test_Protocol.md`.
+
+- 26 Oct 2026, before VP07-ALL is run: **V-P07 revised and extended. These criteria are fixed before the run.** The 22 Oct entry in `Vibration_Test_Protocol.md` still applies (build `esp32doit-all`, fan at the calibrated speed, 6 minutes, hands off the rig, camera board reset at 20 s, dashboard opened at 45 s, `[TIMING]` windows labelled ramp-up or loaded, criterion: no interval over 50 ms and no read errors in the loaded windows). Changes and additions:
+  1. **The pH probe and the turbidity sensor are NOT calibrated in this run, on purpose.** The pH buffers left are reserved for the demonstration, and reused buffer is rejected by the acceptance window. The channels are connected and sampled; the expected state is raw input live, pH status UNAVAILABLE with no pH value, turbidity NO_BASELINE.
+  2. **The clock is set before the run** by erasing the old firmware, forcing a lost-power reset (coin cell out for 15 s) and uploading a fresh build, so the first start sets the clock from the new build time (no code change). Its offset from the laptop is recorded before and after, and during the run.
+  3. **The device that opens the dashboard at 45 s is an iPad**, not a phone (same role: a second client holding the page open). **A logger on the laptop (`status_log.py`) reads `/api/status` every 2 s from 45 s** and saves it. The run therefore has two polling clients. Timing results are for that load.
+  4. **Scripted steps are added after the page opens** and are written into the log as `#SCRIPT` markers: screenshot at 60 s (radar-only state, at an AWAY spot inside the radar range and outside the camera's view); step into the camera's view at 70 s and out of the radar's range at 90 s; again at 200 s and 220 s; screenshots at 85, 120, 215, 300 and 320 s; CSV download at 320 s.
+  5. **The camera's reference frame** is taken by the camera 15 s after the camera board itself restarts; the operator stays out of the camera's view for 40 s after pressing its reset button.
+  6. **Allowances and thresholds fixed now:** a step in or out has 15 s for the radar and camera to react; each module must report its expected state in at least 95% of polls taken after 75 s; the board must answer at least 95% of polls; the clock must lie within 300 s of the laptop and keep its offset to within 5 s over the run.
+  7. **Criteria (each PASS or FAIL, reported even if it fails):**
+     - C1 loaded `[TIMING]` windows: no interval over 50 ms, no read errors (FR-S05).
+     - C2 each module reports its expected state; the uncalibrated pH shows no pH value; turbidity reports NO_BASELINE (FR-S04).
+     - C3 each step in: the radar sees presence and the event count rises by exactly one within 15 s; each step out: the radar clears and the event closes within 15 s (FR-O01).
+     - C4 at the AWAY spot: radar presence with a valid camera change below 15% and no event (shows the reference frame exists); after step out 1: radar presence false.
+     - C5 clock within 300 s and steady to 5 s (FR-S01).
+     - C6 at least 95% of polls answered (FR-S02).
+  8. **Not tested in this run, and reported as such:** the calibrated pH state inside the full system; the calibrated turbidity baseline; persistence of settings across a restart (separate quick test); the camera rejoining after the main board restarts (separate timed test).
