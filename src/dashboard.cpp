@@ -729,6 +729,10 @@ body.connection-lost .card[data-v="attention"],body.connection-lost #cVib[data-v
  .history-panel{border-radius:8px}
 }
 @media(prefers-reduced-motion:reduce){.hdr,.meta,.conn,.overall,.card,.history-panel{transition:none!important}}
+
+.btn-dl{margin-top:14px;padding:10px 15px;font-size:15px;font-weight:700;color:#0b5f6a;background:#fff;border:1px solid #128e9a;border-radius:4px;cursor:pointer}
+.btn-dl:disabled{opacity:.45;cursor:not-allowed}
+.btn-dl:focus-visible{outline:3px solid #128e9a;outline-offset:2px}
 </style>
 
 </head>
@@ -775,6 +779,7 @@ var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&
 var num=function(v){return typeof v==='number'&&isFinite(v);};
 var fx=function(v,d){return num(v)?v.toFixed(d):null;};
 var vibrationSamples=[];
+var exportLog=[];
 var showEngineeringValues=false;
 
 var REASON={disabled:'Switched off in this firmware build',module_inactive:'Module is not running',not_found:'Sensor not found',
@@ -797,6 +802,8 @@ function recordVibrationSample(d){
  if(m && mst(m)==='live' && num(m.rms)){
   vibrationSamples.push({time:Date.now(),value:m.rms});
   if(vibrationSamples.length>60)vibrationSamples.shift();
+  exportLog.push({t:Date.now(),status:m.status,rms:m.rms,baseline:m.baseline,caution:m.cautionThreshold,warning:m.warningThreshold,clock:(d.rtc&&d.rtc.time)||''});
+  if(exportLog.length>5000)exportLog.shift();
  }
 }
 var boardHist=null;
@@ -907,7 +914,7 @@ function vibCard(d){
  }else{h+='<p class="msg">No baseline is set, so the reading cannot be compared.</p>';}
  r.html=h+vibrationHistoryHtml(m)+btn();return r;
 }
-function btn(){return '<button class="btn-off" type="button" disabled>Calibrate baseline: not implemented</button><p class="note">The baseline is set in the firmware build. '+(boardHist&&boardHist.mean&&boardHist.mean.length>=2?'The graph above is stored on the board in memory (one point per minute, up to 24 hours) and is lost at restart.':'The graph above keeps up to 60 readings in this browser session; it is not stored history.')+'</p>';}
+function btn(){return '<button class="btn-off" type="button" disabled>Calibrate baseline: not implemented</button> <button id="dlCsv" class="btn-dl" type="button"'+(exportLog.length?'':' disabled')+'>Download readings (CSV)</button><p class="note">Readings in the file: '+exportLog.length+' (up to 5,000, about 3.5 hours) received by this phone since the page was opened. They are saved by the phone, not stored on the board, and are lost if the page is closed. Times are the phone\'s clock; the board\'s own clock was not reliable.</p><p class="note">The baseline is set in the firmware build. '+(boardHist&&boardHist.mean&&boardHist.mean.length>=2?'The graph above is stored on the board in memory (one point per minute, up to 24 hours) and is lost at restart.':'The graph above keeps up to 60 readings in this browser session; it is not stored history.')+'</p>';}
 
 function chResult(level,items){return {level:level,items:items};}
 function waterCard(d){
@@ -1203,6 +1210,23 @@ function initDemo(){
 }
 
 bindPref();
+
+function csvCell(v){v=String(v==null?'':v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function buildCsv(){
+ var rows=['phone_time_iso,seconds_since_first_reading,source,status,rms_m_s2,baseline_m_s2,caution_threshold_m_s2,warning_threshold_m_s2,board_clock_as_reported'];
+ var t0=exportLog.length?exportLog[0].t:0;
+ exportLog.forEach(function(r){rows.push([new Date(r.t).toISOString(),((r.t-t0)/1000).toFixed(1),LIVE?'board':'SIMULATED',r.status,r.rms,r.baseline,r.caution,r.warning,r.clock].map(csvCell).join(','));});
+ return rows.join('\r\n')+'\r\n';
+}
+function downloadCsv(){
+ if(!exportLog.length)return;
+ var blob=new Blob([buildCsv()],{type:'text/csv;charset=utf-8'});
+ var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+ a.download='pool_plant_vibration_'+new Date().toISOString().replace(/[:.]/g,'-').slice(0,19)+'.csv';
+ document.body.appendChild(a);a.click();
+ setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(a.href);},1000);
+}
+document.addEventListener('click',function(e){var b=e.target&&e.target.closest?e.target.closest('#dlCsv'):null;if(b&&!b.disabled)downloadCsv();});
 if(!LIVE)initDemo();
 if(LIVE){loadHistory();setInterval(loadHistory,30000);}
 setLost(true);
