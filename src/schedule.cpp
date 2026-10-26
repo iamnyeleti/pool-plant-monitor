@@ -60,6 +60,12 @@ bool scheduleGetMinuteOfDay(int* minuteOfDay) {
   return true;
 }
 
+bool scheduleSetTime(int year, int month, int day, int hour, int minute, int second) {
+  if (!RTC_INSTALLED || !rtcReady) return false;
+  rtc.adjust(DateTime(year, month, day, hour, minute, second));
+  return true;
+}
+
 String scheduleGetTimeString() {
   if (!RTC_INSTALLED || !rtcReady) return "RTC unavailable";
 

@@ -299,6 +299,24 @@ static void pumpHandleCommand(String s) {
     } else {
       Serial.println("[Vibration] PUMP usage: PUMP HH:MM HH:MM | PUMP CLEAR | PUMP?");
     }
+  } else if (s == "TIME" || s.startsWith("TIME ")) {
+    int y, mo, d, h, mi, sec;
+    char tail;
+    if (sscanf(s.c_str() + 4, "%d-%d-%d %d:%d:%d %c", &y, &mo, &d, &h, &mi, &sec, &tail) != 6) {
+      Serial.println("[RTC] time not set: usage TIME YYYY-MM-DD HH:MM:SS");
+      return;
+    }
+    static const int daysIn[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    bool leap = (y % 4 == 0 && y % 100 != 0) || (y % 400 == 0);
+    int maxDay = (mo >= 1 && mo <= 12) ? daysIn[mo - 1] + ((mo == 2 && leap) ? 1 : 0) : 0;
+    if (y < 2026 || y > 2099 || mo < 1 || mo > 12 || d < 1 || d > maxDay ||
+        h < 0 || h > 23 || mi < 0 || mi > 59 || sec < 0 || sec > 59) {
+      Serial.println("[RTC] time not set: value out of range");
+    } else if (!scheduleSetTime(y, mo, d, h, mi, sec)) {
+      Serial.println("[RTC] time not set: clock module not ready");
+    } else {
+      Serial.printf("[RTC] time set to %04d-%02d-%02d %02d:%02d:%02d\n", y, mo, d, h, mi, sec);
+    }
   }
 }
 
