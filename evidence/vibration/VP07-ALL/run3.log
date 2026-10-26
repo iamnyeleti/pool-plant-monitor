@@ -1,0 +1,1810 @@
+22:07:48.745 > #SCRIPT runner_start scenario=VP07-ALL run=3 version=1.1
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.748 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.749 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.750 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.940 >  10.326
+22:07:48.941 >  10.326
+22:07:48.941 >  10.326
+22:07:48.941 >  10.326
+22:07:48.941 >  10.326
+22:07:48.941 >  10.326
+22:07:48.941 > ets Jul 29 2019 12:21:46
+22:07:48.941 > rst:0x1 (POWERON_RESET�ets Jul 29 2019 12:21:46
+22:07:48.941 > rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+22:07:48.941 > configsip: 0, SPIWP:0xee
+22:07:48.941 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+22:07:48.941 > mode:DIO, clock div:2
+22:07:48.941 > load:0x3fff0030,len:1184
+22:07:48.941 > load:0x40078000,len:13232
+22:07:48.941 > load:0x40080400,len:3028
+22:07:48.941 > entry 0x400805e4
+22:07:49.564 > Pool Plant Monitor starting...
+22:07:49.564 > WiFi AP started: PoolPlantRadar
+22:07:49.564 > IP: 192.168.4.1
+22:07:49.564 > Vibration module ready.
+22:07:49.564 > [CFG] dlpf=0x00 baseline=0.5356 caution_mult=1.20 warning_mult=1.50 window=6000 fraction=0.50 sample_delay_ms=20 calibration=0 stopped_std=0.102 stopped_hold_s=60 build=Oct 26 2026 21:30:55
+22:07:49.564 > RTC already keeping time correctly, leaving it alone.
+22:07:49.564 > RTC module ready.
+22:07:49.766 > Radar module ready (UART connected).
+22:07:49.766 > Radar server route registered.
+22:07:49.867 > DS18B20 temperature sensor found.
+22:07:49.867 > Water quality module ready (turbidity, temperature and raw pH voltage).
+22:07:49.867 > [WQ] stage5 build Oct 26 2026 21:30:56 heap=236372
+22:07:49.867 > [   444][E][Preferences.cpp:50] begin(): nvs_open failed: NOT_FOUND
+22:07:49.867 > [CFG] no saved preferences
+22:07:49.867 > Dashboard routes registered.
+22:07:49.867 > Web server started on port 80.
+22:07:49.867 > [Vibration] Stopped detection off: no pump schedule
+22:07:49.867 > [Vibration] Status: OK | RMS: 0.363 | Magnitude: 10.163 | X: 0.935 Y: 0.278 Z: 10.116
+22:07:50.072 > [Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 64cm energy:100 | Distance: 55cm
+22:07:50.072 > [Vibration] Status: OK | RMS: 0.578 | Magnitude: 10.549 | X: 0.347 Y: 0.433 Z: 10.535
+22:07:50.487 > [Vibration] Status: OK | RMS: 0.573 | Magnitude: 10.464 | X: -0.057 Y: -0.167 Z: 10.463
+22:07:50.487 > [STD] std=0.4535 n=23 stopped=0
+22:07:50.487 > 2026-10-26 22:05:59
+22:07:50.487 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:07:50.487 > [Temperature] no valid reading yet
+22:07:50.487 > [pH] Board output at G34: 1721.8 mV
+22:07:50.487 > [WQ] temp: unavailable (no_reading_yet)
+22:07:50.487 > [WQ] ph: live
+22:07:50.488 > [WQ] turb: live
+22:07:50.488 > [Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+22:07:50.565 > #SCRIPT state running win=none
+22:07:50.690 > [Vibration] Status: OK | RMS: 0.589 | Magnitude: 9.892 | X: 0.108 Y: 0.022 Z: 9.891
+22:07:50.896 > [Vibration] Status: OK | RMS: 0.561 | Magnitude: 9.709 | X: 0.194 Y: 0.301 Z: 9.702
+22:07:51.098 > [Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 72cm energy:100 | Distance: 53cm
+22:07:51.303 > [Vibration] Status: OK | RMS: 0.607 | Magnitude: 9.728 | X: 0.232 Y: 0.361 Z: 9.719
+22:07:51.505 > [STD] std=0.5304 n=50 stopped=0
+22:07:51.505 > 2026-10-26 22:06:00
+22:07:51.505 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:07:51.505 > [Temperature] 22.75 C
+22:07:51.505 > [pH] Board output at G34: 1721.1 mV
+22:07:51.505 > [WQ] temp: live
+22:07:51.505 > [Vibration] Status: OK | RMS: 0.605 | Magnitude: 9.109 | X: 0.062 Y: 0.356 Z: 9.101
+22:07:51.505 > [Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 68cm energy:100 | Distance: 53cm
+22:07:51.709 > [Vibration] Status: OK | RMS: 0.617 | Magnitude: 10.324 | X: 0.144 Y: 0.687 Z: 10.300
+22:07:52.121 > [Vibration] Status: OK | RMS: 0.634 | Magnitude: 10.279 | X: -0.017 Y: 0.830 Z: 10.245
+22:07:52.121 > [Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 106cm energy:100 | Distance: 58cm
+22:07:52.329 > [Vibration] Status: OK | RMS: 0.608 | Magnitude: 9.656 | X: 0.141 Y: 0.261 Z: 9.652
+22:07:52.536 > [STD] std=0.5345 n=50 stopped=0
+22:07:52.536 > 2026-10-26 22:06:01
+22:07:52.536 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:07:52.536 > [Temperature] 22.75 C
+22:07:52.536 > [pH] Board output at G34: 1720.5 mV
+22:07:52.536 > [Vibration] Status: OK | RMS: 0.639 | Magnitude: 8.358 | X: -0.074 Y: 0.213 Z: 8.355
+22:07:52.537 > [Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+22:07:52.741 > [EVENT] 2026-10-26 22:06:02 elevated_vibration duration_ms=171 peak_rms=0.666 warning=0
+22:07:52.742 > [Vibration] Status: OK | RMS: 0.639 | Magnitude: 9.842 | X: 0.311 Y: 0.347 Z: 9.831
+22:07:53.161 > [Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 53cm energy:100 | Distance: 49cm
+22:07:53.161 > [Vibration] Status: CAUTION | RMS: 0.708 | Magnitude: 11.240 | X: 0.206 Y: 0.409 Z: 11.231
+22:07:53.361 > [Vibration] Status: CAUTION | RMS: 0.723 | Magnitude: 10.147 | X: 0.194 Y: 0.589 Z: 10.128
+22:07:53.569 > [STD] std=0.6830 n=50 stopped=0
+22:07:53.569 > 2026-10-26 22:06:02
+22:07:53.569 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:07:53.569 > [Temperature] 22.75 C
+22:07:53.569 > [pH] Board output at G34: 1720.1 mV
+22:07:53.569 > [Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 76cm energy:100 | Distance: 49cm
+22:07:53.570 > [Vibration] Status: CAUTION | RMS: 0.733 | Magnitude: 9.294 | X: 0.242 Y: 0.223 Z: 9.288
+22:07:53.979 > [Vibration] Status: CAUTION | RMS: 0.697 | Magnitude: 10.250 | X: 0.603 Y: 0.694 Z: 10.209
+22:07:54.186 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 73cm energy:100 | Distance: 53cm
+22:07:54.186 > [Vibration] Status: CAUTION | RMS: 0.649 | Magnitude: 9.928 | X: 0.108 Y: -0.261 Z: 9.924
+22:07:54.386 > [EVENT] 2026-10-26 22:06:02 elevated_vibration duration_ms=1526 peak_rms=0.747 warning=0
+22:07:54.387 > [Vibration] Status: OK | RMS: 0.615 | Magnitude: 9.954 | X: 0.311 Y: 0.543 Z: 9.934
+22:07:54.588 > [STD] std=0.5800 n=50 stopped=0
+22:07:54.588 > 2026-10-26 22:06:03
+22:07:54.588 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:07:54.589 > [Temperature] 22.69 C
+22:07:54.589 > [pH] Board output at G34: 1720.9 mV
+22:07:54.589 > [Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 63cm energy:100 | Distance: 55cm
+22:07:54.789 > [Vibration] Status: OK | RMS: 0.637 | Magnitude: 10.651 | X: 0.785 Y: 0.476 Z: 10.611
+22:07:54.789 > [EVENT] 2026-10-26 22:06:04 elevated_vibration duration_ms=26 peak_rms=0.658 warning=0
+22:07:54.991 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.449 | X: 0.256 Y: 0.313 Z: 10.441
+22:07:54.991 > [EVENT] 2026-10-26 22:06:04 elevated_vibration duration_ms=269 peak_rms=0.668 warning=0
+22:07:55.198 > [Radar] OUT: HIGH | Moving: 87cm energy:100 | Still: 78cm energy:100 | Distance: 57cm
+22:07:55.199 > [Vibration] Status: CAUTION | RMS: 0.666 | Magnitude: 10.555 | X: 0.089 Y: 0.821 Z: 10.523
+22:07:55.413 > [Vibration] Status: CAUTION | RMS: 0.707 | Magnitude: 9.935 | X: 0.153 Y: -0.005 Z: 9.934
+22:07:55.619 > [STD] std=0.4598 n=50 stopped=0
+22:07:55.619 > 2026-10-26 22:06:04
+22:07:55.619 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:07:55.619 > [Temperature] 22.69 C
+22:07:55.619 > [pH] Board output at G34: 1720.9 mV
+22:07:55.619 > [Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 79cm energy:100 | Distance: 57cm
+22:07:55.832 > [Vibration] Status: CAUTION | RMS: 0.733 | Magnitude: 10.266 | X: 0.632 Y: 0.467 Z: 10.235
+22:07:56.038 > [Vibration] Status: CAUTION | RMS: 0.723 | Magnitude: 10.248 | X: 0.914 Y: 0.775 Z: 10.178
+22:07:56.243 > [Radar] OUT: HIGH | Moving: 75cm energy:87 | Still: 65cm energy:100 | Distance: 55cm
+22:07:56.243 > [Vibration] Status: CAUTION | RMS: 0.767 | Magnitude: 10.749 | X: 0.148 Y: 0.062 Z: 10.747
+22:07:56.458 > [STD] std=0.6120 n=50 stopped=0
+22:07:56.458 > 2026-10-26 22:06:05
+22:07:56.458 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.569 V
+22:07:56.458 > [Temperature] 22.69 C
+22:07:56.458 > [pH] Board output at G34: 1720.0 mV
+22:07:56.664 > [Vibration] Status: CAUTION | RMS: 0.783 | Magnitude: 10.703 | X: 0.352 Y: -0.014 Z: 10.697
+22:07:56.664 > [Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+22:07:56.866 > [Vibration] Status: CAUTION | RMS: 0.763 | Magnitude: 11.454 | X: 0.340 Y: 0.488 Z: 11.439
+22:07:57.071 > [Vibration] Status: CAUTION | RMS: 0.752 | Magnitude: 10.645 | X: 0.323 Y: 0.220 Z: 10.637
+22:07:57.279 > [Radar] OUT: HIGH | Moving: 69cm energy:76 | Still: 61cm energy:100 | Distance: 51cm
+22:07:57.485 > [Vibration] Status: CAUTION | RMS: 0.785 | Magnitude: 9.282 | X: 0.036 Y: 0.139 Z: 9.281
+22:07:57.485 > [STD] std=0.7185 n=50 stopped=0
+22:07:57.485 > 2026-10-26 22:06:06
+22:07:57.485 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:07:57.485 > [Temperature] 22.75 C
+22:07:57.485 > [pH] Board output at G34: 1719.1 mV
+22:07:57.690 > [Vibration] Status: CAUTION | RMS: 0.744 | Magnitude: 9.712 | X: 0.431 Y: 0.328 Z: 9.697
+22:07:57.690 > [Radar] OUT: HIGH | Moving: 76cm energy:73 | Still: 78cm energy:100 | Distance: 54cm
+22:07:57.890 > [Vibration] Status: CAUTION | RMS: 0.714 | Magnitude: 10.552 | X: 0.347 Y: 0.227 Z: 10.544
+22:07:58.111 > [Vibration] Status: CAUTION | RMS: 0.652 | Magnitude: 10.322 | X: 0.237 Y: 0.246 Z: 10.317
+22:07:58.319 > [Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 76cm energy:100 | Distance: 54cm
+22:07:58.525 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.422 | X: 0.385 Y: 0.089 Z: 10.415
+22:07:58.525 > [EVENT] 2026-10-26 22:06:04 elevated_vibration duration_ms=3401 peak_rms=0.791 warning=0
+22:07:58.525 > [STD] std=0.5662 n=50 stopped=0
+22:07:58.525 > 2026-10-26 22:06:08
+22:07:58.525 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:07:58.525 > [Temperature] 22.69 C
+22:07:58.525 > [pH] Board output at G34: 1719.8 mV
+22:07:58.729 > [Vibration] Status: OK | RMS: 0.617 | Magnitude: 10.245 | X: 0.005 Y: 0.211 Z: 10.243
+22:07:58.729 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+22:07:58.944 > [Vibration] Status: OK | RMS: 0.619 | Magnitude: 9.645 | X: 0.045 Y: 0.383 Z: 9.637
+22:07:59.145 > [Vibration] Status: OK | RMS: 0.626 | Magnitude: 9.673 | X: 0.608 Y: 0.287 Z: 9.649
+22:07:59.145 > [Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 63cm energy:100 | Distance: 54cm
+22:07:59.558 > [Vibration] Status: OK | RMS: 0.641 | Magnitude: 10.143 | X: 0.105 Y: 0.502 Z: 10.130
+22:07:59.558 > [STD] std=0.4371 n=50 stopped=0
+22:07:59.558 > 2026-10-26 22:06:09
+22:07:59.558 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:07:59.558 > [Temperature] 22.75 C
+22:07:59.558 > [pH] Board output at G34: 1721.2 mV
+22:07:59.772 > [Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 75cm energy:100 | Distance: 56cm
+22:07:59.772 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 10.559 | X: 1.134 Y: 0.892 Z: 10.460
+22:07:59.772 > [EVENT] 2026-10-26 22:06:09 elevated_vibration duration_ms=26 peak_rms=0.647 warning=0
+22:07:59.974 > [Vibration] Status: CAUTION | RMS: 0.713 | Magnitude: 8.512 | X: -0.447 Y: -0.270 Z: 8.496
+22:08:00.176 > [Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 66cm energy:100 | Distance: 55cm
+22:08:00.378 > [Vibration] Status: CAUTION | RMS: 0.768 | Magnitude: 9.307 | X: -0.510 Y: -0.426 Z: 9.283
+22:08:00.580 > [STD] std=0.6394 n=50 stopped=0
+22:08:00.580 > [Vibration] Status: CAUTION | RMS: 0.792 | Magnitude: 10.407 | X: 0.641 Y: 0.610 Z: 10.369
+22:08:00.580 > 2026-10-26 22:06:10
+22:08:00.580 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:00.580 > [Temperature] 22.69 C
+22:08:00.580 > [pH] Board output at G34: 1719.9 mV
+22:08:00.781 > [Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+22:08:00.781 > [Vibration] Status: CAUTION | RMS: 0.776 | Magnitude: 9.352 | X: 0.395 Y: 0.615 Z: 9.324
+22:08:01.194 > [Vibration] Status: CAUTION | RMS: 0.787 | Magnitude: 10.314 | X: 0.266 Y: -0.134 Z: 10.310
+22:08:01.194 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 68cm energy:100 | Distance: 55cm
+22:08:01.401 > [Vibration] Status: CAUTION | RMS: 0.733 | Magnitude: 11.256 | X: 0.426 Y: -0.007 Z: 11.248
+22:08:01.602 > [STD] std=0.5217 n=50 stopped=0
+22:08:01.602 > 2026-10-26 22:06:11
+22:08:01.602 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:08:01.603 > [Temperature] 22.75 C
+22:08:01.603 > [pH] Board output at G34: 1721.0 mV
+22:08:01.603 > [Vibration] Status: CAUTION | RMS: 0.721 | Magnitude: 10.431 | X: 0.177 Y: 0.313 Z: 10.424
+22:08:01.814 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 81cm energy:100 | Distance: 55cm
+22:08:01.814 > [Vibration] Status: CAUTION | RMS: 0.671 | Magnitude: 10.435 | X: 0.172 Y: 0.206 Z: 10.432
+22:08:02.236 > [Vibration] Status: CAUTION | RMS: 0.699 | Magnitude: 9.994 | X: 0.096 Y: -0.194 Z: 9.991
+22:08:02.236 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 73cm energy:100 | Distance: 55cm
+22:08:02.442 > [Vibration] Status: CAUTION | RMS: 0.700 | Magnitude: 11.299 | X: 0.223 Y: 0.435 Z: 11.288
+22:08:02.649 > [STD] std=0.5698 n=50 stopped=0
+22:08:02.649 > 2026-10-26 22:06:12
+22:08:02.649 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:08:02.649 > [Temperature] 22.75 C
+22:08:02.649 > [pH] Board output at G34: 1721.4 mV
+22:08:02.649 > [Vibration] Status: CAUTION | RMS: 0.657 | Magnitude: 10.554 | X: 0.435 Y: 0.103 Z: 10.544
+22:08:02.857 > [Radar] OUT: HIGH | Moving: 65cm energy:68 | Still: 57cm energy:100 | Distance: 53cm
+22:08:03.062 > [Vibration] Status: CAUTION | RMS: 0.666 | Magnitude: 9.915 | X: 0.141 Y: 0.273 Z: 9.910
+22:08:03.268 > [Vibration] Status: CAUTION | RMS: 0.704 | Magnitude: 10.117 | X: 0.213 Y: 0.562 Z: 10.099
+22:08:03.268 > [Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 65cm energy:100 | Distance: 53cm
+22:08:03.477 > [Vibration] Status: CAUTION | RMS: 0.711 | Magnitude: 10.878 | X: 0.136 Y: 0.084 Z: 10.877
+22:08:03.683 > [STD] std=0.6544 n=50 stopped=0
+22:08:03.683 > 2026-10-26 22:06:13
+22:08:03.683 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:08:03.683 > [Temperature] 22.75 C
+22:08:03.683 > [pH] Board output at G34: 1722.4 mV
+22:08:03.898 > [Vibration] Status: CAUTION | RMS: 0.655 | Magnitude: 10.107 | X: -0.134 Y: 0.538 Z: 10.092
+22:08:03.898 > [Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 50cm
+22:08:04.105 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 9.957 | X: 0.347 Y: 0.045 Z: 9.951
+22:08:04.308 > [Vibration] Status: CAUTION | RMS: 0.671 | Magnitude: 10.341 | X: 0.220 Y: 0.017 Z: 10.338
+22:08:04.308 > [Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 54cm
+22:08:04.516 > [Vibration] Status: CAUTION | RMS: 0.659 | Magnitude: 9.900 | X: 0.378 Y: 1.141 Z: 9.826
+22:08:04.724 > [STD] std=0.5632 n=50 stopped=0
+22:08:04.724 > 2026-10-26 22:06:14
+22:08:04.724 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:08:04.724 > [Temperature] 22.75 C
+22:08:04.725 > [pH] Board output at G34: 1721.2 mV
+22:08:04.937 > [EVENT] 2026-10-26 22:06:09 elevated_vibration duration_ms=4986 peak_rms=0.807 warning=0
+22:08:04.937 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 10.452 | X: 0.108 Y: 0.153 Z: 10.451
+22:08:04.937 > [Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+22:08:05.152 > [EVENT] 2026-10-26 22:06:14 elevated_vibration duration_ms=26 peak_rms=0.644 warning=0
+22:08:05.152 > [Vibration] Status: OK | RMS: 0.634 | Magnitude: 10.919 | X: 0.500 Y: -0.048 Z: 10.908
+22:08:05.364 > [Vibration] Status: OK | RMS: 0.609 | Magnitude: 9.534 | X: 0.345 Y: 0.139 Z: 9.527
+22:08:05.364 > [Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 67cm energy:100 | Distance: 53cm
+22:08:05.572 > [STD] std=0.5272 n=50 stopped=0
+22:08:05.573 > 2026-10-26 22:06:15
+22:08:05.573 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:05.573 > [Temperature] 22.75 C
+22:08:05.573 > [pH] Board output at G34: 1720.5 mV
+22:08:05.573 > [Vibration] Status: CAUTION | RMS: 0.714 | Magnitude: 11.283 | X: 0.017 Y: 0.304 Z: 11.279
+22:08:05.985 > [Radar] OUT: HIGH | Moving: 69cm energy:83 | Still: 75cm energy:100 | Distance: 54cm
+22:08:05.985 > [Vibration] Status: CAUTION | RMS: 0.745 | Magnitude: 10.557 | X: 1.038 Y: 0.601 Z: 10.489
+22:08:06.195 > [Vibration] Status: CAUTION | RMS: 0.830 | Magnitude: 9.084 | X: 0.144 Y: -0.246 Z: 9.080
+22:08:06.401 > [Radar] OUT: HIGH | Moving: 57cm energy:100 | Still: 65cm energy:100 | Distance: 52cm
+22:08:06.401 > [Vibration] Status: CAUTION | RMS: 0.858 | Magnitude: 11.075 | X: 0.622 Y: -0.275 Z: 11.054
+22:08:06.605 > [STD] std=0.7667 n=50 stopped=0
+22:08:06.605 > 2026-10-26 22:06:16
+22:08:06.605 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:06.605 > [Temperature] 22.75 C
+22:08:06.605 > [pH] Board output at G34: 1721.7 mV
+22:08:06.812 > [Vibration] Status: CAUTION | RMS: 0.846 | Magnitude: 10.649 | X: 0.206 Y: 0.074 Z: 10.647
+22:08:07.026 > [Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 76cm energy:100 | Distance: 60cm
+22:08:07.026 > [Vibration] Status: CAUTION | RMS: 0.806 | Magnitude: 9.109 | X: 0.022 Y: 0.129 Z: 9.109
+22:08:07.232 > [Vibration] Status: CAUTION | RMS: 0.737 | Magnitude: 10.498 | X: 0.366 Y: 0.337 Z: 10.487
+22:08:07.440 > [Radar] OUT: HIGH | Moving: 76cm energy:57 | Still: 75cm energy:100 | Distance: 59cm
+22:08:07.645 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 10.167 | X: 0.325 Y: 0.036 Z: 10.161
+22:08:07.645 > [STD] std=0.5258 n=50 stopped=0
+22:08:07.645 > 2026-10-26 22:06:17
+22:08:07.645 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.569 V
+22:08:07.645 > [Temperature] 22.75 C
+22:08:07.645 > [pH] Board output at G34: 1721.7 mV
+22:08:07.857 > [Vibration] Status: CAUTION | RMS: 0.682 | Magnitude: 10.217 | X: 0.122 Y: 0.029 Z: 10.216
+22:08:08.066 > [Radar] OUT: HIGH | Moving: 73cm energy:70 | Still: 66cm energy:100 | Distance: 57cm
+22:08:08.066 > [Vibration] Status: CAUTION | RMS: 0.657 | Magnitude: 9.901 | X: 0.158 Y: -0.299 Z: 9.896
+22:08:08.273 > [EVENT] 2026-10-26 22:06:14 elevated_vibration duration_ms=2660 peak_rms=0.870 warning=0
+22:08:08.478 > [Vibration] Status: CAUTION | RMS: 0.649 | Magnitude: 10.700 | X: 0.622 Y: 0.892 Z: 10.645
+22:08:08.478 > [Radar] OUT: HIGH | Moving: 70cm energy:69 | Still: 78cm energy:100 | Distance: 57cm
+22:08:08.478 > [EVENT] 2026-10-26 22:06:17 elevated_vibration duration_ms=153 peak_rms=0.662 warning=0
+22:08:08.685 > [EVENT] 2026-10-26 22:06:18 elevated_vibration duration_ms=26 peak_rms=0.644 warning=0
+22:08:08.686 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.487 | X: 0.512 Y: 0.002 Z: 10.475
+22:08:08.686 > [STD] std=0.5128 n=50 stopped=0
+22:08:08.686 > 2026-10-26 22:06:18
+22:08:08.686 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:08:08.686 > [Temperature] 22.75 C
+22:08:08.686 > [pH] Board output at G34: 1720.4 mV
+22:08:08.686 > [EVENT] 2026-10-26 22:06:18 elevated_vibration duration_ms=80 peak_rms=0.651 warning=0
+22:08:08.892 > [Vibration] Status: CAUTION | RMS: 0.653 | Magnitude: 10.271 | X: 0.294 Y: 0.668 Z: 10.245
+22:08:08.892 > [EVENT] 2026-10-26 22:06:18 elevated_vibration duration_ms=197 peak_rms=0.680 warning=0
+22:08:09.107 > [Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 54cm
+22:08:09.107 > [Vibration] Status: OK | RMS: 0.622 | Magnitude: 9.586 | X: 0.423 Y: 0.361 Z: 9.570
+22:08:09.521 > [Vibration] Status: CAUTION | RMS: 0.653 | Magnitude: 10.545 | X: 0.065 Y: 0.682 Z: 10.523
+22:08:09.521 > [Radar] OUT: HIGH | Moving: 72cm energy:80 | Still: 75cm energy:100 | Distance: 53cm
+22:08:09.726 > [STD] std=0.6234 n=50 stopped=0
+22:08:09.726 > [Vibration] Status: CAUTION | RMS: 0.652 | Magnitude: 9.537 | X: 0.409 Y: 0.392 Z: 9.520
+22:08:09.726 > 2026-10-26 22:06:19
+22:08:09.727 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:09.727 > [Temperature] 22.75 C
+22:08:09.727 > [pH] Board output at G34: 1719.8 mV
+22:08:09.937 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 10.534 | X: 0.483 Y: -0.129 Z: 10.523
+22:08:09.937 > [EVENT] 2026-10-26 22:06:18 elevated_vibration duration_ms=630 peak_rms=0.678 warning=0
+22:08:10.140 > [Radar] OUT: HIGH | Moving: 79cm energy:60 | Still: 71cm energy:100 | Distance: 55cm
+22:08:10.140 > [Vibration] Status: CAUTION | RMS: 0.650 | Magnitude: 10.054 | X: -0.041 Y: 0.385 Z: 10.046
+22:08:10.346 > [EVENT] 2026-10-26 22:06:19 elevated_vibration duration_ms=197 peak_rms=0.663 warning=0
+22:08:10.553 > [Vibration] Status: CAUTION | RMS: 0.658 | Magnitude: 9.708 | X: -0.043 Y: 0.170 Z: 9.707
+22:08:10.553 > [Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 55cm
+22:08:10.601 > #SCRIPT load camera_reset
+22:08:10.767 > [STD] std=0.5870 n=50 stopped=0
+22:08:10.767 > 2026-10-26 22:06:20
+22:08:10.767 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:10.767 > [Temperature] 22.75 C
+22:08:10.767 > [pH] Board output at G34: 1718.5 mV
+22:08:10.767 > [Vibration] Status: CAUTION | RMS: 0.650 | Magnitude: 9.867 | X: -0.153 Y: 0.165 Z: 9.865
+22:08:10.767 > [EVENT] 2026-10-26 22:06:19 elevated_vibration duration_ms=426 peak_rms=0.675 warning=0
+22:08:10.971 > [Vibration] Status: CAUTION | RMS: 0.676 | Magnitude: 10.411 | X: 0.495 Y: 0.524 Z: 10.386
+22:08:11.177 > [Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 55cm
+22:08:11.378 > [Vibration] Status: CAUTION | RMS: 0.742 | Magnitude: 10.667 | X: 0.376 Y: 0.287 Z: 10.657
+22:08:11.582 > [Vibration] Status: CAUTION | RMS: 0.695 | Magnitude: 10.358 | X: 0.201 Y: 0.469 Z: 10.346
+22:08:11.582 > [Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 55cm
+22:08:11.784 > [STD] std=0.5335 n=50 stopped=0
+22:08:11.784 > 2026-10-26 22:06:21
+22:08:11.784 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.565 V
+22:08:11.784 > [Temperature] 22.75 C
+22:08:11.784 > [pH] Board output at G34: 1718.2 mV
+22:08:11.784 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 10.105 | X: 0.153 Y: 0.531 Z: 10.090
+22:08:11.995 > [EVENT] 2026-10-26 22:06:20 elevated_vibration duration_ms=1278 peak_rms=0.742 warning=0
+22:08:12.209 > [Vibration] Status: OK | RMS: 0.635 | Magnitude: 10.454 | X: 0.246 Y: -0.323 Z: 10.446
+22:08:12.209 > [Radar] OUT: HIGH | Moving: none | Still: 68cm energy:100 | Distance: 54cm
+22:08:12.209 > [EVENT] 2026-10-26 22:06:21 elevated_vibration duration_ms=77 peak_rms=0.654 warning=0
+22:08:12.410 > [EVENT] 2026-10-26 22:06:21 elevated_vibration duration_ms=26 peak_rms=0.647 warning=0
+22:08:12.411 > [Vibration] Status: OK | RMS: 0.622 | Magnitude: 10.516 | X: 0.172 Y: 0.768 Z: 10.487
+22:08:12.625 > [Vibration] Status: CAUTION | RMS: 0.713 | Magnitude: 11.743 | X: 0.924 Y: 0.069 Z: 11.707
+22:08:12.625 > [Radar] OUT: HIGH | Moving: 86cm energy:68 | Still: 70cm energy:100 | Distance: 51cm
+22:08:12.625 > [STD] std=0.5049 n=50 stopped=0
+22:08:12.625 > 2026-10-26 22:06:22
+22:08:12.625 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:12.625 > [Temperature] 22.75 C
+22:08:12.625 > [pH] Board output at G34: 1718.8 mV
+22:08:12.835 > [Vibration] Status: CAUTION | RMS: 0.758 | Magnitude: 10.402 | X: 0.385 Y: 0.165 Z: 10.393
+22:08:13.051 > [Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 65cm energy:100 | Distance: 53cm
+22:08:13.051 > [Vibration] Status: CAUTION | RMS: 0.764 | Magnitude: 9.539 | X: 0.191 Y: 0.383 Z: 9.530
+22:08:13.463 > [Vibration] Status: CAUTION | RMS: 0.799 | Magnitude: 9.608 | X: 0.196 Y: 0.356 Z: 9.599
+22:08:13.669 > [Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 53cm
+22:08:13.669 > [Vibration] Status: CAUTION | RMS: 0.760 | Magnitude: 9.727 | X: 0.146 Y: -0.055 Z: 9.726
+22:08:13.669 > [STD] std=0.6237 n=50 stopped=0
+22:08:13.670 > 2026-10-26 22:06:23
+22:08:13.670 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:08:13.670 > [Temperature] 22.75 C
+22:08:13.670 > [pH] Board output at G34: 1718.5 mV
+22:08:13.874 > [Vibration] Status: CAUTION | RMS: 0.658 | Magnitude: 9.124 | X: 0.122 Y: 0.002 Z: 9.123
+22:08:14.079 > [Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 65cm energy:100 | Distance: 54cm
+22:08:14.287 > [Vibration] Status: CAUTION | RMS: 0.692 | Magnitude: 11.413 | X: 0.629 Y: 0.206 Z: 11.393
+22:08:14.494 > [Vibration] Status: CAUTION | RMS: 0.741 | Magnitude: 10.318 | X: -0.048 Y: 0.177 Z: 10.317
+22:08:14.702 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 39cm energy:100 | Distance: 55cm
+22:08:14.702 > [STD] std=0.7248 n=50 stopped=0
+22:08:14.702 > 2026-10-26 22:06:24
+22:08:14.702 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:14.702 > [Temperature] 22.75 C
+22:08:14.702 > [pH] Board output at G34: 1718.1 mV
+22:08:14.702 > [Vibration] Status: CAUTION | RMS: 0.751 | Magnitude: 9.714 | X: -0.108 Y: -0.024 Z: 9.714
+22:08:15.120 > [Vibration] Status: CAUTION | RMS: 0.799 | Magnitude: 10.100 | X: 0.316 Y: 0.117 Z: 10.094
+22:08:15.120 > [Radar] OUT: HIGH | Moving: 42cm energy:100 | Still: 48cm energy:100 | Distance: 47cm
+22:08:15.329 > [Vibration] Status: CAUTION | RMS: 1.527 | Magnitude: 10.234 | X: 0.153 Y: 0.493 Z: 10.221
+22:08:15.533 > [Vibration] Status: CAUTION | RMS: 1.510 | Magnitude: 10.181 | X: 0.112 Y: -0.297 Z: 10.176
+22:08:15.740 > [Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 30cm energy:100 | Distance: 37cm
+22:08:15.740 > [STD] std=1.5326 n=50 stopped=0
+22:08:15.740 > 2026-10-26 22:06:25
+22:08:15.740 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:15.740 > [Temperature] 22.69 C
+22:08:15.740 > [pH] Board output at G34: 1718.2 mV
+22:08:15.944 > [Vibration] Status: CAUTION | RMS: 1.552 | Magnitude: 10.555 | X: 0.151 Y: 0.517 Z: 10.542
+22:08:16.146 > [Vibration] Status: CAUTION | RMS: 1.584 | Magnitude: 10.559 | X: -0.232 Y: -0.053 Z: 10.556
+22:08:16.146 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 30cm energy:100 | Distance: 36cm
+22:08:16.354 > [Vibration] Status: CAUTION | RMS: 1.145 | Magnitude: 9.435 | X: 0.045 Y: 0.395 Z: 9.427
+22:08:16.763 > [Vibration] Status: CAUTION | RMS: 0.947 | Magnitude: 9.374 | X: 0.103 Y: 0.356 Z: 9.367
+22:08:16.764 > [STD] std=0.8963 n=50 stopped=0
+22:08:16.764 > 2026-10-26 22:06:26
+22:08:16.764 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 63cm energy:100 | Distance: 35cm
+22:08:16.764 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:16.764 > [Temperature] 22.75 C
+22:08:16.764 > [pH] Board output at G34: 1720.7 mV
+22:08:16.968 > [Vibration] Status: CAUTION | RMS: 0.899 | Magnitude: 10.333 | X: 0.278 Y: 0.086 Z: 10.329
+22:08:17.169 > [Vibration] Status: CAUTION | RMS: 0.866 | Magnitude: 10.027 | X: 0.354 Y: -0.057 Z: 10.020
+22:08:17.169 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+22:08:17.377 > [Vibration] Status: CAUTION | RMS: 0.795 | Magnitude: 11.016 | X: 0.270 Y: 0.215 Z: 11.011
+22:08:17.790 > [Vibration] Status: CAUTION | RMS: 0.742 | Magnitude: 10.069 | X: -0.022 Y: 0.416 Z: 10.061
+22:08:17.790 > [STD] std=0.6217 n=50 stopped=0
+22:08:17.790 > 2026-10-26 22:06:27
+22:08:17.791 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:17.791 > [Temperature] 22.69 C
+22:08:17.791 > [pH] Board output at G34: 1720.3 mV
+22:08:17.791 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+22:08:18.008 > [Vibration] Status: CAUTION | RMS: 0.756 | Magnitude: 10.907 | X: 0.129 Y: 0.160 Z: 10.905
+22:08:18.209 > [Vibration] Status: CAUTION | RMS: 0.748 | Magnitude: 10.078 | X: 0.019 Y: 0.060 Z: 10.078
+22:08:18.209 > [Radar] OUT: HIGH | Moving: none | Still: 192cm energy:100 | Distance: 56cm
+22:08:18.623 > [Vibration] Status: CAUTION | RMS: 0.743 | Magnitude: 10.797 | X: 0.577 Y: 0.342 Z: 10.776
+22:08:18.834 > [STD] std=0.6463 n=50 stopped=0
+22:08:18.834 > 2026-10-26 22:06:28
+22:08:18.834 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:08:18.834 > [Temperature] 22.75 C
+22:08:18.834 > [pH] Board output at G34: 1720.1 mV
+22:08:18.834 > [Vibration] Status: CAUTION | RMS: 0.742 | Magnitude: 11.082 | X: 0.175 Y: 0.426 Z: 11.073
+22:08:18.834 > [Radar] OUT: HIGH | Moving: 30cm energy:82 | Still: 202cm energy:100 | Distance: 117cm
+22:08:19.042 > [Vibration] Status: CAUTION | RMS: 0.734 | Magnitude: 10.075 | X: 0.366 Y: 1.373 Z: 9.975
+22:08:19.245 > [Vibration] Status: CAUTION | RMS: 0.716 | Magnitude: 9.233 | X: -0.069 Y: 0.041 Z: 9.233
+22:08:19.245 > [Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 202cm energy:100 | Distance: 152cm
+22:08:19.659 > [Vibration] Status: CAUTION | RMS: 0.727 | Magnitude: 10.074 | X: 0.359 Y: 0.038 Z: 10.068
+22:08:19.865 > [STD] std=0.5944 n=50 stopped=0
+22:08:19.865 > 2026-10-26 22:06:29
+22:08:19.865 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:08:19.865 > [Temperature] 22.75 C
+22:08:19.865 > [pH] Board output at G34: 1718.8 mV
+22:08:19.865 > [Vibration] Status: CAUTION | RMS: 0.716 | Magnitude: 10.524 | X: 0.347 Y: 0.744 Z: 10.491
+22:08:19.865 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 202cm energy:100 | Distance: 103cm
+22:08:20.067 > [Vibration] Status: CAUTION | RMS: 0.754 | Magnitude: 11.398 | X: 0.514 Y: -0.017 Z: 11.386
+22:08:20.278 > [Vibration] Status: CAUTION | RMS: 0.752 | Magnitude: 10.655 | X: 0.266 Y: 0.402 Z: 10.645
+22:08:20.278 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 198cm energy:100 | Distance: 73cm
+22:08:20.692 > [Vibration] Status: CAUTION | RMS: 0.761 | Magnitude: 9.229 | X: 0.167 Y: 0.347 Z: 9.221
+22:08:20.692 > [STD] std=0.6611 n=50 stopped=0
+22:08:20.692 > 2026-10-26 22:06:30
+22:08:20.897 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:20.897 > [Temperature] 22.75 C
+22:08:20.897 > [pH] Board output at G34: 1719.5 mV
+22:08:20.897 > [Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 73cm energy:100 | Distance: 67cm
+22:08:20.897 > [Vibration] Status: CAUTION | RMS: 0.762 | Magnitude: 10.136 | X: 0.371 Y: -0.194 Z: 10.128
+22:08:21.103 > [Vibration] Status: CAUTION | RMS: 0.780 | Magnitude: 9.256 | X: 0.069 Y: 0.139 Z: 9.254
+22:08:21.311 > [Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 56cm
+22:08:21.511 > [Vibration] Status: CAUTION | RMS: 0.701 | Magnitude: 9.724 | X: -0.002 Y: -0.067 Z: 9.723
+22:08:21.718 > [Vibration] Status: CAUTION | RMS: 0.691 | Magnitude: 9.051 | X: -0.033 Y: 0.038 Z: 9.051
+22:08:21.718 > [STD] std=0.6016 n=50 stopped=0
+22:08:21.718 > 2026-10-26 22:06:31
+22:08:21.718 > [Turbidity] At G35 pin: 1.780 V | Sensor output: 3.560 V
+22:08:21.718 > [Temperature] 22.75 C
+22:08:21.718 > [pH] Board output at G34: 1720.3 mV
+22:08:21.922 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 73cm energy:100 | Distance: 54cm
+22:08:21.922 > [Vibration] Status: CAUTION | RMS: 0.685 | Magnitude: 9.738 | X: -0.022 Y: -0.024 Z: 9.738
+22:08:22.131 > [Vibration] Status: CAUTION | RMS: 0.696 | Magnitude: 10.909 | X: 0.464 Y: 0.476 Z: 10.889
+22:08:22.334 > [Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 144cm energy:100 | Distance: 63cm
+22:08:22.543 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 10.071 | X: 0.318 Y: 0.311 Z: 10.061
+22:08:22.752 > [Vibration] Status: CAUTION | RMS: 0.660 | Magnitude: 9.606 | X: 0.364 Y: 0.072 Z: 9.599
+22:08:22.752 > [STD] std=0.6047 n=50 stopped=0
+22:08:22.752 > 2026-10-26 22:06:32
+22:08:22.752 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:22.752 > [Temperature] 22.75 C
+22:08:22.752 > [pH] Board output at G34: 1719.5 mV
+22:08:22.953 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 62cm energy:100 | Distance: 56cm
+22:08:22.953 > [Vibration] Status: CAUTION | RMS: 0.732 | Magnitude: 11.457 | X: 0.423 Y: 0.074 Z: 11.448
+22:08:23.368 > [Vibration] Status: CAUTION | RMS: 0.703 | Magnitude: 9.046 | X: -0.196 Y: -0.062 Z: 9.044
+22:08:23.369 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 87cm energy:100 | Distance: 56cm
+22:08:23.574 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 9.648 | X: -0.100 Y: 0.223 Z: 9.644
+22:08:23.781 > [STD] std=0.6341 n=50 stopped=0
+22:08:23.781 > 2026-10-26 22:06:33
+22:08:23.781 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.561 V
+22:08:23.781 > [Temperature] 22.75 C
+22:08:23.781 > [pH] Board output at G34: 1719.0 mV
+22:08:23.781 > [Vibration] Status: CAUTION | RMS: 0.726 | Magnitude: 10.623 | X: 0.160 Y: 0.151 Z: 10.621
+22:08:23.981 > [Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 69cm energy:100 | Distance: 54cm
+22:08:24.188 > [Vibration] Status: CAUTION | RMS: 0.717 | Magnitude: 10.537 | X: 0.230 Y: -0.383 Z: 10.527
+22:08:24.396 > [Vibration] Status: CAUTION | RMS: 0.773 | Magnitude: 10.843 | X: 0.373 Y: -0.412 Z: 10.829
+22:08:24.396 > [Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 70cm energy:100 | Distance: 53cm
+22:08:24.599 > [Vibration] Status: CAUTION | RMS: 0.771 | Magnitude: 10.378 | X: 0.452 Y: 0.347 Z: 10.362
+22:08:24.806 > [STD] std=0.6344 n=50 stopped=0
+22:08:24.806 > 2026-10-26 22:06:34
+22:08:24.806 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:24.806 > [Temperature] 22.75 C
+22:08:24.806 > [pH] Board output at G34: 1719.8 mV
+22:08:25.021 > [Vibration] Status: CAUTION | RMS: 0.763 | Magnitude: 9.663 | X: -0.098 Y: -0.254 Z: 9.659
+22:08:25.021 > [Radar] OUT: HIGH | Moving: 63cm energy:66 | Still: 70cm energy:100 | Distance: 52cm
+22:08:25.229 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.431 | X: 0.263 Y: 0.345 Z: 10.422
+22:08:25.436 > [Vibration] Status: CAUTION | RMS: 0.652 | Magnitude: 8.118 | X: -0.189 Y: 0.347 Z: 8.108
+22:08:25.436 > [EVENT] 2026-10-26 22:06:21 elevated_vibration duration_ms=13097 peak_rms=1.634 warning=0
+22:08:25.437 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 78cm energy:100 | Distance: 53cm
+22:08:25.852 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 10.229 | X: -0.005 Y: 0.457 Z: 10.219
+22:08:25.852 > [STD] std=0.6790 n=50 stopped=0
+22:08:25.852 > 2026-10-26 22:06:35
+22:08:25.852 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:25.852 > [Temperature] 22.75 C
+22:08:25.852 > [pH] Board output at G34: 1720.4 mV
+22:08:26.052 > [Vibration] Status: CAUTION | RMS: 0.756 | Magnitude: 8.891 | X: -0.029 Y: 0.062 Z: 8.891
+22:08:26.052 > [Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 75cm energy:100 | Distance: 50cm
+22:08:26.268 > [Vibration] Status: CAUTION | RMS: 0.759 | Magnitude: 10.411 | X: 0.414 Y: 0.297 Z: 10.398
+22:08:26.469 > [Vibration] Status: CAUTION | RMS: 0.799 | Magnitude: 10.586 | X: 0.385 Y: 0.653 Z: 10.558
+22:08:26.469 > [Radar] OUT: HIGH | Moving: 69cm energy:71 | Still: 73cm energy:100 | Distance: 54cm
+22:08:26.887 > [Vibration] Status: CAUTION | RMS: 0.752 | Magnitude: 9.552 | X: 0.062 Y: 0.136 Z: 9.551
+22:08:26.888 > [STD] std=0.6575 n=50 stopped=0
+22:08:26.888 > 2026-10-26 22:06:36
+22:08:26.888 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:26.888 > [Temperature] 22.75 C
+22:08:26.888 > [pH] Board output at G34: 1721.1 mV
+22:08:27.095 > [Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 80cm energy:100 | Distance: 56cm
+22:08:27.095 > [Vibration] Status: CAUTION | RMS: 0.652 | Magnitude: 10.321 | X: 0.246 Y: 0.517 Z: 10.305
+22:08:27.095 > [EVENT] 2026-10-26 22:06:34 elevated_vibration duration_ms=1551 peak_rms=0.801 warning=0
+22:08:27.096 > [EVENT] 2026-10-26 22:06:36 elevated_vibration duration_ms=51 peak_rms=0.653 warning=0
+22:08:27.308 > [Vibration] Status: CAUTION | RMS: 0.643 | Magnitude: 10.906 | X: 0.646 Y: 0.074 Z: 10.886
+22:08:27.308 > [EVENT] 2026-10-26 22:06:36 elevated_vibration duration_ms=100 peak_rms=0.652 warning=0
+22:08:27.509 > [Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 62cm energy:100 | Distance: 55cm
+22:08:27.723 > [Vibration] Status: CAUTION | RMS: 0.686 | Magnitude: 10.211 | X: -0.328 Y: 0.179 Z: 10.204
+22:08:27.927 > [STD] std=0.6487 n=50 stopped=0
+22:08:27.928 > [Vibration] Status: CAUTION | RMS: 0.744 | Magnitude: 10.054 | X: 0.483 Y: 0.591 Z: 10.025
+22:08:27.928 > 2026-10-26 22:06:37
+22:08:27.928 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:27.928 > [Temperature] 22.75 C
+22:08:27.928 > [pH] Board output at G34: 1721.8 mV
+22:08:28.135 > [Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+22:08:28.135 > [Vibration] Status: CAUTION | RMS: 0.820 | Magnitude: 10.713 | X: 0.392 Y: -0.282 Z: 10.702
+22:08:28.341 > [Vibration] Status: CAUTION | RMS: 0.878 | Magnitude: 11.368 | X: 0.392 Y: 0.167 Z: 11.360
+22:08:28.549 > [Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+22:08:28.753 > [Vibration] Status: CAUTION | RMS: 0.835 | Magnitude: 10.035 | X: 0.431 Y: 0.237 Z: 10.023
+22:08:28.959 > [STD] std=0.6474 n=50 stopped=0
+22:08:28.959 > 2026-10-26 22:06:38
+22:08:28.959 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:28.959 > [Temperature] 22.75 C
+22:08:28.959 > [pH] Board output at G34: 1721.5 mV
+22:08:28.959 > [Vibration] Status: CAUTION | RMS: 0.826 | Magnitude: 8.176 | X: -0.416 Y: 0.002 Z: 8.166
+22:08:29.174 > [Radar] OUT: HIGH | Moving: 81cm energy:66 | Still: 70cm energy:100 | Distance: 56cm
+22:08:29.174 > [Vibration] Status: CAUTION | RMS: 0.771 | Magnitude: 9.575 | X: 0.012 Y: -0.368 Z: 9.568
+22:08:29.382 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 9.905 | X: 0.179 Y: 0.127 Z: 9.903
+22:08:29.590 > [EVENT] 2026-10-26 22:06:36 elevated_vibration duration_ms=2200 peak_rms=0.888 warning=0
+22:08:29.590 > [Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+22:08:29.590 > [EVENT] 2026-10-26 22:06:39 elevated_vibration duration_ms=26 peak_rms=0.661 warning=0
+22:08:29.795 > [Vibration] Status: OK | RMS: 0.634 | Magnitude: 10.466 | X: 0.703 Y: 0.526 Z: 10.429
+22:08:29.998 > [STD] std=0.5726 n=50 stopped=0
+22:08:29.998 > 2026-10-26 22:06:39
+22:08:29.998 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:29.998 > [Temperature] 22.75 C
+22:08:29.998 > [pH] Board output at G34: 1721.1 mV
+22:08:29.998 > [Vibration] Status: CAUTION | RMS: 0.676 | Magnitude: 10.860 | X: 0.132 Y: 0.593 Z: 10.843
+22:08:30.207 > [Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 56cm
+22:08:30.207 > [EVENT] 2026-10-26 22:06:39 elevated_vibration duration_ms=347 peak_rms=0.682 warning=0
+22:08:30.208 > [Vibration] Status: CAUTION | RMS: 0.644 | Magnitude: 10.581 | X: 0.684 Y: 1.366 Z: 10.470
+22:08:30.625 > [Vibration] Status: CAUTION | RMS: 0.680 | Magnitude: 10.250 | X: 0.397 Y: 0.199 Z: 10.240
+22:08:30.625 > [Radar] OUT: HIGH | Moving: 70cm energy:64 | Still: 65cm energy:100 | Distance: 54cm
+22:08:30.835 > [Vibration] Status: CAUTION | RMS: 0.717 | Magnitude: 9.233 | X: -0.270 Y: 0.244 Z: 9.226
+22:08:30.836 > [STD] std=0.5025 n=50 stopped=0
+22:08:30.836 > 2026-10-26 22:06:40
+22:08:30.836 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:30.836 > [Temperature] 22.75 C
+22:08:30.836 > [pH] Board output at G34: 1721.6 mV
+22:08:31.042 > [Vibration] Status: CAUTION | RMS: 0.656 | Magnitude: 10.208 | X: -0.072 Y: 0.778 Z: 10.178
+22:08:31.252 > [Radar] OUT: HIGH | Moving: 78cm energy:79 | Still: 75cm energy:100 | Distance: 55cm
+22:08:31.458 > [Vibration] Status: CAUTION | RMS: 0.679 | Magnitude: 10.508 | X: 0.258 Y: 0.433 Z: 10.496
+22:08:31.666 > [Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.000 | X: 0.218 Y: 0.639 Z: 9.977
+22:08:31.666 > [Radar] OUT: HIGH | Moving: 62cm energy:84 | Still: 79cm energy:100 | Distance: 53cm
+22:08:31.876 > [Vibration] Status: CAUTION | RMS: 0.712 | Magnitude: 10.417 | X: -0.005 Y: 1.014 Z: 10.367
+22:08:31.876 > [STD] std=0.5798 n=50 stopped=0
+22:08:31.876 > 2026-10-26 22:06:41
+22:08:31.876 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:31.876 > [Temperature] 22.69 C
+22:08:31.876 > [pH] Board output at G34: 1721.6 mV
+22:08:32.083 > [Vibration] Status: CAUTION | RMS: 0.694 | Magnitude: 9.752 | X: 0.409 Y: 0.400 Z: 9.735
+22:08:32.290 > [Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 81cm energy:100 | Distance: 56cm
+22:08:32.497 > [Vibration] Status: CAUTION | RMS: 0.698 | Magnitude: 9.421 | X: 0.321 Y: -0.617 Z: 9.396
+22:08:32.704 > [Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.673 | X: 0.026 Y: 0.538 Z: 10.659
+22:08:32.704 > [Radar] OUT: HIGH | Moving: 70cm energy:57 | Still: 79cm energy:100 | Distance: 56cm
+22:08:32.911 > [STD] std=0.6697 n=50 stopped=0
+22:08:32.911 > 2026-10-26 22:06:42
+22:08:32.911 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:08:32.911 > [Temperature] 22.75 C
+22:08:32.912 > [pH] Board output at G34: 1721.2 mV
+22:08:33.734 > [Vibration] Status: CAUTION | RMS: 0.753 | Magnitude: 10.232 | X: 0.251 Y: 0.940 Z: 10.185
+22:08:33.735 > [Radar] OUT: HIGH | Moving: 73cm energy:59 | Still: 77cm energy:100 | Distance: 55cm
+22:08:33.735 > [ 44216][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:08:33.942 > [Vibration] Status: CAUTION | RMS: 0.743 | Magnitude: 10.303 | X: 0.057 Y: 0.869 Z: 10.267
+22:08:33.942 > [STD] std=0.6573 n=50 stopped=0
+22:08:33.942 > 2026-10-26 22:06:43
+22:08:33.942 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:08:33.942 > [Temperature] 22.69 C
+22:08:33.942 > [pH] Board output at G34: 1721.9 mV
+22:08:34.142 > [Vibration] Status: CAUTION | RMS: 0.742 | Magnitude: 10.409 | X: 0.010 Y: 0.292 Z: 10.405
+22:08:34.142 > [Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 65cm energy:100 | Distance: 54cm
+22:08:34.348 > [Vibration] Status: CAUTION | RMS: 0.791 | Magnitude: 7.918 | X: -0.215 Y: 0.103 Z: 7.915
+22:08:34.759 > [Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 75cm energy:100 | Distance: 56cm
+22:08:34.759 > [Vibration] Status: CAUTION | RMS: 0.785 | Magnitude: 10.260 | X: -0.043 Y: -0.033 Z: 10.259
+22:08:34.966 > [STD] std=0.6057 n=50 stopped=0
+22:08:34.966 > [Vibration] Status: CAUTION | RMS: 0.691 | Magnitude: 10.447 | X: 0.321 Y: -0.110 Z: 10.441
+22:08:34.966 > 2026-10-26 22:06:44
+22:08:34.966 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:08:34.966 > [Temperature] 22.75 C
+22:08:34.966 > [pH] Board output at G34: 1721.9 mV
+22:08:35.179 > [Radar] OUT: HIGH | Moving: 65cm energy:99 | Still: 83cm energy:100 | Distance: 56cm
+22:08:35.179 > [Vibration] Status: CAUTION | RMS: 0.654 | Magnitude: 10.457 | X: 0.488 Y: 0.187 Z: 10.444
+22:08:35.386 > [EVENT] 2026-10-26 22:06:39 elevated_vibration duration_ms=5033 peak_rms=0.793 warning=0
+22:08:35.595 > [Vibration] Status: OK | RMS: 0.616 | Magnitude: 10.004 | X: -0.139 Y: -0.285 Z: 9.999
+22:08:35.601 > #SCRIPT load phone_page
+22:08:35.808 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 81cm energy:100 | Distance: 57cm
+22:08:35.808 > [Vibration] Status: OK | RMS: 0.559 | Magnitude: 9.490 | X: -0.079 Y: 0.098 Z: 9.489
+22:08:36.023 > [STD] std=0.4513 n=50 stopped=0
+22:08:36.023 > 2026-10-26 22:06:45
+22:08:36.023 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:36.023 > [Temperature] 22.75 C
+22:08:36.023 > [pH] Board output at G34: 1722.2 mV
+22:08:36.023 > [Vibration] Status: OK | RMS: 0.580 | Magnitude: 9.936 | X: 0.488 Y: 0.522 Z: 9.910
+22:08:36.230 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 73cm energy:100 | Distance: 57cm
+22:08:36.230 > [Vibration] Status: OK | RMS: 0.624 | Magnitude: 10.788 | X: 0.211 Y: 0.400 Z: 10.779
+22:08:36.642 > [Vibration] Status: OK | RMS: 0.635 | Magnitude: 10.248 | X: 0.268 Y: 1.187 Z: 10.176
+22:08:36.643 > [Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 79cm energy:100 | Distance: 56cm
+22:08:36.847 > [Vibration] Status: CAUTION | RMS: 0.693 | Magnitude: 9.913 | X: -0.144 Y: 0.213 Z: 9.910
+22:08:37.050 > [STD] std=0.5692 n=50 stopped=0
+22:08:37.050 > 2026-10-26 22:06:46
+22:08:37.050 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:37.050 > [Temperature] 22.75 C
+22:08:37.050 > [pH] Board output at G34: 1722.8 mV
+22:08:37.050 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 9.758 | X: 0.024 Y: 0.507 Z: 9.745
+22:08:38.082 > [STD] std=0.6809 n=50 stopped=0
+22:08:38.083 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 10.252 | X: 0.275 Y: -0.120 Z: 10.247
+22:08:38.083 > 2026-10-26 22:06:47
+22:08:38.083 > [Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 76cm energy:100 | Distance: 56cm
+22:08:38.083 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:08:38.083 > [Temperature] 22.75 C
+22:08:38.083 > [pH] Board output at G34: 1722.1 mV
+22:08:38.284 > [ 48734][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:08:38.488 > [Vibration] Status: CAUTION | RMS: 0.684 | Magnitude: 10.336 | X: 0.457 Y: 0.423 Z: 10.317
+22:08:38.689 > [Vibration] Status: CAUTION | RMS: 0.752 | Magnitude: 10.580 | X: 0.012 Y: 0.639 Z: 10.561
+22:08:38.689 > [Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 54cm
+22:08:38.689 > [Occ] online ip=192.168.4.5 count=0 active=0 chg=0.0 last=
+22:08:38.898 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.572 | X: 0.400 Y: 0.129 Z: 10.563
+22:08:39.112 > [STD] std=0.6031 n=50 stopped=0
+22:08:39.113 > 2026-10-26 22:06:48
+22:08:39.113 > [Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 55cm
+22:08:39.113 > [Vibration] Status: CAUTION | RMS: 0.684 | Magnitude: 9.045 | X: 0.553 Y: 0.562 Z: 9.010
+22:08:39.113 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:39.113 > [Temperature] 22.75 C
+22:08:39.113 > [pH] Board output at G34: 1721.7 mV
+22:08:39.529 > [Vibration] Status: CAUTION | RMS: 0.680 | Magnitude: 10.461 | X: 0.165 Y: 0.172 Z: 10.458
+22:08:39.736 > [Radar] OUT: HIGH | Moving: 74cm energy:79 | Still: 76cm energy:100 | Distance: 55cm
+22:08:39.736 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 9.831 | X: 0.069 Y: 0.187 Z: 9.829
+22:08:39.940 > [EVENT] 2026-10-26 22:06:46 elevated_vibration duration_ms=3359 peak_rms=0.757 warning=0
+22:08:39.941 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 11.317 | X: 0.679 Y: 0.146 Z: 11.295
+22:08:40.152 > [STD] std=0.6548 n=50 stopped=0
+22:08:40.163 > 2026-10-26 22:06:49
+22:08:40.163 > [Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 74cm energy:100 | Distance: 55cm
+22:08:40.163 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:40.163 > [Temperature] 22.75 C
+22:08:40.163 > [pH] Board output at G34: 1722.2 mV
+22:08:40.163 > [Vibration] Status: CAUTION | RMS: 0.754 | Magnitude: 11.011 | X: 0.110 Y: 0.323 Z: 11.006
+22:08:40.574 > [Vibration] Status: CAUTION | RMS: 0.786 | Magnitude: 10.233 | X: 0.182 Y: 0.464 Z: 10.221
+22:08:40.780 > [Radar] OUT: HIGH | Moving: 52cm energy:54 | Still: 62cm energy:100 | Distance: 51cm
+22:08:40.780 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 10.469 | X: 0.471 Y: 0.952 Z: 10.415
+22:08:40.780 > [Occ] event #1 at 2026-10-26 22:06:50
+22:08:40.986 > [Vibration] Status: CAUTION | RMS: 0.703 | Magnitude: 10.140 | X: 0.316 Y: 0.321 Z: 10.130
+22:08:41.189 > [STD] std=0.5997 n=50 stopped=0
+22:08:41.189 > 2026-10-26 22:06:50
+22:08:41.189 > [Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 76cm energy:100 | Distance: 53cm
+22:08:41.189 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:41.189 > [Temperature] 22.75 C
+22:08:41.189 > [pH] Board output at G34: 1721.7 mV
+22:08:41.189 > [Vibration] Status: CAUTION | RMS: 0.763 | Magnitude: 10.853 | X: 0.428 Y: 0.426 Z: 10.836
+22:08:41.608 > [Vibration] Status: CAUTION | RMS: 0.684 | Magnitude: 10.756 | X: 0.356 Y: -0.048 Z: 10.750
+22:08:41.808 > [Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 70cm energy:100 | Distance: 55cm
+22:08:41.808 > [Vibration] Status: CAUTION | RMS: 0.675 | Magnitude: 10.260 | X: 0.419 Y: 0.574 Z: 10.235
+22:08:42.016 > [Vibration] Status: CAUTION | RMS: 0.732 | Magnitude: 9.999 | X: 0.352 Y: 0.280 Z: 9.989
+22:08:42.225 > [STD] std=0.5267 n=50 stopped=0
+22:08:42.225 > 2026-10-26 22:06:51
+22:08:42.225 > [Radar] OUT: HIGH | Moving: 76cm energy:53 | Still: 69cm energy:100 | Distance: 55cm
+22:08:42.225 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:08:42.225 > [Temperature] 22.75 C
+22:08:42.226 > [pH] Board output at G34: 1721.7 mV
+22:08:42.432 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 9.949 | X: -0.050 Y: -0.086 Z: 9.948
+22:08:42.632 > [Vibration] Status: CAUTION | RMS: 0.648 | Magnitude: 10.508 | X: 0.158 Y: 0.170 Z: 10.506
+22:08:42.633 > [EVENT] 2026-10-26 22:06:49 elevated_vibration duration_ms=2646 peak_rms=0.788 warning=0
+22:08:42.850 > [Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 77cm energy:100 | Distance: 55cm
+22:08:42.850 > [EVENT] 2026-10-26 22:06:52 elevated_vibration duration_ms=51 peak_rms=0.656 warning=0
+22:08:42.850 > [Vibration] Status: OK | RMS: 0.642 | Magnitude: 9.618 | X: 0.280 Y: -0.065 Z: 9.613
+22:08:43.263 > [Vibration] Status: OK | RMS: 0.632 | Magnitude: 10.504 | X: 0.309 Y: 0.084 Z: 10.499
+22:08:43.263 > [STD] std=0.5425 n=50 stopped=0
+22:08:43.263 > 2026-10-26 22:06:52
+22:08:43.263 > [Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 70cm energy:100 | Distance: 54cm
+22:08:43.263 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:43.263 > [Temperature] 22.75 C
+22:08:43.263 > [pH] Board output at G34: 1720.8 mV
+22:08:43.463 > [Vibration] Status: OK | RMS: 0.595 | Magnitude: 8.880 | X: -0.122 Y: -0.010 Z: 8.879
+22:08:43.679 > [Vibration] Status: OK | RMS: 0.626 | Magnitude: 10.264 | X: 0.340 Y: 0.648 Z: 10.238
+22:08:43.679 > [Radar] OUT: HIGH | Moving: 63cm energy:79 | Still: 70cm energy:100 | Distance: 53cm
+22:08:43.881 > [Vibration] Status: CAUTION | RMS: 0.649 | Magnitude: 10.534 | X: 0.459 Y: 0.366 Z: 10.518
+22:08:44.085 > [Occ] online ip=192.168.4.5 count=1 active=1 chg=23.3 last=2026-10-26 22:06:50
+22:08:44.295 > [STD] std=0.6047 n=50 stopped=0
+22:08:44.295 > 2026-10-26 22:06:53
+22:08:44.295 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 10.334 | X: 0.179 Y: 0.354 Z: 10.326
+22:08:44.295 > [Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 53cm
+22:08:44.295 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:44.295 > [Temperature] 22.75 C
+22:08:44.295 > [pH] Board output at G34: 1720.9 mV
+22:08:44.502 > [Vibration] Status: CAUTION | RMS: 0.702 | Magnitude: 10.453 | X: 0.816 Y: 0.660 Z: 10.401
+22:08:44.709 > [Vibration] Status: CAUTION | RMS: 0.745 | Magnitude: 10.430 | X: 0.452 Y: 1.024 Z: 10.369
+22:08:44.709 > [Radar] OUT: HIGH | Moving: 73cm energy:75 | Still: 73cm energy:100 | Distance: 54cm
+22:08:44.916 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.356 | X: 0.301 Y: 0.517 Z: 10.338
+22:08:45.117 > [STD] std=0.6601 n=50 stopped=0
+22:08:45.117 > 2026-10-26 22:06:54
+22:08:45.325 > [Vibration] Status: CAUTION | RMS: 0.700 | Magnitude: 10.493 | X: 0.397 Y: -0.167 Z: 10.484
+22:08:45.325 > [Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+22:08:45.325 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:45.325 > [Temperature] 22.75 C
+22:08:45.325 > [pH] Board output at G34: 1721.6 mV
+22:08:45.533 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.570 | X: 0.244 Y: 0.278 Z: 10.563
+22:08:45.533 > [EVENT] 2026-10-26 22:06:53 elevated_vibration duration_ms=1724 peak_rms=0.745 warning=0
+22:08:45.740 > [Vibration] Status: OK | RMS: 0.594 | Magnitude: 9.619 | X: 0.490 Y: 0.569 Z: 9.589
+22:08:45.740 > [Radar] OUT: HIGH | Moving: 69cm energy:93 | Still: 65cm energy:100 | Distance: 54cm
+22:08:46.150 > [Vibration] Status: OK | RMS: 0.567 | Magnitude: 9.842 | X: 0.227 Y: 0.452 Z: 9.829
+22:08:46.150 > [STD] std=0.5182 n=50 stopped=0
+22:08:46.150 > 2026-10-26 22:06:55
+22:08:46.364 > [Vibration] Status: OK | RMS: 0.599 | Magnitude: 10.621 | X: 0.337 Y: 0.218 Z: 10.613
+22:08:46.365 > [Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 77cm energy:100 | Distance: 55cm
+22:08:46.365 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:46.365 > [Temperature] 22.75 C
+22:08:46.365 > [pH] Board output at G34: 1721.1 mV
+22:08:46.568 > [Vibration] Status: OK | RMS: 0.622 | Magnitude: 8.655 | X: -0.156 Y: 0.033 Z: 8.654
+22:08:46.776 > [Vibration] Status: CAUTION | RMS: 0.653 | Magnitude: 10.263 | X: 0.469 Y: 0.325 Z: 10.247
+22:08:46.777 > [Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+22:08:46.977 > [EVENT] 2026-10-26 22:06:56 elevated_vibration duration_ms=172 peak_rms=0.653 warning=0
+22:08:47.177 > [Vibration] Status: CAUTION | RMS: 0.669 | Magnitude: 10.937 | X: 0.330 Y: 0.132 Z: 10.932
+22:08:47.177 > [STD] std=0.6361 n=50 stopped=0
+22:08:47.177 > 2026-10-26 22:06:56
+22:08:47.382 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:47.382 > [Temperature] 22.75 C
+22:08:47.382 > [pH] Board output at G34: 1721.4 mV
+22:08:47.382 > [Vibration] Status: CAUTION | RMS: 0.707 | Magnitude: 10.960 | X: 0.325 Y: 0.311 Z: 10.951
+22:08:47.382 > [Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+22:08:47.590 > [Vibration] Status: CAUTION | RMS: 0.687 | Magnitude: 9.781 | X: 0.175 Y: 0.548 Z: 9.764
+22:08:47.796 > [Radar] OUT: HIGH | Moving: 67cm energy:64 | Still: 65cm energy:100 | Distance: 54cm
+22:08:47.998 > [Vibration] Status: CAUTION | RMS: 0.665 | Magnitude: 9.666 | X: 0.158 Y: 0.270 Z: 9.661
+22:08:47.998 > [EVENT] 2026-10-26 22:06:56 elevated_vibration duration_ms=1074 peak_rms=0.707 warning=0
+22:08:48.201 > [EVENT] 2026-10-26 22:06:57 elevated_vibration duration_ms=36 peak_rms=0.643 warning=0
+22:08:48.201 > [Vibration] Status: CAUTION | RMS: 0.649 | Magnitude: 10.693 | X: 0.160 Y: 0.589 Z: 10.676
+22:08:48.201 > [STD] std=0.5956 n=50 stopped=0
+22:08:48.201 > 2026-10-26 22:06:57
+22:08:48.402 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:08:48.403 > [Temperature] 22.75 C
+22:08:48.403 > [pH] Board output at G34: 1721.6 mV
+22:08:48.403 > [Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+22:08:48.403 > [Vibration] Status: CAUTION | RMS: 0.727 | Magnitude: 9.899 | X: 0.091 Y: 0.017 Z: 9.898
+22:08:48.604 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 10.157 | X: 0.555 Y: 0.423 Z: 10.133
+22:08:49.009 > [Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+22:08:49.009 > [Vibration] Status: CAUTION | RMS: 0.714 | Magnitude: 10.610 | X: 0.349 Y: 0.335 Z: 10.599
+22:08:49.223 > [STD] std=0.6068 n=50 stopped=0
+22:08:49.223 > [Vibration] Status: CAUTION | RMS: 0.726 | Magnitude: 10.369 | X: 0.591 Y: 0.426 Z: 10.343
+22:08:49.224 > 2026-10-26 22:06:58
+22:08:49.435 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.565 V
+22:08:49.435 > [Temperature] 22.75 C
+22:08:49.435 > [pH] Board output at G34: 1721.7 mV
+22:08:49.435 > [Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+22:08:49.435 > [TIMING] n=2245 mean_ms=26.532 min_ms=23.812 max_ms=906.937 std_ms=24.290 over_50ms=62 read_errors=0
+22:08:49.435 > [WQ] heap=224180 minheap=203680
+22:08:49.435 > [Vibration] Status: CAUTION | RMS: 0.768 | Magnitude: 9.875 | X: 0.136 Y: -0.077 Z: 9.874
+22:08:49.842 > [Vibration] Status: CAUTION | RMS: 0.700 | Magnitude: 10.590 | X: 0.328 Y: 0.385 Z: 10.578
+22:08:49.842 > [Radar] OUT: HIGH | Moving: 77cm energy:92 | Still: 67cm energy:100 | Distance: 54cm
+22:08:50.057 > [Vibration] Status: CAUTION | RMS: 0.707 | Magnitude: 9.869 | X: 0.103 Y: -0.148 Z: 9.867
+22:08:50.260 > [STD] std=0.5418 n=50 stopped=0
+22:08:50.260 > 2026-10-26 22:06:59
+22:08:50.260 > [Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.434 | X: 0.093 Y: 0.223 Z: 10.432
+22:08:50.260 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:08:50.461 > [Temperature] 22.69 C
+22:08:50.461 > [pH] Board output at G34: 1722.9 mV
+22:08:50.461 > [Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 55cm
+22:08:50.461 > [Vibration] Status: CAUTION | RMS: 0.647 | Magnitude: 10.497 | X: 0.278 Y: 0.177 Z: 10.491
+22:08:50.572 > #SCRIPT shot 1 radar_only
+22:08:50.668 > [EVENT] 2026-10-26 22:06:57 elevated_vibration duration_ms=2487 peak_rms=0.779 warning=0
+22:08:50.881 > [Vibration] Status: OK | RMS: 0.580 | Magnitude: 10.283 | X: 0.002 Y: -0.057 Z: 10.283
+22:08:50.881 > [Radar] OUT: HIGH | Moving: 78cm energy:73 | Still: 78cm energy:100 | Distance: 55cm
+22:08:51.086 > [Vibration] Status: OK | RMS: 0.582 | Magnitude: 9.827 | X: 0.361 Y: 0.256 Z: 9.817
+22:08:51.086 > [Occ] online ip=192.168.4.5 count=1 active=1 chg=14.5 last=2026-10-26 22:06:50
+22:08:51.300 > [STD] std=0.5372 n=50 stopped=0
+22:08:51.300 > 2026-10-26 22:07:00
+22:08:51.300 > [Vibration] Status: OK | RMS: 0.587 | Magnitude: 9.746 | X: 0.139 Y: -0.007 Z: 9.745
+22:08:51.300 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:08:51.300 > [Temperature] 22.75 C
+22:08:51.300 > [pH] Board output at G34: 1722.9 mV
+22:08:51.500 > [Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+22:08:51.708 > [Vibration] Status: OK | RMS: 0.569 | Magnitude: 9.400 | X: -0.220 Y: 0.191 Z: 9.396
+22:08:51.921 > [Vibration] Status: CAUTION | RMS: 0.646 | Magnitude: 10.558 | X: 0.684 Y: 0.687 Z: 10.513
+22:08:51.921 > [Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 69cm energy:100 | Distance: 53cm
+22:08:52.128 > [Vibration] Status: CAUTION | RMS: 0.717 | Magnitude: 10.143 | X: 0.254 Y: 0.696 Z: 10.116
+22:08:52.337 > [STD] std=0.6089 n=50 stopped=0
+22:08:52.337 > 2026-10-26 22:07:01
+22:08:52.337 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:52.337 > [Temperature] 22.75 C
+22:08:52.337 > [pH] Board output at G34: 1721.4 mV
+22:08:52.337 > [Vibration] Status: CAUTION | RMS: 0.702 | Magnitude: 10.752 | X: 0.208 Y: 0.251 Z: 10.747
+22:08:52.543 > [Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 71cm energy:100 | Distance: 52cm
+22:08:52.757 > [Vibration] Status: CAUTION | RMS: 0.735 | Magnitude: 9.991 | X: 0.007 Y: 0.756 Z: 9.963
+22:08:52.965 > [Vibration] Status: CAUTION | RMS: 0.743 | Magnitude: 10.763 | X: 0.290 Y: 0.378 Z: 10.752
+22:08:52.965 > [Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+22:08:53.172 > [Vibration] Status: CAUTION | RMS: 0.690 | Magnitude: 9.896 | X: 0.069 Y: 0.215 Z: 9.893
+22:08:53.379 > [STD] std=0.5863 n=50 stopped=0
+22:08:53.379 > 2026-10-26 22:07:02
+22:08:53.380 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:08:53.380 > [Temperature] 22.75 C
+22:08:53.380 > [pH] Board output at G34: 1721.9 mV
+22:08:53.586 > [Vibration] Status: CAUTION | RMS: 0.647 | Magnitude: 10.101 | X: 0.165 Y: -0.129 Z: 10.099
+22:08:53.586 > [Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 67cm energy:100 | Distance: 53cm
+22:08:53.793 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.836 | X: 0.376 Y: 0.077 Z: 10.829
+22:08:54.000 > [EVENT] 2026-10-26 22:07:01 elevated_vibration duration_ms=2098 peak_rms=0.760 warning=0
+22:08:54.000 > [Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 58cm energy:100 | Distance: 49cm
+22:08:54.000 > [Vibration] Status: CAUTION | RMS: 0.644 | Magnitude: 10.613 | X: 0.469 Y: 0.534 Z: 10.590
+22:08:54.206 > [Vibration] Status: CAUTION | RMS: 0.676 | Magnitude: 8.783 | X: -0.134 Y: 0.321 Z: 8.776
+22:08:54.413 > [STD] std=0.6332 n=50 stopped=0
+22:08:54.413 > 2026-10-26 22:07:03
+22:08:54.413 > [Turbidity] At G35 pin: 1.779 V | Sensor output: 3.559 V
+22:08:54.414 > [Temperature] 22.75 C
+22:08:54.414 > [pH] Board output at G34: 1720.5 mV
+22:08:54.627 > [Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 73cm energy:100 | Distance: 50cm
+22:08:54.627 > [Vibration] Status: CAUTION | RMS: 0.686 | Magnitude: 10.095 | X: 0.471 Y: 0.359 Z: 10.078
+22:08:54.834 > [Vibration] Status: CAUTION | RMS: 0.694 | Magnitude: 10.738 | X: 0.383 Y: 0.794 Z: 10.702
+22:08:55.041 > [Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 75cm energy:100 | Distance: 56cm
+22:08:55.041 > [Vibration] Status: CAUTION | RMS: 0.648 | Magnitude: 10.098 | X: 0.428 Y: 0.179 Z: 10.087
+22:08:55.259 > [EVENT] 2026-10-26 22:07:03 elevated_vibration duration_ms=1152 peak_rms=0.695 warning=0
+22:08:55.259 > [STD] std=0.5758 n=50 stopped=0
+22:08:55.259 > 2026-10-26 22:07:04
+22:08:55.459 > [Vibration] Status: CAUTION | RMS: 0.712 | Magnitude: 11.028 | X: 0.096 Y: 0.333 Z: 11.023
+22:08:55.459 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:55.459 > [Temperature] 22.75 C
+22:08:55.459 > [pH] Board output at G34: 1721.8 mV
+22:08:55.459 > [Radar] OUT: HIGH | Moving: 134cm energy:100 | Still: 116cm energy:100 | Distance: 77cm
+22:08:55.667 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 10.161 | X: 0.361 Y: 0.232 Z: 10.152
+22:08:55.874 > [Vibration] Status: CAUTION | RMS: 0.694 | Magnitude: 10.816 | X: 0.074 Y: 0.268 Z: 10.812
+22:08:56.075 > [Radar] OUT: HIGH | Moving: 170cm energy:100 | Still: 148cm energy:100 | Distance: 106cm
+22:08:56.075 > [Vibration] Status: CAUTION | RMS: 0.695 | Magnitude: 9.615 | X: 0.148 Y: -0.227 Z: 9.611
+22:08:56.282 > [STD] std=0.4969 n=50 stopped=0
+22:08:56.282 > 2026-10-26 22:07:05
+22:08:56.493 > [Vibration] Status: CAUTION | RMS: 0.674 | Magnitude: 9.458 | X: 0.203 Y: 0.366 Z: 9.448
+22:08:56.493 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:08:56.493 > [Temperature] 22.69 C
+22:08:56.493 > [pH] Board output at G34: 1720.7 mV
+22:08:56.493 > [Radar] OUT: HIGH | Moving: 208cm energy:90 | Still: 176cm energy:100 | Distance: 131cm
+22:08:56.704 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 10.837 | X: 0.175 Y: 0.438 Z: 10.826
+22:08:56.910 > [Vibration] Status: CAUTION | RMS: 0.723 | Magnitude: 9.774 | X: 0.187 Y: -0.124 Z: 9.771
+22:08:57.113 > [Radar] OUT: HIGH | Moving: 148cm energy:73 | Still: 156cm energy:100 | Distance: 134cm
+22:08:57.319 > [Vibration] Status: CAUTION | RMS: 0.713 | Magnitude: 9.923 | X: -0.122 Y: 0.438 Z: 9.912
+22:08:57.319 > [STD] std=0.5973 n=50 stopped=0
+22:08:57.319 > 2026-10-26 22:07:06
+22:08:57.526 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:08:57.526 > [Temperature] 22.75 C
+22:08:57.526 > [pH] Board output at G34: 1722.1 mV
+22:08:57.526 > [Vibration] Status: CAUTION | RMS: 0.670 | Magnitude: 10.532 | X: 0.500 Y: -0.091 Z: 10.520
+22:08:57.526 > [Radar] OUT: HIGH | Moving: 153cm energy:100 | Still: 158cm energy:100 | Distance: 142cm
+22:08:57.733 > [Occ] online ip=192.168.4.5 count=1 active=1 chg=44.2 last=2026-10-26 22:06:50
+22:08:57.733 > [Vibration] Status: CAUTION | RMS: 0.689 | Magnitude: 10.512 | X: 0.325 Y: 0.524 Z: 10.494
+22:08:57.939 > [Vibration] Status: CAUTION | RMS: 0.689 | Magnitude: 9.935 | X: 0.048 Y: 0.096 Z: 9.934
+22:08:58.146 > [Radar] OUT: HIGH | Moving: none | Still: 179cm energy:100 | Distance: 157cm
+22:08:58.146 > [EVENT] 2026-10-26 22:07:04 elevated_vibration duration_ms=2921 peak_rms=0.735 warning=0
+22:08:58.146 > [EVENT] 2026-10-26 22:07:07 elevated_vibration duration_ms=26 peak_rms=0.643 warning=0
+22:08:58.355 > [Vibration] Status: OK | RMS: 0.642 | Magnitude: 10.723 | X: 0.328 Y: 0.206 Z: 10.716
+22:08:58.355 > [STD] std=0.6172 n=50 stopped=0
+22:08:58.355 > 2026-10-26 22:07:07
+22:08:58.355 > [EVENT] 2026-10-26 22:07:07 elevated_vibration duration_ms=52 peak_rms=0.660 warning=0
+22:08:58.561 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:08:58.561 > [Temperature] 22.69 C
+22:08:58.561 > [pH] Board output at G34: 1722.0 mV
+22:08:58.561 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.907 | X: 0.488 Y: -0.345 Z: 10.891
+22:08:58.561 > [Radar] OUT: HIGH | Moving: 162cm energy:75 | Still: 199cm energy:100 | Distance: 159cm
+22:08:58.776 > [Vibration] Status: CAUTION | RMS: 0.737 | Magnitude: 10.182 | X: 0.378 Y: 0.725 Z: 10.149
+22:08:58.982 > [Vibration] Status: CAUTION | RMS: 0.730 | Magnitude: 10.666 | X: 0.445 Y: 0.749 Z: 10.630
+22:08:59.188 > [Radar] OUT: HIGH | Moving: 169cm energy:74 | Still: 147cm energy:100 | Distance: 155cm
+22:08:59.392 > [Vibration] Status: CAUTION | RMS: 0.658 | Magnitude: 10.572 | X: 0.187 Y: 0.440 Z: 10.561
+22:08:59.392 > [STD] std=0.5931 n=50 stopped=0
+22:08:59.392 > 2026-10-26 22:07:08
+22:08:59.392 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:08:59.392 > [Temperature] 22.75 C
+22:08:59.392 > [pH] Board output at G34: 1720.4 mV
+22:08:59.598 > [Vibration] Status: CAUTION | RMS: 0.701 | Magnitude: 9.868 | X: 0.239 Y: -0.007 Z: 9.865
+22:08:59.599 > [Radar] OUT: HIGH | Moving: 170cm energy:100 | Still: 167cm energy:100 | Distance: 154cm
+22:08:59.804 > [Vibration] Status: CAUTION | RMS: 0.656 | Magnitude: 9.646 | X: 0.163 Y: 0.074 Z: 9.644
+22:08:59.804 > [EVENT] 2026-10-26 22:07:07 elevated_vibration duration_ms=1442 peak_rms=0.744 warning=0
+22:09:00.010 > [Vibration] Status: CAUTION | RMS: 0.647 | Magnitude: 10.670 | X: 1.010 Y: 0.768 Z: 10.594
+22:09:00.225 > [Radar] OUT: HIGH | Moving: 164cm energy:60 | Still: 162cm energy:100 | Distance: 149cm
+22:09:00.225 > [EVENT] 2026-10-26 22:07:09 elevated_vibration duration_ms=179 peak_rms=0.651 warning=0
+22:09:00.430 > [Vibration] Status: CAUTION | RMS: 0.661 | Magnitude: 10.257 | X: -0.010 Y: 0.062 Z: 10.257
+22:09:00.430 > [STD] std=0.5026 n=50 stopped=0
+22:09:00.430 > 2026-10-26 22:07:09
+22:09:00.430 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:00.430 > [Temperature] 22.75 C
+22:09:00.430 > [pH] Board output at G34: 1721.0 mV
+22:09:00.616 > #SCRIPT event enter n=1
+22:09:00.635 > [Vibration] Status: CAUTION | RMS: 0.710 | Magnitude: 9.075 | X: 0.158 Y: 0.117 Z: 9.073
+22:09:00.635 > [Radar] OUT: HIGH | Moving: none | Still: 162cm energy:100 | Distance: 149cm
+22:09:00.848 > [Vibration] Status: CAUTION | RMS: 0.702 | Magnitude: 9.643 | X: 0.022 Y: 0.124 Z: 9.642
+22:09:01.257 > [Vibration] Status: CAUTION | RMS: 0.734 | Magnitude: 10.024 | X: 0.294 Y: 0.297 Z: 10.015
+22:09:01.257 > [Radar] OUT: HIGH | Moving: 175cm energy:94 | Still: 152cm energy:100 | Distance: 148cm
+22:09:01.464 > [STD] std=0.7342 n=50 stopped=0
+22:09:01.464 > [Vibration] Status: CAUTION | RMS: 0.785 | Magnitude: 8.191 | X: -0.246 Y: 0.285 Z: 8.183
+22:09:01.464 > 2026-10-26 22:07:10
+22:09:01.464 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:01.464 > [Temperature] 22.75 C
+22:09:01.464 > [pH] Board output at G34: 1721.6 mV
+22:09:01.668 > [Vibration] Status: CAUTION | RMS: 0.813 | Magnitude: 9.515 | X: -0.244 Y: 0.273 Z: 9.508
+22:09:01.669 > [Radar] OUT: HIGH | Moving: 225cm energy:32 | Still: 165cm energy:100 | Distance: 159cm
+22:09:01.874 > [Vibration] Status: CAUTION | RMS: 0.774 | Magnitude: 9.650 | X: 0.584 Y: -0.213 Z: 9.630
+22:09:02.288 > [Vibration] Status: CAUTION | RMS: 0.801 | Magnitude: 10.740 | X: 0.385 Y: -0.055 Z: 10.733
+22:09:02.289 > [Radar] OUT: HIGH | Moving: 166cm energy:93 | Still: 183cm energy:100 | Distance: 157cm
+22:09:02.493 > [STD] std=0.7011 n=50 stopped=0
+22:09:02.494 > 2026-10-26 22:07:11
+22:09:02.494 > [Vibration] Status: CAUTION | RMS: 0.780 | Magnitude: 10.102 | X: 0.416 Y: 0.347 Z: 10.087
+22:09:02.494 > [Turbidity] At G35 pin: 1.777 V | Sensor output: 3.553 V
+22:09:02.494 > [Temperature] 22.75 C
+22:09:02.494 > [pH] Board output at G34: 1722.3 mV
+22:09:02.695 > [Vibration] Status: CAUTION | RMS: 0.745 | Magnitude: 9.683 | X: 0.201 Y: 0.534 Z: 9.666
+22:09:02.695 > [Radar] OUT: HIGH | Moving: 167cm energy:86 | Still: 152cm energy:100 | Distance: 150cm
+22:09:02.911 > [Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 10.110 | X: 0.330 Y: 0.500 Z: 10.092
+22:09:02.911 > [EVENT] 2026-10-26 22:07:09 elevated_vibration duration_ms=2682 peak_rms=0.831 warning=0
+22:09:03.117 > [EVENT] 2026-10-26 22:07:12 elevated_vibration duration_ms=100 peak_rms=0.650 warning=0
+22:09:03.117 > [Vibration] Status: OK | RMS: 0.639 | Magnitude: 10.085 | X: 0.409 Y: 0.572 Z: 10.061
+22:09:03.324 > [Radar] OUT: HIGH | Moving: none | Still: 162cm energy:100 | Distance: 150cm
+22:09:03.535 > [STD] std=0.5497 n=50 stopped=0
+22:09:03.535 > [EVENT] 2026-10-26 22:07:12 elevated_vibration duration_ms=128 peak_rms=0.654 warning=0
+22:09:03.536 > 2026-10-26 22:07:12
+22:09:03.536 > [Vibration] Status: OK | RMS: 0.630 | Magnitude: 10.080 | X: 0.191 Y: 0.117 Z: 10.078
+22:09:03.536 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:03.536 > [Temperature] 22.69 C
+22:09:03.536 > [pH] Board output at G34: 1721.3 mV
+22:09:03.736 > [EVENT] 2026-10-26 22:07:13 elevated_vibration duration_ms=66 peak_rms=0.654 warning=0
+22:09:03.736 > [Radar] OUT: HIGH | Moving: 177cm energy:100 | Still: 158cm energy:100 | Distance: 151cm
+22:09:03.737 > [Vibration] Status: OK | RMS: 0.627 | Magnitude: 10.287 | X: 0.156 Y: 0.112 Z: 10.286
+22:09:03.950 > [EVENT] 2026-10-26 22:07:13 elevated_vibration duration_ms=26 peak_rms=0.645 warning=0
+22:09:03.950 > [Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 10.236 | X: 0.208 Y: 0.457 Z: 10.223
+22:09:04.156 > [Radar] OUT: HIGH | Moving: 199cm energy:67 | Still: 166cm energy:100 | Distance: 154cm
+22:09:04.364 > [Vibration] Status: CAUTION | RMS: 0.648 | Magnitude: 9.619 | X: 0.081 Y: 0.091 Z: 9.618
+22:09:04.364 > [STD] std=0.5292 n=50 stopped=0
+22:09:04.364 > [EVENT] 2026-10-26 22:07:13 elevated_vibration duration_ms=531 peak_rms=0.679 warning=0
+22:09:04.365 > 2026-10-26 22:07:13
+22:09:04.568 > [Vibration] Status: CAUTION | RMS: 0.643 | Magnitude: 10.405 | X: 0.285 Y: 0.397 Z: 10.393
+22:09:04.568 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:04.568 > [Temperature] 22.75 C
+22:09:04.568 > [pH] Board output at G34: 1721.2 mV
+22:09:04.772 > [Occ] online ip=192.168.4.5 count=1 active=1 chg=72.2 last=2026-10-26 22:06:50
+22:09:04.772 > [EVENT] 2026-10-26 22:07:13 elevated_vibration duration_ms=220 peak_rms=0.660 warning=0
+22:09:04.772 > [Radar] OUT: HIGH | Moving: none | Still: 191cm energy:100 | Distance: 162cm
+22:09:04.772 > [Vibration] Status: OK | RMS: 0.613 | Magnitude: 9.719 | X: 0.053 Y: -0.074 Z: 9.719
+22:09:04.983 > [Vibration] Status: OK | RMS: 0.636 | Magnitude: 10.245 | X: 0.297 Y: 0.091 Z: 10.240
+22:09:05.191 > [EVENT] 2026-10-26 22:07:14 elevated_vibration duration_ms=75 peak_rms=0.647 warning=0
+22:09:05.191 > [Radar] OUT: HIGH | Moving: 222cm energy:100 | Still: 222cm energy:100 | Distance: 181cm
+22:09:05.405 > [EVENT] 2026-10-26 22:07:14 elevated_vibration duration_ms=76 peak_rms=0.663 warning=0
+22:09:05.405 > [Vibration] Status: OK | RMS: 0.621 | Magnitude: 10.333 | X: 0.368 Y: 0.048 Z: 10.326
+22:09:05.405 > [STD] std=0.5933 n=50 stopped=0
+22:09:05.405 > 2026-10-26 22:07:14
+22:09:05.612 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:05.612 > [Temperature] 22.75 C
+22:09:05.612 > [pH] Board output at G34: 1720.5 mV
+22:09:05.612 > [Vibration] Status: CAUTION | RMS: 0.645 | Magnitude: 10.069 | X: 0.455 Y: 0.586 Z: 10.042
+22:09:05.612 > [EVENT] 2026-10-26 22:07:14 elevated_vibration duration_ms=166 peak_rms=0.657 warning=0
+22:09:05.816 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 192cm
+22:09:05.816 > [Vibration] Status: OK | RMS: 0.641 | Magnitude: 10.583 | X: 0.366 Y: 0.797 Z: 10.546
+22:09:06.024 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 9.372 | X: -0.301 Y: 0.115 Z: 9.367
+22:09:06.227 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 197cm
+22:09:06.432 > [Vibration] Status: CAUTION | RMS: 0.645 | Magnitude: 10.466 | X: 0.328 Y: 0.246 Z: 10.458
+22:09:06.432 > [STD] std=0.6120 n=50 stopped=0
+22:09:06.432 > 2026-10-26 22:07:15
+22:09:06.432 > [EVENT] 2026-10-26 22:07:15 elevated_vibration duration_ms=629 peak_rms=0.684 warning=0
+22:09:06.637 > [EVENT] 2026-10-26 22:07:15 elevated_vibration duration_ms=26 peak_rms=0.648 warning=0
+22:09:06.637 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:06.637 > [Temperature] 22.75 C
+22:09:06.637 > [pH] Board output at G34: 1720.6 mV
+22:09:06.637 > [Vibration] Status: OK | RMS: 0.617 | Magnitude: 10.678 | X: 0.093 Y: 0.438 Z: 10.669
+22:09:06.844 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:06.844 > [Vibration] Status: OK | RMS: 0.586 | Magnitude: 10.504 | X: 0.285 Y: 0.431 Z: 10.491
+22:09:07.256 > [Vibration] Status: OK | RMS: 0.611 | Magnitude: 10.525 | X: 0.263 Y: 0.196 Z: 10.520
+22:09:07.256 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:07.465 > [Vibration] Status: OK | RMS: 0.585 | Magnitude: 10.424 | X: 0.086 Y: 0.175 Z: 10.422
+22:09:07.465 > [STD] std=0.4473 n=50 stopped=0
+22:09:07.465 > 2026-10-26 22:07:16
+22:09:07.672 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:07.673 > [Temperature] 22.75 C
+22:09:07.673 > [pH] Board output at G34: 1720.2 mV
+22:09:07.673 > [Vibration] Status: OK | RMS: 0.557 | Magnitude: 10.504 | X: 0.409 Y: -0.067 Z: 10.496
+22:09:07.883 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:07.883 > [Vibration] Status: OK | RMS: 0.557 | Magnitude: 10.503 | X: -0.029 Y: 0.443 Z: 10.494
+22:09:08.091 > [ 78700][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:09:08.302 > [Vibration] Status: OK | RMS: 0.636 | Magnitude: 10.686 | X: 0.091 Y: 1.278 Z: 10.609
+22:09:08.302 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:82 | Distance: 199cm
+22:09:08.507 > [STD] std=0.5085 n=50 stopped=0
+22:09:08.507 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 10.262 | X: 0.230 Y: 0.323 Z: 10.255
+22:09:08.507 > 2026-10-26 22:07:17
+22:09:08.508 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:08.508 > [Temperature] 22.69 C
+22:09:08.508 > [pH] Board output at G34: 1721.5 mV
+22:09:08.717 > [Vibration] Status: OK | RMS: 0.632 | Magnitude: 10.499 | X: 0.136 Y: 0.617 Z: 10.479
+22:09:08.931 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:09.137 > [Vibration] Status: OK | RMS: 0.596 | Magnitude: 9.303 | X: -0.036 Y: 0.215 Z: 9.300
+22:09:09.137 > [EVENT] 2026-10-26 22:07:18 elevated_vibration duration_ms=39 peak_rms=0.645 warning=0
+22:09:09.338 > [Vibration] Status: OK | RMS: 0.633 | Magnitude: 10.570 | X: 0.232 Y: 0.481 Z: 10.556
+22:09:09.339 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:09.541 > [STD] std=0.5485 n=50 stopped=0
+22:09:09.541 > 2026-10-26 22:07:18
+22:09:09.541 > [Vibration] Status: OK | RMS: 0.611 | Magnitude: 10.148 | X: 0.426 Y: 0.352 Z: 10.133
+22:09:09.541 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:09.541 > [Temperature] 22.75 C
+22:09:09.541 > [pH] Board output at G34: 1720.7 mV
+22:09:09.755 > [Vibration] Status: OK | RMS: 0.631 | Magnitude: 9.904 | X: 0.079 Y: 0.701 Z: 9.879
+22:09:09.960 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:10.166 > [Vibration] Status: OK | RMS: 0.612 | Magnitude: 9.393 | X: 0.471 Y: 0.550 Z: 9.365
+22:09:10.373 > [Vibration] Status: CAUTION | RMS: 0.657 | Magnitude: 9.679 | X: -0.189 Y: 0.189 Z: 9.676
+22:09:10.374 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:10.374 > [EVENT] 2026-10-26 22:07:19 elevated_vibration duration_ms=150 peak_rms=0.659 warning=0
+22:09:10.575 > [STD] std=0.5051 n=50 stopped=0
+22:09:10.575 > 2026-10-26 22:07:19
+22:09:10.575 > [Vibration] Status: OK | RMS: 0.634 | Magnitude: 10.847 | X: 0.065 Y: 0.299 Z: 10.843
+22:09:10.575 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:10.575 > [Temperature] 22.75 C
+22:09:10.575 > [pH] Board output at G34: 1720.9 mV
+22:09:10.785 > [Vibration] Status: OK | RMS: 0.614 | Magnitude: 10.934 | X: 0.378 Y: 0.421 Z: 10.920
+22:09:10.985 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:11.187 > [Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 10.642 | X: 0.390 Y: -0.029 Z: 10.635
+22:09:11.809 > [STD] std=0.5396 n=50 stopped=0
+22:09:11.809 > [Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.470 | X: 0.481 Y: 0.818 Z: 10.427
+22:09:11.809 > 2026-10-26 22:07:21
+22:09:11.809 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:11.809 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.569 V
+22:09:11.809 > [Temperature] 22.75 C
+22:09:11.809 > [pH] Board output at G34: 1721.6 mV
+22:09:11.809 > [ 82433][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:09:12.015 > [Occ] online ip=192.168.4.5 count=1 active=0 chg=29.6 last=2026-10-26 22:06:50
+22:09:12.015 > [Vibration] Status: CAUTION | RMS: 0.708 | Magnitude: 10.156 | X: 0.144 Y: -0.412 Z: 10.147
+22:09:12.228 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 8.585 | X: -0.254 Y: 0.129 Z: 8.580
+22:09:12.228 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:12.640 > [Vibration] Status: CAUTION | RMS: 0.793 | Magnitude: 10.632 | X: 0.179 Y: 0.057 Z: 10.630
+22:09:12.839 > [STD] std=0.6613 n=50 stopped=0
+22:09:12.839 > 2026-10-26 22:07:22
+22:09:12.839 > [Vibration] Status: CAUTION | RMS: 0.797 | Magnitude: 10.308 | X: -0.017 Y: 0.124 Z: 10.307
+22:09:12.839 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:12.839 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:12.839 > [Temperature] 22.75 C
+22:09:12.839 > [pH] Board output at G34: 1719.6 mV
+22:09:13.049 > [Vibration] Status: CAUTION | RMS: 0.749 | Magnitude: 10.700 | X: 0.129 Y: 0.392 Z: 10.692
+22:09:13.456 > [Vibration] Status: CAUTION | RMS: 0.724 | Magnitude: 10.705 | X: 0.115 Y: 0.081 Z: 10.704
+22:09:13.456 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:13.663 > [Vibration] Status: CAUTION | RMS: 0.716 | Magnitude: 10.114 | X: 0.098 Y: 0.392 Z: 10.106
+22:09:13.868 > [STD] std=0.5246 n=50 stopped=0
+22:09:13.868 > [EVENT] 2026-10-26 22:07:20 elevated_vibration duration_ms=2913 peak_rms=0.799 warning=0
+22:09:13.868 > 2026-10-26 22:07:23
+22:09:13.869 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:13.869 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.569 V
+22:09:13.869 > [Temperature] 22.75 C
+22:09:13.869 > [pH] Board output at G34: 1720.5 mV
+22:09:13.869 > [Vibration] Status: OK | RMS: 0.591 | Magnitude: 10.204 | X: 0.404 Y: 0.924 Z: 10.154
+22:09:14.069 > [Vibration] Status: OK | RMS: 0.591 | Magnitude: 10.618 | X: 0.620 Y: 0.258 Z: 10.597
+22:09:14.484 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:14.484 > [Vibration] Status: OK | RMS: 0.513 | Magnitude: 9.790 | X: 0.443 Y: 0.359 Z: 9.774
+22:09:14.691 > [Vibration] Status: OK | RMS: 0.597 | Magnitude: 10.508 | X: 0.177 Y: 0.610 Z: 10.489
+22:09:14.891 > [STD] std=0.4367 n=50 stopped=0
+22:09:14.891 > 2026-10-26 22:07:24
+22:09:14.891 > [Turbidity] At G35 pin: 1.786 V | Sensor output: 3.571 V
+22:09:14.891 > [Temperature] 22.75 C
+22:09:14.891 > [pH] Board output at G34: 1720.5 mV
+22:09:14.891 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:14.891 > [Vibration] Status: OK | RMS: 0.588 | Magnitude: 9.542 | X: 0.134 Y: 0.187 Z: 9.539
+22:09:15.105 > [Vibration] Status: OK | RMS: 0.593 | Magnitude: 9.784 | X: -0.055 Y: 0.227 Z: 9.781
+22:09:15.313 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:15.516 > [Vibration] Status: OK | RMS: 0.580 | Magnitude: 10.114 | X: 0.641 Y: 1.115 Z: 10.032
+22:09:15.573 > #SCRIPT shot 2 agree
+22:09:15.720 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 10.051 | X: 0.220 Y: 0.622 Z: 10.030
+22:09:15.923 > [STD] std=0.5841 n=50 stopped=0
+22:09:15.923 > 2026-10-26 22:07:25
+22:09:15.923 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.569 V
+22:09:15.923 > [Temperature] 22.75 C
+22:09:15.923 > [pH] Board output at G34: 1719.7 mV
+22:09:15.923 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:15.923 > [Vibration] Status: CAUTION | RMS: 0.704 | Magnitude: 10.862 | X: 0.823 Y: 0.720 Z: 10.807
+22:09:16.337 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 9.071 | X: 0.383 Y: 0.187 Z: 9.061
+22:09:16.337 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:16.546 > [Vibration] Status: CAUTION | RMS: 0.771 | Magnitude: 10.703 | X: 0.275 Y: 0.457 Z: 10.690
+22:09:16.749 > [Vibration] Status: CAUTION | RMS: 0.782 | Magnitude: 10.074 | X: 0.081 Y: -0.103 Z: 10.073
+22:09:16.954 > [STD] std=0.5326 n=50 stopped=0
+22:09:16.954 > 2026-10-26 22:07:26
+22:09:16.954 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:16.954 > [Temperature] 22.75 C
+22:09:16.954 > [pH] Board output at G34: 1720.5 mV
+22:09:16.954 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:17.167 > [Vibration] Status: CAUTION | RMS: 0.758 | Magnitude: 10.559 | X: 0.385 Y: 0.237 Z: 10.549
+22:09:17.378 > [Vibration] Status: CAUTION | RMS: 0.721 | Magnitude: 10.314 | X: 0.359 Y: 0.400 Z: 10.300
+22:09:17.378 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:17.580 > [Vibration] Status: CAUTION | RMS: 0.699 | Magnitude: 10.048 | X: 0.053 Y: -0.175 Z: 10.046
+22:09:17.794 > [Vibration] Status: CAUTION | RMS: 0.686 | Magnitude: 10.639 | X: 0.304 Y: 0.390 Z: 10.628
+22:09:17.794 > [STD] std=0.6076 n=50 stopped=0
+22:09:17.794 > 2026-10-26 22:07:27
+22:09:17.999 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:17.999 > [Temperature] 22.75 C
+22:09:17.999 > [pH] Board output at G34: 1720.4 mV
+22:09:17.999 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:18.206 > [Vibration] Status: CAUTION | RMS: 0.676 | Magnitude: 10.495 | X: 0.629 Y: 0.825 Z: 10.444
+22:09:18.412 > [Vibration] Status: CAUTION | RMS: 0.658 | Magnitude: 10.108 | X: 0.067 Y: -0.282 Z: 10.104
+22:09:18.412 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:18.412 > [EVENT] 2026-10-26 22:07:25 elevated_vibration duration_ms=2862 peak_rms=0.793 warning=0
+22:09:18.614 > [Vibration] Status: CAUTION | RMS: 0.698 | Magnitude: 10.300 | X: -0.014 Y: 0.086 Z: 10.300
+22:09:18.816 > [STD] std=0.5270 n=50 stopped=0
+22:09:18.816 > 2026-10-26 22:07:28
+22:09:19.025 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:19.025 > [Temperature] 22.69 C
+22:09:19.025 > [pH] Board output at G34: 1720.2 mV
+22:09:19.025 > [Vibration] Status: CAUTION | RMS: 0.734 | Magnitude: 10.761 | X: 0.294 Y: 0.330 Z: 10.752
+22:09:19.025 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:19.240 > [Vibration] Status: CAUTION | RMS: 0.700 | Magnitude: 10.443 | X: 0.129 Y: 0.263 Z: 10.439
+22:09:19.240 > [Occ] online ip=192.168.4.5 count=1 active=0 chg=29.6 last=2026-10-26 22:06:50
+22:09:19.445 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:19.445 > [Vibration] Status: CAUTION | RMS: 0.737 | Magnitude: 10.551 | X: 0.151 Y: 0.285 Z: 10.546
+22:09:19.864 > [Vibration] Status: CAUTION | RMS: 0.753 | Magnitude: 9.983 | X: -0.225 Y: 0.246 Z: 9.977
+22:09:19.864 > [STD] std=0.5937 n=50 stopped=0
+22:09:19.864 > 2026-10-26 22:07:29
+22:09:19.864 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.565 V
+22:09:19.864 > [Temperature] 22.69 C
+22:09:19.864 > [pH] Board output at G34: 1720.7 mV
+22:09:20.072 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:20.072 > [Vibration] Status: CAUTION | RMS: 0.726 | Magnitude: 10.423 | X: 0.538 Y: 0.790 Z: 10.379
+22:09:20.279 > [Vibration] Status: CAUTION | RMS: 0.705 | Magnitude: 10.178 | X: 0.232 Y: -0.199 Z: 10.173
+22:09:20.486 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:20.487 > [Vibration] Status: CAUTION | RMS: 0.737 | Magnitude: 8.648 | X: -0.072 Y: 0.139 Z: 8.647
+22:09:20.600 > #SCRIPT event leave n=1
+22:09:20.894 > [Vibration] Status: CAUTION | RMS: 0.754 | Magnitude: 10.958 | X: 0.392 Y: 0.115 Z: 10.951
+22:09:20.895 > [STD] std=0.5927 n=50 stopped=0
+22:09:20.895 > 2026-10-26 22:07:30
+22:09:20.895 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:20.895 > [Temperature] 22.75 C
+22:09:20.895 > [pH] Board output at G34: 1719.9 mV
+22:09:20.895 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:21.102 > [Vibration] Status: CAUTION | RMS: 0.740 | Magnitude: 10.037 | X: 0.285 Y: 0.909 Z: 9.991
+22:09:21.302 > [Vibration] Status: CAUTION | RMS: 0.741 | Magnitude: 10.539 | X: 0.280 Y: 0.124 Z: 10.535
+22:09:21.505 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:21.505 > [Vibration] Status: CAUTION | RMS: 0.712 | Magnitude: 10.765 | X: 0.091 Y: 0.012 Z: 10.764
+22:09:21.926 > [Vibration] Status: CAUTION | RMS: 0.732 | Magnitude: 10.088 | X: 0.022 Y: 0.462 Z: 10.078
+22:09:21.926 > [STD] std=0.6707 n=50 stopped=0
+22:09:21.926 > 2026-10-26 22:07:31
+22:09:21.926 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:21.926 > [Temperature] 22.75 C
+22:09:21.926 > [pH] Board output at G34: 1721.9 mV
+22:09:21.926 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:22.130 > [Vibration] Status: CAUTION | RMS: 0.705 | Magnitude: 10.579 | X: 0.457 Y: 0.361 Z: 10.563
+22:09:22.337 > [Vibration] Status: CAUTION | RMS: 0.715 | Magnitude: 10.476 | X: 0.428 Y: -0.005 Z: 10.468
+22:09:22.550 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:22.550 > [Vibration] Status: CAUTION | RMS: 0.664 | Magnitude: 10.448 | X: 0.230 Y: 0.431 Z: 10.436
+22:09:22.963 > [Vibration] Status: CAUTION | RMS: 0.685 | Magnitude: 10.260 | X: 0.591 Y: 0.388 Z: 10.235
+22:09:22.963 > [STD] std=0.6016 n=50 stopped=0
+22:09:22.963 > 2026-10-26 22:07:32
+22:09:22.963 > [Turbidity] At G35 pin: 1.786 V | Sensor output: 3.571 V
+22:09:22.963 > [Temperature] 22.75 C
+22:09:22.963 > [pH] Board output at G34: 1721.5 mV
+22:09:22.963 > [Radar] OUT: HIGH | Moving: 222cm energy:96 | Still: none | Distance: 199cm
+22:09:23.168 > [EVENT] 2026-10-26 22:07:27 elevated_vibration duration_ms=4602 peak_rms=0.766 warning=0
+22:09:23.169 > [Vibration] Status: OK | RMS: 0.639 | Magnitude: 9.987 | X: 0.476 Y: 0.555 Z: 9.960
+22:09:23.369 > [Vibration] Status: OK | RMS: 0.598 | Magnitude: 9.671 | X: 0.115 Y: 0.000 Z: 9.671
+22:09:23.576 > [Radar] OUT: HIGH | Moving: 225cm energy:100 | Still: none | Distance: 201cm
+22:09:23.784 > [Vibration] Status: OK | RMS: 0.580 | Magnitude: 10.167 | X: 0.579 Y: 0.869 Z: 10.113
+22:09:23.784 > [Occ] event #2 at 2026-10-26 22:07:33
+22:09:23.991 > [Vibration] Status: OK | RMS: 0.617 | Magnitude: 10.195 | X: 0.419 Y: 0.900 Z: 10.147
+22:09:23.991 > [STD] std=0.4821 n=50 stopped=0
+22:09:23.991 > 2026-10-26 22:07:33
+22:09:23.991 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.569 V
+22:09:23.991 > [Temperature] 22.75 C
+22:09:23.991 > [pH] Board output at G34: 1720.9 mV
+22:09:23.991 > [Radar] OUT: HIGH | Moving: 186cm energy:48 | Still: none | Distance: 192cm
+22:09:24.198 > [Vibration] Status: OK | RMS: 0.632 | Magnitude: 9.970 | X: 0.084 Y: -0.215 Z: 9.967
+22:09:24.399 > [Vibration] Status: CAUTION | RMS: 0.664 | Magnitude: 11.007 | X: 0.234 Y: 0.156 Z: 11.003
+22:09:24.603 > [Radar] OUT: HIGH | Moving: 151cm energy:100 | Still: 150cm energy:100 | Distance: 168cm
+22:09:24.819 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 10.767 | X: 0.388 Y: -0.153 Z: 10.759
+22:09:25.033 > [STD] std=0.5574 n=50 stopped=0
+22:09:25.034 > 2026-10-26 22:07:34
+22:09:25.034 > [Vibration] Status: CAUTION | RMS: 0.701 | Magnitude: 10.338 | X: 0.254 Y: -0.136 Z: 10.334
+22:09:25.034 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.569 V
+22:09:25.034 > [Temperature] 22.75 C
+22:09:25.034 > [pH] Board output at G34: 1720.1 mV
+22:09:25.034 > [Radar] OUT: HIGH | Moving: 127cm energy:96 | Still: 165cm energy:100 | Distance: 151cm
+22:09:25.246 > [EVENT] 2026-10-26 22:07:33 elevated_vibration duration_ms=807 peak_rms=0.720 warning=0
+22:09:25.247 > [Vibration] Status: OK | RMS: 0.639 | Magnitude: 9.458 | X: 0.385 Y: 0.206 Z: 9.448
+22:09:25.453 > [Vibration] Status: CAUTION | RMS: 0.648 | Magnitude: 9.745 | X: 0.407 Y: 0.390 Z: 9.728
+22:09:25.659 > [Radar] OUT: HIGH | Moving: 188cm energy:68 | Still: 162cm energy:100 | Distance: 146cm
+22:09:25.873 > [EVENT] 2026-10-26 22:07:34 elevated_vibration duration_ms=454 peak_rms=0.676 warning=0
+22:09:25.874 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 9.893 | X: 0.065 Y: -0.352 Z: 9.886
+22:09:26.087 > [STD] std=0.4885 n=50 stopped=0
+22:09:26.087 > 2026-10-26 22:07:35
+22:09:26.087 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:26.087 > [Temperature] 22.75 C
+22:09:26.088 > [pH] Board output at G34: 1720.6 mV
+22:09:26.088 > [Vibration] Status: OK | RMS: 0.601 | Magnitude: 9.261 | X: 0.196 Y: 0.421 Z: 9.250
+22:09:26.088 > [Radar] OUT: HIGH | Moving: 156cm energy:100 | Still: 132cm energy:100 | Distance: 135cm
+22:09:26.288 > [Occ] online ip=192.168.4.5 count=2 active=1 chg=55.6 last=2026-10-26 22:07:33
+22:09:26.288 > [Vibration] Status: OK | RMS: 0.636 | Magnitude: 9.799 | X: 0.313 Y: 0.510 Z: 9.781
+22:09:26.500 > [Vibration] Status: CAUTION | RMS: 0.704 | Magnitude: 9.748 | X: 0.385 Y: 0.689 Z: 9.716
+22:09:26.500 > [Radar] OUT: HIGH | Moving: none | Still: 158cm energy:100 | Distance: 135cm
+22:09:26.921 > [Vibration] Status: CAUTION | RMS: 0.691 | Magnitude: 10.219 | X: 0.285 Y: 0.132 Z: 10.214
+22:09:26.921 > [STD] std=0.5491 n=50 stopped=0
+22:09:26.921 > 2026-10-26 22:07:36
+22:09:27.135 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:09:27.135 > [Temperature] 22.75 C
+22:09:27.135 > [pH] Board output at G34: 1719.6 mV
+22:09:27.135 > [Vibration] Status: CAUTION | RMS: 0.741 | Magnitude: 10.104 | X: 0.366 Y: 0.117 Z: 10.097
+22:09:27.135 > [Radar] OUT: HIGH | Moving: 151cm energy:100 | Still: 148cm energy:100 | Distance: 131cm
+22:09:27.343 > [Vibration] Status: CAUTION | RMS: 0.765 | Magnitude: 10.154 | X: 0.069 Y: 0.584 Z: 10.137
+22:09:27.549 > [Vibration] Status: CAUTION | RMS: 0.751 | Magnitude: 10.920 | X: 0.773 Y: 0.548 Z: 10.879
+22:09:27.549 > [Radar] OUT: HIGH | Moving: 144cm energy:93 | Still: 157cm energy:100 | Distance: 131cm
+22:09:27.962 > [Vibration] Status: CAUTION | RMS: 0.710 | Magnitude: 10.405 | X: 0.038 Y: 0.914 Z: 10.365
+22:09:27.963 > [STD] std=0.5835 n=50 stopped=0
+22:09:27.963 > 2026-10-26 22:07:37
+22:09:27.963 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:27.963 > [Temperature] 22.69 C
+22:09:27.963 > [pH] Board output at G34: 1719.4 mV
+22:09:28.174 > [Vibration] Status: CAUTION | RMS: 0.698 | Magnitude: 10.327 | X: 0.299 Y: 0.646 Z: 10.302
+22:09:28.174 > [Radar] OUT: HIGH | Moving: 143cm energy:100 | Still: 165cm energy:100 | Distance: 134cm
+22:09:28.376 > [EVENT] 2026-10-26 22:07:35 elevated_vibration duration_ms=1959 peak_rms=0.778 warning=0
+22:09:28.376 > [Vibration] Status: OK | RMS: 0.632 | Magnitude: 10.613 | X: 0.538 Y: -0.062 Z: 10.599
+22:09:28.578 > [EVENT] 2026-10-26 22:07:37 elevated_vibration duration_ms=124 peak_rms=0.672 warning=0
+22:09:28.578 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 9.645 | X: 0.072 Y: -0.043 Z: 9.644
+22:09:28.578 > [Radar] OUT: HIGH | Moving: 158cm energy:100 | Still: 143cm energy:100 | Distance: 139cm
+22:09:28.997 > [Vibration] Status: CAUTION | RMS: 0.696 | Magnitude: 10.551 | X: 0.440 Y: -0.019 Z: 10.542
+22:09:28.998 > [STD] std=0.5771 n=50 stopped=0
+22:09:28.998 > 2026-10-26 22:07:38
+22:09:28.998 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:28.998 > [Temperature] 22.69 C
+22:09:28.998 > [pH] Board output at G34: 1719.2 mV
+22:09:29.198 > [Vibration] Status: CAUTION | RMS: 0.702 | Magnitude: 10.095 | X: 0.199 Y: 0.467 Z: 10.082
+22:09:29.198 > [Radar] OUT: HIGH | Moving: 168cm energy:100 | Still: 185cm energy:100 | Distance: 150cm
+22:09:29.409 > [Vibration] Status: CAUTION | RMS: 0.678 | Magnitude: 10.621 | X: 0.636 Y: 0.988 Z: 10.556
+22:09:29.615 > [Radar] OUT: HIGH | Moving: 166cm energy:100 | Still: 155cm energy:100 | Distance: 150cm
+22:09:29.616 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 11.104 | X: 0.313 Y: 0.012 Z: 11.099
+22:09:30.030 > [Vibration] Status: CAUTION | RMS: 0.749 | Magnitude: 11.242 | X: 0.151 Y: 0.490 Z: 11.231
+22:09:30.030 > [STD] std=0.5410 n=50 stopped=0
+22:09:30.030 > 2026-10-26 22:07:39
+22:09:30.030 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:30.030 > [Temperature] 22.69 C
+22:09:30.030 > [pH] Board output at G34: 1718.7 mV
+22:09:30.245 > [Radar] OUT: HIGH | Moving: 196cm energy:100 | Still: 174cm energy:100 | Distance: 155cm
+22:09:30.245 > [Vibration] Status: CAUTION | RMS: 0.654 | Magnitude: 10.425 | X: 0.581 Y: 0.682 Z: 10.386
+22:09:30.459 > [Vibration] Status: CAUTION | RMS: 0.665 | Magnitude: 11.039 | X: 0.201 Y: 0.096 Z: 11.037
+22:09:30.667 > [Radar] OUT: HIGH | Moving: 217cm energy:100 | Still: 217cm energy:100 | Distance: 175cm
+22:09:30.874 > [Vibration] Status: CAUTION | RMS: 0.677 | Magnitude: 9.844 | X: -0.060 Y: 0.122 Z: 9.843
+22:09:31.080 > [STD] std=0.5204 n=50 stopped=0
+22:09:31.080 > [Vibration] Status: CAUTION | RMS: 0.666 | Magnitude: 11.079 | X: 0.199 Y: 0.005 Z: 11.078
+22:09:31.080 > 2026-10-26 22:07:40
+22:09:31.080 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.570 V
+22:09:31.080 > [Temperature] 22.69 C
+22:09:31.080 > [pH] Board output at G34: 1720.2 mV
+22:09:31.291 > [Radar] OUT: HIGH | Moving: 222cm energy:93 | Still: 222cm energy:100 | Distance: 188cm
+22:09:31.291 > [Vibration] Status: CAUTION | RMS: 0.656 | Magnitude: 10.224 | X: 0.005 Y: 0.507 Z: 10.212
+22:09:31.291 > [EVENT] 2026-10-26 22:07:38 elevated_vibration duration_ms=2651 peak_rms=0.753 warning=0
+22:09:31.499 > [Vibration] Status: CAUTION | RMS: 0.704 | Magnitude: 10.343 | X: 0.658 Y: -0.017 Z: 10.322
+22:09:31.703 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 195cm
+22:09:31.927 > [Vibration] Status: CAUTION | RMS: 0.672 | Magnitude: 10.066 | X: 0.089 Y: -0.237 Z: 10.063
+22:09:32.133 > [STD] std=0.5486 n=50 stopped=0
+22:09:32.133 > 2026-10-26 22:07:41
+22:09:32.133 > [Vibration] Status: CAUTION | RMS: 0.654 | Magnitude: 10.074 | X: -0.089 Y: 0.270 Z: 10.070
+22:09:32.133 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:32.133 > [Temperature] 22.75 C
+22:09:32.133 > [pH] Board output at G34: 1720.2 mV
+22:09:32.133 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:32.335 > [Vibration] Status: CAUTION | RMS: 0.708 | Magnitude: 10.248 | X: 0.400 Y: 0.589 Z: 10.223
+22:09:32.550 > [Vibration] Status: CAUTION | RMS: 0.684 | Magnitude: 9.729 | X: -0.227 Y: -0.103 Z: 9.726
+22:09:32.756 > [Occ] online ip=192.168.4.5 count=2 active=1 chg=51.9 last=2026-10-26 22:07:33
+22:09:32.756 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:32.961 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 10.463 | X: 0.404 Y: 0.002 Z: 10.456
+22:09:33.167 > [STD] std=0.5999 n=50 stopped=0
+22:09:33.168 > 2026-10-26 22:07:42
+22:09:33.168 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:33.168 > [Temperature] 22.75 C
+22:09:33.168 > [pH] Board output at G34: 1720.6 mV
+22:09:33.168 > [Vibration] Status: CAUTION | RMS: 0.691 | Magnitude: 11.102 | X: 0.220 Y: 0.629 Z: 11.082
+22:09:33.368 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:33.368 > [Vibration] Status: CAUTION | RMS: 0.712 | Magnitude: 10.204 | X: 0.699 Y: 0.689 Z: 10.156
+22:09:33.787 > [Vibration] Status: CAUTION | RMS: 0.698 | Magnitude: 10.580 | X: 0.433 Y: 0.244 Z: 10.568
+22:09:33.788 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:33.992 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 10.064 | X: 0.002 Y: 0.883 Z: 10.025
+22:09:33.992 > [STD] std=0.5005 n=50 stopped=0
+22:09:34.199 > 2026-10-26 22:07:43
+22:09:34.199 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:34.199 > [Temperature] 22.75 C
+22:09:34.199 > [pH] Board output at G34: 1720.0 mV
+22:09:34.199 > [Vibration] Status: CAUTION | RMS: 0.702 | Magnitude: 10.049 | X: 0.531 Y: 0.459 Z: 10.025
+22:09:34.414 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:34.414 > [Vibration] Status: CAUTION | RMS: 0.756 | Magnitude: 10.166 | X: 0.349 Y: 0.646 Z: 10.140
+22:09:34.820 > [Vibration] Status: CAUTION | RMS: 0.747 | Magnitude: 10.401 | X: 0.356 Y: 0.151 Z: 10.393
+22:09:34.820 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:35.027 > [Vibration] Status: CAUTION | RMS: 0.723 | Magnitude: 9.367 | X: 0.234 Y: 0.012 Z: 9.365
+22:09:35.027 > [STD] std=0.6443 n=50 stopped=0
+22:09:35.027 > 2026-10-26 22:07:44
+22:09:35.027 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:35.229 > [Temperature] 22.69 C
+22:09:35.229 > [pH] Board output at G34: 1716.5 mV
+22:09:35.229 > [Vibration] Status: CAUTION | RMS: 0.710 | Magnitude: 10.588 | X: 0.031 Y: 0.409 Z: 10.580
+22:09:35.229 > [Radar] OUT: HIGH | Moving: none | Still: none | Distance: 199cm
+22:09:35.632 > [Vibration] Status: CAUTION | RMS: 0.686 | Magnitude: 9.441 | X: -0.010 Y: 0.017 Z: 9.441
+22:09:35.632 > [EVENT] 2026-10-26 22:07:40 elevated_vibration duration_ms=4274 peak_rms=0.776 warning=0
+22:09:35.841 > [Vibration] Status: OK | RMS: 0.619 | Magnitude: 10.170 | X: 0.177 Y: 0.766 Z: 10.140
+22:09:35.842 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:36.052 > [Vibration] Status: OK | RMS: 0.630 | Magnitude: 10.544 | X: 0.488 Y: 0.258 Z: 10.530
+22:09:36.053 > [STD] std=0.5633 n=50 stopped=0
+22:09:36.053 > 2026-10-26 22:07:45
+22:09:36.053 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.570 V
+22:09:36.053 > [Temperature] 22.75 C
+22:09:36.260 > [pH] Board output at G34: 1719.2 mV
+22:09:36.260 > [EVENT] 2026-10-26 22:07:45 elevated_vibration duration_ms=26 peak_rms=0.645 warning=0
+22:09:36.261 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:36.472 > [Vibration] Status: OK | RMS: 0.638 | Magnitude: 10.255 | X: 0.349 Y: 0.569 Z: 10.233
+22:09:36.678 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 10.734 | X: 0.158 Y: 0.230 Z: 10.731
+22:09:36.891 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:36.891 > [Vibration] Status: CAUTION | RMS: 0.661 | Magnitude: 9.961 | X: 0.156 Y: 0.419 Z: 9.951
+22:09:37.097 > [STD] std=0.5542 n=50 stopped=0
+22:09:37.097 > 2026-10-26 22:07:46
+22:09:37.097 > [Vibration] Status: CAUTION | RMS: 0.703 | Magnitude: 10.876 | X: 0.340 Y: 0.170 Z: 10.869
+22:09:37.097 > [Turbidity] At G35 pin: 1.786 V | Sensor output: 3.571 V
+22:09:37.097 > [Temperature] 22.69 C
+22:09:37.097 > [pH] Board output at G34: 1717.9 mV
+22:09:37.299 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:37.506 > [Vibration] Status: CAUTION | RMS: 0.698 | Magnitude: 11.120 | X: 0.323 Y: 0.445 Z: 11.106
+22:09:37.709 > [Vibration] Status: CAUTION | RMS: 0.675 | Magnitude: 9.726 | X: -0.077 Y: -0.005 Z: 9.726
+22:09:37.924 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:37.924 > [Vibration] Status: CAUTION | RMS: 0.657 | Magnitude: 10.476 | X: 0.553 Y: 0.653 Z: 10.441
+22:09:38.132 > [STD] std=0.5792 n=50 stopped=0
+22:09:38.132 > 2026-10-26 22:07:47
+22:09:38.132 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:38.132 > [Temperature] 22.75 C
+22:09:38.132 > [pH] Board output at G34: 1718.0 mV
+22:09:38.132 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 10.677 | X: 0.392 Y: 0.290 Z: 10.666
+22:09:38.346 > [EVENT] 2026-10-26 22:07:45 elevated_vibration duration_ms=1884 peak_rms=0.720 warning=0
+22:09:38.346 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:38.547 > [Vibration] Status: OK | RMS: 0.626 | Magnitude: 10.544 | X: 0.184 Y: -0.151 Z: 10.542
+22:09:38.748 > [Vibration] Status: OK | RMS: 0.613 | Magnitude: 9.377 | X: 0.060 Y: 0.096 Z: 9.377
+22:09:38.953 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:38.953 > [Vibration] Status: CAUTION | RMS: 0.655 | Magnitude: 9.725 | X: -0.091 Y: 0.170 Z: 9.723
+22:09:39.159 > [STD] std=0.5861 n=50 stopped=0
+22:09:39.160 > 2026-10-26 22:07:48
+22:09:39.160 > [Turbidity] At G35 pin: 1.785 V | Sensor output: 3.570 V
+22:09:39.160 > [Temperature] 22.69 C
+22:09:39.160 > [pH] Board output at G34: 1717.1 mV
+22:09:39.160 > [Vibration] Status: CAUTION | RMS: 0.735 | Magnitude: 10.069 | X: 0.244 Y: 0.400 Z: 10.058
+22:09:39.360 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:39.565 > [Vibration] Status: CAUTION | RMS: 0.731 | Magnitude: 9.582 | X: 0.014 Y: 0.366 Z: 9.575
+22:09:39.779 > [Occ] online ip=192.168.4.5 count=2 active=0 chg=27.7 last=2026-10-26 22:07:33
+22:09:39.779 > [Vibration] Status: CAUTION | RMS: 0.738 | Magnitude: 10.365 | X: 0.605 Y: 0.699 Z: 10.324
+22:09:39.985 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:40.190 > [Vibration] Status: CAUTION | RMS: 0.733 | Magnitude: 9.810 | X: 0.215 Y: 0.239 Z: 9.805
+22:09:40.203 > [STD] std=0.5923 n=50 stopped=0
+22:09:40.204 > 2026-10-26 22:07:49
+22:09:40.204 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:40.204 > [Temperature] 22.75 C
+22:09:40.204 > [pH] Board output at G34: 1717.8 mV
+22:09:40.396 > [Vibration] Status: CAUTION | RMS: 0.737 | Magnitude: 10.561 | X: 0.560 Y: 0.316 Z: 10.542
+22:09:40.396 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:40.606 > [Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 10.411 | X: 0.244 Y: -0.105 Z: 10.408
+22:09:40.813 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 10.171 | X: 0.203 Y: 0.591 Z: 10.152
+22:09:41.018 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:41.225 > [Vibration] Status: CAUTION | RMS: 0.715 | Magnitude: 9.983 | X: -0.069 Y: -0.402 Z: 9.975
+22:09:41.225 > [STD] std=0.4685 n=50 stopped=0
+22:09:41.225 > 2026-10-26 22:07:50
+22:09:41.226 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:41.226 > [Temperature] 22.69 C
+22:09:41.226 > [pH] Board output at G34: 1717.1 mV
+22:09:41.434 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 9.574 | X: 0.407 Y: 0.557 Z: 9.549
+22:09:41.435 > [Radar] OUT: LOW | Moving: none | Still: none | Distance: 199cm
+22:09:41.641 > [Vibration] Status: CAUTION | RMS: 0.699 | Magnitude: 10.896 | X: 0.507 Y: 0.096 Z: 10.884
+22:09:41.846 > [112370][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:09:42.050 > [Vibration] Status: CAUTION | RMS: 0.704 | Magnitude: 11.362 | X: 0.620 Y: -0.380 Z: 11.338
+22:09:42.050 > [Radar] OUT: HIGH | Moving: 222cm energy:95 | Still: none | Distance: 199cm
+22:09:42.251 > [STD] std=0.5545 n=50 stopped=0
+22:09:42.251 > [Vibration] Status: CAUTION | RMS: 0.706 | Magnitude: 10.424 | X: 0.634 Y: 0.758 Z: 10.377
+22:09:42.251 > 2026-10-26 22:07:51
+22:09:42.251 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:42.251 > [Temperature] 22.69 C
+22:09:42.251 > [pH] Board output at G34: 1717.1 mV
+22:09:42.475 > [Vibration] Status: CAUTION | RMS: 0.657 | Magnitude: 10.185 | X: -0.057 Y: 0.304 Z: 10.180
+22:09:42.475 > [Radar] OUT: HIGH | Moving: 212cm energy:100 | Still: none | Distance: 198cm
+22:09:42.682 > [Vibration] Status: CAUTION | RMS: 0.683 | Magnitude: 10.505 | X: 0.404 Y: 0.356 Z: 10.491
+22:09:43.091 > [Vibration] Status: CAUTION | RMS: 0.680 | Magnitude: 10.392 | X: 0.443 Y: 0.605 Z: 10.365
+22:09:43.091 > [Radar] OUT: HIGH | Moving: 127cm energy:100 | Still: none | Distance: 162cm
+22:09:43.292 > [STD] std=0.5625 n=50 stopped=0
+22:09:43.292 > 2026-10-26 22:07:52
+22:09:43.292 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:43.292 > [Temperature] 22.75 C
+22:09:43.292 > [pH] Board output at G34: 1717.7 mV
+22:09:43.292 > [Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.665 | X: 0.218 Y: 0.419 Z: 10.654
+22:09:43.498 > [Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: none | Distance: 124cm
+22:09:43.498 > [Vibration] Status: CAUTION | RMS: 0.666 | Magnitude: 9.523 | X: 0.127 Y: 0.187 Z: 9.520
+22:09:43.700 > [Occ] event #3 at 2026-10-26 22:07:53
+22:09:43.913 > [Vibration] Status: CAUTION | RMS: 0.675 | Magnitude: 9.768 | X: 0.050 Y: -0.156 Z: 9.767
+22:09:44.120 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 73cm energy:100 | Distance: 89cm
+22:09:44.120 > [EVENT] 2026-10-26 22:07:48 elevated_vibration duration_ms=5111 peak_rms=0.761 warning=0
+22:09:44.120 > [Vibration] Status: OK | RMS: 0.637 | Magnitude: 9.696 | X: 0.220 Y: 0.179 Z: 9.692
+22:09:44.320 > [STD] std=0.5714 n=50 stopped=0
+22:09:44.320 > 2026-10-26 22:07:53
+22:09:44.320 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:09:44.320 > [Temperature] 22.69 C
+22:09:44.320 > [pH] Board output at G34: 1716.7 mV
+22:09:44.321 > [Vibration] Status: OK | RMS: 0.606 | Magnitude: 10.515 | X: 0.337 Y: 0.471 Z: 10.499
+22:09:44.523 > [Radar] OUT: HIGH | Moving: 39cm energy:100 | Still: 66cm energy:100 | Distance: 65cm
+22:09:44.524 > [Vibration] Status: OK | RMS: 0.626 | Magnitude: 10.620 | X: 0.670 Y: 0.813 Z: 10.568
+22:09:44.936 > [Vibration] Status: OK | RMS: 0.571 | Magnitude: 9.828 | X: -0.124 Y: 0.388 Z: 9.819
+22:09:45.139 > [Radar] OUT: HIGH | Moving: 38cm energy:100 | Still: 72cm energy:100 | Distance: 49cm
+22:09:45.139 > [Vibration] Status: OK | RMS: 0.555 | Magnitude: 10.234 | X: -0.002 Y: 0.347 Z: 10.228
+22:09:45.139 > [STD] std=0.4715 n=50 stopped=0
+22:09:45.139 > 2026-10-26 22:07:54
+22:09:45.342 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:09:45.342 > [Temperature] 22.75 C
+22:09:45.342 > [pH] Board output at G34: 1718.0 mV
+22:09:45.342 > [Vibration] Status: OK | RMS: 0.574 | Magnitude: 10.174 | X: 0.120 Y: 0.033 Z: 10.173
+22:09:45.552 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 40cm energy:100 | Distance: 36cm
+22:09:45.552 > [Vibration] Status: OK | RMS: 0.615 | Magnitude: 10.676 | X: 0.254 Y: 0.548 Z: 10.659
+22:09:45.752 > [EVENT] 2026-10-26 22:07:55 elevated_vibration duration_ms=99 peak_rms=0.669 warning=0
+22:09:45.959 > [Vibration] Status: CAUTION | RMS: 0.647 | Magnitude: 10.597 | X: 0.390 Y: 0.089 Z: 10.590
+22:09:45.959 > [EVENT] 2026-10-26 22:07:55 elevated_vibration duration_ms=51 peak_rms=0.647 warning=0
+22:09:46.165 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 65cm energy:100 | Distance: 0cm
+22:09:46.166 > [Vibration] Status: CAUTION | RMS: 0.677 | Magnitude: 10.705 | X: 0.304 Y: 0.519 Z: 10.688
+22:09:46.166 > [STD] std=0.5441 n=50 stopped=0
+22:09:46.166 > 2026-10-26 22:07:55
+22:09:46.377 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:09:46.377 > [Temperature] 22.75 C
+22:09:46.377 > [pH] Board output at G34: 1718.4 mV
+22:09:46.377 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 10.013 | X: 0.474 Y: 0.347 Z: 9.996
+22:09:46.584 > [Radar] OUT: HIGH | Moving: 60cm energy:88 | Still: 80cm energy:100 | Distance: 41cm
+22:09:46.584 > [Occ] online ip=192.168.4.5 count=3 active=1 chg=30.7 last=2026-10-26 22:07:53
+22:09:46.785 > [Vibration] Status: CAUTION | RMS: 0.670 | Magnitude: 9.419 | X: 0.191 Y: 0.199 Z: 9.415
+22:09:46.999 > [Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 10.319 | X: 0.514 Y: 0.481 Z: 10.295
+22:09:47.000 > [EVENT] 2026-10-26 22:07:55 elevated_vibration duration_ms=1064 peak_rms=0.690 warning=0
+22:09:47.201 > [Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 62cm energy:100 | Distance: 40cm
+22:09:47.201 > [Vibration] Status: OK | RMS: 0.613 | Magnitude: 10.013 | X: 0.361 Y: 0.505 Z: 9.994
+22:09:47.201 > [STD] std=0.3672 n=50 stopped=0
+22:09:47.201 > 2026-10-26 22:07:56
+22:09:47.201 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:09:47.201 > [Temperature] 22.75 C
+22:09:47.201 > [pH] Board output at G34: 1718.4 mV
+22:09:47.413 > [Vibration] Status: OK | RMS: 0.576 | Magnitude: 10.378 | X: 0.356 Y: 0.802 Z: 10.341
+22:09:47.615 > [Radar] OUT: HIGH | Moving: 30cm energy:96 | Still: 30cm energy:100 | Distance: 42cm
+22:09:47.819 > [Vibration] Status: OK | RMS: 0.582 | Magnitude: 10.346 | X: 0.364 Y: 0.572 Z: 10.324
+22:09:48.025 > [Vibration] Status: OK | RMS: 0.574 | Magnitude: 9.334 | X: 0.407 Y: 0.136 Z: 9.324
+22:09:48.234 > [Radar] OUT: HIGH | Moving: none | Still: 41cm energy:100 | Distance: 34cm
+22:09:48.234 > [STD] std=0.4242 n=50 stopped=0
+22:09:48.234 > 2026-10-26 22:07:57
+22:09:48.234 > [Vibration] Status: OK | RMS: 0.583 | Magnitude: 9.505 | X: 0.184 Y: 0.005 Z: 9.503
+22:09:48.234 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:48.234 > [Temperature] 22.75 C
+22:09:48.234 > [pH] Board output at G34: 1719.2 mV
+22:09:48.653 > [Vibration] Status: OK | RMS: 0.568 | Magnitude: 9.507 | X: 0.089 Y: 0.323 Z: 9.501
+22:09:48.653 > [Radar] OUT: HIGH | Moving: none | Still: 41cm energy:100 | Distance: 30cm
+22:09:48.857 > [Vibration] Status: OK | RMS: 0.623 | Magnitude: 10.944 | X: 0.127 Y: 0.593 Z: 10.927
+22:09:49.070 > [Vibration] Status: CAUTION | RMS: 0.648 | Magnitude: 10.258 | X: 0.464 Y: 0.301 Z: 10.243
+22:09:49.070 > [EVENT] 2026-10-26 22:07:58 elevated_vibration duration_ms=52 peak_rms=0.648 warning=0
+22:09:49.274 > [EVENT] 2026-10-26 22:07:58 elevated_vibration duration_ms=68 peak_rms=0.643 warning=0
+22:09:49.275 > [Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 52cm energy:100 | Distance: 32cm
+22:09:49.275 > [STD] std=0.5547 n=50 stopped=0
+22:09:49.275 > 2026-10-26 22:07:58
+22:09:49.275 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:49.275 > [Temperature] 22.75 C
+22:09:49.275 > [pH] Board output at G34: 1719.2 mV
+22:09:49.275 > [Vibration] Status: CAUTION | RMS: 0.646 | Magnitude: 10.088 | X: 0.191 Y: 0.191 Z: 10.085
+22:09:49.479 > [EVENT] 2026-10-26 22:07:58 elevated_vibration duration_ms=104 peak_rms=0.659 warning=0
+22:09:49.480 > [EVENT] 2026-10-26 22:07:58 elevated_vibration duration_ms=50 peak_rms=0.653 warning=0
+22:09:49.480 > [TIMING] n=2196 mean_ms=27.325 min_ms=23.810 max_ms=564.648 std_ms=13.324 over_50ms=71 read_errors=0
+22:09:49.480 > [WQ] heap=224072 minheap=203680
+22:09:49.686 > [Vibration] Status: OK | RMS: 0.641 | Magnitude: 9.906 | X: 0.038 Y: -0.258 Z: 9.903
+22:09:49.686 > [EVENT] 2026-10-26 22:07:59 elevated_vibration duration_ms=27 peak_rms=0.643 warning=0
+22:09:49.686 > [Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 70cm energy:100 | Distance: 37cm
+22:09:49.892 > [Vibration] Status: OK | RMS: 0.627 | Magnitude: 9.666 | X: 0.062 Y: -0.012 Z: 9.666
+22:09:50.098 > [Vibration] Status: CAUTION | RMS: 0.646 | Magnitude: 9.811 | X: 0.557 Y: 0.536 Z: 9.781
+22:09:50.307 > [EVENT] 2026-10-26 22:07:59 elevated_vibration duration_ms=243 peak_rms=0.670 warning=0
+22:09:50.307 > [Radar] OUT: HIGH | Moving: 106cm energy:57 | Still: 52cm energy:100 | Distance: 40cm
+22:09:50.307 > [STD] std=0.5239 n=50 stopped=0
+22:09:50.307 > 2026-10-26 22:07:59
+22:09:50.307 > [EVENT] 2026-10-26 22:07:59 elevated_vibration duration_ms=52 peak_rms=0.646 warning=0
+22:09:50.308 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:50.308 > [Temperature] 22.75 C
+22:09:50.308 > [pH] Board output at G34: 1718.6 mV
+22:09:50.520 > [Vibration] Status: CAUTION | RMS: 0.654 | Magnitude: 9.828 | X: 0.467 Y: 0.574 Z: 9.800
+22:09:50.597 > #SCRIPT shot 3 all_clear
+22:09:50.731 > [Vibration] Status: CAUTION | RMS: 0.690 | Magnitude: 10.688 | X: 0.206 Y: 0.653 Z: 10.666
+22:09:50.731 > [Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 47cm
+22:09:50.937 > [Vibration] Status: CAUTION | RMS: 0.699 | Magnitude: 10.231 | X: 0.488 Y: 1.309 Z: 10.135
+22:09:51.359 > [Vibration] Status: CAUTION | RMS: 0.718 | Magnitude: 10.625 | X: 0.230 Y: 0.433 Z: 10.613
+22:09:51.359 > [STD] std=0.5530 n=50 stopped=0
+22:09:51.359 > 2026-10-26 22:08:00
+22:09:51.359 > [Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 52cm
+22:09:51.359 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.566 V
+22:09:51.359 > [Temperature] 22.69 C
+22:09:51.359 > [pH] Board output at G34: 1718.5 mV
+22:09:51.572 > [Vibration] Status: CAUTION | RMS: 0.656 | Magnitude: 10.533 | X: 0.347 Y: 0.311 Z: 10.523
+22:09:51.572 > [EVENT] 2026-10-26 22:07:59 elevated_vibration duration_ms=1321 peak_rms=0.719 warning=0
+22:09:51.782 > [Occ] online ip=192.168.4.5 count=3 active=1 chg=47.7 last=2026-10-26 22:07:53
+22:09:51.782 > [EVENT] 2026-10-26 22:08:01 elevated_vibration duration_ms=39 peak_rms=0.643 warning=0
+22:09:51.783 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.896 | X: 0.301 Y: 0.127 Z: 10.891
+22:09:51.783 > [EVENT] 2026-10-26 22:08:01 elevated_vibration duration_ms=28 peak_rms=0.651 warning=0
+22:09:51.784 > [Radar] OUT: HIGH | Moving: 76cm energy:90 | Still: 63cm energy:100 | Distance: 54cm
+22:09:51.993 > [EVENT] 2026-10-26 22:08:01 elevated_vibration duration_ms=196 peak_rms=0.661 warning=0
+22:09:51.993 > [Vibration] Status: OK | RMS: 0.640 | Magnitude: 9.987 | X: 0.512 Y: 0.199 Z: 9.972
+22:09:52.202 > [EVENT] 2026-10-26 22:08:01 elevated_vibration duration_ms=50 peak_rms=0.657 warning=0
+22:09:52.202 > [STD] std=0.5393 n=50 stopped=0
+22:09:52.202 > 2026-10-26 22:08:01
+22:09:52.409 > [Vibration] Status: OK | RMS: 0.627 | Magnitude: 10.671 | X: 0.211 Y: 0.598 Z: 10.652
+22:09:52.410 > [Radar] OUT: HIGH | Moving: 30cm energy:88 | Still: 192cm energy:100 | Distance: 105cm
+22:09:52.410 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:52.410 > [Temperature] 22.75 C
+22:09:52.410 > [pH] Board output at G34: 1718.4 mV
+22:09:52.615 > [Vibration] Status: OK | RMS: 0.618 | Magnitude: 10.124 | X: 0.124 Y: 0.306 Z: 10.118
+22:09:52.817 > [Vibration] Status: OK | RMS: 0.596 | Magnitude: 10.075 | X: 0.206 Y: -0.091 Z: 10.073
+22:09:52.817 > [Radar] OUT: HIGH | Moving: 81cm energy:57 | Still: 198cm energy:100 | Distance: 79cm
+22:09:53.025 > [EVENT] 2026-10-26 22:08:02 elevated_vibration duration_ms=99 peak_rms=0.655 warning=0
+22:09:53.025 > [Vibration] Status: OK | RMS: 0.637 | Magnitude: 10.556 | X: 0.160 Y: 0.132 Z: 10.554
+22:09:53.238 > [EVENT] 2026-10-26 22:08:02 elevated_vibration duration_ms=27 peak_rms=0.645 warning=0
+22:09:53.239 > [STD] std=0.5841 n=50 stopped=0
+22:09:53.240 > 2026-10-26 22:08:02
+22:09:53.240 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:09:53.240 > [Temperature] 22.69 C
+22:09:53.240 > [pH] Board output at G34: 1718.2 mV
+22:09:53.449 > [Vibration] Status: OK | RMS: 0.635 | Magnitude: 10.590 | X: 0.349 Y: 0.546 Z: 10.570
+22:09:53.450 > [Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 203cm energy:100 | Distance: 64cm
+22:09:53.662 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 10.523 | X: 0.148 Y: 0.627 Z: 10.503
+22:09:53.865 > [Vibration] Status: CAUTION | RMS: 0.692 | Magnitude: 9.241 | X: 0.093 Y: 0.234 Z: 9.238
+22:09:53.865 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 202cm energy:100 | Distance: 47cm
+22:09:54.074 > [Vibration] Status: CAUTION | RMS: 0.719 | Magnitude: 10.928 | X: 0.179 Y: 0.022 Z: 10.927
+22:09:54.285 > [STD] std=0.6248 n=50 stopped=0
+22:09:54.285 > 2026-10-26 22:08:03
+22:09:54.285 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.565 V
+22:09:54.285 > [Temperature] 22.69 C
+22:09:54.285 > [pH] Board output at G34: 1718.5 mV
+22:09:54.499 > [Vibration] Status: CAUTION | RMS: 0.665 | Magnitude: 10.300 | X: 0.256 Y: 0.653 Z: 10.276
+22:09:54.499 > [Radar] OUT: HIGH | Moving: none | Still: 202cm energy:100 | Distance: 47cm
+22:09:54.700 > [Vibration] Status: CAUTION | RMS: 0.647 | Magnitude: 9.882 | X: 0.211 Y: 0.325 Z: 9.874
+22:09:54.700 > [EVENT] 2026-10-26 22:08:03 elevated_vibration duration_ms=1109 peak_rms=0.732 warning=0
+22:09:54.902 > [EVENT] 2026-10-26 22:08:04 elevated_vibration duration_ms=123 peak_rms=0.648 warning=0
+22:09:54.903 > [Radar] OUT: HIGH | Moving: 46cm energy:100 | Still: 192cm energy:100 | Distance: 112cm
+22:09:54.903 > [Vibration] Status: CAUTION | RMS: 0.674 | Magnitude: 8.199 | X: -0.093 Y: 0.244 Z: 8.195
+22:09:55.112 > [EVENT] 2026-10-26 22:08:04 elevated_vibration duration_ms=100 peak_rms=0.683 warning=0
+22:09:55.112 > [EVENT] 2026-10-26 22:08:04 elevated_vibration duration_ms=26 peak_rms=0.644 warning=0
+22:09:55.316 > [Vibration] Status: CAUTION | RMS: 0.650 | Magnitude: 11.077 | X: 0.306 Y: 0.012 Z: 11.073
+22:09:55.316 > [STD] std=0.5749 n=50 stopped=0
+22:09:55.316 > 2026-10-26 22:08:04
+22:09:55.316 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:55.316 > [Temperature] 22.75 C
+22:09:55.316 > [pH] Board output at G34: 1717.1 mV
+22:09:55.522 > [Radar] OUT: HIGH | Moving: none | Still: 200cm energy:100 | Distance: 145cm
+22:09:55.522 > [Vibration] Status: CAUTION | RMS: 0.679 | Magnitude: 10.548 | X: 0.679 Y: 0.720 Z: 10.501
+22:09:55.728 > [Vibration] Status: CAUTION | RMS: 0.714 | Magnitude: 11.096 | X: 0.488 Y: -0.038 Z: 11.085
+22:09:55.936 > [Radar] OUT: HIGH | Moving: 76cm energy:77 | Still: 215cm energy:100 | Distance: 172cm
+22:09:55.936 > [Vibration] Status: CAUTION | RMS: 0.788 | Magnitude: 10.566 | X: 0.435 Y: 0.421 Z: 10.549
+22:09:56.352 > [Vibration] Status: CAUTION | RMS: 0.803 | Magnitude: 10.175 | X: 0.184 Y: 0.490 Z: 10.161
+22:09:56.352 > [STD] std=0.7217 n=50 stopped=0
+22:09:56.352 > 2026-10-26 22:08:05
+22:09:56.353 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:09:56.353 > [Temperature] 22.69 C
+22:09:56.353 > [pH] Board output at G34: 1717.8 mV
+22:09:56.570 > [Radar] OUT: HIGH | Moving: none | Still: 220cm energy:100 | Distance: 186cm
+22:09:56.570 > [Vibration] Status: CAUTION | RMS: 0.790 | Magnitude: 9.219 | X: 0.129 Y: 0.282 Z: 9.214
+22:09:56.777 > [Vibration] Status: CAUTION | RMS: 0.761 | Magnitude: 10.393 | X: 0.191 Y: 0.337 Z: 10.386
+22:09:56.988 > [Radar] OUT: HIGH | Moving: none | Still: 219cm energy:100 | Distance: 194cm
+22:09:56.989 > [Vibration] Status: CAUTION | RMS: 0.747 | Magnitude: 9.986 | X: 0.084 Y: -0.156 Z: 9.984
+22:09:57.399 > [Vibration] Status: CAUTION | RMS: 0.651 | Magnitude: 10.213 | X: 0.526 Y: 0.818 Z: 10.166
+22:09:57.400 > [STD] std=0.5715 n=50 stopped=0
+22:09:57.400 > 2026-10-26 22:08:06
+22:09:57.400 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:09:57.400 > [Temperature] 22.69 C
+22:09:57.400 > [pH] Board output at G34: 1716.3 mV
+22:09:57.400 > [EVENT] 2026-10-26 22:08:04 elevated_vibration duration_ms=2212 peak_rms=0.816 warning=0
+22:09:57.400 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:57.606 > [Vibration] Status: OK | RMS: 0.621 | Magnitude: 10.064 | X: 0.390 Y: 0.849 Z: 10.020
+22:09:57.808 > [Vibration] Status: OK | RMS: 0.613 | Magnitude: 10.345 | X: 0.268 Y: 0.469 Z: 10.331
+22:09:58.022 > [Radar] OUT: HIGH | Moving: none | Still: 222cm energy:100 | Distance: 199cm
+22:09:58.022 > [Vibration] Status: OK | RMS: 0.601 | Magnitude: 10.165 | X: 0.467 Y: 0.629 Z: 10.135
+22:09:58.229 > [Occ] online ip=192.168.4.5 count=3 active=1 chg=35.7 last=2026-10-26 22:07:53
+22:09:58.435 > [Vibration] Status: OK | RMS: 0.587 | Magnitude: 9.912 | X: -0.179 Y: 0.062 Z: 9.910
+22:09:58.435 > [STD] std=0.5103 n=50 stopped=0
+22:09:58.436 > 2026-10-26 22:08:07
+22:09:58.436 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:09:58.436 > [Temperature] 22.75 C
+22:09:58.436 > [pH] Board output at G34: 1716.4 mV
+22:09:58.436 > [Radar] OUT: HIGH | Moving: none | Still: 221cm energy:100 | Distance: 199cm
+22:09:58.644 > [Vibration] Status: OK | RMS: 0.568 | Magnitude: 9.791 | X: 0.105 Y: 0.294 Z: 9.786
+22:09:58.858 > [Vibration] Status: OK | RMS: 0.586 | Magnitude: 9.659 | X: 0.514 Y: 0.541 Z: 9.630
+22:09:59.064 > [Radar] OUT: HIGH | Moving: none | Still: 223cm energy:100 | Distance: 201cm
+22:09:59.064 > [Vibration] Status: OK | RMS: 0.616 | Magnitude: 10.745 | X: 0.177 Y: 0.251 Z: 10.740
+22:09:59.271 > [EVENT] 2026-10-26 22:08:08 elevated_vibration duration_ms=26 peak_rms=0.645 warning=0
+22:09:59.271 > [EVENT] 2026-10-26 22:08:08 elevated_vibration duration_ms=103 peak_rms=0.652 warning=0
+22:09:59.480 > [STD] std=0.5002 n=50 stopped=0
+22:09:59.480 > [Vibration] Status: OK | RMS: 0.629 | Magnitude: 10.266 | X: 0.486 Y: 0.089 Z: 10.255
+22:09:59.480 > 2026-10-26 22:08:08
+22:09:59.480 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:09:59.480 > [Temperature] 22.69 C
+22:09:59.480 > [pH] Board output at G34: 1717.2 mV
+22:09:59.480 > [Radar] OUT: HIGH | Moving: 51cm energy:62 | Still: 215cm energy:100 | Distance: 200cm
+22:09:59.687 > [Vibration] Status: OK | RMS: 0.619 | Magnitude: 9.824 | X: 0.445 Y: 0.218 Z: 9.812
+22:09:59.895 > [Vibration] Status: CAUTION | RMS: 0.659 | Magnitude: 9.840 | X: 0.431 Y: 0.431 Z: 9.822
+22:10:00.104 > [Radar] OUT: HIGH | Moving: none | Still: 208cm energy:100 | Distance: 198cm
+22:10:00.104 > [EVENT] 2026-10-26 22:08:09 elevated_vibration duration_ms=296 peak_rms=0.669 warning=0
+22:10:00.307 > [Vibration] Status: CAUTION | RMS: 0.643 | Magnitude: 10.068 | X: 0.534 Y: 0.433 Z: 10.044
+22:10:00.307 > [EVENT] 2026-10-26 22:08:09 elevated_vibration duration_ms=118 peak_rms=0.645 warning=0
+22:10:00.511 > [STD] std=0.5049 n=50 stopped=0
+22:10:00.511 > 2026-10-26 22:08:09
+22:10:00.511 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.569 V
+22:10:00.511 > [Temperature] 22.69 C
+22:10:00.511 > [pH] Board output at G34: 1716.9 mV
+22:10:00.511 > [Vibration] Status: OK | RMS: 0.597 | Magnitude: 10.566 | X: 0.249 Y: 0.395 Z: 10.556
+22:10:00.511 > [Radar] OUT: HIGH | Moving: none | Still: 206cm energy:100 | Distance: 194cm
+22:10:00.713 > [Vibration] Status: OK | RMS: 0.577 | Magnitude: 9.948 | X: 0.323 Y: 0.368 Z: 9.936
+22:10:00.923 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 8.848 | X: -0.146 Y: 0.172 Z: 8.845
+22:10:00.924 > [Radar] OUT: HIGH | Moving: 66cm energy:83 | Still: 212cm energy:100 | Distance: 194cm
+22:10:01.342 > [Vibration] Status: CAUTION | RMS: 0.662 | Magnitude: 10.093 | X: 0.153 Y: 0.495 Z: 10.080
+22:10:01.342 > [STD] std=0.5512 n=50 stopped=0
+22:10:01.342 > 2026-10-26 22:08:10
+22:10:01.342 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.565 V
+22:10:01.342 > [Temperature] 22.69 C
+22:10:01.547 > [pH] Board output at G34: 1717.1 mV
+22:10:01.547 > [Vibration] Status: CAUTION | RMS: 0.672 | Magnitude: 10.881 | X: 0.196 Y: 0.086 Z: 10.879
+22:10:01.547 > [Radar] OUT: HIGH | Moving: none | Still: 206cm energy:100 | Distance: 193cm
+22:10:01.751 > [Vibration] Status: CAUTION | RMS: 0.682 | Magnitude: 9.698 | X: -0.074 Y: 0.139 Z: 9.697
+22:10:01.956 > [Radar] OUT: HIGH | Moving: none | Still: 200cm energy:100 | Distance: 190cm
+22:10:02.162 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 9.753 | X: 0.244 Y: 0.309 Z: 9.745
+22:10:02.162 > [EVENT] 2026-10-26 22:08:10 elevated_vibration duration_ms=1314 peak_rms=0.698 warning=0
+22:10:02.365 > [Vibration] Status: OK | RMS: 0.581 | Magnitude: 9.760 | X: 0.127 Y: -0.045 Z: 9.759
+22:10:02.365 > [STD] std=0.5328 n=50 stopped=0
+22:10:02.365 > 2026-10-26 22:08:11
+22:10:02.365 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.563 V
+22:10:02.365 > [Temperature] 22.69 C
+22:10:02.365 > [pH] Board output at G34: 1716.0 mV
+22:10:02.580 > [Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 185cm
+22:10:02.580 > [Vibration] Status: OK | RMS: 0.540 | Magnitude: 9.945 | X: 0.091 Y: 0.325 Z: 9.939
+22:10:02.782 > [Vibration] Status: OK | RMS: 0.556 | Magnitude: 10.351 | X: 0.447 Y: 0.057 Z: 10.341
+22:10:02.990 > [Radar] OUT: HIGH | Moving: none | Still: 189cm energy:100 | Distance: 181cm
+22:10:03.198 > [Vibration] Status: OK | RMS: 0.535 | Magnitude: 10.251 | X: -0.041 Y: 0.112 Z: 10.250
+22:10:03.406 > [Vibration] Status: OK | RMS: 0.583 | Magnitude: 9.891 | X: 0.232 Y: 0.022 Z: 9.889
+22:10:03.406 > [STD] std=0.4939 n=50 stopped=0
+22:10:03.406 > 2026-10-26 22:08:12
+22:10:03.406 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.563 V
+22:10:03.406 > [Temperature] 22.75 C
+22:10:03.406 > [pH] Board output at G34: 1716.6 mV
+22:10:03.613 > [Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 110cm
+22:10:03.613 > [Vibration] Status: OK | RMS: 0.595 | Magnitude: 10.080 | X: 0.208 Y: 0.589 Z: 10.061
+22:10:03.821 > [Vibration] Status: OK | RMS: 0.592 | Magnitude: 9.963 | X: -0.177 Y: -0.167 Z: 9.960
+22:10:04.027 > [Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 74cm
+22:10:04.228 > [Vibration] Status: OK | RMS: 0.602 | Magnitude: 10.155 | X: -0.017 Y: 0.560 Z: 10.140
+22:10:04.435 > [Vibration] Status: CAUTION | RMS: 0.653 | Magnitude: 11.225 | X: 0.605 Y: -0.203 Z: 11.207
+22:10:04.435 > [STD] std=0.4417 n=50 stopped=0
+22:10:04.435 > 2026-10-26 22:08:13
+22:10:04.435 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:10:04.435 > [Temperature] 22.75 C
+22:10:04.436 > [pH] Board output at G34: 1714.9 mV
+22:10:04.637 > [Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 55cm energy:100 | Distance: 55cm
+22:10:04.637 > [Vibration] Status: CAUTION | RMS: 0.644 | Magnitude: 9.897 | X: 0.199 Y: 0.172 Z: 9.893
+22:10:04.844 > [EVENT] 2026-10-26 22:08:13 elevated_vibration duration_ms=303 peak_rms=0.673 warning=0
+22:10:05.044 > [Vibration] Status: CAUTION | RMS: 0.656 | Magnitude: 10.219 | X: 0.033 Y: 0.225 Z: 10.216
+22:10:05.044 > [Radar] OUT: HIGH | Moving: 59cm energy:64 | Still: 75cm energy:100 | Distance: 55cm
+22:10:05.246 > [Occ] online ip=192.168.4.5 count=3 active=1 chg=35.9 last=2026-10-26 22:07:53
+22:10:05.246 > [Vibration] Status: CAUTION | RMS: 0.650 | Magnitude: 9.827 | X: 0.139 Y: -0.022 Z: 9.826
+22:10:05.452 > [EVENT] 2026-10-26 22:08:14 elevated_vibration duration_ms=595 peak_rms=0.679 warning=0
+22:10:05.452 > [STD] std=0.5461 n=50 stopped=0
+22:10:05.452 > [Vibration] Status: OK | RMS: 0.632 | Magnitude: 10.497 | X: 0.160 Y: 0.806 Z: 10.465
+22:10:05.453 > 2026-10-26 22:08:14
+22:10:05.453 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:10:05.453 > [Temperature] 22.69 C
+22:10:05.453 > [pH] Board output at G34: 1716.3 mV
+22:10:05.656 > [Radar] OUT: HIGH | Moving: 73cm energy:88 | Still: 75cm energy:100 | Distance: 51cm
+22:10:05.656 > [Vibration] Status: OK | RMS: 0.636 | Magnitude: 10.638 | X: -0.045 Y: 0.335 Z: 10.633
+22:10:06.068 > [Vibration] Status: OK | RMS: 0.539 | Magnitude: 10.672 | X: 0.304 Y: 0.435 Z: 10.659
+22:10:06.068 > [Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 94cm
+22:10:06.284 > [Vibration] Status: OK | RMS: 0.571 | Magnitude: 10.748 | X: 0.220 Y: 0.400 Z: 10.738
+22:10:06.484 > [STD] std=0.4552 n=50 stopped=0
+22:10:06.484 > 2026-10-26 22:08:15
+22:10:06.484 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:10:06.484 > [Temperature] 22.75 C
+22:10:06.484 > [pH] Board output at G34: 1716.1 mV
+22:10:06.484 > [Vibration] Status: OK | RMS: 0.563 | Magnitude: 11.054 | X: 0.268 Y: -0.395 Z: 11.044
+22:10:06.692 > [Radar] OUT: HIGH | Moving: 58cm energy:62 | Still: 206cm energy:100 | Distance: 148cm
+22:10:06.905 > [Vibration] Status: OK | RMS: 0.566 | Magnitude: 10.843 | X: 0.237 Y: 0.392 Z: 10.834
+22:10:07.114 > [Vibration] Status: OK | RMS: 0.603 | Magnitude: 9.289 | X: 0.225 Y: 0.132 Z: 9.286
+22:10:07.114 > [Radar] OUT: HIGH | Moving: none | Still: 213cm energy:100 | Distance: 170cm
+22:10:07.316 > [Vibration] Status: OK | RMS: 0.622 | Magnitude: 10.221 | X: 0.122 Y: 0.483 Z: 10.209
+22:10:07.524 > [STD] std=0.4759 n=50 stopped=0
+22:10:07.524 > 2026-10-26 22:08:16
+22:10:07.524 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:10:07.524 > [Temperature] 22.69 C
+22:10:07.524 > [pH] Board output at G34: 1715.9 mV
+22:10:07.524 > [Vibration] Status: OK | RMS: 0.573 | Magnitude: 10.333 | X: 0.249 Y: 0.409 Z: 10.322
+22:10:07.733 > [Radar] OUT: HIGH | Moving: none | Still: 214cm energy:100 | Distance: 182cm
+22:10:07.940 > [Vibration] Status: OK | RMS: 0.574 | Magnitude: 10.129 | X: 0.361 Y: 0.440 Z: 10.113
+22:10:08.152 > [Vibration] Status: OK | RMS: 0.565 | Magnitude: 10.281 | X: 0.242 Y: 0.304 Z: 10.274
+22:10:08.153 > [Radar] OUT: HIGH | Moving: none | Still: 210cm energy:100 | Distance: 188cm
+22:10:08.359 > [Vibration] Status: OK | RMS: 0.536 | Magnitude: 10.661 | X: 0.450 Y: -0.019 Z: 10.652
+22:10:08.565 > [STD] std=0.4386 n=50 stopped=0
+22:10:08.565 > 2026-10-26 22:08:17
+22:10:08.565 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:10:08.566 > [Temperature] 22.75 C
+22:10:08.566 > [pH] Board output at G34: 1715.2 mV
+22:10:08.566 > [Vibration] Status: OK | RMS: 0.564 | Magnitude: 10.606 | X: 0.136 Y: 0.280 Z: 10.602
+22:10:08.772 > [Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 202cm energy:100 | Distance: 189cm
+22:10:08.980 > [Vibration] Status: OK | RMS: 0.592 | Magnitude: 10.110 | X: -0.165 Y: 0.045 Z: 10.109
+22:10:09.186 > [Vibration] Status: OK | RMS: 0.607 | Magnitude: 8.989 | X: -0.206 Y: 0.093 Z: 8.987
+22:10:09.186 > [Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 200cm energy:100 | Distance: 139cm
+22:10:09.392 > [Vibration] Status: OK | RMS: 0.611 | Magnitude: 10.554 | X: 0.505 Y: 0.395 Z: 10.535
+22:10:09.598 > [STD] std=0.5156 n=50 stopped=0
+22:10:09.599 > 2026-10-26 22:08:19
+22:10:09.599 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:10:09.599 > [Temperature] 22.75 C
+22:10:09.599 > [pH] Board output at G34: 1717.1 mV
+22:10:09.599 > [Vibration] Status: OK | RMS: 0.609 | Magnitude: 10.157 | X: 0.156 Y: 0.285 Z: 10.152
+22:10:09.812 > [Radar] OUT: HIGH | Moving: none | Still: 201cm energy:100 | Distance: 123cm
+22:10:10.020 > [Vibration] Status: OK | RMS: 0.593 | Magnitude: 10.232 | X: 0.546 Y: 0.474 Z: 10.207
+22:10:10.227 > [Vibration] Status: OK | RMS: 0.584 | Magnitude: 9.109 | X: -0.053 Y: 0.038 Z: 9.109
+22:10:10.227 > [Radar] OUT: HIGH | Moving: none | Still: 205cm energy:100 | Distance: 114cm
+22:10:10.428 > [Vibration] Status: OK | RMS: 0.566 | Magnitude: 10.289 | X: 0.416 Y: -0.022 Z: 10.281
+22:10:10.638 > [STD] std=0.4414 n=50 stopped=0
+22:10:10.639 > 2026-10-26 22:08:20
+22:10:10.639 > [Turbidity] At G35 pin: 1.781 V | Sensor output: 3.562 V
+22:10:10.639 > [Temperature] 22.75 C
+22:10:10.639 > [pH] Board output at G34: 1716.7 mV
+22:10:10.848 > [Vibration] Status: OK | RMS: 0.558 | Magnitude: 10.449 | X: 0.301 Y: 0.608 Z: 10.427
+22:10:10.848 > [Radar] OUT: HIGH | Moving: none | Still: 209cm energy:100 | Distance: 152cm
+22:10:11.049 > [Vibration] Status: OK | RMS: 0.581 | Magnitude: 10.549 | X: -0.002 Y: 0.230 Z: 10.546
+22:10:11.257 > [Vibration] Status: OK | RMS: 0.594 | Magnitude: 10.547 | X: -0.029 Y: 0.557 Z: 10.532
+22:10:11.257 > [Radar] OUT: HIGH | Moving: 73cm energy:61 | Still: 206cm energy:100 | Distance: 171cm
+22:10:11.457 > [Vibration] Status: OK | RMS: 0.615 | Magnitude: 10.913 | X: 0.543 Y: 0.136 Z: 10.898
+22:10:11.666 > [STD] std=0.5189 n=50 stopped=0
+22:10:11.666 > 2026-10-26 22:08:21
+22:10:11.666 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.568 V
+22:10:11.666 > [Temperature] 22.75 C
+22:10:11.666 > [pH] Board output at G34: 1716.3 mV
+22:10:11.872 > [Vibration] Status: CAUTION | RMS: 0.663 | Magnitude: 10.634 | X: 0.414 Y: 0.014 Z: 10.625
+22:10:11.872 > [Radar] OUT: HIGH | Moving: none | Still: 201cm energy:100 | Distance: 178cm
+22:10:11.872 > [142385][E][WebServer.cpp:638] _handleRequest(): request handler not found
+22:10:12.081 > [Vibration] Status: CAUTION | RMS: 0.694 | Magnitude: 10.012 | X: -0.022 Y: 0.557 Z: 9.996
+22:10:12.081 > [Occ] online ip=192.168.4.5 count=3 active=1 chg=39.7 last=2026-10-26 22:07:53
+22:10:12.284 > [Vibration] Status: CAUTION | RMS: 0.697 | Magnitude: 10.366 | X: 0.481 Y: 0.304 Z: 10.350
+22:10:12.284 > [Radar] OUT: HIGH | Moving: none | Still: 206cm energy:100 | Distance: 183cm
+22:10:12.487 > [Vibration] Status: CAUTION | RMS: 0.691 | Magnitude: 10.121 | X: 0.562 Y: 0.754 Z: 10.078
+22:10:12.689 > [STD] std=0.4995 n=50 stopped=0
+22:10:12.690 > 2026-10-26 22:08:22
+22:10:12.690 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:10:12.690 > [Temperature] 22.69 C
+22:10:12.690 > [pH] Board output at G34: 1717.1 mV
+22:10:12.890 > [EVENT] 2026-10-26 22:08:21 elevated_vibration duration_ms=1085 peak_rms=0.712 warning=0
+22:10:12.893 > [Radar] OUT: HIGH | Moving: none | Still: 212cm energy:100 | Distance: 187cm
+22:10:12.893 > [Vibration] Status: OK | RMS: 0.636 | Magnitude: 10.215 | X: 0.402 Y: 0.629 Z: 10.188
+22:10:13.097 > [Vibration] Status: OK | RMS: 0.619 | Magnitude: 10.643 | X: 0.361 Y: -0.201 Z: 10.635
+22:10:13.304 > [Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 202cm energy:100 | Distance: 190cm
+22:10:13.304 > [Vibration] Status: OK | RMS: 0.578 | Magnitude: 10.540 | X: 0.019 Y: -0.105 Z: 10.539
+22:10:13.726 > [STD] std=0.5140 n=50 stopped=0
+22:10:13.727 > 2026-10-26 22:08:23
+22:10:13.727 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.565 V
+22:10:13.727 > [Temperature] 22.75 C
+22:10:13.727 > [pH] Board output at G34: 1716.8 mV
+22:10:13.727 > [Vibration] Status: OK | RMS: 0.628 | Magnitude: 10.795 | X: 0.433 Y: 0.261 Z: 10.783
+22:10:13.935 > [Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 80cm energy:100 | Distance: 135cm
+22:10:13.935 > [Vibration] Status: CAUTION | RMS: 0.678 | Magnitude: 9.927 | X: 0.033 Y: 0.318 Z: 9.922
+22:10:14.141 > [Vibration] Status: CAUTION | RMS: 0.687 | Magnitude: 10.422 | X: 0.335 Y: 0.479 Z: 10.405
+22:10:14.351 > [Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 94cm
+22:10:14.554 > [Vibration] Status: CAUTION | RMS: 0.658 | Magnitude: 10.580 | X: 0.048 Y: 0.005 Z: 10.580
+22:10:14.554 > [STD] std=0.6272 n=50 stopped=0
+22:10:14.554 > 2026-10-26 22:08:24
+22:10:14.554 > [Turbidity] At G35 pin: 1.783 V | Sensor output: 3.567 V
+22:10:14.554 > [Temperature] 22.75 C
+22:10:14.554 > [pH] Board output at G34: 1717.3 mV
+22:10:14.764 > [Vibration] Status: CAUTION | RMS: 0.705 | Magnitude: 9.380 | X: 0.033 Y: 0.122 Z: 9.379
+22:10:14.971 > [Radar] OUT: HIGH | Moving: 66cm energy:65 | Still: 67cm energy:100 | Distance: 72cm
+22:10:14.971 > [Vibration] Status: CAUTION | RMS: 0.696 | Magnitude: 10.583 | X: 0.055 Y: 0.639 Z: 10.563
+22:10:15.178 > [EVENT] 2026-10-26 22:08:23 elevated_vibration duration_ms=1377 peak_rms=0.728 warning=0
+22:10:15.178 > [Vibration] Status: CAUTION | RMS: 0.680 | Magnitude: 11.211 | X: 0.089 Y: 0.182 Z: 11.209
+22:10:15.384 > [Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 61cm
+22:10:15.591 > [Vibration] Status: CAUTION | RMS: 0.709 | Magnitude: 10.247 | X: 0.175 Y: 0.340 Z: 10.240
+22:10:15.592 > [STD] std=0.6623 n=50 stopped=0
+22:10:15.592 > 2026-10-26 22:08:25
+22:10:15.592 > [Turbidity] At G35 pin: 1.784 V | Sensor output: 3.567 V
+22:10:15.592 > [Temperature] 22.75 C
+22:10:15.592 > [pH] Board output at G34: 1717.5 mV
+22:10:15.792 > [Vibration] Status: CAUTION | RMS: 0.701 | Magnitude: 9.780 | X: 0.100 Y: 0.144 Z: 9.778
+22:10:15.792 > [Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 56cm
+22:10:16.000 > [Vibration] Status: CAUTION | RMS: 0.689 | Magnitude: 10.100 | X: 0.065 Y: 0.601 Z: 10.082
+22:10:16.416 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 8.749 | X: 0.098 Y: 0.239 Z: 8.745
+22:10:16.416 > [Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 54cm
+22:10:16.620 > [Vibration] Status: CAUTION | RMS: 0.668 | Magnitude: 10.001 | X: 0.110 Y: -0.361 Z: 9.994
+22:10:16.620 > [STD] std=0.4823 n=50 stopped=0
+22:10:16.620 > [EVENT] 2026-10-26 22:08:24 elevated_vibration duration_ms=1490 peak_rms=0.734 warning=0
+22:10:16.620 > 2026-10-26 22:08:26
+22:10:16.620 > [Turbidity] At G35 pin: 1.782 V | Sensor output: 3.564 V
+22:10:16.620 > [Temperature] 22.75 C
+22:10:16.620 > [pH] Board output at G34: 1717.5 mV
+22:10:16.823 > [EVENT] 2026-10-26 22:08:26 elevated_vibration duration_ms=29 peak_rms=0.648 warning=0
+22:10:16.823 > [Vibration] Status: CAUTION | RMS: 0.688 | Magnitude: 11.395 | X: 0.548 Y: 0.103 Z: 11.381
+22:10:16.823 > [Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 66cm energy:100 | Distance: 52cm
+22:10:17.230 > [Vibration] Status: CAUTION | RMS: 0.740 | Magnitude: 10.281 | X: 0.158 Y: 0.713 Z: 10.255
+22:10:17.431 > [Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 41cm energy:100 | Distance: 47cm
+22:10:17.431 > [Vibration] Status: CAUTION | RMS: 0.687 | Magnitude: 9.285 | X: 0.158 Y: 0.108 Z: 9.283
+22:10:17.639 > [STD] std=0.6133 n=50 stopped=0
+22:10:17.639 > [Vibration] Status: CAUTION | RMS: 0.669 | Magnitude: 10.902 | X: 0.122 Y: 0.354 Z: 10.896
+22:10:17.639 > 2026-10-26 22:08:27
+22:10:17.640 > [Turbidity] At G35 pin: 1.780 V | Sensor output: 3.559 V
+22:10:17.640 > [Temperature] 22.75 C
+22:10:17.640 > [pH] Board output at G34: 1716.3 mV
+22:10:17.842 > [EVENT] 2026-10-26 22:08:26 elevated_vibration duration_ms=948 peak_rms=0.740 warning=0
+22:10:17.842 > [Radar] OUT: HIGH | Moving: 44cm energy:100 | Still: 66cm energy:100 | Distance: 44cm
+22:10:18.044 > [Vibration] Status: CAUTION | RMS: 0.649 | Magnitude: 10.432 | X: 0.383 Y: 0.505 Z: 10.413
+22:10:18.247 > [EVENT] 2026-10-26 22:08:27 elevated_vibration duration_ms=386 peak_rms=0.664 warning=0
+22:10:18.247 > [Vibration] Status: OK | RMS: 0.640 | Magnitude: 10.246 | X: 0.112 Y: 0.964 Z: 10.200
+22:10:18.442 > #SCRIPT serial_error SerialException

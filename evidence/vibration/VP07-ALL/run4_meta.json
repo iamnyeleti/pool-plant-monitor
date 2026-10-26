@@ -1,0 +1,19 @@
+{
+  "scenario": "VP07-ALL",
+  "run": 4,
+  "started": "2026-10-26T22:12:47",
+  "finished": "2026-10-26T22:18:50",
+  "aborted": false,
+  "abort_reason": "",
+  "dry_run": false,
+  "port": "COM5",
+  "expected_build": "esp32doit-all",
+  "cfg_line": "[CFG] no saved preferences",
+  "commit_PoolPlantMonitor": "b1aba44",
+  "python": "3.15.0",
+  "runner_version": "1.1",
+  "note": "",
+  "timestamps": "computer clock, not sensor acquisition time",
+  "cal_lines": [],
+  "baseline_from_calibration": null
+}

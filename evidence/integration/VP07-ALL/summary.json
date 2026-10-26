@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "board": "http://192.168.4.1:80",
+  "started_laptop_time": "2026-10-26T23:17:16",
+  "polls_answered": 169,
+  "polls_unanswered": 0,
+  "interval_s": 2.0,
+  "rtc_offset_s_median": 110.9,
+  "rtc_offset_s_min": 110.4,
+  "rtc_offset_s_max": 111.4,
+  "pictures": [],
+  "note": "laptop clock; the logger only reads"
+}

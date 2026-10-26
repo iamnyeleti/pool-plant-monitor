@@ -47,12 +47,35 @@ try:
 except ImportError:
     serial = None
 
-VERSION = "1.0"
+VERSION = "1.1"
+
+
+def beeps_demo():
+    """Plays every VP07-ALL sound with its meaning, so you can learn them before the run. Needs no board."""
+    items = [("setup", "1 LONG low beep = SETUP step (start, restart the camera, open the page)"),
+             ("shot", "1 short high beep = take a SCREENSHOT"),
+             ("walkin", "2 beeps, rising (low then high) = WALK INTO the camera's view"),
+             ("walkout", "2 beeps, falling (high then low) = WALK OUT of the radar's range"),
+             ("end", "3 short beeps = FINISHED")]
+    print("\nThe five sounds, each played twice. Turn the laptop volume up until you can hear them from where you will stand.\n")
+    for kind, meaning in items:
+        for _ in range(2):
+            print("  " + meaning, flush=True)
+            beep(kind)
+            time.sleep(1.8)
+        time.sleep(1.0)
+    print("\nDone. Run it again if you want to hear them again.")
 
 
 def beep(kind):
     pat = {"in": [(1000, 200), (1000, 200)], "out": [(500, 350)], "end": [(800, 250)] * 3,
-           "tap": [(1500, 120)]}.get(kind, [])
+           "tap": [(1500, 120)],
+           # VP07-ALL sounds (one meaning each; see the run sheet)
+           "setup": [(600, 1000)],                    # 1 long low beep: do a setup step
+           "shot": [(1500, 160)],                     # 1 short high beep: take a SCREENSHOT
+           "walkin": [(800, 180), (1300, 180)],       # 2 beeps, low then high (rising): WALK INTO the camera's view
+           "walkout": [(1300, 180), (800, 180)]       # 2 beeps, high then low (falling): WALK OUT of the radar's range
+           }.get(kind, [])
     for f, d in pat:
         if winsound:
             winsound.Beep(f, d)
@@ -144,14 +167,27 @@ def build(name):
         add(st, 90, "end", "FINISHED. UNPLUG THE USB BEFORE you reconnect the sensor.", "end")
         return dict(env="esp32doit-bench", cal=0, pre=pre, steps=st, desc="Boot with the sensor disconnected")
     if name == "VP07-ALL":
-        pre = ["Flash esp32doit-all first (every module on: vibration, clock, radar, radar server, water quality, dashboard).",
-               "Fan ON at the calibrated speed, rig untouched for the whole run. The camera board is plugged into power.",
-               "Have your phone ready to join the Wi-Fi called PoolPlantRadar. Do nothing else until the screen tells you."]
-        add(st, 0, "state running win=none", "FAN ON. Hands off the rig for the whole run (6 minutes).")
-        add(st, 20, "load camera_reset", "NOW: press the camera board's reset button once.", "in")
-        add(st, 45, "load phone_page", "NOW: join your phone to PoolPlantRadar and open http://192.168.4.1/ . Leave the page open and the phone awake.", "in")
-        add(st, 360, "end", "FINISHED. You can close the page on your phone.", "end")
-        return dict(env="esp32doit-all", cal=0, pre=pre, steps=st, desc="Acquisition timing with every module running")
+        pre = ["1. Flash esp32doit-all first (every module on). The pH and the turbidity are NOT calibrated in this run, on purpose.",
+               "2. Fan ON at the calibrated speed. Write down the dial setting and the batteries. Do not touch the fan or the rig during the run.",
+               "3. The status logger window on the laptop is ALREADY RUNNING and waiting for the board (start it before you press Enter here).",
+               "4. The iPad is joined to PoolPlantRadar, Safari open and ready. Do not open the dashboard yet.",
+               "5. Your AWAY SPOT: inside the radar's range (closer than 2.25 m) where the camera cannot see you. Checked on the camera page BEFORE you start.",
+               "6. START POSITION: after you press Enter, walk to the camera's USB cable and stand next to it with the iPad. You restart the camera there at the first long beep."]
+        add(st, 0, "state running win=none", "FAN ON. Hands off the rig for the whole run (6 minutes). Stand NEXT TO THE CAMERA'S USB CABLE and wait for the first long beep.")
+        add(st, 10, "load camera_reset", "NOW: UNPLUG the camera board's USB cable, count 3 seconds, PLUG IT BACK IN. Press no button. Then walk straight to your AWAY SPOT and stay out of the camera's view until told. Its 15-second countdown starts when it powers up.", "setup")
+        add(st, 45, "load phone_page", "NOW: at your AWAY SPOT, open http://192.168.4.1/ on the iPad. Leave the page open with the iPad awake.", "setup")
+        add(st, 60, "shot 1 radar_only", "SCREENSHOT 1 on the iPad now (the radar sees you, the camera does not: it should say radar only).", "shot")
+        add(st, 70, "event enter n=1", "EVENT 1: walk INTO the camera's view and stand still for 20 seconds.", "walkin")
+        add(st, 85, "shot 2 agree", "SCREENSHOT 2 on the iPad now, while you are still in view.", "shot")
+        add(st, 90, "event leave n=1", "Walk OUT of the radar's range completely (more than 3 m from the radar). Stay out.", "walkout")
+        add(st, 120, "shot 3 all_clear", "SCREENSHOT 3 on the iPad now (the radar should be clear).", "shot")
+        add(st, 200, "event enter n=2", "EVENT 2: walk INTO the camera's view and stand still for 20 seconds.", "walkin")
+        add(st, 215, "shot 4 agree", "SCREENSHOT 4 on the iPad now, while you are still in view.", "shot")
+        add(st, 220, "event leave n=2", "Walk OUT of the radar's range completely. Stay out.", "walkout")
+        add(st, 300, "shot 5 top_banner", "Scroll the page to the TOP and take SCREENSHOT 5 (the system status banner).", "shot")
+        add(st, 320, "shot 6 engineering", "On the water card tap 'Show engineering values' and take SCREENSHOT 6. Then scroll to the vibration card and tap 'Download readings (CSV)'.", "shot")
+        add(st, 360, "end", "FINISHED. The logger stops by itself. You can close the page on the iPad.", "end")
+        return dict(env="esp32doit-all", cal=0, pre=pre, steps=st, desc="All modules running: timing, honest states, radar and camera agreement")
     raise SystemExit("Unknown scenario: " + name)
 
 
@@ -335,8 +371,12 @@ def main():
     ap.add_argument("--yes", action="store_true")
     ap.add_argument("--force", action="store_true", help="continue even if the [CFG] line is missing or from the wrong build")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--beeps-demo", action="store_true", help="play the VP07-ALL sounds with their meaning and stop (no board needed)")
     ap.add_argument("--speed", type=float, default=1.0)
     a = ap.parse_args()
+    if a.beeps_demo:
+        beeps_demo()
+        return 0
 
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out = a.out or os.path.join(root, "evidence", "vibration")
