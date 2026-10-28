@@ -1,111 +1,163 @@
-# Pool Plant Monitor — Main Controller Firmware
+# Pool Plant Monitor
 
-Final-year Mechatronics Engineering project (EEE4022S, UCT).  
-**Student:** Nyeleti Mushwana (MSHNYE002) · **Supervisor:** Dr Simon Winberg
+A condition-monitoring and maintenance-advisory system for swimming-pool plant rooms, built on two ESP32 boards. The DOIT ESP32 DevKit V1 runs vibration analysis (MPU6050), water-quality sensing (pH, temperature, turbidity), radar-based presence detection (LD2410) and a local web dashboard. An ESP32-S3 camera board runs a frame-difference occupancy-detection algorithm that compares grayscale frames against a stored reference, corroborated by the radar data received from the DOIT board over Wi-Fi. No images are stored or transmitted; only scalar change-percentage values leave the camera.
 
-**Board:** DOIT ESP32 DevKit V1 · **Port:** COM5 · **Branch:** `integration`
+## Module status
 
----
-
-## What this firmware does
-
-Runs on the main DOIT ESP32 board. Creates a Wi-Fi access point (`PoolPlantRadar`, 192.168.4.1), hosts a single-page dashboard on port 80, and coordinates all sensing modules:
-
-- **Vibration** — MPU-6050 accelerometer, cooperative loop, threshold-based anomaly detection.
-- **Water quality** — pH (DFRobot SEN0161-V2), temperature (DS18B20), turbidity (DFRobot analog). Calibrated via serial commands.
-- **Radar** — HLK-LD2410C via UART2 and OUT pin. Serves `GET /radar` for the camera node.
-- **Occupancy** — receives heartbeat pushes from the camera node at `GET /api/occupancy/heartbeat`.
-- **Schedule / RTC** — DS3231 real-time clock. Pump run window stored in flash, used by the vibration module.
-
----
-
-## Repository structure
-
-```
-src/              Firmware source files (C++, Arduino framework)
-include/          Header files
-lib/              Placeholder — third-party libraries managed by PlatformIO
-test/             Placeholder for unit tests
-
-evidence/
-  vibration/      Hardware test logs and results (VP01 through VP07)
-  water-quality/  Hardware test logs and results (T1 through T4)
-    raw/          Raw /api/status JSON captures from test sessions
-    T4-upload/    Full T4 session: logs, status captures, commit snapshot
-  integration/    All-modules integration test (VP07-ALL)
-    results/      Integration analysis CSV and summary
-
-docs/             Diagnostic reports, developer notes
-tools/            Python analysis scripts (run_vib.py, status_log.py, analyse_integration.py)
-logs/             Serial monitor logs from all development sessions
-
-ch5_figures_pack/ Chapter 5 thesis figures: scripts, data and rendered PDFs/PNGs
-wokwi.toml        Wokwi simulator configuration
-diagram.json      Wokwi circuit diagram
-
-archive/          Development scratch files kept for reference
-                  (old patch diffs, commit-hash notes, T4 zip)
-```
-
----
-
-## Building
-
-Open this folder in VS Code with the PlatformIO extension installed. PlatformIO resolves all library dependencies from `platformio.ini` automatically.
-
-Select one named environment. **Never use the "All" task** — it uploads every environment in sequence.
-
-| Environment | Modules enabled | Use for |
-|---|---|---|
-| `esp32doit-all` | Everything | Full dashboard with all sensors |
-| `esp32doit-bench` | Vibration + RTC | Vibration-only testing |
-| `esp32doit-calibrate` | Vibration + RTC (calibration mode) | Baseline measurement |
-| `esp32doit-bench-fault` | Vibration + RTC + fault injection | Fault detection testing |
-| `esp32doit-devkit-v1` | Water quality + dashboard | Water-only testing |
-
-Build only (no upload): `pio run -e esp32doit-all`  
-Build and upload: `pio run -e esp32doit-all --target upload`
-
----
-
-## API endpoints
-
-| Endpoint | Method | Description |
-|---|---|---|
-| `/` | GET | Dashboard page |
-| `/api/status` | GET | JSON: vibration, rtc, radar, occupancy, schedule, water |
-| `/radar` | GET | Radar JSON (used by camera node — do not change) |
-| `/api/occupancy/heartbeat` | GET | Receives heartbeat from camera node — do not change |
-| `/api/water/config` | GET | Current water preference settings |
-| `/api/water/config` | POST | Update temperature range and preferred pH |
-
----
-
-## Water quality calibration (serial, after every boot)
-
-Connect to COM5 at 115200 baud.
-
-| Key | Action |
+| Module | Status |
 |---|---|
-| `7` | Calibrate pH with pH 7.0 buffer |
-| `4` | Calibrate pH with pH 4.0 buffer |
-| `r` | Reset pH calibration |
-| `b` | Set turbidity clear-water baseline |
+| Vibration (MPU6050 RMS, persistent-warning logic) | VERIFIED ON HARDWARE |
+| Radar presence (LD2410 OUT pin + UART) | VERIFIED ON HARDWARE |
+| Radar HTTP server (`/radar` JSON endpoint) | VERIFIED ON HARDWARE |
+| Dashboard (web UI, `/api/status`) | VERIFIED ON HARDWARE |
+| Shared network module (single AP, single WebServer) | VERIFIED ON HARDWARE |
+| Camera occupancy detection (frame-difference) | VERIFIED ON HARDWARE |
+| Occupancy heartbeat (camera → DOIT `/api/occupancy/heartbeat`) | VERIFIED ON HARDWARE |
+| RTC schedule (DS3231) | IMPLEMENTED BUT UNTESTED |
+| Water quality (pH, temperature, turbidity) | IMPLEMENTED BUT UNTESTED |
+| Cloud connectivity | NOT IMPLEMENTED |
 
-Pump run window (only when `WATER_QUALITY_CONNECTED` is 0):
+## Hardware and pins
+
+### DOIT ESP32 DevKit V1
+
+| Peripheral | Pin(s) | Notes |
+|---|---|---|
+| MPU6050 (vibration) | SDA/SCL (default I2C), AD0 → 3.3 V | Address 0x69 (DS3231 occupies 0x68) |
+| DS3231 (RTC) | SDA/SCL (shared I2C bus) | Address 0x68 |
+| LD2410 (radar) | OUT → GPIO 5, TX → GPIO 16, RX → GPIO 17 | UART2 at 256000 baud |
+| Turbidity sensor | GPIO 35 (ADC) | |
+| DS18B20 (temperature) | GPIO 4 (OneWire) | |
+| pH sensor | GPIO 34 (ADC) | |
+
+### ESP32-S3 camera board
+
+Pin mapping is in `OccupancyModule/src/occupancy.cpp`. XCLK on GPIO 38, SIOD on GPIO 8, SIOC on GPIO 7. Frame format: GRAYSCALE 640x480, fb_count=2 in PSRAM, xclk=20 MHz.
+
+## How to build
+
+Requires [PlatformIO](https://platformio.org/).
 
 ```
-PUMP HH:MM HH:MM    set start and end time
-PUMP CLEAR          clear the window
-PUMP?               print current window
+# DOIT board (vibration, radar, dashboard)
+cd PoolPlantMonitor
+pio run -e esp32doit-devkit-v1
+
+# Camera board (occupancy detection)
+cd OccupancyModule
+pio run -e esp32-s3-cam
 ```
+
+Upload ports default to COM5 (DOIT) and COM6 (camera) as set in each `platformio.ini`.
+
+## Network
+
+The DOIT board creates a Wi-Fi access point:
+
+- **SSID**: `PoolPlantRadar`
+- **Password**: `poolplant123`
+- **AP IP**: `192.168.4.1`
+- **Dashboard**: `http://192.168.4.1/`
+- **Radar JSON**: `http://192.168.4.1/radar`
+
+The camera board connects as a station client (DHCP). Its viewer page is served on the IP it receives (typically `192.168.4.2`).
+
+> **These are bench-test credentials and must be changed before any deployment.**
+
+## Repository layout
+
+```
+├── src/                  DOIT board firmware
+├── include/              DOIT board headers
+├── platformio.ini        DOIT board PlatformIO config
+├── logs/                 Serial capture logs from bench tests
+├── OccupancyModule/
+│   ├── src/              Camera board firmware
+│   ├── include/          Camera board headers
+│   ├── platformio.ini    Camera board PlatformIO config
+│   ├── tools/            Trial runner and analysis scripts
+│   ├── evidence/         Raw trial logs and metadata
+│   │   └── occupancy/    Per-scenario folders (OCC-0 through OCC-5b)
+│   ├── results_final/    Analysis output (final thresholds)
+│   ├── results_thr15/    Analysis output (15% threshold)
+│   └── results_thr3/     Analysis output (3% threshold)
+├── docs/                 Development logs and design records
+│   └── prototypes/       Laptop-only prototype code (not in firmware)
+└── .gitignore
+```
+
+## Running trials and analysis
+
+### run_trial.py
+
+Runs one scripted occupancy trial. Close any serial monitor first.
+
+```
+python OccupancyModule/tools/run_trial.py OCC-2 --port COM6
+```
+
+The script opens the serial port, resets the board, waits for the reference-frame capture, then prompts you to move at scripted times. It writes `runN.log` and `runN_meta.json` into `evidence/occupancy/<scenario>/`.
+
+Scenarios: OCC-0, OCC-1, OCC-2, OCC-3, OCC-5-L2, OCC-5-L3, OCC-5b. Options: `--port`, `--out`, `--note`, `--yes`, `--dry-run [--speed N]`.
+
+### analyse_occupancy.py
+
+Reads the saved logs and produces CSV tables and figures.
+
+```
+python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --out results --threshold 3 --lag 1.5
+python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --suggest-threshold OCC-3
+python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --estimate-lag
+```
+
+### Evidence folder layout
+
+Each scenario folder (e.g. `OCC-2/`) contains:
+- `runN.log` — timestamped serial output with `#SCRIPT` markers
+- `runN_meta.json` — commit hashes, times, config, Python version
+
+Top-level evidence files: `ground_truth.csv`, `lag_estimate.txt`, `threshold_freeze.txt`.
+
+## Run register
+
+Built from the `runN_meta.json` files in `OccupancyModule/evidence/occupancy/`.
+
+| Scenario | Run | Started | Light | Cam commit | DOIT commit | Aborted |
+|---|---|---|---|---|---|---|
+| OCC-0 | 1 | 2026-10-20 01:58 | normal | 4fffb08 | 9a6ae31 | no |
+| OCC-1 | 1 | 2026-10-20 02:28 | normal | 231f413 | 9a6ae31 | no |
+| OCC-2 | 1 | 2026-10-20 02:13 | normal | 231f413 | 9a6ae31 | no |
+| OCC-2 | 2 | 2026-10-20 03:09 | normal | 2cbc219 | 9a6ae31 | no |
+| OCC-3 | 1 | 2026-10-20 02:00 | normal | 4fffb08 | 9a6ae31 | no |
+| OCC-3 | 2 | 2026-10-20 02:46 | normal | 231f413 | 9a6ae31 | no |
+| OCC-5-L2 | 1 | 2026-10-20 02:17 | dim | 231f413 | 9a6ae31 | no |
+| OCC-5-L3 | 1 | 2026-10-20 02:21 | dark | 231f413 | 9a6ae31 | no |
+| OCC-5-L3 | 2 | 2026-10-20 03:06 | dark | 2cbc219 | 9a6ae31 | no |
+| OCC-5b | 1 | 2026-10-20 02:25 | normal | 231f413 | 9a6ae31 | no |
+| OCC-5b | 2 | 2026-10-20 03:12 | normal | 2cbc219 | 9a6ae31 | no |
+
+## Commits and tags
+
+| Reference | Hash | Description |
+|---|---|---|
+| Tag `occupancy-evidence` | 9a6ae31 | DOIT board bench configuration (network-bench) |
+| Tag `occupancy-evidence-camera` | bb5d33c | Camera board with evidence, tools and results |
+
+The `main` branch is based on commit `9a6ae31`, which is the bench-test configuration. In `src/main.cpp` at this commit, `VIBRATION_CONNECTED`, `RTC_CONNECTED` and `WATER_QUALITY_CONNECTED` are set to `false`; `RADAR_CONNECTED`, `RADAR_SERVER_CONNECTED` and `DASHBOARD_CONNECTED` are set to `true`. To enable other modules, set the corresponding flag to `true` and rebuild.
+
+## Ethics
+
+The occupancy-detection algorithm compares grayscale pixel intensities against a stored reference frame and reports only a scalar change percentage. No images are stored, transmitted or made available outside the camera board's local processing loop. The camera viewer page (`/capture`) is served only on the local access point for development purposes. This approach was chosen specifically to avoid capturing identifiable information. The method was reviewed and approved by the project supervisor.
+
+## Limitations
+
+- This is a prototype built and tested by one operator in one room (a home office used as a proxy for a pool plant room).
+- Occupancy detection has been tested under normal, dim and dark lighting with a fixed camera position. Performance in other environments is not verified.
+- Vibration thresholds were calibrated on a bench test rig, not on a real pool pump.
+- Water-quality sensors are implemented in firmware but have not been tested with real hardware.
+- The system has no cloud connectivity, no authentication and no encryption on the local AP.
+- All timestamps in the evidence logs are from the host computer clock, not sensor acquisition time.
 
 ---
 
-## Known prototype limits
-
-- Wi-Fi credentials are hard-coded. No authentication on any endpoint.
-- pH calibration and turbidity baseline are lost on every restart.
-- The temperature probe search runs once at boot and is not retried.
-- The clock may drift; the pump schedule is compared against it without correction.
-- Full integration with all modules running simultaneously has been tested in one session only (VP07-ALL, 24 October 2026).
+Course project EEE4022S, University of Cape Town, 2026.
