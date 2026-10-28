@@ -1,0 +1,326 @@
+Occupancy module starting...
+Camera initialised successfully.
+Connecting to PoolPlantRadar WiFi.........
+WiFi connected.
+Radar client ready, will poll DOIT board.
+Detection module ready (PSRAM allocated).
+Reference frame will be captured in 15 seconds.
+Step out of the camera's view NOW.
+Capturing in 15...
+Capturing in 14...
+Capturing in 13...
+Capturing in 12...
+Capturing in 11...
+Capturing in 10...
+Capturing in 9...
+Capturing in 8...
+Capturing in 7...
+Capturing in 6...
+Capturing in 5...
+Capturing in 4...
+Capturing in 3...
+Capturing in 2...
+Capturing in 1...
+Detection: Reference frame captured (640x480, 307200 bytes).
+Reference captured. Detection is now active.
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 44cm
+[Detection] Radar: YES | Camera: 0.0% change | Event: none
+[Detection] EVENT #1 — Radar: YES | Camera: 18.6% change (corroborated)
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 18.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 33cm
+[Detection] Radar: YES | Camera: 18.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 18.6% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 18.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 18.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 51cm
+[Detection] Radar: YES | Camera: 18.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 18.6% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 18.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 42cm
+[Detection] Radar: YES | Camera: 18.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 42cm
+[Detection] Radar: YES | Camera: 18.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 18.7% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 18.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 18.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 0cm
+[Detection] Radar: YES | Camera: 18.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 0cm
+[Detection] Radar: YES | Camera: 18.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 0cm
+[Detection] Radar: YES | Camera: 18.5% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 18.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 18.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 18.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 42.6% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 53.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 51cm
+[Detection] Radar: YES | Camera: 25.9% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 64.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 33.4% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 22.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 34cm
+[Detection] Radar: YES | Camera: 19.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 12.8% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 5.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 5.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 5.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 5.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 33cm
+[Detection] Radar: YES | Camera: 5.4% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 6.1% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 5.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 48cm
+[Detection] Radar: YES | Camera: 6.1% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 6.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 44cm
+[Detection] Radar: YES | Camera: 5.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 31cm
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 5.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 33cm
+[Detection] Radar: YES | Camera: 5.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 38cm
+[Detection] Radar: YES | Camera: 5.9% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 5.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 38cm
+[Detection] Radar: YES | Camera: 5.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 37cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 6.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 5.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 31cm
+[Detection] Radar: YES | Camera: 54.0% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 68.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 26.0% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 43cm
+[Detection] Radar: YES | Camera: 22.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 32cm
+[Detection] Radar: YES | Camera: 21.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 34cm
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 43cm
+[Detection] Radar: YES | Camera: 21.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 32cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 21.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 21.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 44cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 44cm
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 21.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 43cm
+[Detection] Radar: YES | Camera: 21.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 38cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 21.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 37cm
+[Detection] Radar: YES | Camera: 21.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 21.6% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 21.5% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 21.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 21.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[RadarClient] Presence: YES | Distance: 43cm
+[Detection] Radar: YES | Camera: 21.4% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 42cm
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 47cm
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 38cm
+[Detection] Radar: YES | Camera: 21.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 21.0% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 21.1% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 21.1% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 42cm
+[Detection] Radar: YES | Camera: 20.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 50cm
+[Detection] Radar: YES | Camera: 20.8% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 21.1% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 48cm
+cam_hal: EV-VSYNC-OVF
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 21.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 21.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 44.8% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 51.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 30cm
+[Detection] Radar: YES | Camera: 51.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 32cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 45.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 36.7% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 44.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 38.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 36cm
+[Detection] Radar: YES | Camera: 34.5% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 0cm
+Detection: Too dark (avg brightness 0.6), skipping.
+[Detection] Radar: YES | Camera: TOO DARK
+[Detection] Radar: YES | Camera: 83.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 42cm
+[Detection] Radar: YES | Camera: 81.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 52cm
+[Detection] Radar: YES | Camera: 80.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 78.5% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 95.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 37cm
+[Detection] Radar: YES | Camera: 94.2% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 96.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 37cm
+[Detection] Radar: YES | Camera: 98.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+Detection: Too dark (avg brightness 18.3), skipping.
+[Detection] Radar: YES | Camera: TOO DARK
+Camera viewer: http://192.168.4.2
+Detection: Too dark (avg brightness 17.1), skipping.
+[Detection] Radar: YES | Camera: TOO DARK
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 99.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 99.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 30cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 36cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 36cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 37cm
+[Detection] Radar: YES | Camera: 99.7% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 95.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 96.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 95.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 95.9% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 96.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 95.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 36cm
+[Detection] Radar: YES | Camera: 96.0% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 95.6% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 95.7% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 38cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 96.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 96.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 96.1% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 96.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 0cm
+[Detection] Radar: YES | Camera: 96.3% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 41cm
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 96.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 45cm
+[Detection] Radar: YES | Camera: 96.2% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 92.9% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 39cm
+[Detection] Radar: YES | Camera: 99.4% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 40cm
+[Detection] Radar: YES | Camera: 48.0% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 46cm
+[Detection] Radar: YES | Camera: 63.6% change | Event: ACTIVE
+[Detection] Radar: YES | Camera: 70.6% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 56cm
+[Detection] Radar: YES | Camera: 76.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 62cm
+[Detection] Radar: YES | Camera: 80.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 51cm
+[Detection] Radar: YES | Camera: 93.3% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[Detection] Radar: YES | Camera: 92.1% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 36cm
+[Detection] Radar: YES | Camera: 97.8% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 35cm
+Detection: Too dark (avg brightness 18.7), skipping.
+[Detection] Radar: YES | Camera: TOO DARK
+[RadarClient] Presence: YES | Distance: 35cm
+[Detection] Radar: YES | Camera: 98.5% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 33cm
+[Detection] Radar: YES | Camera: 84.4% change | Event: ACTIVE
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: YES | Distance: 37cm
+[Detection] Radar: YES | Camera: 85.2% change | Event: ACTIVE
+[RadarClient] Presence: YES | Distance: 48cm
+[Detection] Radar: YES | Camera: 85.5% change | Event: ACTIVE

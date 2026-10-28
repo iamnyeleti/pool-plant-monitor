@@ -1,0 +1,867 @@
+02:28:59.394 > #SCRIPT runner_start scenario=OCC-1 run=1 version=1.0
+02:28:59.613 > ESP-ROM:esp32s3-20210327
+02:28:59.613 > Build:Mar 27 2021
+02:28:59.613 > rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+02:28:59.613 > Saved PC:0x40056f66
+02:28:59.613 > SPIWP:0xee
+02:28:59.613 > mode:DIO, clock div:1
+02:28:59.613 > load:0x3fce3808,len:0x4bc
+02:28:59.613 > load:0x403c9700,len:0xbd8
+02:28:59.613 > load:0x403cc700,len:0x2a0c
+02:28:59.613 > entry 0x403c98d0
+02:29:01.260 > Occupancy module starting...
+02:29:01.467 > Camera initialised successfully.
+02:29:06.621 > Connecting to PoolPlantRadar WiFi.........
+02:29:06.621 > WiFi connected.
+02:29:06.621 > Radar client ready, will poll DOIT board.
+02:29:06.621 > Detection module ready (PSRAM allocated).
+02:29:06.628 > Reference frame will be captured in 15 seconds.
+02:29:06.628 > Step out of the camera's view NOW.
+02:29:06.628 > Capturing in 15...
+02:29:07.645 > Capturing in 14...
+02:29:08.485 > Capturing in 13...
+02:29:09.522 > Capturing in 12...
+02:29:10.556 > Capturing in 11...
+02:29:11.586 > Capturing in 10...
+02:29:12.641 > Capturing in 9...
+02:29:13.479 > Capturing in 8...
+02:29:14.505 > Capturing in 7...
+02:29:15.537 > Capturing in 6...
+02:29:16.584 > Capturing in 5...
+02:29:17.618 > Capturing in 4...
+02:29:18.667 > Capturing in 3...
+02:29:19.508 > Capturing in 2...
+02:29:20.545 > Capturing in 1...
+02:29:21.582 > Detection: Reference frame captured (640x480, 307200 bytes).
+02:29:21.582 > Reference captured. Detection is now active.
+02:29:21.582 > Camera viewer: http://192.168.4.2
+02:29:21.796 > [RadarClient] Presence: YES | Distance: 0cm
+02:29:21.796 > [Lat] 16 ms from rising edge to first compare end
+02:29:21.796 > [Detection] Radar: YES | Camera: 0.0% change | Event: none | bright=161.6
+02:29:21.796 > [Cam] loop 154/154 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 62/62 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 243144 PSRAM 7444611
+02:29:22.831 > [Detection] Radar: YES | Camera: 0.7% change | Event: none | bright=153.1
+02:29:23.044 > [RadarClient] Presence: YES | Distance: 0cm
+02:29:23.672 > [Detection] Radar: YES | Camera: 0.7% change | Event: none | bright=153.1
+02:29:24.304 > [RadarClient] Presence: YES | Distance: 69cm
+02:29:24.719 > [Detection] Radar: YES | Camera: 0.7% change | Event: none | bright=153.1
+02:29:25.541 > [RadarClient] Presence: YES | Distance: 69cm
+02:29:25.745 > [Detection] Radar: YES | Camera: 0.6% change | Event: none | bright=153.1
+02:29:26.571 > Camera viewer: http://192.168.4.2
+02:29:26.584 > #SCRIPT light normal
+02:29:26.584 > #SCRIPT state desk
+02:29:26.786 > [RadarClient] Presence: NO | Distance: 69cm
+02:29:26.787 > [Cam] loop 2/128 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/69 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 243544 PSRAM 7449267
+02:29:28.042 > [RadarClient] Presence: NO | Distance: 50cm
+02:29:29.283 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:30.726 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:31.551 > Camera viewer: http://192.168.4.2
+02:29:31.760 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/58 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 242648 PSRAM 7449267
+02:29:32.181 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:33.208 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:34.040 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:35.269 > [RadarClient] Presence: NO | Distance: 31cm
+02:29:36.289 > [RadarClient] Presence: NO | Distance: 0cm
+02:29:36.495 > Camera viewer: http://192.168.4.2
+02:29:36.602 > #SCRIPT state transit
+02:29:36.703 > [Cam] loop 2/113 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 55/101 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 242200 PSRAM 7449267
+02:29:37.734 > [RadarClient] Presence: NO | Distance: 0cm
+02:29:38.134 > [Lat] 16 ms from rising edge to first compare end
+02:29:38.134 > [Detection] Radar: YES | Camera: 0.7% change | Event: none | bright=153.0
+02:29:38.750 > [RadarClient] Presence: YES | Distance: 0cm
+02:29:39.172 > [Detection] Radar: YES | Camera: 0.7% change | Event: none | bright=153.1
+02:29:40.215 > [RadarClient] Presence: YES | Distance: 69cm
+02:29:40.215 > [Detection] Radar: YES | Camera: 1.2% change | Event: none | bright=152.8
+02:29:41.239 > [RadarClient] Presence: YES | Distance: 125cm
+02:29:41.239 > [Detection] EVENT #1 — Radar: YES | Camera: 34.2% change (corroborated) | bright=144.5
+02:29:41.659 > Camera viewer: http://192.168.4.2
+02:29:41.659 > [Cam] loop 2/133 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/113 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241976 PSRAM 7449267
+02:29:42.275 > [Detection] Radar: YES | Camera: 44.3% change | Event: ACTIVE | bright=130.3
+02:29:42.682 > [RadarClient] Presence: YES | Distance: 88cm
+02:29:43.302 > [Detection] Radar: YES | Camera: 43.7% change | Event: ACTIVE | bright=134.0
+02:29:43.713 > [RadarClient] Presence: YES | Distance: 86cm
+02:29:44.329 > [Detection] Radar: YES | Camera: 14.7% change | Event: ACTIVE | bright=166.0
+02:29:45.153 > [RadarClient] Presence: YES | Distance: 86cm
+02:29:45.154 > [Detection] Radar: YES | Camera: 6.0% change | Event: ACTIVE | bright=164.2
+02:29:46.593 > Camera viewer: http://192.168.4.2
+02:29:46.594 > [RadarClient] Presence: YES | Distance: 86cm
+02:29:46.799 > [Cam] loop 2/139 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/72 ms (fail 0); detect_cmp 16/17 ms; thresh=3%; heap 241752 PSRAM 7449267
+02:29:47.841 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=164.5
+02:29:47.842 > [RadarClient] Presence: YES | Distance: 86cm
+02:29:48.249 > [Detection] Radar: YES | Camera: 5.2% change | Event: ACTIVE | bright=164.5
+02:29:49.077 > [RadarClient] Presence: YES | Distance: 86cm
+02:29:49.285 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=164.4
+02:29:50.109 > [Detection] Radar cleared, event ended.
+02:29:50.726 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:51.535 > Camera viewer: http://192.168.4.2
+02:29:51.751 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:51.751 > [Cam] loop 2/132 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/74 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241304 PSRAM 7449267
+02:29:52.778 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:54.218 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:55.661 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:56.489 > Camera viewer: http://192.168.4.2
+02:29:56.616 > #SCRIPT state away
+02:29:56.698 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:56.698 > [Cam] loop 2/125 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/91 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239916 PSRAM 7449267
+02:29:58.144 > [RadarClient] Presence: NO | Distance: 86cm
+02:29:59.190 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:00.628 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:01.656 > Camera viewer: http://192.168.4.2
+02:30:01.656 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:01.656 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:02.703 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:03.743 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:05.195 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:06.638 > Camera viewer: http://192.168.4.2
+02:30:06.638 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:06.846 > [Cam] loop 2/92 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:07.893 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:09.139 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:10.186 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:11.635 > Camera viewer: http://192.168.4.2
+02:30:11.635 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:11.838 > [Cam] loop 2/184 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/82 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:30:12.664 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:14.130 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:15.772 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:16.593 > Camera viewer: http://192.168.4.2
+02:30:16.799 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:16.799 > [Cam] loop 2/130 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/66 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239860 PSRAM 7449267
+02:30:18.233 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:19.266 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:20.717 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:21.548 > Camera viewer: http://192.168.4.2
+02:30:21.754 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:21.754 > [Cam] loop 2/112 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/86 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:22.788 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:23.829 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:25.268 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:26.296 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:26.503 > Camera viewer: http://192.168.4.2
+02:30:26.707 > [Cam] loop 2/84 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 36/50 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:27.760 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:28.796 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:30.248 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:31.497 > Camera viewer: http://192.168.4.2
+02:30:31.705 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:31.705 > [Cam] loop 2/135 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/59 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240632 PSRAM 7449267
+02:30:33.156 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:34.204 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:35.647 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:36.688 > Camera viewer: http://192.168.4.2
+02:30:36.896 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:36.896 > [Cam] loop 2/132 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/75 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239708 PSRAM 7449267
+02:30:38.140 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:39.375 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:40.624 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:41.654 > Camera viewer: http://192.168.4.2
+02:30:41.862 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:41.863 > [Cam] loop 2/147 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/72 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240500 PSRAM 7449267
+02:30:43.300 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:44.347 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:45.785 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:46.613 > Camera viewer: http://192.168.4.2
+02:30:46.817 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/117 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:47.233 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:48.264 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:49.708 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:51.149 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:51.566 > Camera viewer: http://192.168.4.2
+02:30:51.775 > [Cam] loop 2/141 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/65 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:30:52.810 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:54.254 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:55.285 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:56.532 > Camera viewer: http://192.168.4.2
+02:30:56.736 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:56.737 > [Cam] loop 2/136 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/105 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:30:58.193 > [RadarClient] Presence: NO | Distance: 86cm
+02:30:59.215 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:00.692 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:01.530 > Camera viewer: http://192.168.4.2
+02:31:01.736 > [Cam] loop 2/116 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/112 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:31:02.150 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:03.192 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:04.836 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:05.868 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:06.689 > Camera viewer: http://192.168.4.2
+02:31:06.892 > [Cam] loop 2/100 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/74 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241068 PSRAM 7449267
+02:31:07.308 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:08.341 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:09.778 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:10.810 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:11.646 > Camera viewer: http://192.168.4.2
+02:31:11.861 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/72 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240844 PSRAM 7449267
+02:31:12.272 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:13.312 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:14.337 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:15.802 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:16.626 > Camera viewer: http://192.168.4.2
+02:31:16.834 > [Cam] loop 2/132 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/104 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240844 PSRAM 7449267
+02:31:17.247 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:18.691 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:20.161 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:21.392 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:21.600 > Camera viewer: http://192.168.4.2
+02:31:21.801 > [Cam] loop 2/146 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/76 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241068 PSRAM 7449267
+02:31:22.847 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:23.885 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:25.136 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:26.161 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:26.586 > Camera viewer: http://192.168.4.2
+02:31:26.791 > [Cam] loop 2/150 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/74 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241068 PSRAM 7449267
+02:31:27.210 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:28.233 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:29.670 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:31.327 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:31.535 > Camera viewer: http://192.168.4.2
+02:31:31.743 > [Cam] loop 2/149 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/97 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240844 PSRAM 7449267
+02:31:32.370 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:33.829 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:34.858 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:36.308 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:36.515 > Camera viewer: http://192.168.4.2
+02:31:36.926 > [Cam] loop 2/161 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/87 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240316 PSRAM 7449267
+02:31:37.750 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:38.795 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:40.255 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:41.297 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:41.708 > Camera viewer: http://192.168.4.2
+02:31:41.910 > [Cam] loop 2/139 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/104 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241068 PSRAM 7449267
+02:31:42.735 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:44.186 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:45.428 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:46.680 > Camera viewer: http://192.168.4.2
+02:31:46.680 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:46.888 > [Cam] loop 2/99 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240844 PSRAM 7449267
+02:31:47.712 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:49.373 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:50.414 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:51.662 > Camera viewer: http://192.168.4.2
+02:31:51.870 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:51.870 > [Cam] loop 2/124 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/90 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241068 PSRAM 7449267
+02:31:52.902 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:54.357 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:55.799 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:56.624 > Camera viewer: http://192.168.4.2
+02:31:56.838 > [Cam] loop 2/109 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/64 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240844 PSRAM 7449267
+02:31:57.256 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:58.294 > [RadarClient] Presence: NO | Distance: 86cm
+02:31:59.325 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:00.774 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:01.618 > Camera viewer: http://192.168.4.2
+02:32:01.826 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:01.826 > [Cam] loop 2/100 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/92 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:32:03.283 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:04.327 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:05.778 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:06.606 > Camera viewer: http://192.168.4.2
+02:32:06.810 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:06.810 > [Cam] loop 2/116 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 39/75 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:32:08.463 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:09.912 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:10.939 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:11.554 > Camera viewer: http://192.168.4.2
+02:32:11.969 > [Cam] loop 2/140 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/75 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240848 PSRAM 7449267
+02:32:12.392 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:13.850 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:14.886 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:16.336 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:16.544 > Camera viewer: http://192.168.4.2
+02:32:16.964 > [Cam] loop 2/179 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/98 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240848 PSRAM 7449267
+02:32:17.376 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:18.817 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:20.260 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:21.715 > Camera viewer: http://192.168.4.2
+02:32:21.923 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:23.374 > [Cam] loop 2/126 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240120 PSRAM 7449267
+02:32:23.375 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:24.416 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:25.882 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:26.513 > Camera viewer: http://192.168.4.2
+02:32:26.926 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:26.926 > [Cam] loop 2/136 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 57/109 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240848 PSRAM 7449267
+02:32:28.372 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:29.811 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:30.844 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:31.676 > Camera viewer: http://192.168.4.2
+02:32:32.298 > [Cam] loop 2/98 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/64 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241072 PSRAM 7449267
+02:32:32.298 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:33.332 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:34.791 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:35.819 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:36.643 > Camera viewer: http://192.168.4.2
+02:32:36.851 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:36.852 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/63 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241072 PSRAM 7449267
+02:32:38.304 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:39.336 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:40.769 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:41.595 > Camera viewer: http://192.168.4.2
+02:32:41.806 > [Cam] loop 2/102 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 42/60 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:32:42.426 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:43.881 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:44.914 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:46.363 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:46.566 > Camera viewer: http://192.168.4.2
+02:32:46.981 > [Cam] loop 2/127 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/69 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240328 PSRAM 7449267
+02:32:47.804 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:48.837 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:50.299 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:51.339 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:51.546 > Camera viewer: http://192.168.4.2
+02:32:51.954 > [Cam] loop 2/121 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/63 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240632 PSRAM 7449267
+02:32:52.779 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:53.819 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:54.853 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:55.884 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:56.704 > Camera viewer: http://192.168.4.2
+02:32:56.922 > [Cam] loop 2/102 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/90 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:32:57.331 > [RadarClient] Presence: NO | Distance: 86cm
+02:32:58.767 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:00.007 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:01.452 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:01.660 > Camera viewer: http://192.168.4.2
+02:33:01.867 > [Cam] loop 2/142 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/80 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:33:02.483 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:03.935 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:04.962 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:06.403 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:06.612 > Camera viewer: http://192.168.4.2
+02:33:07.022 > [Cam] loop 2/93 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/77 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:33:07.849 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:08.876 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:10.319 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:11.567 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:11.567 > Camera viewer: http://192.168.4.2
+02:33:11.987 > [Cam] loop 2/129 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 42/79 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:33:12.816 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:13.857 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:15.306 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:16.569 > Camera viewer: http://192.168.4.2
+02:33:16.986 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:16.987 > [Cam] loop 2/137 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/102 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:33:18.429 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:19.879 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:21.343 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:21.544 > Camera viewer: http://192.168.4.2
+02:33:21.959 > [Cam] loop 2/95 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/68 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:33:22.369 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:23.815 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:25.058 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:26.294 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:26.709 > Camera viewer: http://192.168.4.2
+02:33:26.913 > [Cam] loop 2/174 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 57/119 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:33:27.336 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:28.362 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:29.400 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:30.845 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:31.673 > Camera viewer: http://192.168.4.2
+02:33:31.880 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:31.881 > [Cam] loop 2/131 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/108 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240336 PSRAM 7449267
+02:33:32.911 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:34.361 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:35.383 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:36.632 > Camera viewer: http://192.168.4.2
+02:33:36.839 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:36.843 > [Cam] loop 2/121 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/79 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240632 PSRAM 7449267
+02:33:37.883 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:38.926 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:40.372 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:41.622 > Camera viewer: http://192.168.4.2
+02:33:41.833 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:41.834 > [Cam] loop 2/139 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/65 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:33:42.881 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:44.335 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:46.004 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:46.635 > Camera viewer: http://192.168.4.2
+02:33:47.054 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:47.054 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/67 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239860 PSRAM 7449267
+02:33:48.502 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:49.543 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:50.987 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:51.610 > Camera viewer: http://192.168.4.2
+02:33:52.019 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:52.019 > [Cam] loop 2/107 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/53 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:33:53.469 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:54.911 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:55.940 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:56.574 > Camera viewer: http://192.168.4.2
+02:33:56.983 > [Cam] loop 2/99 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/61 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:33:57.391 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:58.837 > [RadarClient] Presence: NO | Distance: 86cm
+02:33:59.869 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:00.902 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:01.521 > Camera viewer: http://192.168.4.2
+02:34:01.943 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:03.380 > [Cam] loop 2/124 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 61/94 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240484 PSRAM 7449267
+02:34:03.380 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:04.411 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:05.852 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:06.678 > Camera viewer: http://192.168.4.2
+02:34:07.090 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:07.090 > [Cam] loop 2/164 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239912 PSRAM 7449267
+02:34:08.537 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:09.570 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:11.022 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:11.649 > Camera viewer: http://192.168.4.2
+02:34:11.849 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:12.065 > [Cam] loop 2/90 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 39/60 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:12.889 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:14.362 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:16.016 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:16.631 > Camera viewer: http://192.168.4.2
+02:34:17.044 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/84 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:17.461 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:18.505 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:19.962 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:21.009 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:21.641 > Camera viewer: http://192.168.4.2
+02:34:22.063 > [Cam] loop 2/143 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/138 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:34:22.472 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:23.501 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:24.949 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:26.004 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:26.626 > Camera viewer: http://192.168.4.2
+02:34:27.044 > [Cam] loop 2/124 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:27.455 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:28.494 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:29.947 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:30.978 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:31.593 > Camera viewer: http://192.168.4.2
+02:34:32.014 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/60 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:34:32.428 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:33.898 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:35.135 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:36.363 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:36.570 > Camera viewer: http://192.168.4.2
+02:34:36.986 > [Cam] loop 2/133 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 57/93 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:37.606 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:39.049 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:40.505 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:41.346 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:41.554 > Camera viewer: http://192.168.4.2
+02:34:41.970 > [Cam] loop 2/126 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/122 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:42.583 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:43.854 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:44.890 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:46.541 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:46.541 > Camera viewer: http://192.168.4.2
+02:34:46.965 > [Cam] loop 2/106 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:34:47.376 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:48.416 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:49.874 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:51.122 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:51.538 > Camera viewer: http://192.168.4.2
+02:34:51.957 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 40/75 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:34:52.376 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:53.625 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:54.877 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:55.910 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:56.538 > Camera viewer: http://192.168.4.2
+02:34:57.568 > [Cam] loop 2/94 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/57 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:34:57.568 > [RadarClient] Presence: NO | Distance: 86cm
+02:34:59.007 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:00.449 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:01.708 > Camera viewer: http://192.168.4.2
+02:35:01.916 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:02.123 > [Cam] loop 2/123 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/69 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:35:03.157 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:04.393 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:06.052 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:06.675 > Camera viewer: http://192.168.4.2
+02:35:07.099 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:07.099 > [Cam] loop 2/172 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 58/135 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:35:08.543 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:09.981 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:11.419 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:11.624 > Camera viewer: http://192.168.4.2
+02:35:12.037 > [Cam] loop 2/110 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/61 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:35:13.064 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:14.090 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:15.532 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:16.564 > Camera viewer: http://192.168.4.2
+02:35:16.979 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:16.979 > [Cam] loop 2/108 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:35:18.009 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:19.044 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:20.488 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:21.727 > Camera viewer: http://192.168.4.2
+02:35:21.943 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:22.151 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:35:22.972 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:24.615 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:26.058 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:26.679 > Camera viewer: http://192.168.4.2
+02:35:27.095 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:27.095 > [Cam] loop 2/104 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:35:27.930 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:28.968 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:30.408 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:31.438 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:31.646 > Camera viewer: http://192.168.4.2
+02:35:32.058 > [Cam] loop 2/100 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/60 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240264 PSRAM 7449267
+02:35:32.469 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:34.141 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:35.395 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:36.426 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:36.634 > Camera viewer: http://192.168.4.2
+02:35:37.048 > [Cam] loop 2/140 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 42/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:35:37.460 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:38.503 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:39.970 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:41.001 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:41.622 > Camera viewer: http://192.168.4.2
+02:35:42.033 > [Cam] loop 2/106 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/78 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240076 PSRAM 7449267
+02:35:42.448 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:43.471 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:44.928 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:45.960 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:46.579 > Camera viewer: http://192.168.4.2
+02:35:46.992 > [Cam] loop 2/94 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 40/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240632 PSRAM 7449267
+02:35:47.415 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:48.655 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:50.106 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:51.152 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:51.559 > Camera viewer: http://192.168.4.2
+02:35:51.975 > [Cam] loop 2/106 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:35:52.592 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:54.033 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:55.081 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:56.535 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:56.535 > Camera viewer: http://192.168.4.2
+02:35:57.148 > [Cam] loop 2/115 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/83 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240476 PSRAM 7449267
+02:35:57.552 > [RadarClient] Presence: NO | Distance: 86cm
+02:35:59.014 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:00.044 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:01.077 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:01.695 > Camera viewer: http://192.168.4.2
+02:36:02.109 > [Cam] loop 2/111 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/91 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:36:02.525 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:04.186 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:05.631 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:06.671 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:06.671 > Camera viewer: http://192.168.4.2
+02:36:07.080 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/95 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240292 PSRAM 7449267
+02:36:08.118 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:09.158 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:10.611 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:11.666 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:11.666 > Camera viewer: http://192.168.4.2
+02:36:12.080 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/86 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239856 PSRAM 7449267
+02:36:12.493 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:13.530 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:15.003 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:16.036 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:16.664 > Camera viewer: http://192.168.4.2
+02:36:17.084 > [Cam] loop 2/117 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/65 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240076 PSRAM 7449267
+02:36:17.704 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:19.151 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:20.183 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:21.635 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:21.635 > Camera viewer: http://192.168.4.2
+02:36:22.044 > [Cam] loop 2/112 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/67 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240084 PSRAM 7449267
+02:36:22.676 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:24.134 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:25.579 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:26.609 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:26.610 > Camera viewer: http://192.168.4.2
+02:36:27.228 > [Cam] loop 2/145 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/85 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:36:28.050 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:29.293 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:30.534 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:31.569 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:31.569 > Camera viewer: http://192.168.4.2
+02:36:32.196 > [Cam] loop 2/173 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/80 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:36:33.023 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:34.054 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:35.084 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:36.536 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:36.536 > Camera viewer: http://192.168.4.2
+02:36:37.153 > [Cam] loop 2/118 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/103 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:36:37.980 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:39.007 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:40.032 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:41.063 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:41.684 > Camera viewer: http://192.168.4.2
+02:36:42.097 > [Cam] loop 2/105 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:36:42.715 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:44.171 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:45.610 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:46.638 > Camera viewer: http://192.168.4.2
+02:36:47.053 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:47.053 > [Cam] loop 2/143 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/90 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239940 PSRAM 7446939
+02:36:48.712 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:49.548 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:51.210 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:51.634 > Camera viewer: http://192.168.4.2
+02:36:52.042 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:52.250 > [Cam] loop 2/94 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/62 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240708 PSRAM 7449267
+02:36:53.690 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:54.715 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:56.177 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:56.593 > Camera viewer: http://192.168.4.2
+02:36:57.212 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:57.212 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/83 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240336 PSRAM 7449267
+02:36:58.652 > [RadarClient] Presence: NO | Distance: 86cm
+02:36:59.695 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:01.137 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:01.760 > Camera viewer: http://192.168.4.2
+02:37:02.180 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:02.180 > [Cam] loop 2/102 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/82 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:37:03.212 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:04.660 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:05.698 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:06.732 > Camera viewer: http://192.168.4.2
+02:37:07.147 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:07.147 > [Cam] loop 2/127 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 55/91 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:37:08.178 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:09.612 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:11.057 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:11.675 > Camera viewer: http://192.168.4.2
+02:37:12.086 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:12.086 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/64 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240472 PSRAM 7449267
+02:37:13.532 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:14.572 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:15.610 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:16.634 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:16.635 > Camera viewer: http://192.168.4.2
+02:37:17.250 > [Cam] loop 2/118 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:37:18.078 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:19.109 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:20.766 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:21.599 > Camera viewer: http://192.168.4.2
+02:37:22.224 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:23.051 > [Cam] loop 2/123 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/77 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:37:23.051 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:24.085 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:25.133 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:26.571 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:26.778 > Camera viewer: http://192.168.4.2
+02:37:27.199 > [Cam] loop 2/77 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:37:27.603 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:29.254 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:30.711 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:31.534 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:31.737 > Camera viewer: http://192.168.4.2
+02:37:32.152 > [Cam] loop 2/121 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/85 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239504 PSRAM 7449267
+02:37:32.569 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:33.595 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:35.038 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:36.279 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:36.702 > Camera viewer: http://192.168.4.2
+02:37:37.118 > [Cam] loop 2/93 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:37:37.739 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:38.564 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:40.214 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:41.665 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:41.665 > Camera viewer: http://192.168.4.2
+02:37:42.276 > [Cam] loop 2/99 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:37:42.692 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:44.160 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:45.210 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:46.653 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:46.653 > Camera viewer: http://192.168.4.2
+02:37:47.282 > [Cam] loop 2/114 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240328 PSRAM 7449267
+02:37:47.693 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:48.725 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:49.753 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:50.590 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:51.634 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:51.634 > Camera viewer: http://192.168.4.2
+02:37:52.252 > [Cam] loop 2/97 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 41/58 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:37:53.079 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:54.111 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:55.570 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:56.601 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:56.601 > Camera viewer: http://192.168.4.2
+02:37:57.220 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:37:58.250 > [RadarClient] Presence: NO | Distance: 86cm
+02:37:59.702 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:00.739 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:01.766 > Camera viewer: http://192.168.4.2
+02:38:02.178 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:02.179 > [Cam] loop 2/102 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/63 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:38:03.201 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:04.637 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:05.672 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:06.704 > Camera viewer: http://192.168.4.2
+02:38:07.118 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:07.119 > [Cam] loop 2/155 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 57/90 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240084 PSRAM 7449267
+02:38:08.152 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:09.605 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:11.256 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:11.663 > Camera viewer: http://192.168.4.2
+02:38:12.282 > [Cam] loop 2/126 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/82 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:38:12.694 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:14.157 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:15.607 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:16.635 > Camera viewer: http://192.168.4.2
+02:38:17.263 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:17.263 > [Cam] loop 2/114 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/79 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239708 PSRAM 7449267
+02:38:18.718 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:19.758 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:21.200 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:21.618 > Camera viewer: http://192.168.4.2
+02:38:22.248 > [Cam] loop 2/101 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:38:22.664 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:23.689 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:25.138 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:26.171 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:26.784 > Camera viewer: http://192.168.4.2
+02:38:27.201 > [Cam] loop 2/105 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 36/64 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:38:27.819 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:29.267 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:30.310 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:31.757 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:31.758 > Camera viewer: http://192.168.4.2
+02:38:32.382 > [Cam] loop 2/134 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/88 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239488 PSRAM 7449267
+02:38:33.199 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:34.863 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:36.322 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:36.737 > Camera viewer: http://192.168.4.2
+02:38:37.361 > [Cam] loop 2/139 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/117 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:38:37.778 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:38.807 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:40.280 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:41.311 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:41.722 > Camera viewer: http://192.168.4.2
+02:38:42.355 > [Cam] loop 2/142 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/79 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:38:42.764 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:44.207 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:45.247 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:46.278 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:46.894 > Camera viewer: http://192.168.4.2
+02:38:47.304 > [Cam] loop 2/106 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/73 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:38:47.724 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:49.176 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:50.434 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:51.680 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:51.883 > Camera viewer: http://192.168.4.2
+02:38:52.297 > [Cam] loop 2/155 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/66 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239896 PSRAM 7449267
+02:38:53.137 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:54.170 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:55.826 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:56.859 > Camera viewer: http://192.168.4.2
+02:38:57.273 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:57.273 > [Cam] loop 2/116 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/85 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:38:58.306 > [RadarClient] Presence: NO | Distance: 86cm
+02:38:59.346 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:00.796 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:01.822 > Camera viewer: http://192.168.4.2
+02:39:02.236 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:02.236 > [Cam] loop 2/87 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/68 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:39:03.278 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:04.724 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:06.169 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:06.789 > Camera viewer: http://192.168.4.2
+02:39:07.210 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:07.210 > [Cam] loop 2/119 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 36/70 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239496 PSRAM 7449267
+02:39:08.676 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:09.719 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:11.166 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:11.789 > Camera viewer: http://192.168.4.2
+02:39:12.420 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:12.421 > [Cam] loop 2/130 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/96 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 239496 PSRAM 7449267
+02:39:13.669 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:14.905 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:16.366 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:16.782 > Camera viewer: http://192.168.4.2
+02:39:17.401 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:17.402 > [Cam] loop 2/137 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/88 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:39:18.843 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:20.306 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:21.342 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:21.752 > Camera viewer: http://192.168.4.2
+02:39:22.380 > [Cam] loop 2/127 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/71 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:39:22.791 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:23.823 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:25.268 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:26.296 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:26.714 > Camera viewer: http://192.168.4.2
+02:39:27.342 > [Cam] loop 2/110 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 37/54 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:39:27.765 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:29.225 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:30.255 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:31.702 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:31.911 > Camera viewer: http://192.168.4.2
+02:39:32.324 > [Cam] loop 2/96 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:39:32.735 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:34.181 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:35.837 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:36.883 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:36.883 > Camera viewer: http://192.168.4.2
+02:39:37.303 > [Cam] loop 2/116 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/81 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:39:38.335 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:39.376 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:40.820 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:41.866 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:41.866 > Camera viewer: http://192.168.4.2
+02:39:42.278 > [Cam] loop 2/131 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/77 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:39:42.689 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:43.729 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:45.190 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:46.234 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:46.862 > Camera viewer: http://192.168.4.2
+02:39:47.277 > [Cam] loop 2/177 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 66/100 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:39:47.893 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:49.351 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:50.400 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:51.850 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:51.850 > Camera viewer: http://192.168.4.2
+02:39:52.263 > [Cam] loop 2/133 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 55/88 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:39:52.882 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:54.346 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:55.384 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:56.591 > #SCRIPT state transit
+02:39:56.820 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:56.820 > Camera viewer: http://192.168.4.2
+02:39:57.452 > [Cam] loop 2/149 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 56/94 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 240328 PSRAM 7449267
+02:39:58.311 > [RadarClient] Presence: NO | Distance: 86cm
+02:39:59.340 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:00.809 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:01.837 > Camera viewer: http://192.168.4.2
+02:40:02.244 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:02.452 > [Cam] loop 2/139 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/82 ms (fail 0); detect_cmp 0/0 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:40:03.910 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:05.362 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:06.397 > [RadarClient] Presence: NO | Distance: 86cm
+02:40:06.821 > [Lat] 16 ms from rising edge to first compare end
+02:40:06.821 > [Detection] EVENT #2 — Radar: YES | Camera: 5.3% change (corroborated) | bright=164.4
+02:40:06.821 > Camera viewer: http://192.168.4.2
+02:40:07.436 > [Cam] loop 2/109 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 48/82 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:40:07.851 > [RadarClient] Presence: YES | Distance: 141cm
+02:40:07.851 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=164.4
+02:40:08.900 > [RadarClient] Presence: YES | Distance: 99cm
+02:40:08.901 > [Detection] Radar: YES | Camera: 36.7% change | Event: ACTIVE | bright=125.0
+02:40:09.939 > [Detection] Radar: YES | Camera: 44.3% change | Event: ACTIVE | bright=109.9
+02:40:10.361 > [RadarClient] Presence: YES | Distance: 45cm
+02:40:11.395 > [Detection] Radar: YES | Camera: 77.2% change | Event: ACTIVE | bright=101.0
+02:40:11.395 > [RadarClient] Presence: YES | Distance: 42cm
+02:40:11.817 > Camera viewer: http://192.168.4.2
+02:40:11.817 > [Detection] Radar: YES | Camera: 39.5% change | Event: ACTIVE | bright=167.0
+02:40:12.449 > [Cam] loop 2/153 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/62 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240856 PSRAM 7449267
+02:40:12.866 > [RadarClient] Presence: YES | Distance: 37cm
+02:40:13.904 > [Detection] Radar: YES | Camera: 8.3% change | Event: ACTIVE | bright=151.2
+02:40:13.904 > [RadarClient] Presence: YES | Distance: 40cm
+02:40:13.904 > [Detection] Radar: YES | Camera: 7.6% change | Event: ACTIVE | bright=152.6
+02:40:14.936 > [RadarClient] Presence: YES | Distance: 53cm
+02:40:14.936 > [Detection] Radar: YES | Camera: 3.0% change | Event: ACTIVE | bright=153.8
+02:40:15.967 > [Detection] Radar: YES | Camera: 2.0% change | Event: ACTIVE | bright=155.0
+02:40:16.390 > [RadarClient] Presence: YES | Distance: 63cm
+02:40:16.585 > #SCRIPT state desk
+02:40:16.797 > Camera viewer: http://192.168.4.2
+02:40:17.004 > [Detection] Radar: YES | Camera: 2.0% change | Event: ACTIVE | bright=155.1
+02:40:17.413 > [RadarClient] Presence: YES | Distance: 63cm
+02:40:17.414 > [Cam] loop 2/170 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/149 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:40:18.030 > [Detection] Radar: YES | Camera: 2.1% change | Event: ACTIVE | bright=155.1
+02:40:18.862 > [RadarClient] Presence: YES | Distance: 38cm
+02:40:18.863 > [Detection] Radar: YES | Camera: 2.0% change | Event: ACTIVE | bright=155.1
+02:40:19.891 > [RadarClient] Presence: YES | Distance: 0cm
+02:40:20.934 > [Detection] Radar: YES | Camera: 2.0% change | Event: ACTIVE | bright=155.2
+02:40:20.934 > [Detection] Radar: YES | Camera: 2.1% change | Event: ACTIVE | bright=155.1
+02:40:21.343 > [RadarClient] Presence: YES | Distance: 0cm
+02:40:21.593 > #SCRIPT end
+02:40:21.758 > Camera viewer: http://192.168.4.2
+02:40:21.958 > [Detection] Radar: YES | Camera: 2.1% change | Event: ACTIVE | bright=155.1
+02:40:22.356 > #SCRIPT end
+02:40:22.366 > [RadarClient] Presence: YES | Distance: 0cm
+02:40:22.366 > [Cam] loop 2/136 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/72 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241080 PSRAM 7449267
+02:40:22.981 > [Detection] Radar: YES | Camera: 2.0% change | Event: ACTIVE | bright=155.1

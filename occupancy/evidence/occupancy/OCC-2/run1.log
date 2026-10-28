@@ -1,0 +1,335 @@
+02:13:27.575 > #SCRIPT runner_start scenario=OCC-2 run=1 version=1.0
+02:13:27.787 > ESP-ROM:esp32s3-20210327
+02:13:27.788 > Build:Mar 27 2021
+02:13:27.788 > rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+02:13:27.788 > Saved PC:0x40377114
+02:13:27.788 > SPIWP:0xee
+02:13:27.788 > mode:DIO, clock div:1
+02:13:27.788 > load:0x3fce3808,len:0x4bc
+02:13:27.788 > load:0x403c9700,len:0xbd8
+02:13:27.788 > load:0x403cc700,len:0x2a0c
+02:13:27.788 > entry 0x403c98d0
+02:13:29.420 > Occupancy module starting...
+02:13:29.628 > Camera initialised successfully.
+02:13:34.832 > Connecting to PoolPlantRadar WiFi.........
+02:13:34.834 > WiFi connected.
+02:13:34.834 > Radar client ready, will poll DOIT board.
+02:13:34.834 > Detection module ready (PSRAM allocated).
+02:13:34.838 > Reference frame will be captured in 15 seconds.
+02:13:34.839 > Step out of the camera's view NOW.
+02:13:34.839 > Capturing in 15...
+02:13:35.677 > Capturing in 14...
+02:13:36.722 > Capturing in 13...
+02:13:37.761 > Capturing in 12...
+02:13:38.804 > Capturing in 11...
+02:13:39.837 > Capturing in 10...
+02:13:40.657 > Capturing in 9...
+02:13:41.686 > Capturing in 8...
+02:13:42.719 > Capturing in 7...
+02:13:43.748 > Capturing in 6...
+02:13:44.787 > Capturing in 5...
+02:13:45.802 > Capturing in 4...
+02:13:46.852 > Capturing in 3...
+02:13:47.685 > Capturing in 2...
+02:13:48.711 > Capturing in 1...
+02:13:49.747 > Detection: Reference frame captured (640x480, 307200 bytes).
+02:13:49.748 > Reference captured. Detection is now active.
+02:13:49.748 > Camera viewer: http://192.168.4.2
+02:13:49.950 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:49.950 > [Lat] 16 ms from rising edge to first compare end
+02:13:49.950 > [Detection] Radar: YES | Camera: 0.0% change | Event: none | bright=164.6
+02:13:49.950 > [Cam] loop 105/105 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/49 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 243292 PSRAM 7449267
+02:13:50.776 > [Detection] EVENT #1 — Radar: YES | Camera: 3.8% change (corroborated) | bright=154.0
+02:13:51.406 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:51.815 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:13:52.445 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:52.869 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:13:53.894 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:53.894 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=153.9
+02:13:54.727 > Camera viewer: http://192.168.4.2
+02:13:54.750 > #SCRIPT light normal
+02:13:54.750 > #SCRIPT state desk
+02:13:54.927 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:54.928 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:13:54.928 > [Cam] loop 2/172 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/96 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 242132 PSRAM 7449267
+02:13:55.951 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:13:56.353 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:56.981 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:13:57.402 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:57.818 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:13:58.859 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:58.859 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.1
+02:13:59.690 > Camera viewer: http://192.168.4.2
+02:13:59.897 > [RadarClient] Presence: YES | Distance: 31cm
+02:13:59.897 > [Cam] loop 2/137 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/81 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 242204 PSRAM 7449267
+02:13:59.897 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.1
+02:14:00.950 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:14:01.373 > [RadarClient] Presence: YES | Distance: 31cm
+02:14:01.995 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:14:02.404 > [RadarClient] Presence: YES | Distance: 31cm
+02:14:03.023 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:14:03.431 > [RadarClient] Presence: YES | Distance: 31cm
+02:14:03.855 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:14:04.679 > Camera viewer: http://192.168.4.2
+02:14:04.774 > #SCRIPT state view n=1
+02:14:04.881 > [RadarClient] Presence: YES | Distance: 31cm
+02:14:04.881 > [Cam] loop 2/143 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 72/138 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241980 PSRAM 7449267
+02:14:04.881 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.0
+02:14:05.932 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:14:06.551 > [RadarClient] Presence: YES | Distance: 31cm
+02:14:06.966 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=153.9
+02:14:07.796 > [RadarClient] Presence: YES | Distance: 39cm
+02:14:08.000 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=153.9
+02:14:09.038 > [RadarClient] Presence: YES | Distance: 34cm
+02:14:09.039 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=154.0
+02:14:09.867 > Camera viewer: http://192.168.4.2
+02:14:09.867 > [Cam] loop 2/223 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 61/96 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241532 PSRAM 7449267
+02:14:10.069 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=154.6
+02:14:10.283 > [RadarClient] Presence: YES | Distance: 57cm
+02:14:10.899 > [Detection] Radar: YES | Camera: 1.9% change | Event: ACTIVE | bright=158.2
+02:14:11.924 > [RadarClient] Presence: YES | Distance: 121cm
+02:14:12.957 > [RadarClient] Presence: YES | Distance: 144cm
+02:14:12.957 > [Detection] Radar: YES | Camera: 49.6% change | Event: ACTIVE | bright=124.5
+02:14:13.998 > [Detection] Radar: YES | Camera: 42.9% change | Event: ACTIVE | bright=132.4
+02:14:14.423 > [RadarClient] Presence: YES | Distance: 142cm
+02:14:14.838 > Camera viewer: http://192.168.4.2
+02:14:14.838 > [Cam] loop 2/203 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 68/108 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241084 PSRAM 7449267
+02:14:15.040 > [Detection] Radar: YES | Camera: 42.2% change | Event: ACTIVE | bright=135.9
+02:14:15.451 > [RadarClient] Presence: YES | Distance: 144cm
+02:14:16.068 > [Detection] Radar: YES | Camera: 42.2% change | Event: ACTIVE | bright=135.6
+02:14:16.775 > #SCRIPT state desk
+02:14:16.901 > [RadarClient] Presence: YES | Distance: 151cm
+02:14:16.901 > [Detection] Radar: YES | Camera: 42.1% change | Event: ACTIVE | bright=135.9
+02:14:17.941 > [Detection] Radar: YES | Camera: 42.1% change | Event: ACTIVE | bright=135.6
+02:14:18.356 > [RadarClient] Presence: YES | Distance: 170cm
+02:14:18.981 > [Detection] Radar: YES | Camera: 42.1% change | Event: ACTIVE | bright=135.9
+02:14:19.395 > [RadarClient] Presence: YES | Distance: 160cm
+02:14:19.802 > Camera viewer: http://192.168.4.2
+02:14:19.802 > [Cam] loop 2/158 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 61/149 ms (fail 0); detect_cmp 15/16 ms; thresh=3%; heap 240712 PSRAM 7449267
+02:14:20.009 > [Detection] Radar: YES | Camera: 42.2% change | Event: ACTIVE | bright=135.7
+02:14:20.426 > [RadarClient] Presence: YES | Distance: 118cm
+02:14:21.044 > [Detection] Radar: YES | Camera: 42.8% change | Event: ACTIVE | bright=133.9
+02:14:22.079 > [RadarClient] Presence: YES | Distance: 45cm
+02:14:22.904 > [Detection] Radar: YES | Camera: 75.8% change | Event: ACTIVE | bright=143.0
+02:14:23.315 > [RadarClient] Presence: YES | Distance: 0cm
+02:14:23.936 > [Detection] Radar: YES | Camera: 4.3% change | Event: ACTIVE | bright=154.3
+02:14:24.352 > [RadarClient] Presence: YES | Distance: 39cm
+02:14:24.763 > Camera viewer: http://192.168.4.2
+02:14:26.002 > [Cam] loop 2/182 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 60/95 ms (fail 0); detect_cmp 15/16 ms; thresh=3%; heap 240084 PSRAM 7449267
+02:14:26.002 > [Detection] Radar: YES | Camera: 5.1% change | Event: ACTIVE | bright=155.5
+02:14:26.003 > [RadarClient] Presence: YES | Distance: 38cm
+02:14:26.003 > [Detection] Radar: YES | Camera: 5.0% change | Event: ACTIVE | bright=155.4
+02:14:26.800 > #SCRIPT state view n=2
+02:14:27.033 > [RadarClient] Presence: YES | Distance: 30cm
+02:14:27.033 > [Detection] Radar: YES | Camera: 4.4% change | Event: ACTIVE | bright=155.9
+02:14:28.078 > [Detection] Radar: YES | Camera: 3.7% change | Event: ACTIVE | bright=157.1
+02:14:28.487 > [RadarClient] Presence: YES | Distance: 30cm
+02:14:28.908 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=157.1
+02:14:29.532 > [RadarClient] Presence: YES | Distance: 34cm
+02:14:29.747 > Camera viewer: http://192.168.4.2
+02:14:29.955 > [Cam] loop 3/168 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 85/141 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240860 PSRAM 7449267
+02:14:29.955 > [Detection] Radar: YES | Camera: 3.7% change | Event: ACTIVE | bright=157.2
+02:14:30.791 > [RadarClient] Presence: YES | Distance: 38cm
+02:14:30.998 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=157.1
+02:14:32.026 > [Detection] Radar: YES | Camera: 4.7% change | Event: ACTIVE | bright=155.0
+02:14:32.437 > [RadarClient] Presence: YES | Distance: 86cm
+02:14:33.460 > [RadarClient] Presence: YES | Distance: 124cm
+02:14:34.081 > [Detection] Radar: YES | Camera: 38.5% change | Event: ACTIVE | bright=141.9
+02:14:34.708 > Camera viewer: http://192.168.4.2
+02:14:34.915 > [RadarClient] Presence: YES | Distance: 147cm
+02:14:34.915 > [Cam] loop 2/149 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 55/72 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240640 PSRAM 7446939
+02:14:34.915 > [Detection] Radar: YES | Camera: 45.8% change | Event: ACTIVE | bright=125.4
+02:14:35.955 > [RadarClient] Presence: YES | Distance: 143cm
+02:14:35.955 > [Detection] Radar: YES | Camera: 41.6% change | Event: ACTIVE | bright=132.3
+02:14:36.976 > [Detection] Radar: YES | Camera: 42.5% change | Event: ACTIVE | bright=132.2
+02:14:37.395 > [RadarClient] Presence: YES | Distance: 152cm
+02:14:38.446 > [Detection] Radar: YES | Camera: 42.5% change | Event: ACTIVE | bright=132.0
+02:14:38.446 > [RadarClient] Presence: YES | Distance: 149cm
+02:14:38.794 > #SCRIPT state desk
+02:14:39.063 > [Detection] Radar: YES | Camera: 42.5% change | Event: ACTIVE | bright=132.0
+02:14:39.688 > Camera viewer: http://192.168.4.2
+02:14:39.893 > [RadarClient] Presence: YES | Distance: 147cm
+02:14:39.893 > [Cam] loop 2/131 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 57/82 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 240504 PSRAM 7449267
+02:14:40.108 > [Detection] Radar: YES | Camera: 42.5% change | Event: ACTIVE | bright=132.4
+02:14:40.935 > [Detection] Radar: YES | Camera: 42.5% change | Event: ACTIVE | bright=132.4
+02:14:41.343 > [RadarClient] Presence: YES | Distance: 148cm
+02:14:41.961 > [Detection] Radar: YES | Camera: 42.6% change | Event: ACTIVE | bright=132.1
+02:14:42.377 > [RadarClient] Presence: YES | Distance: 90cm
+02:14:42.994 > [Detection] Radar: YES | Camera: 43.3% change | Event: ACTIVE | bright=128.8
+02:14:43.828 > [RadarClient] Presence: YES | Distance: 45cm
+02:14:44.032 > [Detection] Radar: YES | Camera: 80.5% change | Event: ACTIVE | bright=75.7
+02:14:44.861 > Camera viewer: http://192.168.4.2
+02:14:44.861 > [RadarClient] Presence: YES | Distance: 46cm
+02:14:45.075 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/107 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 240084 PSRAM 7449267
+02:14:45.075 > [Detection] Radar: YES | Camera: 5.4% change | Event: ACTIVE | bright=154.8
+02:14:46.336 > [Detection] Radar: YES | Camera: 4.4% change | Event: ACTIVE | bright=160.1
+02:14:46.336 > [RadarClient] Presence: YES | Distance: 35cm
+02:14:46.961 > [Detection] Radar: YES | Camera: 3.8% change | Event: ACTIVE | bright=158.9
+02:14:47.373 > [RadarClient] Presence: YES | Distance: 35cm
+02:14:48.005 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=159.0
+02:14:48.775 > #SCRIPT state view n=3
+02:14:48.823 > [RadarClient] Presence: YES | Distance: 39cm
+02:14:49.029 > [Detection] Radar: YES | Camera: 3.9% change | Event: ACTIVE | bright=159.0
+02:14:49.858 > Camera viewer: http://192.168.4.2
+02:14:49.858 > [RadarClient] Presence: YES | Distance: 39cm
+02:14:49.858 > [Cam] loop 2/130 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/83 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240328 PSRAM 7449267
+02:14:50.073 > [Detection] Radar: YES | Camera: 4.0% change | Event: ACTIVE | bright=159.0
+02:14:51.126 > [Detection] Radar: YES | Camera: 4.1% change | Event: ACTIVE | bright=159.0
+02:14:51.331 > [RadarClient] Presence: YES | Distance: 40cm
+02:14:51.964 > [Detection] Radar: YES | Camera: 4.1% change | Event: ACTIVE | bright=159.0
+02:14:52.374 > [RadarClient] Presence: YES | Distance: 34cm
+02:14:53.000 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=159.1
+02:14:53.422 > [RadarClient] Presence: YES | Distance: 44cm
+02:14:54.677 > [Detection] Radar: YES | Camera: 3.5% change | Event: ACTIVE | bright=158.1
+02:14:54.677 > Camera viewer: http://192.168.4.2
+02:14:54.885 > [RadarClient] Presence: YES | Distance: 112cm
+02:14:54.885 > [Cam] loop 2/201 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 70/126 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240860 PSRAM 7449267
+02:14:55.918 > [RadarClient] Presence: YES | Distance: 137cm
+02:14:56.122 > [Detection] Radar: YES | Camera: 46.7% change | Event: ACTIVE | bright=132.8
+02:14:56.952 > [Detection] Radar: YES | Camera: 41.2% change | Event: ACTIVE | bright=138.3
+02:14:57.366 > [RadarClient] Presence: YES | Distance: 149cm
+02:14:57.992 > [Detection] Radar: YES | Camera: 41.6% change | Event: ACTIVE | bright=136.7
+02:14:58.412 > [RadarClient] Presence: YES | Distance: 152cm
+02:14:59.019 > [Detection] Radar: YES | Camera: 41.4% change | Event: ACTIVE | bright=137.1
+02:14:59.856 > Camera viewer: http://192.168.4.2
+02:14:59.856 > [RadarClient] Presence: YES | Distance: 143cm
+02:14:59.856 > [Cam] loop 2/174 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 69/130 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 240852 PSRAM 7449267
+02:15:00.070 > [Detection] Radar: YES | Camera: 41.2% change | Event: ACTIVE | bright=137.3
+02:15:00.791 > #SCRIPT state desk
+02:15:01.115 > [Detection] Radar: YES | Camera: 41.3% change | Event: ACTIVE | bright=137.1
+02:15:01.321 > [RadarClient] Presence: YES | Distance: 160cm
+02:15:01.954 > [Detection] Radar: YES | Camera: 41.2% change | Event: ACTIVE | bright=136.9
+02:15:03.002 > [RadarClient] Presence: YES | Distance: 154cm
+02:15:03.003 > [Detection] Radar: YES | Camera: 41.3% change | Event: ACTIVE | bright=136.9
+02:15:04.039 > [Detection] Radar: YES | Camera: 41.6% change | Event: ACTIVE | bright=136.2
+02:15:04.455 > [RadarClient] Presence: YES | Distance: 68cm
+02:15:04.862 > Camera viewer: http://192.168.4.2
+02:15:04.862 > [Cam] loop 2/129 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 65/124 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 240852 PSRAM 7449267
+02:15:05.070 > [Detection] Radar: YES | Camera: 51.9% change | Event: ACTIVE | bright=131.5
+02:15:05.899 > [RadarClient] Presence: YES | Distance: 46cm
+02:15:06.938 > [Detection] Radar: YES | Camera: 70.9% change | Event: ACTIVE | bright=130.7
+02:15:06.938 > [RadarClient] Presence: YES | Distance: 37cm
+02:15:07.145 > [Detection] Radar: YES | Camera: 14.4% change | Event: ACTIVE | bright=145.7
+02:15:07.981 > [Detection] Radar: YES | Camera: 8.8% change | Event: ACTIVE | bright=149.1
+02:15:08.389 > [RadarClient] Presence: YES | Distance: 48cm
+02:15:09.020 > [Detection] Radar: YES | Camera: 4.7% change | Event: ACTIVE | bright=150.7
+02:15:09.845 > Camera viewer: http://192.168.4.2
+02:15:10.058 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:10.058 > [Cam] loop 2/108 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 58/103 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240124 PSRAM 7449267
+02:15:10.058 > [Detection] Radar: YES | Camera: 5.2% change | Event: ACTIVE | bright=150.5
+02:15:10.756 > #SCRIPT state view n=4
+02:15:11.100 > [Detection] Radar: YES | Camera: 5.2% change | Event: ACTIVE | bright=150.5
+02:15:11.306 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:12.348 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=150.4
+02:15:12.349 > [RadarClient] Presence: YES | Distance: 53cm
+02:15:12.971 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=150.5
+02:15:13.384 > [RadarClient] Presence: YES | Distance: 43cm
+02:15:14.004 > [Detection] Radar: YES | Camera: 5.2% change | Event: ACTIVE | bright=150.5
+02:15:14.413 > [RadarClient] Presence: YES | Distance: 46cm
+02:15:14.820 > Camera viewer: http://192.168.4.2
+02:15:15.027 > [Cam] loop 2/146 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 61/100 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241076 PSRAM 7449267
+02:15:15.028 > [Detection] Radar: YES | Camera: 5.8% change | Event: ACTIVE | bright=151.0
+02:15:16.072 > [RadarClient] Presence: YES | Distance: 85cm
+02:15:17.308 > [Detection] Radar: YES | Camera: 6.8% change | Event: ACTIVE | bright=148.4
+02:15:17.308 > [RadarClient] Presence: YES | Distance: 137cm
+02:15:18.143 > [Detection] Radar: YES | Camera: 44.9% change | Event: ACTIVE | bright=129.3
+02:15:18.349 > [RadarClient] Presence: YES | Distance: 147cm
+02:15:19.182 > [Detection] Radar: YES | Camera: 40.9% change | Event: ACTIVE | bright=128.4
+02:15:19.387 > [RadarClient] Presence: YES | Distance: 142cm
+02:15:19.804 > Camera viewer: http://192.168.4.2
+02:15:20.012 > [Cam] loop 3/232 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 65/107 ms (fail 0); detect_cmp 16/17 ms; thresh=3%; heap 241076 PSRAM 7449267
+02:15:20.012 > [Detection] Radar: YES | Camera: 40.7% change | Event: ACTIVE | bright=134.2
+02:15:20.421 > [RadarClient] Presence: YES | Distance: 148cm
+02:15:21.041 > [Detection] Radar: YES | Camera: 40.5% change | Event: ACTIVE | bright=134.1
+02:15:21.886 > [RadarClient] Presence: YES | Distance: 160cm
+02:15:22.765 > #SCRIPT state desk
+02:15:22.916 > [Detection] Radar: YES | Camera: 40.7% change | Event: ACTIVE | bright=134.1
+02:15:22.917 > [RadarClient] Presence: YES | Distance: 147cm
+02:15:24.182 > [Detection] Radar: YES | Camera: 40.8% change | Event: ACTIVE | bright=134.2
+02:15:24.183 > [Detection] Radar: YES | Camera: 40.7% change | Event: ACTIVE | bright=134.3
+02:15:24.591 > [RadarClient] Presence: YES | Distance: 144cm
+02:15:24.791 > Camera viewer: http://192.168.4.2
+02:15:25.005 > [Cam] loop 2/168 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 64/127 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 240316 PSRAM 7449267
+02:15:25.005 > [Detection] Radar: YES | Camera: 40.7% change | Event: ACTIVE | bright=134.4
+02:15:25.840 > [RadarClient] Presence: YES | Distance: 97cm
+02:15:26.042 > [Detection] Radar: YES | Camera: 40.9% change | Event: ACTIVE | bright=134.1
+02:15:26.862 > [RadarClient] Presence: YES | Distance: 44cm
+02:15:27.072 > [Detection] Radar: YES | Camera: 45.7% change | Event: ACTIVE | bright=128.0
+02:15:27.895 > [RadarClient] Presence: YES | Distance: 45cm
+02:15:28.096 > [Detection] Radar: YES | Camera: 85.8% change | Event: ACTIVE | bright=89.0
+02:15:29.137 > [Detection] Radar: YES | Camera: 6.5% change | Event: ACTIVE | bright=151.4
+02:15:29.553 > [RadarClient] Presence: YES | Distance: 41cm
+02:15:29.769 > Camera viewer: http://192.168.4.2
+02:15:29.977 > [Cam] loop 2/205 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 61/112 ms (fail 0); detect_cmp 15/16 ms; thresh=3%; heap 240852 PSRAM 7449267
+02:15:30.187 > [Detection] Radar: YES | Camera: 4.8% change | Event: ACTIVE | bright=159.4
+02:15:30.815 > [RadarClient] Presence: YES | Distance: 47cm
+02:15:32.051 > [Detection] Radar: YES | Camera: 4.5% change | Event: ACTIVE | bright=158.4
+02:15:32.051 > [RadarClient] Presence: YES | Distance: 44cm
+02:15:32.052 > [Detection] Radar: YES | Camera: 4.4% change | Event: ACTIVE | bright=158.3
+02:15:32.796 > #SCRIPT state view n=5
+02:15:33.080 > [Detection] Radar: YES | Camera: 4.3% change | Event: ACTIVE | bright=158.2
+02:15:33.483 > [RadarClient] Presence: YES | Distance: 47cm
+02:15:34.109 > [Detection] Radar: YES | Camera: 4.3% change | Event: ACTIVE | bright=158.3
+02:15:34.535 > [RadarClient] Presence: YES | Distance: 47cm
+02:15:34.741 > Camera viewer: http://192.168.4.2
+02:15:34.954 > [Cam] loop 2/125 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 53/100 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240852 PSRAM 7449267
+02:15:35.159 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=158.4
+02:15:35.572 > [RadarClient] Presence: YES | Distance: 44cm
+02:15:36.404 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=158.3
+02:15:36.404 > [RadarClient] Presence: YES | Distance: 37cm
+02:15:37.029 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=158.3
+02:15:37.854 > [RadarClient] Presence: YES | Distance: 77cm
+02:15:38.070 > [Detection] Radar: YES | Camera: 5.3% change | Event: ACTIVE | bright=156.1
+02:15:39.109 > [Detection] Radar: YES | Camera: 70.6% change | Event: ACTIVE | bright=158.7
+02:15:39.316 > [RadarClient] Presence: YES | Distance: 143cm
+02:15:39.734 > Camera viewer: http://192.168.4.2
+02:15:39.942 > [Cam] loop 2/128 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 55/96 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 240860 PSRAM 7449267
+02:15:40.149 > [Detection] Radar: YES | Camera: 45.5% change | Event: ACTIVE | bright=133.4
+02:15:40.559 > [RadarClient] Presence: YES | Distance: 151cm
+02:15:41.181 > [Detection] Radar: YES | Camera: 40.9% change | Event: ACTIVE | bright=134.4
+02:15:42.002 > [RadarClient] Presence: YES | Distance: 146cm
+02:15:42.002 > [Detection] Radar: YES | Camera: 40.4% change | Event: ACTIVE | bright=136.9
+02:15:43.043 > [RadarClient] Presence: YES | Distance: 147cm
+02:15:44.078 > [Detection] Radar: YES | Camera: 40.6% change | Event: ACTIVE | bright=136.8
+02:15:44.078 > [Detection] Radar: YES | Camera: 40.5% change | Event: ACTIVE | bright=136.7
+02:15:44.494 > [RadarClient] Presence: YES | Distance: 142cm
+02:15:44.703 > Camera viewer: http://192.168.4.2
+02:15:44.794 > #SCRIPT state desk
+02:15:45.129 > [Cam] loop 2/153 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 59/97 ms (fail 0); detect_cmp 15/16 ms; thresh=3%; heap 240852 PSRAM 7449267
+02:15:45.129 > [Detection] Radar: YES | Camera: 40.5% change | Event: ACTIVE | bright=136.8
+02:15:45.955 > [RadarClient] Presence: YES | Distance: 141cm
+02:15:46.162 > [Detection] Radar: YES | Camera: 40.5% change | Event: ACTIVE | bright=136.8
+02:15:46.987 > [RadarClient] Presence: YES | Distance: 136cm
+02:15:47.196 > [Detection] Radar: YES | Camera: 40.4% change | Event: ACTIVE | bright=136.9
+02:15:48.015 > [RadarClient] Presence: YES | Distance: 83cm
+02:15:48.015 > [Detection] Radar: YES | Camera: 40.9% change | Event: ACTIVE | bright=135.8
+02:15:49.664 > [RadarClient] Presence: YES | Distance: 47cm
+02:15:49.871 > Camera viewer: http://192.168.4.2
+02:15:50.080 > [Cam] loop 2/230 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 72/157 ms (fail 0); detect_cmp 15/15 ms; thresh=3%; heap 241076 PSRAM 7449267
+02:15:50.081 > [Detection] Radar: YES | Camera: 85.1% change | Event: ACTIVE | bright=72.3
+02:15:50.909 > [RadarClient] Presence: YES | Distance: 35cm
+02:15:51.117 > [Detection] Radar: YES | Camera: 8.4% change | Event: ACTIVE | bright=151.5
+02:15:52.153 > [RadarClient] Presence: YES | Distance: 48cm
+02:15:52.153 > [Detection] Radar: YES | Camera: 6.5% change | Event: ACTIVE | bright=155.3
+02:15:53.183 > [Detection] Radar: YES | Camera: 5.8% change | Event: ACTIVE | bright=154.2
+02:15:53.390 > [RadarClient] Presence: YES | Distance: 49cm
+02:15:54.022 > [Detection] Radar: YES | Camera: 5.8% change | Event: ACTIVE | bright=154.2
+02:15:54.648 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:54.855 > Camera viewer: http://192.168.4.2
+02:15:55.059 > [Cam] loop 2/203 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 50/73 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241076 PSRAM 7449267
+02:15:55.060 > [Detection] Radar: YES | Camera: 4.0% change | Event: ACTIVE | bright=155.9
+02:15:55.877 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:56.089 > [Detection] Radar: YES | Camera: 4.0% change | Event: ACTIVE | bright=155.9
+02:15:56.907 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:57.113 > [Detection] Radar: YES | Camera: 4.1% change | Event: ACTIVE | bright=155.9
+02:15:58.149 > [Detection] Radar: YES | Camera: 4.1% change | Event: ACTIVE | bright=155.9
+02:15:58.563 > [RadarClient] Presence: YES | Distance: 55cm
+02:15:59.184 > [Detection] Radar: YES | Camera: 4.1% change | Event: ACTIVE | bright=155.9
+02:15:59.781 > #SCRIPT end
+02:15:59.797 > Camera viewer: http://192.168.4.2
+02:16:00.011 > [RadarClient] Presence: YES | Distance: 34cm
+02:16:00.011 > [Cam] loop 2/239 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 66/110 ms (fail 0); detect_cmp 16/16 ms; thresh=3%; heap 241076 PSRAM 7449267
+02:16:00.011 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=155.9
+02:16:00.560 > #SCRIPT end
+02:16:01.056 > [RadarClient] Presence: YES | Distance: 30cm
+02:16:01.057 > [Detection] Radar: YES | Camera: 4.2% change | Event: ACTIVE | bright=156.0

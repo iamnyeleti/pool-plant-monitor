@@ -1,0 +1,12 @@
+scenario,file,planned_entries,expected
+OCC-0,run1.log,1,both
+OCC-3,run1.log,0,radar_only
+OCC-2,run1.log,5,both
+OCC-5-L2,run1.log,3,both
+OCC-5-L3,run1.log,3,both
+OCC-5b,run1.log,0,radar_only
+OCC-1,run1.log,0,none
+OCC-3,run2.log,0,radar_only
+OCC-5-L3,run2.log,3,both
+OCC-2,run2.log,5,both
+OCC-5b,run2.log,0,radar_only

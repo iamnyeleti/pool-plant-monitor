@@ -1,0 +1,233 @@
+Occupancy module starting...
+Camera initialised successfully.
+Connecting to PoolPlantRadar WiFi.........
+WiFi connected.
+Radar client ready, will poll DOIT board.
+Detection module ready (PSRAM allocated).
+Reference frame will be captured in 15 seconds.
+Step out of the camera's view NOW.
+Capturing in 15...
+Capturing in 14...
+Capturing in 13...
+Capturing in 12...
+Capturing in 11...
+Capturing in 10...
+Capturing in 9...
+Capturing in 8...
+Capturing in 7...
+Capturing in 6...
+Capturing in 5...
+Capturing in 4...
+Capturing in 3...
+Capturing in 2...
+Capturing in 1...
+Detection: Reference frame captured (640x480, 307200 bytes).
+Reference captured. Detection is now active.
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+[RadarClient] Presence: NO | Distance: 0cm
+Camera viewer: http://192.168.4.2

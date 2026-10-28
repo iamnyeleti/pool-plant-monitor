@@ -1,0 +1,240 @@
+03:06:32.635 > #SCRIPT runner_start scenario=OCC-5-L3 run=2 version=1.0
+03:06:32.844 > ESP-ROM:esp32s3-20210327
+03:06:32.844 > Build:Mar 27 2021
+03:06:32.844 > rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+03:06:32.844 > Saved PC:0x420a4d9e
+03:06:32.844 > SPIWP:0xee
+03:06:32.844 > mode:DIO, clock div:1
+03:06:32.844 > load:0x3fce3808,len:0x4bc
+03:06:32.845 > load:0x403c9700,len:0xbd8
+03:06:32.845 > load:0x403cc700,len:0x2a0c
+03:06:32.845 > entry 0x403c98d0
+03:06:34.468 > Occupancy module starting...
+03:06:34.677 > Camera initialised successfully.
+03:06:39.842 > Connecting to PoolPlantRadar WiFi.........
+03:06:39.842 > WiFi connected.
+03:06:39.842 > Radar client ready, will poll DOIT board.
+03:06:39.847 > Detection module ready (PSRAM allocated).
+03:06:39.847 > Reference frame will be captured in 15 seconds.
+03:06:39.847 > Step out of the camera's view NOW.
+03:06:39.847 > Capturing in 15...
+03:06:40.891 > Capturing in 14...
+03:06:41.728 > Capturing in 13...
+03:06:42.767 > Capturing in 12...
+03:06:43.798 > Capturing in 11...
+03:06:44.844 > Capturing in 10...
+03:06:45.863 > Capturing in 9...
+03:06:46.884 > Capturing in 8...
+03:06:47.910 > Capturing in 7...
+03:06:48.738 > Capturing in 6...
+03:06:49.791 > Capturing in 5...
+03:06:50.827 > Capturing in 4...
+03:06:51.850 > Capturing in 3...
+03:06:52.881 > Capturing in 2...
+03:06:53.724 > Capturing in 1...
+03:06:54.764 > Detection: Reference frame captured (640x480, 307200 bytes).
+03:06:54.765 > Reference captured. Detection is now active.
+03:06:54.765 > Camera viewer: http://192.168.4.2
+03:06:54.975 > [RadarClient] Presence: YES | Distance: 36cm
+03:06:54.975 > [Lat] 16 ms from rising edge to first compare end
+03:06:54.975 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.2
+03:06:54.975 > [Cam] loop 105/105 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 49/49 ms (fail 0); detect_cmp 17/17 ms; thresh=15%; heap 244096 PSRAM 7449267
+03:06:56.013 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:06:56.425 > [RadarClient] Presence: YES | Distance: 54cm
+03:06:56.841 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:06:57.466 > [RadarClient] Presence: YES | Distance: 54cm
+03:06:57.882 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:06:58.920 > [RadarClient] Presence: YES | Distance: 54cm
+03:06:58.921 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:06:59.753 > Camera viewer: http://192.168.4.2
+03:06:59.767 > #SCRIPT light dark
+03:06:59.767 > #SCRIPT state desk
+03:06:59.959 > [RadarClient] Presence: YES | Distance: 49cm
+03:06:59.959 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:06:59.959 > [Cam] loop 2/118 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/61 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 243548 PSRAM 7449267
+03:07:00.989 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:01.403 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:02.028 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:02.440 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:03.886 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:03.887 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:03.887 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:04.926 > Camera viewer: http://192.168.4.2
+03:07:04.926 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:04.926 > [Cam] loop 2/94 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/59 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 243100 PSRAM 7449267
+03:07:05.341 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:05.956 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:06.371 > [RadarClient] Presence: YES | Distance: 43cm
+03:07:06.999 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:07.414 > [RadarClient] Presence: YES | Distance: 47cm
+03:07:08.048 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:08.462 > [RadarClient] Presence: YES | Distance: 47cm
+03:07:08.876 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:09.797 > #SCRIPT state view n=1
+03:07:09.902 > Camera viewer: http://192.168.4.2
+03:07:09.902 > [RadarClient] Presence: YES | Distance: 47cm
+03:07:09.902 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:09.902 > [Cam] loop 2/80 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/76 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 243100 PSRAM 7449267
+03:07:10.948 > [RadarClient] Presence: YES | Distance: 47cm
+03:07:10.948 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:11.996 > [RadarClient] Presence: YES | Distance: 54cm
+03:07:11.996 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:13.031 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:13.450 > [RadarClient] Presence: YES | Distance: 50cm
+03:07:13.864 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:14.493 > [RadarClient] Presence: YES | Distance: 92cm
+03:07:14.904 > Camera viewer: http://192.168.4.2
+03:07:14.904 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:14.904 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/71 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 242204 PSRAM 7449267
+03:07:15.933 > [RadarClient] Presence: YES | Distance: 163cm
+03:07:15.933 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:16.972 > [RadarClient] Presence: YES | Distance: 167cm
+03:07:18.003 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:18.003 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:18.419 > [RadarClient] Presence: YES | Distance: 164cm
+03:07:19.863 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:19.863 > Camera viewer: http://192.168.4.2
+03:07:19.863 > [RadarClient] Presence: YES | Distance: 170cm
+03:07:19.863 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:19.863 > [Cam] loop 2/90 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/86 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 241756 PSRAM 7449267
+03:07:20.905 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:21.315 > [RadarClient] Presence: YES | Distance: 153cm
+03:07:21.805 > #SCRIPT state desk
+03:07:21.938 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:22.360 > [RadarClient] Presence: YES | Distance: 157cm
+03:07:22.985 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:23.402 > [RadarClient] Presence: YES | Distance: 149cm
+03:07:24.027 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:24.852 > Camera viewer: http://192.168.4.2
+03:07:24.853 > [RadarClient] Presence: YES | Distance: 114cm
+03:07:25.058 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:25.059 > [Cam] loop 2/126 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 45/80 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 241084 PSRAM 7449267
+03:07:25.891 > [RadarClient] Presence: YES | Distance: 65cm
+03:07:25.892 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:26.945 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:27.353 > [RadarClient] Presence: YES | Distance: 60cm
+03:07:27.970 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:28.997 > [RadarClient] Presence: YES | Distance: 48cm
+03:07:28.997 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:29.815 > Camera viewer: http://192.168.4.2
+03:07:30.016 > [RadarClient] Presence: YES | Distance: 44cm
+03:07:30.016 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:30.016 > [Cam] loop 2/94 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/77 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:07:31.052 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:31.471 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:31.775 > #SCRIPT state view n=2
+03:07:32.083 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:32.497 > [RadarClient] Presence: YES | Distance: 38cm
+03:07:32.909 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:33.947 > [RadarClient] Presence: YES | Distance: 39cm
+03:07:33.947 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:34.776 > Camera viewer: http://192.168.4.2
+03:07:34.984 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:34.984 > [Cam] loop 2/99 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/80 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:07:35.392 > [RadarClient] Presence: YES | Distance: 65cm
+03:07:36.021 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:36.443 > [RadarClient] Presence: YES | Distance: 114cm
+03:07:37.064 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:37.896 > [RadarClient] Presence: YES | Distance: 135cm
+03:07:37.896 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:38.937 > [RadarClient] Presence: YES | Distance: 143cm
+03:07:38.937 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:39.777 > Camera viewer: http://192.168.4.2
+03:07:39.980 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:39.980 > [Cam] loop 2/84 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 40/63 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240636 PSRAM 7449267
+03:07:40.392 > [RadarClient] Presence: YES | Distance: 148cm
+03:07:41.012 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:41.424 > [RadarClient] Presence: YES | Distance: 147cm
+03:07:42.054 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:42.902 > [RadarClient] Presence: YES | Distance: 150cm
+03:07:42.902 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:43.784 > #SCRIPT state desk
+03:07:43.934 > [RadarClient] Presence: YES | Distance: 143cm
+03:07:43.934 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:44.766 > Camera viewer: http://192.168.4.2
+03:07:44.977 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:44.977 > [Cam] loop 2/88 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 43/60 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 241084 PSRAM 7449267
+03:07:45.400 > [RadarClient] Presence: YES | Distance: 142cm
+03:07:46.024 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:46.852 > [RadarClient] Presence: YES | Distance: 88cm
+03:07:47.060 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:47.894 > [RadarClient] Presence: YES | Distance: 60cm
+03:07:47.894 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:48.930 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.1
+03:07:49.341 > [RadarClient] Presence: YES | Distance: 57cm
+03:07:49.755 > Camera viewer: http://192.168.4.2
+03:07:49.964 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:49.964 > [Cam] loop 2/120 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 47/69 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 241084 PSRAM 7449267
+03:07:50.380 > [RadarClient] Presence: YES | Distance: 50cm
+03:07:51.006 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:52.040 > [RadarClient] Presence: YES | Distance: 69cm
+03:07:52.041 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:53.077 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:53.491 > [RadarClient] Presence: YES | Distance: 55cm
+03:07:53.809 > #SCRIPT state view n=3
+03:07:53.900 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:54.516 > [RadarClient] Presence: YES | Distance: 47cm
+03:07:54.938 > Camera viewer: http://192.168.4.2
+03:07:54.938 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:54.938 > [Cam] loop 2/93 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 51/69 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:07:55.992 > [RadarClient] Presence: YES | Distance: 54cm
+03:07:55.992 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:57.029 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:57.440 > [RadarClient] Presence: YES | Distance: 55cm
+03:07:58.059 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:58.480 > [RadarClient] Presence: YES | Distance: 104cm
+03:07:59.108 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:59.943 > Camera viewer: http://192.168.4.2
+03:07:59.943 > [RadarClient] Presence: YES | Distance: 128cm
+03:07:59.944 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:07:59.944 > [Cam] loop 2/122 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 54/69 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:08:00.978 > [RadarClient] Presence: YES | Distance: 134cm
+03:08:02.012 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:02.012 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:02.430 > [RadarClient] Presence: YES | Distance: 137cm
+03:08:03.047 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:03.456 > [RadarClient] Presence: YES | Distance: 132cm
+03:08:04.076 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:04.915 > Camera viewer: http://192.168.4.2
+03:08:04.916 > [RadarClient] Presence: YES | Distance: 134cm
+03:08:04.916 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:04.916 > [Cam] loop 2/93 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 42/67 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:08:05.806 > #SCRIPT state desk
+03:08:05.952 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:06.365 > [RadarClient] Presence: YES | Distance: 135cm
+03:08:06.987 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:08.039 > [RadarClient] Presence: YES | Distance: 129cm
+03:08:08.040 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:09.066 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:09.482 > [RadarClient] Presence: YES | Distance: 60cm
+03:08:09.899 > Camera viewer: http://192.168.4.2
+03:08:10.115 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:10.115 > [Cam] loop 2/127 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 44/75 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 239708 PSRAM 7449267
+03:08:10.530 > [RadarClient] Presence: YES | Distance: 52cm
+03:08:10.947 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:11.989 > [RadarClient] Presence: YES | Distance: 54cm
+03:08:11.990 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:13.031 > [RadarClient] Presence: YES | Distance: 74cm
+03:08:13.032 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:14.071 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:14.482 > [RadarClient] Presence: YES | Distance: 52cm
+03:08:14.894 > Camera viewer: http://192.168.4.2
+03:08:15.102 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:15.511 > [Cam] loop 2/93 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 52/89 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 240860 PSRAM 7449267
+03:08:15.512 > [RadarClient] Presence: YES | Distance: 54cm
+03:08:15.926 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:16.951 > [RadarClient] Presence: YES | Distance: 55cm
+03:08:16.951 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:17.994 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:18.408 > [RadarClient] Presence: YES | Distance: 55cm
+03:08:19.024 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:19.437 > [RadarClient] Presence: YES | Distance: 54cm
+03:08:19.844 > Camera viewer: http://192.168.4.2
+03:08:20.051 > [Cam] loop 2/141 ms; fb_get 0/0 ms; frame2jpg 0/0 ms; /radar 46/69 ms (fail 0); detect_cmp 16/16 ms; thresh=15%; heap 241084 PSRAM 7449267
+03:08:20.051 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:20.796 > #SCRIPT end
+03:08:20.870 > [RadarClient] Presence: YES | Distance: 55cm
+03:08:21.071 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0
+03:08:21.571 > #SCRIPT end
+03:08:21.907 > [RadarClient] Presence: YES | Distance: 55cm
+03:08:22.121 > [Detection] Radar: YES | Camera: TOO DARK | bright=28.0

@@ -1,0 +1,14 @@
+scenario,light,kind,segments,radar_saw_someone,camera_at_or_above_threshold,segment_max_change_median_pct,segment_max_change_min_pct,segment_max_change_max_pct,all_samples,all_samples_median_pct,radar_distance_median_cm,brightness_median
+OCC-0,normal,desk,2,2,1,44.3,1.7,86.9,18,1.6,48,154.8
+OCC-0,normal,view,1,1,1,81.3,81.3,81.3,9,40.7,154,138.2
+OCC-1,normal,away,1,0,0,,,,0,,,
+OCC-1,normal,desk,2,1,0,2.1,2.1,2.1,2,2.0,0,155.1
+OCC-2,normal,desk,6,6,6,78.2,3.9,85.8,45,5.2,45,152.7
+OCC-2,normal,view,5,5,5,46.7,44.9,70.6,40,40.5,142,137.1
+OCC-3,normal,desk,2,2,0,2.0,1.4,2.6,359,1.3,44,150.9
+OCC-5-L2,dim,desk,4,4,3,48.2,0.6,98.5,29,2.9,48,149.5
+OCC-5-L2,dim,view,3,3,3,55.2,54.8,69.4,25,45.4,144,119.1
+OCC-5-L3,dark,desk,4,4,0,0.0,0.0,0.0,28,0.0,47,28.0
+OCC-5-L3,dark,view,3,3,0,0.0,0.0,0.0,26,0.0,138,28.0
+OCC-5b,dim,desk,1,1,1,11.5,11.5,11.5,31,11.2,46,148.6
+OCC-5b,normal,desk,2,2,1,6.3,1.6,11.1,69,1.3,40,154.2

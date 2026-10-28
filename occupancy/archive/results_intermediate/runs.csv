@@ -1,0 +1,9 @@
+scenario,file,timestamps,script_markers,planned_entries,expected,radar_episodes,camera_events,references,too_dark_lines,cam_windows,loop_max_ms,windows_over_stall,poll_fail_total,heap_min
+OCC-0,run1.log,host,7,1,both,1,1,1,0,9,190,0,0,240848
+OCC-1,run1.log,host,9,0,none,3,2,1,0,133,184,0,0,239488
+OCC-2,run1.log,host,15,5,both,1,1,1,0,27,239,0,0,240084
+OCC-3,run1.log,host,5,0,radar_only,2,0,1,0,41,191,0,0,239476
+OCC-3,run2.log,host,5,0,radar_only,1,0,1,0,41,189,0,0,239496
+OCC-5-L2,run1.log,host,11,3,both,1,1,1,2,18,275,0,0,239500
+OCC-5-L3,run1.log,host,11,3,both,2,0,1,0,18,280,0,0,239508
+OCC-5b,run1.log,host,7,0,radar_only,2,2,1,0,29,331,0,0,239488

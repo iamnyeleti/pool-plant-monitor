@@ -1,0 +1,29 @@
+{
+  "scenario": "OCC-5b",
+  "run": 1,
+  "started": "2026-10-20T02:25:15",
+  "finished": "2026-10-20T02:27:59",
+  "aborted": false,
+  "dry_run": false,
+  "port": "COM6",
+  "light": "normal",
+  "config": {
+    "light": "normal",
+    "light_changes": [
+      [
+        "dim",
+        60
+      ],
+      [
+        "normal",
+        60
+      ]
+    ]
+  },
+  "commit_OccupancyModule": "231f413",
+  "commit_PoolPlantMonitor": "9a6ae31",
+  "python": "3.15.0",
+  "runner_version": "1.0",
+  "note": "",
+  "timestamps": "computer clock, not sensor acquisition time"
+}
