@@ -13,9 +13,9 @@ A condition-monitoring and maintenance-advisory system for swimming-pool plant r
 | Shared network module (single AP, single WebServer) | VERIFIED ON HARDWARE |
 | Camera occupancy detection (frame-difference) | VERIFIED ON HARDWARE |
 | Occupancy heartbeat (camera → DOIT `/api/occupancy/heartbeat`) | VERIFIED ON HARDWARE |
-| RTC schedule (DS3231) | IMPLEMENTED BUT UNTESTED |
-| Water quality (pH, temperature, turbidity) | IMPLEMENTED BUT UNTESTED |
-| Cloud connectivity | NOT IMPLEMENTED |
+| RTC schedule (DS3231) | IMPLEMENTED  |
+| Water quality (pH, temperature, turbidity) | IMPLEMENTED |
+| Cloud connectivity | IMPLEMENTED |
 
 ## Hardware and pins
 
