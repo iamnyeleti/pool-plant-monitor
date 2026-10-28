@@ -144,7 +144,7 @@ The Cam commit hashes refer to the camera firmware history from before it was me
 |---|---|---|
 | Tag `occupancy-evidence` | a1a792e | DOIT board bench configuration (network-bench) |
 
-Each module is switched on or off by build flags (`CFG_VIBRATION_CONNECTED`, `CFG_RADAR_CONNECTED` and so on) set per environment in `platformio.ini`. Choose the environment you want with `pio run -e <environment-name>`. The tag `occupancy-evidence` (`a1a792e`) marks the DOIT-board bench configuration used for the occupancy trials.
+Each module is switched on or off by build flags (`CFG_VIBRATION_CONNECTED`, `CFG_RADAR_CONNECTED` and so on) set per environment in `platformio.ini`. Choose the environment you want with `pio run -e esp32doit-all` (all modules; other environments are `esp32doit-calibrate`, `esp32doit-bench` and `esp32doit-bench-fault`). The tag `occupancy-evidence` (`a1a792e`) marks the DOIT-board bench configuration used for the occupancy trials.
 
 ## Ethics
 
@@ -162,3 +162,7 @@ The occupancy-detection algorithm compares grayscale pixel intensities against a
 ---
 
 Course project EEE4022S, University of Cape Town, 2026.
+
+## Interactive dashboard demo
+
+The real dashboard is served by the ESP32 over its own WiFi network, so it cannot be opened over the internet. A standalone demo with simulated states (not live measurements or experimental results) is at https://iamnyeleti.github.io/pool-plant-monitor/dashboard-demo.html. Its source is `docs/dashboard-demo.html`.
