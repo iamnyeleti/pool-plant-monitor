@@ -32,7 +32,7 @@ A condition-monitoring and maintenance-advisory system for swimming-pool plant r
 
 ### ESP32-S3 camera board
 
-Pin mapping is in `OccupancyModule/src/occupancy.cpp`. XCLK on GPIO 38, SIOD on GPIO 8, SIOC on GPIO 7. Frame format: GRAYSCALE 640x480, fb_count=2 in PSRAM, xclk=20 MHz.
+Pin mapping is in `occupancy/src/occupancy.cpp`. XCLK on GPIO 38, SIOD on GPIO 8, SIOC on GPIO 7. Frame format: GRAYSCALE 640x480, fb_count=2 in PSRAM, xclk=20 MHz.
 
 ## How to build
 
@@ -44,7 +44,7 @@ cd PoolPlantMonitor
 pio run -e esp32doit-devkit-v1
 
 # Camera board (occupancy detection)
-cd OccupancyModule
+cd occupancy
 pio run -e esp32-s3-cam
 ```
 
@@ -71,7 +71,7 @@ The camera board connects as a station client (DHCP). Its viewer page is served 
 ├── include/              DOIT board headers
 ├── platformio.ini        DOIT board PlatformIO config
 ├── logs/                 Serial capture logs from bench tests
-├── OccupancyModule/
+├── occupancy/
 │   ├── src/              Camera board firmware
 │   ├── include/          Camera board headers
 │   ├── platformio.ini    Camera board PlatformIO config
@@ -93,7 +93,7 @@ The camera board connects as a station client (DHCP). Its viewer page is served 
 Runs one scripted occupancy trial. Close any serial monitor first.
 
 ```
-python OccupancyModule/tools/run_trial.py OCC-2 --port COM6
+python occupancy/tools/run_trial.py OCC-2 --port COM6
 ```
 
 The script opens the serial port, resets the board, waits for the reference-frame capture, then prompts you to move at scripted times. It writes `runN.log` and `runN_meta.json` into `evidence/occupancy/<scenario>/`.
@@ -105,9 +105,9 @@ Scenarios: OCC-0, OCC-1, OCC-2, OCC-3, OCC-5-L2, OCC-5-L3, OCC-5b. Options: `--p
 Reads the saved logs and produces CSV tables and figures.
 
 ```
-python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --out results --threshold 3 --lag 1.5
-python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --suggest-threshold OCC-3
-python OccupancyModule/tools/analyse_occupancy.py OccupancyModule/evidence/occupancy --estimate-lag
+python occupancy/tools/analyse_occupancy.py occupancy/evidence/occupancy --out results --threshold 3 --lag 1.5
+python occupancy/tools/analyse_occupancy.py occupancy/evidence/occupancy --suggest-threshold OCC-3
+python occupancy/tools/analyse_occupancy.py occupancy/evidence/occupancy --estimate-lag
 ```
 
 ### Evidence folder layout
@@ -120,7 +120,7 @@ Top-level evidence files: `ground_truth.csv`, `lag_estimate.txt`, `threshold_fre
 
 ## Run register
 
-Built from the `runN_meta.json` files in `OccupancyModule/evidence/occupancy/`.
+Built from the `runN_meta.json` files in `occupancy/evidence/occupancy/`.
 
 | Scenario | Run | Started | Light | Cam commit | DOIT commit | Aborted |
 |---|---|---|---|---|---|---|
