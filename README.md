@@ -122,28 +122,29 @@ Top-level evidence files: `ground_truth.csv`, `lag_estimate.txt`, `threshold_fre
 
 Built from the `runN_meta.json` files in `occupancy/evidence/occupancy/`.
 
+The Cam commit hashes refer to the camera firmware history from before it was merged into this repository, so they cannot be looked up here. The final camera source is in `occupancy/src/`.
+
 | Scenario | Run | Started | Light | Cam commit | DOIT commit | Aborted |
 |---|---|---|---|---|---|---|
-| OCC-0 | 1 | 2026-10-20 01:58 | normal | 4fffb08 | 9a6ae31 | no |
-| OCC-1 | 1 | 2026-10-20 02:28 | normal | 231f413 | 9a6ae31 | no |
-| OCC-2 | 1 | 2026-10-20 02:13 | normal | 231f413 | 9a6ae31 | no |
-| OCC-2 | 2 | 2026-10-20 03:09 | normal | 2cbc219 | 9a6ae31 | no |
-| OCC-3 | 1 | 2026-10-20 02:00 | normal | 4fffb08 | 9a6ae31 | no |
-| OCC-3 | 2 | 2026-10-20 02:46 | normal | 231f413 | 9a6ae31 | no |
-| OCC-5-L2 | 1 | 2026-10-20 02:17 | dim | 231f413 | 9a6ae31 | no |
-| OCC-5-L3 | 1 | 2026-10-20 02:21 | dark | 231f413 | 9a6ae31 | no |
-| OCC-5-L3 | 2 | 2026-10-20 03:06 | dark | 2cbc219 | 9a6ae31 | no |
-| OCC-5b | 1 | 2026-10-20 02:25 | normal | 231f413 | 9a6ae31 | no |
-| OCC-5b | 2 | 2026-10-20 03:12 | normal | 2cbc219 | 9a6ae31 | no |
+| OCC-0 | 1 | 2026-10-20 01:58 | normal | 4fffb08 | a1a792e | no |
+| OCC-1 | 1 | 2026-10-20 02:28 | normal | 231f413 | a1a792e | no |
+| OCC-2 | 1 | 2026-10-20 02:13 | normal | 231f413 | a1a792e | no |
+| OCC-2 | 2 | 2026-10-20 03:09 | normal | 2cbc219 | a1a792e | no |
+| OCC-3 | 1 | 2026-10-20 02:00 | normal | 4fffb08 | a1a792e | no |
+| OCC-3 | 2 | 2026-10-20 02:46 | normal | 231f413 | a1a792e | no |
+| OCC-5-L2 | 1 | 2026-10-20 02:17 | dim | 231f413 | a1a792e | no |
+| OCC-5-L3 | 1 | 2026-10-20 02:21 | dark | 231f413 | a1a792e | no |
+| OCC-5-L3 | 2 | 2026-10-20 03:06 | dark | 2cbc219 | a1a792e | no |
+| OCC-5b | 1 | 2026-10-20 02:25 | normal | 231f413 | a1a792e | no |
+| OCC-5b | 2 | 2026-10-20 03:12 | normal | 2cbc219 | a1a792e | no |
 
 ## Commits and tags
 
 | Reference | Hash | Description |
 |---|---|---|
-| Tag `occupancy-evidence` | 9a6ae31 | DOIT board bench configuration (network-bench) |
-| Tag `occupancy-evidence-camera` | bb5d33c | Camera board with evidence, tools and results |
+| Tag `occupancy-evidence` | a1a792e | DOIT board bench configuration (network-bench) |
 
-The `main` branch is based on commit `9a6ae31`, which is the bench-test configuration. In `src/main.cpp` at this commit, `VIBRATION_CONNECTED`, `RTC_CONNECTED` and `WATER_QUALITY_CONNECTED` are set to `false`; `RADAR_CONNECTED`, `RADAR_SERVER_CONNECTED` and `DASHBOARD_CONNECTED` are set to `true`. To enable other modules, set the corresponding flag to `true` and rebuild.
+Each module is switched on or off by build flags (`CFG_VIBRATION_CONNECTED`, `CFG_RADAR_CONNECTED` and so on) set per environment in `platformio.ini`. Choose the environment you want with `pio run -e <environment-name>`. The tag `occupancy-evidence` (`a1a792e`) marks the DOIT-board bench configuration used for the occupancy trials.
 
 ## Ethics
 
