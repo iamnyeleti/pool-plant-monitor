@@ -1,0 +1,109 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+[Vibration] Status: OK | RMS: 0.304 | Magnitude: 10.045 | X: 0.385 Y: 0.510 Z: 10.025
+[Vibration] Status: OK | RMS: 0.318 | Magnitude: 10.145 | X: 0.361 Y: 0.562 Z: 10.123
+[Vibration] Status: OK | RMS: 0.320 | Magnitude: 10.074 | X: 0.433 Y: 0.419 Z: 10.056
+[Vibration] Status: OK | RMS: 0.316 | Magnitude: 10.043 | X: 0.514 Y: 0.433 Z: 10.020
+[Vibration] Status: OK | RMS: 0.318 | Magnitude: 10.182 | X: 0.388 Y: 0.524 Z: 10.161
+[Vibration] Status: OK | RMS: 0.314 | Magnitude: 10.037 | X: 0.409 Y: 0.514 Z: 10.015
+[Vibration] Status: OK | RMS: 0.314 | Magnitude: 10.204 | X: 0.404 Y: 0.476 Z: 10.185
+[Vibration] Status: OK | RMS: 0.308 | Magnitude: 10.080 | X: 0.361 Y: 0.505 Z: 10.061
+[Vibration] Status: OK | RMS: 0.305 | Magnitude: 9.934 | X: 0.414 Y: 0.498 Z: 9.912
+[Vibration] Status: OK | RMS: 0.310 | Magnitude: 10.173 | X: 0.412 Y: 0.462 Z: 10.154
+[Vibration] Status: OK | RMS: 0.306 | Magnitude: 10.013 | X: 0.342 Y: 0.479 Z: 9.996
+[Vibration] Status: OK | RMS: 0.313 | Magnitude: 9.822 | X: 0.328 Y: 0.435 Z: 9.807
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.113 | X: 0.385 Y: 0.488 Z: 10.094
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.372 | X: 0.373 Y: 0.639 Z: 10.346
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.210 | X: 0.311 Y: 0.593 Z: 10.188
+[Vibration] Status: OK | RMS: 0.380 | Magnitude: 10.082 | X: 0.268 Y: 0.596 Z: 10.061
+[Vibration] Status: OK | RMS: 0.389 | Magnitude: 10.036 | X: 0.402 Y: 0.663 Z: 10.006
+[Vibration] Status: OK | RMS: 0.371 | Magnitude: 10.076 | X: 0.330 Y: 0.534 Z: 10.056
+[Vibration] Status: OK | RMS: 0.389 | Magnitude: 9.975 | X: 0.237 Y: 0.782 Z: 9.941
+[Vibration] Status: OK | RMS: 0.367 | Magnitude: 10.426 | X: 0.297 Y: 0.708 Z: 10.398
+[Vibration] Status: OK | RMS: 0.442 | Magnitude: 9.966 | X: 0.895 Y: -0.170 Z: 9.924
+[Vibration] Status: OK | RMS: 0.499 | Magnitude: 9.903 | X: 0.567 Y: 0.852 Z: 9.850
+[Vibration] Status: OK | RMS: 0.618 | Magnitude: 9.347 | X: 1.555 Y: 0.215 Z: 9.214
+[Vibration] Status: OK | RMS: 0.691 | Magnitude: 10.384 | X: 0.081 Y: -0.048 Z: 10.384
+[Vibration] Status: OK | RMS: 0.852 | Magnitude: 9.772 | X: -0.098 Y: 1.696 Z: 9.623
+[Vibration] Status: OK | RMS: 1.001 | Magnitude: 10.259 | X: -1.098 Y: 1.668 Z: 10.063
+[Vibration] Status: OK | RMS: 0.978 | Magnitude: 10.334 | X: -1.416 Y: -0.156 Z: 10.235
+[Vibration] Status: OK | RMS: 1.006 | Magnitude: 9.583 | X: -0.845 Y: 0.550 Z: 9.530
+[Vibration] Status: OK | RMS: 0.917 | Magnitude: 10.176 | X: -0.469 Y: 0.782 Z: 10.135
+[Vibration] Status: OK | RMS: 1.469 | Magnitude: 9.935 | X: -0.010 Y: -0.158 Z: 9.934
+[Vibration] Status: OK | RMS: 1.440 | Magnitude: 10.175 | X: 0.388 Y: 0.194 Z: 10.166
+[Vibration] Status: OK | RMS: 1.393 | Magnitude: 10.095 | X: 0.084 Y: 0.093 Z: 10.094
+[Vibration] Status: OK | RMS: 1.335 | Magnitude: 10.142 | X: 0.144 Y: 0.146 Z: 10.140
+[Vibration] Status: OK | RMS: 0.396 | Magnitude: 10.217 | X: 0.330 Y: 0.048 Z: 10.212
+[Vibration] Status: OK | RMS: 0.408 | Magnitude: 10.063 | X: 0.423 Y: 0.033 Z: 10.054
+[Vibration] Status: OK | RMS: 0.401 | Magnitude: 10.015 | X: 0.380 Y: 0.026 Z: 10.008
+[Vibration] Status: OK | RMS: 0.357 | Magnitude: 10.135 | X: 0.481 Y: -0.089 Z: 10.123
+[Vibration] Status: OK | RMS: 0.311 | Magnitude: 10.022 | X: 0.541 Y: -0.153 Z: 10.006
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.077 | X: 0.797 Y: -0.423 Z: 10.037
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.062 | X: 0.440 Y: -0.512 Z: 10.039
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.090 | X: 0.309 Y: -0.093 Z: 10.085
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.021 | X: -0.110 Y: 0.498 Z: 10.008
+[Vibration] Status: OK | RMS: 0.580 | Magnitude: 10.107 | X: 0.079 Y: -0.244 Z: 10.104
+[Vibration] Status: OK | RMS: 0.594 | Magnitude: 10.067 | X: 0.177 Y: 0.012 Z: 10.066
+[Vibration] Status: OK | RMS: 0.585 | Magnitude: 10.191 | X: 0.392 Y: 0.091 Z: 10.183
+[Vibration] Status: OK | RMS: 0.583 | Magnitude: 10.097 | X: 0.100 Y: -0.033 Z: 10.097
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.152 | X: 0.086 Y: 0.031 Z: 10.152
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.087 | X: 0.045 Y: 0.050 Z: 10.087
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.073 | X: 0.014 Y: 0.045 Z: 10.073
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.113 | X: -0.368 Y: -0.050 Z: 10.106
+[Vibration] Status: OK | RMS: 0.313 | Magnitude: 10.126 | X: -0.041 Y: 0.043 Z: 10.125
+[Vibration] Status: OK | RMS: 0.310 | Magnitude: 10.133 | X: -0.043 Y: 0.053 Z: 10.133
+[Vibration] Status: OK | RMS: 0.311 | Magnitude: 10.083 | X: -0.067 Y: 0.029 Z: 10.082
+[Vibration] Status: OK | RMS: 0.318 | Magnitude: 10.124 | X: -0.213 Y: -0.337 Z: 10.116
+[Vibration] Status: OK | RMS: 0.316 | Magnitude: 10.156 | X: 0.311 Y: 0.017 Z: 10.152
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.055 | X: 0.258 Y: 0.105 Z: 10.051
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.004 | X: 0.821 Y: -0.098 Z: 9.970
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 9.950 | X: 0.342 Y: -0.100 Z: 9.944
+[Vibration] Status: OK | RMS: 0.234 | Magnitude: 10.007 | X: 0.866 Y: -0.175 Z: 9.967
+[Vibration] Status: OK | RMS: 0.227 | Magnitude: 9.920 | X: 0.462 Y: -0.510 Z: 9.896
+[Vibration] Status: OK | RMS: 0.206 | Magnitude: 9.827 | X: 0.512 Y: -0.285 Z: 9.810
+[Vibration] Status: OK | RMS: 0.192 | Magnitude: 9.932 | X: 0.912 Y: -0.266 Z: 9.886
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 11.802 | X: -2.692 Y: 1.297 Z: 11.417
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 9.989 | X: 0.469 Y: -0.249 Z: 9.975
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.007 | X: 0.691 Y: -0.263 Z: 9.979
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.047 | X: 0.309 Y: -0.134 Z: 10.042
+[Vibration] Status: OK | RMS: 1.120 | Magnitude: 9.887 | X: -0.852 Y: 0.211 Z: 9.848
+[Vibration] Status: OK | RMS: 1.088 | Magnitude: 10.107 | X: 0.108 Y: 0.062 Z: 10.106
+[Vibration] Status: OK | RMS: 1.092 | Magnitude: 10.067 | X: 0.124 Y: 0.065 Z: 10.066
+[Vibration] Status: OK | RMS: 1.094 | Magnitude: 10.126 | X: 0.057 Y: 0.081 Z: 10.125
+[Vibration] Status: OK | RMS: 1.089 | Magnitude: 10.153 | X: 0.079 Y: 0.105 Z: 10.152
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.135 | X: 0.038 Y: 0.072 Z: 10.135
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.047 | X: -0.045 Y: 0.098 Z: 10.046
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.078 | X: -0.041 Y: 0.091 Z: 10.078
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.075 | X: 0.005 Y: 0.077 Z: 10.075
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.076 | X: -0.012 Y: 0.091 Z: 10.075
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.095 | X: -0.103 Y: 0.062 Z: 10.094
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.093 | X: -0.081 Y: 0.081 Z: 10.092
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.078 | X: -0.055 Y: 0.103 Z: 10.078
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.030 | X: -0.103 Y: 0.072 Z: 10.030
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.091 | X: -0.151 Y: 0.108 Z: 10.090
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.064 | X: -0.132 Y: 0.096 Z: 10.063
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.110 | X: -0.153 Y: 0.103 Z: 10.109
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.071 | X: -0.237 Y: 0.110 Z: 10.068
+[Vibration] Status: OK | RMS: 0.312 | Magnitude: 10.589 | X: -0.648 Y: 0.141 Z: 10.568
+[Vibration] Status: OK | RMS: 0.317 | Magnitude: 9.971 | X: -1.998 Y: 0.062 Z: 9.769
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.016 | X: -2.268 Y: 0.167 Z: 9.755
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.030 | X: -2.383 Y: 0.215 Z: 9.740
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.052 | X: -2.383 Y: 0.258 Z: 9.762
+[Vibration] Status: OK | RMS: 0.211 | Magnitude: 10.063 | X: -2.517 Y: 0.495 Z: 9.731
+[Vibration] Status: OK | RMS: 0.212 | Magnitude: 10.005 | X: -2.531 Y: 0.629 Z: 9.659
+[Vibration] Status: OK | RMS: 0.222 | Magnitude: 10.024 | X: -2.553 Y: 0.756 Z: 9.664
+[Vibration] Status: OK | RMS: 0.596 | Magnitude: 6.085 | X: -1.160 Y: 1.208 Z: 5.850
+[Vibration] Status: OK | RMS: 0.742 | Magnitude: 8.732 | X: -2.170 Y: -0.641 Z: 8.434
+[Vibration] Status: OK | RMS: 0.955 | Magnitude: 10.358 | X: -2.364 Y: 1.881 Z: 9.908
+[Vibration] Status: OK | RMS: 0.990 | Magnitude: 10.467 | X: -4.689 Y: 0.742 Z: 9.329
+[Vibration] Status: OK | RMS: 1.015 | Magnitude: 9.708 | X: -3.113 Y: 2.199 Z: 8.929

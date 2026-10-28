@@ -1,0 +1,66 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+=== CALIBRATION MODE ===
+Warm-up done. Recording now...
+Calibrating... RMS: 0.901
+Calibrating... RMS: 0.668
+Calibrating... RMS: 0.898
+Calibrating... RMS: 0.732
+Calibrating... RMS: 0.727
+Calibrating... RMS: 0.746
+Calibrating... RMS: 0.764
+Calibrating... RMS: 0.858
+Calibrating... RMS: 0.869
+Calibrating... RMS: 0.816
+Calibrating... RMS: 0.676
+Calibrating... RMS: 0.791
+Calibrating... RMS: 0.922
+Calibrating... RMS: 0.667
+Calibrating... RMS: 0.676
+Calibrating... RMS: 1.059
+Calibrating... RMS: 1.010
+Calibrating... RMS: 1.089
+Calibrating... RMS: 0.839
+Calibrating... RMS: 0.771
+Calibrating... RMS: 0.640
+Calibrating... RMS: 0.628
+Calibrating... RMS: 0.912
+Calibrating... RMS: 0.798
+Calibrating... RMS: 0.846
+Calibrating... RMS: 0.758
+Calibrating... RMS: 0.818
+Calibrating... RMS: 0.767
+Calibrating... RMS: 0.661
+Calibrating... RMS: 0.609
+Calibrating... RMS: 0.726
+Calibrating... RMS: 0.588
+Calibrating... RMS: 0.889
+Calibrating... RMS: 0.946
+Calibrating... RMS: 0.906
+Calibrating... RMS: 0.835
+Calibrating... RMS: 0.734
+Calibrating... RMS: 0.838
+Calibrating... RMS: 0.683
+Calibrating... RMS: 0.649
+Calibrating... RMS: 0.751
+Calibrating... RMS: 0.695
+Calibrating... RMS: 0.853
+Calibrating... RMS: 0.656
+Calibrating... RMS: 0.782
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854
+===== CALIBRATION COMPLETE ===== Average RMS: 0.7854

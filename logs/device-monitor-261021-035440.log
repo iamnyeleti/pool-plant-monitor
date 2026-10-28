@@ -1,0 +1,120 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage1 build Oct 21 2026 01:16:11 heap=343044
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.519 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.9 mV
+[WQ] temp: unavailable (not_found)
+[WQ] ph: live
+[WQ] turb: live
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.520 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.8 mV
+[Turbidity] At G35 pin: 1.761 V | Sensor output: 3.523 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.6 mV
+[Turbidity] At G35 pin: 1.758 V | Sensor output: 3.517 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.8 mV
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.520 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.4 mV
+[Turbidity] At G35 pin: 1.758 V | Sensor output: 3.516 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.0 mV
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.521 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.4 mV
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.519 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.4 mV
+[Turbidity] At G35 pin: 1.759 V | Sensor output: 3.518 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.3 mV
+[Turbidity] At G35 pin: 1.761 V | Sensor output: 3.521 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.7 mV
+[Turbidity] At G35 pin: 1.759 V | Sensor output: 3.517 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.5 mV
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage1 build Oct 21 2026 01:16:11 heap=343044
+[Turbidity] At G35 pin: 1.755 V | Sensor output: 3.510 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1623.9 mV
+[WQ] temp: unavailable (not_found)
+[WQ] ph: live
+[WQ] turb: live
+[Turbidity] At G35 pin: 1.758 V | Sensor output: 3.517 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.3 mV
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage1 build Oct 21 2026 01:16:11 heap=343044
+[Turbidity] At G35 pin: 1.756 V | Sensor output: 3.513 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.3 mV
+[WQ] temp: unavailable (not_found)
+[WQ] ph: live
+[WQ] turb: live
+[Turbidity] At G35 pin: 1.759 V | Sensor output: 3.517 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.3 mV
+[Turbidity] At G35 pin: 1.758 V | Sensor output: 3.516 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.3 mV
+[Turbidity] At G35 pin: 1.759 V | Sensor output: 3.518 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.2 mV
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.520 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.7 mV
+[Turbidity] At G35 pin: 1.759 V | Sensor output: 3.518 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1624.9 mV
+[Turbidity] At G35 pin: 1.760 V | Sensor output: 3.519 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.6 mV
+[Turbidity] At G35 pin: 1.758 V | Sensor output: 3.516 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.2 mV
+[Turbidity] At G35 pin: 1.761 V | Sensor output: 3.521 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1625.7 mV
+[Turbidity] At G35 pin: 1.757 V | Sensor output: 3.515 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1626.7 mV

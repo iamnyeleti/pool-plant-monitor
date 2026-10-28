@@ -1,0 +1,51 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+=== CALIBRATION MODE ===
+[ 15732][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 15760][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 15787][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 16885][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Warm-up done. Recording now...
+Calibrating... RMS: 1.336
+Calibrating... RMS: 0.970
+Calibrating... RMS: 1.424
+Calibrating... RMS: 1.240
+Calibrating... RMS: 1.469
+Calibrating... RMS: 1.348
+Calibrating... RMS: 1.334
+Calibrating... RMS: 1.239
+Calibrating... RMS: 1.385
+Calibrating... RMS: 1.304
+Calibrating... RMS: 1.516
+[ 42021][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 42049][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Calibrating... RMS: 1.257
+Calibrating... RMS: 1.252
+Calibrating... RMS: 1.416
+Calibrating... RMS: 1.131
+Calibrating... RMS: 1.303
+Calibrating... RMS: 0.770
+[ 53479][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Calibrating... RMS: 0.941
+Calibrating... RMS: 0.931
+Calibrating... RMS: 1.025
+Calibrating... RMS: 0.860
+Calibrating... RMS: 1.359
+[ 62704][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 63109][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 63745][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 63814][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 64906][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 64934][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Calibrating... RMS: 1.391
+Calibrating... RMS: 0.308

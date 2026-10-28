@@ -1,0 +1,167 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+RTC already keeping time correctly, leaving it alone.
+RTC module ready.
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.031 | X: -0.182 Y: -0.206 Z: 10.027
+[Vibration] Status: OK | RMS: 0.257 | Magnitude: 10.046 | X: -0.191 Y: -0.232 Z: 10.042
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.069 | X: -0.156 Y: -0.215 Z: 10.066
+2026-10-13 14:42:42
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.074 | X: -0.218 Y: -0.160 Z: 10.070
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.086 | X: -0.184 Y: -0.206 Z: 10.082
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.070 | X: -0.213 Y: -0.208 Z: 10.066
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.073 | X: -0.220 Y: -0.213 Z: 10.068
+2026-10-13 14:42:43
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.043 | X: -0.201 Y: -0.167 Z: 10.039
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.069 | X: -0.191 Y: -0.177 Z: 10.066
+[Vibration] Status: CAUTION | RMS: 0.432 | Magnitude: 10.155 | X: -0.153 Y: 0.438 Z: 10.145
+[Vibration] Status: CAUTION | RMS: 0.510 | Magnitude: 9.816 | X: -0.895 Y: -0.136 Z: 9.774
+2026-10-13 14:42:44
+[Vibration] Status: CAUTION | RMS: 0.522 | Magnitude: 9.999 | X: -0.311 Y: -0.098 Z: 9.994
+[Vibration] Status: CAUTION | RMS: 0.523 | Magnitude: 10.012 | X: -0.380 Y: -0.471 Z: 9.994
+[Vibration] Status: CAUTION | RMS: 0.439 | Magnitude: 10.664 | X: -4.529 Y: 0.390 Z: 9.647
+[Vibration] Status: OK | RMS: 0.362 | Magnitude: 9.842 | X: 0.201 Y: -1.526 Z: 9.721
+2026-10-13 14:42:45
+[Vibration] Status: CAUTION | RMS: 0.497 | Magnitude: 10.071 | X: 0.254 Y: -2.601 Z: 9.726
+[Vibration] Status: CAUTION | RMS: 0.561 | Magnitude: 11.116 | X: -2.625 Y: 0.309 Z: 10.798
+[Vibration] Status: CAUTION | RMS: 0.569 | Magnitude: 9.866 | X: 0.636 Y: -1.086 Z: 9.786
+[Vibration] Status: CAUTION | RMS: 0.586 | Magnitude: 9.816 | X: -0.816 Y: -0.758 Z: 9.752
+2026-10-13 14:42:46
+[Vibration] Status: CAUTION | RMS: 0.502 | Magnitude: 10.039 | X: -0.089 Y: 0.170 Z: 10.037
+[Vibration] Status: CAUTION | RMS: 0.552 | Magnitude: 10.125 | X: 1.325 Y: -0.825 Z: 10.003
+[Vibration] Status: CAUTION | RMS: 0.568 | Magnitude: 9.987 | X: 0.483 Y: -0.141 Z: 9.975
+[Vibration] Status: CAUTION | RMS: 0.585 | Magnitude: 9.870 | X: 0.773 Y: -0.273 Z: 9.836
+2026-10-13 14:42:47
+[Vibration] Status: CAUTION | RMS: 0.641 | Magnitude: 10.505 | X: -2.333 Y: 1.129 Z: 10.180
+[Vibration] Status: CAUTION | RMS: 0.654 | Magnitude: 9.875 | X: 0.677 Y: -0.457 Z: 9.841
+[Vibration] Status: CAUTION | RMS: 0.643 | Magnitude: 10.569 | X: -0.672 Y: 1.280 Z: 10.470
+2026-10-13 14:42:48
+[Vibration] Status: CAUTION | RMS: 0.655 | Magnitude: 10.442 | X: -2.072 Y: -0.421 Z: 10.226
+[Vibration] Status: CAUTION | RMS: 0.693 | Magnitude: 10.175 | X: 3.651 Y: 1.495 Z: 9.379
+[Vibration] Status: CAUTION | RMS: 0.667 | Magnitude: 10.222 | X: -1.938 Y: -0.182 Z: 10.034
+[Vibration] Status: CAUTION | RMS: 0.715 | Magnitude: 11.374 | X: -4.094 Y: 1.481 Z: 10.508
+2026-10-13 14:42:49
+[Vibration] Status: CAUTION | RMS: 0.712 | Magnitude: 10.926 | X: -0.201 Y: 0.017 Z: 10.925
+[Vibration] Status: CAUTION | RMS: 0.692 | Magnitude: 9.833 | X: 2.467 Y: 0.117 Z: 9.518
+[Vibration] Status: CAUTION | RMS: 0.694 | Magnitude: 9.667 | X: 2.768 Y: 0.115 Z: 9.262
+[Vibration] Status: CAUTION | RMS: 0.687 | Magnitude: 10.384 | X: -1.314 Y: -0.330 Z: 10.295
+2026-10-13 14:42:50
+[Vibration] Status: CAUTION | RMS: 0.681 | Magnitude: 10.822 | X: -3.742 Y: 0.084 Z: 10.154
+[Vibration] Status: CAUTION | RMS: 0.673 | Magnitude: 11.189 | X: -3.797 Y: 0.500 Z: 10.513
+[Vibration] Status: CAUTION | RMS: 0.781 | Magnitude: 10.558 | X: 2.684 Y: 0.900 Z: 10.171
+[Vibration] Status: CAUTION | RMS: 0.888 | Magnitude: 10.881 | X: -2.716 Y: 0.869 Z: 10.501
+2026-10-13 14:42:51
+[Vibration] Status: CAUTION | RMS: 1.036 | Magnitude: 9.982 | X: -0.318 Y: -0.536 Z: 9.963
+[Vibration] Status: CAUTION | RMS: 1.130 | Magnitude: 9.901 | X: 3.249 Y: -2.261 Z: 9.075
+[Vibration] Status: CAUTION | RMS: 1.222 | Magnitude: 12.461 | X: -5.268 Y: -1.904 Z: 11.130
+[Vibration] Status: CAUTION | RMS: 1.243 | Magnitude: 10.281 | X: 4.878 Y: -0.730 Z: 9.020
+2026-10-13 14:42:52
+[Vibration] Status: CAUTION | RMS: 1.201 | Magnitude: 11.263 | X: -2.830 Y: 0.663 Z: 10.881
+[Vibration] Status: CAUTION | RMS: 1.206 | Magnitude: 10.624 | X: 4.407 Y: 0.687 Z: 9.642
+[Vibration] Status: CAUTION | RMS: 1.176 | Magnitude: 10.640 | X: 4.048 Y: 1.507 Z: 9.723
+[Vibration] Status: CAUTION | RMS: 1.199 | Magnitude: 11.960 | X: -4.764 Y: 0.687 Z: 10.948
+2026-10-13 14:42:53
+[Vibration] Status: CAUTION | RMS: 1.202 | Magnitude: 10.558 | X: 4.503 Y: 0.325 Z: 9.544
+[Vibration] Status: CAUTION | RMS: 1.277 | Magnitude: 12.115 | X: -4.957 Y: 0.481 Z: 11.044
+[Vibration] Status: CAUTION | RMS: 1.249 | Magnitude: 10.092 | X: 4.096 Y: 0.919 Z: 9.178
+2026-10-13 14:42:54
+[Vibration] Status: CAUTION | RMS: 1.230 | Magnitude: 11.794 | X: -4.764 Y: 1.031 Z: 10.740
+[Vibration] Status: CAUTION | RMS: 1.170 | Magnitude: 10.378 | X: 3.390 Y: 0.349 Z: 9.802
+[Vibration] Status: CAUTION | RMS: 1.159 | Magnitude: 11.653 | X: -4.156 Y: 0.050 Z: 10.886
+[Vibration] Status: CAUTION | RMS: 1.157 | Magnitude: 9.968 | X: 0.234 Y: -1.323 Z: 9.877
+2026-10-13 14:42:55
+[Vibration] Status: CAUTION | RMS: 1.114 | Magnitude: 10.175 | X: -0.455 Y: -1.591 Z: 10.039
+[Vibration] Status: CAUTION | RMS: 1.104 | Magnitude: 9.941 | X: -1.531 Y: 0.237 Z: 9.819
+[Vibration] Status: CAUTION | RMS: 1.099 | Magnitude: 10.847 | X: 0.696 Y: -0.945 Z: 10.783
+[Vibration] Status: CAUTION | RMS: 1.074 | Magnitude: 11.458 | X: -4.874 Y: -0.447 Z: 10.360
+2026-10-13 14:42:56
+[Vibration] Status: CAUTION | RMS: 1.122 | Magnitude: 10.895 | X: -1.680 Y: -1.893 Z: 10.597
+[Vibration] Status: CAUTION | RMS: 1.153 | Magnitude: 9.959 | X: -0.414 Y: -0.048 Z: 9.951
+[Vibration] Status: CAUTION | RMS: 1.332 | Magnitude: 11.320 | X: -2.110 Y: 0.433 Z: 11.114
+[Vibration] Status: CAUTION | RMS: 1.248 | Magnitude: 11.315 | X: -3.869 Y: 0.105 Z: 10.633
+2026-10-13 14:42:57
+[Vibration] Status: CAUTION | RMS: 1.165 | Magnitude: 12.170 | X: -5.493 Y: -0.304 Z: 10.855
+[Vibration] Status: CAUTION | RMS: 1.121 | Magnitude: 12.238 | X: -4.575 Y: 0.474 Z: 11.341
+[Vibration] Status: CAUTION | RMS: 0.853 | Magnitude: 11.351 | X: -4.031 Y: 0.543 Z: 10.597
+[Vibration] Status: CAUTION | RMS: 0.854 | Magnitude: 11.788 | X: -4.752 Y: 0.213 Z: 10.786
+2026-10-13 14:42:58
+[Vibration] Status: CAUTION | RMS: 0.977 | Magnitude: 12.093 | X: -4.146 Y: 0.108 Z: 11.360
+[Vibration] Status: CAUTION | RMS: 1.004 | Magnitude: 11.309 | X: -3.237 Y: 0.873 Z: 10.800
+[Vibration] Status: CAUTION | RMS: 1.082 | Magnitude: 11.160 | X: -1.543 Y: -1.093 Z: 10.999
+[Vibration] Status: CAUTION | RMS: 1.219 | Magnitude: 10.144 | X: 1.916 Y: -0.151 Z: 9.960
+2026-10-13 14:42:59
+[Vibration] Status: CAUTION | RMS: 1.248 | Magnitude: 10.198 | X: 1.869 Y: -0.223 Z: 10.023
+[Vibration] Status: CAUTION | RMS: 1.274 | Magnitude: 9.688 | X: 3.297 Y: -0.962 Z: 9.058
+[Vibration] Status: CAUTION | RMS: 1.321 | Magnitude: 9.960 | X: 3.756 Y: 0.105 Z: 9.223
+2026-10-13 14:43:00
+[Vibration] Status: CAUTION | RMS: 1.250 | Magnitude: 10.313 | X: 1.677 Y: 0.041 Z: 10.176
+[Vibration] Status: CAUTION | RMS: 1.315 | Magnitude: 10.078 | X: 1.448 Y: -0.809 Z: 9.941
+[Vibration] Status: CAUTION | RMS: 1.356 | Magnitude: 9.995 | X: 2.041 Y: -0.134 Z: 9.783
+[Vibration] Status: CAUTION | RMS: 1.307 | Magnitude: 10.747 | X: -1.704 Y: 0.601 Z: 10.594
+2026-10-13 14:43:01
+[Vibration] Status: CAUTION | RMS: 1.296 | Magnitude: 12.112 | X: -4.644 Y: 0.261 Z: 11.183
+[Vibration] Status: CAUTION | RMS: 1.112 | Magnitude: 9.737 | X: -0.567 Y: -0.938 Z: 9.676
+[Vibration] Status: CAUTION | RMS: 0.930 | Magnitude: 9.915 | X: -0.115 Y: -0.177 Z: 9.912
+[Vibration] Status: CAUTION | RMS: 0.839 | Magnitude: 9.714 | X: 3.249 Y: 0.055 Z: 9.154
+2026-10-13 14:43:02
+[Vibration] Status: CAUTION | RMS: 1.004 | Magnitude: 9.638 | X: 3.826 Y: -1.718 Z: 8.678
+[Vibration] Status: CAUTION | RMS: 1.105 | Magnitude: 10.013 | X: 4.051 Y: 0.096 Z: 9.156
+[Vibration] Status: CAUTION | RMS: 1.195 | Magnitude: 10.760 | X: -1.318 Y: 0.577 Z: 10.664
+[Vibration] Status: CAUTION | RMS: 1.225 | Magnitude: 11.891 | X: -4.402 Y: 0.196 Z: 11.044
+2026-10-13 14:43:03
+[Vibration] Status: CAUTION | RMS: 1.027 | Magnitude: 9.565 | X: -0.091 Y: -0.732 Z: 9.537
+[Vibration] Status: CAUTION | RMS: 0.939 | Magnitude: 9.959 | X: 4.031 Y: 0.055 Z: 9.106
+[Vibration] Status: CAUTION | RMS: 0.931 | Magnitude: 10.292 | X: 2.074 Y: -0.146 Z: 10.080
+[Vibration] Status: CAUTION | RMS: 1.082 | Magnitude: 10.199 | X: 0.995 Y: -1.062 Z: 10.094
+2026-10-13 14:43:04
+[Vibration] Status: CAUTION | RMS: 1.256 | Magnitude: 12.024 | X: -4.041 Y: -0.067 Z: 11.324
+[Vibration] Status: CAUTION | RMS: 1.155 | Magnitude: 10.011 | X: 0.845 Y: 0.093 Z: 9.975
+[Vibration] Status: CAUTION | RMS: 1.158 | Magnitude: 10.254 | X: 1.735 Y: -0.022 Z: 10.106
+[Vibration] Status: CAUTION | RMS: 1.166 | Magnitude: 12.160 | X: -3.996 Y: -0.089 Z: 11.484
+2026-10-13 14:43:05
+[Vibration] Status: CAUTION | RMS: 1.033 | Magnitude: 11.671 | X: -3.675 Y: -0.648 Z: 11.058
+[Vibration] Status: CAUTION | RMS: 0.940 | Magnitude: 9.829 | X: 2.230 Y: 0.062 Z: 9.573
+[Vibration] Status: CAUTION | RMS: 0.992 | Magnitude: 10.289 | X: 1.629 Y: -0.237 Z: 10.156
+2026-10-13 14:43:06
+[Vibration] Status: CAUTION | RMS: 1.074 | Magnitude: 10.914 | X: -1.694 Y: -0.761 Z: 10.755
+[Vibration] Status: CAUTION | RMS: 1.211 | Magnitude: 10.122 | X: 1.704 Y: -0.124 Z: 9.977
+[Vibration] Status: CAUTION | RMS: 1.307 | Magnitude: 8.844 | X: 1.132 Y: 0.000 Z: 8.771
+[Vibration] Status: CAUTION | RMS: 1.304 | Magnitude: 10.973 | X: 2.314 Y: -0.062 Z: 10.726
+2026-10-13 14:43:07
+[Vibration] Status: CAUTION | RMS: 1.226 | Magnitude: 10.612 | X: -0.613 Y: 0.007 Z: 10.594
+[Vibration] Status: CAUTION | RMS: 0.965 | Magnitude: 10.018 | X: 0.033 Y: -0.696 Z: 9.994
+[Vibration] Status: CAUTION | RMS: 0.822 | Magnitude: 10.381 | X: 0.560 Y: 0.522 Z: 10.353
+[Vibration] Status: CAUTION | RMS: 0.525 | Magnitude: 9.998 | X: -0.670 Y: 0.096 Z: 9.975
+2026-10-13 14:43:08
+[Vibration] Status: OK | RMS: 0.361 | Magnitude: 10.035 | X: -0.160 Y: -0.292 Z: 10.030
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.082 | X: -0.206 Y: -0.215 Z: 10.078
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.083 | X: -0.177 Y: -0.201 Z: 10.080
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 9.972 | X: -0.397 Y: -0.191 Z: 9.963
+2026-10-13 14:43:09
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.065 | X: -0.206 Y: -0.213 Z: 10.061
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.113 | X: -0.201 Y: -0.223 Z: 10.109
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.040 | X: -0.160 Y: -0.203 Z: 10.037
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.059 | X: -0.258 Y: -0.182 Z: 10.054
+2026-10-13 14:43:10
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.043 | X: -0.182 Y: -0.218 Z: 10.039
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.048 | X: -0.196 Y: -0.184 Z: 10.044
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.031 | X: -0.206 Y: -0.187 Z: 10.027
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.089 | X: -0.189 Y: -0.218 Z: 10.085
+2026-10-13 14:43:11
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.201 Y: -0.242 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.048 | X: -0.187 Y: -0.206 Z: 10.044
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.082 | X: -0.239 Y: -0.189 Z: 10.078
+2026-10-13 14:43:12
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.046 | X: -0.234 Y: -0.201 Z: 10.042
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.095 | X: -0.184 Y: -0.184 Z: 10.092
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.049 | X: -0.227 Y: -0.206 Z: 10.044
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.073 | X: -0.234 Y: -0.220 Z: 10.068

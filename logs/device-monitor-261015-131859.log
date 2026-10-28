@@ -1,0 +1,1559 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Radar module ready (UART connected).
+Radar WiFi AP started. Network: PoolPlantRadar
+IP address: 192.168.4.1
+Radar server ready on port 80.
+DS18B20 NOT found. Check the three wires and the pull-up resistor on G4.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.150 V | Sensor output: 0.300 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.150 V | Sensor output: 0.299 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 69cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 53cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 55cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 70cm energy:56 | Still: 53cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.295 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 75cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 74cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.149 V | Sensor output: 0.297 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 68cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 68cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.295 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 58cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 56cm energy:75 | Still: 75cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:52 | Still: 53cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 58cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 53cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 75cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 51cm energy:79 | Still: 56cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 77cm energy:72 | Still: 58cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 64cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: none | Still: 50cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 80cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 74cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 60cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 76cm energy:85 | Still: 72cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 72cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 82cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 41cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 69cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:62 | Still: 77cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 30cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:57 | Still: 63cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 83cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 49cm energy:77 | Still: 76cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 77cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 63cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 79cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.294 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 77cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 54cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 76cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 64cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 72cm energy:100 | Distance: 51cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 76cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.295 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 72cm energy:70 | Still: 82cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 79cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 71cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:52 | Still: 68cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.147 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 72cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:56 | Still: 79cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 54cm energy:83 | Still: 82cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 66cm energy:73 | Still: 60cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 73cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 30cm energy:92 | Still: 30cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 92cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 60cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 63cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 76cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 50cm energy:54 | Still: 80cm energy:100 | Distance: 57cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 30cm energy:100 | Distance: 36cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 53cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 80cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:95 | Still: 63cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 30cm energy:89 | Still: 49cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 62cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 63cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 41cm energy:68 | Still: 60cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: none | Still: 41cm energy:100 | Distance: 36cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 41cm energy:100 | Distance: 31cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 88cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 76cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 79cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 68cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 44cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 60cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 45cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 50cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 45cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 59cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 79cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 74cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 58cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 60cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 79cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 103cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 76cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 73cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 56cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 81cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 53cm energy:64 | Still: 76cm energy:100 | Distance: 51cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 78cm energy:76 | Still: 68cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 82cm energy:99 | Still: 79cm energy:100 | Distance: 57cm
+[Radar] OUT: HIGH | Moving: 80cm energy:53 | Still: 76cm energy:100 | Distance: 59cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.293 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 44cm energy:100 | Still: 52cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 55cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 46cm energy:74 | Still: 67cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:53 | Still: 49cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 73cm energy:92 | Still: 69cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 76cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 76cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 81cm energy:63 | Still: 78cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 79cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 49cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 79cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 69cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 58cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 71cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 40cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 43cm energy:100 | Distance: 35cm
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:58 | Still: 66cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 64cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 74cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 67cm energy:73 | Still: 55cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:51 | Still: 63cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 80cm energy:66 | Still: 57cm energy:100 | Distance: 37cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:70 | Still: 42cm energy:100 | Distance: 36cm
+[Radar] OUT: HIGH | Moving: 63cm energy:76 | Still: 49cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:53 | Still: 46cm energy:100 | Distance: 35cm
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 59cm energy:94 | Still: 68cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 74cm energy:97 | Still: 72cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 47cm energy:65 | Still: 45cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 48cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 67cm energy:99 | Still: 30cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 46cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 72cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.291 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:66 | Still: 43cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 77cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 80cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 59cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 41cm energy:100 | Still: 76cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 73cm energy:87 | Still: 49cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 30cm energy:100 | Distance: 35cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 61cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 66cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 49cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 65cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 113cm energy:50 | Still: 75cm energy:100 | Distance: 60cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 61cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 30cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 74cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 95cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 84cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 76cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 46cm energy:100 | Still: 48cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 83cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 43cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:90 | Still: 77cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 41cm energy:100 | Distance: 30cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 79cm energy:100 | Distance: 37cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 76cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:74 | Still: 67cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 67cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 75cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 43cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 30cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: 43cm energy:100 | Still: 80cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 150cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 85cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 73cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.146 V | Sensor output: 0.292 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 30cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 59cm energy:88 | Still: 85cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:98 | Still: 67cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 77cm energy:100 | Distance: 57cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 64cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 75cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:70 | Still: 77cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 62cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 54cm energy:100 | Still: 79cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 40cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 58cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 40cm energy:100 | Still: 30cm energy:100 | Distance: 37cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 38cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 54cm energy:100 | Distance: 32cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:57 | Still: 72cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 81cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 87cm energy:91 | Still: 77cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 40cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 49cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 67cm energy:93 | Still: 83cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:54 | Still: 30cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 77cm energy:52 | Still: 76cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 80cm energy:53 | Still: 67cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 45cm energy:59 | Still: 64cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 71cm energy:86 | Still: 66cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 42cm energy:54 | Still: 58cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 59cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 55cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 50cm energy:100 | Distance: 31cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 61cm energy:100 | Distance: 37cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 41cm energy:100 | Distance: 33cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:91 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 46cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 54cm energy:74 | Still: 53cm energy:100 | Distance: 31cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 60cm energy:100 | Distance: 36cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 57cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: 72cm energy:54 | Still: 69cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 45cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 75cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 67cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 65cm energy:82 | Still: 62cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 85cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.145 V | Sensor output: 0.290 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 45cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 66cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 46cm energy:100 | Still: 73cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 75cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 43cm energy:100 | Still: 60cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 51cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 74cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 50cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 58cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 30cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 50cm energy:85 | Still: 58cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 43cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 54cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 71cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 65cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 60cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 83cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 68cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 80cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:64 | Still: 60cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 72cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 73cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 59cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 60cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:80 | Still: 68cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 55cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 41cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 49cm energy:82 | Still: 75cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 80cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 79cm energy:100 | Distance: 51cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 70cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 70cm energy:65 | Still: 59cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 54cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 62cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 65cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 79cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 70cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:54 | Still: 77cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 87cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:96 | Still: 74cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 79cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 72cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 56cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 49cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 30cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 57cm energy:100 | Still: 84cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 59cm energy:67 | Still: 76cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 49cm energy:89 | Still: 55cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 93cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 57cm energy:100 | Still: 77cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 75cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 41cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 73cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 50cm energy:100 | Distance: 37cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 68cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 65cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:83 | Still: 58cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 38cm energy:100 | Distance: 32cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 68cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 77cm energy:66 | Still: 76cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 68cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 30cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 67cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 76cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 60cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 74cm energy:63 | Still: 63cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 76cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 69cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 64cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 62cm energy:92 | Still: 63cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 60cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 65cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 56cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 67cm energy:75 | Still: 62cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 76cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 61cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[169554][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 76cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 80cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 82cm energy:76 | Still: 65cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 76cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 53cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 42cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 110cm energy:66 | Still: 79cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 70cm energy:60 | Still: 41cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 56cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 50cm energy:66 | Still: 66cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 61cm energy:56 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 73cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 30cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:89 | Still: 58cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 73cm energy:80 | Still: 69cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 72cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 49cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 67cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 80cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 79cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 68cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 59cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 55cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 44cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 50cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 39cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 56cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 30cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 44cm energy:100 | Still: 54cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 75cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 60cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 30cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 72cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 73cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 76cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 74cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 49cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 56cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 89cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 44cm energy:100 | Still: 76cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 80cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 107cm energy:100 | Still: 69cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 65cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 69cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 71cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 43cm energy:100 | Still: 30cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 73cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 54cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 51cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 69cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 30cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 81cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 59cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 45cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:61 | Still: 70cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 67cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:90 | Still: 79cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 30cm energy:60 | Still: 61cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 73cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 66cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:90 | Still: 72cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 65cm energy:82 | Still: 72cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 81cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 80cm energy:100 | Distance: 57cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 79cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 69cm energy:100 | Distance: 33cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 59cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 58cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:73 | Still: 64cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 79cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 60cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 63cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 76cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 75cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.289 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 81cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 53cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 67cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 75cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 57cm energy:100 | Still: 58cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 69cm energy:55 | Still: 73cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.288 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 35cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:55 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: none | Still: 57cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 49cm energy:62 | Still: 49cm energy:100 | Distance: 31cm
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 49cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 43cm energy:100 | Still: 59cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 78cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 30cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 46cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 77cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.144 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 76cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 75cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:85 | Still: 70cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 72cm energy:56 | Still: 75cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 45cm energy:100 | Still: 51cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 44cm energy:100 | Still: 49cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 70cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 55cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 77cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 67cm energy:100 | Distance: 51cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 82cm energy:75 | Still: 45cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 41cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 74cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 45cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 53cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 58cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 76cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 50cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 55cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 75cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 67cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 75cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 72cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 77cm energy:73 | Still: 42cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 46cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 59cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 72cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 61cm energy:96 | Still: 72cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 56cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 56cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 65cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 56cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 62cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 56cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 72cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 73cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 68cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 55cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 74cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 38cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 57cm energy:100 | Still: 76cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 38cm energy:100 | Still: 30cm energy:100 | Distance: 30cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 67cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 73cm energy:64 | Still: 73cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 75cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 70cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 48cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.287 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 79cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 47cm energy:100 | Still: 57cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 67cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 65cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 56cm energy:53 | Still: 76cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 76cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 65cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 78cm energy:58 | Still: 64cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:90 | Still: 48cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 45cm energy:100 | Still: 46cm energy:100 | Distance: 44cm
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 51cm energy:61 | Still: 62cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: 62cm energy:54 | Still: 52cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 39cm energy:100 | Distance: 30cm
+[Radar] OUT: HIGH | Moving: 56cm energy:84 | Still: 64cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 38cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 76cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 52cm energy:100 | Distance: 33cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:67 | Still: 57cm energy:100 | Distance: 39cm
+[Radar] OUT: HIGH | Moving: 68cm energy:83 | Still: 30cm energy:100 | Distance: 30cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: 30cm energy:54 | Still: 39cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 44cm energy:70 | Still: 30cm energy:100 | Distance: 30cm
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 42cm energy:100 | Distance: 33cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 63cm energy:100 | Distance: 33cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 75cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 62cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 70cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:83 | Still: 77cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 75cm energy:82 | Still: 77cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 73cm energy:54 | Still: 76cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:80 | Still: 71cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 65cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:75 | Still: 46cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 56cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 73cm energy:100 | Distance: 45cm
+[Radar] OUT: HIGH | Moving: 40cm energy:100 | Still: 70cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 68cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 67cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[272393][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 63cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 70cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 43cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 49cm energy:100 | Still: 46cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 63cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 62cm energy:100 | Distance: 45cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 75cm energy:84 | Still: 75cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 71cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 44cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 58cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 72cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 69cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.286 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 68cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 74cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 76cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 50cm energy:83 | Still: 53cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 73cm energy:58 | Still: 81cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 75cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 51cm energy:100 | Still: 70cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 76cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 45cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 66cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 66cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 39cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 49cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 46cm energy:100 | Distance: 33cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 38cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 40cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 72cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 52cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 72cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 52cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 60cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 60cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 46cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 41cm energy:100 | Still: 42cm energy:100 | Distance: 43cm
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 43cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 51cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 53cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:59 | Still: 71cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 53cm energy:100 | Still: 68cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 75cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 30cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 43cm energy:100 | Still: 30cm energy:100 | Distance: 34cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 87cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 60cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 75cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 74cm energy:100 | Distance: 48cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 53cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 71cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 78cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 76cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 58cm energy:61 | Still: 62cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 51cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 30cm energy:100 | Distance: 35cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.284 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 43cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 77cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 0.143 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 30cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 30cm energy:51 | Still: 72cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 0.142 V | Sensor output: 0.285 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 142.0 mV

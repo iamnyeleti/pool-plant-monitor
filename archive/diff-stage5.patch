@@ -1,0 +1,462 @@
+diff --git a/include/water_quality.h b/include/water_quality.h
+index 5e146fb..bd2e4fa 100644
+--- a/include/water_quality.h
++++ b/include/water_quality.h
+@@ -18,6 +18,22 @@ bool waterQualitySetPreferredPh(float value);
+ // Bench temperature range in degrees C. Refuses NaN or low >= high (returns false).
+ bool waterQualitySetTempRange(float low, float high);
+ 
++// Result of a preferences request. ok = valid and applied (or nothing to change),
++// changed = at least one value differed, saved = the changed values reached flash.
++struct WaterConfigResult {
++  bool ok;
++  bool changed;
++  bool saved;
++};
++
++// Validates and applies a temperature range and/or preferred pH. A missing temperature
++// end is passed as NAN; hasTemp/hasPh false means "unchanged". Messages are appended to
++// *errors, one per line, and any message (including ones already in *errors) blocks the change.
++WaterConfigResult waterQualityApplyConfig(bool hasTemp, float low, float high, bool hasPh, float ph, String* errors);
++
++// {"tempSet","tempLow","tempHigh","phSet","phPref"} for the dashboard form.
++String waterQualityConfigJson();
++
+ bool waterQualityActive();
+ String waterQualityStatusJson();
+ 
+diff --git a/src/dashboard.cpp b/src/dashboard.cpp
+index e6e1ac7..fd08393 100644
+--- a/src/dashboard.cpp
++++ b/src/dashboard.cpp
+@@ -1,4 +1,6 @@
+ #include <Arduino.h>
++#include <math.h>
++#include <stdlib.h>
+ #include "dashboard.h"
+ #include "network.h"
+ #include "vibration.h"
+@@ -40,12 +42,33 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;margin-top:18px}
+   <section class="hero"><div><div class="label">Overall system status</div><h2 id="overallText">Reading sensors…</h2><div class="muted" id="overallDetail">Waiting for live data from the ESP32.</div></div><div class="status-big" id="overallBadge">● CONNECTING</div></section>
+ 
+   <section class="grid">
+-    <div class="card"><div class="label">pH</div><div class="value">—</div><div class="state muted">Sensor not connected yet</div></div>
+-    <div class="card"><div class="label">Temperature</div><div class="value">—</div><div class="state muted">Sensor not connected yet</div></div>
+-    <div class="card"><div class="label">Turbidity</div><div class="value">—</div><div class="state muted">Sensor not connected yet</div></div>
+     <div class="card"><div class="label">Occupancy module</div><div class="value" id="occValue">—</div><div class="state muted" id="occState">Waiting for camera node</div></div>
+   </section>
+ 
++  <section class="panel">
++    <h3>Water quality <span class="state caution" id="wSim" hidden>SIMULATED</span></h3>
++    <div class="muted" id="wMsg" hidden>Water data unavailable</div>
++    <div class="metrics">
++      <div class="metric"><span class="label">Temperature</span> <span class="state caution" id="tSim" hidden>SIMULATED</span><b id="tV">-</b>
++        <div>Condition: <strong id="tC">-</strong></div><div>Availability: <span id="tA">-</span></div><div class="muted" id="tX"></div></div>
++      <div class="metric"><span class="label">pH</span> <span class="state caution" id="pSim" hidden>SIMULATED</span><b id="pV">-</b>
++        <div>Condition: <strong id="pC">-</strong></div><div>Availability: <span id="pA">-</span></div><div class="muted" id="pK"></div><div class="caution" id="pB" hidden>Possible breach, verifying</div><div class="muted" id="pX"></div></div>
++      <div class="metric"><span class="label">Turbidity</span> <span class="state caution" id="uSim" hidden>SIMULATED</span><b id="uV">-</b>
++        <div>Condition: <strong id="uC">-</strong></div><div>Availability: <span id="uA">-</span></div><div class="muted" id="uX"></div></div>
++    </div>
++  </section>
++
++  <section class="panel">
++    <h3>Water preferences</h3>
++    <div class="metrics">
++      <div class="metric"><label class="label" for="inLow">Temperature minimum (°C)</label><input id="inLow" type="number" step="0.1" style="width:100%"></div>
++      <div class="metric"><label class="label" for="inHigh">Temperature maximum (°C)</label><input id="inHigh" type="number" step="0.1" style="width:100%"></div>
++      <div class="metric"><label class="label" for="inPh">Preferred pH</label><input id="inPh" type="number" step="0.01" style="width:100%"></div>
++      <div class="metric"><button id="saveBtn" type="button">Save</button></div>
++    </div>
++    <p class="muted" style="margin-bottom:0" id="cfgMsg">A blank field is left unchanged. Preferences do not change the pH operating limits.</p>
++  </section>
++
+   <section class="panel">
+     <h3>Pump condition monitoring</h3>
+     <div class="metrics">
+@@ -89,8 +112,51 @@ async function refresh(){
+   document.getElementById('overallText').textContent=headline;document.getElementById('overallDetail').textContent=detail;
+   const ob=document.getElementById('overallBadge');ob.textContent=badge;ob.className='status-big '+clsForStatus(s);
+   document.getElementById('advice').textContent=advice;
++  try{renderWater(d.water)}catch(e2){wText('wMsg','Water data unavailable');document.getElementById('wMsg').hidden=false}
+  }catch(e){document.getElementById('overallText').textContent='Dashboard connection lost';document.getElementById('overallDetail').textContent='The browser could not read /api/status.';document.getElementById('overallBadge').textContent='● OFFLINE';document.getElementById('overallBadge').className='status-big warning'}
+ }
++function wText(id,t){document.getElementById(id).textContent=t}
++function wCls(id,c){document.getElementById(id).className=c}
++function nice(s){s=String(s==null?'':s).replace(/_/g,' ').toLowerCase();return s.charAt(0).toUpperCase()+s.slice(1)}
++function condCls(s){s=(s||'').toUpperCase();if(s==='OK'||s==='IN_RANGE'||s==='CLEAR'||s==='ON_TARGET')return 'ok';if(s==='WARNING')return 'warning';if(s==='CAUTION'||s==='BELOW_RANGE'||s==='ABOVE_RANGE'||s==='CLOUDIER'||s==='OFF_TARGET')return 'caution';return 'muted'}
++function availText(ch){var st=ch.state;if(st==='live')return 'Live';if(st==='stale')return 'Stale';if(st==='disabled')return 'Disabled'+(ch.reason?' ('+nice(ch.reason).toLowerCase()+')':'');return 'Unavailable'+(ch.reason?' ('+nice(ch.reason).toLowerCase()+')':'')}
++function chan(p,ch,val,cond,condStatus){
++ document.getElementById(p+'Sim').hidden=!ch.simulated;
++ wText(p+'V',val);wText(p+'C',cond);wCls(p+'C',condCls(condStatus));wText(p+'A',availText(ch));
++}
++function renderWater(w){
++ var msg=document.getElementById('wMsg');
++ if(!w||!w.temperature||!w.ph||!w.turbidity){msg.hidden=false;return}
++ msg.hidden=true;
++ document.getElementById('wSim').hidden=!w.simulated;
++ var t=w.temperature,p=w.ph,u=w.turbidity;
++ chan('t',t,(t.state==='live'&&t.valueC!=null)?t.valueC.toFixed(1)+' °C':'-',nice(t.status),t.status);
++ wText('tX',t.rangeSet?'Preferred range: '+t.low.toFixed(1)+' to '+t.high.toFixed(1)+' °C':'Preferred range: not set');
++ var pst=p.status+((p.direction&&p.direction!=='OK')?' '+p.direction:'');
++ chan('p',p,(p.state==='live'&&p.value!=null)?p.value.toFixed(2):'-',nice(pst)+((p.status==='UNAVAILABLE'&&p.statusReason)?' ('+nice(p.statusReason).toLowerCase()+')':''),p.status);
++ wText('pK',p.calibration==='two_point'?'Calibration: two-point':p.calibration==='partial'?'Calibration: partly calibrated':'Calibration: not calibrated since restart');
++ document.getElementById('pB').hidden=!p.possibleBreach;
++ var pf=p.preferred||{};
++ wText('pX',pf.status==='ON_TARGET'?'On target (preferred '+pf.value.toFixed(2)+')':pf.status==='OFF_TARGET'?'Off target (preferred '+pf.value.toFixed(2)+')':pf.status==='UNAVAILABLE'?'Preferred pH: unavailable':'Preferred pH: not set');
++ var up=(u.state==='live'&&u.percentBelowBaseline!=null);
++ chan('u',u,up?Math.abs(u.percentBelowBaseline).toFixed(1)+' %':'-',nice(u.status),u.status);
++ wText('uX',u.baseline!=='set'?'No baseline since restart':up?(u.percentBelowBaseline>=0?'below the clear-water baseline':'clearer than the clear-water baseline'):'Clear-water baseline set');
++}
++function loadCfg(){fetch('/api/water/config',{cache:'no-store'}).then(function(r){return r.json()}).then(function(c){
++ document.getElementById('inLow').value=c.tempSet?c.tempLow:'';document.getElementById('inHigh').value=c.tempSet?c.tempHigh:'';document.getElementById('inPh').value=c.phSet?c.phPref:'';
++ }).catch(function(){wText('cfgMsg','Could not read the current preferences.')})}
++async function saveCfg(){
++ var b=new URLSearchParams();b.set('tempLow',document.getElementById('inLow').value);b.set('tempHigh',document.getElementById('inHigh').value);b.set('phPref',document.getElementById('inPh').value);
++ try{
++  var r=await fetch('/api/water/config',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:b.toString()});var d=await r.json();
++  if(!d.ok)wText('cfgMsg',(d.errors||[]).join(' ')||'Not saved.');
++  else if(!d.changed)wText('cfgMsg','No changes.');
++  else wText('cfgMsg',d.saved?'Saved.':'Applied, but could not be saved to flash.');
++  if(d.ok)loadCfg();
++ }catch(e){wText('cfgMsg','Not saved: no response from the ESP32.')}
++}
++document.getElementById('saveBtn').addEventListener('click',saveCfg);
++loadCfg();
+ setInterval(refresh,1000);refresh();
+ </script>
+ </body></html>
+@@ -168,7 +234,76 @@ static void handleOccupancyHeartbeat() {
+   networkServer().send(200, "application/json", "{\"ok\":true}");
+ }
+ 
++// Strict decimal parse: digits, sign, point and exponent only; no empty text, NaN, inf or trailing text.
++static bool parseStrictFloat(const String& s, float* out) {
++  if (s.length() == 0) return false;
++  for (unsigned int i = 0; i < s.length(); i++) {
++    char c = s[i];
++    if (!((c >= '0' && c <= '9') || c == '+' || c == '-' || c == '.' || c == 'e' || c == 'E')) return false;
++  }
++  char* end = nullptr;
++  double d = strtod(s.c_str(), &end);
++  if (end == s.c_str() || *end != '\0') return false;
++  float f = (float)d;
++  if (isnan(f) || isinf(f)) return false;
++  *out = f;
++  return true;
++}
++
++// Reads one form field. Blank means "unchanged" (present stays false); bad text adds an error.
++static void readConfigField(const char* name, const char* label, bool* present, float* value, String* errors) {
++  *present = false;
++  String s = networkServer().arg(name);
++  s.trim();
++  if (s.length() == 0) return;
++  if (!parseStrictFloat(s, value)) {
++    *errors += String(label) + " is not a valid number.\n";
++    return;
++  }
++  *present = true;
++}
++
++static void handleWaterConfigGet() {
++  networkServer().sendHeader("Cache-Control", "no-store");
++  networkServer().send(200, "application/json", waterQualityConfigJson());
++}
++
++static void handleWaterConfigPost() {
++  String errors;
++  bool hasLow, hasHigh, hasPh;
++  float low = NAN, high = NAN, ph = NAN;
++  readConfigField("tempLow", "Temperature minimum", &hasLow, &low, &errors);
++  readConfigField("tempHigh", "Temperature maximum", &hasHigh, &high, &errors);
++  readConfigField("phPref", "Preferred pH", &hasPh, &ph, &errors);
++  if (!hasLow) low = NAN;
++  if (!hasHigh) high = NAN;
++
++  WaterConfigResult r = waterQualityApplyConfig(hasLow || hasHigh, low, high, hasPh, ph, &errors);
++
++  String json = "{\"ok\":" + boolJson(r.ok) + ",\"changed\":" + boolJson(r.changed) + ",\"saved\":" + boolJson(r.saved) + ",\"errors\":[";
++  bool first = true;
++  int start = 0;
++  while (start < (int)errors.length()) {
++    int nl = errors.indexOf('\n', start);
++    if (nl < 0) nl = errors.length();
++    String line = errors.substring(start, nl);
++    start = nl + 1;
++    if (line.length() == 0) continue;
++    line.replace("\\", "\\\\");
++    line.replace("\"", "\\\"");
++    if (!first) json += ",";
++    json += "\"" + line + "\"";
++    first = false;
++  }
++  json += "]}";
++
++  networkServer().sendHeader("Cache-Control", "no-store");
++  networkServer().send(r.ok ? 200 : 400, "application/json", json);
++}
++
+ void dashboardSetup() {
++  networkServer().on("/api/water/config", HTTP_GET, handleWaterConfigGet);
++  networkServer().on("/api/water/config", HTTP_POST, handleWaterConfigPost);
+   networkServer().on("/", HTTP_GET, handleRoot);
+   networkServer().on("/api/status", HTTP_GET, handleStatus);
+   networkServer().on("/api/occupancy/heartbeat", HTTP_GET, handleOccupancyHeartbeat);
+diff --git a/src/water_quality.cpp b/src/water_quality.cpp
+index 4422f91..8798782 100644
+--- a/src/water_quality.cpp
++++ b/src/water_quality.cpp
+@@ -8,14 +8,17 @@
+ // preferred pH, temperature range with a 30 s hold.
+ // Water quality stage 3: turbidity baseline and percent below baseline (no NTU).
+ // Water quality stage 4: serial-triggered simulation scenarios (default off, cleared at reboot).
++// Water quality stage 5: re-adopt after outages, revised electrical limits,
++// stored temperature range / preferred pH (Preferences namespace "wq").
+ 
+ #include "water_quality.h"
+ #include <math.h>
+ #include <string.h>
++#include <Preferences.h>
+ #include <OneWire.h>
+ #include <DallasTemperature.h>
+ 
+-#define WQ_STAGE_NAME "stage4"
++#define WQ_STAGE_NAME "stage5"
+ 
+ // ---------------------------------------------------------------
+ // Pins
+@@ -40,9 +43,12 @@ static const bool WQ_TURBIDITY_ENABLED = true;
+ // ---------------------------------------------------------------
+ // Provisional validity ranges (electrical plausibility only)
+ // ---------------------------------------------------------------
+-static const float WQ_PH_MV_MIN          = 1.0;
++// PROVISIONAL minimums: chosen from one set of disconnection runs (about 142 mV at the
++// ADC pin). The lowest connected readings logged were 1260 mV (pH) and about 1.7 V at
++// the pin (turbidity). These are not universal limits.
++static const float WQ_PH_MV_MIN          = 500.0;   // pH board output, mV at the pin
+ static const float WQ_PH_MV_MAX          = 3050.0;
+-static const float WQ_TURB_VOLTS_MIN     = 0.05;
++static const float WQ_TURB_VOLTS_MIN     = 1.0;     // reconstructed sensor side (pin volts x DIVIDER_FACTOR)
+ static const float WQ_TURB_VOLTS_MAX     = 4.6;
+ static const unsigned long WQ_MAX_AGE_MS = 3000;
+ 
+@@ -70,6 +76,10 @@ static const float TURB_CLOUDY_PCT       = 5.0;     // CLOUDIER when percent bel
+ static const float TURB_PCT_EPS          = 0.001;   // float tolerance on the inclusive threshold
+ static const float TURB_BASELINE_MAX_SPREAD_V = 0.05; // max-min allowed across the 30 baseline samples
+ 
++// Stage 5 constants (PROVISIONAL)
++static const float CFG_TEMP_INPUT_MIN_C  = 0.0;     // input sanity for a stored range, not an operating limit
++static const float CFG_TEMP_INPUT_MAX_C  = 50.0;
++
+ // Stage 4 simulation constants (TEST ONLY, never used outside a running scenario)
+ static const float SIM_TURB_BASELINE_V   = 4.000;   // sensor-side volts
+ static const float SIM_TEMP_LOW          = 20.0;    // bench range for the 't' scenario
+@@ -192,8 +202,9 @@ struct Hold {
+ static void holdReset(Hold& h) { h.held = false; h.pending = false; }
+ 
+ // Returns true when the held key changed (or was first adopted).
++// Not live: the held status is dropped, so the next live classification is adopted at once.
+ static bool holdUpdate(Hold& h, bool live, int key, unsigned long now) {
+-  if (!live) { h.pending = false; return false; }          // timer resets when not live
++  if (!live) { h.held = false; h.pending = false; return false; }
+   if (!h.held) { h.held = true; h.heldKey = key; h.pending = false; return true; }
+   if (key == h.heldKey) { h.pending = false; return false; }
+   if (!h.pending || h.pendKey != key) {
+@@ -539,6 +550,7 @@ static const SimStep SIM_P[] = {
+   {7.50f, true, 40, "OK", -1, 0},
+   {7.10f, true, 40, "WARNING LOW", -1, 0},
+   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++  {7.90f, true, 5,  "WARNING HIGH", -1, 0},   // first live value after an outage is adopted at once
+   {7.50f, true, 40, "OK", -1, 0},
+ };
+ 
+@@ -553,6 +565,8 @@ static const SimStep SIM_T[] = {
+   {25.0f, true, 10, "IN_RANGE", -1, 0},      // return after the spike
+   {30.1f, true, 40, "ABOVE_RANGE", -1, 0},   // sustained
+   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++  {30.1f, true, 5,  "ABOVE_RANGE", -1, 0},   // adopted at once after the outage
++  {25.0f, true, 40, "IN_RANGE", -1, 0},
+ };
+ 
+ static const SimStep SIM_U[] = {
+@@ -566,6 +580,8 @@ static const SimStep SIM_U[] = {
+   {0.0f, true, 10, "CLEAR", -1, 0},          // return after the spike
+   {20.0f, true, 40, "CLOUDIER", -1, 0},      // sustained
+   {0.0f, false, 10, "UNAVAILABLE", -1, 0},
++  {20.0f, true, 5,  "CLOUDIER", -1, 0},      // adopted at once after the outage
++  {0.0f, true, 40, "CLEAR", -1, 0},
+ };
+ 
+ static int simIdx = 0;
+@@ -840,6 +856,62 @@ bool waterQualitySetTempRange(float low, float high) {
+   return true;
+ }
+ 
++// ---------------------------------------------------------------
++// Stored preferences (Preferences namespace "wq": tSet, tLow, tHigh, pSet, pPref).
++// Written only by a valid config request that changes a value; never periodically.
++// Calibration and the turbidity baseline are session-only and are not stored.
++// ---------------------------------------------------------------
++static Preferences prefs;
++static bool cfgRestored = false;
++
++static bool cfgTempValid(float low, float high) {
++  return !isnan(low) && !isnan(high) && !isinf(low) && !isinf(high) &&
++         low >= CFG_TEMP_INPUT_MIN_C && low <= CFG_TEMP_INPUT_MAX_C &&
++         high >= CFG_TEMP_INPUT_MIN_C && high <= CFG_TEMP_INPUT_MAX_C &&
++         low < high;
++}
++
++static bool cfgPhValid(float ph) {
++  return !isnan(ph) && !isinf(ph) && ph >= PH_LIMIT_LOW && ph <= PH_LIMIT_HIGH;
++}
++
++static void cfgLoad() {
++  cfgRestored = false;
++  if (!prefs.begin("wq", true)) {          // namespace does not exist yet
++    Serial.println("[CFG] no saved preferences");
++    return;
++  }
++  bool tSet = prefs.getBool("tSet", false);
++  float tLow = prefs.getFloat("tLow", NAN);
++  float tHigh = prefs.getFloat("tHigh", NAN);
++  bool pSet = prefs.getBool("pSet", false);
++  float pPref = prefs.getFloat("pPref", NAN);
++  prefs.end();
++
++  if (tSet) {
++    if (cfgTempValid(tLow, tHigh)) {
++      tempRangeLow = tLow;
++      tempRangeHigh = tHigh;
++      tempRangeSet = true;
++      cfgRestored = true;
++      Serial.printf("[CFG] restored temperature range %.1f to %.1f C\n", tLow, tHigh);
++    } else {
++      Serial.println("[CFG] ignored invalid stored temperature range");
++    }
++  }
++  if (pSet) {
++    if (cfgPhValid(pPref)) {
++      prefPh = pPref;
++      prefPhSet = true;
++      cfgRestored = true;
++      Serial.printf("[CFG] restored preferred pH %.2f\n", pPref);
++    } else {
++      Serial.println("[CFG] ignored invalid stored preferred pH");
++    }
++  }
++  if (!tSet && !pSet) Serial.println("[CFG] no saved preferences");
++}
++
+ // ---------------------------------------------------------------
+ // Setup and update
+ // ---------------------------------------------------------------
+@@ -868,6 +940,8 @@ void waterQualitySetup() {
+   Serial.print(" heap=");
+   Serial.println(ESP.getFreeHeap());
+ 
++  cfgLoad();
++
+   wqSetupDone = true;
+ }
+ 
+@@ -1010,6 +1084,70 @@ bool waterQualityActive() {
+   return wqSetupDone;
+ }
+ 
++// Validates a preferences request and applies it only if everything is valid.
++// A blank field is passed as absent (hasTemp / hasPh false, NAN for a missing temperature end).
++// Messages already in *errors (parse failures) also block the change.
++WaterConfigResult waterQualityApplyConfig(bool hasTemp, float low, float high, bool hasPh, float ph, String* errors) {
++  WaterConfigResult r = {false, false, false};
++  String local;
++  String& e = errors ? *errors : local;
++
++  if (!wqSetupDone) e += "Water quality monitoring is not active.\n";
++  if (hasTemp) {
++    if (isnan(low) || isnan(high)) {
++      e += "Temperature range needs both a minimum and a maximum.\n";
++    } else {
++      if (isinf(low) || isinf(high) || low < CFG_TEMP_INPUT_MIN_C || low > CFG_TEMP_INPUT_MAX_C ||
++          high < CFG_TEMP_INPUT_MIN_C || high > CFG_TEMP_INPUT_MAX_C) {
++        e += "Temperature must be between 0.0 and 50.0 C.\n";
++      }
++      if (low >= high) e += "Temperature minimum must be below the maximum.\n";
++    }
++  }
++  if (hasPh && !cfgPhValid(ph)) {
++    e += "Preferred pH must be between 7.2 and 7.8. The pH operating limits cannot be changed here.\n";
++  }
++  if (e.length() > 0) {
++    String line = e;
++    line.replace('\n', ' ');
++    line.trim();
++    Serial.print("[CFG] rejected: ");
++    Serial.println(line);
++    return r;
++  }
++
++  r.ok = true;
++  bool tNew = hasTemp && !tempRangeSet;
++  bool lowChanged = hasTemp && (!tempRangeSet || tempRangeLow != low);
++  bool highChanged = hasTemp && (!tempRangeSet || tempRangeHigh != high);
++  bool pNew = hasPh && !prefPhSet;
++  bool prefChanged = hasPh && (!prefPhSet || prefPh != ph);
++  if (!lowChanged && !highChanged && !prefChanged) return r;   // nothing differs: no write
++  r.changed = true;
++
++  bool wrote = prefs.begin("wq", false);
++  if (wrote) {
++    if (tNew)        wrote = (prefs.putBool("tSet", true) > 0) && wrote;
++    if (lowChanged)  wrote = (prefs.putFloat("tLow", low) > 0) && wrote;
++    if (highChanged) wrote = (prefs.putFloat("tHigh", high) > 0) && wrote;
++    if (pNew)        wrote = (prefs.putBool("pSet", true) > 0) && wrote;
++    if (prefChanged) wrote = (prefs.putFloat("pPref", ph) > 0) && wrote;
++    prefs.end();
++  }
++
++  if (lowChanged || highChanged) waterQualitySetTempRange(low, high);
++  if (prefChanged) waterQualitySetPreferredPh(ph);
++  r.saved = wrote;
++
++  if (hasTemp && (lowChanged || highChanged)) {
++    Serial.printf("[CFG] %s temperature range %.1f to %.1f C\n", wrote ? "saved" : "applied (NOT saved)", low, high);
++  }
++  if (prefChanged) {
++    Serial.printf("[CFG] %s preferred pH %.2f\n", wrote ? "saved" : "applied (NOT saved)", ph);
++  }
++  return r;
++}
++
+ // JSON helpers. Read-only: they never change monitoring state.
+ static void jf(String& j, float v, int dec) {
+   if (isnan(v)) { j += "null"; return; }
+@@ -1173,6 +1311,28 @@ String waterQualityStatusJson() {
+   js(j, turbStatusText(liveTurb));
+   j += "}";
+ 
++  j += ",\"settings\":{\"restoredFromFlash\":";
++  jb(j, cfgRestored);
++  j += "}";
++
++  j += "}";
++  return j;
++}
++
++// Current stored preferences, for the dashboard form.
++String waterQualityConfigJson() {
++  String j;
++  j.reserve(128);
++  j += "{\"tempSet\":";
++  jb(j, tempRangeSet);
++  j += ",\"tempLow\":";
++  jf(j, tempRangeSet ? tempRangeLow : NAN, 1);
++  j += ",\"tempHigh\":";
++  jf(j, tempRangeSet ? tempRangeHigh : NAN, 1);
++  j += ",\"phSet\":";
++  jb(j, prefPhSet);
++  j += ",\"phPref\":";
++  jf(j, prefPhSet ? prefPh : NAN, 2);
+   j += "}";
+   return j;
+ }

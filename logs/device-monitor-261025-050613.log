@@ -1,0 +1,3038 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+WiFi AP started: PoolPlantRadar
+IP: 192.168.4.1
+Vibration module ready.
+[CFG] dlpf=0x00 baseline=0.5356 caution_mult=1.20 warning_mult=1.50 window=6000 fraction=0.50 sample_delay_ms=20 calibration=0 stopped_std=0.102 stopped_hold_s=60 build=Oct 24 2026 13:25:18
+RTC already keeping time correctly, leaving it alone.
+RTC module ready.
+Radar module ready (UART connected).
+Radar server route registered.
+DS18B20 temperature sensor found.
+Water quality module ready (turbidity, temperature and raw pH voltage).
+[WQ] stage5 build Oct 24 2026 01:37:44 heap=236188
+[CFG] restored temperature range 19.0 to 30.0 C
+[CFG] restored preferred pH 7.50
+Dashboard routes registered.
+Web server started on port 80.
+[Vibration] Stopped detection off: no pump schedule
+[Vibration] Status: OK | RMS: 0.368 | Magnitude: 10.168 | X: -0.010 Y: 0.440 Z: 10.159
+[Radar] OUT: HIGH | Moving: 79cm energy:75 | Still: 65cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.129 | X: -0.012 Y: 0.459 Z: 10.118
+[STD] std=0.0324 n=23 stopped=0
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.119 | X: -0.010 Y: 0.447 Z: 10.109
+2026-10-23 22:07:51
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] no valid reading yet
+[pH] Board output at G34: 1785.9 mV
+[WQ] temp: unavailable (no_reading_yet)
+[WQ] ph: live
+[WQ] turb: live
+[Radar] OUT: HIGH | Moving: 77cm energy:51 | Still: 71cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.139 | X: -0.031 Y: 0.412 Z: 10.130
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.113 | X: -0.053 Y: 0.435 Z: 10.104
+[Radar] OUT: HIGH | Moving: 66cm energy:53 | Still: 77cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.134 | X: -0.031 Y: 0.421 Z: 10.125
+[STD] std=0.0370 n=50 stopped=0
+2026-10-23 22:07:52
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1785.3 mV
+[WQ] temp: live
+[WQ] temperature status: IN_RANGE (23.94 C)
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.185 | X: -0.031 Y: 0.428 Z: 10.176
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.137 | X: -0.026 Y: 0.426 Z: 10.128
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.132 | X: -0.033 Y: 0.428 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.185 | X: -0.033 Y: 0.438 Z: 10.176
+[STD] std=0.0299 n=50 stopped=0
+2026-10-23 22:07:53
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.094 | X: -0.010 Y: 0.435 Z: 10.085
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.090 | X: -0.026 Y: 0.445 Z: 10.080
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.108 | X: -0.024 Y: 0.426 Z: 10.099
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.131 | X: -0.026 Y: 0.392 Z: 10.123
+[STD] std=0.0323 n=50 stopped=0
+2026-10-23 22:07:54
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.4 mV
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.147 | X: -0.050 Y: 0.435 Z: 10.137
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.150 | X: -0.038 Y: 0.404 Z: 10.142
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.092 | X: -0.026 Y: 0.447 Z: 10.082
+[STD] std=0.0314 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.090 | X: -0.007 Y: 0.440 Z: 10.080
+2026-10-23 22:07:55
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.6 mV
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.142 | X: -0.022 Y: 0.440 Z: 10.133
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.170 | X: -0.002 Y: 0.467 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.180 | X: -0.019 Y: 0.481 Z: 10.168
+[STD] std=0.0361 n=50 stopped=0
+2026-10-23 22:07:56
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.436 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.131 | X: -0.014 Y: 0.409 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.180 | X: -0.002 Y: 0.438 Z: 10.171
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.167 | X: -0.033 Y: 0.402 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.138 | X: -0.041 Y: 0.443 Z: 10.128
+[STD] std=0.0398 n=50 stopped=0
+2026-10-23 22:07:57
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.5 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.178 | X: -0.024 Y: 0.440 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:95 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.172 | X: -0.033 Y: 0.469 Z: 10.161
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.152 | X: -0.055 Y: 0.435 Z: 10.142
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:91 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.133 | X: -0.031 Y: 0.440 Z: 10.123
+[STD] std=0.0369 n=50 stopped=0
+2026-10-23 22:07:58
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.6 mV
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:86 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.176 | X: -0.053 Y: 0.435 Z: 10.166
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.101 | X: -0.026 Y: 0.435 Z: 10.092
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:84 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.123 | X: -0.029 Y: 0.431 Z: 10.113
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.104 | X: -0.017 Y: 0.495 Z: 10.092
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:07:59
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.6 mV
+[Radar] OUT: HIGH | Moving: 49cm energy:53 | Still: 77cm energy:84 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.091 | X: -0.031 Y: 0.421 Z: 10.082
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.154 | X: -0.053 Y: 0.435 Z: 10.145
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.129 | X: -0.012 Y: 0.464 Z: 10.118
+[STD] std=0.0306 n=50 stopped=0
+2026-10-23 22:08:00
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.116 | X: -0.050 Y: 0.433 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 41cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.130 | X: -0.014 Y: 0.428 Z: 10.121
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.127 | X: 0.014 Y: 0.431 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.159 | X: -0.038 Y: 0.438 Z: 10.149
+[STD] std=0.0317 n=50 stopped=0
+2026-10-23 22:08:01
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.077 | X: -0.022 Y: 0.433 Z: 10.068
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.146 | X: -0.024 Y: 0.426 Z: 10.137
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.077 | X: -0.007 Y: 0.433 Z: 10.068
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.119 | X: 0.012 Y: 0.397 Z: 10.111
+[STD] std=0.0375 n=50 stopped=0
+2026-10-23 22:08:02
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1785.2 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.132 | X: -0.026 Y: 0.426 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.121 | X: -0.036 Y: 0.450 Z: 10.111
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.169 | X: -0.026 Y: 0.457 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[STD] std=0.0340 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.120 | X: -0.086 Y: 0.469 Z: 10.109
+2026-10-23 22:08:03
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.9 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.098 | X: -0.007 Y: 0.414 Z: 10.090
+[Radar] OUT: HIGH | Moving: none | Still: 49cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.089 | X: 0.002 Y: 0.421 Z: 10.080
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.144 | X: -0.022 Y: 0.416 Z: 10.135
+[Radar] OUT: HIGH | Moving: 46cm energy:56 | Still: 49cm energy:100 | Distance: 38cm
+[STD] std=0.0316 n=50 stopped=0
+2026-10-23 22:08:04
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.435 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1787.1 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.156 | X: -0.048 Y: 0.431 Z: 10.147
+[Radar] OUT: HIGH | Moving: 66cm energy:71 | Still: 80cm energy:100 | Distance: 42cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.173 | X: -0.038 Y: 0.431 Z: 10.164
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.131 | X: 0.014 Y: 0.402 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.185 | X: -0.045 Y: 0.428 Z: 10.176
+[STD] std=0.0337 n=50 stopped=0
+2026-10-23 22:08:05
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.158 | X: 0.014 Y: 0.474 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.181 | X: -0.019 Y: 0.455 Z: 10.171
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.155 | X: 0.000 Y: 0.400 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.172 | X: -0.029 Y: 0.419 Z: 10.164
+[STD] std=0.0307 n=50 stopped=0
+2026-10-23 22:08:06
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.6 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.109 | X: -0.053 Y: 0.447 Z: 10.099
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.157 | X: -0.062 Y: 0.440 Z: 10.147
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.164 | X: -0.024 Y: 0.447 Z: 10.154
+[Radar] OUT: HIGH | Moving: 83cm energy:78 | Still: 69cm energy:100 | Distance: 52cm
+[STD] std=0.0304 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.134 | X: -0.029 Y: 0.428 Z: 10.125
+2026-10-23 22:08:07
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.122 | X: -0.014 Y: 0.421 Z: 10.113
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.146 | X: -0.026 Y: 0.467 Z: 10.135
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.109 | X: -0.019 Y: 0.457 Z: 10.099
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 57cm
+[STD] std=0.0341 n=50 stopped=0
+2026-10-23 22:08:08
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.102 | X: -0.022 Y: 0.457 Z: 10.092
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.196 | X: -0.019 Y: 0.469 Z: 10.185
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.119 | X: -0.029 Y: 0.452 Z: 10.109
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.103 | X: -0.026 Y: 0.428 Z: 10.094
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 57cm
+[STD] std=0.0376 n=50 stopped=0
+2026-10-23 22:08:09
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.150 | X: -0.002 Y: 0.412 Z: 10.142
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.170 | X: -0.017 Y: 0.469 Z: 10.159
+[Radar] OUT: HIGH | Moving: 89cm energy:56 | Still: 75cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.142 | X: -0.036 Y: 0.440 Z: 10.133
+[Radar] OUT: HIGH | Moving: 68cm energy:66 | Still: 77cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.151 | X: -0.007 Y: 0.479 Z: 10.140
+[STD] std=0.0336 n=50 stopped=0
+2026-10-23 22:08:10
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.191 | X: -0.007 Y: 0.467 Z: 10.180
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.168 | X: -0.024 Y: 0.426 Z: 10.159
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.114 | X: 0.005 Y: 0.407 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 42cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.117 | X: 0.012 Y: 0.459 Z: 10.106
+[STD] std=0.0371 n=50 stopped=0
+2026-10-23 22:08:11
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.206 | X: -0.036 Y: 0.419 Z: 10.197
+[Radar] OUT: HIGH | Moving: 82cm energy:67 | Still: 52cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.120 | X: -0.024 Y: 0.428 Z: 10.111
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.122 | X: -0.002 Y: 0.423 Z: 10.113
+[Radar] OUT: HIGH | Moving: 124cm energy:96 | Still: 77cm energy:100 | Distance: 49cm
+[STD] std=0.0421 n=50 stopped=0
+2026-10-23 22:08:12
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.3 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.175 | X: -0.010 Y: 0.419 Z: 10.166
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.158 | X: -0.033 Y: 0.428 Z: 10.149
+[Radar] OUT: HIGH | Moving: 70cm energy:61 | Still: 75cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.155 | X: -0.019 Y: 0.459 Z: 10.145
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.232 | X: -0.036 Y: 0.467 Z: 10.221
+[Radar] OUT: HIGH | Moving: none | Still: 87cm energy:100 | Distance: 57cm
+[STD] std=0.0404 n=50 stopped=0
+2026-10-23 22:08:13
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.058 | X: -0.002 Y: 0.438 Z: 10.049
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.110 | X: 0.005 Y: 0.412 Z: 10.101
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 99cm energy:100 | Distance: 63cm
+[ 24201][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[STD] std=0.0374 n=50 stopped=0
+2026-10-23 22:08:14
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.159 | X: -0.007 Y: 0.447 Z: 10.149
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.135 | X: 0.019 Y: 0.486 Z: 10.123
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.151 | X: 0.033 Y: 0.469 Z: 10.140
+[Radar] OUT: HIGH | Moving: 66cm energy:67 | Still: 58cm energy:100 | Distance: 47cm
+[STD] std=0.0316 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.139 | X: -0.017 Y: 0.419 Z: 10.130
+2026-10-23 22:08:15
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.181 | X: -0.026 Y: 0.464 Z: 10.171
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.085 | X: -0.024 Y: 0.455 Z: 10.075
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.148 | X: 0.010 Y: 0.459 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 47cm
+[STD] std=0.0343 n=50 stopped=0
+2026-10-23 22:08:16
+[Turbidity] At G35 pin: 1.719 V | Sensor output: 3.437 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.0 mV
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.106 | X: -0.031 Y: 0.443 Z: 10.097
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.135 | X: 0.002 Y: 0.395 Z: 10.128
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 55cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.211 | X: -0.012 Y: 0.419 Z: 10.202
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.128 | X: -0.010 Y: 0.445 Z: 10.118
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 59cm energy:100 | Distance: 52cm
+[STD] std=0.0343 n=50 stopped=0
+2026-10-23 22:08:17
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.140 | X: -0.026 Y: 0.392 Z: 10.133
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.153 | X: -0.010 Y: 0.474 Z: 10.142
+[Radar] OUT: HIGH | Moving: 30cm energy:52 | Still: 84cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.110 | X: -0.036 Y: 0.419 Z: 10.101
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.142 | X: -0.026 Y: 0.428 Z: 10.133
+[STD] std=0.0324 n=50 stopped=0
+2026-10-23 22:08:18
+[Radar] OUT: HIGH | Moving: 98cm energy:64 | Still: 74cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.6 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.150 | X: -0.022 Y: 0.445 Z: 10.140
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.082 | X: -0.010 Y: 0.443 Z: 10.073
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.100 | X: -0.022 Y: 0.457 Z: 10.090
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.121 | X: -0.045 Y: 0.447 Z: 10.111
+[STD] std=0.0301 n=50 stopped=0
+2026-10-23 22:08:19
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.436 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.3 mV
+[Radar] OUT: HIGH | Moving: none | Still: 127cm energy:100 | Distance: 79cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.128 | X: 0.000 Y: 0.440 Z: 10.118
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.171 | X: -0.022 Y: 0.392 Z: 10.164
+[Radar] OUT: HIGH | Moving: none | Still: 85cm energy:100 | Distance: 80cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.149 | X: -0.024 Y: 0.435 Z: 10.140
+[STD] std=0.0297 n=50 stopped=0
+2026-10-23 22:08:20
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.137 | X: -0.038 Y: 0.481 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 101cm energy:100 | Distance: 76cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.122 | X: -0.019 Y: 0.409 Z: 10.113
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.129 | X: -0.002 Y: 0.414 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 101cm energy:100 | Distance: 79cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.158 | X: -0.029 Y: 0.428 Z: 10.149
+[STD] std=0.0279 n=50 stopped=0
+2026-10-23 22:08:21
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.147 | X: -0.026 Y: 0.445 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 69cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.142 | X: -0.050 Y: 0.438 Z: 10.133
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.190 | X: -0.012 Y: 0.433 Z: 10.180
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.146 | X: -0.005 Y: 0.414 Z: 10.137
+[STD] std=0.0354 n=50 stopped=0
+2026-10-23 22:08:22
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.436 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.3 mV
+[Radar] OUT: HIGH | Moving: none | Still: 87cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.148 | X: -0.055 Y: 0.412 Z: 10.140
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.134 | X: -0.012 Y: 0.414 Z: 10.125
+[Radar] OUT: HIGH | Moving: 75cm energy:59 | Still: 70cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.155 | X: -0.065 Y: 0.450 Z: 10.145
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.057 | X: 0.005 Y: 0.409 Z: 10.049
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:08:23
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1784.8 mV
+[Radar] OUT: HIGH | Moving: none | Still: 87cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.178 | X: -0.007 Y: 0.443 Z: 10.168
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.145 | X: -0.019 Y: 0.445 Z: 10.135
+[Radar] OUT: HIGH | Moving: none | Still: 87cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.138 | X: -0.043 Y: 0.404 Z: 10.130
+[STD] std=0.0326 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.183 | X: -0.014 Y: 0.397 Z: 10.176
+2026-10-23 22:08:24
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.7 mV
+[Radar] OUT: HIGH | Moving: none | Still: 87cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.112 | X: -0.036 Y: 0.414 Z: 10.104
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.102 | X: -0.055 Y: 0.445 Z: 10.092
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.120 | X: 0.029 Y: 0.435 Z: 10.111
+[STD] std=0.0337 n=50 stopped=0
+2026-10-23 22:08:25
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.94 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.143 | X: 0.031 Y: 0.457 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.159 | X: -0.005 Y: 0.435 Z: 10.149
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.137 | X: -0.031 Y: 0.481 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.144 | X: -0.012 Y: 0.421 Z: 10.135
+[STD] std=0.0338 n=50 stopped=0
+2026-10-23 22:08:26
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.7 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.200 | X: -0.017 Y: 0.462 Z: 10.190
+[Radar] OUT: HIGH | Moving: 86cm energy:71 | Still: 86cm energy:100 | Distance: 64cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.108 | X: -0.014 Y: 0.433 Z: 10.099
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.174 | X: 0.002 Y: 0.459 Z: 10.164
+[Radar] OUT: HIGH | Moving: none | Still: 86cm energy:100 | Distance: 64cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.138 | X: -0.014 Y: 0.400 Z: 10.130
+[STD] std=0.0346 n=50 stopped=0
+2026-10-23 22:08:27
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 65cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.157 | X: -0.002 Y: 0.447 Z: 10.147
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.134 | X: -0.029 Y: 0.423 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.123 | X: -0.022 Y: 0.392 Z: 10.116
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.134 | X: -0.019 Y: 0.426 Z: 10.125
+[STD] std=0.0300 n=50 stopped=0
+2026-10-23 22:08:28
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.6 mV
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 73cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.165 | X: 0.010 Y: 0.416 Z: 10.156
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.152 | X: -0.048 Y: 0.447 Z: 10.142
+[Radar] OUT: HIGH | Moving: 75cm energy:70 | Still: 79cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.146 | X: -0.043 Y: 0.407 Z: 10.137
+[STD] std=0.0367 n=50 stopped=0
+2026-10-23 22:08:29
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.165 | X: -0.038 Y: 0.464 Z: 10.154
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 59cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.193 | X: -0.019 Y: 0.400 Z: 10.185
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.097 | X: -0.033 Y: 0.452 Z: 10.087
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.087 | X: -0.007 Y: 0.435 Z: 10.078
+[STD] std=0.0373 n=50 stopped=0
+2026-10-23 22:08:30
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1788.2 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.142 | X: 0.002 Y: 0.440 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.161 | X: -0.038 Y: 0.440 Z: 10.152
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.147 | X: -0.038 Y: 0.440 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.185 | X: -0.048 Y: 0.438 Z: 10.176
+[STD] std=0.0360 n=50 stopped=0
+2026-10-23 22:08:31
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.4 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.143 | X: -0.048 Y: 0.452 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.154 | X: -0.012 Y: 0.443 Z: 10.145
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.184 | X: -0.036 Y: 0.414 Z: 10.176
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 54cm
+[STD] std=0.0341 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.214 | X: -0.050 Y: 0.435 Z: 10.204
+2026-10-23 22:08:32
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.436 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.121 | X: -0.045 Y: 0.450 Z: 10.111
+[Radar] OUT: HIGH | Moving: none | Still: 61cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.194 | X: -0.053 Y: 0.423 Z: 10.185
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.114 | X: -0.026 Y: 0.383 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 61cm energy:100 | Distance: 46cm
+[STD] std=0.0316 n=50 stopped=0
+2026-10-23 22:08:33
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.9 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.161 | X: -0.005 Y: 0.435 Z: 10.152
+[Radar] OUT: HIGH | Moving: none | Still: 61cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.185 | X: -0.062 Y: 0.433 Z: 10.176
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.108 | X: 0.024 Y: 0.426 Z: 10.099
+[Radar] OUT: HIGH | Moving: 86cm energy:100 | Still: 66cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.136 | X: -0.010 Y: 0.409 Z: 10.128
+[STD] std=0.0370 n=50 stopped=0
+2026-10-23 22:08:34
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.7 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.150 | X: -0.026 Y: 0.445 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 86cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.081 | X: -0.053 Y: 0.450 Z: 10.070
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.131 | X: -0.014 Y: 0.452 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 86cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.094 | X: -0.026 Y: 0.421 Z: 10.085
+[STD] std=0.0320 n=50 stopped=0
+2026-10-23 22:08:35
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.132 | X: -0.031 Y: 0.431 Z: 10.123
+[Radar] OUT: HIGH | Moving: 75cm energy:72 | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.158 | X: -0.038 Y: 0.467 Z: 10.147
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.140 | X: -0.014 Y: 0.455 Z: 10.130
+[Radar] OUT: HIGH | Moving: 84cm energy:65 | Still: 72cm energy:100 | Distance: 62cm
+[STD] std=0.0283 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.155 | X: -0.029 Y: 0.452 Z: 10.145
+2026-10-23 22:08:36
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1784.8 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.142 | X: -0.041 Y: 0.445 Z: 10.133
+[Radar] OUT: HIGH | Moving: 48cm energy:54 | Still: 61cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.140 | X: -0.002 Y: 0.440 Z: 10.130
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.202 | X: -0.033 Y: 0.433 Z: 10.192
+[Radar] OUT: HIGH | Moving: 74cm energy:83 | Still: 60cm energy:100 | Distance: 49cm
+[STD] std=0.0356 n=50 stopped=0
+2026-10-23 22:08:37
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.192 | X: -0.012 Y: 0.440 Z: 10.183
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.179 | X: -0.019 Y: 0.416 Z: 10.171
+[Radar] OUT: HIGH | Moving: 75cm energy:63 | Still: 83cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.115 | X: -0.012 Y: 0.426 Z: 10.106
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.088 | X: -0.002 Y: 0.469 Z: 10.078
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 55cm
+[STD] std=0.0311 n=50 stopped=0
+2026-10-23 22:08:38
+[Turbidity] At G35 pin: 1.718 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.3 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.195 | X: -0.017 Y: 0.438 Z: 10.185
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.186 | X: -0.041 Y: 0.457 Z: 10.176
+[Radar] OUT: HIGH | Moving: none | Still: 84cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.142 | X: -0.017 Y: 0.438 Z: 10.133
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.204 | X: -0.014 Y: 0.423 Z: 10.195
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 70cm energy:100 | Distance: 54cm
+[STD] std=0.0297 n=50 stopped=0
+2026-10-23 22:08:39
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.124 | X: -0.033 Y: 0.400 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.163 | X: -0.022 Y: 0.435 Z: 10.154
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.149 | X: -0.055 Y: 0.419 Z: 10.140
+[Radar] OUT: HIGH | Moving: 72cm energy:56 | Still: 115cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.160 | X: -0.048 Y: 0.462 Z: 10.149
+[STD] std=0.0295 n=50 stopped=0
+2026-10-23 22:08:40
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.435 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.170 | X: -0.041 Y: 0.416 Z: 10.161
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 68cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.356 | Magnitude: 10.163 | X: -0.033 Y: 0.416 Z: 10.154
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.075 | X: -0.041 Y: 0.433 Z: 10.066
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 73cm energy:100 | Distance: 54cm
+[STD] std=0.0300 n=50 stopped=0
+2026-10-23 22:08:41
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.434 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.151 | X: -0.007 Y: 0.474 Z: 10.140
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.105 | X: -0.010 Y: 0.414 Z: 10.097
+[Radar] OUT: HIGH | Moving: 142cm energy:85 | Still: 97cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.164 | X: -0.024 Y: 0.440 Z: 10.154
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.136 | X: -0.014 Y: 0.419 Z: 10.128
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 63cm energy:100 | Distance: 62cm
+[STD] std=0.0299 n=50 stopped=0
+2026-10-23 22:08:42
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.191 | X: -0.031 Y: 0.459 Z: 10.180
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.120 | X: -0.010 Y: 0.423 Z: 10.111
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 73cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.101 | X: -0.041 Y: 0.426 Z: 10.092
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.194 | X: -0.007 Y: 0.421 Z: 10.185
+[STD] std=0.0349 n=50 stopped=0
+2026-10-23 22:08:43
+[Radar] OUT: HIGH | Moving: 86cm energy:100 | Still: 30cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.9 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.086 | X: 0.024 Y: 0.402 Z: 10.078
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.115 | X: -0.026 Y: 0.421 Z: 10.106
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 71cm energy:100 | Distance: 55cm
+[ 54177][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.152 | X: -0.024 Y: 0.438 Z: 10.142
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.227 | X: -0.069 Y: 0.414 Z: 10.219
+[STD] std=0.0365 n=50 stopped=0
+2026-10-23 22:08:44
+[Radar] OUT: HIGH | Moving: 69cm energy:56 | Still: 69cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.144 | X: -0.031 Y: 0.435 Z: 10.135
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.119 | X: -0.065 Y: 0.404 Z: 10.111
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 67cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.168 | X: -0.043 Y: 0.423 Z: 10.159
+[STD] std=0.0365 n=50 stopped=0
+2026-10-23 22:08:45
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 30cm energy:100 | Distance: 40cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.3 mV
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.168 | X: -0.029 Y: 0.431 Z: 10.159
+[Vibration] Status: OK | RMS: 0.369 | Magnitude: 10.095 | X: -0.079 Y: 0.450 Z: 10.085
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 32cm
+[Vibration] Status: OK | RMS: 0.364 | Magnitude: 10.098 | X: -0.026 Y: 0.407 Z: 10.090
+[Vibration] Status: OK | RMS: 0.373 | Magnitude: 10.166 | X: -0.029 Y: 0.440 Z: 10.156
+[STD] std=0.1700 n=50 stopped=0
+2026-10-23 22:08:46
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 30cm energy:100 | Distance: 32cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.372 | Magnitude: 9.961 | X: -0.053 Y: 0.404 Z: 9.953
+[Vibration] Status: OK | RMS: 0.379 | Magnitude: 10.090 | X: -0.014 Y: 0.445 Z: 10.080
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 42cm energy:100 | Distance: 0cm
+[Vibration] Status: OK | RMS: 0.358 | Magnitude: 10.118 | X: -0.050 Y: 0.440 Z: 10.109
+[Vibration] Status: OK | RMS: 0.357 | Magnitude: 10.138 | X: -0.050 Y: 0.402 Z: 10.130
+[STD] std=0.0773 n=50 stopped=0
+2026-10-23 22:08:47
+[Radar] OUT: HIGH | Moving: 30cm energy:83 | Still: 86cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.2 mV
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.148 | X: -0.005 Y: 0.467 Z: 10.137
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.146 | X: 0.022 Y: 0.428 Z: 10.137
+[Radar] OUT: HIGH | Moving: 53cm energy:67 | Still: 53cm energy:100 | Distance: 40cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.121 | X: -0.017 Y: 0.452 Z: 10.111
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.157 | X: -0.019 Y: 0.447 Z: 10.147
+[STD] std=0.0363 n=50 stopped=0
+2026-10-23 22:08:48
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.5 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.133 | X: -0.060 Y: 0.435 Z: 10.123
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.198 | X: -0.010 Y: 0.414 Z: 10.190
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.206 | X: -0.036 Y: 0.426 Z: 10.197
+[STD] std=0.0375 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.164 | X: -0.048 Y: 0.445 Z: 10.154
+2026-10-23 22:08:49
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.144 | X: -0.041 Y: 0.488 Z: 10.133
+[TIMING] n=2308 mean_ms=25.798 min_ms=23.830 max_ms=590.573 std_ms=12.863 over_50ms=61 read_errors=0
+[WQ] heap=228508 minheap=209816
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.155 | X: -0.007 Y: 0.397 Z: 10.147
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.093 | X: -0.031 Y: 0.414 Z: 10.085
+[STD] std=0.0386 n=50 stopped=0
+2026-10-23 22:08:50
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.9 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.166 | X: -0.014 Y: 0.435 Z: 10.156
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.141 | X: -0.057 Y: 0.407 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.159 | X: -0.005 Y: 0.433 Z: 10.149
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.170 | X: -0.010 Y: 0.421 Z: 10.161
+[STD] std=0.0365 n=50 stopped=0
+2026-10-23 22:08:51
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.3 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.139 | X: -0.019 Y: 0.414 Z: 10.130
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.158 | X: -0.062 Y: 0.416 Z: 10.149
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.116 | X: 0.010 Y: 0.450 Z: 10.106
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.157 | X: -0.050 Y: 0.390 Z: 10.149
+[STD] std=0.0280 n=50 stopped=0
+2026-10-23 22:08:52
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 80cm energy:100 | Distance: 58cm
+[Turbidity] At G35 pin: 1.717 V | Sensor output: 3.433 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.173 | X: 0.014 Y: 0.438 Z: 10.164
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.133 | X: -0.005 Y: 0.445 Z: 10.123
+[Radar] OUT: HIGH | Moving: 110cm energy:59 | Still: 75cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.147 | X: -0.017 Y: 0.452 Z: 10.137
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.132 | X: 0.002 Y: 0.426 Z: 10.123
+[STD] std=0.0305 n=50 stopped=0
+2026-10-23 22:08:53
+[Radar] OUT: HIGH | Moving: 73cm energy:92 | Still: 60cm energy:100 | Distance: 60cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1784.9 mV
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.105 | X: -0.029 Y: 0.412 Z: 10.097
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.196 | X: -0.007 Y: 0.476 Z: 10.185
+[Radar] OUT: HIGH | Moving: none | Still: 82cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.177 | X: -0.036 Y: 0.412 Z: 10.168
+[STD] std=0.0430 n=50 stopped=0
+2026-10-23 22:08:54
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.158 | X: -0.024 Y: 0.431 Z: 10.149
+[Radar] OUT: HIGH | Moving: 58cm energy:75 | Still: 78cm energy:100 | Distance: 58cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.128 | X: -0.019 Y: 0.452 Z: 10.118
+[Radar] OUT: HIGH | Moving: 118cm energy:43 | Still: 42cm energy:100 | Distance: 67cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.116 | X: 0.041 Y: 0.445 Z: 10.106
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.110 | X: -0.012 Y: 0.469 Z: 10.099
+[STD] std=0.0391 n=50 stopped=0
+2026-10-23 22:08:55
+[Radar] OUT: HIGH | Moving: 88cm energy:91 | Still: 83cm energy:100 | Distance: 75cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.113 | X: -0.029 Y: 0.431 Z: 10.104
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.189 | X: 0.002 Y: 0.423 Z: 10.180
+[Radar] OUT: HIGH | Moving: none | Still: 133cm energy:100 | Distance: 81cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.068 | X: -0.041 Y: 0.435 Z: 10.058
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.098 | X: -0.014 Y: 0.426 Z: 10.090
+[STD] std=0.0339 n=50 stopped=0
+2026-10-23 22:08:56
+[Radar] OUT: HIGH | Moving: 77cm energy:59 | Still: 79cm energy:100 | Distance: 68cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1787.5 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.132 | X: -0.024 Y: 0.428 Z: 10.123
+[CAL] stored turbidity baseline mean=3.432 V spread=0.010 V
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.126 | X: -0.002 Y: 0.445 Z: 10.116
+[Radar] OUT: HIGH | Moving: 73cm energy:97 | Still: 97cm energy:100 | Distance: 65cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.119 | X: -0.007 Y: 0.455 Z: 10.109
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.173 | X: -0.005 Y: 0.433 Z: 10.164
+[STD] std=0.0384 n=50 stopped=0
+2026-10-23 22:08:57
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.2 mV
+[WQ] turbidity status: CLEAR (0.0% below baseline)
+[Radar] OUT: HIGH | Moving: 59cm energy:80 | Still: 128cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.157 | X: -0.036 Y: 0.447 Z: 10.147
+[Vibration] Status: OK | RMS: 0.355 | Magnitude: 10.185 | X: 0.002 Y: 0.426 Z: 10.176
+[Radar] OUT: HIGH | Moving: 119cm energy:56 | Still: 69cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.207 | X: -0.069 Y: 0.433 Z: 10.197
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.083 | X: 0.026 Y: 0.455 Z: 10.073
+[STD] std=0.0359 n=50 stopped=0
+2026-10-23 22:08:58
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.9 mV
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 67cm energy:100 | Distance: 70cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.156 | X: -0.022 Y: 0.431 Z: 10.147
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.189 | X: -0.026 Y: 0.407 Z: 10.180
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 69cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.129 | X: -0.010 Y: 0.419 Z: 10.121
+[STD] std=0.0392 n=50 stopped=0
+2026-10-23 22:08:59
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.5 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.184 | X: -0.060 Y: 0.505 Z: 10.171
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 74cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.135 | X: -0.026 Y: 0.431 Z: 10.125
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.142 | X: -0.055 Y: 0.383 Z: 10.135
+[Radar] OUT: HIGH | Moving: none | Still: 117cm energy:100 | Distance: 77cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.179 | X: -0.005 Y: 0.455 Z: 10.168
+[STD] std=0.0343 n=50 stopped=0
+2026-10-23 22:09:01
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.189 | X: -0.057 Y: 0.426 Z: 10.180
+[Radar] OUT: HIGH | Moving: 73cm energy:95 | Still: 88cm energy:100 | Distance: 78cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.153 | X: 0.007 Y: 0.419 Z: 10.145
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.171 | X: -0.062 Y: 0.431 Z: 10.161
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.176 | X: 0.014 Y: 0.459 Z: 10.166
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:09:02
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1788.2 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.242 | X: 0.026 Y: 0.428 Z: 10.233
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 81cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.224 | X: 0.019 Y: 0.447 Z: 10.214
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.132 | X: -0.055 Y: 0.428 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.070 | X: -0.022 Y: 0.440 Z: 10.061
+[STD] std=0.0440 n=50 stopped=0
+2026-10-23 22:09:03
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.8 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 79cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.132 | X: -0.065 Y: 0.476 Z: 10.121
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.103 | X: 0.043 Y: 0.368 Z: 10.097
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.123 | X: -0.012 Y: 0.388 Z: 10.116
+[STD] std=0.0359 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.098 | X: -0.007 Y: 0.421 Z: 10.090
+2026-10-23 22:09:04
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1786.3 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 66cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.101 | X: -0.017 Y: 0.433 Z: 10.092
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.089 | X: -0.005 Y: 0.438 Z: 10.080
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 74cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.111 | X: -0.010 Y: 0.428 Z: 10.101
+[STD] std=0.0432 n=50 stopped=0
+2026-10-23 22:09:05
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.2 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.100 | X: -0.014 Y: 0.452 Z: 10.090
+[Radar] OUT: HIGH | Moving: 75cm energy:53 | Still: 82cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.169 | X: -0.005 Y: 0.450 Z: 10.159
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.097 | X: -0.026 Y: 0.450 Z: 10.087
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 65cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.230 | X: -0.014 Y: 0.426 Z: 10.221
+[STD] std=0.0372 n=50 stopped=0
+2026-10-23 22:09:06
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.124 | X: -0.022 Y: 0.464 Z: 10.113
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 77cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.085 | X: -0.019 Y: 0.388 Z: 10.078
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.220 | X: 0.005 Y: 0.462 Z: 10.209
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 77cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.102 | X: -0.012 Y: 0.443 Z: 10.092
+[STD] std=0.0369 n=50 stopped=0
+2026-10-23 22:09:07
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.3 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.180 | X: -0.033 Y: 0.479 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 67cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.187 | X: -0.026 Y: 0.428 Z: 10.178
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.198 | X: -0.005 Y: 0.450 Z: 10.188
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 82cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.175 | X: -0.005 Y: 0.435 Z: 10.166
+[STD] std=0.0369 n=50 stopped=0
+2026-10-23 22:09:08
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.182 | X: 0.000 Y: 0.426 Z: 10.173
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.163 | X: -0.005 Y: 0.419 Z: 10.154
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.151 | X: -0.002 Y: 0.479 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 49cm
+[STD] std=0.0285 n=50 stopped=0
+2026-10-23 22:09:09
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.2 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.126 | X: -0.043 Y: 0.443 Z: 10.116
+[Radar] OUT: HIGH | Moving: 68cm energy:68 | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.111 | X: -0.029 Y: 0.433 Z: 10.101
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.175 | X: -0.017 Y: 0.416 Z: 10.166
+[Radar] OUT: HIGH | Moving: none | Still: 68cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.151 | X: -0.038 Y: 0.428 Z: 10.142
+[STD] std=0.0296 n=50 stopped=0
+2026-10-23 22:09:10
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.4 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.104 | X: 0.017 Y: 0.435 Z: 10.094
+[Radar] OUT: HIGH | Moving: none | Still: 56cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.166 | X: -0.043 Y: 0.438 Z: 10.156
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.083 | X: -0.031 Y: 0.443 Z: 10.073
+[Radar] OUT: HIGH | Moving: 74cm energy:71 | Still: 66cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.111 | X: -0.017 Y: 0.450 Z: 10.101
+[STD] std=0.0285 n=50 stopped=0
+2026-10-23 22:09:11
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.1 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.157 | X: -0.029 Y: 0.450 Z: 10.147
+[Radar] OUT: HIGH | Moving: 73cm energy:88 | Still: 74cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.215 | X: -0.043 Y: 0.409 Z: 10.207
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.163 | X: -0.050 Y: 0.431 Z: 10.154
+[Radar] OUT: HIGH | Moving: 53cm energy:78 | Still: 75cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.095 | X: -0.010 Y: 0.452 Z: 10.085
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:09:12
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1787.1 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.144 | X: -0.012 Y: 0.426 Z: 10.135
+[Radar] OUT: HIGH | Moving: 46cm energy:80 | Still: 53cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.150 | X: -0.050 Y: 0.457 Z: 10.140
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.126 | X: -0.038 Y: 0.395 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 47cm
+[STD] std=0.0349 n=50 stopped=0
+2026-10-23 22:09:13
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1787.9 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.145 | X: -0.031 Y: 0.457 Z: 10.135
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.145 | X: -0.022 Y: 0.455 Z: 10.135
+[Radar] OUT: HIGH | Moving: 77cm energy:81 | Still: 69cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.120 | X: -0.031 Y: 0.471 Z: 10.109
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.139 | X: -0.024 Y: 0.428 Z: 10.130
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 77cm energy:100 | Distance: 49cm
+[STD] std=0.0311 n=50 stopped=0
+2026-10-23 22:09:14
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.8 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.169 | X: -0.002 Y: 0.462 Z: 10.159
+[ 84192][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.082 | X: -0.036 Y: 0.435 Z: 10.073
+[Radar] OUT: HIGH | Moving: none | Still: 61cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.151 | X: -0.019 Y: 0.433 Z: 10.142
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.131 | X: -0.019 Y: 0.450 Z: 10.121
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 63cm energy:100 | Distance: 50cm
+[STD] std=0.0381 n=50 stopped=0
+2026-10-23 22:09:15
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.152 | X: -0.026 Y: 0.457 Z: 10.142
+[Radar] OUT: HIGH | Moving: 88cm energy:100 | Still: 67cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.085 | X: -0.045 Y: 0.490 Z: 10.073
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.127 | X: 0.005 Y: 0.433 Z: 10.118
+[Radar] OUT: HIGH | Moving: 93cm energy:55 | Still: 146cm energy:100 | Distance: 72cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.125 | X: -0.010 Y: 0.435 Z: 10.116
+[STD] std=0.0335 n=50 stopped=0
+2026-10-23 22:09:16
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.2 mV
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.178 | X: -0.031 Y: 0.447 Z: 10.168
+[Radar] OUT: HIGH | Moving: 81cm energy:71 | Still: 75cm energy:100 | Distance: 67cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.183 | X: -0.048 Y: 0.447 Z: 10.173
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.185 | X: -0.029 Y: 0.443 Z: 10.176
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 86cm energy:100 | Distance: 62cm
+[STD] std=0.0385 n=50 stopped=0
+2026-10-23 22:09:17
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.071 | X: -0.019 Y: 0.447 Z: 10.061
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.151 | X: -0.045 Y: 0.414 Z: 10.142
+[Radar] OUT: HIGH | Moving: 60cm energy:78 | Still: 30cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.327 | Magnitude: 10.095 | X: 0.026 Y: 0.409 Z: 10.087
+[Vibration] Status: OK | RMS: 0.325 | Magnitude: 10.087 | X: 0.014 Y: 0.443 Z: 10.078
+[Radar] OUT: HIGH | Moving: none | Still: 39cm energy:100 | Distance: 35cm
+[STD] std=0.0393 n=50 stopped=0
+2026-10-23 22:09:18
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.9 mV
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.103 | X: -0.010 Y: 0.423 Z: 10.094
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.115 | X: -0.048 Y: 0.409 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 150cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.106 | X: -0.050 Y: 0.440 Z: 10.097
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.143 | X: -0.024 Y: 0.462 Z: 10.133
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 79cm
+[STD] std=0.0356 n=50 stopped=0
+2026-10-23 22:09:19
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.179 | X: 0.005 Y: 0.457 Z: 10.168
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.063 | X: -0.002 Y: 0.435 Z: 10.054
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.101 | X: -0.010 Y: 0.421 Z: 10.092
+[STD] std=0.0364 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.086 | X: -0.014 Y: 0.471 Z: 10.075
+2026-10-23 22:09:20
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.5 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.140 | X: -0.014 Y: 0.457 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 0cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.124 | X: -0.026 Y: 0.414 Z: 10.116
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.146 | X: -0.045 Y: 0.426 Z: 10.137
+[STD] std=0.0338 n=50 stopped=0
+2026-10-23 22:09:21
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 0cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.3 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.170 | X: -0.007 Y: 0.416 Z: 10.161
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.228 | X: 0.000 Y: 0.440 Z: 10.219
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.132 | X: -0.002 Y: 0.433 Z: 10.123
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.134 | X: -0.010 Y: 0.426 Z: 10.125
+[STD] std=0.0310 n=50 stopped=0
+2026-10-23 22:09:22
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.87 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.118 | X: -0.038 Y: 0.428 Z: 10.109
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.146 | X: -0.065 Y: 0.423 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.187 | X: -0.036 Y: 0.426 Z: 10.178
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.166 | X: -0.043 Y: 0.433 Z: 10.156
+[STD] std=0.0286 n=50 stopped=0
+2026-10-23 22:09:23
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.6 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.192 | X: 0.007 Y: 0.440 Z: 10.183
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.168 | X: 0.007 Y: 0.419 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.197 | X: -0.019 Y: 0.431 Z: 10.188
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.107 | X: -0.012 Y: 0.447 Z: 10.097
+[STD] std=0.0312 n=50 stopped=0
+2026-10-23 22:09:24
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.2 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.132 | X: 0.005 Y: 0.423 Z: 10.123
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.159 | X: 0.002 Y: 0.447 Z: 10.149
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.152 | X: -0.036 Y: 0.450 Z: 10.142
+[STD] std=0.0300 n=50 stopped=0
+2026-10-23 22:09:25
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.111 | X: -0.007 Y: 0.450 Z: 10.101
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.3 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.162 | X: -0.053 Y: 0.450 Z: 10.152
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.189 | X: -0.069 Y: 0.462 Z: 10.178
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.153 | X: 0.000 Y: 0.414 Z: 10.145
+[STD] std=0.0319 n=50 stopped=0
+2026-10-23 22:09:26
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.179 | X: -0.043 Y: 0.452 Z: 10.168
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.124 | X: -0.017 Y: 0.452 Z: 10.113
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.156 | X: 0.002 Y: 0.435 Z: 10.147
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.141 | X: 0.000 Y: 0.416 Z: 10.133
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:09:27
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 63cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.4 mV
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.121 | X: -0.060 Y: 0.388 Z: 10.113
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.112 | X: -0.022 Y: 0.452 Z: 10.101
+[Radar] OUT: HIGH | Moving: 133cm energy:52 | Still: 80cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.202 | X: -0.026 Y: 0.435 Z: 10.192
+[Vibration] Status: OK | RMS: 0.356 | Magnitude: 10.165 | X: -0.031 Y: 0.419 Z: 10.156
+[STD] std=0.0323 n=50 stopped=0
+2026-10-23 22:09:28
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 99cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.4 mV
+[Vibration] Status: OK | RMS: 0.356 | Magnitude: 10.197 | X: -0.014 Y: 0.447 Z: 10.188
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.142 | X: -0.036 Y: 0.443 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 118cm
+[Vibration] Status: OK | RMS: 0.355 | Magnitude: 10.114 | X: -0.014 Y: 0.450 Z: 10.104
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.174 | X: -0.005 Y: 0.407 Z: 10.166
+[STD] std=0.0371 n=50 stopped=0
+2026-10-23 22:09:29
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 129cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.168 | X: -0.026 Y: 0.431 Z: 10.159
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.149 | X: -0.033 Y: 0.476 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 134cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.083 | X: -0.038 Y: 0.450 Z: 10.073
+[STD] std=0.0360 n=50 stopped=0
+2026-10-23 22:09:30
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.162 | X: -0.065 Y: 0.404 Z: 10.154
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 135cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.7 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.104 | X: -0.065 Y: 0.428 Z: 10.094
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 135cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.170 | X: 0.007 Y: 0.423 Z: 10.161
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.142 | X: -0.014 Y: 0.435 Z: 10.133
+[STD] std=0.0385 n=50 stopped=0
+2026-10-23 22:09:31
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:100 | Distance: 135cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1783.9 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.116 | X: -0.012 Y: 0.447 Z: 10.106
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.139 | X: -0.031 Y: 0.426 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:97 | Distance: 135cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.239 | X: -0.022 Y: 0.467 Z: 10.228
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.241 | X: -0.002 Y: 0.452 Z: 10.231
+[STD] std=0.0417 n=50 stopped=0
+2026-10-23 22:09:32
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:94 | Distance: 135cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.2 mV
+[Vibration] Status: OK | RMS: 0.356 | Magnitude: 10.178 | X: -0.019 Y: 0.433 Z: 10.168
+[Vibration] Status: OK | RMS: 0.357 | Magnitude: 10.149 | X: -0.036 Y: 0.438 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 154cm energy:98 | Distance: 135cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.109 | X: -0.033 Y: 0.435 Z: 10.099
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.173 | X: 0.002 Y: 0.445 Z: 10.164
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:09:33
+[Radar] OUT: HIGH | Moving: none | Still: 190cm energy:100 | Distance: 143cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.423 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1784.9 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.158 | X: 0.002 Y: 0.426 Z: 10.149
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.156 | X: -0.005 Y: 0.435 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 119cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.085 | X: -0.005 Y: 0.438 Z: 10.075
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.153 | X: -0.019 Y: 0.402 Z: 10.145
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:09:34
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 30cm energy:100 | Distance: 73cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1784.8 mV
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.115 | X: 0.002 Y: 0.423 Z: 10.106
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.141 | X: 0.026 Y: 0.464 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 147cm energy:100 | Distance: 78cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.127 | X: -0.019 Y: 0.423 Z: 10.118
+[STD] std=0.0340 n=50 stopped=0
+2026-10-23 22:09:35
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.136 | X: -0.041 Y: 0.452 Z: 10.125
+[Radar] OUT: HIGH | Moving: 86cm energy:57 | Still: 130cm energy:100 | Distance: 97cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.9 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.150 | X: 0.005 Y: 0.464 Z: 10.140
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.083 | X: 0.000 Y: 0.459 Z: 10.073
+[Radar] OUT: HIGH | Moving: none | Still: 86cm energy:100 | Distance: 82cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.099 | X: -0.036 Y: 0.443 Z: 10.090
+[STD] std=0.0362 n=50 stopped=0
+2026-10-23 22:09:36
+[Radar] OUT: HIGH | Moving: none | Still: 113cm energy:100 | Distance: 88cm
+[Turbidity] At G35 pin: 1.709 V | Sensor output: 3.419 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.6 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.179 | X: -0.017 Y: 0.455 Z: 10.168
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.158 | X: -0.060 Y: 0.421 Z: 10.149
+[Radar] OUT: HIGH | Moving: 30cm energy:56 | Still: 30cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.138 | X: -0.045 Y: 0.443 Z: 10.128
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.215 | X: -0.019 Y: 0.409 Z: 10.207
+[STD] std=0.0363 n=50 stopped=0
+2026-10-23 22:09:37
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.2 mV
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.138 | X: -0.041 Y: 0.452 Z: 10.128
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.131 | X: -0.007 Y: 0.464 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.070 | X: -0.024 Y: 0.433 Z: 10.061
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.106 | X: -0.010 Y: 0.440 Z: 10.097
+[STD] std=0.0392 n=50 stopped=0
+2026-10-23 22:09:38
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.3 mV
+[Radar] OUT: HIGH | Moving: none | Still: 83cm energy:100 | Distance: 86cm
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.095 | X: -0.036 Y: 0.400 Z: 10.087
+[Vibration] Status: OK | RMS: 0.327 | Magnitude: 10.134 | X: -0.029 Y: 0.419 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 73cm
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.189 | X: 0.007 Y: 0.416 Z: 10.180
+[STD] std=0.0309 n=50 stopped=0
+2026-10-23 22:09:39
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.152 | X: -0.033 Y: 0.445 Z: 10.142
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.423 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.2 mV
+[Radar] OUT: HIGH | Moving: 30cm energy:61 | Still: 38cm energy:100 | Distance: 70cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.158 | X: -0.017 Y: 0.431 Z: 10.149
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.173 | X: -0.017 Y: 0.433 Z: 10.164
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.137 | X: -0.057 Y: 0.419 Z: 10.128
+[STD] std=0.0312 n=50 stopped=0
+2026-10-23 22:09:40
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.5 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.154 | X: -0.010 Y: 0.435 Z: 10.145
+[Radar] OUT: HIGH | Moving: 30cm energy:96 | Still: 66cm energy:100 | Distance: 81cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.136 | X: 0.012 Y: 0.414 Z: 10.128
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.180 | X: -0.019 Y: 0.435 Z: 10.171
+[Radar] OUT: HIGH | Moving: none | Still: 30cm energy:100 | Distance: 73cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.118 | X: -0.038 Y: 0.438 Z: 10.109
+[STD] std=0.0310 n=50 stopped=0
+2026-10-23 22:09:41
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1783.8 mV
+[Radar] OUT: HIGH | Moving: 63cm energy:100 | Still: 79cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.107 | X: -0.024 Y: 0.447 Z: 10.097
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.100 | X: -0.024 Y: 0.414 Z: 10.092
+[Radar] OUT: HIGH | Moving: 30cm energy:74 | Still: 67cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.111 | X: -0.026 Y: 0.431 Z: 10.101
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.176 | X: -0.017 Y: 0.438 Z: 10.166
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:09:42
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.420 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.7 mV
+[Radar] OUT: HIGH | Moving: 69cm energy:91 | Still: 67cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.108 | X: 0.012 Y: 0.428 Z: 10.099
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.108 | X: -0.014 Y: 0.435 Z: 10.099
+[Radar] OUT: HIGH | Moving: 83cm energy:61 | Still: 123cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.151 | X: 0.029 Y: 0.428 Z: 10.142
+[STD] std=0.0305 n=50 stopped=0
+2026-10-23 22:09:43
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.138 | X: -0.024 Y: 0.457 Z: 10.128
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1784.0 mV
+[Radar] OUT: HIGH | Moving: 150cm energy:42 | Still: 135cm energy:100 | Distance: 85cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.156 | X: -0.045 Y: 0.423 Z: 10.147
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.048 | X: -0.065 Y: 0.467 Z: 10.037
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 90cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.150 | X: -0.043 Y: 0.459 Z: 10.140
+[114184][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[STD] std=0.0340 n=50 stopped=0
+2026-10-23 22:09:44
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.8 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.179 | X: -0.007 Y: 0.416 Z: 10.171
+[Radar] OUT: HIGH | Moving: none | Still: 84cm energy:100 | Distance: 76cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.099 | X: -0.022 Y: 0.428 Z: 10.090
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.117 | X: -0.005 Y: 0.421 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 84cm energy:100 | Distance: 70cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.159 | X: -0.012 Y: 0.435 Z: 10.149
+[STD] std=0.0364 n=50 stopped=0
+2026-10-23 22:09:45
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.0 mV
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.187 | X: -0.033 Y: 0.426 Z: 10.178
+[Radar] OUT: HIGH | Moving: 136cm energy:68 | Still: 137cm energy:100 | Distance: 75cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.128 | X: -0.043 Y: 0.450 Z: 10.118
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.046 | X: -0.007 Y: 0.433 Z: 10.037
+[Radar] OUT: HIGH | Moving: none | Still: 120cm energy:100 | Distance: 95cm
+[STD] std=0.0334 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.121 | X: -0.029 Y: 0.440 Z: 10.111
+2026-10-23 22:09:46
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.423 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.6 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.156 | X: -0.055 Y: 0.421 Z: 10.147
+[Radar] OUT: HIGH | Moving: 121cm energy:63 | Still: 70cm energy:100 | Distance: 93cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.139 | X: -0.026 Y: 0.471 Z: 10.128
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.121 | X: -0.002 Y: 0.385 Z: 10.113
+[Radar] OUT: HIGH | Moving: 76cm energy:85 | Still: 60cm energy:100 | Distance: 78cm
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:09:47
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.138 | X: -0.019 Y: 0.407 Z: 10.130
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.421 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1787.9 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.140 | X: 0.005 Y: 0.435 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.187 | X: -0.029 Y: 0.433 Z: 10.178
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.132 | X: -0.048 Y: 0.426 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 58cm
+[STD] std=0.0336 n=50 stopped=0
+2026-10-23 22:09:48
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1786.1 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.176 | X: -0.005 Y: 0.404 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 85cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.142 | X: -0.010 Y: 0.445 Z: 10.133
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.116 | X: -0.045 Y: 0.431 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 85cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.330 | Magnitude: 10.101 | X: -0.024 Y: 0.433 Z: 10.092
+[STD] std=0.0325 n=50 stopped=0
+2026-10-23 22:09:49
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.422 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.4 mV
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.121 | X: -0.014 Y: 0.440 Z: 10.111
+[Radar] OUT: HIGH | Moving: 162cm energy:45 | Still: 85cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.101 | X: -0.010 Y: 0.433 Z: 10.092
+[TIMING] n=2337 mean_ms=25.680 min_ms=23.784 max_ms=71.312 std_ms=5.316 over_50ms=62 read_errors=0
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.140 | X: -0.031 Y: 0.380 Z: 10.133
+[WQ] heap=228604 minheap=209816
+[Radar] OUT: HIGH | Moving: 80cm energy:69 | Still: 162cm energy:100 | Distance: 103cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.138 | X: -0.014 Y: 0.447 Z: 10.128
+[STD] std=0.0275 n=50 stopped=0
+2026-10-23 22:09:50
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.5 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.168 | X: -0.029 Y: 0.423 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 85cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.117 | X: -0.033 Y: 0.414 Z: 10.109
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.126 | X: -0.019 Y: 0.407 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 76cm
+[STD] std=0.0366 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.127 | X: 0.000 Y: 0.421 Z: 10.118
+2026-10-23 22:09:51
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1784.2 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.118 | X: -0.050 Y: 0.426 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.223 | X: -0.055 Y: 0.421 Z: 10.214
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.127 | X: -0.024 Y: 0.431 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 67cm
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:09:52
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.3 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.129 | X: -0.014 Y: 0.416 Z: 10.121
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.187 | X: -0.024 Y: 0.423 Z: 10.178
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.097 | X: -0.024 Y: 0.383 Z: 10.090
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.116 | X: -0.031 Y: 0.435 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[STD] std=0.0322 n=50 stopped=0
+2026-10-23 22:09:53
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1787.0 mV
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.095 | X: -0.036 Y: 0.407 Z: 10.087
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.136 | X: -0.048 Y: 0.459 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.330 | Magnitude: 10.150 | X: -0.002 Y: 0.445 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.137 | X: -0.031 Y: 0.433 Z: 10.128
+[STD] std=0.0331 n=50 stopped=0
+2026-10-23 22:09:54
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.1 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.100 | X: -0.022 Y: 0.452 Z: 10.090
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.157 | X: -0.017 Y: 0.455 Z: 10.147
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.131 | X: -0.036 Y: 0.447 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[STD] std=0.0315 n=50 stopped=0
+2026-10-23 22:09:55
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.168 | X: -0.005 Y: 0.421 Z: 10.159
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.1 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.133 | X: -0.024 Y: 0.397 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.147 | X: 0.007 Y: 0.488 Z: 10.135
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.163 | X: -0.019 Y: 0.433 Z: 10.154
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[STD] std=0.0357 n=50 stopped=0
+2026-10-23 22:09:56
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1783.5 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.158 | X: -0.012 Y: 0.419 Z: 10.149
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.139 | X: 0.022 Y: 0.433 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.087 | X: -0.029 Y: 0.443 Z: 10.078
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.148 | X: -0.024 Y: 0.471 Z: 10.137
+[STD] std=0.0361 n=50 stopped=0
+2026-10-23 22:09:57
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1785.3 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.138 | X: -0.033 Y: 0.407 Z: 10.130
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.207 | X: -0.024 Y: 0.447 Z: 10.197
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.138 | X: -0.033 Y: 0.455 Z: 10.128
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.063 | X: -0.019 Y: 0.423 Z: 10.054
+[STD] std=0.0333 n=50 stopped=0
+2026-10-23 22:09:58
+[Radar] OUT: HIGH | Moving: none | Still: 84cm energy:100 | Distance: 75cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1785.4 mV
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.185 | X: -0.031 Y: 0.435 Z: 10.176
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.132 | X: -0.031 Y: 0.433 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 74cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.163 | X: 0.024 Y: 0.423 Z: 10.154
+[STD] std=0.0327 n=50 stopped=0
+2026-10-23 22:09:59
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.146 | X: -0.036 Y: 0.407 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1784.9 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.168 | X: -0.019 Y: 0.440 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.166 | X: -0.045 Y: 0.438 Z: 10.156
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.158 | X: -0.017 Y: 0.426 Z: 10.149
+[STD] std=0.0279 n=50 stopped=0
+2026-10-23 22:10:00
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1785.1 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.213 | X: 0.031 Y: 0.471 Z: 10.202
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.088 | X: -0.026 Y: 0.414 Z: 10.080
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.180 | X: -0.045 Y: 0.431 Z: 10.171
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.135 | X: 0.007 Y: 0.435 Z: 10.125
+[STD] std=0.0306 n=50 stopped=0
+2026-10-23 22:10:01
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1785.6 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.139 | X: -0.026 Y: 0.433 Z: 10.130
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.173 | X: 0.007 Y: 0.433 Z: 10.164
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.163 | X: -0.031 Y: 0.435 Z: 10.154
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.132 | X: -0.017 Y: 0.431 Z: 10.123
+[STD] std=0.0341 n=50 stopped=0
+2026-10-23 22:10:02
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 79cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 1785.4 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.092 | X: -0.029 Y: 0.435 Z: 10.082
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.120 | X: -0.017 Y: 0.474 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 86cm energy:100 | Distance: 74cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.140 | X: 0.012 Y: 0.447 Z: 10.130
+[STD] std=0.0334 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.190 | X: -0.017 Y: 0.433 Z: 10.180
+2026-10-23 22:10:03
+[Radar] OUT: HIGH | Moving: none | Still: 136cm energy:100 | Distance: 100cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1785.1 mV
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.106 | X: -0.019 Y: 0.426 Z: 10.097
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.034 | X: -0.012 Y: 0.419 Z: 10.025
+[Radar] OUT: HIGH | Moving: none | Still: 213cm energy:100 | Distance: 115cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.167 | X: -0.010 Y: 0.412 Z: 10.159
+[STD] std=0.0394 n=50 stopped=0
+2026-10-23 22:10:04
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.131 | X: -0.026 Y: 0.400 Z: 10.123
+[Radar] OUT: HIGH | Moving: 150cm energy:47 | Still: 53cm energy:100 | Distance: 109cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 1782.2 mV
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.162 | X: -0.005 Y: 0.464 Z: 10.152
+[Radar] OUT: HIGH | Moving: 114cm energy:78 | Still: 74cm energy:100 | Distance: 83cm
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.137 | X: -0.014 Y: 0.476 Z: 10.125
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.217 | X: -0.043 Y: 0.452 Z: 10.207
+[STD] std=0.0360 n=50 stopped=0
+2026-10-23 22:10:05
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 77cm energy:100 | Distance: 73cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2910.7 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.139 | X: -0.029 Y: 0.412 Z: 10.130
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.154 | X: -0.041 Y: 0.435 Z: 10.145
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 71cm energy:100 | Distance: 67cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.163 | X: -0.010 Y: 0.486 Z: 10.152
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.150 | X: 0.002 Y: 0.445 Z: 10.140
+[STD] std=0.0384 n=50 stopped=0
+2026-10-23 22:10:06
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 77cm energy:100 | Distance: 61cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2767.7 mV
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.095 | X: -0.041 Y: 0.407 Z: 10.087
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.138 | X: -0.014 Y: 0.407 Z: 10.130
+[Radar] OUT: HIGH | Moving: 89cm energy:87 | Still: 67cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.100 | X: 0.005 Y: 0.395 Z: 10.092
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.156 | X: -0.043 Y: 0.431 Z: 10.147
+[STD] std=0.0350 n=50 stopped=0
+2026-10-23 22:10:07
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 67cm energy:100 | Distance: 57cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[WQ] ph: unavailable (above_valid_range)
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.144 | X: -0.012 Y: 0.416 Z: 10.135
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.179 | X: -0.057 Y: 0.414 Z: 10.171
+[Radar] OUT: HIGH | Moving: 75cm energy:99 | Still: 67cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.204 | X: -0.024 Y: 0.443 Z: 10.195
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.195 | X: 0.002 Y: 0.438 Z: 10.185
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:10:08
+[Radar] OUT: HIGH | Moving: none | Still: 66cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.124 | X: -0.024 Y: 0.409 Z: 10.116
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.147 | X: 0.000 Y: 0.447 Z: 10.137
+[Radar] OUT: HIGH | Moving: 80cm energy:67 | Still: 63cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.104 | X: -0.014 Y: 0.452 Z: 10.094
+[STD] std=0.0357 n=50 stopped=0
+2026-10-23 22:10:09
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.185 | X: 0.024 Y: 0.438 Z: 10.176
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.7 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.124 | X: -0.060 Y: 0.412 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.152 | X: -0.022 Y: 0.447 Z: 10.142
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.139 | X: -0.012 Y: 0.474 Z: 10.128
+[STD] std=0.0273 n=50 stopped=0
+2026-10-23 22:10:10
+[Radar] OUT: HIGH | Moving: 65cm energy:60 | Still: 77cm energy:100 | Distance: 55cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.101 | X: -0.014 Y: 0.433 Z: 10.092
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.141 | X: -0.012 Y: 0.462 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 65cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.179 | X: -0.026 Y: 0.471 Z: 10.168
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.110 | X: -0.017 Y: 0.469 Z: 10.099
+[STD] std=0.0313 n=50 stopped=0
+2026-10-23 22:10:11
+[Radar] OUT: HIGH | Moving: 69cm energy:55 | Still: 68cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.81 C
+[pH] Board output at G34: 3057.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.129 | X: 0.026 Y: 0.423 Z: 10.121
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.121 | X: -0.055 Y: 0.450 Z: 10.111
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.130 | X: -0.017 Y: 0.440 Z: 10.121
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.162 | X: -0.026 Y: 0.457 Z: 10.152
+[STD] std=0.0334 n=50 stopped=0
+2026-10-23 22:10:12
+[Radar] OUT: HIGH | Moving: 89cm energy:51 | Still: 75cm energy:100 | Distance: 56cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3060.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.111 | X: -0.019 Y: 0.445 Z: 10.101
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.122 | X: -0.043 Y: 0.412 Z: 10.113
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 66cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.147 | X: -0.010 Y: 0.445 Z: 10.137
+[STD] std=0.0361 n=50 stopped=0
+2026-10-23 22:10:13
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.193 | X: -0.089 Y: 0.385 Z: 10.185
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 60cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.139 | X: -0.031 Y: 0.423 Z: 10.130
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.110 | X: -0.010 Y: 0.419 Z: 10.101
+[144239][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.110 | X: 0.007 Y: 0.464 Z: 10.099
+[STD] std=0.0324 n=50 stopped=0
+2026-10-23 22:10:14
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.096 | X: -0.065 Y: 0.419 Z: 10.087
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.6 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 79cm energy:83 | Still: 69cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.131 | X: 0.022 Y: 0.464 Z: 10.121
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.138 | X: -0.007 Y: 0.409 Z: 10.130
+[Radar] OUT: HIGH | Moving: 69cm energy:77 | Still: 83cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.137 | X: -0.024 Y: 0.376 Z: 10.130
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:10:15
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3059.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.058 | X: 0.005 Y: 0.440 Z: 10.049
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.161 | X: -0.022 Y: 0.423 Z: 10.152
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.193 | X: -0.033 Y: 0.452 Z: 10.183
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.146 | X: 0.012 Y: 0.421 Z: 10.137
+[STD] std=0.0335 n=50 stopped=0
+2026-10-23 22:10:16
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.149 | X: 0.002 Y: 0.423 Z: 10.140
+[Radar] OUT: HIGH | Moving: 77cm energy:72 | Still: 77cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.110 | X: -0.024 Y: 0.419 Z: 10.101
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.122 | X: -0.017 Y: 0.407 Z: 10.113
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 65cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.140 | X: -0.017 Y: 0.392 Z: 10.133
+[STD] std=0.0329 n=50 stopped=0
+2026-10-23 22:10:17
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 80cm energy:77 | Still: 66cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.101 | X: -0.026 Y: 0.431 Z: 10.092
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.138 | X: -0.036 Y: 0.397 Z: 10.130
+[Radar] OUT: HIGH | Moving: 72cm energy:53 | Still: 55cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.115 | X: 0.007 Y: 0.471 Z: 10.104
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.142 | X: -0.007 Y: 0.443 Z: 10.133
+[STD] std=0.0265 n=50 stopped=0
+2026-10-23 22:10:18
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 150cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.170 | X: -0.012 Y: 0.426 Z: 10.161
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.127 | X: -0.007 Y: 0.428 Z: 10.118
+[Radar] OUT: HIGH | Moving: 70cm energy:58 | Still: 61cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.140 | X: -0.002 Y: 0.438 Z: 10.130
+[STD] std=0.0255 n=50 stopped=0
+2026-10-23 22:10:19
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.226 | X: -0.007 Y: 0.447 Z: 10.216
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 81cm energy:55 | Still: 70cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.128 | X: -0.031 Y: 0.450 Z: 10.118
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.178 | X: 0.010 Y: 0.435 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.118 | X: -0.012 Y: 0.443 Z: 10.109
+[STD] std=0.0319 n=50 stopped=0
+2026-10-23 22:10:21
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.149 | X: -0.007 Y: 0.426 Z: 10.140
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.7 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 81cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.105 | X: 0.050 Y: 0.414 Z: 10.097
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.106 | X: -0.074 Y: 0.416 Z: 10.097
+[Radar] OUT: HIGH | Moving: 73cm energy:93 | Still: 64cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.118 | X: -0.057 Y: 0.443 Z: 10.109
+[STD] std=0.0275 n=50 stopped=0
+2026-10-23 22:10:22
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.128 | X: -0.007 Y: 0.440 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.137 | X: -0.041 Y: 0.428 Z: 10.128
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.084 | X: 0.014 Y: 0.416 Z: 10.075
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.084 | X: -0.019 Y: 0.423 Z: 10.075
+[STD] std=0.0436 n=50 stopped=0
+2026-10-23 22:10:23
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.148 | X: -0.036 Y: 0.457 Z: 10.137
+[Vibration] Status: OK | RMS: 0.330 | Magnitude: 10.135 | X: 0.012 Y: 0.445 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 41cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.157 | X: -0.007 Y: 0.447 Z: 10.147
+[STD] std=0.0409 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.115 | X: -0.022 Y: 0.469 Z: 10.104
+2026-10-23 22:10:24
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 52cm energy:52 | Still: 55cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.140 | X: -0.045 Y: 0.392 Z: 10.133
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.109 | X: -0.050 Y: 0.447 Z: 10.099
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 41cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.112 | X: 0.017 Y: 0.402 Z: 10.104
+[STD] std=0.0353 n=50 stopped=0
+2026-10-23 22:10:25
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.104 | X: -0.053 Y: 0.450 Z: 10.094
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3059.7 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 59cm energy:58 | Still: 66cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.127 | X: -0.031 Y: 0.426 Z: 10.118
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.139 | X: 0.002 Y: 0.433 Z: 10.130
+[Radar] OUT: HIGH | Moving: 78cm energy:80 | Still: 73cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.105 | X: -0.033 Y: 0.459 Z: 10.094
+[STD] std=0.0316 n=50 stopped=0
+2026-10-23 22:10:26
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.159 | X: -0.012 Y: 0.440 Z: 10.149
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.095 | X: -0.026 Y: 0.447 Z: 10.085
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.149 | X: -0.010 Y: 0.443 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.118 | X: -0.010 Y: 0.440 Z: 10.109
+[STD] std=0.0283 n=50 stopped=0
+2026-10-23 22:10:27
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3054.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.181 | X: -0.031 Y: 0.443 Z: 10.171
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.064 | X: -0.050 Y: 0.407 Z: 10.056
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.147 | X: 0.005 Y: 0.380 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.137 | X: 0.014 Y: 0.431 Z: 10.128
+[STD] std=0.0390 n=50 stopped=0
+2026-10-23 22:10:28
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.8 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.124 | X: -0.031 Y: 0.452 Z: 10.113
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.204 | X: -0.026 Y: 0.438 Z: 10.195
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.142 | X: -0.053 Y: 0.433 Z: 10.133
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.105 | X: -0.022 Y: 0.414 Z: 10.097
+[STD] std=0.0308 n=50 stopped=0
+2026-10-23 22:10:29
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.133 | X: -0.022 Y: 0.445 Z: 10.123
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.185 | X: -0.019 Y: 0.443 Z: 10.176
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 90cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.141 | X: -0.053 Y: 0.455 Z: 10.130
+[STD] std=0.0332 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.195 | X: -0.045 Y: 0.452 Z: 10.185
+2026-10-23 22:10:30
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 76cm energy:92 | Still: 95cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.107 | X: -0.005 Y: 0.409 Z: 10.099
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.087 | X: -0.014 Y: 0.435 Z: 10.078
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 57cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.149 | X: -0.022 Y: 0.435 Z: 10.140
+[STD] std=0.0347 n=50 stopped=0
+2026-10-23 22:10:31
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.068 | X: -0.057 Y: 0.431 Z: 10.058
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 48cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.114 | X: -0.029 Y: 0.445 Z: 10.104
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.152 | X: -0.007 Y: 0.443 Z: 10.142
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 88cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.164 | X: 0.000 Y: 0.443 Z: 10.154
+[STD] std=0.0374 n=50 stopped=0
+2026-10-23 22:10:32
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.8 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.080 | X: -0.026 Y: 0.445 Z: 10.070
+[Radar] OUT: HIGH | Moving: 65cm energy:71 | Still: 62cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.145 | X: -0.017 Y: 0.450 Z: 10.135
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.159 | X: -0.005 Y: 0.443 Z: 10.149
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 45cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.108 | X: -0.005 Y: 0.435 Z: 10.099
+[STD] std=0.0278 n=50 stopped=0
+2026-10-23 22:10:33
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 55cm energy:53 | Still: 39cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.119 | X: -0.014 Y: 0.402 Z: 10.111
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.129 | X: -0.019 Y: 0.423 Z: 10.121
+[Radar] OUT: HIGH | Moving: 97cm energy:100 | Still: 81cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.146 | X: -0.019 Y: 0.428 Z: 10.137
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.145 | X: -0.022 Y: 0.440 Z: 10.135
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:10:34
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 76cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.109 | X: 0.005 Y: 0.438 Z: 10.099
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.098 | X: -0.005 Y: 0.416 Z: 10.090
+[Radar] OUT: HIGH | Moving: none | Still: 83cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.129 | X: -0.041 Y: 0.409 Z: 10.121
+[STD] std=0.0330 n=50 stopped=0
+2026-10-23 22:10:35
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.203 | X: 0.010 Y: 0.397 Z: 10.195
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 78cm energy:65 | Still: 83cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.078 | X: -0.057 Y: 0.395 Z: 10.070
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.152 | X: 0.000 Y: 0.445 Z: 10.142
+[Radar] OUT: HIGH | Moving: 58cm energy:53 | Still: 74cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.178 | X: -0.014 Y: 0.438 Z: 10.168
+[STD] std=0.0320 n=50 stopped=0
+2026-10-23 22:10:36
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.152 | X: -0.069 Y: 0.431 Z: 10.142
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.158 | X: 0.002 Y: 0.419 Z: 10.149
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.148 | X: -0.019 Y: 0.469 Z: 10.137
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 76cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.233 | X: -0.057 Y: 0.438 Z: 10.223
+[STD] std=0.0395 n=50 stopped=0
+2026-10-23 22:10:37
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.170 | X: -0.002 Y: 0.423 Z: 10.161
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.138 | X: -0.031 Y: 0.452 Z: 10.128
+[Vibration] Status: OK | RMS: 0.356 | Magnitude: 10.150 | X: -0.055 Y: 0.443 Z: 10.140
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.355 | Magnitude: 10.120 | X: -0.050 Y: 0.412 Z: 10.111
+[STD] std=0.0366 n=50 stopped=0
+2026-10-23 22:10:38
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.7 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 73cm energy:65 | Still: 72cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.179 | X: -0.050 Y: 0.452 Z: 10.168
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.095 | X: -0.017 Y: 0.407 Z: 10.087
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.160 | X: -0.041 Y: 0.402 Z: 10.152
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.183 | X: -0.019 Y: 0.488 Z: 10.171
+[STD] std=0.0353 n=50 stopped=0
+2026-10-23 22:10:39
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.6 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.190 | X: -0.024 Y: 0.435 Z: 10.180
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.204 | X: -0.031 Y: 0.481 Z: 10.192
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.355 | Magnitude: 10.174 | X: 0.014 Y: 0.447 Z: 10.164
+[STD] std=0.0364 n=50 stopped=0
+2026-10-23 22:10:40
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.126 | X: -0.024 Y: 0.459 Z: 10.116
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.161 | X: -0.038 Y: 0.443 Z: 10.152
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.219 | X: 0.002 Y: 0.452 Z: 10.209
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.236 | X: 0.019 Y: 0.457 Z: 10.226
+[STD] std=0.0296 n=50 stopped=0
+2026-10-23 22:10:41
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.143 | X: -0.002 Y: 0.397 Z: 10.135
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.6 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.117 | X: -0.014 Y: 0.474 Z: 10.106
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.133 | X: -0.026 Y: 0.392 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.172 | X: -0.017 Y: 0.421 Z: 10.164
+[STD] std=0.0365 n=50 stopped=0
+2026-10-23 22:10:42
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3059.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.125 | X: -0.019 Y: 0.440 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.183 | X: -0.017 Y: 0.440 Z: 10.173
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.158 | X: -0.010 Y: 0.426 Z: 10.149
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 72cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.105 | X: -0.050 Y: 0.452 Z: 10.094
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:10:43
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 96cm energy:100 | Distance: 77cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.173 | X: -0.019 Y: 0.438 Z: 10.164
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.110 | X: -0.002 Y: 0.426 Z: 10.101
+[Radar] OUT: HIGH | Moving: 91cm energy:100 | Still: 95cm energy:100 | Distance: 77cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.109 | X: -0.010 Y: 0.400 Z: 10.101
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.155 | X: -0.029 Y: 0.409 Z: 10.147
+[STD] std=0.0334 n=50 stopped=0
+2026-10-23 22:10:44
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 85cm energy:100 | Distance: 76cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.122 | X: -0.022 Y: 0.419 Z: 10.113
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.185 | X: -0.014 Y: 0.479 Z: 10.173
+[Radar] OUT: HIGH | Moving: 80cm energy:71 | Still: 72cm energy:100 | Distance: 70cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.140 | X: -0.048 Y: 0.447 Z: 10.130
+[175018][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[STD] std=0.0355 n=50 stopped=0
+2026-10-23 22:10:45
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.189 | X: -0.043 Y: 0.471 Z: 10.178
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 75cm energy:100 | Distance: 64cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.120 | X: -0.038 Y: 0.428 Z: 10.111
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.189 | X: -0.005 Y: 0.426 Z: 10.180
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 72cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.145 | X: -0.010 Y: 0.450 Z: 10.135
+[STD] std=0.0338 n=50 stopped=0
+2026-10-23 22:10:46
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.112 | X: 0.012 Y: 0.455 Z: 10.101
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3061.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 63cm energy:73 | Still: 76cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.165 | X: -0.024 Y: 0.419 Z: 10.156
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.134 | X: -0.029 Y: 0.428 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.112 | X: -0.019 Y: 0.471 Z: 10.101
+[STD] std=0.0351 n=50 stopped=0
+2026-10-23 22:10:47
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.130 | X: -0.038 Y: 0.383 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.134 | X: -0.019 Y: 0.426 Z: 10.125
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.131 | X: -0.010 Y: 0.452 Z: 10.121
+[Radar] OUT: HIGH | Moving: 80cm energy:93 | Still: 75cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.151 | X: -0.026 Y: 0.414 Z: 10.142
+[STD] std=0.0320 n=50 stopped=0
+2026-10-23 22:10:48
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 85cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.053 | X: -0.014 Y: 0.433 Z: 10.044
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.240 | X: -0.012 Y: 0.426 Z: 10.231
+[Radar] OUT: HIGH | Moving: 104cm energy:73 | Still: 72cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.120 | X: -0.012 Y: 0.419 Z: 10.111
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.125 | X: 0.019 Y: 0.419 Z: 10.116
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:10:49
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.431 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 58cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.105 | X: -0.033 Y: 0.455 Z: 10.094
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.123 | X: -0.005 Y: 0.440 Z: 10.113
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 61cm
+[TIMING] n=2332 mean_ms=25.737 min_ms=23.799 max_ms=73.293 std_ms=5.412 over_50ms=60 read_errors=0
+[WQ] heap=228608 minheap=209816
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.192 | X: -0.010 Y: 0.421 Z: 10.183
+[STD] std=0.0307 n=50 stopped=0
+2026-10-23 22:10:50
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.183 | X: -0.074 Y: 0.450 Z: 10.173
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.164 | X: -0.041 Y: 0.445 Z: 10.154
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.140 | X: -0.045 Y: 0.435 Z: 10.130
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 69cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.117 | X: -0.065 Y: 0.412 Z: 10.109
+[STD] std=0.0299 n=50 stopped=0
+2026-10-23 22:10:51
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.151 | X: -0.017 Y: 0.433 Z: 10.142
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.2 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 87cm energy:100 | Still: 103cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.130 | X: -0.017 Y: 0.440 Z: 10.121
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.156 | X: -0.022 Y: 0.419 Z: 10.147
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 73cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.155 | X: -0.026 Y: 0.462 Z: 10.145
+[STD] std=0.0307 n=50 stopped=0
+2026-10-23 22:10:52
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.203 | X: 0.014 Y: 0.407 Z: 10.195
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 68cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.142 | X: -0.036 Y: 0.433 Z: 10.133
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.142 | X: -0.036 Y: 0.443 Z: 10.133
+[Radar] OUT: HIGH | Moving: 124cm energy:73 | Still: 75cm energy:100 | Distance: 64cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.118 | X: -0.029 Y: 0.479 Z: 10.106
+[STD] std=0.0344 n=50 stopped=0
+2026-10-23 22:10:53
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 62cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.160 | X: -0.060 Y: 0.452 Z: 10.149
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.158 | X: -0.024 Y: 0.416 Z: 10.149
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 47cm energy:100 | Distance: 34cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.215 | X: -0.031 Y: 0.419 Z: 10.207
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.085 | X: 0.005 Y: 0.440 Z: 10.075
+[STD] std=0.0328 n=50 stopped=0
+2026-10-23 22:10:54
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.6 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 80cm energy:59 | Still: 69cm energy:100 | Distance: 41cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.126 | X: -0.022 Y: 0.452 Z: 10.116
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.105 | X: -0.043 Y: 0.404 Z: 10.097
+[Radar] OUT: HIGH | Moving: none | Still: 80cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.117 | X: -0.026 Y: 0.404 Z: 10.109
+[STD] std=0.0302 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.138 | X: 0.005 Y: 0.388 Z: 10.130
+2026-10-23 22:10:55
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.2 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 94cm energy:79 | Still: 79cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.094 | X: -0.010 Y: 0.426 Z: 10.085
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.138 | X: -0.007 Y: 0.450 Z: 10.128
+[Radar] OUT: HIGH | Moving: 56cm energy:60 | Still: 76cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.171 | X: -0.055 Y: 0.438 Z: 10.161
+[STD] std=0.0312 n=50 stopped=0
+2026-10-23 22:10:56
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.116 | X: -0.045 Y: 0.450 Z: 10.106
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.2 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 103cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.154 | X: -0.091 Y: 0.476 Z: 10.142
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.166 | X: -0.022 Y: 0.433 Z: 10.156
+[Radar] OUT: HIGH | Moving: 77cm energy:100 | Still: 72cm energy:100 | Distance: 62cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.124 | X: -0.017 Y: 0.419 Z: 10.116
+[STD] std=0.0344 n=50 stopped=0
+2026-10-23 22:10:57
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3058.7 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.199 | X: -0.043 Y: 0.426 Z: 10.190
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 67cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.166 | X: -0.017 Y: 0.438 Z: 10.156
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.176 | X: -0.005 Y: 0.443 Z: 10.166
+[Radar] OUT: HIGH | Moving: 84cm energy:86 | Still: 84cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.125 | X: 0.012 Y: 0.440 Z: 10.116
+[STD] std=0.0314 n=50 stopped=0
+2026-10-23 22:10:58
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 3057.8 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 78cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.357 | Magnitude: 10.154 | X: -0.050 Y: 0.433 Z: 10.145
+[Vibration] Status: OK | RMS: 0.358 | Magnitude: 10.142 | X: -0.019 Y: 0.443 Z: 10.133
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 72cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.138 | X: -0.010 Y: 0.388 Z: 10.130
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.125 | X: 0.010 Y: 0.435 Z: 10.116
+[STD] std=0.0374 n=50 stopped=0
+2026-10-23 22:10:59
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 121cm energy:100 | Distance: 61cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.147 | X: -0.026 Y: 0.431 Z: 10.137
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.137 | X: -0.024 Y: 0.423 Z: 10.128
+[Radar] OUT: HIGH | Moving: 73cm energy:89 | Still: 58cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.156 | X: -0.024 Y: 0.428 Z: 10.147
+[STD] std=0.0342 n=50 stopped=0
+2026-10-23 22:11:00
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.134 | X: -0.019 Y: 0.423 Z: 10.125
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 54cm energy:60 | Still: 74cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.151 | X: 0.002 Y: 0.431 Z: 10.142
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.175 | X: 0.000 Y: 0.421 Z: 10.166
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 69cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.102 | X: -0.019 Y: 0.443 Z: 10.092
+[STD] std=0.0330 n=50 stopped=0
+2026-10-23 22:11:01
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.226 | X: -0.022 Y: 0.450 Z: 10.216
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.2 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 98cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.063 | X: -0.024 Y: 0.423 Z: 10.054
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.174 | X: -0.033 Y: 0.457 Z: 10.164
+[Radar] OUT: HIGH | Moving: 92cm energy:85 | Still: 72cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.178 | X: -0.026 Y: 0.445 Z: 10.168
+[STD] std=0.0377 n=50 stopped=0
+2026-10-23 22:11:02
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 3055.6 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.152 | X: -0.012 Y: 0.438 Z: 10.142
+[Radar] OUT: HIGH | Moving: 59cm energy:72 | Still: 45cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.125 | X: -0.007 Y: 0.428 Z: 10.116
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.155 | X: -0.033 Y: 0.469 Z: 10.145
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.157 | X: 0.014 Y: 0.455 Z: 10.147
+[STD] std=0.0344 n=50 stopped=0
+2026-10-23 22:11:03
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.3 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 56cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.180 | X: -0.010 Y: 0.438 Z: 10.171
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.154 | X: -0.026 Y: 0.435 Z: 10.145
+[Radar] OUT: HIGH | Moving: none | Still: 56cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.113 | X: -0.010 Y: 0.428 Z: 10.104
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.113 | X: -0.031 Y: 0.366 Z: 10.106
+[STD] std=0.0333 n=50 stopped=0
+2026-10-23 22:11:04
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.1 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.081 | X: -0.017 Y: 0.452 Z: 10.070
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.127 | X: 0.000 Y: 0.433 Z: 10.118
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.167 | X: -0.010 Y: 0.452 Z: 10.156
+[STD] std=0.0315 n=50 stopped=0
+2026-10-23 22:11:05
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.124 | X: -0.024 Y: 0.455 Z: 10.113
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3055.9 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 78cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.093 | X: -0.045 Y: 0.402 Z: 10.085
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.166 | X: -0.010 Y: 0.431 Z: 10.156
+[Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 83cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.179 | X: -0.019 Y: 0.412 Z: 10.171
+[STD] std=0.0298 n=50 stopped=0
+2026-10-23 22:11:06
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.205 | X: -0.024 Y: 0.402 Z: 10.197
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 211cm energy:100 | Distance: 135cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.150 | X: -0.033 Y: 0.452 Z: 10.140
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.140 | X: -0.022 Y: 0.450 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 218cm energy:100 | Distance: 165cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.141 | X: -0.022 Y: 0.419 Z: 10.133
+[STD] std=0.0329 n=50 stopped=0
+2026-10-23 22:11:07
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.8 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.157 | X: -0.010 Y: 0.457 Z: 10.147
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 227cm energy:100 | Distance: 186cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.129 | X: -0.022 Y: 0.409 Z: 10.121
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.121 | X: -0.038 Y: 0.438 Z: 10.111
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 66cm energy:100 | Distance: 145cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.131 | X: -0.041 Y: 0.452 Z: 10.121
+[STD] std=0.0269 n=50 stopped=0
+2026-10-23 22:11:08
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3056.0 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 174cm energy:100 | Distance: 111cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.151 | X: -0.014 Y: 0.431 Z: 10.142
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.174 | X: -0.017 Y: 0.455 Z: 10.164
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 91cm energy:100 | Distance: 87cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.156 | X: -0.060 Y: 0.419 Z: 10.147
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.137 | X: -0.014 Y: 0.443 Z: 10.128
+[STD] std=0.0277 n=50 stopped=0
+2026-10-23 22:11:09
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3057.4 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 87cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.059 | X: -0.010 Y: 0.390 Z: 10.051
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.211 | X: -0.041 Y: 0.419 Z: 10.202
+[Radar] OUT: HIGH | Moving: 65cm energy:77 | Still: 58cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.135 | X: -0.002 Y: 0.388 Z: 10.128
+[STD] std=0.0326 n=50 stopped=0
+2026-10-23 22:11:10
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.111 | X: 0.017 Y: 0.445 Z: 10.101
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3054.5 mV  <-- ABOVE 3.0 V, CHECK THE WIRING
+[Radar] OUT: HIGH | Moving: 55cm energy:76 | Still: 60cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.129 | X: 0.002 Y: 0.464 Z: 10.118
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.119 | X: -0.026 Y: 0.452 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.191 | X: -0.029 Y: 0.416 Z: 10.183
+[STD] std=0.0371 n=50 stopped=0
+2026-10-23 22:11:11
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.226 | X: 0.005 Y: 0.455 Z: 10.216
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 3015.3 mV
+[WQ] ph: live
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.186 | X: -0.012 Y: 0.404 Z: 10.178
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.147 | X: 0.012 Y: 0.445 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.164 | X: -0.019 Y: 0.438 Z: 10.154
+[STD] std=0.0362 n=50 stopped=0
+2026-10-23 22:11:12
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.420 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2954.9 mV
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.188 | X: -0.014 Y: 0.397 Z: 10.180
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.145 | X: -0.041 Y: 0.440 Z: 10.135
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.116 | X: -0.029 Y: 0.486 Z: 10.104
+[Radar] OUT: HIGH | Moving: none | Still: 50cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.187 | X: 0.000 Y: 0.428 Z: 10.178
+[STD] std=0.0262 n=50 stopped=0
+2026-10-23 22:11:13
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2889.3 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.112 | X: -0.033 Y: 0.455 Z: 10.101
+[Radar] OUT: HIGH | Moving: 74cm energy:61 | Still: 49cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.156 | X: 0.002 Y: 0.433 Z: 10.147
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.147 | X: -0.062 Y: 0.431 Z: 10.137
+[Radar] OUT: HIGH | Moving: 67cm energy:84 | Still: 55cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.082 | X: -0.005 Y: 0.426 Z: 10.073
+[STD] std=0.0289 n=50 stopped=0
+2026-10-23 22:11:14
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2834.3 mV
+[Radar] OUT: HIGH | Moving: 44cm energy:67 | Still: 58cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.151 | X: -0.012 Y: 0.435 Z: 10.142
+[205030][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.141 | X: -0.012 Y: 0.423 Z: 10.133
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 58cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.165 | X: -0.043 Y: 0.404 Z: 10.156
+[STD] std=0.0290 n=50 stopped=0
+2026-10-23 22:11:15
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.178 | X: 0.007 Y: 0.438 Z: 10.168
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2783.9 mV
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 52cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.118 | X: 0.024 Y: 0.428 Z: 10.109
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.159 | X: 0.002 Y: 0.435 Z: 10.149
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.135 | X: -0.024 Y: 0.435 Z: 10.125
+[STD] std=0.0361 n=50 stopped=0
+2026-10-23 22:11:17
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2736.5 mV
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.133 | X: -0.022 Y: 0.400 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.105 | X: -0.014 Y: 0.419 Z: 10.097
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.135 | X: -0.019 Y: 0.447 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.189 | X: -0.031 Y: 0.409 Z: 10.180
+[STD] std=0.0392 n=50 stopped=0
+2026-10-23 22:11:18
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2693.3 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.135 | X: 0.031 Y: 0.445 Z: 10.125
+[Radar] OUT: HIGH | Moving: 63cm energy:52 | Still: 55cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.181 | X: -0.031 Y: 0.395 Z: 10.173
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.152 | X: -0.005 Y: 0.445 Z: 10.142
+[Radar] OUT: HIGH | Moving: none | Still: 63cm energy:100 | Distance: 44cm
+[STD] std=0.0371 n=50 stopped=0
+2026-10-23 22:11:19
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.110 | X: -0.022 Y: 0.462 Z: 10.099
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.423 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2652.7 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.171 | X: -0.062 Y: 0.433 Z: 10.161
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.112 | X: -0.014 Y: 0.416 Z: 10.104
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.115 | X: -0.019 Y: 0.467 Z: 10.104
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 54cm
+[STD] std=0.0370 n=50 stopped=0
+2026-10-23 22:11:20
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.141 | X: -0.038 Y: 0.457 Z: 10.130
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2616.9 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.129 | X: -0.026 Y: 0.404 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 61cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.127 | X: 0.017 Y: 0.416 Z: 10.118
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.168 | X: 0.012 Y: 0.423 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 49cm
+[STD] std=0.0303 n=50 stopped=0
+2026-10-23 22:11:21
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2580.6 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.085 | X: -0.010 Y: 0.435 Z: 10.075
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.106 | X: -0.007 Y: 0.423 Z: 10.097
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.146 | X: -0.017 Y: 0.471 Z: 10.135
+[Radar] OUT: HIGH | Moving: none | Still: 57cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.168 | X: -0.043 Y: 0.438 Z: 10.159
+[STD] std=0.0362 n=50 stopped=0
+2026-10-23 22:11:22
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2550.6 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.136 | X: -0.010 Y: 0.467 Z: 10.125
+[Radar] OUT: HIGH | Moving: 73cm energy:63 | Still: 75cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.118 | X: -0.014 Y: 0.435 Z: 10.109
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.111 | X: -0.019 Y: 0.435 Z: 10.101
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 53cm
+[STD] std=0.0310 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.103 | X: -0.010 Y: 0.431 Z: 10.094
+2026-10-23 22:11:23
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2519.9 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.136 | X: -0.048 Y: 0.404 Z: 10.128
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.111 | X: -0.033 Y: 0.440 Z: 10.101
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.163 | X: -0.048 Y: 0.416 Z: 10.154
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 66cm energy:100 | Distance: 54cm
+[STD] std=0.0329 n=50 stopped=0
+2026-10-23 22:11:24
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.133 | X: -0.010 Y: 0.457 Z: 10.123
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2496.8 mV
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.186 | X: -0.017 Y: 0.452 Z: 10.176
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 76cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.141 | X: -0.033 Y: 0.474 Z: 10.130
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.158 | X: -0.053 Y: 0.421 Z: 10.149
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 75cm energy:100 | Distance: 56cm
+[STD] std=0.0403 n=50 stopped=0
+2026-10-23 22:11:25
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2471.5 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.146 | X: -0.007 Y: 0.409 Z: 10.137
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.131 | X: -0.029 Y: 0.397 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.166 | X: -0.014 Y: 0.433 Z: 10.156
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.099 | X: -0.022 Y: 0.440 Z: 10.090
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 52cm
+[STD] std=0.0351 n=50 stopped=0
+2026-10-23 22:11:26
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2445.2 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.149 | X: 0.000 Y: 0.428 Z: 10.140
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.142 | X: -0.024 Y: 0.428 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.107 | X: -0.024 Y: 0.464 Z: 10.097
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.130 | X: -0.012 Y: 0.438 Z: 10.121
+[STD] std=0.0322 n=50 stopped=0
+2026-10-23 22:11:27
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2420.1 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.105 | X: -0.038 Y: 0.455 Z: 10.094
+[Radar] OUT: HIGH | Moving: 70cm energy:96 | Still: 71cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.119 | X: -0.045 Y: 0.447 Z: 10.109
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.103 | X: 0.000 Y: 0.416 Z: 10.094
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 48cm
+[STD] std=0.0307 n=50 stopped=0
+2026-10-23 22:11:28
+[Vibration] Status: OK | RMS: 0.325 | Magnitude: 10.125 | X: -0.036 Y: 0.421 Z: 10.116
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2395.8 mV
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.131 | X: -0.045 Y: 0.447 Z: 10.121
+[Radar] OUT: HIGH | Moving: none | Still: 60cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.328 | Magnitude: 10.141 | X: -0.036 Y: 0.476 Z: 10.130
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.082 | X: -0.010 Y: 0.493 Z: 10.070
+[STD] std=0.0372 n=50 stopped=0
+2026-10-23 22:11:29
+[Radar] OUT: HIGH | Moving: 72cm energy:91 | Still: 52cm energy:100 | Distance: 42cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2373.9 mV
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.092 | X: -0.005 Y: 0.452 Z: 10.082
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.146 | X: -0.024 Y: 0.428 Z: 10.137
+[Radar] OUT: HIGH | Moving: 63cm energy:89 | Still: 63cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.144 | X: -0.010 Y: 0.438 Z: 10.135
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.237 | X: -0.022 Y: 0.426 Z: 10.228
+[STD] std=0.0355 n=50 stopped=0
+2026-10-23 22:11:30
+[Radar] OUT: HIGH | Moving: 61cm energy:71 | Still: 75cm energy:100 | Distance: 49cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2354.4 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.129 | X: 0.007 Y: 0.457 Z: 10.118
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.162 | X: -0.024 Y: 0.407 Z: 10.154
+[Radar] OUT: HIGH | Moving: 72cm energy:85 | Still: 66cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.119 | X: -0.050 Y: 0.464 Z: 10.109
+[STD] std=0.0329 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.130 | X: -0.014 Y: 0.445 Z: 10.121
+2026-10-23 22:11:31
+[Radar] OUT: HIGH | Moving: 43cm energy:74 | Still: 66cm energy:100 | Distance: 51cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2334.6 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.125 | X: 0.010 Y: 0.435 Z: 10.116
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.152 | X: -0.002 Y: 0.445 Z: 10.142
+[Radar] OUT: HIGH | Moving: 42cm energy:62 | Still: 30cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.214 | X: -0.026 Y: 0.450 Z: 10.204
+[STD] std=0.0336 n=50 stopped=0
+2026-10-23 22:11:32
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.214 | X: -0.024 Y: 0.445 Z: 10.204
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2314.9 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.137 | X: -0.024 Y: 0.443 Z: 10.128
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.070 | X: -0.019 Y: 0.426 Z: 10.061
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.124 | X: -0.026 Y: 0.464 Z: 10.113
+[STD] std=0.0328 n=50 stopped=0
+2026-10-23 22:11:33
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 43cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.099 | X: -0.033 Y: 0.440 Z: 10.090
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2299.4 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.156 | X: -0.010 Y: 0.433 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.147 | X: -0.014 Y: 0.440 Z: 10.137
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.160 | X: -0.019 Y: 0.471 Z: 10.149
+[STD] std=0.0319 n=50 stopped=0
+2026-10-23 22:11:34
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2282.6 mV
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.224 | X: -0.017 Y: 0.455 Z: 10.214
+[Vibration] Status: OK | RMS: 0.353 | Magnitude: 10.121 | X: -0.005 Y: 0.438 Z: 10.111
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 39cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.199 | X: 0.007 Y: 0.438 Z: 10.190
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.156 | X: -0.036 Y: 0.426 Z: 10.147
+[STD] std=0.0361 n=50 stopped=0
+2026-10-23 22:11:35
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 39cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2267.8 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.155 | X: 0.005 Y: 0.467 Z: 10.145
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.126 | X: 0.022 Y: 0.395 Z: 10.118
+[Radar] OUT: HIGH | Moving: 53cm energy:56 | Still: 62cm energy:100 | Distance: 39cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.142 | X: 0.038 Y: 0.433 Z: 10.133
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.128 | X: 0.007 Y: 0.435 Z: 10.118
+[STD] std=0.0332 n=50 stopped=0
+2026-10-23 22:11:36
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2252.3 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.196 | X: -0.019 Y: 0.423 Z: 10.188
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.094 | X: -0.069 Y: 0.416 Z: 10.085
+[Radar] OUT: HIGH | Moving: 59cm energy:85 | Still: 67cm energy:100 | Distance: 40cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.102 | X: -0.031 Y: 0.443 Z: 10.092
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.096 | X: -0.029 Y: 0.433 Z: 10.087
+[STD] std=0.0345 n=50 stopped=0
+2026-10-23 22:11:37
+[Radar] OUT: HIGH | Moving: 88cm energy:65 | Still: 53cm energy:100 | Distance: 41cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2232.6 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.180 | X: -0.010 Y: 0.440 Z: 10.171
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.103 | X: -0.048 Y: 0.419 Z: 10.094
+[Radar] OUT: HIGH | Moving: 84cm energy:70 | Still: 60cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.119 | X: -0.022 Y: 0.452 Z: 10.109
+[STD] std=0.0283 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.165 | X: -0.033 Y: 0.409 Z: 10.156
+2026-10-23 22:11:38
+[Radar] OUT: HIGH | Moving: 75cm energy:73 | Still: 128cm energy:100 | Distance: 60cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2216.0 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.134 | X: -0.050 Y: 0.421 Z: 10.125
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.127 | X: -0.041 Y: 0.431 Z: 10.118
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 137cm energy:100 | Distance: 71cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.194 | X: -0.012 Y: 0.421 Z: 10.185
+[STD] std=0.0323 n=50 stopped=0
+2026-10-23 22:11:39
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.144 | X: -0.053 Y: 0.419 Z: 10.135
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 79cm energy:100 | Distance: 66cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2206.3 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.231 | X: -0.026 Y: 0.440 Z: 10.221
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.133 | X: -0.002 Y: 0.459 Z: 10.123
+[Radar] OUT: HIGH | Moving: 30cm energy:52 | Still: 75cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.101 | X: -0.045 Y: 0.423 Z: 10.092
+[STD] std=0.0349 n=50 stopped=0
+2026-10-23 22:11:40
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.162 | X: -0.024 Y: 0.447 Z: 10.152
+[Radar] OUT: HIGH | Moving: 76cm energy:72 | Still: 66cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.431 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2193.7 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.131 | X: -0.031 Y: 0.392 Z: 10.123
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.147 | X: -0.033 Y: 0.447 Z: 10.137
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.143 | X: -0.010 Y: 0.455 Z: 10.133
+[STD] std=0.0305 n=50 stopped=0
+2026-10-23 22:11:41
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2181.0 mV
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.111 | X: -0.031 Y: 0.435 Z: 10.101
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.137 | X: -0.005 Y: 0.443 Z: 10.128
+[Radar] OUT: HIGH | Moving: 75cm energy:61 | Still: 74cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.136 | X: 0.000 Y: 0.419 Z: 10.128
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.172 | X: -0.033 Y: 0.407 Z: 10.164
+[STD] std=0.0343 n=50 stopped=0
+2026-10-23 22:11:42
+[Radar] OUT: HIGH | Moving: 64cm energy:84 | Still: 58cm energy:100 | Distance: 53cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2170.5 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.225 | X: -0.038 Y: 0.431 Z: 10.216
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.145 | X: -0.002 Y: 0.455 Z: 10.135
+[Radar] OUT: HIGH | Moving: 66cm energy:56 | Still: 72cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.200 | X: 0.019 Y: 0.445 Z: 10.190
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.162 | X: -0.012 Y: 0.402 Z: 10.154
+[STD] std=0.0352 n=50 stopped=0
+2026-10-23 22:11:43
+[Radar] OUT: HIGH | Moving: none | Still: 56cm energy:100 | Distance: 50cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2160.2 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.158 | X: -0.031 Y: 0.419 Z: 10.149
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.155 | X: 0.000 Y: 0.462 Z: 10.145
+[Radar] OUT: HIGH | Moving: 80cm energy:74 | Still: 74cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.097 | X: -0.038 Y: 0.447 Z: 10.087
+[STD] std=0.0296 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.129 | X: -0.017 Y: 0.459 Z: 10.118
+2026-10-23 22:11:44
+[234177][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Radar] OUT: HIGH | Moving: none | Still: 50cm energy:100 | Distance: 47cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2149.4 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.207 | X: -0.017 Y: 0.440 Z: 10.197
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.118 | X: -0.036 Y: 0.423 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 41cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.100 | X: 0.002 Y: 0.457 Z: 10.090
+[STD] std=0.0368 n=50 stopped=0
+2026-10-23 22:11:45
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.182 | X: -0.010 Y: 0.414 Z: 10.173
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2138.9 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.202 | X: -0.031 Y: 0.438 Z: 10.192
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.116 | X: -0.022 Y: 0.440 Z: 10.106
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.176 | X: 0.024 Y: 0.438 Z: 10.166
+[STD] std=0.0363 n=50 stopped=0
+2026-10-23 22:11:46
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2130.4 mV
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.167 | X: -0.055 Y: 0.402 Z: 10.159
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.171 | X: 0.002 Y: 0.493 Z: 10.159
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.134 | X: -0.041 Y: 0.426 Z: 10.125
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.207 | X: -0.014 Y: 0.402 Z: 10.200
+[STD] std=0.0415 n=50 stopped=0
+2026-10-23 22:11:47
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2121.8 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.129 | X: -0.026 Y: 0.409 Z: 10.121
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.139 | X: -0.029 Y: 0.421 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.166 | X: -0.045 Y: 0.443 Z: 10.156
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.125 | X: -0.017 Y: 0.426 Z: 10.116
+[STD] std=0.0420 n=50 stopped=0
+2026-10-23 22:11:48
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2113.7 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.116 | X: -0.033 Y: 0.447 Z: 10.106
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.086 | X: -0.005 Y: 0.414 Z: 10.078
+[Radar] OUT: HIGH | Moving: none | Still: 53cm energy:100 | Distance: 38cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.192 | X: -0.014 Y: 0.364 Z: 10.185
+[STD] std=0.0344 n=50 stopped=0
+2026-10-23 22:11:49
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.167 | X: 0.012 Y: 0.455 Z: 10.156
+[Radar] OUT: HIGH | Moving: 70cm energy:65 | Still: 53cm energy:100 | Distance: 38cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2104.1 mV
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.081 | X: -0.017 Y: 0.397 Z: 10.073
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.178 | X: -0.041 Y: 0.428 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 44cm
+[TIMING] n=2336 mean_ms=25.689 min_ms=22.940 max_ms=73.314 std_ms=5.379 over_50ms=61 read_errors=0
+[WQ] heap=228564 minheap=209816
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.127 | X: 0.014 Y: 0.419 Z: 10.118
+[STD] std=0.0395 n=50 stopped=0
+2026-10-23 22:11:50
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.120 | X: -0.024 Y: 0.431 Z: 10.111
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2098.0 mV
+[Radar] OUT: HIGH | Moving: 58cm energy:58 | Still: 72cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.111 | X: -0.012 Y: 0.431 Z: 10.101
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.195 | X: -0.017 Y: 0.438 Z: 10.185
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.102 | X: 0.005 Y: 0.447 Z: 10.092
+[STD] std=0.0340 n=50 stopped=0
+2026-10-23 22:11:51
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2088.8 mV
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.138 | X: -0.033 Y: 0.452 Z: 10.128
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 49cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.142 | X: -0.005 Y: 0.435 Z: 10.133
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.162 | X: -0.024 Y: 0.400 Z: 10.154
+[Radar] OUT: HIGH | Moving: 62cm energy:65 | Still: 77cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.165 | X: -0.043 Y: 0.419 Z: 10.156
+[STD] std=0.0298 n=50 stopped=0
+2026-10-23 22:11:52
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.429 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2081.2 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.204 | X: -0.014 Y: 0.438 Z: 10.195
+[Radar] OUT: HIGH | Moving: 72cm energy:85 | Still: 74cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.122 | X: -0.041 Y: 0.416 Z: 10.113
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.171 | X: -0.010 Y: 0.445 Z: 10.161
+[Radar] OUT: HIGH | Moving: none | Still: 58cm energy:100 | Distance: 51cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.143 | X: -0.043 Y: 0.412 Z: 10.135
+[STD] std=0.0346 n=50 stopped=0
+2026-10-23 22:11:53
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2074.0 mV
+[Radar] OUT: HIGH | Moving: 79cm energy:70 | Still: 57cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.175 | X: -0.002 Y: 0.433 Z: 10.166
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.106 | X: 0.005 Y: 0.378 Z: 10.099
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.138 | X: -0.057 Y: 0.457 Z: 10.128
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.192 | X: -0.012 Y: 0.433 Z: 10.183
+[STD] std=0.0289 n=50 stopped=0
+2026-10-23 22:11:54
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2069.0 mV
+[Radar] OUT: HIGH | Moving: none | Still: 52cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.120 | X: -0.029 Y: 0.419 Z: 10.111
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.126 | X: -0.019 Y: 0.443 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.152 | X: 0.017 Y: 0.455 Z: 10.142
+[STD] std=0.0317 n=50 stopped=0
+2026-10-23 22:11:55
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.188 | X: -0.005 Y: 0.457 Z: 10.178
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2061.7 mV
+[Radar] OUT: HIGH | Moving: 74cm energy:52 | Still: 80cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.185 | X: 0.002 Y: 0.443 Z: 10.176
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.165 | X: -0.029 Y: 0.423 Z: 10.156
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.141 | X: 0.005 Y: 0.412 Z: 10.133
+[STD] std=0.0354 n=50 stopped=0
+2026-10-23 22:11:56
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2054.8 mV
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.145 | X: -0.017 Y: 0.462 Z: 10.135
+[Radar] OUT: HIGH | Moving: none | Still: 70cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.132 | X: 0.005 Y: 0.431 Z: 10.123
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.111 | X: -0.041 Y: 0.440 Z: 10.101
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.080 | X: -0.026 Y: 0.392 Z: 10.073
+[STD] std=0.0363 n=50 stopped=0
+2026-10-23 22:11:57
+[Turbidity] At G35 pin: 1.716 V | Sensor output: 3.432 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2049.6 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.134 | X: -0.043 Y: 0.423 Z: 10.125
+[Radar] OUT: HIGH | Moving: 50cm energy:100 | Still: 77cm energy:100 | Distance: 52cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.146 | X: -0.089 Y: 0.414 Z: 10.137
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.084 | X: 0.012 Y: 0.414 Z: 10.075
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 97cm energy:100 | Distance: 71cm
+[STD] std=0.0392 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.168 | X: -0.060 Y: 0.423 Z: 10.159
+2026-10-23 22:11:58
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2044.4 mV
+[Vibration] Status: OK | RMS: 0.329 | Magnitude: 10.126 | X: -0.010 Y: 0.445 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 128cm energy:100 | Distance: 83cm
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.174 | X: 0.005 Y: 0.459 Z: 10.164
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.169 | X: -0.029 Y: 0.462 Z: 10.159
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 64cm energy:100 | Distance: 68cm
+[STD] std=0.0325 n=50 stopped=0
+2026-10-23 22:11:59
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.101 | X: -0.050 Y: 0.416 Z: 10.092
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2039.2 mV
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 58cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.142 | X: -0.048 Y: 0.443 Z: 10.133
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.089 | X: -0.010 Y: 0.435 Z: 10.080
+[Radar] OUT: HIGH | Moving: 76cm energy:55 | Still: 60cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.138 | X: 0.007 Y: 0.445 Z: 10.128
+[STD] std=0.0337 n=50 stopped=0
+2026-10-23 22:12:00
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.75 C
+[pH] Board output at G34: 2035.3 mV
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.125 | X: -0.050 Y: 0.435 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 84cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.159 | X: -0.024 Y: 0.433 Z: 10.149
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.124 | X: -0.012 Y: 0.419 Z: 10.116
+[Radar] OUT: HIGH | Moving: none | Still: 111cm energy:100 | Distance: 69cm
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.195 | X: -0.019 Y: 0.445 Z: 10.185
+[STD] std=0.0302 n=50 stopped=0
+2026-10-23 22:12:01
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2026.9 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.156 | X: -0.033 Y: 0.421 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 97cm energy:100 | Distance: 77cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.139 | X: 0.000 Y: 0.423 Z: 10.130
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.086 | X: -0.045 Y: 0.402 Z: 10.078
+[Radar] OUT: HIGH | Moving: 150cm energy:42 | Still: 79cm energy:100 | Distance: 76cm
+[STD] std=0.0302 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.171 | X: -0.007 Y: 0.435 Z: 10.161
+2026-10-23 22:12:02
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2022.5 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.129 | X: -0.010 Y: 0.459 Z: 10.118
+[Radar] OUT: HIGH | Moving: 80cm energy:99 | Still: 150cm energy:100 | Distance: 103cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.116 | X: -0.038 Y: 0.445 Z: 10.106
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.174 | X: -0.019 Y: 0.467 Z: 10.164
+[Radar] OUT: HIGH | Moving: 74cm energy:68 | Still: 77cm energy:100 | Distance: 82cm
+[STD] std=0.0332 n=50 stopped=0
+2026-10-23 22:12:03
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.170 | X: -0.026 Y: 0.423 Z: 10.161
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2018.8 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.114 | X: -0.053 Y: 0.459 Z: 10.104
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.159 | X: -0.007 Y: 0.438 Z: 10.149
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.233 | X: -0.017 Y: 0.452 Z: 10.223
+[Radar] OUT: HIGH | Moving: none | Still: 69cm energy:100 | Distance: 57cm
+[STD] std=0.0355 n=50 stopped=0
+2026-10-23 22:12:04
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2014.0 mV
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.130 | X: -0.014 Y: 0.438 Z: 10.121
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.166 | X: -0.031 Y: 0.450 Z: 10.156
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 56cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.096 | X: -0.012 Y: 0.433 Z: 10.087
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.161 | X: -0.007 Y: 0.426 Z: 10.152
+[Radar] OUT: HIGH | Moving: 79cm energy:53 | Still: 74cm energy:100 | Distance: 56cm
+[STD] std=0.0358 n=50 stopped=0
+2026-10-23 22:12:05
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2009.7 mV
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.146 | X: -0.010 Y: 0.414 Z: 10.137
+[Radar] OUT: HIGH | Moving: none | Still: 130cm energy:100 | Distance: 80cm
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.123 | X: -0.031 Y: 0.445 Z: 10.113
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.139 | X: 0.000 Y: 0.419 Z: 10.130
+[Radar] OUT: HIGH | Moving: none | Still: 62cm energy:100 | Distance: 88cm
+[STD] std=0.0324 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.331 | Magnitude: 10.041 | X: -0.057 Y: 0.421 Z: 10.032
+2026-10-23 22:12:06
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 2004.0 mV
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.143 | X: -0.017 Y: 0.464 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 67cm
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.122 | X: -0.031 Y: 0.421 Z: 10.113
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.141 | X: -0.007 Y: 0.416 Z: 10.133
+[Radar] OUT: HIGH | Moving: none | Still: 59cm energy:100 | Distance: 55cm
+[STD] std=0.0375 n=50 stopped=0
+2026-10-23 22:12:07
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.145 | X: -0.022 Y: 0.440 Z: 10.135
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1999.3 mV
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.117 | X: -0.043 Y: 0.414 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 45cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.086 | X: -0.007 Y: 0.474 Z: 10.075
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.133 | X: -0.007 Y: 0.457 Z: 10.123
+[STD] std=0.0324 n=50 stopped=0
+2026-10-23 22:12:08
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 36cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1995.0 mV
+[Vibration] Status: OK | RMS: 0.334 | Magnitude: 10.142 | X: -0.053 Y: 0.435 Z: 10.133
+[Vibration] Status: OK | RMS: 0.332 | Magnitude: 10.177 | X: -0.019 Y: 0.428 Z: 10.168
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 31cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.176 | X: -0.043 Y: 0.440 Z: 10.166
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.155 | X: -0.026 Y: 0.412 Z: 10.147
+[STD] std=0.0327 n=50 stopped=0
+2026-10-23 22:12:09
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 30cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1993.3 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.185 | X: -0.019 Y: 0.440 Z: 10.176
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.117 | X: -0.053 Y: 0.407 Z: 10.109
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 30cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.179 | X: -0.010 Y: 0.414 Z: 10.171
+[STD] std=0.0340 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.077 | X: 0.005 Y: 0.428 Z: 10.068
+2026-10-23 22:12:10
+[Radar] OUT: HIGH | Moving: none | Still: 46cm energy:100 | Distance: 30cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1987.6 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.142 | X: -0.019 Y: 0.433 Z: 10.133
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.141 | X: -0.012 Y: 0.416 Z: 10.133
+[Radar] OUT: HIGH | Moving: 60cm energy:53 | Still: 73cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.144 | X: -0.007 Y: 0.419 Z: 10.135
+[STD] std=0.0340 n=50 stopped=0
+2026-10-23 22:12:11
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.109 | X: -0.014 Y: 0.440 Z: 10.099
+[Radar] OUT: HIGH | Moving: 72cm energy:93 | Still: 72cm energy:100 | Distance: 46cm
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1984.2 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.087 | X: 0.036 Y: 0.431 Z: 10.078
+[Radar] OUT: HIGH | Moving: 76cm energy:55 | Still: 62cm energy:100 | Distance: 46cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.096 | X: -0.019 Y: 0.431 Z: 10.087
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.144 | X: -0.010 Y: 0.438 Z: 10.135
+[STD] std=0.0317 n=50 stopped=0
+2026-10-23 22:12:12
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 52cm
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1978.8 mV
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.207 | X: 0.005 Y: 0.402 Z: 10.200
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.157 | X: 0.005 Y: 0.445 Z: 10.147
+[Radar] OUT: HIGH | Moving: none | Still: 74cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.172 | X: -0.024 Y: 0.416 Z: 10.164
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.192 | X: -0.033 Y: 0.443 Z: 10.183
+[STD] std=0.0372 n=50 stopped=0
+2026-10-23 22:12:13
+[Radar] OUT: HIGH | Moving: none | Still: 67cm energy:100 | Distance: 54cm
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1976.5 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.111 | X: -0.026 Y: 0.445 Z: 10.101
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.185 | X: -0.007 Y: 0.431 Z: 10.176
+[Radar] OUT: HIGH | Moving: none | Still: 75cm energy:100 | Distance: 55cm
+[264188][E][WebServer.cpp:638] _handleRequest(): request handler not found
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.126 | X: -0.060 Y: 0.440 Z: 10.116
+[STD] std=0.0359 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.352 | Magnitude: 10.175 | X: -0.002 Y: 0.438 Z: 10.166
+2026-10-23 22:12:14
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 48cm
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1972.9 mV
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.126 | X: -0.038 Y: 0.404 Z: 10.118
+[Vibration] Status: OK | RMS: 0.355 | Magnitude: 10.185 | X: -0.022 Y: 0.428 Z: 10.176
+[Radar] OUT: HIGH | Moving: 75cm energy:54 | Still: 55cm energy:100 | Distance: 42cm
+[Vibration] Status: OK | RMS: 0.347 | Magnitude: 10.121 | X: -0.014 Y: 0.438 Z: 10.111
+[STD] std=0.0397 n=50 stopped=0
+2026-10-23 22:12:15
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.135 | X: -0.002 Y: 0.443 Z: 10.125
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1971.0 mV
+[Radar] OUT: HIGH | Moving: 64cm energy:53 | Still: 67cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.160 | X: -0.010 Y: 0.471 Z: 10.149
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.095 | X: 0.014 Y: 0.455 Z: 10.085
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 64cm energy:100 | Distance: 47cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.104 | X: -0.057 Y: 0.443 Z: 10.094
+[STD] std=0.0243 n=50 stopped=0
+2026-10-23 22:12:16
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1967.2 mV
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.150 | X: -0.007 Y: 0.409 Z: 10.142
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 142cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.144 | X: -0.036 Y: 0.426 Z: 10.135
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.129 | X: -0.026 Y: 0.409 Z: 10.121
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 63cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.150 | X: 0.005 Y: 0.412 Z: 10.142
+[STD] std=0.0271 n=50 stopped=0
+2026-10-23 22:12:17
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1962.9 mV
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.097 | X: -0.024 Y: 0.450 Z: 10.087
+[Radar] OUT: HIGH | Moving: 48cm energy:100 | Still: 75cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.158 | X: -0.033 Y: 0.467 Z: 10.147
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.199 | X: -0.007 Y: 0.426 Z: 10.190
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 49cm energy:100 | Distance: 53cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.141 | X: -0.026 Y: 0.412 Z: 10.133
+[STD] std=0.0320 n=50 stopped=0
+2026-10-23 22:12:18
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1961.8 mV
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.120 | X: -0.031 Y: 0.431 Z: 10.111
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.163 | X: 0.007 Y: 0.428 Z: 10.154
+[Radar] OUT: HIGH | Moving: 55cm energy:100 | Still: 152cm energy:100 | Distance: 68cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.147 | X: 0.005 Y: 0.445 Z: 10.137
+[STD] std=0.0376 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.117 | X: -0.038 Y: 0.416 Z: 10.109
+2026-10-23 22:12:19
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1957.7 mV
+[Radar] OUT: HIGH | Moving: none | Still: 55cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.159 | X: -0.010 Y: 0.435 Z: 10.149
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.139 | X: -0.002 Y: 0.416 Z: 10.130
+[Radar] OUT: HIGH | Moving: 72cm energy:53 | Still: 60cm energy:100 | Distance: 48cm
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.127 | X: -0.033 Y: 0.409 Z: 10.118
+[STD] std=0.0340 n=50 stopped=0
+2026-10-23 22:12:20
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.229 | X: -0.014 Y: 0.464 Z: 10.219
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.429 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1955.2 mV
+[Radar] OUT: HIGH | Moving: none | Still: 73cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.346 | Magnitude: 10.155 | X: -0.033 Y: 0.464 Z: 10.145
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.213 | X: -0.002 Y: 0.476 Z: 10.202
+[Radar] OUT: HIGH | Moving: none | Still: 79cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.152 | X: -0.033 Y: 0.397 Z: 10.145
+[STD] std=0.0352 n=50 stopped=0
+2026-10-23 22:12:21
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.427 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1952.2 mV
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.104 | X: -0.045 Y: 0.433 Z: 10.094
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.110 | X: -0.069 Y: 0.416 Z: 10.101
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.243 | X: -0.005 Y: 0.440 Z: 10.233
+[Radar] OUT: HIGH | Moving: none | Still: 77cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.144 | X: -0.022 Y: 0.433 Z: 10.135
+[STD] std=0.0447 n=50 stopped=0
+2026-10-23 22:12:22
+[Turbidity] At G35 pin: 1.715 V | Sensor output: 3.430 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1948.5 mV
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.197 | X: -0.057 Y: 0.440 Z: 10.188
+[Radar] OUT: HIGH | Moving: none | Still: 72cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.167 | X: -0.026 Y: 0.452 Z: 10.156
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.233 | X: -0.019 Y: 0.443 Z: 10.223
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 72cm energy:100 | Distance: 55cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.118 | X: 0.002 Y: 0.433 Z: 10.109
+[STD] std=0.0400 n=50 stopped=0
+2026-10-23 22:12:23
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1945.6 mV
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 71cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.094 | X: -0.007 Y: 0.435 Z: 10.085
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.101 | X: -0.041 Y: 0.416 Z: 10.092
+[Radar] OUT: HIGH | Moving: 138cm energy:87 | Still: 87cm energy:100 | Distance: 65cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.178 | X: 0.000 Y: 0.438 Z: 10.168
+[STD] std=0.0358 n=50 stopped=0
+2026-10-23 22:12:24
+[Vibration] Status: OK | RMS: 0.339 | Magnitude: 10.199 | X: -0.029 Y: 0.423 Z: 10.190
+[Turbidity] At G35 pin: 1.713 V | Sensor output: 3.426 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1943.7 mV
+[Radar] OUT: HIGH | Moving: 93cm energy:100 | Still: 79cm energy:100 | Distance: 66cm
+[Vibration] Status: OK | RMS: 0.340 | Magnitude: 10.129 | X: 0.000 Y: 0.404 Z: 10.121
+[Vibration] Status: OK | RMS: 0.342 | Magnitude: 10.161 | X: -0.026 Y: 0.426 Z: 10.152
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 67cm energy:100 | Distance: 63cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.195 | X: -0.048 Y: 0.433 Z: 10.185
+[STD] std=0.0317 n=50 stopped=0
+2026-10-23 22:12:25
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.421 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1942.1 mV
+[Vibration] Status: OK | RMS: 0.343 | Magnitude: 10.134 | X: -0.019 Y: 0.423 Z: 10.125
+[Radar] OUT: HIGH | Moving: none | Still: 51cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.349 | Magnitude: 10.124 | X: -0.041 Y: 0.457 Z: 10.113
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.152 | X: -0.026 Y: 0.440 Z: 10.142
+[Radar] OUT: HIGH | Moving: 114cm energy:51 | Still: 53cm energy:100 | Distance: 44cm
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.138 | X: -0.033 Y: 0.443 Z: 10.128
+[STD] std=0.0332 n=50 stopped=0
+2026-10-23 22:12:26
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.421 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1939.0 mV
+[Vibration] Status: OK | RMS: 0.350 | Magnitude: 10.138 | X: 0.022 Y: 0.462 Z: 10.128
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 75cm energy:100 | Distance: 54cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.123 | X: -0.014 Y: 0.447 Z: 10.113
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.153 | X: 0.012 Y: 0.426 Z: 10.145
+[Radar] OUT: HIGH | Moving: 65cm energy:100 | Still: 69cm energy:100 | Distance: 53cm
+[STD] std=0.0378 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.180 | X: -0.043 Y: 0.380 Z: 10.173
+2026-10-23 22:12:27
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.424 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1936.6 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.121 | X: -0.026 Y: 0.447 Z: 10.111
+[Radar] OUT: HIGH | Moving: 47cm energy:100 | Still: 71cm energy:100 | Distance: 50cm
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.139 | X: -0.038 Y: 0.428 Z: 10.130
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.116 | X: 0.002 Y: 0.443 Z: 10.106
+[Radar] OUT: HIGH | Moving: 87cm energy:57 | Still: 81cm energy:100 | Distance: 58cm
+[STD] std=0.0358 n=50 stopped=0
+2026-10-23 22:12:28
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 10.184 | X: -0.017 Y: 0.419 Z: 10.176
+[Turbidity] At G35 pin: 1.712 V | Sensor output: 3.425 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1934.6 mV
+[Vibration] Status: OK | RMS: 0.336 | Magnitude: 10.137 | X: -0.010 Y: 0.443 Z: 10.128
+[Radar] OUT: HIGH | Moving: none | Still: 76cm energy:100 | Distance: 60cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.143 | X: 0.005 Y: 0.412 Z: 10.135
+[Vibration] Status: OK | RMS: 0.338 | Magnitude: 10.137 | X: -0.031 Y: 0.428 Z: 10.128
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 77cm energy:100 | Distance: 73cm
+[STD] std=0.0388 n=50 stopped=0
+2026-10-23 22:12:29
+[Turbidity] At G35 pin: 1.714 V | Sensor output: 3.428 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1932.7 mV
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.095 | X: -0.012 Y: 0.445 Z: 10.085
+[Radar] OUT: HIGH | Moving: 52cm energy:100 | Still: 87cm energy:100 | Distance: 59cm
+[Vibration] Status: OK | RMS: 0.344 | Magnitude: 10.131 | X: -0.022 Y: 0.395 Z: 10.123
+[Vibration] Status: OK | RMS: 0.345 | Magnitude: 10.079 | X: -0.024 Y: 0.412 Z: 10.070
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 66cm energy:100 | Distance: 57cm
+[Vibration] Status: OK | RMS: 0.341 | Magnitude: 10.175 | X: -0.029 Y: 0.428 Z: 10.166
+[STD] std=0.0540 n=50 stopped=0
+2026-10-23 22:12:30
+[Turbidity] At G35 pin: 1.710 V | Sensor output: 3.420 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1929.8 mV
+[Vibration] Status: OK | RMS: 0.406 | Magnitude: 11.230 | X: -0.290 Y: 0.421 Z: 11.219
+[Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 70cm energy:100 | Distance: 49cm
+[Vibration] Status: OK | RMS: 0.414 | Magnitude: 10.267 | X: 0.012 Y: 0.443 Z: 10.257
+[Vibration] Status: OK | RMS: 0.416 | Magnitude: 10.112 | X: -0.022 Y: 0.459 Z: 10.101
+[Radar] OUT: HIGH | Moving: 76cm energy:100 | Still: 46cm energy:100 | Distance: 46cm
+[STD] std=0.2376 n=50 stopped=0
+[Vibration] Status: OK | RMS: 0.417 | Magnitude: 10.116 | X: -0.041 Y: 0.440 Z: 10.106
+2026-10-23 22:12:31
+[Turbidity] At G35 pin: 1.711 V | Sensor output: 3.421 V
+[Temperature] 23.69 C
+[pH] Board output at G34: 1926.6 mV

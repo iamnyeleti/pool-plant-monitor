@@ -35,3 +35,5 @@ Thumbs.db
 # published publicly.
 secrets.h
 .env
+__pycache__/
+*.pyc

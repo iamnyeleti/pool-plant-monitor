@@ -1,0 +1,221 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Radar module ready (UART connected).
+[Radar] OUT: HIGH | Moving: 145cm energy:100 | Still: 137cm energy:100 | Distance: 107cm
+[Radar] OUT: HIGH | Moving: 139cm energy:100 | Still: 134cm energy:100 | Distance: 116cm
+[Radar] OUT: HIGH | Moving: 150cm energy:100 | Still: 152cm energy:100 | Distance: 125cm
+[Radar] OUT: HIGH | Moving: 185cm energy:100 | Still: 177cm energy:100 | Distance: 137cm
+[Radar] OUT: HIGH | Moving: 137cm energy:100 | Still: 142cm energy:100 | Distance: 132cm
+[Radar] OUT: HIGH | Moving: 123cm energy:100 | Still: 145cm energy:100 | Distance: 126cm
+[Radar] OUT: HIGH | Moving: 139cm energy:100 | Still: 140cm energy:100 | Distance: 126cm
+[Radar] OUT: HIGH | Moving: 103cm energy:100 | Still: 86cm energy:100 | Distance: 104cm
+[Radar] OUT: HIGH | Moving: 79cm energy:100 | Still: 85cm energy:100 | Distance: 84cm
+[Radar] OUT: HIGH | Moving: 84cm energy:100 | Still: 77cm energy:100 | Distance: 73cm
+[Radar] OUT: HIGH | Moving: 66cm energy:100 | Still: 75cm energy:100 | Distance: 64cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 62cm energy:100 | Distance: 58cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 59cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 59cm energy:100 | Still: 64cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 63cm energy:100 | Distance: 53cm
+[Radar] OUT: HIGH | Moving: 81cm energy:100 | Still: 73cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 99cm energy:100 | Still: 90cm energy:100 | Distance: 63cm
+[Radar] OUT: HIGH | Moving: 145cm energy:100 | Still: 157cm energy:100 | Distance: 81cm
+[Radar] OUT: HIGH | Moving: 126cm energy:100 | Still: 128cm energy:100 | Distance: 92cm
+[Radar] OUT: HIGH | Moving: 152cm energy:100 | Still: 150cm energy:100 | Distance: 112cm
+[Radar] OUT: HIGH | Moving: 155cm energy:100 | Still: 170cm energy:100 | Distance: 127cm
+[Radar] OUT: HIGH | Moving: 162cm energy:72 | Still: 168cm energy:100 | Distance: 140cm
+[Radar] OUT: HIGH | Moving: 179cm energy:100 | Still: 148cm energy:100 | Distance: 145cm
+[Radar] OUT: HIGH | Moving: 200cm energy:96 | Still: 174cm energy:100 | Distance: 153cm
+[Radar] OUT: HIGH | Moving: none | Still: 165cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 166cm energy:55 | Still: 165cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 173cm energy:100 | Still: 168cm energy:100 | Distance: 149cm
+[Radar] OUT: HIGH | Moving: 180cm energy:99 | Still: 181cm energy:100 | Distance: 154cm
+[Radar] OUT: HIGH | Moving: none | Still: 176cm energy:100 | Distance: 159cm
+[Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 169cm
+[Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 174cm
+[Radar] OUT: HIGH | Moving: none | Still: 196cm energy:100 | Distance: 175cm
+[Radar] OUT: HIGH | Moving: 186cm energy:52 | Still: 187cm energy:100 | Distance: 174cm
+[Radar] OUT: HIGH | Moving: 183cm energy:75 | Still: 181cm energy:100 | Distance: 172cm
+[Radar] OUT: HIGH | Moving: 170cm energy:67 | Still: 171cm energy:100 | Distance: 165cm
+[Radar] OUT: HIGH | Moving: 172cm energy:91 | Still: 175cm energy:100 | Distance: 163cm
+[Radar] OUT: HIGH | Moving: 156cm energy:100 | Still: 154cm energy:100 | Distance: 153cm
+[Radar] OUT: HIGH | Moving: 165cm energy:100 | Still: 159cm energy:100 | Distance: 147cm
+[Radar] OUT: HIGH | Moving: 166cm energy:100 | Still: 168cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: none | Still: 166cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 169cm energy:100 | Still: 172cm energy:100 | Distance: 159cm
+[Radar] OUT: HIGH | Moving: 161cm energy:80 | Still: 159cm energy:100 | Distance: 153cm
+[Radar] OUT: HIGH | Moving: 225cm energy:35 | Still: 182cm energy:100 | Distance: 162cm
+[Radar] OUT: HIGH | Moving: 167cm energy:47 | Still: 225cm energy:100 | Distance: 186cm
+[Radar] OUT: HIGH | Moving: none | Still: 171cm energy:100 | Distance: 168cm
+[Radar] OUT: HIGH | Moving: 168cm energy:100 | Still: 172cm energy:100 | Distance: 162cm
+[Radar] OUT: HIGH | Moving: 175cm energy:52 | Still: 159cm energy:100 | Distance: 156cm
+[Radar] OUT: HIGH | Moving: none | Still: 161cm energy:100 | Distance: 155cm
+[Radar] OUT: HIGH | Moving: none | Still: 161cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 151cm energy:55 | Still: 161cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 162cm energy:100 | Still: 157cm energy:100 | Distance: 150cm
+[Radar] OUT: HIGH | Moving: 170cm energy:100 | Still: 176cm energy:100 | Distance: 152cm
+[Radar] OUT: HIGH | Moving: 193cm energy:100 | Still: 215cm energy:100 | Distance: 159cm
+[Radar] OUT: HIGH | Moving: 191cm energy:52 | Still: 191cm energy:100 | Distance: 171cm
+[Radar] OUT: HIGH | Moving: 219cm energy:100 | Still: 219cm energy:100 | Distance: 186cm
+[Radar] OUT: HIGH | Moving: 212cm energy:100 | Still: 212cm energy:100 | Distance: 191cm
+[Radar] OUT: HIGH | Moving: 225cm energy:51 | Still: 225cm energy:100 | Distance: 200cm
+[Radar] OUT: HIGH | Moving: 225cm energy:100 | Still: 196cm energy:100 | Distance: 205cm
+[Radar] OUT: HIGH | Moving: 225cm energy:82 | Still: 212cm energy:100 | Distance: 207cm
+[Radar] OUT: HIGH | Moving: 225cm energy:83 | Still: 224cm energy:100 | Distance: 207cm
+[Radar] OUT: HIGH | Moving: none | Still: 234cm energy:100 | Distance: 207cm
+[Radar] OUT: HIGH | Moving: none | Still: 240cm energy:100 | Distance: 207cm
+[Radar] OUT: HIGH | Moving: none | Still: 249cm energy:100 | Distance: 207cm
+[Radar] OUT: HIGH | Moving: none | Still: 260cm energy:100 | Distance: 211cm
+[Radar] OUT: HIGH | Moving: 225cm energy:38 | Still: none | Distance: 222cm
+[Radar] OUT: HIGH | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: HIGH | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: HIGH | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: HIGH | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: LOW | Moving: none | Still: none | Distance: 220cm
+[Radar] OUT: HIGH | Moving: 225cm energy:100 | Still: none | Distance: 214cm
+[Radar] OUT: HIGH | Moving: 211cm energy:100 | Still: none | Distance: 210cm
+[Radar] OUT: HIGH | Moving: 156cm energy:100 | Still: none | Distance: 185cm
+[Radar] OUT: HIGH | Moving: 130cm energy:100 | Still: none | Distance: 158cm
+[Radar] OUT: HIGH | Moving: 127cm energy:100 | Still: none | Distance: 137cm
+[Radar] OUT: HIGH | Moving: none | Still: 106cm energy:100 | Distance: 130cm
+[Radar] OUT: HIGH | Moving: 91cm energy:100 | Still: 99cm energy:100 | Distance: 109cm
+[Radar] OUT: HIGH | Moving: 129cm energy:100 | Still: 120cm energy:100 | Distance: 109cm
+[Radar] OUT: HIGH | Moving: 99cm energy:100 | Still: 95cm energy:100 | Distance: 104cm
+[Radar] OUT: HIGH | Moving: 159cm energy:56 | Still: 98cm energy:100 | Distance: 100cm
+����������������������������������������������������������������adar] OUT: HIGH | Moving: 93cm energy:100 | Still: 87cm energy:100 | Distance: 95cm
+[Radar] OUT: HIGH | Moving: 103cm energy:100 | Still: 100cm energy:100 | Distance: 87cm
+[Radar] OUT: HIGH | Moving: 140cm energy:41 | Still: 91cm energy:100 | Distance: 81cm
+[Radar] OUT: HIGH | Moving: 97cm energy:100 | Still: 97cm energy:100 | Distance: 86cm
+[Radar] OUT: HIGH | Moving: none | Still: 137cm energy:100 | Distance: 95cm
+[Radar] OUT: HIGH | Moving: 90cm energy:64 | Still: 94cm energy:100 | Distance: 102cm
+[Radar] OUT: HIGH | Moving: none | Still: 90cm energy:100 | Distance: 90cm
+[Radar] OUT: HIGH | Moving: none | Still: 91cm energy:100 | Distance: 83cm
+[Radar] OUT: HIGH | Moving: 99cm energy:62 | Still: 91cm energy:100 | Distance: 78cm
+[Radar] OUT: HIGH | Moving: 87cm energy:100 | Still: 84cm energy:100 | Distance: 81cm
+[Radar] OUT: HIGH | Moving: 91cm energy:97 | Still: 96cm energy:100 | Distance: 78cm
+[Radar] OUT: HIGH | Moving: 101cm energy:98 | Still: 135cm energy:100 | Distance: 83cm
+[Radar] OUT: HIGH | Moving: 88cm energy:100 | Still: 90cm energy:100 | Distance: 79cm
+[Radar] OUT: HIGH | Moving: none | Still: 88cm energy:100 | Distance: 78cm
+[Radar] OUT: HIGH | Moving: none | Still: 88cm energy:100 | Distance: 78cm
+[Radar] OUT: HIGH | Moving: 100cm energy:57 | Still: 101cm energy:100 | Distance: 79cm
+[Radar] OUT: HIGH | Moving: 95cm energy:67 | Still: 114cm energy:100 | Distance: 82cm
+[Radar] OUT: HIGH | Moving: 87cm energy:100 | Still: 87cm energy:100 | Distance: 76cm
+[Radar] OUT: HIGH | Moving: 92cm energy:65 | Still: 86cm energy:100 | Distance: 72cm
+[Radar] OUT: HIGH | Moving: 150cm energy:48 | Still: 150cm energy:100 | Distance: 85cm
+[Radar] OUT: HIGH | Moving: none | Still: 102cm energy:100 | Distance: 86cm
+[Radar] OUT: HIGH | Moving: 104cm energy:100 | Still: 102cm energy:100 | Distance: 86cm
+[Radar] OUT: HIGH | Moving: none | Still: 110cm energy:100 | Distance: 87cm
+[Radar] OUT: HIGH | Moving: 124cm energy:43 | Still: 110cm energy:100 | Distance: 87cm
+[Radar] OUT: HIGH | Moving: 109cm energy:100 | Still: 108cm energy:100 | Distance: 90cm
+[Radar] OUT: HIGH | Moving: 116cm energy:100 | Still: 114cm energy:100 | Distance: 92cm
+[Radar] OUT: HIGH | Moving: 105cm energy:100 | Still: 106cm energy:100 | Distance: 94cm
+[Radar] OUT: HIGH | Moving: 137cm energy:48 | Still: 99cm energy:100 | Distance: 95cm
+[Radar] OUT: HIGH | Moving: none | Still: 135cm energy:100 | Distance: 104cm
+[Radar] OUT: HIGH | Moving: none | Still: 135cm energy:100 | Distance: 109cm
+[Radar] OUT: HIGH | Moving: 135cm energy:41 | Still: 135cm energy:100 | Distance: 111cm
+[Radar] OUT: HIGH | Moving: 106cm energy:100 | Still: 110cm energy:100 | Distance: 103cm
+[Radar] OUT: HIGH | Moving: 103cm energy:60 | Still: 93cm energy:100 | Distance: 93cm
+[Radar] OUT: HIGH | Moving: 104cm energy:96 | Still: 107cm energy:100 | Distance: 93cm
+[Radar] OUT: HIGH | Moving: 126cm energy:72 | Still: 122cm energy:100 | Distance: 97cm
+[Radar] OUT: HIGH | Moving: none | Still: 115cm energy:100 | Distance: 98cm
+[Radar] OUT: HIGH | Moving: none | Still: 104cm energy:100 | Distance: 96cm
+[Radar] OUT: HIGH | Moving: none | Still: 104cm energy:100 | Distance: 94cm
+[Radar] OUT: HIGH | Moving: 125cm energy:100 | Still: 106cm energy:100 | Distance: 100cm
+[Radar] OUT: HIGH | Moving: 116cm energy:100 | Still: 104cm energy:100 | Distance: 99cm
+[Radar] OUT: HIGH | Moving: 114cm energy:100 | Still: 97cm energy:100 | Distance: 96cm
+[Radar] OUT: HIGH | Moving: 100cm energy:100 | Still: 106cm energy:100 | Distance: 93cm
+[Radar] OUT: HIGH | Moving: 94cm energy:100 | Still: 125cm energy:100 | Distance: 93cm
+[Radar] OUT: HIGH | Moving: 91cm energy:100 | Still: 89cm energy:100 | Distance: 85cm
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 101cm energy:100 | Distance: 84cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 75cm energy:100 | Distance: 72cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 73cm energy:100 | Distance: 62cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 159cm energy:100 | Distance: 68cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 68cm energy:100 | Distance: 61cm
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 62cm energy:100 | Distance: 57cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 46cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 82cm energy:100 | Still: 77cm energy:100 | Distance: 56cm
+[Radar] OUT: HIGH | Moving: 116cm energy:100 | Still: 86cm energy:100 | Distance: 67cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 80cm energy:100 | Distance: 69cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 79cm energy:100 | Distance: 61cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 68cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 63cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 75cm energy:100 | Distance: 40cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 30cm energy:100 | Distance: 37cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 33cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 70cm energy:100 | Distance: 30cm
+[Radar] OUT: HIGH | Moving: 56cm energy:100 | Still: 30cm energy:100 | Distance: 30cm
+[Radar] OUT: HIGH | Moving: 47cm energy:100 | Still: 42cm energy:100 | Distance: 31cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 39cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 58cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 45cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 30cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 58cm energy:100 | Still: 49cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 69cm energy:100 | Still: 60cm energy:100 | Distance: 0cm
+[Radar] OUT: HIGH | Moving: 83cm energy:100 | Still: 71cm energy:100 | Distance: 41cm
+[Radar] OUT: HIGH | Moving: 92cm energy:100 | Still: 84cm energy:100 | Distance: 55cm
+[Radar] OUT: HIGH | Moving: 142cm energy:100 | Still: 159cm energy:100 | Distance: 87cm
+[Radar] OUT: HIGH | Moving: 213cm energy:100 | Still: 179cm energy:100 | Distance: 124cm
+[Radar] OUT: HIGH | Moving: none | Still: 221cm energy:100 | Distance: 163cm
+[Radar] OUT: HIGH | Moving: none | Still: 221cm energy:100 | Distance: 182cm
+[Radar] OUT: HIGH | Moving: none | Still: 221cm energy:100 | Distance: 192cm
+[Radar] OUT: HIGH | Moving: none | Still: 221cm energy:100 | Distance: 198cm
+[Radar] OUT: HIGH | Moving: 221cm energy:100 | Still: 221cm energy:100 | Distance: 199cm
+[Radar] OUT: HIGH | Moving: 202cm energy:47 | Still: 221cm energy:100 | Distance: 197cm
+[Radar] OUT: HIGH | Moving: 150cm energy:100 | Still: 149cm energy:100 | Distance: 170cm
+[Radar] OUT: HIGH | Moving: 89cm energy:100 | Still: 103cm energy:100 | Distance: 137cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 88cm energy:100 | Distance: 103cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 58cm energy:100 | Distance: 82cm
+[Radar] OUT: HIGH | Moving: 80cm energy:100 | Still: 80cm energy:100 | Distance: 76cm
+[Radar] OUT: HIGH | Moving: 88cm energy:100 | Still: 99cm energy:100 | Distance: 74cm
+[Radar] OUT: HIGH | Moving: 73cm energy:100 | Still: 70cm energy:100 | Distance: 65cm
+[Radar] OUT: HIGH | Moving: 78cm energy:100 | Still: 69cm energy:100 | Distance: 59cm
+[Radar] OUT: HIGH | Moving: 71cm energy:100 | Still: 74cm energy:100 | Distance: 54cm
+[Radar] OUT: HIGH | Moving: 68cm energy:100 | Still: 30cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 75cm energy:100 | Still: 73cm energy:100 | Distance: 62cm
+[Radar] OUT: HIGH | Moving: 42cm energy:100 | Still: 62cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 67cm energy:100 | Still: 63cm energy:100 | Distance: 47cm
+[Radar] OUT: HIGH | Moving: 64cm energy:100 | Still: 56cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 61cm energy:100 | Still: 73cm energy:100 | Distance: 46cm
+[Radar] OUT: HIGH | Moving: 30cm energy:100 | Still: 63cm energy:100 | Distance: 42cm
+[Radar] OUT: HIGH | Moving: 72cm energy:100 | Still: 30cm energy:100 | Distance: 38cm
+[Radar] OUT: HIGH | Moving: 65cm energy:52 | Still: 107cm energy:100 | Distance: 49cm
+[Radar] OUT: HIGH | Moving: 62cm energy:100 | Still: 76cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 73cm energy:100 | Distance: 50cm
+[Radar] OUT: HIGH | Moving: 70cm energy:100 | Still: 81cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 74cm energy:100 | Still: 77cm energy:100 | Distance: 51cm
+[Radar] OUT: HIGH | Moving: 60cm energy:100 | Still: 67cm energy:100 | Distance: 52cm
+[Radar] OUT: HIGH | Moving: 46cm energy:100 | Still: 76cm energy:100 | Distance: 48cm

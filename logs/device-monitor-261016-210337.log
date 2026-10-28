@@ -1,0 +1,112 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+=== CALIBRATION MODE ===
+Warm-up done. Recording now...
+Calibrating... RMS: 0.565
+Calibrating... RMS: 0.635
+Calibrating... RMS: 0.534
+Calibrating... RMS: 0.723
+Calibrating... RMS: 0.700
+Calibrating... RMS: 0.640
+Calibrating... RMS: 0.396
+Calibrating... RMS: 0.602
+Calibrating... RMS: 0.448
+����������������������������������������������������������������alibrating... RMS: 0.466
+Calibrating... RMS: 0.619
+Calibrating... RMS: 0.710
+Calibrating... RMS: 0.704
+Calibrating... RMS: 0.606
+Calibrating... RMS: 0.688
+Calibrating... RMS: 0.757
+Calibrating... RMS: 0.594
+Calibrating... RMS: 0.848
+Calibrating... RMS: 0.430
+Calibrating... RMS: 0.639
+Calibrating... RMS: 0.739
+Calibrating... RMS: 0.619
+Calibrating... RMS: 0.809
+Calibrating... RMS: 0.703
+Calibrating... RMS: 0.567
+Calibrating... RMS: 0.873
+Calibrating... RMS: 0.699
+Calibrating... RMS: 0.861
+Calibrating... RMS: 0.926
+Calibrating... RMS: 0.683
+Calibrating... RMS: 0.613
+Calibrating... RMS: 0.647
+Calibrating... RMS: 0.841
+Calibrating... RMS: 0.721
+Calibrating... RMS: 0.624
+Calibrating... RMS: 0.672
+Calibrating... RMS: 0.584
+Calibrating... RMS: 0.785
+Calibrating... RMS: 0.632
+Calibrating... RMS: 0.652
+Calibrating... RMS: 0.698
+Calibrating... RMS: 0.689
+Calibrating... RMS: 0.770
+Calibrating... RMS: 0.701
+Calibrating... RMS: 0.645
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+����������������������������������������������������������������=== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715
+===== CALIBRATION COMPLETE ===== Average RMS: 0.6715

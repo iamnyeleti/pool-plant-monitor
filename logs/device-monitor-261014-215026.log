@@ -1,0 +1,59 @@
+s Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+RTC already keeping time correctly, leaving it alone.
+RTC module ready.
+[Vibration] Status: CAUTION | RMS: 2.353 | Magnitude: 10.524 | X: 1.165 Y: 1.256 Z: 10.384
+[Vibration] Status: CAUTION | RMS: 1.669 | Magnitude: 9.540 | X: -1.381 Y: -1.699 Z: 9.286
+[Vibration] Status: CAUTION | RMS: 1.410 | Magnitude: 10.051 | X: -1.333 Y: 0.689 Z: 9.939
+2026-10-13 14:52:03
+[Vibration] Status: CAUTION | RMS: 1.251 | Magnitude: 10.229 | X: 1.404 Y: -1.349 Z: 10.042
+[Vibration] Status: CAUTION | RMS: 0.613 | Magnitude: 10.272 | X: 0.648 Y: -2.976 Z: 9.810
+[Vibration] Status: CAUTION | RMS: 0.605 | Magnitude: 10.457 | X: 2.285 Y: -0.797 Z: 10.173
+[Vibration] Status: CAUTION | RMS: 0.581 | Magnitude: 10.823 | X: -2.479 Y: -1.474 Z: 10.432
+2026-10-13 14:52:04
+[Vibration] Status: CAUTION | RMS: 0.664 | Magnitude: 10.647 | X: -3.311 Y: -0.636 Z: 10.099
+[Vibration] Status: CAUTION | RMS: 0.705 | Magnitude: 9.971 | X: -0.457 Y: -0.323 Z: 9.956
+[Vibration] Status: CAUTION | RMS: 0.787 | Magnitude: 10.573 | X: 0.134 Y: -1.730 Z: 10.429
+[Vibration] Status: CAUTION | RMS: 0.843 | Magnitude: 10.387 | X: 1.364 Y: 0.359 Z: 10.290
+2026-10-13 14:52:05
+[Vibration] Status: CAUTION | RMS: 0.827 | Magnitude: 10.155 | X: -2.543 Y: 0.809 Z: 9.798
+[Vibration] Status: CAUTION | RMS: 0.835 | Magnitude: 10.574 | X: -2.393 Y: -2.283 Z: 10.044
+[Vibration] Status: CAUTION | RMS: 0.821 | Magnitude: 10.141 | X: -0.653 Y: 0.419 Z: 10.111
+[Vibration] Status: CAUTION | RMS: 0.826 | Magnitude: 10.589 | X: 1.084 Y: 2.912 Z: 10.123
+2026-10-13 14:52:06
+[Vibration] Status: CAUTION | RMS: 0.807 | Magnitude: 10.164 | X: 2.728 Y: -0.579 Z: 9.774
+[Vibration] Status: CAUTION | RMS: 0.789 | Magnitude: 10.332 | X: -1.983 Y: -0.727 Z: 10.113
+[Vibration] Status: CAUTION | RMS: 0.795 | Magnitude: 9.726 | X: -1.156 Y: 0.871 Z: 9.618
+[Vibration] Status: CAUTION | RMS: 0.765 | Magnitude: 11.248 | X: -0.033 Y: 2.462 Z: 10.975
+2026-10-13 14:52:07
+[Vibration] Status: CAUTION | RMS: 0.781 | Magnitude: 10.956 | X: 2.000 Y: 1.160 Z: 10.709
+[Vibration] Status: CAUTION | RMS: 0.883 | Magnitude: 10.429 | X: -3.180 Y: -0.086 Z: 9.932
+[Vibration] Status: CAUTION | RMS: 0.930 | Magnitude: 9.989 | X: 2.378 Y: 0.285 Z: 9.697
+[Vibration] Status: CAUTION | RMS: 0.968 | Magnitude: 10.810 | X: -2.342 Y: 0.385 Z: 10.546
+2026-10-13 14:52:08
+[Vibration] Status: CAUTION | RMS: 0.996 | Magnitude: 11.695 | X: -1.718 Y: 0.995 Z: 11.525
+[Vibration] Status: CAUTION | RMS: 0.858 | Magnitude: 11.122 | X: -1.548 Y: -0.412 Z: 11.006
+[Vibration] Status: CAUTION | RMS: 0.893 | Magnitude: 11.275 | X: -3.364 Y: -1.445 Z: 10.664
+2026-10-13 14:52:09
+[Vibration] Status: CAUTION | RMS: 0.834 | Magnitude: 10.137 | X: 1.318 Y: -2.070 Z: 9.836
+[Vibration] Status: CAUTION | RMS: 0.809 | Magnitude: 10.464 | X: -2.352 Y: -0.349 Z: 10.190
+[Vibration] Status: CAUTION | RMS: 0.908 | Magnitude: 10.858 | X: 3.716 Y: -0.857 Z: 10.166
+[Vibration] Status: CAUTION | RMS: 0.870 | Magnitude: 9.818 | X: -1.058 Y: -0.347 Z: 9.755
+2026-10-13 14:52:10
+[Vibration] Status: CAUTION | RMS: 0.874 | Magnitude: 9.430 | X: 1.828 Y: -2.196 Z: 8.987
+[Vibration] Status: CAUTION | RMS: 1.014 | Magnitude: 10.840 | X: -3.699 Y: -1.388 Z: 10.094
+[Vibration] Status: CAUTION | RMS: 0.991 | Magnitude: 10.339 | X: 1.515 Y: -1.093 Z: 10.168
+[Vibration] Status: CAUTION | RMS: 0.975 | Magnitude: 10.569 | X: -2.019 Y: 0.897 Z: 10.336
+2026-10-13 14:52:11
+[Vibration] Status: CAUTION | RMS: 1.041 | Magnitude: 10.361 | X: 3.113 Y: 1.237 Z: 9.805
+[Vibration] Status: CAUTION | RMS: 0.912 | Magnitude: 10.914 | X: 0.124 Y: 0.098 Z: 10.913

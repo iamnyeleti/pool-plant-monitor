@@ -1,0 +1,249 @@
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+urned Error -1
+ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+=== CALIBRATION MODE ===
+[   220][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[  1354][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[  1382][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[  1409][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 13469][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Warm-up done. Recording now...
+Calibrating... RMS: 1.386
+Calibrating... RMS: 1.228
+Calibrating... RMS: 1.328
+[ 24542][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Calibrating... RMS: 1.172
+[ 26354][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26382][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26410][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26437][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26464][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26491][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26518][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26545][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26572][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26599][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26626][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26654][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26681][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26708][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26735][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26762][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26789][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26816][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26843][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26870][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26897][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26925][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26952][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 26979][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27006][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27033][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27060][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27087][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27114][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27141][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27168][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27196][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27223][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27250][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27277][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27304][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27331][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27358][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27385][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27412][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27439][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27467][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27494][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27521][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27548][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27575][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27602][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27629][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27656][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27683][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27710][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27738][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27765][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27792][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27819][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27846][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27873][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27900][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27927][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27954][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 27981][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28009][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28036][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28063][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28090][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28117][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28144][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28171][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28198][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28225][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28252][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28280][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28307][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28334][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28361][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28388][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28415][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28442][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28469][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28496][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28523][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28551][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28578][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28605][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28632][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28659][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28686][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28713][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28740][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28767][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28794][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28822][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28849][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28876][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28903][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28930][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28957][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 28984][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29011][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29038][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29065][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29093][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29120][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29147][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29174][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29201][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29228][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29255][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29282][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29309][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29336][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29364][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29391][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29418][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29445][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29472][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29499][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29526][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29553][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29580][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29607][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29635][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29662][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29689][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29716][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29743][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29770][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29797][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29824][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29851][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29878][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29906][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29933][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29960][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 29987][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 30014][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+Calibrating... RMS: 1.222
+Calibrating... RMS: 1.256
+Calibrating... RMS: 1.460
+Calibrating... RMS: 1.143

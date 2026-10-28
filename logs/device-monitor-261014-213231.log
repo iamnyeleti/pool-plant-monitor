@@ -1,0 +1,1866 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+RTC lost power, setting to compile time...
+RTC module ready.
+[Vibration] Status: CAUTION | RMS: 1.479 | Magnitude: 10.073 | X: -0.193 Y: -0.181 Z: 10.069
+[Vibration] Status: CAUTION | RMS: 1.041 | Magnitude: 10.058 | X: -0.191 Y: -0.173 Z: 10.055
+[Vibration] Status: CAUTION | RMS: 0.858 | Magnitude: 10.070 | X: -0.188 Y: -0.176 Z: 10.067
+2026-10-13 14:34:08
+[Vibration] Status: CAUTION | RMS: 0.753 | Magnitude: 10.069 | X: -0.195 Y: -0.190 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.068 | X: -0.200 Y: -0.187 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.213 Y: -0.183 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.060 | X: -0.191 Y: -0.196 Z: 10.056
+2026-10-13 14:34:09
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.200 Y: -0.179 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.206 Y: -0.171 Z: 10.061
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.079 | X: -0.205 Y: -0.175 Z: 10.075
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.046 | X: -0.193 Y: -0.178 Z: 10.043
+2026-10-13 14:34:11
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.085 | X: -0.199 Y: -0.170 Z: 10.081
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.194 Y: -0.183 Z: 10.057
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.065 | X: -0.203 Y: -0.188 Z: 10.061
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.045 | X: -0.199 Y: -0.184 Z: 10.042
+2026-10-13 14:34:12
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.058 | X: -0.187 Y: -0.176 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.206 Y: -0.184 Z: 10.056
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.061 | X: -0.195 Y: -0.187 Z: 10.057
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.066 | X: -0.203 Y: -0.177 Z: 10.062
+2026-10-13 14:34:13
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.063 | X: -0.205 Y: -0.177 Z: 10.060
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.061 | X: -0.199 Y: -0.185 Z: 10.057
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.059 | X: -0.205 Y: -0.167 Z: 10.056
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.208 Y: -0.176 Z: 10.061
+2026-10-13 14:34:14
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.200 Y: -0.181 Z: 10.056
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.053 | X: -0.197 Y: -0.172 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.064 | X: -0.214 Y: -0.189 Z: 10.060
+2026-10-13 14:34:15
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.070 | X: -0.195 Y: -0.183 Z: 10.067
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.107 | X: -0.206 Y: -0.171 Z: 10.104
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.065 | X: -0.213 Y: -0.172 Z: 10.061
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.053 | X: -0.194 Y: -0.166 Z: 10.050
+2026-10-13 14:34:16
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.060 | X: -0.202 Y: -0.191 Z: 10.056
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.059 | X: -0.193 Y: -0.176 Z: 10.056
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.191 Y: -0.193 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.199 Y: -0.183 Z: 10.062
+2026-10-13 14:34:17
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.040 | X: -0.199 Y: -0.177 Z: 10.037
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.046 | X: -0.209 Y: -0.184 Z: 10.042
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.208 Y: -0.177 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.207 Y: -0.191 Z: 10.064
+2026-10-13 14:34:18
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.187 Y: -0.170 Z: 10.061
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.045 | X: -0.200 Y: -0.169 Z: 10.042
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.085 | X: -0.199 Y: -0.177 Z: 10.081
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.080 | X: -0.208 Y: -0.176 Z: 10.076
+2026-10-13 14:34:19
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.044 | X: -0.197 Y: -0.190 Z: 10.040
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.185 Y: -0.179 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.203 Y: -0.185 Z: 10.054
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.070 | X: -0.206 Y: -0.157 Z: 10.067
+2026-10-13 14:34:20
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.076 | X: -0.211 Y: -0.169 Z: 10.073
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.092 | X: -0.209 Y: -0.176 Z: 10.088
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.047 | X: -0.207 Y: -0.187 Z: 10.043
+2026-10-13 14:34:21
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.052 | X: -0.208 Y: -0.187 Z: 10.048
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.196 Y: -0.179 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.046 | X: -0.200 Y: -0.175 Z: 10.043
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.205 Y: -0.172 Z: 10.051
+2026-10-13 14:34:22
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.201 Y: -0.170 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.211 Y: -0.191 Z: 10.062
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.078 | X: -0.214 Y: -0.179 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.213 Y: -0.178 Z: 10.072
+2026-10-13 14:34:23
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.085 | X: -0.213 Y: -0.178 Z: 10.081
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.042 | X: -0.189 Y: -0.188 Z: 10.038
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.209 Y: -0.188 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.202 Y: -0.179 Z: 10.049
+2026-10-13 14:34:24
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.069 | X: -0.211 Y: -0.170 Z: 10.066
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.042 | X: -0.208 Y: -0.182 Z: 10.038
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.079 | X: -0.206 Y: -0.173 Z: 10.075
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.214 Y: -0.167 Z: 10.055
+2026-10-13 14:34:25
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.086 | X: -0.205 Y: -0.197 Z: 10.082
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.086 | X: -0.200 Y: -0.199 Z: 10.082
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.045 | X: -0.194 Y: -0.183 Z: 10.042
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.205 Y: -0.177 Z: 10.055
+2026-10-13 14:34:26
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.074 | X: -0.196 Y: -0.169 Z: 10.070
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.064 | X: -0.190 Y: -0.184 Z: 10.061
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.197 Y: -0.179 Z: 10.055
+2026-10-13 14:34:27
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.050 | X: -0.191 Y: -0.182 Z: 10.046
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.080 | X: -0.201 Y: -0.177 Z: 10.076
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.064 | X: -0.200 Y: -0.173 Z: 10.061
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.078 | X: -0.201 Y: -0.185 Z: 10.074
+2026-10-13 14:34:28
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.048 | X: -0.194 Y: -0.187 Z: 10.044
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.200 Y: -0.173 Z: 10.057
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.202 Y: -0.165 Z: 10.069
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.067 | X: -0.196 Y: -0.179 Z: 10.063
+2026-10-13 14:34:29
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.202 Y: -0.175 Z: 10.068
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.047 | X: -0.189 Y: -0.164 Z: 10.044
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.063 | X: -0.207 Y: -0.177 Z: 10.060
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.052 | X: -0.209 Y: -0.184 Z: 10.048
+2026-10-13 14:34:30
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.081 | X: -0.214 Y: -0.164 Z: 10.078
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.064 | X: -0.195 Y: -0.177 Z: 10.061
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.073 | X: -0.199 Y: -0.187 Z: 10.069
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.063 | X: -0.202 Y: -0.166 Z: 10.060
+2026-10-13 14:34:31
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.086 | X: -0.197 Y: -0.190 Z: 10.082
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.074 | X: -0.201 Y: -0.187 Z: 10.070
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.038 | X: -0.205 Y: -0.172 Z: 10.034
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.037 | X: -0.201 Y: -0.176 Z: 10.033
+2026-10-13 14:34:32
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.203 Y: -0.170 Z: 10.069
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.160 Y: -0.167 Z: 10.073
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.185 Y: -0.176 Z: 10.072
+2026-10-13 14:34:33
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.187 Y: -0.156 Z: 10.057
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.184 Y: -0.223 Z: 10.051
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.072 | X: -0.183 Y: -0.223 Z: 10.068
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.074 | X: -0.181 Y: -0.144 Z: 10.072
+2026-10-13 14:34:34
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.127 | X: -0.093 Y: -0.316 Z: 10.122
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.109 | X: -0.128 Y: -0.176 Z: 10.106
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.077 | X: -0.114 Y: -0.176 Z: 10.075
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.089 | X: -0.124 Y: -0.284 Z: 10.085
+2026-10-13 14:34:35
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.069 | X: -0.200 Y: -0.208 Z: 10.064
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.036 | X: -0.213 Y: -0.135 Z: 10.033
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.095 | X: -0.048 Y: -0.194 Z: 10.093
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.054 | X: -0.172 Y: -0.275 Z: 10.049
+2026-10-13 14:34:36
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.025 | X: -0.279 Y: -0.121 Z: 10.020
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.032 | X: -0.181 Y: -0.177 Z: 10.028
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 9.991 | X: -0.368 Y: -0.091 Z: 9.984
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.112 | X: -0.083 Y: -0.061 Z: 10.111
+2026-10-13 14:34:37
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.073 | X: -0.152 Y: -0.099 Z: 10.072
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.112 | X: -0.014 Y: 0.051 Z: 10.112
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 9.988 | X: -0.238 Y: -0.006 Z: 9.985
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.098 | X: -0.171 Y: -0.152 Z: 10.095
+2026-10-13 14:34:38
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.103 | X: -0.133 Y: -0.096 Z: 10.101
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.093 | X: -0.118 Y: -0.048 Z: 10.092
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.057 | X: -0.282 Y: -0.274 Z: 10.049
+2026-10-13 14:34:39
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.053 | X: -0.373 Y: -0.425 Z: 10.037
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.051 | X: -0.102 Y: -0.069 Z: 10.050
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 9.978 | X: -0.276 Y: -0.370 Z: 9.967
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.365 Y: -0.179 Z: 10.060
+2026-10-13 14:34:40
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.278 Y: -0.282 Z: 10.045
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.096 | X: -0.368 Y: -0.658 Z: 10.068
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.086 | X: 0.292 Y: -0.212 Z: 10.080
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.055 | X: -0.120 Y: -0.463 Z: 10.044
+2026-10-13 14:34:41
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.081 | X: -0.465 Y: -0.581 Z: 10.054
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.082 | X: -0.358 Y: -0.181 Z: 10.074
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.049 | X: -0.633 Y: -0.506 Z: 10.017
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.123 | X: -0.463 Y: -0.415 Z: 10.104
+2026-10-13 14:34:42
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.117 | X: -0.324 Y: -0.093 Z: 10.111
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.063 | X: -0.555 Y: -0.340 Z: 10.042
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.139 | X: -0.572 Y: -0.006 Z: 10.123
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.126 | X: -0.541 Y: 0.236 Z: 10.109
+2026-10-13 14:34:43
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.090 | X: -0.760 Y: -0.263 Z: 10.058
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.211 | X: -0.578 Y: 0.004 Z: 10.195
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.155 | X: -0.301 Y: 0.056 Z: 10.151
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.092 | X: -0.318 Y: -0.220 Z: 10.085
+2026-10-13 14:34:44
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.152 | X: -0.136 Y: -0.114 Z: 10.151
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.165 | X: -0.309 Y: -0.100 Z: 10.160
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.037 | X: -0.547 Y: -0.325 Z: 10.017
+2026-10-13 14:34:45
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.142 | X: -0.311 Y: -0.148 Z: 10.136
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.109 | X: -0.280 Y: -0.362 Z: 10.099
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.032 | X: -0.492 Y: -0.423 Z: 10.011
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.121 | X: -0.453 Y: -0.260 Z: 10.107
+2026-10-13 14:34:46
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.070 | X: -0.312 Y: -0.249 Z: 10.062
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.050 | X: -0.445 Y: -0.209 Z: 10.038
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.070 | X: 0.016 Y: -0.307 Z: 10.066
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.091 | X: 0.373 Y: -0.398 Z: 10.076
+2026-10-13 14:34:47
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.092 | X: 0.057 Y: -0.238 Z: 10.090
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.106 | X: -0.200 Y: -0.242 Z: 10.101
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.198 | X: -0.610 Y: -0.245 Z: 10.177
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.064 | X: -0.305 Y: -0.025 Z: 10.060
+2026-10-13 14:34:48
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.035 | X: 0.036 Y: 0.089 Z: 10.034
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.036 | X: 0.133 Y: -0.126 Z: 10.034
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.033 | X: 0.130 Y: -0.038 Z: 10.032
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.078 | X: 0.002 Y: -0.008 Z: 10.078
+2026-10-13 14:34:49
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.069 | X: -0.173 Y: -0.176 Z: 10.066
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.138 | X: -0.386 Y: -0.171 Z: 10.129
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.130 | X: -0.195 Y: -0.167 Z: 10.127
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.120 | X: -0.213 Y: -0.157 Z: 10.117
+2026-10-13 14:34:50
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.074 | X: 0.166 Y: -0.252 Z: 10.069
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.169 | X: -0.026 Y: -0.390 Z: 10.161
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.207 | X: -0.063 Y: 0.014 Z: 10.207
+2026-10-13 14:34:51
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 9.940 | X: -0.254 Y: -0.090 Z: 9.936
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.117 | X: -0.297 Y: -0.290 Z: 10.109
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 9.965 | X: 0.024 Y: -0.134 Z: 9.964
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.116 | X: -0.391 Y: -0.041 Z: 10.109
+2026-10-13 14:34:52
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.159 | X: -0.487 Y: -0.153 Z: 10.146
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.076 | X: -0.608 Y: -0.071 Z: 10.057
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.080 | X: -0.611 Y: -0.120 Z: 10.061
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.191 | X: -0.481 Y: -0.274 Z: 10.176
+2026-10-13 14:34:53
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.044 | X: -0.475 Y: -0.245 Z: 10.030
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.094 | X: -0.028 Y: -0.087 Z: 10.093
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.066 | X: 0.170 Y: -0.246 Z: 10.062
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 9.983 | X: -0.056 Y: -0.293 Z: 9.978
+2026-10-13 14:34:54
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.015 | X: 0.117 Y: -0.213 Z: 10.012
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.024 | X: 0.280 Y: -0.282 Z: 10.017
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.027 | X: 0.140 Y: -0.345 Z: 10.020
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.120 | X: -0.316 Y: -0.188 Z: 10.113
+2026-10-13 14:34:55
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.193 | X: 0.201 Y: -0.220 Z: 10.189
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.038 | X: 0.236 Y: -0.208 Z: 10.033
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 9.990 | X: 0.156 Y: -0.099 Z: 9.988
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.058 | X: 0.343 Y: -0.187 Z: 10.050
+2026-10-13 14:34:56
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.006 | X: 0.135 Y: -0.255 Z: 10.002
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 9.931 | X: -0.065 Y: -0.090 Z: 9.930
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.041 | X: -0.170 Y: -0.213 Z: 10.037
+2026-10-13 14:34:57
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.137 | X: -0.370 Y: -0.299 Z: 10.125
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.060 | X: -0.793 Y: -0.205 Z: 10.026
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.131 | X: -0.391 Y: -0.053 Z: 10.123
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.116 | X: -0.328 Y: -0.249 Z: 10.107
+2026-10-13 14:34:58
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.129 | X: -0.668 Y: -0.324 Z: 10.101
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.121 | X: -0.591 Y: -0.157 Z: 10.103
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.092 | X: -0.557 Y: -0.145 Z: 10.075
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.037 | X: -0.575 Y: -0.292 Z: 10.017
+2026-10-13 14:34:59
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 9.990 | X: -0.024 Y: 0.031 Z: 9.990
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.052 | X: 0.427 Y: -0.161 Z: 10.042
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.155 | X: 0.426 Y: -0.413 Z: 10.137
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.135 | X: -0.304 Y: 0.097 Z: 10.130
+2026-10-13 14:35:00
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.045 | X: 0.141 Y: -0.301 Z: 10.039
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.086 | X: -0.279 Y: -0.157 Z: 10.081
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 9.944 | X: -0.068 Y: -0.059 Z: 9.944
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.164 | X: -0.711 Y: -0.264 Z: 10.136
+2026-10-13 14:35:01
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.170 | X: -0.434 Y: -0.735 Z: 10.134
+[Vibration] Status: OK | RMS: 0.256 | Magnitude: 10.018 | X: 0.244 Y: -0.179 Z: 10.013
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.134 | X: -0.355 Y: -0.061 Z: 10.128
+[Vibration] Status: OK | RMS: 0.257 | Magnitude: 10.080 | X: -0.456 Y: -0.037 Z: 10.069
+2026-10-13 14:35:02
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 9.909 | X: 0.038 Y: -0.310 Z: 9.904
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.022 | X: 0.075 Y: -0.248 Z: 10.019
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.176 | X: -0.547 Y: 0.063 Z: 10.161
+2026-10-13 14:35:03
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.303 Y: -0.036 Z: 10.043
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 9.917 | X: 0.091 Y: -0.372 Z: 9.910
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.090 | X: -0.160 Y: -0.268 Z: 10.085
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.157 | X: -0.467 Y: -0.061 Z: 10.146
+2026-10-13 14:35:04
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 9.939 | X: -0.036 Y: -0.104 Z: 9.939
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 9.915 | X: 0.139 Y: -0.374 Z: 9.906
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.088 | X: -0.270 Y: -0.328 Z: 10.079
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.174 | X: -0.615 Y: 0.109 Z: 10.155
+2026-10-13 14:35:05
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.065 | X: -0.427 Y: 0.000 Z: 10.056
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 9.973 | X: -0.069 Y: -0.290 Z: 9.969
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.125 | X: 0.309 Y: -0.207 Z: 10.118
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.175 | X: -0.602 Y: -0.085 Z: 10.156
+2026-10-13 14:35:06
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 9.966 | X: -0.348 Y: -0.218 Z: 9.958
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.005 | X: 0.274 Y: -0.176 Z: 10.000
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.201 | X: -0.615 Y: -0.217 Z: 10.180
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.171 | X: -0.181 Y: -0.103 Z: 10.168
+2026-10-13 14:35:07
+[Vibration] Status: OK | RMS: 0.311 | Magnitude: 10.001 | X: 0.092 Y: -0.218 Z: 9.999
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.082 | X: -0.817 Y: -0.311 Z: 10.044
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.080 | X: 0.372 Y: -0.124 Z: 10.073
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.107 | X: -0.299 Y: -0.150 Z: 10.101
+2026-10-13 14:35:08
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.092 | X: -0.139 Y: -0.202 Z: 10.090
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.077 | X: -0.195 Y: -0.279 Z: 10.072
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.108 | X: -0.142 Y: -0.185 Z: 10.105
+2026-10-13 14:35:09
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.055 | X: -0.237 Y: -0.205 Z: 10.050
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.047 | X: -0.256 Y: -0.189 Z: 10.042
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.071 | X: -0.255 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.094 | X: -0.202 Y: -0.205 Z: 10.090
+2026-10-13 14:35:10
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.090 | X: -0.199 Y: -0.163 Z: 10.087
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.205 Y: -0.197 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.095 | X: -0.196 Y: -0.184 Z: 10.092
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.196 Y: -0.202 Z: 10.069
+2026-10-13 14:35:11
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.062 | X: -0.197 Y: -0.201 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.201 Y: -0.201 Z: 10.046
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.188 Y: -0.208 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.199 Y: -0.184 Z: 10.050
+2026-10-13 14:35:12
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.188 Y: -0.201 Z: 10.068
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.189 Y: -0.193 Z: 10.050
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.083 | X: -0.188 Y: -0.185 Z: 10.080
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.091 | X: -0.195 Y: -0.201 Z: 10.087
+2026-10-13 14:35:13
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.088 | X: -0.200 Y: -0.189 Z: 10.085
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.202 Y: -0.201 Z: 10.067
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.201 Y: -0.196 Z: 10.051
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.188 Y: -0.196 Z: 10.057
+2026-10-13 14:35:15
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.071 | X: -0.207 Y: -0.190 Z: 10.067
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.085 | X: -0.209 Y: -0.200 Z: 10.081
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.055 | X: -0.189 Y: -0.189 Z: 10.051
+2026-10-13 14:35:16
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.209 Y: -0.184 Z: 10.061
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.042 | X: -0.201 Y: -0.202 Z: 10.038
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.055 | X: -0.195 Y: -0.187 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.090 | X: -0.207 Y: -0.202 Z: 10.086
+2026-10-13 14:35:17
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.084 | X: -0.197 Y: -0.199 Z: 10.080
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.059 | X: -0.219 Y: -0.187 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.069 | X: -0.185 Y: -0.190 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.202 Y: -0.209 Z: 10.049
+2026-10-13 14:35:18
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.061 | X: -0.195 Y: -0.190 Z: 10.057
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.057 | X: -0.179 Y: -0.172 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.203 Y: -0.199 Z: 10.052
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.061 | X: -0.200 Y: -0.190 Z: 10.057
+2026-10-13 14:35:19
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.059 | X: -0.197 Y: -0.189 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.196 Y: -0.184 Z: 10.068
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.200 Y: -0.199 Z: 10.069
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.067 | X: -0.200 Y: -0.196 Z: 10.063
+2026-10-13 14:35:20
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.194 Y: -0.188 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.081 | X: -0.188 Y: -0.202 Z: 10.078
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.077 | X: -0.194 Y: -0.208 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.045 | X: -0.194 Y: -0.183 Z: 10.042
+2026-10-13 14:35:21
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.074 | X: -0.207 Y: -0.194 Z: 10.070
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.052 | X: -0.211 Y: -0.197 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.199 Y: -0.195 Z: 10.051
+2026-10-13 14:35:22
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.077 | X: -0.200 Y: -0.191 Z: 10.073
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.041 | X: -0.205 Y: -0.190 Z: 10.037
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.069 | X: -0.208 Y: -0.201 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.080 | X: -0.200 Y: -0.191 Z: 10.076
+2026-10-13 14:35:23
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.086 | X: -0.206 Y: -0.199 Z: 10.082
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.202 Y: -0.199 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.049 | X: -0.215 Y: -0.194 Z: 10.045
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.049 | X: -0.211 Y: -0.193 Z: 10.045
+2026-10-13 14:35:24
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.196 Y: -0.195 Z: 10.067
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.073 | X: -0.203 Y: -0.200 Z: 10.069
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.045 | X: -0.191 Y: -0.196 Z: 10.042
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.068 | X: -0.199 Y: -0.196 Z: 10.064
+2026-10-13 14:35:25
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.076 | X: -0.206 Y: -0.200 Z: 10.072
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.045 | X: -0.209 Y: -0.194 Z: 10.040
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.065 | X: -0.205 Y: -0.199 Z: 10.061
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.060 | X: -0.203 Y: -0.202 Z: 10.056
+2026-10-13 14:35:26
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.057 | X: -0.199 Y: -0.194 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.203 Y: -0.173 Z: 10.056
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.065 | X: -0.205 Y: -0.196 Z: 10.061
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.060 | X: -0.201 Y: -0.196 Z: 10.056
+2026-10-13 14:35:27
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.199 Y: -0.205 Z: 10.052
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.076 | X: -0.205 Y: -0.209 Z: 10.072
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.062 | X: -0.197 Y: -0.188 Z: 10.058
+2026-10-13 14:35:28
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.065 | X: -0.205 Y: -0.185 Z: 10.061
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.052 | X: -0.219 Y: -0.194 Z: 10.048
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.196 Y: -0.197 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.224 Y: -0.201 Z: 10.066
+2026-10-13 14:35:29
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.205 Y: -0.212 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.086 | X: -0.196 Y: -0.208 Z: 10.082
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.201 Y: -0.196 Z: 10.068
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.081 | X: -0.167 Y: -0.194 Z: 10.078
+2026-10-13 14:35:30
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.065 | X: -0.193 Y: -0.201 Z: 10.061
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.067 | X: -0.194 Y: -0.195 Z: 10.063
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.201 Y: -0.182 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.188 Y: -0.208 Z: 10.068
+2026-10-13 14:35:31
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.214 Y: -0.201 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.081 | X: -0.189 Y: -0.182 Z: 10.078
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.055 | X: -0.188 Y: -0.193 Z: 10.051
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.051 | X: -0.211 Y: -0.194 Z: 10.046
+2026-10-13 14:35:32
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.203 Y: -0.191 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.076 | X: -0.194 Y: -0.209 Z: 10.072
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.196 Y: -0.190 Z: 10.072
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.194 Y: -0.182 Z: 10.055
+2026-10-13 14:35:33
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.081 | X: -0.196 Y: -0.201 Z: 10.078
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.040 | X: -0.197 Y: -0.182 Z: 10.037
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.056 | X: -0.199 Y: -0.189 Z: 10.052
+2026-10-13 14:35:34
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.076 | X: -0.191 Y: -0.189 Z: 10.073
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.061 | X: -0.202 Y: -0.194 Z: 10.057
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.206 Y: -0.191 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.060 | X: -0.184 Y: -0.196 Z: 10.056
+2026-10-13 14:35:35
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.068 | X: -0.194 Y: -0.201 Z: 10.064
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.052 | X: -0.197 Y: -0.201 Z: 10.048
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.085 | X: -0.196 Y: -0.201 Z: 10.081
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.191 Y: -0.185 Z: 10.068
+2026-10-13 14:35:36
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.062 | X: -0.188 Y: -0.201 Z: 10.058
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.200 Y: -0.194 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.045 | X: -0.206 Y: -0.199 Z: 10.040
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.048 | X: -0.206 Y: -0.193 Z: 10.044
+2026-10-13 14:35:37
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.090 | X: -0.196 Y: -0.188 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.205 Y: -0.191 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.079 | X: -0.205 Y: -0.197 Z: 10.075
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.028 | X: -0.199 Y: -0.203 Z: 10.024
+2026-10-13 14:35:38
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.196 Y: -0.202 Z: 10.054
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.083 | X: -0.194 Y: -0.200 Z: 10.079
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.079 | X: -0.197 Y: -0.196 Z: 10.075
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.212 Y: -0.196 Z: 10.066
+2026-10-13 14:35:39
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.197 Y: -0.189 Z: 10.069
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.209 Y: -0.193 Z: 10.049
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.074 | X: -0.206 Y: -0.197 Z: 10.070
+2026-10-13 14:35:40
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.078 | X: -0.205 Y: -0.200 Z: 10.074
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.082 | X: -0.207 Y: -0.206 Z: 10.078
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.071 | X: -0.201 Y: -0.196 Z: 10.067
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.217 Y: -0.206 Z: 10.068
+2026-10-13 14:35:41
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.068 | X: -0.200 Y: -0.181 Z: 10.064
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.080 | X: -0.200 Y: -0.194 Z: 10.076
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.080 | X: -0.197 Y: -0.202 Z: 10.076
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.084 | X: -0.196 Y: -0.200 Z: 10.080
+2026-10-13 14:35:42
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.205 Y: -0.190 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.076 | X: -0.196 Y: -0.191 Z: 10.073
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.076 | X: -0.189 Y: -0.197 Z: 10.073
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.091 | X: -0.209 Y: -0.196 Z: 10.087
+2026-10-13 14:35:43
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.072 | X: -0.207 Y: -0.196 Z: 10.068
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.068 | X: -0.190 Y: -0.200 Z: 10.064
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.078 | X: -0.199 Y: -0.193 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.035 | X: -0.191 Y: -0.211 Z: 10.031
+2026-10-13 14:35:44
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.206 Y: -0.203 Z: 10.058
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.201 Y: -0.206 Z: 10.067
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.054 | X: -0.217 Y: -0.185 Z: 10.050
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.090 | X: -0.208 Y: -0.184 Z: 10.086
+2026-10-13 14:35:45
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.202 Y: -0.182 Z: 10.044
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.218 Y: -0.184 Z: 10.068
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.071 | X: -0.207 Y: -0.200 Z: 10.067
+2026-10-13 14:35:46
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.080 | X: -0.183 Y: -0.197 Z: 10.076
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.199 Y: -0.200 Z: 10.068
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.201 Y: -0.200 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.064 | X: -0.214 Y: -0.183 Z: 10.060
+2026-10-13 14:35:47
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.056 | X: -0.208 Y: -0.196 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.196 Y: -0.197 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.057 | X: -0.196 Y: -0.197 Z: 10.054
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.069 | X: -0.196 Y: -0.191 Z: 10.066
+2026-10-13 14:35:48
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.084 | X: -0.199 Y: -0.200 Z: 10.080
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.209 Y: -0.195 Z: 10.056
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.067 | X: -0.223 Y: -0.190 Z: 10.063
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.074 | X: -0.212 Y: -0.194 Z: 10.070
+2026-10-13 14:35:49
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.072 | X: -0.200 Y: -0.185 Z: 10.068
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.037 | X: -0.196 Y: -0.191 Z: 10.033
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.209 Y: -0.187 Z: 10.054
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.208 Y: -0.190 Z: 10.054
+2026-10-13 14:35:50
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.045 | X: -0.191 Y: -0.182 Z: 10.042
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.080 | X: -0.208 Y: -0.189 Z: 10.076
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.061 | X: -0.207 Y: -0.201 Z: 10.057
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.056 | X: -0.207 Y: -0.208 Z: 10.051
+2026-10-13 14:35:51
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.077 | X: -0.206 Y: -0.185 Z: 10.073
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.061 | X: -0.215 Y: -0.175 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.050 | X: -0.201 Y: -0.196 Z: 10.046
+2026-10-13 14:35:52
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.215 Y: -0.201 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.195 Y: -0.206 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.052 | X: -0.197 Y: -0.208 Z: 10.048
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.055 | X: -0.212 Y: -0.190 Z: 10.051
+2026-10-13 14:35:53
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.048 | X: -0.196 Y: -0.211 Z: 10.044
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.072 | X: -0.213 Y: -0.206 Z: 10.068
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.079 | X: -0.201 Y: -0.202 Z: 10.075
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.060 | X: -0.206 Y: -0.209 Z: 10.056
+2026-10-13 14:35:54
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.205 Y: -0.199 Z: 10.064
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.074 | X: -0.215 Y: -0.190 Z: 10.070
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.097 | X: -0.209 Y: -0.209 Z: 10.093
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.066 | X: -0.202 Y: -0.200 Z: 10.062
+2026-10-13 14:35:55
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.077 | X: -0.199 Y: -0.205 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.211 Y: -0.190 Z: 10.063
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.081 | X: -0.202 Y: -0.176 Z: 10.078
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.078 | X: -0.203 Y: -0.182 Z: 10.074
+2026-10-13 14:35:56
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.211 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.071 | X: -0.200 Y: -0.209 Z: 10.067
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.197 Y: -0.197 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.052 | X: -0.213 Y: -0.194 Z: 10.048
+2026-10-13 14:35:57
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.209 Y: -0.202 Z: 10.043
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.057 | X: -0.209 Y: -0.199 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.208 Y: -0.182 Z: 10.057
+2026-10-13 14:35:58
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.052 | X: -0.218 Y: -0.182 Z: 10.048
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.062 | X: -0.201 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.068 | X: -0.196 Y: -0.201 Z: 10.064
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.194 Y: -0.196 Z: 10.068
+2026-10-13 14:35:59
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.049 | X: -0.206 Y: -0.194 Z: 10.045
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.208 Y: -0.189 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.214 Y: -0.190 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.074 | X: -0.190 Y: -0.184 Z: 10.070
+2026-10-13 14:36:00
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.206 Y: -0.202 Z: 10.062
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.211 Y: -0.184 Z: 10.057
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.079 | X: -0.211 Y: -0.197 Z: 10.075
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.070 | X: -0.218 Y: -0.181 Z: 10.066
+2026-10-13 14:36:01
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.061 | X: -0.221 Y: -0.190 Z: 10.057
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.055 | X: -0.212 Y: -0.193 Z: 10.051
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.076 | X: -0.215 Y: -0.193 Z: 10.072
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.053 | X: -0.200 Y: -0.187 Z: 10.049
+2026-10-13 14:36:02
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.084 | X: -0.211 Y: -0.202 Z: 10.080
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.048 | X: -0.203 Y: -0.208 Z: 10.044
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.072 | X: -0.194 Y: -0.189 Z: 10.068
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.071 | X: -0.202 Y: -0.193 Z: 10.067
+2026-10-13 14:36:03
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.061 | X: -0.203 Y: -0.189 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.046 | X: -0.205 Y: -0.203 Z: 10.042
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.087 | X: -0.212 Y: -0.188 Z: 10.084
+2026-10-13 14:36:04
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.080 | X: -0.205 Y: -0.188 Z: 10.076
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.065 | X: -0.217 Y: -0.202 Z: 10.061
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.038 | X: -0.196 Y: -0.193 Z: 10.034
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.066 | X: -0.201 Y: -0.195 Z: 10.062
+2026-10-13 14:36:05
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.202 Y: -0.194 Z: 10.069
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.049 | X: -0.214 Y: -0.196 Z: 10.045
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.213 Y: -0.199 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.060 | X: -0.209 Y: -0.190 Z: 10.056
+2026-10-13 14:36:06
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.196 Y: -0.200 Z: 10.043
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.071 | X: -0.209 Y: -0.201 Z: 10.067
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.075 | X: -0.200 Y: -0.199 Z: 10.072
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.211 Y: -0.208 Z: 10.060
+2026-10-13 14:36:07
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.056 | X: -0.203 Y: -0.193 Z: 10.052
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.063 | X: -0.203 Y: -0.207 Z: 10.058
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.086 | X: -0.196 Y: -0.184 Z: 10.082
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.070 | X: -0.203 Y: -0.197 Z: 10.066
+2026-10-13 14:36:08
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.078 | X: -0.197 Y: -0.201 Z: 10.074
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.064 | X: -0.197 Y: -0.202 Z: 10.060
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.072 | X: -0.185 Y: -0.200 Z: 10.068
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.085 | X: -0.208 Y: -0.196 Z: 10.081
+2026-10-13 14:36:09
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.074 | X: -0.185 Y: -0.193 Z: 10.070
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.079 | X: -0.205 Y: -0.193 Z: 10.075
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.065 | X: -0.206 Y: -0.199 Z: 10.061
+2026-10-13 14:36:10
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.054 | X: -0.213 Y: -0.193 Z: 10.050
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.050 | X: -0.201 Y: -0.200 Z: 10.046
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.088 | X: -0.211 Y: -0.199 Z: 10.084
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.085 | X: -0.219 Y: -0.200 Z: 10.081
+2026-10-13 14:36:11
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.193 Y: -0.206 Z: 10.063
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.201 Y: -0.189 Z: 10.068
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.079 | X: -0.208 Y: -0.191 Z: 10.075
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.084 | X: -0.214 Y: -0.199 Z: 10.080
+2026-10-13 14:36:12
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.212 Y: -0.187 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.202 Y: -0.191 Z: 10.064
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.047 | X: -0.223 Y: -0.199 Z: 10.043
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.080 | X: -0.197 Y: -0.184 Z: 10.076
+2026-10-13 14:36:13
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.087 | X: -0.208 Y: -0.189 Z: 10.084
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.207 Y: -0.190 Z: 10.063
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.059 | X: -0.211 Y: -0.195 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.083 | X: -0.181 Y: -0.212 Z: 10.079
+2026-10-13 14:36:14
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.063 | X: -0.219 Y: -0.197 Z: 10.058
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.173 Y: -0.190 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.203 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.209 Y: -0.190 Z: 10.067
+2026-10-13 14:36:15
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.214 Y: -0.189 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.051 | X: -0.215 Y: -0.197 Z: 10.046
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.050 | X: -0.191 Y: -0.197 Z: 10.046
+2026-10-13 14:36:16
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.065 | X: -0.185 Y: -0.185 Z: 10.062
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.097 | X: -0.203 Y: -0.207 Z: 10.093
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.066 | X: -0.201 Y: -0.185 Z: 10.062
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.084 | X: -0.203 Y: -0.177 Z: 10.080
+2026-10-13 14:36:17
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.075 | X: -0.201 Y: -0.183 Z: 10.072
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.059 | X: -0.217 Y: -0.208 Z: 10.055
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.067 | X: -0.211 Y: -0.206 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.197 Y: -0.203 Z: 10.066
+2026-10-13 14:36:19
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.208 Y: -0.205 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.088 | X: -0.209 Y: -0.206 Z: 10.084
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.068 | X: -0.191 Y: -0.205 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.203 Y: -0.190 Z: 10.044
+2026-10-13 14:36:20
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.084 | X: -0.195 Y: -0.200 Z: 10.080
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.042 | X: -0.199 Y: -0.189 Z: 10.038
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.038 | X: -0.200 Y: -0.181 Z: 10.034
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.214 Y: -0.207 Z: 10.060
+2026-10-13 14:36:21
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.086 | X: -0.197 Y: -0.195 Z: 10.082
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.077 | X: -0.187 Y: -0.189 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.189 Y: -0.194 Z: 10.051
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.050 | X: -0.191 Y: -0.200 Z: 10.046
+2026-10-13 14:36:22
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.056 | X: -0.207 Y: -0.188 Z: 10.052
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.064 | X: -0.199 Y: -0.206 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.091 | X: -0.213 Y: -0.190 Z: 10.087
+2026-10-13 14:36:23
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.056 | X: -0.184 Y: -0.199 Z: 10.052
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.091 | X: -0.199 Y: -0.197 Z: 10.087
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.056 | X: -0.199 Y: -0.184 Z: 10.052
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.070 | X: -0.190 Y: -0.189 Z: 10.067
+2026-10-13 14:36:24
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.038 | X: -0.194 Y: -0.197 Z: 10.034
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.074 | X: -0.200 Y: -0.205 Z: 10.070
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.191 Y: -0.196 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.045 | X: -0.197 Y: -0.191 Z: 10.042
+2026-10-13 14:36:25
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.038 | X: -0.202 Y: -0.188 Z: 10.034
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.044 | X: -0.218 Y: -0.195 Z: 10.039
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.072 | X: -0.195 Y: -0.199 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.201 Y: -0.188 Z: 10.050
+2026-10-13 14:36:26
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.201 Y: -0.205 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.079 | X: -0.200 Y: -0.209 Z: 10.075
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.046 | X: -0.205 Y: -0.213 Z: 10.042
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.055 | X: -0.201 Y: -0.199 Z: 10.051
+2026-10-13 14:36:27
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.214 Y: -0.183 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.043 | X: -0.244 Y: -0.201 Z: 10.038
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.039 | X: -0.217 Y: -0.187 Z: 10.034
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.196 Y: -0.179 Z: 10.061
+2026-10-13 14:36:28
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.075 | X: -0.197 Y: -0.189 Z: 10.072
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.081 | X: -0.197 Y: -0.195 Z: 10.078
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.054 | X: -0.200 Y: -0.182 Z: 10.050
+2026-10-13 14:36:29
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.055 | X: -0.200 Y: -0.207 Z: 10.051
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.194 Y: -0.188 Z: 10.052
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.047 | X: -0.209 Y: -0.178 Z: 10.043
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.062 | X: -0.202 Y: -0.197 Z: 10.058
+2026-10-13 14:36:30
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.197 Y: -0.183 Z: 10.069
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.069 | X: -0.191 Y: -0.197 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.076 | X: -0.199 Y: -0.208 Z: 10.072
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.075 | X: -0.202 Y: -0.179 Z: 10.072
+2026-10-13 14:36:31
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.202 Y: -0.190 Z: 10.062
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.039 | X: -0.183 Y: -0.200 Z: 10.036
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.081 | X: -0.199 Y: -0.199 Z: 10.078
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.055 | X: -0.206 Y: -0.190 Z: 10.051
+2026-10-13 14:36:32
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.202 Y: -0.184 Z: 10.049
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.060 | X: -0.206 Y: -0.195 Z: 10.056
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.059 | X: -0.203 Y: -0.187 Z: 10.055
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.077 | X: -0.191 Y: -0.206 Z: 10.073
+2026-10-13 14:36:33
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.207 Y: -0.195 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.070 | X: -0.201 Y: -0.200 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.058 | X: -0.224 Y: -0.203 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.224 Y: -0.185 Z: 10.051
+2026-10-13 14:36:34
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.075 | X: -0.214 Y: -0.200 Z: 10.070
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.063 | X: -0.224 Y: -0.211 Z: 10.058
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.061 | X: -0.223 Y: -0.209 Z: 10.056
+2026-10-13 14:36:35
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.083 | X: -0.177 Y: -0.172 Z: 10.080
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.071 | X: -0.212 Y: -0.201 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.047 | X: -0.218 Y: -0.185 Z: 10.043
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.202 Y: -0.205 Z: 10.060
+2026-10-13 14:36:36
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.041 | X: -0.211 Y: -0.194 Z: 10.037
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.049 | X: -0.203 Y: -0.189 Z: 10.045
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.069 | X: -0.202 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.084 | X: -0.205 Y: -0.191 Z: 10.080
+2026-10-13 14:36:37
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.068 | X: -0.202 Y: -0.185 Z: 10.064
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.065 | X: -0.196 Y: -0.206 Z: 10.061
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.195 Y: -0.187 Z: 10.061
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.092 | X: -0.202 Y: -0.202 Z: 10.088
+2026-10-13 14:36:38
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.215 Y: -0.196 Z: 10.057
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.053 | X: -0.195 Y: -0.177 Z: 10.050
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.207 Y: -0.194 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.073 | X: -0.206 Y: -0.196 Z: 10.069
+2026-10-13 14:36:39
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.094 | X: -0.199 Y: -0.188 Z: 10.091
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.059 | X: -0.213 Y: -0.187 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.078 | X: -0.199 Y: -0.193 Z: 10.074
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.055 | X: -0.209 Y: -0.199 Z: 10.051
+2026-10-13 14:36:40
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.048 | X: -0.195 Y: -0.194 Z: 10.044
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.074 | X: -0.205 Y: -0.199 Z: 10.070
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.079 | X: -0.201 Y: -0.197 Z: 10.075
+2026-10-13 14:36:41
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.065 | X: -0.214 Y: -0.194 Z: 10.061
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.189 Y: -0.191 Z: 10.072
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.077 | X: -0.208 Y: -0.185 Z: 10.073
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.064 | X: -0.221 Y: -0.179 Z: 10.060
+2026-10-13 14:36:42
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.041 | X: -0.202 Y: -0.188 Z: 10.037
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.203 Y: -0.189 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.191 Y: -0.195 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.053 | X: -0.207 Y: -0.193 Z: 10.049
+2026-10-13 14:36:43
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.082 | X: -0.205 Y: -0.199 Z: 10.078
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.206 Y: -0.188 Z: 10.056
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.200 Y: -0.178 Z: 10.068
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.191 Y: -0.202 Z: 10.069
+2026-10-13 14:36:44
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.207 Y: -0.191 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.196 Y: -0.189 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.046 | X: -0.219 Y: -0.217 Z: 10.042
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.057 | X: -0.195 Y: -0.185 Z: 10.054
+2026-10-13 14:36:45
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.199 Y: -0.201 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.194 Y: -0.208 Z: 10.046
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.212 Y: -0.190 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.061 | X: -0.200 Y: -0.193 Z: 10.057
+2026-10-13 14:36:46
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.080 | X: -0.205 Y: -0.199 Z: 10.076
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.196 Y: -0.199 Z: 10.061
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.197 Y: -0.195 Z: 10.064
+2026-10-13 14:36:47
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.075 | X: -0.189 Y: -0.201 Z: 10.072
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.040 | X: -0.188 Y: -0.191 Z: 10.037
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.062 | X: -0.208 Y: -0.182 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.077 | X: -0.197 Y: -0.200 Z: 10.073
+2026-10-13 14:36:48
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.076 | X: -0.212 Y: -0.212 Z: 10.072
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.092 | X: -0.206 Y: -0.196 Z: 10.088
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.075 | X: -0.224 Y: -0.194 Z: 10.070
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.059 | X: -0.200 Y: -0.173 Z: 10.056
+2026-10-13 14:36:49
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.054 | X: -0.194 Y: -0.181 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.199 Y: -0.190 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.213 Y: -0.203 Z: 10.070
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.199 Y: -0.199 Z: 10.061
+2026-10-13 14:36:50
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.090 | X: -0.206 Y: -0.193 Z: 10.086
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.057 | X: -0.208 Y: -0.178 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.067 | X: -0.201 Y: -0.196 Z: 10.063
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.202 Y: -0.191 Z: 10.062
+2026-10-13 14:36:51
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.048 | X: -0.195 Y: -0.200 Z: 10.044
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.044 | X: -0.201 Y: -0.197 Z: 10.040
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.205 Y: -0.205 Z: 10.049
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.209 Y: -0.190 Z: 10.056
+2026-10-13 14:36:52
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.205 Y: -0.181 Z: 10.054
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.195 Y: -0.203 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.067 | X: -0.211 Y: -0.195 Z: 10.063
+2026-10-13 14:36:53
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.076 | X: -0.209 Y: -0.214 Z: 10.072
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.080 | X: -0.202 Y: -0.200 Z: 10.076
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.075 | X: -0.211 Y: -0.187 Z: 10.072
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.213 Y: -0.197 Z: 10.057
+2026-10-13 14:36:54
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.095 | X: -0.207 Y: -0.205 Z: 10.091
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.213 Y: -0.197 Z: 10.066
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.085 | X: -0.202 Y: -0.200 Z: 10.081
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.050 | X: -0.202 Y: -0.195 Z: 10.046
+2026-10-13 14:36:55
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.078 | X: -0.208 Y: -0.202 Z: 10.074
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.202 Y: -0.182 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.196 Y: -0.200 Z: 10.050
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.079 | X: -0.206 Y: -0.194 Z: 10.075
+2026-10-13 14:36:56
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.209 Y: -0.207 Z: 10.054
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.197 Y: -0.206 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.209 Y: -0.213 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.077 | X: -0.201 Y: -0.194 Z: 10.073
+2026-10-13 14:36:57
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.194 Y: -0.190 Z: 10.043
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.185 Y: -0.207 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.086 | X: -0.193 Y: -0.195 Z: 10.082
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.062 | X: -0.195 Y: -0.196 Z: 10.058
+2026-10-13 14:36:58
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.070 | X: -0.189 Y: -0.197 Z: 10.067
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.197 Y: -0.206 Z: 10.057
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.061 | X: -0.207 Y: -0.201 Z: 10.057
+2026-10-13 14:36:59
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.089 | X: -0.200 Y: -0.209 Z: 10.085
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.080 | X: -0.203 Y: -0.196 Z: 10.076
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.056 | X: -0.208 Y: -0.208 Z: 10.051
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.061 | X: -0.208 Y: -0.194 Z: 10.057
+2026-10-13 14:37:00
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.063 | X: -0.202 Y: -0.193 Z: 10.060
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.078 | X: -0.215 Y: -0.183 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.200 Y: -0.199 Z: 10.072
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.213 Y: -0.205 Z: 10.067
+2026-10-13 14:37:01
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.059 | X: -0.205 Y: -0.206 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.215 Y: -0.193 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.063 | X: -0.211 Y: -0.200 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.211 Y: -0.189 Z: 10.044
+2026-10-13 14:37:02
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.196 Y: -0.185 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.195 Y: -0.194 Z: 10.063
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.057 | X: -0.215 Y: -0.200 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.091 | X: -0.191 Y: -0.203 Z: 10.087
+2026-10-13 14:37:03
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.191 Y: -0.194 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.074 | X: -0.209 Y: -0.196 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.220 Y: -0.205 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.202 Y: -0.211 Z: 10.052
+2026-10-13 14:37:04
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.073 | X: -0.203 Y: -0.201 Z: 10.069
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.071 | X: -0.205 Y: -0.203 Z: 10.067
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.084 | X: -0.214 Y: -0.206 Z: 10.080
+2026-10-13 14:37:05
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.038 | X: -0.191 Y: -0.206 Z: 10.034
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.214 Y: -0.183 Z: 10.043
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.199 Y: -0.205 Z: 10.063
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.211 Y: -0.193 Z: 10.068
+2026-10-13 14:37:06
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.063 | X: -0.194 Y: -0.189 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.063 | X: -0.206 Y: -0.188 Z: 10.060
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.101 | X: -0.214 Y: -0.190 Z: 10.097
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.214 Y: -0.182 Z: 10.044
+2026-10-13 14:37:07
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.067 | X: -0.207 Y: -0.187 Z: 10.063
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.078 | X: -0.205 Y: -0.196 Z: 10.074
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.063 | X: -0.196 Y: -0.189 Z: 10.060
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.026 | X: -0.202 Y: -0.196 Z: 10.023
+2026-10-13 14:37:08
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.062 | X: -0.196 Y: -0.189 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.189 Y: -0.193 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.071 | X: -0.207 Y: -0.199 Z: 10.067
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.038 | X: -0.211 Y: -0.181 Z: 10.034
+2026-10-13 14:37:09
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.039 | X: -0.213 Y: -0.200 Z: 10.034
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.066 | X: -0.207 Y: -0.195 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.209 Y: -0.197 Z: 10.061
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.060 | X: -0.208 Y: -0.193 Z: 10.056
+2026-10-13 14:37:10
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.213 Y: -0.188 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.203 Y: -0.194 Z: 10.054
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.043 | X: -0.199 Y: -0.194 Z: 10.039
+2026-10-13 14:37:11
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.209 Y: -0.185 Z: 10.069
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.037 | X: -0.213 Y: -0.191 Z: 10.033
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.055 | X: -0.205 Y: -0.197 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.231 Y: -0.181 Z: 10.058
+2026-10-13 14:37:12
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.212 Y: -0.196 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.073 | X: -0.203 Y: -0.201 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.077 | X: -0.196 Y: -0.207 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.215 Y: -0.196 Z: 10.069
+2026-10-13 14:37:13
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.207 Y: -0.202 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.209 Y: -0.181 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.047 | X: -0.226 Y: -0.203 Z: 10.043
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.083 | X: -0.211 Y: -0.182 Z: 10.079
+2026-10-13 14:37:14
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.207 Y: -0.205 Z: 10.067
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.076 | X: -0.219 Y: -0.205 Z: 10.072
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.049 | X: -0.209 Y: -0.179 Z: 10.045
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.219 Y: -0.215 Z: 10.056
+2026-10-13 14:37:15
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.053 | X: -0.213 Y: -0.206 Z: 10.049
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.206 Y: -0.188 Z: 10.068
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.049 | X: -0.205 Y: -0.197 Z: 10.045
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.219 Y: -0.184 Z: 10.050
+2026-10-13 14:37:16
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.061 | X: -0.213 Y: -0.202 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.205 Y: -0.191 Z: 10.072
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.221 Y: -0.197 Z: 10.055
+2026-10-13 14:37:17
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.071 | X: -0.206 Y: -0.195 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.212 Y: -0.197 Z: 10.068
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.040 | X: -0.203 Y: -0.190 Z: 10.036
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.053 | X: -0.224 Y: -0.188 Z: 10.049
+2026-10-13 14:37:18
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.097 | X: -0.220 Y: -0.178 Z: 10.093
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.226 Y: -0.202 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.064 | X: -0.208 Y: -0.193 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.065 | X: -0.225 Y: -0.202 Z: 10.061
+2026-10-13 14:37:19
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.074 | X: -0.202 Y: -0.190 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.090 | X: -0.202 Y: -0.191 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.205 Y: -0.202 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.213 Y: -0.187 Z: 10.063
+2026-10-13 14:37:20
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.209 Y: -0.188 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.090 | X: -0.219 Y: -0.194 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.203 Y: -0.185 Z: 10.062
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.091 | X: -0.203 Y: -0.200 Z: 10.087
+2026-10-13 14:37:21
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.053 | X: -0.189 Y: -0.209 Z: 10.049
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.194 Y: -0.187 Z: 10.069
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.068 | X: -0.207 Y: -0.190 Z: 10.064
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.041 | X: -0.203 Y: -0.188 Z: 10.037
+2026-10-13 14:37:23
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.067 | X: -0.211 Y: -0.199 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.052 | X: -0.224 Y: -0.196 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.044 | X: -0.212 Y: -0.185 Z: 10.040
+2026-10-13 14:37:24
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.061 | X: -0.214 Y: -0.188 Z: 10.057
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.059 | X: -0.207 Y: -0.190 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.054 | X: -0.218 Y: -0.203 Z: 10.050
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.067 | X: -0.206 Y: -0.202 Z: 10.063
+2026-10-13 14:37:25
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.085 | X: -0.211 Y: -0.194 Z: 10.081
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.201 Y: -0.182 Z: 10.055
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.068 | X: -0.211 Y: -0.195 Z: 10.064
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.215 Y: -0.197 Z: 10.058
+2026-10-13 14:37:26
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.202 Y: -0.191 Z: 10.057
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.083 | X: -0.219 Y: -0.206 Z: 10.079
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.063 | X: -0.212 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.094 | X: -0.230 Y: -0.197 Z: 10.090
+2026-10-13 14:37:27
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.064 | X: -0.203 Y: -0.209 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.064 | X: -0.213 Y: -0.201 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.213 Y: -0.194 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.201 Y: -0.185 Z: 10.068
+2026-10-13 14:37:28
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.194 Y: -0.199 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.213 Y: -0.208 Z: 10.062
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.082 | X: -0.209 Y: -0.202 Z: 10.078
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.209 Y: -0.205 Z: 10.048
+2026-10-13 14:37:29
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.203 Y: -0.202 Z: 10.060
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.048 | X: -0.214 Y: -0.207 Z: 10.044
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.209 Y: -0.187 Z: 10.060
+2026-10-13 14:37:30
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.205 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.078 | X: -0.224 Y: -0.189 Z: 10.074
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.071 | X: -0.215 Y: -0.182 Z: 10.067
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.048 | X: -0.202 Y: -0.183 Z: 10.044
+2026-10-13 14:37:31
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.041 | X: -0.208 Y: -0.197 Z: 10.037
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.217 Y: -0.193 Z: 10.050
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.090 | X: -0.199 Y: -0.212 Z: 10.086
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.067 | X: -0.200 Y: -0.185 Z: 10.063
+2026-10-13 14:37:32
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.059 | X: -0.224 Y: -0.187 Z: 10.055
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.056 | X: -0.219 Y: -0.217 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.090 | X: -0.205 Y: -0.185 Z: 10.086
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.070 | X: -0.206 Y: -0.194 Z: 10.066
+2026-10-13 14:37:33
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.207 Y: -0.194 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.057 | X: -0.209 Y: -0.205 Z: 10.052
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.067 | X: -0.206 Y: -0.199 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.085 | X: -0.205 Y: -0.191 Z: 10.081
+2026-10-13 14:37:34
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.201 Y: -0.195 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.213 Y: -0.190 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.050 | X: -0.207 Y: -0.195 Z: 10.046
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.043 | X: -0.213 Y: -0.199 Z: 10.039
+2026-10-13 14:37:35
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.077 | X: -0.212 Y: -0.195 Z: 10.073
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.213 Y: -0.201 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.074 | X: -0.203 Y: -0.196 Z: 10.070
+2026-10-13 14:37:36
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.094 | X: -0.214 Y: -0.202 Z: 10.090
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.047 | X: -0.209 Y: -0.200 Z: 10.043
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.040 | X: -0.209 Y: -0.197 Z: 10.036
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.099 | X: -0.217 Y: -0.200 Z: 10.094
+2026-10-13 14:37:37
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.097 | X: -0.211 Y: -0.200 Z: 10.093
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.088 | X: -0.209 Y: -0.203 Z: 10.084
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.205 Y: -0.184 Z: 10.062
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.214 Y: -0.205 Z: 10.064
+2026-10-13 14:37:38
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.211 Y: -0.200 Z: 10.066
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.041 | X: -0.217 Y: -0.197 Z: 10.037
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.054 | X: -0.215 Y: -0.203 Z: 10.050
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.067 | X: -0.200 Y: -0.194 Z: 10.063
+2026-10-13 14:37:39
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.053 | X: -0.207 Y: -0.182 Z: 10.049
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.086 | X: -0.202 Y: -0.193 Z: 10.082
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.104 | X: -0.190 Y: -0.206 Z: 10.100
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.199 Y: -0.199 Z: 10.061
+2026-10-13 14:37:40
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.215 Y: -0.189 Z: 10.064
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.212 Y: -0.196 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.203 Y: -0.211 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.091 | X: -0.207 Y: -0.197 Z: 10.087
+2026-10-13 14:37:41
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.207 Y: -0.194 Z: 10.048
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.049 | X: -0.207 Y: -0.199 Z: 10.045
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.042 | X: -0.211 Y: -0.196 Z: 10.038
+2026-10-13 14:37:42
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.214 Y: -0.209 Z: 10.050
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.049 | X: -0.212 Y: -0.193 Z: 10.045
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.100 | X: -0.224 Y: -0.179 Z: 10.095
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.076 | X: -0.208 Y: -0.195 Z: 10.072
+2026-10-13 14:37:43
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.213 Y: -0.194 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.208 Y: -0.187 Z: 10.049
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.208 Y: -0.187 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.217 Y: -0.193 Z: 10.057
+2026-10-13 14:37:44
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.219 Y: -0.197 Z: 10.060
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.082 | X: -0.225 Y: -0.199 Z: 10.078
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.211 Y: -0.205 Z: 10.067
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.217 Y: -0.195 Z: 10.049
+2026-10-13 14:37:45
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.202 Y: -0.196 Z: 10.057
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.217 Y: -0.184 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.090 | X: -0.211 Y: -0.199 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.213 Y: -0.209 Z: 10.054
+2026-10-13 14:37:46
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.043 | X: -0.205 Y: -0.207 Z: 10.039
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.079 | X: -0.159 Y: -0.208 Z: 10.075
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.061 | X: -0.197 Y: -0.189 Z: 10.057
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.038 | X: -0.218 Y: -0.196 Z: 10.033
+2026-10-13 14:37:47
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.207 Y: -0.197 Z: 10.049
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.074 | X: -0.221 Y: -0.201 Z: 10.069
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.057 | X: -0.213 Y: -0.195 Z: 10.052
+2026-10-13 14:37:48
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.041 | X: -0.227 Y: -0.184 Z: 10.037
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.040 | X: -0.286 Y: -0.148 Z: 10.034
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.217 Y: -0.130 Z: 10.066
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.202 Y: -0.212 Z: 10.060
+2026-10-13 14:37:49
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.077 | X: -0.213 Y: -0.201 Z: 10.073
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.052 | X: -0.209 Y: -0.212 Z: 10.048
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.077 | X: -0.207 Y: -0.203 Z: 10.073
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.070 | X: -0.214 Y: -0.212 Z: 10.066
+2026-10-13 14:37:50
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.215 Y: -0.197 Z: 10.052
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.215 Y: -0.199 Z: 10.051
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.194 Y: -0.208 Z: 10.063
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.080 | X: -0.197 Y: -0.202 Z: 10.076
+2026-10-13 14:37:51
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.089 | X: -0.135 Y: -0.134 Z: 10.087
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.064 | X: -0.212 Y: -0.202 Z: 10.060
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.053 | X: -0.205 Y: -0.193 Z: 10.049
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.065 | X: -0.207 Y: -0.203 Z: 10.061
+2026-10-13 14:37:52
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.197 Y: -0.206 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.208 Y: -0.191 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.083 | X: -0.200 Y: -0.202 Z: 10.079
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.067 | X: -0.200 Y: -0.189 Z: 10.063
+2026-10-13 14:37:53
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.063 | X: -0.208 Y: -0.209 Z: 10.058
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.066 | X: -0.193 Y: -0.197 Z: 10.062
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.066 | X: -0.218 Y: -0.201 Z: 10.062
+2026-10-13 14:37:54
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.069 | X: -0.200 Y: -0.209 Z: 10.064
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.050 | X: -0.212 Y: -0.183 Z: 10.046
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.063 | X: -0.200 Y: -0.207 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.079 | X: -0.208 Y: -0.206 Z: 10.075
+2026-10-13 14:37:55
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.102 | X: -0.201 Y: -0.209 Z: 10.098
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.205 Y: -0.194 Z: 10.056
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.207 Y: -0.211 Z: 10.054
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.067 | X: -0.211 Y: -0.203 Z: 10.063
+2026-10-13 14:37:56
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.050 | X: -0.203 Y: -0.200 Z: 10.046
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.053 | X: -0.219 Y: -0.199 Z: 10.049
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.039 | X: -0.202 Y: -0.208 Z: 10.034
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.077 | X: -0.213 Y: -0.202 Z: 10.073
+2026-10-13 14:37:57
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.202 Y: -0.201 Z: 10.067
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.214 Y: -0.207 Z: 10.054
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.080 | X: -0.220 Y: -0.207 Z: 10.075
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.221 Y: -0.188 Z: 10.067
+2026-10-13 14:37:58
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.083 | X: -0.208 Y: -0.207 Z: 10.079
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.211 Y: -0.195 Z: 10.051
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.194 Y: -0.203 Z: 10.043
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.208 Y: -0.201 Z: 10.050
+2026-10-13 14:37:59
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.077 | X: -0.207 Y: -0.201 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.054 | X: -0.195 Y: -0.196 Z: 10.050
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.044 | X: -0.217 Y: -0.201 Z: 10.039
+2026-10-13 14:38:00
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.070 | X: -0.201 Y: -0.202 Z: 10.066
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.211 Y: -0.220 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.202 Y: -0.195 Z: 10.049
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.213 Y: -0.201 Z: 10.045
+2026-10-13 14:38:01
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.201 Y: -0.208 Z: 10.044
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.048 | X: -0.202 Y: -0.203 Z: 10.044
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.043 | X: -0.190 Y: -0.185 Z: 10.039
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.066 | X: -0.202 Y: -0.214 Z: 10.062
+2026-10-13 14:38:02
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.217 Y: -0.214 Z: 10.067
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.070 | X: -0.205 Y: -0.197 Z: 10.066
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.063 | X: -0.211 Y: -0.205 Z: 10.058
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.088 | X: -0.195 Y: -0.194 Z: 10.085
+2026-10-13 14:38:03
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.046 | X: -0.206 Y: -0.208 Z: 10.042
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.066 | X: -0.212 Y: -0.201 Z: 10.062
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.057 | X: -0.206 Y: -0.208 Z: 10.052
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.040 | X: -0.196 Y: -0.213 Z: 10.036
+2026-10-13 14:38:04
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.069 | X: -0.195 Y: -0.196 Z: 10.066
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.203 Y: -0.206 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.215 Y: -0.191 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.094 | X: -0.223 Y: -0.202 Z: 10.090
+2026-10-13 14:38:05
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.054 | X: -0.214 Y: -0.205 Z: 10.050
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.206 Y: -0.203 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.075 | X: -0.218 Y: -0.195 Z: 10.070
+2026-10-13 14:38:06
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.061 | X: -0.212 Y: -0.188 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.201 Y: -0.185 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.218 Y: -0.199 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.211 Y: -0.203 Z: 10.049
+2026-10-13 14:38:07
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.206 Y: -0.190 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.102 | X: -0.213 Y: -0.197 Z: 10.098
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.048 | X: -0.187 Y: -0.207 Z: 10.044
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.090 | X: -0.211 Y: -0.197 Z: 10.086
+2026-10-13 14:38:08
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.056 | X: -0.211 Y: -0.188 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.051 | X: -0.208 Y: -0.196 Z: 10.046
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.196 Y: -0.200 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.196 Y: -0.200 Z: 10.068
+2026-10-13 14:38:09
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.214 Y: -0.202 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.208 Y: -0.205 Z: 10.060
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.057 | X: -0.223 Y: -0.205 Z: 10.052
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.077 | X: -0.209 Y: -0.205 Z: 10.073
+2026-10-13 14:38:10
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.062 | X: -0.200 Y: -0.184 Z: 10.058
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.052 | X: -0.209 Y: -0.191 Z: 10.048
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.215 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.055 | X: -0.203 Y: -0.193 Z: 10.051
+2026-10-13 14:38:11
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.076 | X: -0.203 Y: -0.200 Z: 10.072
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.081 | X: -0.215 Y: -0.215 Z: 10.076
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.085 | X: -0.206 Y: -0.195 Z: 10.081
+2026-10-13 14:38:12
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.060 | X: -0.211 Y: -0.194 Z: 10.056
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.053 | X: -0.211 Y: -0.205 Z: 10.049
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.063 | X: -0.207 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.051 | X: -0.205 Y: -0.205 Z: 10.046
+2026-10-13 14:38:13
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.068 | X: -0.200 Y: -0.205 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.209 Y: -0.203 Z: 10.056
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.207 Y: -0.203 Z: 10.054
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.062 | X: -0.196 Y: -0.202 Z: 10.058
+2026-10-13 14:38:14
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.052 | X: -0.218 Y: -0.197 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.188 Y: -0.196 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.078 | X: -0.214 Y: -0.206 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.218 Y: -0.190 Z: 10.067
+2026-10-13 14:38:15
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.051 | X: -0.217 Y: -0.190 Z: 10.046
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.086 | X: -0.205 Y: -0.190 Z: 10.082
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.068 | X: -0.207 Y: -0.218 Z: 10.063
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.063 | X: -0.212 Y: -0.205 Z: 10.058
+2026-10-13 14:38:16
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.080 | X: -0.187 Y: -0.207 Z: 10.076
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.081 | X: -0.207 Y: -0.203 Z: 10.076
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.209 Y: -0.211 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.041 | X: -0.206 Y: -0.195 Z: 10.037
+2026-10-13 14:38:17
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.209 Y: -0.196 Z: 10.054
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.202 Y: -0.185 Z: 10.055
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.047 | X: -0.213 Y: -0.201 Z: 10.043
+2026-10-13 14:38:18
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.078 | X: -0.205 Y: -0.196 Z: 10.074
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.199 Y: -0.205 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.086 | X: -0.203 Y: -0.194 Z: 10.082
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.077 | X: -0.193 Y: -0.201 Z: 10.073
+2026-10-13 14:38:19
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.199 Y: -0.206 Z: 10.069
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.196 Y: -0.196 Z: 10.057
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.213 Y: -0.203 Z: 10.063
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.052 | X: -0.203 Y: -0.206 Z: 10.048
+2026-10-13 14:38:20
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.084 | X: -0.206 Y: -0.187 Z: 10.080
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.079 | X: -0.215 Y: -0.191 Z: 10.075
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.052 | X: -0.217 Y: -0.225 Z: 10.048
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.081 | X: -0.211 Y: -0.203 Z: 10.076
+2026-10-13 14:38:21
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.220 Y: -0.195 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.203 Y: -0.206 Z: 10.061
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.051 | X: -0.193 Y: -0.195 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.215 Y: -0.205 Z: 10.066
+2026-10-13 14:38:22
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.049 | X: -0.205 Y: -0.199 Z: 10.045
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.199 Y: -0.197 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.209 Y: -0.196 Z: 10.049
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.196 Y: -0.203 Z: 10.069
+2026-10-13 14:38:23
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.199 Y: -0.200 Z: 10.051
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.056 | X: -0.199 Y: -0.201 Z: 10.052
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.054 | X: -0.212 Y: -0.200 Z: 10.050
+2026-10-13 14:38:24
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.046 | X: -0.199 Y: -0.205 Z: 10.042
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.070 | X: -0.202 Y: -0.206 Z: 10.066
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.056 | X: -0.209 Y: -0.208 Z: 10.051
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.063 | X: -0.190 Y: -0.193 Z: 10.060
+2026-10-13 14:38:25
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.058 | X: -0.205 Y: -0.196 Z: 10.054
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.072 | X: -0.207 Y: -0.214 Z: 10.068
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.060 | X: -0.195 Y: -0.214 Z: 10.056
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.203 Y: -0.207 Z: 10.067
+2026-10-13 14:38:26
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.069 | X: -0.196 Y: -0.190 Z: 10.066
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.065 | X: -0.207 Y: -0.209 Z: 10.061
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.041 | X: -0.212 Y: -0.189 Z: 10.037
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.214 Y: -0.202 Z: 10.054
+2026-10-13 14:38:28
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.083 | X: -0.215 Y: -0.202 Z: 10.079
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.054 | X: -0.197 Y: -0.196 Z: 10.050
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.058 | X: -0.201 Y: -0.195 Z: 10.054
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.201 Y: -0.203 Z: 10.054
+2026-10-13 14:38:29
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.212 Y: -0.196 Z: 10.056
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.202 Y: -0.203 Z: 10.068
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.031 | X: -0.201 Y: -0.203 Z: 10.027
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.046 | X: -0.202 Y: -0.217 Z: 10.042
+2026-10-13 14:38:30
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.080 | X: -0.194 Y: -0.206 Z: 10.076
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.055 | X: -0.205 Y: -0.190 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.206 Y: -0.185 Z: 10.055
+2026-10-13 14:38:31
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.053 | X: -0.215 Y: -0.207 Z: 10.049
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.047 | X: -0.207 Y: -0.195 Z: 10.043
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.043 | X: -0.212 Y: -0.196 Z: 10.039
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.080 | X: -0.205 Y: -0.205 Z: 10.076
+2026-10-13 14:38:32
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.062 | X: -0.209 Y: -0.190 Z: 10.058
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.051 | X: -0.196 Y: -0.195 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.076 | X: -0.191 Y: -0.209 Z: 10.072
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.048 | X: -0.199 Y: -0.194 Z: 10.044
+2026-10-13 14:38:33
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.199 Y: -0.189 Z: 10.049
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.207 Y: -0.208 Z: 10.043
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.202 Y: -0.190 Z: 10.063
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.072 | X: -0.202 Y: -0.201 Z: 10.068
+2026-10-13 14:38:34
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.071 | X: -0.205 Y: -0.209 Z: 10.067
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.071 | X: -0.202 Y: -0.196 Z: 10.067
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.044 | X: -0.205 Y: -0.194 Z: 10.040
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.056 | X: -0.181 Y: -0.201 Z: 10.052
+2026-10-13 14:38:35
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.217 Y: -0.206 Z: 10.060
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.199 Y: -0.195 Z: 10.055
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.054 | X: -0.211 Y: -0.209 Z: 10.050
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.049 | X: -0.202 Y: -0.200 Z: 10.045
+2026-10-13 14:38:36
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.065 | X: -0.202 Y: -0.194 Z: 10.061
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.082 | X: -0.211 Y: -0.197 Z: 10.078
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.074 | X: -0.218 Y: -0.189 Z: 10.070
+2026-10-13 14:38:37
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.073 | X: -0.200 Y: -0.197 Z: 10.069
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.042 | X: -0.193 Y: -0.197 Z: 10.038
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.034 | X: -0.197 Y: -0.223 Z: 10.030
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.049 | X: -0.206 Y: -0.202 Z: 10.045
+2026-10-13 14:38:38
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 10.054 | X: -0.202 Y: -0.208 Z: 10.050
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.050 | X: -0.190 Y: -0.199 Z: 10.046
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 10.035 | X: -0.208 Y: -0.195 Z: 10.031
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.059 | X: -0.212 Y: -0.201 Z: 10.055
+2026-10-13 14:38:39
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.051 | X: -0.196 Y: -0.211 Z: 10.046
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.060 | X: -0.200 Y: -0.200 Z: 10.056
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.091 | X: -0.207 Y: -0.199 Z: 10.087
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.073 | X: -0.199 Y: -0.194 Z: 10.069
+2026-10-13 14:38:40
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.059 | X: -0.206 Y: -0.199 Z: 10.055
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.077 | X: -0.200 Y: -0.205 Z: 10.073
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.209 Y: -0.201 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.047 | X: -0.201 Y: -0.200 Z: 10.043
+2026-10-13 14:38:41
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.207 Y: -0.201 Z: 10.043
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.201 Y: -0.206 Z: 10.064
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.203 Y: -0.196 Z: 10.060
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.202 Y: -0.191 Z: 10.068
+2026-10-13 14:38:42
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.071 | X: -0.209 Y: -0.207 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.090 | X: -0.202 Y: -0.200 Z: 10.086
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.206 Y: -0.195 Z: 10.060
+2026-10-13 14:38:43
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.212 Y: -0.203 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.063 | X: -0.197 Y: -0.211 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.036 | X: -0.201 Y: -0.203 Z: 10.032
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.207 Y: -0.205 Z: 10.064
+2026-10-13 14:38:44
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.055 | X: -0.206 Y: -0.189 Z: 10.051
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.078 | X: -0.208 Y: -0.202 Z: 10.074
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.049 | X: -0.207 Y: -0.195 Z: 10.045
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.190 Y: -0.208 Z: 10.062
+2026-10-13 14:38:45
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.205 Y: -0.206 Z: 10.057
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.080 | X: -0.206 Y: -0.187 Z: 10.076
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.219 Y: -0.197 Z: 10.062
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.200 Y: -0.217 Z: 10.048
+2026-10-13 14:38:46
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.062 | X: -0.190 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.202 Y: -0.197 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.055 | X: -0.203 Y: -0.197 Z: 10.051
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.205 Y: -0.213 Z: 10.069
+2026-10-13 14:38:47
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.208 Y: -0.201 Z: 10.063
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.095 | X: -0.190 Y: -0.205 Z: 10.091
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.083 | X: -0.195 Y: -0.217 Z: 10.079
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.057 | X: -0.207 Y: -0.207 Z: 10.052
+2026-10-13 14:38:48
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.046 | X: -0.200 Y: -0.211 Z: 10.042
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.203 Y: -0.206 Z: 10.048
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.069 | X: -0.188 Y: -0.194 Z: 10.066
+2026-10-13 14:38:49
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.219 Y: -0.199 Z: 10.068
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.083 | X: -0.211 Y: -0.212 Z: 10.079
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.085 | X: -0.201 Y: -0.196 Z: 10.081
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.071 | X: -0.220 Y: -0.209 Z: 10.067
+2026-10-13 14:38:50
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.059 | X: -0.211 Y: -0.195 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.044 | X: -0.191 Y: -0.199 Z: 10.040
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.070 | X: -0.205 Y: -0.206 Z: 10.066
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.201 Y: -0.207 Z: 10.067
+2026-10-13 14:38:51
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.071 | X: -0.203 Y: -0.193 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.070 | X: -0.201 Y: -0.206 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.062 | X: -0.213 Y: -0.181 Z: 10.058
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.041 | X: -0.201 Y: -0.213 Z: 10.037
+2026-10-13 14:38:52
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.203 Y: -0.203 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.201 Y: -0.197 Z: 10.063
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.053 | X: -0.202 Y: -0.196 Z: 10.049
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.191 Y: -0.209 Z: 10.062
+2026-10-13 14:38:53
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.084 | X: -0.206 Y: -0.208 Z: 10.080
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.054 | X: -0.220 Y: -0.195 Z: 10.050
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.079 | X: -0.209 Y: -0.206 Z: 10.075
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.189 Y: -0.202 Z: 10.067
+2026-10-13 14:38:54
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.082 | X: -0.206 Y: -0.195 Z: 10.078
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.083 | X: -0.208 Y: -0.215 Z: 10.079
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.054 | X: -0.206 Y: -0.205 Z: 10.050
+2026-10-13 14:38:55
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.062 | X: -0.203 Y: -0.190 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.042 | X: -0.191 Y: -0.208 Z: 10.038
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.045 | X: -0.206 Y: -0.205 Z: 10.040
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.079 | X: -0.202 Y: -0.193 Z: 10.075
+2026-10-13 14:38:56
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.068 | X: -0.201 Y: -0.196 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.082 | X: -0.207 Y: -0.203 Z: 10.078
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.082 | X: -0.200 Y: -0.211 Z: 10.078
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.067 | X: -0.209 Y: -0.224 Z: 10.062
+2026-10-13 14:38:57
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.066 | X: -0.199 Y: -0.199 Z: 10.062
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.059 | X: -0.191 Y: -0.200 Z: 10.055
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.075 | X: -0.194 Y: -0.201 Z: 10.072
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.074 | X: -0.208 Y: -0.183 Z: 10.070
+2026-10-13 14:38:58
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.062 | X: -0.221 Y: -0.200 Z: 10.057
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.084 | X: -0.207 Y: -0.184 Z: 10.080
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.084 | X: -0.199 Y: -0.200 Z: 10.080
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.068 | X: -0.213 Y: -0.214 Z: 10.063
+2026-10-13 14:38:59
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.048 | X: -0.213 Y: -0.200 Z: 10.044
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.048 | X: -0.193 Y: -0.202 Z: 10.044
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.090 | X: -0.211 Y: -0.196 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.056 | X: -0.207 Y: -0.195 Z: 10.052
+2026-10-13 14:39:00
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.063 | X: -0.206 Y: -0.217 Z: 10.058
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.076 | X: -0.208 Y: -0.206 Z: 10.072
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.072 | X: -0.202 Y: -0.208 Z: 10.068
+2026-10-13 14:39:01
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.081 | X: -0.217 Y: -0.208 Z: 10.076
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.053 | X: -0.199 Y: -0.202 Z: 10.049
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.071 | X: -0.196 Y: -0.214 Z: 10.067
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.059 | X: -0.197 Y: -0.189 Z: 10.055
+2026-10-13 14:39:02
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.043 | X: -0.205 Y: -0.199 Z: 10.039
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.054 | X: -0.208 Y: -0.193 Z: 10.050
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.197 Y: -0.183 Z: 10.072
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.203 Y: -0.202 Z: 10.055
+2026-10-13 14:39:03
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.205 Y: -0.200 Z: 10.068
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.077 | X: -0.201 Y: -0.188 Z: 10.073
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.052 | X: -0.208 Y: -0.206 Z: 10.048
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.050 | X: -0.203 Y: -0.212 Z: 10.045
+2026-10-13 14:39:04
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.178 Y: -0.190 Z: 10.064
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.077 | X: -0.206 Y: -0.200 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.068 | X: -0.197 Y: -0.189 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.179 Y: -0.202 Z: 10.068
+2026-10-13 14:39:05
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.200 Y: -0.214 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.185 Y: -0.200 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.052 | X: -0.191 Y: -0.203 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.051 | X: -0.211 Y: -0.196 Z: 10.046
+2026-10-13 14:39:06
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.064 | X: -0.214 Y: -0.197 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.067 | X: -0.194 Y: -0.197 Z: 10.063
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.058 | X: -0.206 Y: -0.199 Z: 10.054
+2026-10-13 14:39:07
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.074 | X: -0.202 Y: -0.205 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.077 | X: -0.203 Y: -0.218 Z: 10.073
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.059 | X: -0.201 Y: -0.201 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.072 | X: -0.205 Y: -0.207 Z: 10.068
+2026-10-13 14:39:08
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.070 | X: -0.205 Y: -0.203 Z: 10.066
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.088 | X: -0.205 Y: -0.202 Z: 10.084
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.080 | X: -0.200 Y: -0.191 Z: 10.076
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.209 Y: -0.217 Z: 10.050
+2026-10-13 14:39:09
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.069 | X: -0.194 Y: -0.202 Z: 10.066
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.046 | X: -0.218 Y: -0.193 Z: 10.042
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.082 | X: -0.203 Y: -0.199 Z: 10.078
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.039 | X: -0.211 Y: -0.201 Z: 10.034
+2026-10-13 14:39:10
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.057 | X: -0.205 Y: -0.202 Z: 10.052
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.056 | X: -0.208 Y: -0.193 Z: 10.052
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.062 | X: -0.190 Y: -0.203 Z: 10.058
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.036 | X: -0.203 Y: -0.194 Z: 10.032
+2026-10-13 14:39:11
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.050 | X: -0.196 Y: -0.205 Z: 10.046
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.074 | X: -0.212 Y: -0.191 Z: 10.070
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.035 | X: -0.201 Y: -0.189 Z: 10.031
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.075 | X: -0.196 Y: -0.213 Z: 10.070
+2026-10-13 14:39:12
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.072 | X: -0.206 Y: -0.200 Z: 10.068
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.049 | X: -0.184 Y: -0.200 Z: 10.045
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.054 | X: -0.202 Y: -0.205 Z: 10.050
+2026-10-13 14:39:13
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.072 | X: -0.189 Y: -0.194 Z: 10.068
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.061 | X: -0.200 Y: -0.189 Z: 10.057
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.077 | X: -0.211 Y: -0.194 Z: 10.073
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.042 | X: -0.194 Y: -0.202 Z: 10.038
+2026-10-13 14:39:14
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.053 | X: -0.201 Y: -0.212 Z: 10.049
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.051 | X: -0.203 Y: -0.209 Z: 10.046
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.064 | X: -0.219 Y: -0.205 Z: 10.060
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.074 | X: -0.202 Y: -0.199 Z: 10.070
+2026-10-13 14:39:15
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.076 | X: -0.199 Y: -0.209 Z: 10.072
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.088 | X: -0.199 Y: -0.203 Z: 10.084
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.208 Y: -0.205 Z: 10.062
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.193 Y: -0.207 Z: 10.054
+2026-10-13 14:39:16
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.052 | X: -0.201 Y: -0.201 Z: 10.048
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.063 | X: -0.203 Y: -0.209 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.035 | X: -0.190 Y: -0.199 Z: 10.031
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.211 Y: -0.207 Z: 10.063
+2026-10-13 14:39:17
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.075 | X: -0.214 Y: -0.197 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.203 Y: -0.205 Z: 10.054
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.060 | X: -0.191 Y: -0.208 Z: 10.056
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.058 | X: -0.207 Y: -0.206 Z: 10.054
+2026-10-13 14:39:18
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.074 | X: -0.205 Y: -0.203 Z: 10.070
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.054 | X: -0.206 Y: -0.202 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.065 | X: -0.194 Y: -0.211 Z: 10.061
+2026-10-13 14:39:19
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.058 | X: -0.196 Y: -0.219 Z: 10.054
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.064 | X: -0.215 Y: -0.220 Z: 10.060
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.048 | X: -0.191 Y: -0.205 Z: 10.044
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.073 | X: -0.221 Y: -0.217 Z: 10.068
+2026-10-13 14:39:20
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.075 | X: -0.201 Y: -0.190 Z: 10.072
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.073 | X: -0.211 Y: -0.195 Z: 10.069
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.082 | X: -0.209 Y: -0.203 Z: 10.078
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.074 | X: -0.203 Y: -0.200 Z: 10.070
+2026-10-13 14:39:21
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.065 | X: -0.193 Y: -0.205 Z: 10.061
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.078 | X: -0.201 Y: -0.223 Z: 10.074
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.056 | X: -0.193 Y: -0.203 Z: 10.052
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.070 | X: -0.205 Y: -0.202 Z: 10.066
+2026-10-13 14:39:22
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.059 | X: -0.190 Y: -0.205 Z: 10.055
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.043 | X: -0.209 Y: -0.200 Z: 10.039
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.059 | X: -0.203 Y: -0.212 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.061 | X: -0.196 Y: -0.195 Z: 10.057
+2026-10-13 14:39:23
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.073 | X: -0.220 Y: -0.213 Z: 10.068
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.040 | X: -0.196 Y: -0.215 Z: 10.036
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.051 | X: -0.197 Y: -0.196 Z: 10.048
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.058 | X: -0.206 Y: -0.199 Z: 10.054
+2026-10-13 14:39:24
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.064 | X: -0.211 Y: -0.205 Z: 10.060
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.049 | X: -0.199 Y: -0.207 Z: 10.045
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.201 Y: -0.191 Z: 10.057
+2026-10-13 14:39:25
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.052 | X: -0.215 Y: -0.208 Z: 10.048
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.205 Y: -0.211 Z: 10.062
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.205 Y: -0.191 Z: 10.046
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.063 | X: -0.211 Y: -0.206 Z: 10.058
+2026-10-13 14:39:26
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.217 Y: -0.197 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.218 Y: -0.181 Z: 10.050
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.065 | X: -0.213 Y: -0.208 Z: 10.061
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.065 | X: -0.217 Y: -0.211 Z: 10.061
+2026-10-13 14:39:27
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.062 | X: -0.206 Y: -0.200 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.083 | X: -0.202 Y: -0.195 Z: 10.079
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.075 | X: -0.205 Y: -0.194 Z: 10.072
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.068 | X: -0.195 Y: -0.205 Z: 10.064
+2026-10-13 14:39:28
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.098 | X: -0.190 Y: -0.206 Z: 10.094
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.068 | X: -0.201 Y: -0.205 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.209 Y: -0.199 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.202 Y: -0.197 Z: 10.046
+2026-10-13 14:39:29
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.070 | X: -0.205 Y: -0.195 Z: 10.066
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.079 | X: -0.208 Y: -0.209 Z: 10.075
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.206 Y: -0.209 Z: 10.062
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.059 | X: -0.188 Y: -0.207 Z: 10.055
+2026-10-13 14:39:30
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.057 | X: -0.196 Y: -0.197 Z: 10.054
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.218 Y: -0.193 Z: 10.055
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.035 | X: -0.208 Y: -0.181 Z: 10.031
+2026-10-13 14:39:32
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.065 | X: -0.211 Y: -0.203 Z: 10.061
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.053 | X: -0.205 Y: -0.190 Z: 10.049
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.065 | X: -0.200 Y: -0.213 Z: 10.061
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.208 Y: -0.201 Z: 10.043
+2026-10-13 14:39:33
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.194 Y: -0.195 Z: 10.069
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.074 | X: -0.190 Y: -0.197 Z: 10.070
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.078 | X: -0.207 Y: -0.190 Z: 10.074
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.083 | X: -0.189 Y: -0.201 Z: 10.079
+2026-10-13 14:39:34
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.059 | X: -0.208 Y: -0.201 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.066 | X: -0.200 Y: -0.201 Z: 10.062
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.070 | X: -0.189 Y: -0.209 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.054 | X: -0.193 Y: -0.211 Z: 10.050
+2026-10-13 14:39:35
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.202 Y: -0.194 Z: 10.057
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.078 | X: -0.201 Y: -0.203 Z: 10.074
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.067 | X: -0.188 Y: -0.211 Z: 10.063
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.065 | X: -0.200 Y: -0.221 Z: 10.061
+2026-10-13 14:39:36
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.066 | X: -0.199 Y: -0.197 Z: 10.062
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.193 Y: -0.191 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.205 Y: -0.197 Z: 10.054
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.051 | X: -0.218 Y: -0.202 Z: 10.046
+2026-10-13 14:39:37
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.055 | X: -0.200 Y: -0.206 Z: 10.051
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.054 | X: -0.203 Y: -0.196 Z: 10.050
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.080 | X: -0.214 Y: -0.207 Z: 10.075
+2026-10-13 14:39:38
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.190 Y: -0.201 Z: 10.055
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.068 | X: -0.199 Y: -0.201 Z: 10.064
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.200 Y: -0.196 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.094 | X: -0.203 Y: -0.214 Z: 10.090
+2026-10-13 14:39:39
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.073 | X: -0.194 Y: -0.191 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.205 Y: -0.191 Z: 10.069
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.209 Y: -0.195 Z: 10.062
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.201 Y: -0.183 Z: 10.061
+2026-10-13 14:39:40
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.074 | X: -0.196 Y: -0.187 Z: 10.070
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.061 | X: -0.201 Y: -0.212 Z: 10.057
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.090 | X: -0.200 Y: -0.196 Z: 10.086
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.043 | X: -0.200 Y: -0.202 Z: 10.039
+2026-10-13 14:39:41
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.046 | X: -0.205 Y: -0.195 Z: 10.042
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.066 | X: -0.214 Y: -0.208 Z: 10.062
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.067 | X: -0.213 Y: -0.200 Z: 10.063
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.205 Y: -0.219 Z: 10.043
+2026-10-13 14:39:42
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.071 | X: -0.209 Y: -0.201 Z: 10.067
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.065 | X: -0.203 Y: -0.203 Z: 10.061
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.082 | X: -0.206 Y: -0.206 Z: 10.078
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.075 | X: -0.214 Y: -0.205 Z: 10.070
+2026-10-13 14:39:43
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.041 | X: -0.205 Y: -0.199 Z: 10.037
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.053 | X: -0.201 Y: -0.199 Z: 10.049
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.072 | X: -0.206 Y: -0.203 Z: 10.068
+2026-10-13 14:39:44
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.085 | X: -0.201 Y: -0.197 Z: 10.081
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.051 | X: -0.206 Y: -0.211 Z: 10.046
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.048 | X: -0.207 Y: -0.206 Z: 10.044
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.085 | X: -0.205 Y: -0.191 Z: 10.081
+2026-10-13 14:39:45
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.190 Y: -0.200 Z: 10.056
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.072 | X: -0.206 Y: -0.211 Z: 10.068
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.066 | X: -0.208 Y: -0.200 Z: 10.062
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.075 | X: -0.208 Y: -0.203 Z: 10.070
+2026-10-13 14:39:46
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.051 | X: -0.195 Y: -0.193 Z: 10.048
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.091 | X: -0.199 Y: -0.195 Z: 10.087
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.065 | X: -0.206 Y: -0.207 Z: 10.061
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.066 | X: -0.220 Y: -0.193 Z: 10.062
+2026-10-13 14:39:47
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.063 | X: -0.211 Y: -0.206 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.064 | X: -0.203 Y: -0.197 Z: 10.060
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.057 | X: -0.197 Y: -0.187 Z: 10.054
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.055 | X: -0.199 Y: -0.209 Z: 10.051
+2026-10-13 14:39:48
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.052 | X: -0.199 Y: -0.203 Z: 10.048
+[Vibration] Status: OK | RMS: 0.260 | Magnitude: 10.073 | X: -0.206 Y: -0.208 Z: 10.069
+[Vibration] Status: OK | RMS: 0.258 | Magnitude: 10.060 | X: -0.193 Y: -0.209 Z: 10.056
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 10.067 | X: -0.214 Y: -0.191 Z: 10.063
+2026-10-13 14:39:49
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 10.064 | X: -0.211 Y: -0.191 Z: 10.060
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.078 | X: -0.194 Y: -0.200 Z: 10.074
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.048 | X: -0.199 Y: -0.194 Z: 10.044
+2026-10-13 14:39:50
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.195 Y: -0.207 Z: 10.062
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.215 Y: -0.206 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.065 | X: -0.202 Y: -0.209 Z: 10.061
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.051 | X: -0.187 Y: -0.205 Z: 10.048
+2026-10-13 14:39:51
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.055 | X: -0.202 Y: -0.205 Z: 10.051
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.054 | X: -0.209 Y: -0.208 Z: 10.050
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.051 | X: -0.213 Y: -0.203 Z: 10.046
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.065 | X: -0.193 Y: -0.201 Z: 10.061
+2026-10-13 14:39:52
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.205 Y: -0.208 Z: 10.057
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.079 | X: -0.201 Y: -0.191 Z: 10.075
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.064 | X: -0.196 Y: -0.205 Z: 10.060
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.207 Y: -0.197 Z: 10.052
+2026-10-13 14:39:53
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.205 Y: -0.196 Z: 10.066
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.074 | X: -0.211 Y: -0.191 Z: 10.070
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.200 Y: -0.207 Z: 10.054
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.207 Y: -0.200 Z: 10.067
+2026-10-13 14:39:54
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.081 | X: -0.193 Y: -0.195 Z: 10.078
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.043 | X: -0.214 Y: -0.187 Z: 10.039
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.069 | X: -0.203 Y: -0.183 Z: 10.066
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.047 | X: -0.188 Y: -0.215 Z: 10.043
+2026-10-13 14:39:55
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.086 | X: -0.211 Y: -0.193 Z: 10.082
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.195 Y: -0.208 Z: 10.055
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.066 | X: -0.213 Y: -0.201 Z: 10.062
+2026-10-13 14:39:56
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.053 | X: -0.211 Y: -0.193 Z: 10.049
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.085 | X: -0.205 Y: -0.209 Z: 10.081
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.045 | X: -0.202 Y: -0.205 Z: 10.040
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.047 | X: -0.214 Y: -0.206 Z: 10.043
+2026-10-13 14:39:57
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.073 | X: -0.190 Y: -0.199 Z: 10.069
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.057 | X: -0.205 Y: -0.201 Z: 10.052
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.076 | X: -0.212 Y: -0.199 Z: 10.072
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.075 | X: -0.219 Y: -0.205 Z: 10.070
+2026-10-13 14:39:58
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.203 Y: -0.193 Z: 10.052
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.056 | X: -0.212 Y: -0.188 Z: 10.052
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.069 | X: -0.209 Y: -0.202 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.206 Y: -0.221 Z: 10.045
+2026-10-13 14:39:59
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.060 | X: -0.206 Y: -0.205 Z: 10.056
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.078 | X: -0.201 Y: -0.218 Z: 10.074
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.071 | X: -0.201 Y: -0.200 Z: 10.067
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.077 | X: -0.208 Y: -0.217 Z: 10.073
+2026-10-13 14:40:00
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.070 | X: -0.212 Y: -0.207 Z: 10.066
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.201 Y: -0.206 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.072 | X: -0.209 Y: -0.205 Z: 10.068
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.060 | X: -0.217 Y: -0.201 Z: 10.056
+2026-10-13 14:40:01
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.079 | X: -0.206 Y: -0.200 Z: 10.075
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.053 | X: -0.199 Y: -0.213 Z: 10.049
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.044 | X: -0.211 Y: -0.208 Z: 10.039
+2026-10-13 14:40:02
+[Vibration] Status: OK | RMS: 0.258 | Magnitude: 10.060 | X: -0.201 Y: -0.207 Z: 10.056
+[Vibration] Status: OK | RMS: 0.259 | Magnitude: 10.063 | X: -0.203 Y: -0.190 Z: 10.060
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.055 | X: -0.208 Y: -0.200 Z: 10.051
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.083 | X: -0.218 Y: -0.196 Z: 10.079
+2026-10-13 14:40:03
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.078 | X: -0.196 Y: -0.201 Z: 10.074
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.059 | X: -0.197 Y: -0.206 Z: 10.055
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.039 | X: -0.203 Y: -0.208 Z: 10.034
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.084 | X: -0.200 Y: -0.200 Z: 10.080
+2026-10-13 14:40:04
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.050 | X: -0.185 Y: -0.195 Z: 10.046
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.039 | X: -0.199 Y: -0.212 Z: 10.034
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.218 Y: -0.200 Z: 10.062
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.070 | X: -0.218 Y: -0.190 Z: 10.066
+2026-10-13 14:40:05
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.057 | X: -0.212 Y: -0.213 Z: 10.052
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.062 | X: -0.202 Y: -0.195 Z: 10.058
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.053 | X: -0.213 Y: -0.209 Z: 10.049
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.059 | X: -0.215 Y: -0.213 Z: 10.055
+2026-10-13 14:40:06
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.043 | X: -0.196 Y: -0.199 Z: 10.039
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.078 | X: -0.206 Y: -0.188 Z: 10.074
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.062 | X: -0.200 Y: -0.202 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.055 | X: -0.208 Y: -0.202 Z: 10.051
+2026-10-13 14:40:07
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.057 | X: -0.211 Y: -0.207 Z: 10.052
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.082 | X: -0.219 Y: -0.214 Z: 10.078
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.045 | X: -0.203 Y: -0.206 Z: 10.040
+2026-10-13 14:40:08
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.072 | X: -0.207 Y: -0.209 Z: 10.068
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.073 | X: -0.197 Y: -0.214 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.211 Y: -0.209 Z: 10.068
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.072 | X: -0.211 Y: -0.203 Z: 10.068
+2026-10-13 14:40:09
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.082 | X: -0.208 Y: -0.213 Z: 10.078
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.075 | X: -0.191 Y: -0.206 Z: 10.072
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.056 | X: -0.218 Y: -0.214 Z: 10.051
+[Vibration] Status: OK | RMS: 0.261 | Magnitude: 10.074 | X: -0.205 Y: -0.191 Z: 10.070
+2026-10-13 14:40:10
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.079 | X: -0.208 Y: -0.196 Z: 10.075
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.075 | X: -0.212 Y: -0.211 Z: 10.070
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.081 | X: -0.212 Y: -0.217 Z: 10.076
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.046 | X: -0.208 Y: -0.207 Z: 10.042
+2026-10-13 14:40:11
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.079 | X: -0.215 Y: -0.213 Z: 10.074
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.057 | X: -0.208 Y: -0.208 Z: 10.052
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.214 Y: -0.207 Z: 10.066
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.067 | X: -0.201 Y: -0.214 Z: 10.063
+2026-10-13 14:40:12
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.205 Y: -0.207 Z: 10.054
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.084 | X: -0.208 Y: -0.194 Z: 10.080
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.079 | X: -0.214 Y: -0.199 Z: 10.075
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.047 | X: -0.206 Y: -0.194 Z: 10.043
+2026-10-13 14:40:13
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.033 | X: -0.214 Y: -0.208 Z: 10.028
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.215 Y: -0.194 Z: 10.055
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.061 | X: -0.201 Y: -0.213 Z: 10.057
+2026-10-13 14:40:14
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.199 Y: -0.203 Z: 10.055
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.053 | X: -0.202 Y: -0.205 Z: 10.049
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.045 | X: -0.212 Y: -0.197 Z: 10.040
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.209 Y: -0.206 Z: 10.056
+2026-10-13 14:40:15
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.074 | X: -0.217 Y: -0.214 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.071 | X: -0.209 Y: -0.213 Z: 10.067
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.051 | X: -0.191 Y: -0.196 Z: 10.048
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.081 | X: -0.209 Y: -0.211 Z: 10.076
+2026-10-13 14:40:16
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.061 | X: -0.200 Y: -0.209 Z: 10.057
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.077 | X: -0.202 Y: -0.189 Z: 10.073
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.064 | X: -0.201 Y: -0.208 Z: 10.060
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.082 | X: -0.199 Y: -0.212 Z: 10.078
+2026-10-13 14:40:17
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.083 | X: -0.218 Y: -0.197 Z: 10.079
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.069 | X: -0.197 Y: -0.221 Z: 10.064
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.048 | X: -0.202 Y: -0.195 Z: 10.044
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.064 | X: -0.213 Y: -0.213 Z: 10.060
+2026-10-13 14:40:18
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.078 | X: -0.207 Y: -0.205 Z: 10.074
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.200 Y: -0.219 Z: 10.056
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.063 | X: -0.196 Y: -0.214 Z: 10.058
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.063 | X: -0.203 Y: -0.213 Z: 10.058
+2026-10-13 14:40:19
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.067 | X: -0.205 Y: -0.209 Z: 10.063
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.044 | X: -0.203 Y: -0.215 Z: 10.039
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.051 | X: -0.203 Y: -0.214 Z: 10.046
+2026-10-13 14:40:20
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.059 | X: -0.200 Y: -0.207 Z: 10.055
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.058 | X: -0.199 Y: -0.214 Z: 10.054
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.187 Y: -0.193 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.067 | X: -0.206 Y: -0.199 Z: 10.063
+2026-10-13 14:40:21
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.197 Y: -0.200 Z: 10.069
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.115 | X: -0.193 Y: -0.206 Z: 10.111
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.064 | X: -0.207 Y: -0.201 Z: 10.060
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.065 | X: -0.196 Y: -0.201 Z: 10.061
+2026-10-13 14:40:22
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.076 | X: -0.206 Y: -0.213 Z: 10.072
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.073 | X: -0.203 Y: -0.201 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.049 | X: -0.202 Y: -0.197 Z: 10.045
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.066 | X: -0.200 Y: -0.188 Z: 10.062
+2026-10-13 14:40:23
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.054 | X: -0.197 Y: -0.205 Z: 10.050
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.073 | X: -0.199 Y: -0.196 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.066 | X: -0.215 Y: -0.205 Z: 10.062
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.085 | X: -0.197 Y: -0.195 Z: 10.081
+2026-10-13 14:40:24
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.070 | X: -0.215 Y: -0.202 Z: 10.066
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.059 | X: -0.203 Y: -0.211 Z: 10.055
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.069 | X: -0.203 Y: -0.214 Z: 10.064
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.098 | X: -0.209 Y: -0.199 Z: 10.094
+2026-10-13 14:40:25
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.058 | X: -0.202 Y: -0.205 Z: 10.054
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.073 | X: -0.206 Y: -0.200 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.080 | X: -0.196 Y: -0.205 Z: 10.076
+2026-10-13 14:40:26
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.086 | X: -0.200 Y: -0.194 Z: 10.082
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.063 | X: -0.191 Y: -0.201 Z: 10.060
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.071 | X: -0.214 Y: -0.208 Z: 10.067
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.072 | X: -0.196 Y: -0.223 Z: 10.068
+2026-10-13 14:40:27
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.084 | X: -0.201 Y: -0.203 Z: 10.080
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.059 | X: -0.203 Y: -0.206 Z: 10.055
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.069 | X: -0.218 Y: -0.195 Z: 10.064
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.070 | X: -0.207 Y: -0.195 Z: 10.066
+2026-10-13 14:40:28
+[Vibration] Status: OK | RMS: 0.264 | Magnitude: 10.063 | X: -0.205 Y: -0.209 Z: 10.058
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.073 | X: -0.200 Y: -0.209 Z: 10.069
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.053 | X: -0.212 Y: -0.191 Z: 10.049
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.055 | X: -0.214 Y: -0.212 Z: 10.050
+2026-10-13 14:40:29
+[Vibration] Status: OK | RMS: 0.262 | Magnitude: 10.041 | X: -0.200 Y: -0.188 Z: 10.037
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.062 | X: -0.201 Y: -0.190 Z: 10.058
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.073 | X: -0.206 Y: -0.200 Z: 10.069
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.061 | X: -0.191 Y: -0.201 Z: 10.057
+2026-10-13 14:40:30
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.085 | X: -0.196 Y: -0.208 Z: 10.081
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.085 | X: -0.196 Y: -0.195 Z: 10.081
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.074 | X: -0.214 Y: -0.218 Z: 10.069
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.059 | X: -0.199 Y: -0.202 Z: 10.055
+2026-10-13 14:40:31
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.077 | X: -0.205 Y: -0.206 Z: 10.073
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.064 | X: -0.205 Y: -0.206 Z: 10.060
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.068 | X: -0.194 Y: -0.194 Z: 10.064
+2026-10-13 14:40:32
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.081 | X: -0.207 Y: -0.208 Z: 10.076
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.094 | X: -0.217 Y: -0.215 Z: 10.090
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.056 | X: -0.202 Y: -0.193 Z: 10.052
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.074 | X: -0.200 Y: -0.200 Z: 10.070
+2026-10-13 14:40:33
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.091 | X: -0.205 Y: -0.196 Z: 10.087
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.076 | X: -0.208 Y: -0.212 Z: 10.072
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.077 | X: -0.219 Y: -0.199 Z: 10.073
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.069 | X: -0.202 Y: -0.220 Z: 10.064
+2026-10-13 14:40:34
+[Vibration] Status: OK | RMS: 0.268 | Magnitude: 10.060 | X: -0.205 Y: -0.208 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.082 | X: -0.211 Y: -0.212 Z: 10.078
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.062 | X: -0.191 Y: -0.209 Z: 10.058
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.075 | X: -0.205 Y: -0.207 Z: 10.070
+2026-10-13 14:40:36
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.081 | X: -0.209 Y: -0.207 Z: 10.076
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.060 | X: -0.209 Y: -0.193 Z: 10.056
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.051 | X: -0.179 Y: -0.191 Z: 10.048
+[Vibration] Status: OK | RMS: 0.265 | Magnitude: 10.080 | X: -0.202 Y: -0.197 Z: 10.076
+2026-10-13 14:40:37
+[Vibration] Status: OK | RMS: 0.263 | Magnitude: 10.045 | X: -0.202 Y: -0.190 Z: 10.042

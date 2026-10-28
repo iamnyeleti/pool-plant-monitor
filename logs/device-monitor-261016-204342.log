@@ -1,0 +1,2293 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Pool Plant Monitor starting...
+Vibration module ready.
+[Vibration] Status: OK | RMS: 1.383 | Magnitude: 11.007 | X: 0.014 Y: 2.699 Z: 10.671
+[Vibration] Status: OK | RMS: 1.252 | Magnitude: 10.511 | X: 0.586 Y: -2.000 Z: 10.302
+[Vibration] Status: OK | RMS: 1.105 | Magnitude: 10.797 | X: -0.026 Y: 0.383 Z: 10.791
+[Vibration] Status: OK | RMS: 1.046 | Magnitude: 10.509 | X: 0.287 Y: 0.995 Z: 10.458
+[Vibration] Status: OK | RMS: 0.890 | Magnitude: 10.056 | X: -0.450 Y: -1.515 Z: 9.932
+[Vibration] Status: OK | RMS: 1.037 | Magnitude: 10.235 | X: 0.682 Y: -1.153 Z: 10.147
+[Vibration] Status: OK | RMS: 1.193 | Magnitude: 9.855 | X: -0.555 Y: 0.909 Z: 9.798
+[Vibration] Status: OK | RMS: 1.375 | Magnitude: 12.252 | X: 0.072 Y: 2.601 Z: 11.972
+[Vibration] Status: OK | RMS: 1.444 | Magnitude: 10.960 | X: 0.833 Y: -1.342 Z: 10.846
+[Vibration] Status: OK | RMS: 1.310 | Magnitude: 9.171 | X: 0.845 Y: 0.175 Z: 9.130
+[Vibration] Status: OK | RMS: 1.230 | Magnitude: 10.238 | X: -2.220 Y: -1.452 Z: 9.889
+[Vibration] Status: OK | RMS: 1.125 | Magnitude: 10.117 | X: 0.670 Y: -0.074 Z: 10.094
+[Vibration] Status: OK | RMS: 1.108 | Magnitude: 10.952 | X: 0.840 Y: -0.237 Z: 10.917
+[Vibration] Status: OK | RMS: 1.048 | Magnitude: 9.517 | X: 1.885 Y: 0.548 Z: 9.312
+[Vibration] Status: OK | RMS: 1.070 | Magnitude: 9.336 | X: -0.065 Y: -0.412 Z: 9.326
+[Vibration] Status: OK | RMS: 1.073 | Magnitude: 9.983 | X: 1.349 Y: -1.175 Z: 9.822
+[Vibration] Status: OK | RMS: 1.112 | Magnitude: 10.702 | X: 0.129 Y: 2.120 Z: 10.489
+[Vibration] Status: OK | RMS: 1.176 | Magnitude: 10.668 | X: 0.785 Y: -1.940 Z: 10.460
+[Vibration] Status: OK | RMS: 1.172 | Magnitude: 10.223 | X: -1.445 Y: -1.024 Z: 10.068
+[Vibration] Status: OK | RMS: 1.065 | Magnitude: 10.131 | X: 0.244 Y: -1.627 Z: 9.996
+[Vibration] Status: OK | RMS: 0.963 | Magnitude: 10.004 | X: -0.962 Y: -1.170 Z: 9.889
+[Vibration] Status: OK | RMS: 0.832 | Magnitude: 9.597 | X: -0.806 Y: -1.732 Z: 9.405
+[Vibration] Status: OK | RMS: 0.812 | Magnitude: 10.491 | X: -1.529 Y: -0.950 Z: 10.336
+[Vibration] Status: OK | RMS: 0.797 | Magnitude: 11.339 | X: -1.136 Y: -0.366 Z: 11.276
+[Vibration] Status: OK | RMS: 0.817 | Magnitude: 10.563 | X: -0.290 Y: -0.146 Z: 10.558
+[Vibration] Status: OK | RMS: 0.788 | Magnitude: 10.421 | X: 0.278 Y: -1.412 Z: 10.322
+[Vibration] Status: OK | RMS: 0.829 | Magnitude: 10.691 | X: 0.282 Y: 0.591 Z: 10.671
+[Vibration] Status: OK | RMS: 0.812 | Magnitude: 9.824 | X: 1.794 Y: 0.641 Z: 9.637
+[Vibration] Status: OK | RMS: 0.782 | Magnitude: 10.901 | X: 0.385 Y: 2.086 Z: 10.692
+[Vibration] Status: OK | RMS: 0.830 | Magnitude: 9.154 | X: -1.333 Y: -2.060 Z: 8.819
+[Vibration] Status: OK | RMS: 0.913 | Magnitude: 11.963 | X: -1.570 Y: -0.220 Z: 11.858
+[Vibration] Status: OK | RMS: 0.989 | Magnitude: 10.808 | X: 0.438 Y: 0.368 Z: 10.793
+[Vibration] Status: OK | RMS: 1.155 | Magnitude: 10.332 | X: -0.141 Y: 1.311 Z: 10.247
+[Vibration] Status: OK | RMS: 1.326 | Magnitude: 9.880 | X: -0.213 Y: 0.699 Z: 9.853
+[Vibration] Status: OK | RMS: 1.346 | Magnitude: 10.489 | X: 0.062 Y: -2.543 Z: 10.176
+[Vibration] Status: OK | RMS: 1.557 | Magnitude: 10.338 | X: 0.483 Y: -2.122 Z: 10.106
+[Vibration] Status: OK | RMS: 1.494 | Magnitude: 10.931 | X: -0.091 Y: -0.431 Z: 10.922
+[Vibration] Status: OK | RMS: 1.294 | Magnitude: 10.738 | X: 0.136 Y: 1.857 Z: 10.575
+[Vibration] Status: OK | RMS: 1.266 | Magnitude: 12.161 | X: -0.490 Y: 1.223 Z: 12.090
+[Vibration] Status: OK | RMS: 0.993 | Magnitude: 11.207 | X: 1.778 Y: 0.553 Z: 11.051
+[Vibration] Status: OK | RMS: 1.153 | Magnitude: 10.470 | X: 1.558 Y: -0.273 Z: 10.350
+[Vibration] Status: OK | RMS: 1.264 | Magnitude: 10.530 | X: 0.359 Y: 2.067 Z: 10.319
+[Vibration] Status: OK | RMS: 1.303 | Magnitude: 10.636 | X: 0.998 Y: -2.247 Z: 10.348
+[Vibration] Status: OK | RMS: 1.198 | Magnitude: 9.085 | X: 0.723 Y: 0.033 Z: 9.056
+[Vibration] Status: OK | RMS: 1.023 | Magnitude: 12.182 | X: -1.493 Y: -0.146 Z: 12.090
+[Vibration] Status: OK | RMS: 1.027 | Magnitude: 9.606 | X: 2.613 Y: -0.184 Z: 9.243
+[Vibration] Status: OK | RMS: 1.013 | Magnitude: 11.179 | X: -0.136 Y: -0.455 Z: 11.169
+[Vibration] Status: OK | RMS: 1.015 | Magnitude: 9.601 | X: -0.282 Y: -1.763 Z: 9.434
+[Vibration] Status: OK | RMS: 1.243 | Magnitude: 11.226 | X: 0.505 Y: 0.746 Z: 11.190
+[Vibration] Status: OK | RMS: 1.174 | Magnitude: 11.109 | X: 0.077 Y: 2.235 Z: 10.881
+[Vibration] Status: OK | RMS: 1.207 | Magnitude: 10.225 | X: 2.943 Y: -0.364 Z: 9.786
+[Vibration] Status: OK | RMS: 1.245 | Magnitude: 11.844 | X: 0.275 Y: -0.407 Z: 11.834
+[Vibration] Status: OK | RMS: 1.393 | Magnitude: 15.502 | X: -1.629 Y: -7.137 Z: 13.664
+[Vibration] Status: OK | RMS: 1.413 | Magnitude: 7.588 | X: -0.773 Y: -3.065 Z: 6.898
+[Vibration] Status: OK | RMS: 1.526 | Magnitude: 11.323 | X: 0.845 Y: -0.627 Z: 11.274
+[Vibration] Status: OK | RMS: 1.569 | Magnitude: 10.851 | X: 1.297 Y: -1.038 Z: 10.724
+[Vibration] Status: OK | RMS: 1.517 | Magnitude: 10.612 | X: 0.239 Y: 0.148 Z: 10.609
+[Vibration] Status: OK | RMS: 1.314 | Magnitude: 9.160 | X: 0.223 Y: 2.239 Z: 8.879
+[Vibration] Status: OK | RMS: 1.345 | Magnitude: 10.135 | X: 0.696 Y: -3.156 Z: 9.606
+[Vibration] Status: OK | RMS: 1.795 | Magnitude: 8.859 | X: 1.584 Y: 1.534 Z: 8.580
+[Vibration] Status: OK | RMS: 1.751 | Magnitude: 9.725 | X: -0.132 Y: -0.129 Z: 9.723
+[Vibration] Status: CAUTION | RMS: 1.969 | Magnitude: 13.177 | X: -0.904 Y: -1.361 Z: 13.075
+[Vibration] Status: OK | RMS: 1.846 | Magnitude: 11.400 | X: 0.330 Y: 1.754 Z: 11.259
+[Vibration] Status: OK | RMS: 1.459 | Magnitude: 10.304 | X: 2.283 Y: 0.359 Z: 10.042
+[Vibration] Status: OK | RMS: 1.577 | Magnitude: 13.013 | X: 0.160 Y: -1.010 Z: 12.973
+[Vibration] Status: OK | RMS: 1.605 | Magnitude: 10.863 | X: 1.503 Y: 0.208 Z: 10.757
+[Vibration] Status: OK | RMS: 1.436 | Magnitude: 12.507 | X: -0.400 Y: -1.108 Z: 12.451
+[Vibration] Status: OK | RMS: 1.433 | Magnitude: 10.613 | X: 1.129 Y: -3.460 Z: 9.970
+[Vibration] Status: OK | RMS: 1.454 | Magnitude: 11.447 | X: -1.086 Y: -2.038 Z: 11.212
+[Vibration] Status: OK | RMS: 1.242 | Magnitude: 10.708 | X: 1.225 Y: -1.084 Z: 10.582
+[Vibration] Status: OK | RMS: 1.385 | Magnitude: 10.631 | X: 0.991 Y: -2.027 Z: 10.389
+[Vibration] Status: OK | RMS: 1.463 | Magnitude: 10.689 | X: 0.249 Y: -0.419 Z: 10.678
+[Vibration] Status: CAUTION | RMS: 4.295 | Magnitude: 10.622 | X: 1.113 Y: -1.620 Z: 10.439
+[Vibration] Status: CAUTION | RMS: 4.349 | Magnitude: 10.502 | X: 1.098 Y: -1.036 Z: 10.393
+[Vibration] Status: CAUTION | RMS: 4.357 | Magnitude: 11.728 | X: -3.962 Y: 1.409 Z: 10.948
+[Vibration] Status: CAUTION | RMS: 4.296 | Magnitude: 9.960 | X: 0.093 Y: 0.199 Z: 9.958
+[Vibration] Status: OK | RMS: 1.519 | Magnitude: 10.201 | X: -0.184 Y: 1.914 Z: 10.018
+[Vibration] Status: OK | RMS: 1.506 | Magnitude: 10.359 | X: 0.024 Y: 1.144 Z: 10.295
+[Vibration] Status: OK | RMS: 1.504 | Magnitude: 10.989 | X: 0.660 Y: 3.256 Z: 10.475
+[Vibration] Status: OK | RMS: 1.719 | Magnitude: 11.823 | X: 0.751 Y: 1.436 Z: 11.712
+[Vibration] Status: CAUTION | RMS: 2.393 | Magnitude: 12.511 | X: -2.830 Y: -0.151 Z: 12.185
+[Vibration] Status: CAUTION | RMS: 2.392 | Magnitude: 10.199 | X: 0.639 Y: -1.270 Z: 10.099
+[Vibration] Status: CAUTION | RMS: 2.420 | Magnitude: 10.474 | X: 0.914 Y: -1.431 Z: 10.336
+[Vibration] Status: CAUTION | RMS: 2.654 | Magnitude: 10.985 | X: -0.486 Y: 2.917 Z: 10.580
+[Vibration] Status: CAUTION | RMS: 2.525 | Magnitude: 10.337 | X: -1.129 Y: 1.395 Z: 10.180
+[Vibration] Status: OK | RMS: 1.836 | Magnitude: 7.749 | X: -1.991 Y: -1.022 Z: 7.419
+[Vibration] Status: OK | RMS: 1.811 | Magnitude: 10.721 | X: 0.562 Y: -0.208 Z: 10.704
+[Vibration] Status: OK | RMS: 1.427 | Magnitude: 10.335 | X: 2.311 Y: -0.696 Z: 10.049
+[Vibration] Status: OK | RMS: 1.368 | Magnitude: 10.450 | X: 1.574 Y: -0.431 Z: 10.322
+[Vibration] Status: OK | RMS: 1.374 | Magnitude: 10.080 | X: 1.570 Y: -1.012 Z: 9.905
+[Vibration] Status: OK | RMS: 1.288 | Magnitude: 12.061 | X: 0.627 Y: -0.053 Z: 12.044
+[Vibration] Status: CAUTION | RMS: 3.706 | Magnitude: 10.792 | X: 2.845 Y: -0.029 Z: 10.410
+[Vibration] Status: CAUTION | RMS: 3.650 | Magnitude: 10.397 | X: -1.617 Y: 0.715 Z: 10.245
+[Vibration] Status: CAUTION | RMS: 3.649 | Magnitude: 8.732 | X: -1.007 Y: -0.586 Z: 8.654
+[Vibration] Status: CAUTION | RMS: 3.722 | Magnitude: 9.885 | X: 1.306 Y: -1.287 Z: 9.714
+[Vibration] Status: OK | RMS: 1.706 | Magnitude: 6.371 | X: -0.136 Y: -0.806 Z: 6.319
+[Vibration] Status: CAUTION | RMS: 5.256 | Magnitude: 10.316 | X: 0.285 Y: 0.074 Z: 10.312
+[Vibration] Status: CAUTION | RMS: 5.272 | Magnitude: 10.861 | X: 1.715 Y: -2.120 Z: 10.513
+[Vibration] Status: CAUTION | RMS: 5.208 | Magnitude: 9.517 | X: 0.421 Y: 1.548 Z: 9.381
+[Vibration] Status: CAUTION | RMS: 5.158 | Magnitude: 10.704 | X: 2.548 Y: -1.024 Z: 10.346
+[Vibration] Status: OK | RMS: 1.446 | Magnitude: 11.209 | X: 1.127 Y: 2.464 Z: 10.877
+[Vibration] Status: OK | RMS: 1.631 | Magnitude: 10.206 | X: 3.134 Y: -2.785 Z: 9.305
+[Vibration] Status: OK | RMS: 1.609 | Magnitude: 9.826 | X: 0.483 Y: 0.574 Z: 9.798
+[Vibration] Status: OK | RMS: 1.667 | Magnitude: 9.017 | X: 0.464 Y: -1.335 Z: 8.905
+[Vibration] Status: OK | RMS: 1.668 | Magnitude: 10.502 | X: 1.089 Y: -3.378 Z: 9.884
+[Vibration] Status: OK | RMS: 1.490 | Magnitude: 10.318 | X: -0.246 Y: 2.699 Z: 9.956
+[Vibration] Status: OK | RMS: 1.496 | Magnitude: 11.281 | X: 0.249 Y: 1.175 Z: 11.216
+[Vibration] Status: CAUTION | RMS: 2.391 | Magnitude: 10.054 | X: -0.577 Y: -1.931 Z: 9.850
+[Vibration] Status: CAUTION | RMS: 2.331 | Magnitude: 9.932 | X: -1.845 Y: 2.062 Z: 9.539
+[Vibration] Status: CAUTION | RMS: 2.349 | Magnitude: 11.037 | X: -0.433 Y: 1.108 Z: 10.972
+[Vibration] Status: CAUTION | RMS: 2.432 | Magnitude: 11.914 | X: 0.663 Y: 2.440 Z: 11.642
+[Vibration] Status: OK | RMS: 1.427 | Magnitude: 9.745 | X: 2.058 Y: -2.842 Z: 9.092
+[Vibration] Status: OK | RMS: 1.308 | Magnitude: 11.394 | X: 0.416 Y: 3.615 Z: 10.798
+[Vibration] Status: OK | RMS: 1.426 | Magnitude: 11.650 | X: 2.177 Y: -0.924 Z: 11.408
+[Vibration] Status: OK | RMS: 1.540 | Magnitude: 6.816 | X: 0.309 Y: -0.981 Z: 6.738
+[Vibration] Status: OK | RMS: 1.638 | Magnitude: 10.915 | X: 0.522 Y: 2.168 Z: 10.685
+[Vibration] Status: OK | RMS: 1.655 | Magnitude: 8.962 | X: 0.081 Y: -2.821 Z: 8.506
+[Vibration] Status: OK | RMS: 1.618 | Magnitude: 10.675 | X: -2.278 Y: 2.933 Z: 10.008
+[Vibration] Status: OK | RMS: 1.428 | Magnitude: 11.715 | X: -2.168 Y: -1.797 Z: 11.372
+[Vibration] Status: OK | RMS: 1.377 | Magnitude: 7.821 | X: 1.845 Y: 0.404 Z: 7.589
+[Vibration] Status: OK | RMS: 1.598 | Magnitude: 11.116 | X: 0.371 Y: 2.637 Z: 10.793
+[Vibration] Status: OK | RMS: 1.844 | Magnitude: 11.123 | X: 2.500 Y: -1.507 Z: 10.733
+[Vibration] Status: CAUTION | RMS: 1.915 | Magnitude: 11.634 | X: 0.244 Y: 0.828 Z: 11.602
+[Vibration] Status: OK | RMS: 1.730 | Magnitude: 9.589 | X: -2.098 Y: 0.148 Z: 9.355
+[Vibration] Status: OK | RMS: 1.639 | Magnitude: 7.880 | X: -0.239 Y: -2.151 Z: 7.577
+[Vibration] Status: OK | RMS: 1.489 | Magnitude: 10.796 | X: 1.416 Y: -1.467 Z: 10.602
+[Vibration] Status: OK | RMS: 1.516 | Magnitude: 6.850 | X: -0.878 Y: 0.323 Z: 6.785
+[Vibration] Status: OK | RMS: 1.777 | Magnitude: 10.512 | X: -0.325 Y: -2.816 Z: 10.123
+[Vibration] Status: OK | RMS: 1.822 | Magnitude: 10.026 | X: -2.115 Y: 2.534 Z: 9.467
+[Vibration] Status: OK | RMS: 1.762 | Magnitude: 11.915 | X: -2.730 Y: -1.763 Z: 11.463
+[Vibration] Status: OK | RMS: 1.770 | Magnitude: 10.107 | X: -0.615 Y: 1.151 Z: 10.023
+[Vibration] Status: OK | RMS: 1.576 | Magnitude: 11.865 | X: 3.077 Y: 1.433 Z: 11.370
+[Vibration] Status: OK | RMS: 1.629 | Magnitude: 10.525 | X: 1.392 Y: 0.567 Z: 10.417
+[Vibration] Status: OK | RMS: 1.667 | Magnitude: 12.103 | X: 0.481 Y: -1.263 Z: 12.027
+[Vibration] Status: OK | RMS: 1.723 | Magnitude: 13.165 | X: 3.998 Y: 2.742 Z: 12.240
+[Vibration] Status: OK | RMS: 1.766 | Magnitude: 11.774 | X: -0.407 Y: 0.897 Z: 11.733
+[Vibration] Status: OK | RMS: 1.623 | Magnitude: 10.679 | X: -1.534 Y: 3.084 Z: 10.109
+[Vibration] Status: OK | RMS: 1.713 | Magnitude: 9.865 | X: -1.385 Y: -1.165 Z: 9.697
+[Vibration] Status: OK | RMS: 1.788 | Magnitude: 11.115 | X: 0.081 Y: 0.668 Z: 11.094
+[Vibration] Status: OK | RMS: 1.676 | Magnitude: 9.839 | X: 0.237 Y: 0.809 Z: 9.802
+[Vibration] Status: OK | RMS: 1.687 | Magnitude: 12.951 | X: -1.605 Y: -0.433 Z: 12.843
+[Vibration] Status: OK | RMS: 1.745 | Magnitude: 7.409 | X: 0.636 Y: 0.658 Z: 7.352
+[Vibration] Status: OK | RMS: 1.622 | Magnitude: 10.317 | X: 0.591 Y: -3.615 Z: 9.644
+[Vibration] Status: OK | RMS: 1.600 | Magnitude: 11.654 | X: 0.187 Y: 0.493 Z: 11.642
+[Vibration] Status: OK | RMS: 1.607 | Magnitude: 7.656 | X: 0.086 Y: -2.481 Z: 7.242
+[Vibration] Status: CAUTION | RMS: 2.146 | Magnitude: 10.128 | X: -0.033 Y: -0.230 Z: 10.125
+[Vibration] Status: CAUTION | RMS: 2.100 | Magnitude: 10.600 | X: 1.105 Y: 2.259 Z: 10.298
+[Vibration] Status: CAUTION | RMS: 2.887 | Magnitude: 22.637 | X: 15.760 Y: -2.900 Z: 15.990
+[Vibration] Status: CAUTION | RMS: 2.939 | Magnitude: 11.364 | X: -1.412 Y: 0.806 Z: 11.248
+[Vibration] Status: CAUTION | RMS: 2.521 | Magnitude: 10.368 | X: -4.192 Y: 1.538 Z: 9.357
+[Vibration] Status: CAUTION | RMS: 2.635 | Magnitude: 8.086 | X: -0.457 Y: -2.019 Z: 7.817
+[Vibration] Status: CAUTION | RMS: 3.146 | Magnitude: 23.037 | X: 16.889 Y: 0.928 Z: 15.640
+[Vibration] Status: CAUTION | RMS: 2.672 | Magnitude: 12.622 | X: 0.902 Y: 3.620 Z: 12.059
+[Vibration] Status: CAUTION | RMS: 2.705 | Magnitude: 10.038 | X: 1.354 Y: -3.359 Z: 9.362
+[Vibration] Status: CAUTION | RMS: 2.678 | Magnitude: 10.551 | X: -1.503 Y: 3.017 Z: 9.999
+[Vibration] Status: CAUTION | RMS: 2.652 | Magnitude: 10.961 | X: -0.371 Y: 1.089 Z: 10.901
+[Vibration] Status: CAUTION | RMS: 1.905 | Magnitude: 12.072 | X: 4.012 Y: 1.900 Z: 11.226
+[Vibration] Status: CAUTION | RMS: 4.683 | Magnitude: 11.607 | X: 2.369 Y: -2.673 Z: 11.044
+[Vibration] Status: CAUTION | RMS: 4.691 | Magnitude: 9.491 | X: 0.057 Y: 1.656 Z: 9.345
+[Vibration] Status: CAUTION | RMS: 4.672 | Magnitude: 11.733 | X: -4.027 Y: -1.505 Z: 10.917
+[Vibration] Status: CAUTION | RMS: 4.649 | Magnitude: 12.071 | X: 1.998 Y: 2.897 Z: 11.547
+[Vibration] Status: OK | RMS: 1.637 | Magnitude: 10.916 | X: -1.529 Y: 3.268 Z: 10.302
+[Vibration] Status: OK | RMS: 1.645 | Magnitude: 10.198 | X: 1.364 Y: 2.615 Z: 9.762
+[ 41396][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.688 | Magnitude: 10.863 | X: -1.706 Y: 3.347 Z: 10.192
+[Vibration] Status: OK | RMS: 1.614 | Magnitude: 7.330 | X: -1.270 Y: 0.591 Z: 7.194
+[Vibration] Status: OK | RMS: 1.639 | Magnitude: 11.271 | X: -1.840 Y: 0.723 Z: 11.097
+[Vibration] Status: OK | RMS: 1.627 | Magnitude: 10.756 | X: 0.165 Y: -1.091 Z: 10.700
+[Vibration] Status: OK | RMS: 1.614 | Magnitude: 11.499 | X: -1.433 Y: 0.720 Z: 11.386
+[Vibration] Status: OK | RMS: 1.644 | Magnitude: 10.881 | X: 0.514 Y: 3.287 Z: 10.360
+[Vibration] Status: OK | RMS: 1.594 | Magnitude: 8.857 | X: -2.208 Y: 0.342 Z: 8.570
+[Vibration] Status: OK | RMS: 1.654 | Magnitude: 11.089 | X: 2.620 Y: -3.094 Z: 10.322
+[ 44344][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.618 | Magnitude: 11.067 | X: -1.476 Y: 0.258 Z: 10.965
+[Vibration] Status: OK | RMS: 1.545 | Magnitude: 11.175 | X: -2.280 Y: -1.148 Z: 10.879
+[Vibration] Status: OK | RMS: 1.555 | Magnitude: 10.670 | X: -0.242 Y: 1.046 Z: 10.616
+[Vibration] Status: OK | RMS: 1.514 | Magnitude: 12.943 | X: 3.316 Y: 3.230 Z: 12.087
+[Vibration] Status: CAUTION | RMS: 2.059 | Magnitude: 9.136 | X: -0.127 Y: -1.562 Z: 9.001
+[ 45532][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: CAUTION | RMS: 2.043 | Magnitude: 10.919 | X: 1.797 Y: -1.026 Z: 10.721
+[ 46793][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: CAUTION | RMS: 2.000 | Magnitude: 8.208 | X: -0.632 Y: 1.385 Z: 8.065
+[ 47970][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: CAUTION | RMS: 1.953 | Magnitude: 11.445 | X: -0.802 Y: -1.376 Z: 11.334
+[ 49189][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: CAUTION | RMS: 1.932 | Magnitude: 8.700 | X: -3.089 Y: -1.553 Z: 7.984
+[ 49281][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.684 | Magnitude: 8.662 | X: 0.304 Y: -2.149 Z: 8.386
+[Vibration] Status: OK | RMS: 1.174 | Magnitude: 9.904 | X: -1.558 Y: -0.526 Z: 9.767
+[ 49919][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 50947][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.278 | Magnitude: 11.707 | X: -3.354 Y: -1.287 Z: 11.142
+[ 52040][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.282 | Magnitude: 8.359 | X: -1.519 Y: -1.768 Z: 8.027
+[ 53259][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.246 | Magnitude: 10.258 | X: -3.833 Y: -2.395 Z: 9.209
+[ 53372][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.289 | Magnitude: 11.921 | X: 0.656 Y: 3.405 Z: 11.405
+[ 53590][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.317 | Magnitude: 10.339 | X: 1.486 Y: -0.400 Z: 10.223
+[ 53850][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.303 | Magnitude: 10.824 | X: 1.909 Y: 0.043 Z: 10.654
+[ 54235][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: CAUTION | RMS: 6.062 | Magnitude: 10.624 | X: 0.691 Y: -1.893 Z: 10.432
+[Vibration] Status: CAUTION | RMS: 6.068 | Magnitude: 11.027 | X: -2.079 Y: -1.900 Z: 10.661
+[Vibration] Status: CAUTION | RMS: 6.051 | Magnitude: 9.060 | X: -0.294 Y: -2.105 Z: 8.807
+[Vibration] Status: CAUTION | RMS: 6.051 | Magnitude: 10.202 | X: -1.337 Y: -0.258 Z: 10.111
+[Vibration] Status: OK | RMS: 1.229 | Magnitude: 12.268 | X: 0.452 Y: -1.349 Z: 12.185
+[Vibration] Status: OK | RMS: 1.272 | Magnitude: 12.194 | X: 3.240 Y: 1.971 Z: 11.590
+[Vibration] Status: OK | RMS: 1.223 | Magnitude: 10.216 | X: -3.503 Y: -0.306 Z: 9.592
+[Vibration] Status: OK | RMS: 1.177 | Magnitude: 9.437 | X: -1.864 Y: 0.773 Z: 9.219
+[ 56202][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.227 | Magnitude: 7.351 | X: -7.351 Y: -0.001 Z: -0.001
+[ 56461][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.087 | Magnitude: 11.499 | X: 2.405 Y: -0.191 Z: 11.243
+[ 57784][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.119 | Magnitude: 10.277 | X: 1.136 Y: -0.002 Z: 10.214
+[ 58023][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.190 | Magnitude: 8.739 | X: -1.115 Y: -1.309 Z: 8.568
+[ 58157][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.168 | Magnitude: 9.756 | X: -0.012 Y: 1.046 Z: 9.700
+[Vibration] Status: OK | RMS: 1.146 | Magnitude: 10.251 | X: 0.435 Y: -0.756 Z: 10.214
+[Vibration] Status: OK | RMS: 1.166 | Magnitude: 10.595 | X: -0.345 Y: -1.421 Z: 10.494
+[Vibration] Status: OK | RMS: 1.081 | Magnitude: 10.411 | X: 1.122 Y: -0.828 Z: 10.317
+[Vibration] Status: OK | RMS: 1.055 | Magnitude: 11.848 | X: 1.000 Y: 1.392 Z: 11.724
+[Vibration] Status: OK | RMS: 1.569 | Magnitude: 9.951 | X: 0.557 Y: -0.632 Z: 9.915
+[Vibration] Status: OK | RMS: 1.535 | Magnitude: 10.567 | X: 2.345 Y: -0.479 Z: 10.293
+[Vibration] Status: OK | RMS: 1.533 | Magnitude: 11.663 | X: 3.412 Y: -0.105 Z: 11.152
+[Vibration] Status: OK | RMS: 1.637 | Magnitude: 11.314 | X: 4.740 Y: 0.821 Z: 10.240
+[Vibration] Status: OK | RMS: 1.220 | Magnitude: 10.144 | X: -0.447 Y: -0.158 Z: 10.133
+[Vibration] Status: OK | RMS: 1.725 | Magnitude: 10.430 | X: -1.450 Y: 0.632 Z: 10.310
+[Vibration] Status: OK | RMS: 1.739 | Magnitude: 10.184 | X: -3.232 Y: -0.493 Z: 9.644
+[Vibration] Status: OK | RMS: 1.697 | Magnitude: 10.766 | X: 1.847 Y: -1.127 Z: 10.546
+[ 61431][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.684 | Magnitude: 12.362 | X: 2.730 Y: 3.701 Z: 11.475
+[Vibration] Status: OK | RMS: 1.195 | Magnitude: 11.116 | X: 2.407 Y: 0.787 Z: 10.824
+[ 61964][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 63056][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.127 | Magnitude: 9.335 | X: -1.727 Y: -0.794 Z: 9.140
+[ 63190][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.115 | Magnitude: 10.810 | X: 1.416 Y: 0.404 Z: 10.709
+[Vibration] Status: OK | RMS: 1.000 | Magnitude: 10.488 | X: 2.048 Y: 2.780 Z: 9.903
+[Vibration] Status: OK | RMS: 0.931 | Magnitude: 10.524 | X: 1.213 Y: 1.919 Z: 10.276
+[Vibration] Status: OK | RMS: 0.812 | Magnitude: 10.634 | X: 1.531 Y: -0.780 Z: 10.494
+[Vibration] Status: OK | RMS: 0.824 | Magnitude: 11.215 | X: 1.684 Y: -1.660 Z: 10.963
+[Vibration] Status: OK | RMS: 0.848 | Magnitude: 10.803 | X: 1.069 Y: -1.849 Z: 10.590
+[Vibration] Status: OK | RMS: 0.829 | Magnitude: 10.853 | X: 1.067 Y: -0.787 Z: 10.771
+[ 64884][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 0.836 | Magnitude: 10.019 | X: 0.924 Y: -1.335 Z: 9.886
+[Vibration] Status: OK | RMS: 0.795 | Magnitude: 10.249 | X: 1.397 Y: -0.569 Z: 10.137
+[Vibration] Status: OK | RMS: 0.742 | Magnitude: 10.340 | X: 1.280 Y: -0.476 Z: 10.250
+[Vibration] Status: OK | RMS: 0.687 | Magnitude: 10.828 | X: 1.993 Y: -0.935 Z: 10.602
+[Vibration] Status: OK | RMS: 0.612 | Magnitude: 9.551 | X: 0.574 Y: 1.560 Z: 9.405
+[Vibration] Status: OK | RMS: 0.582 | Magnitude: 11.383 | X: 0.378 Y: 2.015 Z: 11.197
+[Vibration] Status: OK | RMS: 0.600 | Magnitude: 10.698 | X: 0.433 Y: 1.620 Z: 10.566
+[Vibration] Status: OK | RMS: 0.610 | Magnitude: 10.512 | X: 1.294 Y: -1.727 Z: 10.288
+[Vibration] Status: OK | RMS: 0.690 | Magnitude: 10.395 | X: 1.646 Y: -0.538 Z: 10.250
+[ 67315][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 0.759 | Magnitude: 9.896 | X: 0.050 Y: 0.718 Z: 9.869
+[Vibration] Status: OK | RMS: 0.839 | Magnitude: 10.697 | X: 1.373 Y: -1.165 Z: 10.544
+[Vibration] Status: OK | RMS: 1.509 | Magnitude: 10.612 | X: 0.912 Y: -1.818 Z: 10.415
+[Vibration] Status: OK | RMS: 1.507 | Magnitude: 10.185 | X: -1.034 Y: -2.364 Z: 9.853
+[Vibration] Status: CAUTION | RMS: 2.016 | Magnitude: 9.481 | X: 1.479 Y: 2.000 Z: 9.149
+[Vibration] Status: CAUTION | RMS: 1.987 | Magnitude: 9.509 | X: -0.957 Y: -0.639 Z: 9.439
+[Vibration] Status: OK | RMS: 1.545 | Magnitude: 9.282 | X: -1.493 Y: 0.598 Z: 9.142
+[Vibration] Status: OK | RMS: 1.524 | Magnitude: 10.695 | X: -0.715 Y: 0.244 Z: 10.669
+[Vibration] Status: OK | RMS: 0.722 | Magnitude: 10.726 | X: -1.457 Y: -1.859 Z: 10.463
+[Vibration] Status: OK | RMS: 0.808 | Magnitude: 11.171 | X: 1.062 Y: -1.706 Z: 10.989
+[ 69767][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.267 | Magnitude: 11.175 | X: -1.208 Y: -1.967 Z: 10.934
+[Vibration] Status: OK | RMS: 1.319 | Magnitude: 10.919 | X: 0.641 Y: -1.622 Z: 10.779
+[ 70322][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: CAUTION | RMS: 2.085 | Magnitude: 10.897 | X: 1.254 Y: -0.565 Z: 10.810
+[Vibration] Status: CAUTION | RMS: 2.086 | Magnitude: 11.125 | X: 1.163 Y: 2.993 Z: 10.652
+[Vibration] Status: OK | RMS: 1.832 | Magnitude: 10.231 | X: -3.309 Y: 1.794 Z: 9.513
+[Vibration] Status: CAUTION | RMS: 2.219 | Magnitude: 9.512 | X: 1.763 Y: 2.326 Z: 9.054
+[Vibration] Status: OK | RMS: 1.539 | Magnitude: 9.309 | X: -0.672 Y: -1.084 Z: 9.221
+[Vibration] Status: OK | RMS: 1.615 | Magnitude: 9.906 | X: -0.735 Y: -0.373 Z: 9.872
+[Vibration] Status: OK | RMS: 1.615 | Magnitude: 10.093 | X: 0.211 Y: 0.179 Z: 10.090
+[Vibration] Status: OK | RMS: 0.988 | Magnitude: 10.064 | X: -0.057 Y: 0.141 Z: 10.063
+[Vibration] Status: OK | RMS: 0.874 | Magnitude: 10.078 | X: 0.048 Y: 0.098 Z: 10.078
+[Vibration] Status: OK | RMS: 0.562 | Magnitude: 10.023 | X: 0.014 Y: 0.084 Z: 10.023
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.083 | X: 0.077 Y: 0.081 Z: 10.082
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.083 | X: 0.033 Y: 0.096 Z: 10.082
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.114 | X: 0.033 Y: 0.117 Z: 10.113
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.152 | X: 0.036 Y: 0.086 Z: 10.152
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.038 | X: 0.026 Y: 0.134 Z: 10.037
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.105 | X: 0.081 Y: 0.156 Z: 10.104
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.071 | X: 0.043 Y: 0.112 Z: 10.070
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.026 | X: 0.010 Y: 0.129 Z: 10.025
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.095 | X: 0.048 Y: 0.103 Z: 10.094
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.086 | X: 0.010 Y: 0.134 Z: 10.085
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.025 | X: -0.005 Y: 0.108 Z: 10.025
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.109 | X: 0.055 Y: 0.103 Z: 10.109
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.049 | X: 0.062 Y: 0.089 Z: 10.049
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 9.963 | X: -0.026 Y: 0.110 Z: 9.963
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.148 | X: 0.069 Y: 0.117 Z: 10.147
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.073 | X: -0.014 Y: 0.072 Z: 10.073
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.045 | X: -0.103 Y: 0.234 Z: 10.042
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.133 | X: -0.002 Y: 0.127 Z: 10.133
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.085 | X: 0.048 Y: 0.115 Z: 10.085
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.095 | X: 0.072 Y: 0.105 Z: 10.094
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.066 | X: 0.017 Y: -0.100 Z: 10.066
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.065 | X: -0.084 Y: 0.165 Z: 10.063
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.093 | X: -0.067 Y: 0.156 Z: 10.092
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.045 | X: -0.072 Y: 0.134 Z: 10.044
+[Vibration] Status: OK | RMS: 0.736 | Magnitude: 11.191 | X: 1.160 Y: 2.005 Z: 10.948
+[Vibration] Status: OK | RMS: 1.039 | Magnitude: 11.231 | X: 0.337 Y: 4.201 Z: 10.410
+[Vibration] Status: OK | RMS: 1.116 | Magnitude: 10.511 | X: 2.242 Y: 1.859 Z: 10.099
+[Vibration] Status: OK | RMS: 1.317 | Magnitude: 9.799 | X: 1.467 Y: 0.816 Z: 9.654
+[Vibration] Status: OK | RMS: 1.359 | Magnitude: 11.239 | X: -1.866 Y: -0.414 Z: 11.075
+[Vibration] Status: OK | RMS: 1.303 | Magnitude: 11.195 | X: -0.770 Y: 2.677 Z: 10.843
+[ 80511][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.331 | Magnitude: 10.621 | X: 0.215 Y: 2.869 Z: 10.223
+[ 80833][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[ 81861][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.265 | Magnitude: 10.706 | X: -0.605 Y: -1.469 Z: 10.587
+[Vibration] Status: OK | RMS: 1.267 | Magnitude: 10.948 | X: 4.400 Y: 2.302 Z: 9.757
+[ 83270][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.315 | Magnitude: 12.245 | X: 1.577 Y: 4.244 Z: 11.377
+[Vibration] Status: OK | RMS: 1.214 | Magnitude: 10.373 | X: -0.986 Y: 0.031 Z: 10.326
+[ 84679][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.190 | Magnitude: 9.552 | X: -1.515 Y: -1.117 Z: 9.365
+[Vibration] Status: OK | RMS: 1.123 | Magnitude: 10.249 | X: 2.086 Y: 2.869 Z: 9.616
+[ 86088][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[ 87117][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.007 | Magnitude: 10.087 | X: -0.045 Y: 0.072 Z: 10.087
+[Vibration] Status: OK | RMS: 0.850 | Magnitude: 10.154 | X: -0.026 Y: 0.074 Z: 10.154
+[Vibration] Status: OK | RMS: 0.617 | Magnitude: 10.143 | X: 0.041 Y: 0.129 Z: 10.142
+[Vibration] Status: OK | RMS: 0.417 | Magnitude: 10.054 | X: 0.033 Y: -0.067 Z: 10.054
+[Vibration] Status: OK | RMS: 0.366 | Magnitude: 10.321 | X: -0.010 Y: 0.184 Z: 10.319
+[Vibration] Status: OK | RMS: 0.373 | Magnitude: 10.149 | X: 0.024 Y: 0.184 Z: 10.147
+[Vibration] Status: OK | RMS: 0.398 | Magnitude: 10.179 | X: 0.057 Y: 0.146 Z: 10.178
+[Vibration] Status: OK | RMS: 0.508 | Magnitude: 10.122 | X: 0.053 Y: 0.127 Z: 10.121
+[Vibration] Status: OK | RMS: 0.507 | Magnitude: 10.227 | X: 0.108 Y: 0.067 Z: 10.226
+[Vibration] Status: OK | RMS: 0.501 | Magnitude: 10.239 | X: 0.129 Y: 0.122 Z: 10.238
+[Vibration] Status: OK | RMS: 0.499 | Magnitude: 10.264 | X: 0.220 Y: 0.029 Z: 10.262
+[Vibration] Status: OK | RMS: 0.395 | Magnitude: 10.138 | X: 0.074 Y: 0.022 Z: 10.137
+[Vibration] Status: OK | RMS: 0.417 | Magnitude: 10.102 | X: 0.072 Y: 0.057 Z: 10.101
+[Vibration] Status: OK | RMS: 0.396 | Magnitude: 10.181 | X: 0.029 Y: 0.115 Z: 10.180
+[Vibration] Status: OK | RMS: 0.387 | Magnitude: 10.186 | X: 0.108 Y: 0.105 Z: 10.185
+[Vibration] Status: OK | RMS: 0.377 | Magnitude: 10.164 | X: 0.072 Y: 0.077 Z: 10.164
+[Vibration] Status: OK | RMS: 0.354 | Magnitude: 10.083 | X: -0.005 Y: 0.120 Z: 10.082
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.159 | X: 0.053 Y: 0.089 Z: 10.159
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.050 | X: 0.060 Y: 0.120 Z: 10.049
+[Vibration] Status: OK | RMS: 0.309 | Magnitude: 10.100 | X: 0.005 Y: 0.105 Z: 10.099
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.071 | X: 0.014 Y: 0.136 Z: 10.070
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.081 | X: 0.043 Y: 0.112 Z: 10.080
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.097 | X: 0.012 Y: 0.122 Z: 10.097
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.028 | X: 0.041 Y: 0.112 Z: 10.027
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.050 | X: 0.031 Y: 0.132 Z: 10.049
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.090 | X: 0.022 Y: 0.112 Z: 10.090
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.143 | X: 0.002 Y: 0.089 Z: 10.142
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.090 | X: 0.007 Y: 0.100 Z: 10.090
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.114 | X: 0.026 Y: 0.136 Z: 10.113
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.126 | X: -0.017 Y: 0.127 Z: 10.125
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.147 | X: 0.024 Y: 0.100 Z: 10.147
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.122 | X: 0.007 Y: 0.146 Z: 10.121
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.093 | X: 0.026 Y: 0.122 Z: 10.092
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.033 | X: 0.055 Y: 0.122 Z: 10.032
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.069 | X: -0.012 Y: 0.110 Z: 10.068
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.121 | X: 0.019 Y: 0.108 Z: 10.121
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.040 | X: 0.041 Y: 0.103 Z: 10.039
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.116 | X: 0.019 Y: 0.103 Z: 10.116
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.122 | X: 0.022 Y: 0.146 Z: 10.121
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.059 | X: 0.050 Y: 0.081 Z: 10.058
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.133 | X: -0.005 Y: 0.079 Z: 10.133
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.093 | X: -0.022 Y: 0.127 Z: 10.092
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.112 | X: 0.038 Y: 0.139 Z: 10.111
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.092 | X: 0.031 Y: 0.100 Z: 10.092
+[Vibration] Status: OK | RMS: 0.308 | Magnitude: 10.143 | X: 0.012 Y: 0.093 Z: 10.142
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 9.985 | X: -0.014 Y: 0.112 Z: 9.984
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.021 | X: 0.029 Y: 0.141 Z: 10.020
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.143 | X: 0.012 Y: 0.141 Z: 10.142
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.226 | X: 0.000 Y: -0.007 Z: 10.226
+[Vibration] Status: OK | RMS: 0.324 | Magnitude: 10.112 | X: -0.010 Y: 0.141 Z: 10.111
+[Vibration] Status: OK | RMS: 0.324 | Magnitude: 10.107 | X: -0.017 Y: 0.134 Z: 10.106
+[Vibration] Status: OK | RMS: 0.323 | Magnitude: 10.018 | X: -0.026 Y: 0.117 Z: 10.018
+[Vibration] Status: OK | RMS: 0.312 | Magnitude: 10.126 | X: 0.022 Y: 0.081 Z: 10.125
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.047 | X: 0.017 Y: 0.112 Z: 10.046
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.040 | X: 0.019 Y: 0.120 Z: 10.039
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.052 | X: 0.038 Y: 0.122 Z: 10.051
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.057 | X: 0.010 Y: 0.134 Z: 10.056
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.148 | X: 0.007 Y: 0.122 Z: 10.147
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.093 | X: 0.017 Y: 0.151 Z: 10.092
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.059 | X: 0.010 Y: 0.139 Z: 10.058
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.052 | X: 0.017 Y: 0.132 Z: 10.051
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.095 | X: 0.019 Y: 0.098 Z: 10.094
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.102 | X: 0.045 Y: 0.100 Z: 10.101
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.071 | X: 0.002 Y: 0.103 Z: 10.070
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.100 | X: 0.012 Y: 0.117 Z: 10.099
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.078 | X: 0.019 Y: 0.129 Z: 10.078
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.040 | X: -0.007 Y: 0.117 Z: 10.039
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 9.981 | X: -0.026 Y: 0.187 Z: 9.979
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.030 | X: -0.002 Y: 0.127 Z: 10.030
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.100 | X: -0.014 Y: 0.093 Z: 10.099
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.035 | X: 0.002 Y: 0.110 Z: 10.034
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.109 | X: 0.045 Y: 0.089 Z: 10.109
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.076 | X: -0.017 Y: 0.105 Z: 10.075
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.100 | X: 0.000 Y: 0.120 Z: 10.099
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.112 | X: 0.017 Y: 0.151 Z: 10.111
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.093 | X: 0.048 Y: 0.156 Z: 10.092
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.064 | X: 0.022 Y: 0.134 Z: 10.063
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.145 | X: 0.002 Y: 0.124 Z: 10.145
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.084 | X: -0.012 Y: 0.167 Z: 10.082
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.152 | X: -0.017 Y: 0.103 Z: 10.152
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.076 | X: 0.000 Y: 0.115 Z: 10.075
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.068 | X: -0.005 Y: 0.098 Z: 10.068
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.093 | X: 0.007 Y: 0.124 Z: 10.092
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.095 | X: -0.031 Y: 0.117 Z: 10.094
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.093 | X: -0.014 Y: 0.124 Z: 10.092
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.042 | X: 0.012 Y: 0.089 Z: 10.042
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.073 | X: 0.036 Y: 0.105 Z: 10.073
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.091 | X: -0.005 Y: 0.156 Z: 10.090
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.093 | X: 0.012 Y: 0.112 Z: 10.092
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.073 | X: -0.019 Y: 0.103 Z: 10.073
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.090 | X: -0.010 Y: 0.127 Z: 10.090
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.090 | X: 0.002 Y: 0.112 Z: 10.090
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.040 | X: 0.038 Y: 0.134 Z: 10.039
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.035 | X: -0.014 Y: 0.108 Z: 10.034
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.083 | X: 0.031 Y: 0.120 Z: 10.082
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.086 | X: 0.022 Y: 0.158 Z: 10.085
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.052 | X: -0.036 Y: 0.122 Z: 10.051
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.073 | X: -0.010 Y: 0.093 Z: 10.073
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.011 | X: -0.002 Y: 0.108 Z: 10.011
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.045 | X: 0.010 Y: 0.148 Z: 10.044
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.081 | X: 0.019 Y: 0.120 Z: 10.080
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.083 | X: 0.022 Y: 0.144 Z: 10.082
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.033 | X: 0.014 Y: 0.108 Z: 10.032
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.123 | X: 0.017 Y: 0.093 Z: 10.123
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.093 | X: -0.074 Y: 0.156 Z: 10.092
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.028 | X: 0.005 Y: 0.117 Z: 10.027
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.114 | X: -0.017 Y: 0.127 Z: 10.113
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.145 | X: -0.012 Y: 0.093 Z: 10.145
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.110 | X: 0.017 Y: 0.156 Z: 10.109
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.061 | X: -0.029 Y: 0.103 Z: 10.061
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.095 | X: 0.002 Y: 0.117 Z: 10.094
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.110 | X: -0.012 Y: 0.136 Z: 10.109
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.141 | X: 0.024 Y: 0.158 Z: 10.140
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.126 | X: -0.010 Y: 0.134 Z: 10.125
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.049 | X: -0.005 Y: 0.081 Z: 10.049
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.105 | X: -0.007 Y: 0.117 Z: 10.104
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.071 | X: 0.005 Y: 0.132 Z: 10.070
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.069 | X: 0.007 Y: 0.122 Z: 10.068
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.076 | X: -0.007 Y: 0.112 Z: 10.075
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.112 | X: 0.041 Y: 0.100 Z: 10.111
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.107 | X: -0.005 Y: 0.129 Z: 10.106
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.121 | X: 0.005 Y: 0.096 Z: 10.121
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.081 | X: 0.038 Y: 0.127 Z: 10.080
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.047 | X: -0.007 Y: 0.105 Z: 10.046
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.059 | X: -0.014 Y: 0.120 Z: 10.058
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.052 | X: -0.041 Y: 0.134 Z: 10.051
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.021 | X: 0.005 Y: 0.108 Z: 10.020
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.059 | X: -0.031 Y: 0.124 Z: 10.058
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.093 | X: -0.010 Y: 0.136 Z: 10.092
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.076 | X: -0.005 Y: 0.129 Z: 10.075
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.028 | X: -0.036 Y: 0.136 Z: 10.027
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.169 | X: -0.014 Y: 0.139 Z: 10.168
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.085 | X: -0.022 Y: 0.103 Z: 10.085
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.098 | X: 0.017 Y: 0.136 Z: 10.097
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.093 | X: 0.022 Y: 0.132 Z: 10.092
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.136 | X: -0.029 Y: 0.120 Z: 10.135
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.061 | X: -0.022 Y: 0.089 Z: 10.061
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.064 | X: 0.017 Y: 0.134 Z: 10.063
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.080 | X: 0.002 Y: 0.098 Z: 10.080
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.100 | X: 0.010 Y: 0.139 Z: 10.099
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.060 | X: 0.002 Y: 0.170 Z: 10.058
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.071 | X: 0.012 Y: 0.141 Z: 10.070
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.047 | X: 0.045 Y: 0.127 Z: 10.046
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.083 | X: 0.014 Y: 0.134 Z: 10.082
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.107 | X: -0.026 Y: 0.122 Z: 10.106
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.062 | X: -0.022 Y: 0.127 Z: 10.061
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.093 | X: 0.000 Y: 0.167 Z: 10.092
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.042 | X: -0.029 Y: 0.091 Z: 10.042
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.064 | X: 0.026 Y: 0.146 Z: 10.063
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.083 | X: -0.024 Y: 0.124 Z: 10.082
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.095 | X: 0.000 Y: 0.144 Z: 10.094
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.115 | X: -0.005 Y: 0.148 Z: 10.113
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.098 | X: -0.033 Y: 0.136 Z: 10.097
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.088 | X: -0.014 Y: 0.108 Z: 10.087
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.069 | X: -0.007 Y: 0.151 Z: 10.068
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.071 | X: -0.029 Y: 0.105 Z: 10.070
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.098 | X: 0.005 Y: 0.136 Z: 10.097
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.045 | X: 0.022 Y: 0.115 Z: 10.044
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.088 | X: -0.014 Y: 0.096 Z: 10.087
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.131 | X: -0.010 Y: 0.117 Z: 10.130
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.117 | X: 0.012 Y: 0.132 Z: 10.116
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.153 | X: -0.002 Y: 0.139 Z: 10.152
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.040 | X: -0.022 Y: 0.108 Z: 10.039
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.093 | X: 0.043 Y: 0.127 Z: 10.092
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.107 | X: 0.007 Y: 0.108 Z: 10.106
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.100 | X: -0.012 Y: 0.100 Z: 10.099
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.138 | X: -0.026 Y: 0.136 Z: 10.137
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.097 | X: -0.024 Y: 0.074 Z: 10.097
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.064 | X: 0.007 Y: 0.144 Z: 10.063
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.059 | X: -0.024 Y: 0.096 Z: 10.058
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.117 | X: -0.012 Y: 0.146 Z: 10.116
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.069 | X: -0.029 Y: 0.108 Z: 10.068
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.122 | X: -0.005 Y: 0.160 Z: 10.121
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.078 | X: 0.014 Y: 0.091 Z: 10.078
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.052 | X: 0.024 Y: 0.115 Z: 10.051
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.058 | X: -0.024 Y: 0.182 Z: 10.056
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.066 | X: 0.010 Y: 0.122 Z: 10.066
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.019 | X: 0.012 Y: 0.127 Z: 10.018
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.066 | X: 0.019 Y: 0.115 Z: 10.066
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.078 | X: -0.005 Y: 0.129 Z: 10.078
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.071 | X: -0.010 Y: 0.132 Z: 10.070
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.052 | X: -0.002 Y: 0.105 Z: 10.051
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.050 | X: 0.019 Y: 0.122 Z: 10.049
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.071 | X: 0.012 Y: 0.139 Z: 10.070
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.086 | X: 0.022 Y: 0.144 Z: 10.085
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.100 | X: 0.012 Y: 0.144 Z: 10.099
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.024 | X: -0.012 Y: 0.163 Z: 10.023
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.181 | X: 0.065 Y: 0.105 Z: 10.180
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.136 | X: 0.012 Y: 0.132 Z: 10.135
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.057 | X: 0.005 Y: 0.105 Z: 10.056
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.119 | X: 0.002 Y: 0.141 Z: 10.118
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.013 | X: -0.017 Y: 0.086 Z: 10.013
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.091 | X: 0.017 Y: 0.158 Z: 10.090
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.124 | X: 0.014 Y: 0.103 Z: 10.123
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.048 | X: -0.010 Y: 0.163 Z: 10.046
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.084 | X: 0.022 Y: 0.160 Z: 10.082
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.143 | X: 0.005 Y: 0.124 Z: 10.142
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.025 | X: 0.019 Y: 0.100 Z: 10.025
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.038 | X: -0.014 Y: 0.153 Z: 10.037
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.136 | X: -0.055 Y: 0.160 Z: 10.135
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.057 | X: -0.041 Y: 0.122 Z: 10.056
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.047 | X: 0.031 Y: 0.141 Z: 10.046
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.107 | X: -0.029 Y: 0.127 Z: 10.106
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.071 | X: 0.012 Y: 0.105 Z: 10.070
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.115 | X: -0.005 Y: 0.153 Z: 10.113
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.115 | X: -0.012 Y: 0.151 Z: 10.113
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.095 | X: -0.010 Y: 0.110 Z: 10.094
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.083 | X: -0.010 Y: 0.120 Z: 10.082
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.105 | X: -0.033 Y: 0.122 Z: 10.104
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.014 | X: 0.019 Y: 0.136 Z: 10.013
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.109 | X: -0.007 Y: 0.048 Z: 10.109
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.093 | X: -0.019 Y: 0.124 Z: 10.092
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.093 | X: -0.012 Y: 0.160 Z: 10.092
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.122 | X: 0.010 Y: 0.144 Z: 10.121
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.116 | X: -0.014 Y: 0.084 Z: 10.116
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.083 | X: 0.012 Y: 0.127 Z: 10.082
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.071 | X: -0.005 Y: 0.129 Z: 10.070
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.112 | X: -0.005 Y: 0.144 Z: 10.111
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.098 | X: 0.005 Y: 0.146 Z: 10.097
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.054 | X: 0.010 Y: 0.105 Z: 10.054
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.155 | X: -0.050 Y: 0.103 Z: 10.154
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.055 | X: -0.005 Y: 0.151 Z: 10.054
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.071 | X: 0.007 Y: 0.136 Z: 10.070
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.031 | X: -0.002 Y: 0.148 Z: 10.030
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.021 | X: 0.000 Y: 0.141 Z: 10.020
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.024 | X: -0.029 Y: 0.139 Z: 10.023
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.093 | X: -0.012 Y: 0.122 Z: 10.092
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.105 | X: 0.005 Y: 0.146 Z: 10.104
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.136 | X: -0.005 Y: 0.129 Z: 10.135
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.108 | X: -0.010 Y: 0.175 Z: 10.106
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.040 | X: -0.057 Y: 0.115 Z: 10.039
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.120 | X: 0.002 Y: 0.170 Z: 10.118
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.078 | X: -0.038 Y: 0.120 Z: 10.078
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.095 | X: -0.043 Y: 0.105 Z: 10.094
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.071 | X: 0.000 Y: 0.077 Z: 10.070
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.131 | X: -0.031 Y: 0.134 Z: 10.130
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.073 | X: 0.002 Y: 0.098 Z: 10.073
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.105 | X: -0.010 Y: 0.117 Z: 10.104
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.069 | X: 0.017 Y: 0.110 Z: 10.068
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.069 | X: -0.045 Y: 0.110 Z: 10.068
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.093 | X: 0.002 Y: 0.151 Z: 10.092
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.108 | X: -0.022 Y: 0.158 Z: 10.106
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.069 | X: -0.010 Y: 0.134 Z: 10.068
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.117 | X: 0.012 Y: 0.139 Z: 10.116
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.093 | X: 0.014 Y: 0.136 Z: 10.092
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.050 | X: -0.053 Y: 0.112 Z: 10.049
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.033 | X: -0.017 Y: 0.124 Z: 10.032
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.148 | X: 0.005 Y: 0.122 Z: 10.147
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.057 | X: -0.017 Y: 0.136 Z: 10.056
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.021 | X: -0.002 Y: 0.129 Z: 10.020
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.076 | X: 0.005 Y: 0.105 Z: 10.075
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.086 | X: -0.007 Y: 0.160 Z: 10.085
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.153 | X: -0.005 Y: 0.184 Z: 10.152
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.057 | X: 0.000 Y: 0.105 Z: 10.056
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.078 | X: 0.031 Y: 0.124 Z: 10.078
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.047 | X: -0.005 Y: 0.124 Z: 10.046
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.102 | X: -0.024 Y: 0.086 Z: 10.101
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.068 | X: 0.005 Y: 0.100 Z: 10.068
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.047 | X: -0.041 Y: 0.132 Z: 10.046
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.132 | X: -0.036 Y: 0.163 Z: 10.130
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.073 | X: 0.024 Y: 0.108 Z: 10.073
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.062 | X: -0.029 Y: 0.151 Z: 10.061
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.100 | X: -0.029 Y: 0.127 Z: 10.099
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.093 | X: -0.005 Y: 0.179 Z: 10.092
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.100 | X: 0.024 Y: 0.139 Z: 10.099
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.024 | X: -0.033 Y: 0.170 Z: 10.023
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.083 | X: -0.010 Y: 0.100 Z: 10.082
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.061 | X: -0.031 Y: 0.115 Z: 10.061
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.116 | X: -0.014 Y: 0.108 Z: 10.116
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.086 | X: -0.072 Y: 0.148 Z: 10.085
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.129 | X: -0.002 Y: 0.141 Z: 10.128
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.042 | X: 0.000 Y: 0.122 Z: 10.042
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.047 | X: -0.014 Y: 0.112 Z: 10.046
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.031 | X: -0.007 Y: 0.153 Z: 10.030
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.021 | X: 0.019 Y: 0.117 Z: 10.020
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.023 | X: -0.017 Y: 0.112 Z: 10.023
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.076 | X: 0.012 Y: 0.134 Z: 10.075
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.019 | X: -0.014 Y: 0.134 Z: 10.018
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.088 | X: -0.019 Y: 0.122 Z: 10.087
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.071 | X: -0.036 Y: 0.117 Z: 10.070
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.047 | X: 0.014 Y: 0.103 Z: 10.046
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.071 | X: 0.057 Y: 0.120 Z: 10.070
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.074 | X: 0.012 Y: 0.163 Z: 10.073
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.133 | X: -0.019 Y: 0.091 Z: 10.133
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.102 | X: -0.022 Y: 0.129 Z: 10.101
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.081 | X: 0.005 Y: 0.144 Z: 10.080
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.100 | X: -0.045 Y: 0.110 Z: 10.099
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.124 | X: -0.010 Y: 0.117 Z: 10.123
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.065 | X: -0.019 Y: 0.179 Z: 10.063
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.114 | X: 0.022 Y: 0.141 Z: 10.113
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.088 | X: -0.050 Y: 0.134 Z: 10.087
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.116 | X: -0.019 Y: 0.112 Z: 10.116
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.092 | X: -0.026 Y: 0.103 Z: 10.092
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.059 | X: -0.022 Y: 0.084 Z: 10.058
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.064 | X: -0.033 Y: 0.108 Z: 10.063
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.085 | X: 0.012 Y: 0.120 Z: 10.085
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.105 | X: -0.017 Y: 0.136 Z: 10.104
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.033 | X: -0.010 Y: 0.148 Z: 10.032
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.064 | X: 0.010 Y: 0.158 Z: 10.063
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.160 | X: -0.024 Y: 0.120 Z: 10.159
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.123 | X: -0.038 Y: 0.091 Z: 10.123
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.040 | X: -0.002 Y: 0.110 Z: 10.039
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.107 | X: 0.048 Y: 0.103 Z: 10.106
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.057 | X: -0.007 Y: 0.146 Z: 10.056
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.083 | X: -0.010 Y: 0.122 Z: 10.082
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.100 | X: -0.096 Y: 0.124 Z: 10.099
+[Vibration] Status: OK | RMS: 0.531 | Magnitude: 11.689 | X: -1.526 Y: 0.505 Z: 11.578
+[Vibration] Status: OK | RMS: 1.037 | Magnitude: 11.162 | X: 0.763 Y: -2.586 Z: 10.831
+[Vibration] Status: OK | RMS: 1.264 | Magnitude: 11.517 | X: 2.160 Y: -2.586 Z: 11.013
+[Vibration] Status: OK | RMS: 1.623 | Magnitude: 11.544 | X: 2.802 Y: -2.649 Z: 10.881
+[Vibration] Status: CAUTION | RMS: 1.939 | Magnitude: 12.382 | X: 4.323 Y: 2.158 Z: 11.401
+[Vibration] Status: CAUTION | RMS: 2.003 | Magnitude: 12.072 | X: 4.189 Y: 2.060 Z: 11.133
+[Vibration] Status: CAUTION | RMS: 1.991 | Magnitude: 10.562 | X: 0.201 Y: 0.182 Z: 10.558
+[Vibration] Status: OK | RMS: 1.777 | Magnitude: 10.795 | X: -0.292 Y: 0.397 Z: 10.783
+[Vibration] Status: OK | RMS: 1.566 | Magnitude: 10.270 | X: 0.931 Y: -1.378 Z: 10.135
+[Vibration] Status: OK | RMS: 1.375 | Magnitude: 11.149 | X: -2.878 Y: -0.591 Z: 10.755
+[Vibration] Status: OK | RMS: 1.352 | Magnitude: 12.202 | X: -4.259 Y: -0.041 Z: 11.434
+[Vibration] Status: OK | RMS: 1.443 | Magnitude: 10.487 | X: -4.761 Y: 0.749 Z: 9.314
+[Vibration] Status: OK | RMS: 1.289 | Magnitude: 10.993 | X: -4.431 Y: 2.354 Z: 9.781
+[Vibration] Status: OK | RMS: 1.173 | Magnitude: 11.164 | X: -0.940 Y: 0.498 Z: 11.114
+[Vibration] Status: OK | RMS: 1.086 | Magnitude: 10.601 | X: -0.955 Y: 0.371 Z: 10.551
+[Vibration] Status: OK | RMS: 1.100 | Magnitude: 11.367 | X: 1.381 Y: -2.299 Z: 11.047
+[Vibration] Status: OK | RMS: 1.258 | Magnitude: 9.605 | X: -0.199 Y: 3.070 Z: 9.099
+[Vibration] Status: OK | RMS: 1.268 | Magnitude: 9.298 | X: -0.311 Y: -0.089 Z: 9.293
+[Vibration] Status: OK | RMS: 1.410 | Magnitude: 8.199 | X: -0.337 Y: -1.577 Z: 8.039
+[Vibration] Status: OK | RMS: 1.189 | Magnitude: 10.171 | X: 2.462 Y: 1.120 Z: 9.805
+[Vibration] Status: OK | RMS: 1.163 | Magnitude: 11.950 | X: 3.682 Y: 1.909 Z: 11.207
+[Vibration] Status: OK | RMS: 1.467 | Magnitude: 10.535 | X: 0.450 Y: -1.663 Z: 10.393
+[169982][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.567 | Magnitude: 12.209 | X: -2.316 Y: -0.555 Z: 11.975
+[Vibration] Status: OK | RMS: 1.586 | Magnitude: 10.690 | X: -0.223 Y: -1.873 Z: 10.523
+[Vibration] Status: OK | RMS: 1.589 | Magnitude: 10.640 | X: 1.488 Y: 1.751 Z: 10.389
+[Vibration] Status: OK | RMS: 1.529 | Magnitude: 9.423 | X: -2.472 Y: -2.027 Z: 8.865
+[Vibration] Status: OK | RMS: 1.445 | Magnitude: 7.934 | X: 0.450 Y: -2.101 Z: 7.637
+[Vibration] Status: OK | RMS: 1.353 | Magnitude: 11.398 | X: 2.043 Y: 0.608 Z: 11.197
+[171611][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.311 | Magnitude: 7.862 | X: 0.974 Y: 1.290 Z: 7.695
+[172745][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[172773][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172800][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172827][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172854][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172881][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172908][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172935][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172962][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[172989][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173016][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173044][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173071][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173098][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173125][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173152][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173179][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173206][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173233][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173260][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173287][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173315][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173342][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173369][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173396][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173423][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173450][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173477][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173504][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173531][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173558][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173586][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173613][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173640][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173667][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173694][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173721][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173748][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173775][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173802][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173829][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173857][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173884][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173911][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173938][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173965][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[173992][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174019][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174046][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174073][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174100][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174128][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174155][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174182][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174209][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174236][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174263][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174290][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174317][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174344][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174371][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174399][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174426][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174453][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174480][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174507][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174534][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174561][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174588][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174615][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174642][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174670][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174697][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174724][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174751][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174778][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174805][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174832][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174859][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174886][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174913][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174941][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174968][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[174995][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175022][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175049][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175076][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175103][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175130][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175157][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175184][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175212][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175239][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175266][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175293][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175320][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175347][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175374][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175401][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175428][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175455][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175483][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175510][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175537][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175564][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175591][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175618][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175645][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175672][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175699][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175726][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175754][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175781][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175808][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175835][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175862][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175889][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175916][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175943][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175970][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[175997][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176025][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176052][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176079][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176106][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176133][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176160][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176187][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176214][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176241][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176268][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176296][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176323][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176350][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176377][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176404][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176431][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176458][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176485][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176512][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176539][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176567][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176594][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176621][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176648][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176675][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176702][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176729][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176756][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176783][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176810][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176838][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176865][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176892][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176919][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176946][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[176973][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177000][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177027][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177054][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177081][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177109][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177136][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177163][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177190][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177217][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177244][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177271][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177298][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177325][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177352][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177380][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177407][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177434][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177461][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177488][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177515][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177542][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177569][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177596][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177623][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177651][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177678][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177705][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177732][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177759][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177786][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177813][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177840][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177867][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177894][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177922][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177949][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[177976][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178003][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178030][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178057][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178084][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178111][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178138][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178165][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178193][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178220][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178247][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178274][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178301][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178328][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178355][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178382][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178409][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178436][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178464][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178491][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178518][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178545][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178572][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178599][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178626][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178653][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178680][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178707][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178735][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178762][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178789][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178816][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178843][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178870][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178897][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178924][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178951][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[178978][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179006][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179033][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179060][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179087][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179114][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179141][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179168][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179195][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179222][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179249][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179277][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179304][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179331][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179358][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179385][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179412][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179439][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179466][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179493][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179520][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179548][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179575][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179602][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179629][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179656][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179683][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179710][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179737][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179764][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179791][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179819][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179846][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179873][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179900][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179927][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179954][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[179981][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180008][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180035][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180062][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180090][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180117][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180144][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180171][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180198][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180225][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180252][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180279][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180306][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180333][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180361][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180388][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180415][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180442][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180469][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180496][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180523][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180550][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180577][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180604][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180632][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180659][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180686][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180713][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180740][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180767][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180794][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180821][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180848][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180875][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180903][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180930][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180957][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[180984][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181011][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181038][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181065][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181092][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181119][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181146][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181174][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181201][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181228][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181255][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181282][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181309][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181336][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181363][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181390][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181417][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181445][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181472][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181499][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181526][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181553][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181580][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181607][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181634][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181661][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181688][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181716][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181743][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181770][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181797][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181824][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181851][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181878][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181905][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181932][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181959][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[181987][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182014][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182041][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182068][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182095][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182122][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182149][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182176][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182203][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182230][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182258][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182285][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182312][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182339][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182366][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182393][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182420][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182447][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182474][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182501][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182529][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182556][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182583][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182610][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182637][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182664][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182691][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182718][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182745][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182772][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182800][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182827][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182854][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182881][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182908][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182935][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182962][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[182989][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183016][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183043][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183071][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183098][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183125][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183152][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183179][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183206][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183233][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183260][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183287][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183314][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183342][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183369][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183396][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183423][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183450][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183477][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183504][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183531][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183558][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183585][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183613][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183640][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183667][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183694][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183721][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183748][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183775][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183802][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183829][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183856][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183884][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183911][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183938][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183965][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[183992][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184019][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184046][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184073][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184100][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184127][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184155][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184182][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184209][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184236][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184263][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184290][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184317][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184344][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184371][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184398][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184426][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184453][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184480][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184507][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184534][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184561][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184588][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184615][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184642][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184669][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184697][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184724][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184751][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184778][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184805][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184832][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184859][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184886][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184913][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184940][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184968][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[184995][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185022][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185049][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185076][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185103][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185130][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185157][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185184][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185211][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185239][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185266][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185293][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185320][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185347][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185374][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185401][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185428][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185455][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185482][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185510][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185537][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185564][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185591][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185618][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185645][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185672][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185699][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185726][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185753][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185781][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185808][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185835][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185862][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185889][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185916][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185943][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185970][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[185997][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186024][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186052][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186079][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186106][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186133][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186160][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186187][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186214][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186241][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186268][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186295][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186323][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186350][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186377][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186404][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186431][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186458][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186485][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186512][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186539][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186566][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186594][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186621][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186648][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186675][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186702][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186729][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186756][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186783][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186810][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186837][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186865][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186892][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186919][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186946][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[186973][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187000][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187027][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187054][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187081][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187108][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187136][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187163][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187190][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187217][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187244][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187271][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187298][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187325][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187352][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187379][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187407][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187434][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187461][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187488][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187515][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187542][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187569][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187596][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187623][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187650][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187678][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187705][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187732][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187759][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187786][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187813][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187840][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187867][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187894][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187921][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187949][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[187976][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.255 | Magnitude: 10.080 | X: 1.780 Y: -1.682 Z: 9.778
+[Vibration] Status: OK | RMS: 1.234 | Magnitude: 10.130 | X: 0.455 Y: -0.979 Z: 10.073
+[Vibration] Status: OK | RMS: 1.281 | Magnitude: 11.419 | X: 0.184 Y: 0.412 Z: 11.410
+[Vibration] Status: OK | RMS: 1.384 | Magnitude: 6.926 | X: -0.421 Y: -0.285 Z: 6.907
+[Vibration] Status: OK | RMS: 1.453 | Magnitude: 8.790 | X: -0.574 Y: -0.045 Z: 8.771
+[Vibration] Status: OK | RMS: 1.396 | Magnitude: 7.451 | X: -0.067 Y: -0.266 Z: 7.446
+[Vibration] Status: OK | RMS: 1.422 | Magnitude: 8.179 | X: 1.701 Y: -0.172 Z: 7.998
+[Vibration] Status: OK | RMS: 1.451 | Magnitude: 10.677 | X: 1.280 Y: -0.359 Z: 10.594
+[Vibration] Status: OK | RMS: 1.275 | Magnitude: 10.662 | X: 1.337 Y: -1.251 Z: 10.503
+[Vibration] Status: OK | RMS: 1.288 | Magnitude: 10.993 | X: 0.115 Y: 0.486 Z: 10.982
+[Vibration] Status: OK | RMS: 1.178 | Magnitude: 10.541 | X: -0.163 Y: -0.014 Z: 10.539
+[Vibration] Status: OK | RMS: 1.134 | Magnitude: 10.343 | X: -0.713 Y: 0.292 Z: 10.314
+[Vibration] Status: OK | RMS: 1.138 | Magnitude: 11.174 | X: 0.160 Y: 0.512 Z: 11.161
+[Vibration] Status: OK | RMS: 1.164 | Magnitude: 12.230 | X: -1.842 Y: 0.500 Z: 12.080
+[Vibration] Status: OK | RMS: 1.189 | Magnitude: 11.287 | X: -1.395 Y: 0.089 Z: 11.200
+[Vibration] Status: OK | RMS: 1.254 | Magnitude: 11.737 | X: -1.038 Y: 0.266 Z: 11.688
+[Vibration] Status: OK | RMS: 1.192 | Magnitude: 9.680 | X: 0.782 Y: 0.663 Z: 9.625
+[Vibration] Status: OK | RMS: 1.141 | Magnitude: 10.161 | X: 0.333 Y: -0.148 Z: 10.154
+[Vibration] Status: OK | RMS: 1.053 | Magnitude: 10.985 | X: 1.019 Y: 1.668 Z: 10.810
+[Vibration] Status: OK | RMS: 1.045 | Magnitude: 9.490 | X: 0.201 Y: 0.553 Z: 9.472
+[193959][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.071 | Magnitude: 8.348 | X: 0.333 Y: -2.311 Z: 8.015
+[Vibration] Status: OK | RMS: 1.196 | Magnitude: 10.859 | X: -0.751 Y: 2.445 Z: 10.554
+[Vibration] Status: OK | RMS: 1.159 | Magnitude: 9.665 | X: 1.263 Y: 0.852 Z: 9.544
+[Vibration] Status: OK | RMS: 1.002 | Magnitude: 10.426 | X: -0.857 Y: 1.132 Z: 10.329
+[Vibration] Status: OK | RMS: 1.076 | Magnitude: 10.363 | X: 1.117 Y: -2.706 Z: 9.941
+[Vibration] Status: OK | RMS: 1.233 | Magnitude: 11.021 | X: -0.462 Y: -0.132 Z: 11.011
+[Vibration] Status: OK | RMS: 1.500 | Magnitude: 10.164 | X: 0.780 Y: 2.096 Z: 9.915
+[Vibration] Status: OK | RMS: 1.693 | Magnitude: 11.590 | X: 1.383 Y: -0.285 Z: 11.504
+[Vibration] Status: OK | RMS: 1.736 | Magnitude: 12.290 | X: -2.931 Y: -0.443 Z: 11.927
+[Vibration] Status: OK | RMS: 1.653 | Magnitude: 8.239 | X: -0.988 Y: -2.833 Z: 7.673
+[Vibration] Status: OK | RMS: 1.619 | Magnitude: 12.816 | X: 4.931 Y: 2.622 Z: 11.535
+[196728][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.476 | Magnitude: 10.884 | X: -0.108 Y: -1.572 Z: 10.769
+[196819][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.349 | Magnitude: 9.860 | X: -1.833 Y: -0.313 Z: 9.683
+[Vibration] Status: OK | RMS: 1.284 | Magnitude: 9.823 | X: -1.373 Y: -1.641 Z: 9.587
+[197331][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.830 | Magnitude: 10.749 | X: -3.302 Y: -1.701 Z: 10.087
+[Vibration] Status: OK | RMS: 1.805 | Magnitude: 10.232 | X: 2.938 Y: 2.682 Z: 9.427
+[198011][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[199039][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.864 | Magnitude: 10.622 | X: -0.352 Y: 2.309 Z: 10.362
+[199299][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.820 | Magnitude: 11.438 | X: -0.668 Y: -0.440 Z: 11.410
+[Vibration] Status: OK | RMS: 1.130 | Magnitude: 9.877 | X: -0.869 Y: 1.689 Z: 9.692
+[Vibration] Status: OK | RMS: 1.130 | Magnitude: 11.089 | X: -0.313 Y: -0.883 Z: 11.049
+[Vibration] Status: OK | RMS: 0.980 | Magnitude: 10.809 | X: -0.201 Y: 2.098 Z: 10.602
+[200296][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.182 | Magnitude: 11.306 | X: -0.510 Y: 1.806 Z: 11.149
+[201431][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.230 | Magnitude: 10.473 | X: -0.184 Y: 0.761 Z: 10.444
+[201565][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.228 | Magnitude: 9.116 | X: 0.127 Y: 0.550 Z: 9.099
+[Vibration] Status: OK | RMS: 1.177 | Magnitude: 12.251 | X: -0.352 Y: -0.132 Z: 12.245
+[Vibration] Status: OK | RMS: 1.173 | Magnitude: 9.139 | X: 0.230 Y: -0.615 Z: 9.116
+[Vibration] Status: OK | RMS: 0.948 | Magnitude: 9.988 | X: 0.479 Y: -0.189 Z: 9.975
+[Vibration] Status: OK | RMS: 0.903 | Magnitude: 11.103 | X: 0.974 Y: -0.849 Z: 11.027
+[Vibration] Status: OK | RMS: 0.906 | Magnitude: 10.317 | X: 0.184 Y: 0.167 Z: 10.314
+[Vibration] Status: OK | RMS: 0.799 | Magnitude: 10.388 | X: -0.258 Y: -0.266 Z: 10.381
+[Vibration] Status: OK | RMS: 0.815 | Magnitude: 9.893 | X: 0.036 Y: -0.837 Z: 9.857
+[Vibration] Status: OK | RMS: 0.797 | Magnitude: 11.004 | X: 1.443 Y: -1.651 Z: 10.783
+[Vibration] Status: OK | RMS: 0.793 | Magnitude: 10.629 | X: 1.175 Y: -1.237 Z: 10.491
+[Vibration] Status: OK | RMS: 1.058 | Magnitude: 11.433 | X: 2.529 Y: -1.459 Z: 11.054
+[Vibration] Status: OK | RMS: 1.095 | Magnitude: 11.069 | X: -0.555 Y: 1.771 Z: 10.913
+[Vibration] Status: OK | RMS: 1.059 | Magnitude: 9.841 | X: -0.122 Y: -0.199 Z: 9.838
+[Vibration] Status: OK | RMS: 1.069 | Magnitude: 10.124 | X: -0.033 Y: 1.290 Z: 10.042
+[Vibration] Status: OK | RMS: 1.046 | Magnitude: 10.293 | X: 0.538 Y: 1.333 Z: 10.192
+[Vibration] Status: OK | RMS: 0.941 | Magnitude: 11.238 | X: 3.211 Y: -1.383 Z: 10.680
+[Vibration] Status: OK | RMS: 0.980 | Magnitude: 8.707 | X: 0.244 Y: -1.474 Z: 8.577
+[Vibration] Status: OK | RMS: 0.880 | Magnitude: 10.238 | X: 0.682 Y: 1.256 Z: 10.137
+[Vibration] Status: OK | RMS: 0.774 | Magnitude: 9.767 | X: 0.931 Y: 0.292 Z: 9.719
+[Vibration] Status: OK | RMS: 0.859 | Magnitude: 9.885 | X: -0.196 Y: 1.629 Z: 9.747
+[Vibration] Status: OK | RMS: 0.806 | Magnitude: 8.895 | X: 0.428 Y: -1.529 Z: 8.752
+[Vibration] Status: OK | RMS: 0.847 | Magnitude: 10.462 | X: 0.998 Y: -1.493 Z: 10.307
+[Vibration] Status: OK | RMS: 0.881 | Magnitude: 11.915 | X: -0.445 Y: -0.378 Z: 11.901
+[Vibration] Status: OK | RMS: 1.043 | Magnitude: 14.291 | X: 4.833 Y: -4.893 Z: 12.528
+[Vibration] Status: OK | RMS: 1.183 | Magnitude: 11.803 | X: 2.696 Y: 0.897 Z: 11.456
+[Vibration] Status: OK | RMS: 1.325 | Magnitude: 7.090 | X: 0.481 Y: 0.871 Z: 7.020
+[Vibration] Status: OK | RMS: 1.440 | Magnitude: 10.905 | X: -0.359 Y: 1.962 Z: 10.721
+[Vibration] Status: OK | RMS: 1.572 | Magnitude: 9.307 | X: -0.811 Y: -1.014 Z: 9.216
+[Vibration] Status: OK | RMS: 1.418 | Magnitude: 11.578 | X: 2.567 Y: 0.916 Z: 11.252
+[Vibration] Status: OK | RMS: 1.376 | Magnitude: 9.210 | X: -1.869 Y: 0.861 Z: 8.977
+[209287][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[210316][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.321 | Magnitude: 10.839 | X: -0.653 Y: -2.371 Z: 10.556
+[Vibration] Status: OK | RMS: 1.112 | Magnitude: 9.033 | X: -1.888 Y: -0.033 Z: 8.833
+[211767][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.058 | Magnitude: 9.219 | X: -0.316 Y: -0.347 Z: 9.207
+[Vibration] Status: OK | RMS: 0.942 | Magnitude: 9.541 | X: -0.378 Y: 0.275 Z: 9.530
+[Vibration] Status: OK | RMS: 0.738 | Magnitude: 9.416 | X: -0.072 Y: -0.321 Z: 9.410
+[Vibration] Status: OK | RMS: 0.796 | Magnitude: 9.546 | X: -0.110 Y: -0.816 Z: 9.510
+[Vibration] Status: OK | RMS: 0.753 | Magnitude: 10.667 | X: -0.182 Y: 1.699 Z: 10.530
+[Vibration] Status: OK | RMS: 0.757 | Magnitude: 10.142 | X: -0.019 Y: 0.732 Z: 10.116
+[Vibration] Status: OK | RMS: 0.806 | Magnitude: 10.266 | X: -0.024 Y: -0.723 Z: 10.240
+[Vibration] Status: OK | RMS: 0.725 | Magnitude: 11.011 | X: -8.709 Y: 2.775 Z: 6.139
+[Vibration] Status: OK | RMS: 0.719 | Magnitude: 9.467 | X: 0.268 Y: -0.684 Z: 9.439
+[Vibration] Status: OK | RMS: 0.970 | Magnitude: 9.513 | X: -0.287 Y: 0.065 Z: 9.508
+[Vibration] Status: OK | RMS: 0.951 | Magnitude: 9.229 | X: -0.239 Y: -0.426 Z: 9.216
+[Vibration] Status: OK | RMS: 1.019 | Magnitude: 11.677 | X: 0.557 Y: -1.134 Z: 11.609
+[Vibration] Status: OK | RMS: 1.078 | Magnitude: 11.739 | X: 0.443 Y: -0.950 Z: 11.693
+[Vibration] Status: OK | RMS: 0.916 | Magnitude: 10.582 | X: -0.086 Y: -2.134 Z: 10.365
+[216170][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 0.911 | Magnitude: 10.225 | X: -1.780 Y: -1.644 Z: 9.934
+[Vibration] Status: OK | RMS: 0.856 | Magnitude: 9.651 | X: -0.675 Y: 0.203 Z: 9.625
+[Vibration] Status: OK | RMS: 0.762 | Magnitude: 10.135 | X: 0.134 Y: 0.684 Z: 10.111
+[Vibration] Status: OK | RMS: 0.719 | Magnitude: 10.407 | X: 0.086 Y: -2.330 Z: 10.142
+[Vibration] Status: OK | RMS: 0.718 | Magnitude: 10.425 | X: 0.072 Y: -0.227 Z: 10.422
+[218464][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 0.712 | Magnitude: 9.803 | X: -1.340 Y: 0.768 Z: 9.680
+[219746][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 0.764 | Magnitude: 11.308 | X: 0.632 Y: 0.447 Z: 11.281
+[Vibration] Status: OK | RMS: 0.756 | Magnitude: 10.103 | X: -0.534 Y: -1.648 Z: 9.953
+[Vibration] Status: OK | RMS: 0.772 | Magnitude: 9.693 | X: -1.098 Y: -0.869 Z: 9.592
+[Vibration] Status: OK | RMS: 0.809 | Magnitude: 10.516 | X: -0.349 Y: -0.318 Z: 10.506
+[220618][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[220771][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 0.961 | Magnitude: 10.382 | X: 0.675 Y: -1.921 Z: 10.180
+[222010][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 0.894 | Magnitude: 10.902 | X: 0.347 Y: 0.725 Z: 10.872
+[Vibration] Status: OK | RMS: 0.973 | Magnitude: 10.308 | X: 0.012 Y: -0.864 Z: 10.271
+[Vibration] Status: OK | RMS: 0.921 | Magnitude: 9.073 | X: 1.845 Y: 2.457 Z: 8.537
+[222776][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 0.840 | Magnitude: 11.241 | X: 1.311 Y: 3.395 Z: 10.635
+[223826][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[223854][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 0.857 | Magnitude: 11.004 | X: -0.935 Y: -2.814 Z: 10.597
+[225093][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.746 | Magnitude: 10.718 | X: 0.701 Y: 1.467 Z: 10.594
+[226249][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.751 | Magnitude: 9.972 | X: -1.818 Y: -0.440 Z: 9.795
+[Vibration] Status: OK | RMS: 1.788 | Magnitude: 10.670 | X: 0.557 Y: -1.928 Z: 10.479
+[Vibration] Status: CAUTION | RMS: 2.165 | Magnitude: 10.549 | X: -0.239 Y: 0.538 Z: 10.532
+[Vibration] Status: CAUTION | RMS: 2.178 | Magnitude: 10.421 | X: 0.435 Y: 1.586 Z: 10.290
+[Vibration] Status: OK | RMS: 1.523 | Magnitude: 9.570 | X: -1.495 Y: 0.160 Z: 9.451
+[Vibration] Status: OK | RMS: 1.588 | Magnitude: 9.926 | X: -0.770 Y: 0.005 Z: 9.896
+[Vibration] Status: OK | RMS: 0.919 | Magnitude: 10.004 | X: -0.043 Y: 0.043 Z: 10.003
+[Vibration] Status: OK | RMS: 0.837 | Magnitude: 10.035 | X: -0.074 Y: 0.072 Z: 10.034
+[Vibration] Status: OK | RMS: 0.751 | Magnitude: 10.107 | X: -0.079 Y: 0.084 Z: 10.106
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.040 | X: -0.077 Y: 0.053 Z: 10.039
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.054 | X: -0.105 Y: 0.050 Z: 10.054
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.098 | X: -0.115 Y: 0.067 Z: 10.097
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.126 | X: -0.115 Y: 0.093 Z: 10.125
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.066 | X: -0.127 Y: 0.045 Z: 10.066
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.098 | X: -0.136 Y: 0.089 Z: 10.097
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.074 | X: -0.153 Y: 0.084 Z: 10.073
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.124 | X: -0.146 Y: 0.038 Z: 10.123
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.073 | X: -0.177 Y: 0.129 Z: 10.070
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 9.991 | X: -0.266 Y: 0.120 Z: 9.987
+[Vibration] Status: OK | RMS: 0.444 | Magnitude: 12.212 | X: 4.036 Y: 3.610 Z: 10.946
+[Vibration] Status: OK | RMS: 0.944 | Magnitude: 11.653 | X: 0.010 Y: 4.364 Z: 10.805
+[Vibration] Status: OK | RMS: 1.079 | Magnitude: 10.854 | X: 0.514 Y: -2.522 Z: 10.544
+[Vibration] Status: OK | RMS: 1.415 | Magnitude: 8.691 | X: -1.797 Y: -2.847 Z: 8.013
+[Vibration] Status: OK | RMS: 1.618 | Magnitude: 7.343 | X: 1.443 Y: 0.280 Z: 7.194
+[Vibration] Status: OK | RMS: 1.553 | Magnitude: 11.494 | X: 2.778 Y: 1.337 Z: 11.073
+[Vibration] Status: OK | RMS: 1.547 | Magnitude: 11.462 | X: 1.672 Y: -1.598 Z: 11.226
+[232834][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.454 | Magnitude: 11.223 | X: -1.620 Y: 3.309 Z: 10.602
+[Vibration] Status: OK | RMS: 1.426 | Magnitude: 11.198 | X: -2.232 Y: -1.278 Z: 10.898
+[Vibration] Status: OK | RMS: 1.439 | Magnitude: 7.637 | X: -0.364 Y: -0.297 Z: 7.623
+[Vibration] Status: OK | RMS: 1.394 | Magnitude: 8.450 | X: 2.718 Y: 1.471 Z: 7.864
+[Vibration] Status: OK | RMS: 1.365 | Magnitude: 11.611 | X: 2.809 Y: -0.447 Z: 11.257
+[Vibration] Status: OK | RMS: 1.359 | Magnitude: 10.611 | X: -0.237 Y: -0.392 Z: 10.602
+[Vibration] Status: OK | RMS: 1.424 | Magnitude: 10.212 | X: -2.924 Y: 1.505 Z: 9.668
+[Vibration] Status: OK | RMS: 1.460 | Magnitude: 7.545 | X: -1.373 Y: -1.914 Z: 7.168
+[234822][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.484 | Magnitude: 12.396 | X: -2.873 Y: 0.230 Z: 12.056
+[Vibration] Status: OK | RMS: 1.820 | Magnitude: 10.821 | X: 1.857 Y: 3.247 Z: 10.154
+[Vibration] Status: OK | RMS: 1.779 | Magnitude: 11.025 | X: 2.105 Y: -1.474 Z: 10.721
+[Vibration] Status: OK | RMS: 1.781 | Magnitude: 9.641 | X: 0.502 Y: -0.017 Z: 9.628
+[Vibration] Status: OK | RMS: 1.785 | Magnitude: 10.971 | X: -0.938 Y: -1.653 Z: 10.805
+[Vibration] Status: OK | RMS: 1.388 | Magnitude: 10.162 | X: -1.342 Y: -2.141 Z: 9.843
+[Vibration] Status: OK | RMS: 1.360 | Magnitude: 9.527 | X: 1.359 Y: 2.529 Z: 9.085
+[Vibration] Status: OK | RMS: 1.396 | Magnitude: 12.126 | X: 1.809 Y: -0.495 Z: 11.980
+[Vibration] Status: OK | RMS: 1.452 | Magnitude: 10.419 | X: -2.012 Y: -0.730 Z: 10.197
+[Vibration] Status: OK | RMS: 1.327 | Magnitude: 10.389 | X: -2.041 Y: -2.984 Z: 9.740
+[Vibration] Status: OK | RMS: 1.469 | Magnitude: 10.419 | X: -2.426 Y: -2.785 Z: 9.743
+[Vibration] Status: OK | RMS: 1.384 | Magnitude: 11.722 | X: 3.024 Y: 0.488 Z: 11.315
+[Vibration] Status: OK | RMS: 1.191 | Magnitude: 11.735 | X: 2.586 Y: -0.258 Z: 11.444
+[Vibration] Status: OK | RMS: 1.286 | Magnitude: 10.669 | X: -2.436 Y: -2.536 Z: 10.073
+[Vibration] Status: OK | RMS: 1.209 | Magnitude: 10.627 | X: -2.000 Y: 2.067 Z: 10.231
+[Vibration] Status: OK | RMS: 1.181 | Magnitude: 9.730 | X: 1.637 Y: 2.053 Z: 9.369
+[239898][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.275 | Magnitude: 11.323 | X: 5.151 Y: 3.218 Z: 9.556
+[Vibration] Status: OK | RMS: 1.172 | Magnitude: 10.811 | X: 2.103 Y: -1.103 Z: 10.546
+[Vibration] Status: OK | RMS: 1.148 | Magnitude: 9.035 | X: -3.620 Y: -1.780 Z: 8.085
+[Vibration] Status: OK | RMS: 1.627 | Magnitude: 10.857 | X: 0.976 Y: -2.007 Z: 10.625
+[Vibration] Status: OK | RMS: 1.639 | Magnitude: 11.395 | X: 1.601 Y: 3.584 Z: 10.697
+[Vibration] Status: OK | RMS: 1.579 | Magnitude: 10.399 | X: 0.213 Y: -1.227 Z: 10.324
+[Vibration] Status: OK | RMS: 1.515 | Magnitude: 9.630 | X: -2.139 Y: 1.378 Z: 9.288
+[242467][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.515 | Magnitude: 10.352 | X: 0.438 Y: 2.189 Z: 10.109
+[Vibration] Status: OK | RMS: 0.929 | Magnitude: 10.879 | X: 1.694 Y: -1.208 Z: 10.678
+[Vibration] Status: OK | RMS: 0.839 | Magnitude: 10.274 | X: -0.546 Y: -1.268 Z: 10.180
+[Vibration] Status: OK | RMS: 0.727 | Magnitude: 9.614 | X: -1.256 Y: -0.825 Z: 9.496
+[Vibration] Status: OK | RMS: 0.811 | Magnitude: 10.534 | X: -0.100 Y: -1.220 Z: 10.463
+[Vibration] Status: OK | RMS: 0.810 | Magnitude: 10.485 | X: 0.026 Y: -1.933 Z: 10.305
+[Vibration] Status: OK | RMS: 0.797 | Magnitude: 10.222 | X: 0.151 Y: -1.378 Z: 10.128
+[Vibration] Status: OK | RMS: 1.389 | Magnitude: 10.829 | X: 1.146 Y: 3.249 Z: 10.267
+[Vibration] Status: OK | RMS: 1.373 | Magnitude: 10.806 | X: -0.029 Y: 1.529 Z: 10.697
+[Vibration] Status: OK | RMS: 1.348 | Magnitude: 9.980 | X: 0.337 Y: -1.306 Z: 9.889
+[Vibration] Status: OK | RMS: 1.351 | Magnitude: 10.405 | X: -0.311 Y: -1.692 Z: 10.262
+[Vibration] Status: OK | RMS: 0.835 | Magnitude: 10.935 | X: 0.203 Y: -1.134 Z: 10.874
+[Vibration] Status: OK | RMS: 0.844 | Magnitude: 10.278 | X: 0.081 Y: -1.737 Z: 10.130
+[245637][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[246728][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error 263
+[Vibration] Status: OK | RMS: 1.603 | Magnitude: 0.102 | X: 0.102 Y: -0.001 Z: -0.001
+[246904][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[246994][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1
+[Vibration] Status: OK | RMS: 1.593 | Magnitude: 9.603 | X: -0.895 Y: -0.644 Z: 9.539
+[Vibration] Status: OK | RMS: 1.582 | Magnitude: 9.742 | X: -2.192 Y: 1.828 Z: 9.314
+[Vibration] Status: OK | RMS: 1.626 | Magnitude: 10.787 | X: 0.093 Y: 1.474 Z: 10.685
+[Vibration] Status: OK | RMS: 1.617 | Magnitude: 11.611 | X: 3.137 Y: 0.160 Z: 11.178
+[Vibration] Status: OK | RMS: 1.494 | Magnitude: 9.949 | X: -0.665 Y: 0.005 Z: 9.927
+[Vibration] Status: OK | RMS: 1.471 | Magnitude: 10.116 | X: -0.026 Y: 0.084 Z: 10.116
+[Vibration] Status: OK | RMS: 1.360 | Magnitude: 10.045 | X: -0.124 Y: 0.112 Z: 10.044
+[Vibration] Status: OK | RMS: 1.327 | Magnitude: 10.050 | X: -0.122 Y: 0.089 Z: 10.049
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 9.692 | X: -2.507 Y: 0.220 Z: 9.360
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.103 | X: -0.129 Y: 0.086 Z: 10.101
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.107 | X: 0.002 Y: 0.139 Z: 10.106
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.081 | X: -0.115 Y: 0.033 Z: 10.080
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 9.781 | X: -0.505 Y: 0.182 Z: 9.767
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.099 | X: 0.007 Y: 0.218 Z: 10.097
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 9.725 | X: -0.794 Y: 0.522 Z: 9.678
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.038 | X: -0.220 Y: 0.112 Z: 10.034
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.146 | X: -0.199 Y: 0.019 Z: 10.145
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.038 | X: -0.086 Y: 0.115 Z: 10.037
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.132 | X: -0.067 Y: 0.158 Z: 10.130
+[Vibration] Status: OK | RMS: 0.308 | Magnitude: 10.124 | X: -0.072 Y: 0.105 Z: 10.123
+[Vibration] Status: OK | RMS: 0.314 | Magnitude: 10.252 | X: -0.268 Y: 0.167 Z: 10.247
+[Vibration] Status: OK | RMS: 0.396 | Magnitude: 10.647 | X: -0.077 Y: -0.309 Z: 10.642
+[Vibration] Status: OK | RMS: 0.421 | Magnitude: 10.077 | X: -0.148 Y: 0.127 Z: 10.075
+[Vibration] Status: OK | RMS: 0.417 | Magnitude: 10.091 | X: -0.134 Y: 0.122 Z: 10.090
+[Vibration] Status: OK | RMS: 0.412 | Magnitude: 10.033 | X: -0.089 Y: 0.084 Z: 10.032
+[Vibration] Status: OK | RMS: 0.335 | Magnitude: 10.062 | X: -0.105 Y: 0.093 Z: 10.061
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.086 | X: -0.117 Y: 0.122 Z: 10.085
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.122 | X: -0.127 Y: 0.108 Z: 10.121
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.033 | X: 0.211 Y: 1.438 Z: 9.927
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.175 | X: 0.043 Y: 0.184 Z: 10.173
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.099 | X: 0.196 Y: 0.093 Z: 10.097
+[Vibration] Status: OK | RMS: 0.312 | Magnitude: 10.035 | X: -0.067 Y: 0.060 Z: 10.034
+[Vibration] Status: OK | RMS: 0.310 | Magnitude: 10.095 | X: -0.081 Y: 0.108 Z: 10.094
+[Vibration] Status: OK | RMS: 0.313 | Magnitude: 10.048 | X: -0.108 Y: 0.105 Z: 10.046
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.059 | X: -0.117 Y: 0.074 Z: 10.058
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.102 | X: -0.091 Y: 0.084 Z: 10.101
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 9.990 | X: -0.129 Y: 0.091 Z: 9.989
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.110 | X: -0.096 Y: 0.120 Z: 10.109
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.027 | X: -0.165 Y: 0.115 Z: 10.025
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.084 | X: -0.132 Y: 0.100 Z: 10.082
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.126 | X: -0.108 Y: 0.081 Z: 10.125
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.160 | X: -0.141 Y: 0.072 Z: 10.159
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.110 | X: -0.115 Y: 0.089 Z: 10.109
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.043 | X: -0.115 Y: 0.098 Z: 10.042
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.048 | X: -0.139 Y: 0.127 Z: 10.046
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 9.976 | X: -0.100 Y: 0.098 Z: 9.975
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 9.998 | X: -0.110 Y: 0.141 Z: 9.996
+[Vibration] Status: OK | RMS: 0.266 | Magnitude: 10.047 | X: -0.110 Y: 0.086 Z: 10.046
+[Vibration] Status: OK | RMS: 0.269 | Magnitude: 10.074 | X: -0.129 Y: 0.084 Z: 10.073
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.014 | X: -0.117 Y: 0.079 Z: 10.013
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.071 | X: -0.069 Y: 0.103 Z: 10.070
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.076 | X: -0.089 Y: 0.045 Z: 10.075
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.076 | X: -0.100 Y: 0.074 Z: 10.075
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.079 | X: -0.100 Y: 0.120 Z: 10.078
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.043 | X: -0.120 Y: 0.129 Z: 10.042
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.132 | X: -0.120 Y: 0.141 Z: 10.130
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.076 | X: -0.072 Y: 0.098 Z: 10.075
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.093 | X: -0.089 Y: 0.079 Z: 10.092
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.098 | X: -0.132 Y: 0.081 Z: 10.097
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.095 | X: -0.112 Y: 0.089 Z: 10.094
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.121 | X: -0.089 Y: 0.093 Z: 10.121
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.074 | X: -0.103 Y: 0.079 Z: 10.073
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.112 | X: -0.108 Y: 0.093 Z: 10.111
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.081 | X: -0.122 Y: 0.108 Z: 10.080
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.072 | X: -0.105 Y: 0.117 Z: 10.070
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.055 | X: -0.112 Y: 0.112 Z: 10.054
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.098 | X: -0.146 Y: 0.079 Z: 10.097
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.127 | X: -0.117 Y: 0.105 Z: 10.125
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.035 | X: -0.089 Y: 0.060 Z: 10.034
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.060 | X: -0.144 Y: 0.089 Z: 10.058
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.055 | X: -0.139 Y: 0.127 Z: 10.054
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.110 | X: -0.122 Y: 0.127 Z: 10.109
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.090 | X: -0.086 Y: 0.105 Z: 10.090
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.048 | X: -0.146 Y: 0.093 Z: 10.046
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.038 | X: -0.103 Y: 0.112 Z: 10.037
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.103 | X: -0.110 Y: 0.112 Z: 10.101
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.043 | X: -0.108 Y: 0.105 Z: 10.042
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.120 | X: -0.151 Y: 0.093 Z: 10.118
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.050 | X: -0.117 Y: 0.105 Z: 10.049
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.050 | X: -0.079 Y: 0.112 Z: 10.049
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.069 | X: -0.124 Y: 0.091 Z: 10.068
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.115 | X: -0.117 Y: 0.091 Z: 10.113
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.081 | X: -0.100 Y: 0.050 Z: 10.080
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.048 | X: -0.244 Y: 0.141 Z: 10.044
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.107 | X: -0.086 Y: 0.093 Z: 10.106
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.064 | X: -0.100 Y: 0.110 Z: 10.063
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.069 | X: -0.122 Y: 0.086 Z: 10.068
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.021 | X: -0.129 Y: 0.091 Z: 10.020
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.045 | X: -0.117 Y: 0.098 Z: 10.044
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.108 | X: -0.136 Y: 0.096 Z: 10.106
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.057 | X: -0.132 Y: 0.084 Z: 10.056
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.057 | X: -0.115 Y: 0.129 Z: 10.056
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.105 | X: -0.117 Y: 0.122 Z: 10.104
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.033 | X: -0.100 Y: 0.069 Z: 10.032
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.107 | X: -0.122 Y: 0.089 Z: 10.106
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.026 | X: -0.093 Y: 0.120 Z: 10.025
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.050 | X: -0.091 Y: 0.081 Z: 10.049
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.072 | X: -0.129 Y: 0.084 Z: 10.070
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.014 | X: -0.124 Y: 0.081 Z: 10.013
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.071 | X: -0.086 Y: 0.108 Z: 10.070
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.036 | X: -0.112 Y: 0.100 Z: 10.034
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.096 | X: -0.112 Y: 0.122 Z: 10.094
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.062 | X: -0.124 Y: 0.069 Z: 10.061
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 9.952 | X: -0.093 Y: 0.112 Z: 9.951
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.078 | X: -0.098 Y: 0.084 Z: 10.078
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.043 | X: -0.148 Y: 0.098 Z: 10.042
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.072 | X: -0.148 Y: 0.091 Z: 10.070
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.105 | X: -0.103 Y: 0.089 Z: 10.104
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.036 | X: -0.093 Y: 0.112 Z: 10.034
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.055 | X: -0.124 Y: 0.093 Z: 10.054
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.047 | X: -0.093 Y: 0.086 Z: 10.046
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.060 | X: -0.117 Y: 0.105 Z: 10.058
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.115 | X: -0.127 Y: 0.158 Z: 10.113
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.052 | X: -0.100 Y: 0.079 Z: 10.051
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.148 | X: -0.132 Y: 0.112 Z: 10.147
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.065 | X: -0.129 Y: 0.122 Z: 10.063
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.045 | X: -0.110 Y: 0.115 Z: 10.044
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.122 | X: -0.124 Y: 0.067 Z: 10.121
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.083 | X: -0.105 Y: 0.079 Z: 10.082
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.069 | X: -0.089 Y: 0.093 Z: 10.068
+[Vibration] Status: OK | RMS: 0.273 | Magnitude: 10.086 | X: -0.103 Y: 0.103 Z: 10.085
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.098 | X: -0.117 Y: 0.144 Z: 10.097
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.081 | X: -0.134 Y: 0.084 Z: 10.080
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.110 | X: -0.103 Y: 0.098 Z: 10.109
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.074 | X: -0.124 Y: 0.093 Z: 10.073
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.055 | X: -0.122 Y: 0.129 Z: 10.054
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.069 | X: -0.110 Y: 0.112 Z: 10.068
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.043 | X: -0.120 Y: 0.110 Z: 10.042
+[Vibration] Status: OK | RMS: 0.267 | Magnitude: 10.028 | X: -0.108 Y: 0.096 Z: 10.027
+[Vibration] Status: OK | RMS: 0.270 | Magnitude: 10.107 | X: -0.100 Y: 0.074 Z: 10.106
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.062 | X: -0.141 Y: 0.108 Z: 10.061
+[Vibration] Status: OK | RMS: 0.272 | Magnitude: 10.030 | X: -0.117 Y: 0.038 Z: 10.030
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.082 | X: -0.148 Y: 0.115 Z: 10.080
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.109 | X: -0.081 Y: 0.069 Z: 10.109
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.069 | X: -0.098 Y: 0.096 Z: 10.068
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.038 | X: -0.110 Y: 0.091 Z: 10.037
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.072 | X: -0.134 Y: 0.112 Z: 10.070
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.069 | X: -0.112 Y: 0.134 Z: 10.068
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.033 | X: -0.105 Y: 0.103 Z: 10.032
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.033 | X: -0.122 Y: 0.100 Z: 10.032
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.093 | X: -0.112 Y: 0.091 Z: 10.092
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.098 | X: -0.139 Y: 0.089 Z: 10.097
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.055 | X: -0.129 Y: 0.103 Z: 10.054
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.064 | X: -0.115 Y: 0.067 Z: 10.063
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.036 | X: -0.134 Y: 0.103 Z: 10.034
+[Vibration] Status: OK | RMS: 0.271 | Magnitude: 10.103 | X: -0.122 Y: 0.093 Z: 10.101
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.067 | X: -0.112 Y: 0.110 Z: 10.066
+[Vibration] Status: OK | RMS: 0.274 | Magnitude: 10.100 | X: -0.134 Y: 0.053 Z: 10.099
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.143 | X: -0.053 Y: 0.081 Z: 10.142
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.086 | X: -0.122 Y: 0.098 Z: 10.085
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.031 | X: -0.105 Y: 0.110 Z: 10.030
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.091 | X: -0.120 Y: 0.084 Z: 10.090
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.041 | X: -0.108 Y: 0.139 Z: 10.039
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.026 | X: -0.136 Y: 0.091 Z: 10.025
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.126 | X: -0.077 Y: 0.120 Z: 10.125
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.067 | X: -0.103 Y: 0.105 Z: 10.066
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.081 | X: -0.105 Y: 0.077 Z: 10.080
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.119 | X: -0.103 Y: 0.110 Z: 10.118
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.014 | X: -0.091 Y: 0.127 Z: 10.013
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.097 | X: -0.074 Y: 0.103 Z: 10.097
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.095 | X: -0.120 Y: 0.093 Z: 10.094
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.064 | X: -0.081 Y: 0.112 Z: 10.063
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.119 | X: -0.079 Y: 0.093 Z: 10.118
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.069 | X: -0.089 Y: 0.093 Z: 10.068
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.028 | X: -0.112 Y: 0.089 Z: 10.027
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.024 | X: -0.120 Y: 0.136 Z: 10.023
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.081 | X: -0.115 Y: 0.057 Z: 10.080
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.019 | X: -0.098 Y: 0.089 Z: 10.018
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.103 | X: -0.127 Y: 0.117 Z: 10.101
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.047 | X: -0.096 Y: 0.079 Z: 10.046
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.079 | X: -0.122 Y: 0.110 Z: 10.078
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.067 | X: -0.146 Y: 0.124 Z: 10.066
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.069 | X: -0.115 Y: 0.084 Z: 10.068
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.091 | X: -0.122 Y: 0.110 Z: 10.090
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.083 | X: -0.093 Y: 0.065 Z: 10.082
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.081 | X: -0.120 Y: 0.108 Z: 10.080
+[Vibration] Status: OK | RMS: 0.275 | Magnitude: 10.098 | X: -0.129 Y: 0.127 Z: 10.097
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.093 | X: -0.129 Y: 0.091 Z: 10.092
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.136 | X: -0.129 Y: 0.110 Z: 10.135
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.050 | X: -0.134 Y: 0.117 Z: 10.049
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.085 | X: -0.089 Y: 0.074 Z: 10.085
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.121 | X: -0.112 Y: 0.053 Z: 10.121
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.096 | X: -0.136 Y: 0.093 Z: 10.094
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.033 | X: -0.081 Y: 0.139 Z: 10.032
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.033 | X: -0.093 Y: 0.091 Z: 10.032
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.073 | X: -0.057 Y: 0.081 Z: 10.073
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.079 | X: -0.122 Y: 0.134 Z: 10.078
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.150 | X: -0.110 Y: 0.108 Z: 10.149
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.041 | X: -0.141 Y: 0.081 Z: 10.039
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.040 | X: -0.110 Y: 0.091 Z: 10.039
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.131 | X: -0.105 Y: 0.124 Z: 10.130
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.146 | X: -0.124 Y: 0.110 Z: 10.145
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.074 | X: -0.117 Y: 0.117 Z: 10.073
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.052 | X: -0.108 Y: 0.110 Z: 10.051
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.029 | X: -0.167 Y: 0.086 Z: 10.027
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.079 | X: -0.170 Y: 0.091 Z: 10.078
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.014 | X: -0.096 Y: 0.122 Z: 10.013
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.103 | X: -0.122 Y: 0.120 Z: 10.101
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.040 | X: -0.093 Y: 0.112 Z: 10.039
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.103 | X: -0.120 Y: 0.158 Z: 10.101
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.076 | X: -0.089 Y: 0.084 Z: 10.075
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.136 | X: -0.117 Y: 0.127 Z: 10.135
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.096 | X: -0.172 Y: 0.110 Z: 10.094
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.143 | X: -0.060 Y: 0.100 Z: 10.142
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.028 | X: -0.110 Y: 0.105 Z: 10.027
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.160 | X: -0.120 Y: 0.069 Z: 10.159
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.110 | X: -0.105 Y: 0.081 Z: 10.109
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.101 | X: -0.139 Y: 0.103 Z: 10.099
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.138 | X: -0.117 Y: 0.086 Z: 10.137
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.122 | X: -0.127 Y: 0.084 Z: 10.121
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.096 | X: -0.151 Y: 0.081 Z: 10.094
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.105 | X: -0.067 Y: 0.108 Z: 10.104
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.098 | X: -0.120 Y: 0.100 Z: 10.097
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.083 | X: -0.077 Y: 0.132 Z: 10.082
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.081 | X: -0.117 Y: 0.110 Z: 10.080
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.035 | X: -0.093 Y: 0.100 Z: 10.034
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.069 | X: -0.100 Y: 0.105 Z: 10.068
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.093 | X: -0.108 Y: 0.110 Z: 10.092
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.136 | X: -0.122 Y: 0.089 Z: 10.135
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.069 | X: -0.100 Y: 0.117 Z: 10.068
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.059 | X: -0.105 Y: 0.089 Z: 10.058
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.143 | X: -0.105 Y: 0.081 Z: 10.142
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.138 | X: -0.112 Y: 0.089 Z: 10.137
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.105 | X: -0.134 Y: 0.084 Z: 10.104
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.072 | X: -0.117 Y: 0.110 Z: 10.070
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.036 | X: -0.103 Y: 0.122 Z: 10.034
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.148 | X: -0.077 Y: 0.093 Z: 10.147
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.086 | X: -0.100 Y: 0.136 Z: 10.085
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.028 | X: -0.105 Y: 0.105 Z: 10.027
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.078 | X: -0.089 Y: 0.053 Z: 10.078
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.103 | X: -0.110 Y: 0.105 Z: 10.101
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.107 | X: -0.098 Y: 0.081 Z: 10.106
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.012 | X: -0.100 Y: 0.096 Z: 10.011
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.138 | X: -0.103 Y: 0.081 Z: 10.137
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.038 | X: -0.067 Y: 0.103 Z: 10.037
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.117 | X: -0.144 Y: 0.086 Z: 10.116
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.081 | X: -0.096 Y: 0.105 Z: 10.080
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.050 | X: -0.115 Y: 0.067 Z: 10.049
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.091 | X: -0.115 Y: 0.086 Z: 10.090
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.062 | X: -0.086 Y: 0.112 Z: 10.061
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.100 | X: -0.112 Y: 0.096 Z: 10.099
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.057 | X: -0.108 Y: 0.074 Z: 10.056
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.124 | X: -0.096 Y: 0.117 Z: 10.123
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.153 | X: -0.069 Y: 0.110 Z: 10.152
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.107 | X: -0.098 Y: 0.079 Z: 10.106
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.136 | X: -0.100 Y: 0.098 Z: 10.135
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.115 | X: -0.120 Y: 0.129 Z: 10.113
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.115 | X: -0.108 Y: 0.132 Z: 10.113
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.102 | X: -0.117 Y: 0.084 Z: 10.101
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.093 | X: -0.081 Y: 0.103 Z: 10.092
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.067 | X: -0.105 Y: 0.156 Z: 10.066
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.112 | X: -0.098 Y: 0.105 Z: 10.111
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.009 | X: -0.079 Y: 0.100 Z: 10.008
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.089 | X: -0.144 Y: 0.134 Z: 10.087
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.022 | X: -0.148 Y: 0.096 Z: 10.020
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.086 | X: -0.134 Y: 0.096 Z: 10.085
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.127 | X: -0.132 Y: 0.105 Z: 10.125
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.134 | X: -0.105 Y: 0.096 Z: 10.133
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.103 | X: -0.108 Y: 0.117 Z: 10.101
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.075 | X: -0.153 Y: 0.122 Z: 10.073
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 9.988 | X: -0.136 Y: 0.136 Z: 9.987
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.055 | X: -0.122 Y: 0.108 Z: 10.054
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.028 | X: -0.089 Y: 0.093 Z: 10.027
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.071 | X: -0.074 Y: 0.086 Z: 10.070
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.057 | X: -0.081 Y: 0.132 Z: 10.056
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.038 | X: -0.110 Y: 0.110 Z: 10.037
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.088 | X: -0.079 Y: 0.105 Z: 10.087
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.117 | X: -0.139 Y: 0.089 Z: 10.116
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.061 | X: -0.060 Y: 0.084 Z: 10.061
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.095 | X: -0.055 Y: 0.086 Z: 10.094
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.080 | X: -0.074 Y: 0.067 Z: 10.080
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.050 | X: -0.103 Y: 0.115 Z: 10.049
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.100 | X: -0.112 Y: 0.091 Z: 10.099
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.017 | X: -0.139 Y: 0.115 Z: 10.015
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.112 | X: -0.089 Y: 0.127 Z: 10.111
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.117 | X: -0.117 Y: 0.103 Z: 10.116
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.103 | X: -0.141 Y: 0.105 Z: 10.101
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.110 | X: -0.120 Y: 0.100 Z: 10.109
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.079 | X: -0.144 Y: 0.091 Z: 10.078
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.083 | X: -0.105 Y: 0.105 Z: 10.082
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.095 | X: -0.079 Y: 0.098 Z: 10.094
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.105 | X: -0.079 Y: 0.112 Z: 10.104
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.105 | X: -0.091 Y: 0.091 Z: 10.104
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.078 | X: -0.079 Y: 0.100 Z: 10.078
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.119 | X: -0.050 Y: 0.100 Z: 10.118
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.100 | X: -0.124 Y: 0.098 Z: 10.099
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.107 | X: -0.077 Y: 0.112 Z: 10.106
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.023 | X: -0.089 Y: 0.093 Z: 10.023
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.042 | X: -0.077 Y: 0.089 Z: 10.042
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.109 | X: -0.089 Y: 0.093 Z: 10.109
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.100 | X: -0.100 Y: 0.117 Z: 10.099
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.072 | X: -0.089 Y: 0.141 Z: 10.070
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.067 | X: -0.110 Y: 0.091 Z: 10.066
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.026 | X: -0.105 Y: 0.112 Z: 10.025
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.076 | X: -0.139 Y: 0.081 Z: 10.075
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.075 | X: -0.141 Y: 0.151 Z: 10.073
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.112 | X: -0.112 Y: 0.108 Z: 10.111
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.060 | X: -0.105 Y: 0.134 Z: 10.058
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.081 | X: -0.100 Y: 0.139 Z: 10.080
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.081 | X: -0.081 Y: 0.086 Z: 10.080
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.076 | X: -0.136 Y: 0.079 Z: 10.075
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.110 | X: -0.089 Y: 0.105 Z: 10.109
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.040 | X: -0.096 Y: 0.120 Z: 10.039
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.042 | X: -0.098 Y: 0.074 Z: 10.042
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.043 | X: -0.069 Y: 0.122 Z: 10.042
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.110 | X: -0.115 Y: 0.122 Z: 10.109
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.143 | X: -0.100 Y: 0.100 Z: 10.142
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.047 | X: -0.093 Y: 0.079 Z: 10.046
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.026 | X: -0.103 Y: 0.100 Z: 10.025
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.093 | X: -0.108 Y: 0.120 Z: 10.092
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.079 | X: -0.077 Y: 0.146 Z: 10.078
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.137 | X: -0.160 Y: 0.112 Z: 10.135
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.122 | X: -0.067 Y: 0.146 Z: 10.121
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.016 | X: -0.096 Y: 0.086 Z: 10.015
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.074 | X: -0.084 Y: 0.127 Z: 10.073
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.081 | X: -0.144 Y: 0.079 Z: 10.080
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.053 | X: -0.098 Y: 0.139 Z: 10.051
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.127 | X: -0.129 Y: 0.124 Z: 10.125
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.067 | X: -0.105 Y: 0.093 Z: 10.066
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.103 | X: -0.132 Y: 0.120 Z: 10.101
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.057 | X: -0.127 Y: 0.105 Z: 10.056
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.098 | X: -0.129 Y: 0.127 Z: 10.097
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.058 | X: -0.120 Y: 0.134 Z: 10.056
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.057 | X: -0.098 Y: 0.098 Z: 10.056
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.059 | X: -0.127 Y: 0.069 Z: 10.058
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.065 | X: -0.060 Y: 0.160 Z: 10.063
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.043 | X: -0.098 Y: 0.132 Z: 10.042
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.082 | X: -0.124 Y: 0.139 Z: 10.080
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.167 | X: -0.089 Y: 0.117 Z: 10.166
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.077 | X: -0.141 Y: 0.112 Z: 10.075
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.105 | X: -0.103 Y: 0.110 Z: 10.104
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.050 | X: -0.146 Y: 0.110 Z: 10.049
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.059 | X: -0.105 Y: 0.096 Z: 10.058
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.110 | X: -0.110 Y: 0.096 Z: 10.109
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.055 | X: -0.098 Y: 0.132 Z: 10.054
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.091 | X: -0.136 Y: 0.122 Z: 10.090
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.127 | X: -0.144 Y: 0.129 Z: 10.125
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.050 | X: -0.098 Y: 0.091 Z: 10.049
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.091 | X: -0.105 Y: 0.129 Z: 10.090
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.060 | X: -0.108 Y: 0.112 Z: 10.058
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.097 | X: -0.067 Y: 0.093 Z: 10.097
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.103 | X: -0.110 Y: 0.100 Z: 10.101
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.031 | X: -0.093 Y: 0.132 Z: 10.030
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.088 | X: -0.081 Y: 0.103 Z: 10.087
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.117 | X: -0.091 Y: 0.098 Z: 10.116
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.086 | X: -0.093 Y: 0.156 Z: 10.085
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.145 | X: -0.091 Y: 0.072 Z: 10.145
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.095 | X: -0.112 Y: 0.069 Z: 10.094
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.088 | X: -0.091 Y: 0.117 Z: 10.087
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.062 | X: -0.096 Y: 0.093 Z: 10.061
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.052 | X: -0.122 Y: 0.081 Z: 10.051
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.113 | X: -0.127 Y: 0.124 Z: 10.111
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.060 | X: -0.112 Y: 0.098 Z: 10.058
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.002 | X: -0.103 Y: 0.089 Z: 10.001
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.085 | X: -0.096 Y: 0.072 Z: 10.085
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.091 | X: -0.120 Y: 0.086 Z: 10.090
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.110 | X: -0.093 Y: 0.108 Z: 10.109
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.084 | X: -0.098 Y: 0.139 Z: 10.082
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.089 | X: -0.100 Y: 0.134 Z: 10.087
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.136 | X: -0.086 Y: 0.091 Z: 10.135
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.007 | X: -0.103 Y: 0.115 Z: 10.006
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.093 | X: -0.096 Y: 0.124 Z: 10.092
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.093 | X: -0.110 Y: 0.141 Z: 10.092
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.110 | X: -0.096 Y: 0.122 Z: 10.109
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.107 | X: -0.103 Y: 0.112 Z: 10.106
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.088 | X: -0.069 Y: 0.098 Z: 10.087
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.038 | X: -0.103 Y: 0.117 Z: 10.037
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.076 | X: -0.084 Y: 0.127 Z: 10.075
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.105 | X: -0.079 Y: 0.129 Z: 10.104
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.091 | X: -0.110 Y: 0.156 Z: 10.090
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.031 | X: -0.144 Y: 0.091 Z: 10.030
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.057 | X: -0.105 Y: 0.117 Z: 10.056
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.143 | X: -0.108 Y: 0.077 Z: 10.142
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.083 | X: -0.108 Y: 0.098 Z: 10.082
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.067 | X: -0.112 Y: 0.091 Z: 10.066
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.093 | X: -0.065 Y: 0.108 Z: 10.092
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.048 | X: -0.093 Y: 0.127 Z: 10.046
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.140 | X: -0.100 Y: 0.060 Z: 10.140
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.095 | X: -0.115 Y: 0.089 Z: 10.094
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.112 | X: -0.086 Y: 0.105 Z: 10.111
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.088 | X: -0.072 Y: 0.115 Z: 10.087
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.058 | X: -0.148 Y: 0.122 Z: 10.056
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.079 | X: -0.115 Y: 0.117 Z: 10.078
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.052 | X: -0.081 Y: 0.074 Z: 10.051
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.004 | X: -0.098 Y: 0.108 Z: 10.003
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.093 | X: -0.098 Y: 0.069 Z: 10.092
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.081 | X: -0.112 Y: 0.120 Z: 10.080
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.105 | X: -0.093 Y: 0.112 Z: 10.104
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.138 | X: -0.086 Y: 0.084 Z: 10.137
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.088 | X: -0.096 Y: 0.108 Z: 10.087
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.081 | X: -0.084 Y: 0.144 Z: 10.080
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.143 | X: -0.096 Y: 0.122 Z: 10.142
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.112 | X: -0.134 Y: 0.062 Z: 10.111
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.079 | X: -0.117 Y: 0.139 Z: 10.078
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.038 | X: -0.129 Y: 0.091 Z: 10.037
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.006 | X: -0.069 Y: 0.074 Z: 10.006
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.026 | X: -0.122 Y: 0.117 Z: 10.025
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.069 | X: -0.117 Y: 0.086 Z: 10.068
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.038 | X: -0.103 Y: 0.122 Z: 10.037
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.052 | X: -0.134 Y: 0.077 Z: 10.051
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.114 | X: -0.103 Y: 0.086 Z: 10.113
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.057 | X: -0.081 Y: 0.112 Z: 10.056
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.067 | X: -0.077 Y: 0.151 Z: 10.066
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.122 | X: -0.108 Y: 0.129 Z: 10.121
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.084 | X: -0.151 Y: 0.108 Z: 10.082
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.093 | X: -0.091 Y: 0.136 Z: 10.092
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.098 | X: -0.093 Y: 0.093 Z: 10.097
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.066 | X: -0.098 Y: 0.079 Z: 10.066
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.003 | X: -0.096 Y: 0.148 Z: 10.001
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.138 | X: -0.096 Y: 0.103 Z: 10.137
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.109 | X: -0.096 Y: 0.089 Z: 10.109
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.110 | X: -0.120 Y: 0.093 Z: 10.109
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.081 | X: -0.132 Y: 0.098 Z: 10.080
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.096 | X: -0.093 Y: 0.141 Z: 10.094
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.079 | X: -0.062 Y: 0.136 Z: 10.078
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.107 | X: -0.093 Y: 0.086 Z: 10.106
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.132 | X: -0.127 Y: 0.124 Z: 10.130
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.092 | X: -0.077 Y: 0.079 Z: 10.092
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.074 | X: -0.127 Y: 0.124 Z: 10.073
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.062 | X: -0.136 Y: 0.091 Z: 10.061
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.108 | X: -0.110 Y: 0.124 Z: 10.106
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.031 | X: -0.108 Y: 0.093 Z: 10.030
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.081 | X: -0.086 Y: 0.134 Z: 10.080
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.008 | X: -0.153 Y: 0.144 Z: 10.006
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.048 | X: -0.132 Y: 0.110 Z: 10.046
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.088 | X: -0.100 Y: 0.084 Z: 10.087
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.126 | X: -0.103 Y: 0.096 Z: 10.125
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.048 | X: -0.144 Y: 0.096 Z: 10.046
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.146 | X: -0.136 Y: 0.093 Z: 10.145
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.091 | X: -0.086 Y: 0.146 Z: 10.090
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.103 | X: -0.089 Y: 0.129 Z: 10.101
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.022 | X: -0.093 Y: 0.146 Z: 10.020
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.191 | X: -0.079 Y: 0.112 Z: 10.190
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.134 | X: -0.120 Y: 0.089 Z: 10.133
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.057 | X: -0.112 Y: 0.103 Z: 10.056
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.055 | X: -0.108 Y: 0.129 Z: 10.054
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.048 | X: -0.120 Y: 0.124 Z: 10.046
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.064 | X: -0.096 Y: 0.089 Z: 10.063
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.096 | X: -0.103 Y: 0.127 Z: 10.094
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.022 | X: -0.144 Y: 0.141 Z: 10.020
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.050 | X: -0.077 Y: 0.148 Z: 10.049
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.060 | X: -0.127 Y: 0.141 Z: 10.058
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.055 | X: -0.084 Y: 0.115 Z: 10.054
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.124 | X: -0.084 Y: 0.100 Z: 10.123
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.084 | X: -0.081 Y: 0.144 Z: 10.082
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.088 | X: -0.084 Y: 0.096 Z: 10.087
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.086 | X: -0.115 Y: 0.120 Z: 10.085
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.070 | X: -0.117 Y: 0.151 Z: 10.068
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.136 | X: -0.105 Y: 0.117 Z: 10.135
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.079 | X: -0.127 Y: 0.112 Z: 10.078
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.096 | X: -0.112 Y: 0.122 Z: 10.094
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.043 | X: -0.122 Y: 0.132 Z: 10.042
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.108 | X: -0.105 Y: 0.134 Z: 10.106
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.110 | X: -0.074 Y: 0.110 Z: 10.109
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.067 | X: -0.120 Y: 0.098 Z: 10.066
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.045 | X: -0.108 Y: 0.081 Z: 10.044
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.095 | X: -0.065 Y: 0.105 Z: 10.094
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.057 | X: -0.074 Y: 0.129 Z: 10.056
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 9.997 | X: -0.100 Y: 0.120 Z: 9.996
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.046 | X: -0.146 Y: 0.146 Z: 10.044
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.035 | X: -0.091 Y: 0.108 Z: 10.034
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.084 | X: -0.096 Y: 0.148 Z: 10.082
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.072 | X: -0.120 Y: 0.134 Z: 10.070
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.050 | X: -0.077 Y: 0.112 Z: 10.049
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.105 | X: -0.129 Y: 0.112 Z: 10.104
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.071 | X: -0.079 Y: 0.100 Z: 10.070
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.076 | X: -0.065 Y: 0.139 Z: 10.075
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.148 | X: -0.117 Y: 0.112 Z: 10.147
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.101 | X: -0.144 Y: 0.108 Z: 10.099
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.055 | X: -0.108 Y: 0.120 Z: 10.054
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.093 | X: -0.079 Y: 0.141 Z: 10.092
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.068 | X: -0.110 Y: 0.172 Z: 10.066
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.071 | X: -0.122 Y: 0.086 Z: 10.070
+[Vibration] Status: OK | RMS: 0.276 | Magnitude: 10.062 | X: -0.089 Y: 0.098 Z: 10.061
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.083 | X: -0.093 Y: 0.120 Z: 10.082
+[Vibration] Status: OK | RMS: 0.279 | Magnitude: 10.050 | X: -0.110 Y: 0.127 Z: 10.049
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.093 | X: -0.134 Y: 0.112 Z: 10.092
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.110 | X: -0.108 Y: 0.086 Z: 10.109
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.098 | X: -0.117 Y: 0.098 Z: 10.097
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.088 | X: -0.096 Y: 0.086 Z: 10.087
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.127 | X: -0.132 Y: 0.077 Z: 10.125
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.078 | X: -0.074 Y: 0.108 Z: 10.078
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.081 | X: -0.072 Y: 0.151 Z: 10.080
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.210 | X: -0.103 Y: 0.098 Z: 10.209
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.062 | X: -0.127 Y: 0.129 Z: 10.061
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.079 | X: -0.110 Y: 0.110 Z: 10.078
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.021 | X: -0.122 Y: 0.103 Z: 10.020
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.084 | X: -0.091 Y: 0.124 Z: 10.082
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.110 | X: -0.105 Y: 0.105 Z: 10.109
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.079 | X: -0.072 Y: 0.146 Z: 10.078
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.079 | X: -0.065 Y: 0.132 Z: 10.078
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.129 | X: -0.077 Y: 0.108 Z: 10.128
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.124 | X: -0.110 Y: 0.098 Z: 10.123
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.093 | X: -0.100 Y: 0.084 Z: 10.092
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.101 | X: -0.096 Y: 0.148 Z: 10.099
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.072 | X: -0.091 Y: 0.165 Z: 10.070
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.124 | X: -0.105 Y: 0.139 Z: 10.123
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.086 | X: -0.122 Y: 0.084 Z: 10.085
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.102 | X: -0.084 Y: 0.117 Z: 10.101
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.122 | X: -0.096 Y: 0.098 Z: 10.121
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.108 | X: -0.105 Y: 0.120 Z: 10.106
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.136 | X: -0.115 Y: 0.091 Z: 10.135
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.103 | X: -0.129 Y: 0.112 Z: 10.101
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.076 | X: -0.105 Y: 0.127 Z: 10.075
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.103 | X: -0.132 Y: 0.112 Z: 10.101
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.110 | X: -0.072 Y: 0.122 Z: 10.109
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.079 | X: -0.115 Y: 0.098 Z: 10.078
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.089 | X: -0.136 Y: 0.134 Z: 10.087
+[Vibration] Status: OK | RMS: 0.304 | Magnitude: 10.098 | X: -0.100 Y: 0.103 Z: 10.097
+[Vibration] Status: OK | RMS: 0.306 | Magnitude: 10.076 | X: -0.093 Y: 0.105 Z: 10.075
+[Vibration] Status: OK | RMS: 0.304 | Magnitude: 10.129 | X: -0.091 Y: 0.127 Z: 10.128
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.065 | X: -0.146 Y: 0.136 Z: 10.063
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.081 | X: -0.108 Y: 0.086 Z: 10.080
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.115 | X: -0.089 Y: 0.146 Z: 10.113
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.140 | X: -0.074 Y: 0.098 Z: 10.140
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.096 | X: -0.105 Y: 0.158 Z: 10.094
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.067 | X: -0.144 Y: 0.117 Z: 10.066
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.108 | X: -0.110 Y: 0.134 Z: 10.106
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.110 | X: -0.100 Y: 0.136 Z: 10.109
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.081 | X: -0.124 Y: 0.093 Z: 10.080
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.036 | X: -0.100 Y: 0.108 Z: 10.034
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.081 | X: -0.117 Y: 0.120 Z: 10.080
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.041 | X: -0.103 Y: 0.122 Z: 10.039
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 9.992 | X: -0.093 Y: 0.100 Z: 9.991
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.093 | X: -0.122 Y: 0.081 Z: 10.092
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 9.998 | X: -0.146 Y: 0.117 Z: 9.996
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.131 | X: -0.120 Y: 0.100 Z: 10.130
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.086 | X: -0.148 Y: 0.100 Z: 10.085
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.102 | X: -0.098 Y: 0.091 Z: 10.101
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.077 | X: -0.108 Y: 0.129 Z: 10.075
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.126 | X: -0.127 Y: 0.060 Z: 10.125
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.029 | X: -0.100 Y: 0.122 Z: 10.027
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.091 | X: -0.091 Y: 0.144 Z: 10.090
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.100 | X: -0.093 Y: 0.091 Z: 10.099
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.101 | X: -0.129 Y: 0.122 Z: 10.099
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.091 | X: -0.100 Y: 0.127 Z: 10.090
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.086 | X: -0.096 Y: 0.100 Z: 10.085
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.105 | X: -0.091 Y: 0.120 Z: 10.104
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.081 | X: -0.096 Y: 0.091 Z: 10.080
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.110 | X: -0.053 Y: 0.134 Z: 10.109
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.100 | X: -0.055 Y: 0.089 Z: 10.099
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.086 | X: -0.103 Y: 0.096 Z: 10.085
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.062 | X: -0.108 Y: 0.105 Z: 10.061
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.022 | X: -0.074 Y: 0.153 Z: 10.020
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.055 | X: -0.122 Y: 0.146 Z: 10.054
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.067 | X: -0.103 Y: 0.124 Z: 10.066
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.019 | X: -0.129 Y: 0.110 Z: 10.018
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.034 | X: -0.093 Y: 0.158 Z: 10.032
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.090 | X: -0.074 Y: 0.089 Z: 10.090
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.069 | X: -0.110 Y: 0.129 Z: 10.068
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.110 | X: -0.103 Y: 0.153 Z: 10.109
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.108 | X: -0.103 Y: 0.124 Z: 10.106
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.115 | X: -0.089 Y: 0.148 Z: 10.113
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.091 | X: -0.129 Y: 0.134 Z: 10.090
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.096 | X: -0.108 Y: 0.134 Z: 10.094
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.108 | X: -0.122 Y: 0.136 Z: 10.106
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.052 | X: -0.100 Y: 0.098 Z: 10.051
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.110 | X: -0.103 Y: 0.108 Z: 10.109
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.045 | X: -0.108 Y: 0.120 Z: 10.044
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.149 | X: -0.122 Y: 0.156 Z: 10.147
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.076 | X: -0.096 Y: 0.098 Z: 10.075
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.119 | X: -0.112 Y: 0.105 Z: 10.118
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.062 | X: -0.115 Y: 0.084 Z: 10.061
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.026 | X: -0.110 Y: 0.103 Z: 10.025
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.124 | X: -0.115 Y: 0.103 Z: 10.123
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.071 | X: -0.081 Y: 0.105 Z: 10.070
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.065 | X: -0.115 Y: 0.117 Z: 10.063
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.060 | X: -0.105 Y: 0.124 Z: 10.058
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.101 | X: -0.153 Y: 0.077 Z: 10.099
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.076 | X: -0.115 Y: 0.117 Z: 10.075
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.120 | X: -0.132 Y: 0.110 Z: 10.118
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.126 | X: -0.115 Y: 0.086 Z: 10.125
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.060 | X: -0.108 Y: 0.112 Z: 10.058
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.115 | X: -0.077 Y: 0.134 Z: 10.113
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.090 | X: -0.072 Y: 0.100 Z: 10.090
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.074 | X: -0.134 Y: 0.124 Z: 10.073
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.093 | X: -0.103 Y: 0.105 Z: 10.092
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.136 | X: -0.084 Y: 0.084 Z: 10.135
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.122 | X: -0.093 Y: 0.098 Z: 10.121
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.074 | X: -0.127 Y: 0.105 Z: 10.073
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.057 | X: -0.098 Y: 0.120 Z: 10.056
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.129 | X: -0.072 Y: 0.132 Z: 10.128
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.107 | X: -0.096 Y: 0.091 Z: 10.106
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.105 | X: -0.115 Y: 0.112 Z: 10.104
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.094 | X: -0.127 Y: 0.136 Z: 10.092
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.138 | X: -0.100 Y: 0.077 Z: 10.137
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.134 | X: -0.093 Y: 0.108 Z: 10.133
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.098 | X: -0.086 Y: 0.103 Z: 10.097
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.033 | X: -0.053 Y: 0.120 Z: 10.032
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.074 | X: -0.062 Y: 0.134 Z: 10.073
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.074 | X: -0.122 Y: 0.112 Z: 10.073
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.026 | X: -0.117 Y: 0.103 Z: 10.025
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.058 | X: -0.148 Y: 0.129 Z: 10.056
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.045 | X: -0.089 Y: 0.091 Z: 10.044
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.136 | X: -0.122 Y: 0.093 Z: 10.135
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.086 | X: -0.124 Y: 0.139 Z: 10.085
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.074 | X: -0.091 Y: 0.105 Z: 10.073
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.078 | X: -0.091 Y: 0.089 Z: 10.078
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.095 | X: -0.093 Y: 0.108 Z: 10.094
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.062 | X: -0.132 Y: 0.110 Z: 10.061
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.091 | X: -0.079 Y: 0.122 Z: 10.090
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.078 | X: -0.077 Y: 0.081 Z: 10.078
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.129 | X: -0.096 Y: 0.127 Z: 10.128
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.110 | X: -0.091 Y: 0.124 Z: 10.109
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.050 | X: -0.093 Y: 0.112 Z: 10.049
+[Vibration] Status: OK | RMS: 0.284 | Magnitude: 10.125 | X: -0.144 Y: 0.103 Z: 10.123
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.104 | X: -0.065 Y: 0.065 Z: 10.104
+[Vibration] Status: OK | RMS: 0.278 | Magnitude: 10.081 | X: -0.091 Y: 0.112 Z: 10.080
+[Vibration] Status: OK | RMS: 0.277 | Magnitude: 10.088 | X: -0.120 Y: 0.098 Z: 10.087
+[Vibration] Status: OK | RMS: 0.283 | Magnitude: 10.005 | X: -0.115 Y: 0.141 Z: 10.003
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.100 | X: -0.093 Y: 0.084 Z: 10.099
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.065 | X: -0.103 Y: 0.146 Z: 10.063
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.085 | X: -0.062 Y: 0.091 Z: 10.085
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.054 | X: -0.084 Y: 0.081 Z: 10.054
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.119 | X: -0.086 Y: 0.103 Z: 10.118
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.056 | X: -0.141 Y: 0.141 Z: 10.054
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.054 | X: -0.089 Y: 0.084 Z: 10.054
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.079 | X: -0.093 Y: 0.122 Z: 10.078
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.117 | X: -0.100 Y: 0.134 Z: 10.116
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.060 | X: -0.146 Y: 0.112 Z: 10.058
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.052 | X: -0.105 Y: 0.100 Z: 10.051
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.150 | X: -0.096 Y: 0.081 Z: 10.149
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.057 | X: -0.074 Y: 0.115 Z: 10.056
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.064 | X: -0.057 Y: 0.120 Z: 10.063
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.057 | X: -0.115 Y: 0.122 Z: 10.056
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.026 | X: -0.091 Y: 0.144 Z: 10.025
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.134 | X: -0.158 Y: 0.055 Z: 10.133
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.127 | X: -0.091 Y: 0.153 Z: 10.125
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.165 | X: -0.136 Y: 0.117 Z: 10.164
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.114 | X: -0.091 Y: 0.096 Z: 10.113
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.125 | X: -0.151 Y: 0.124 Z: 10.123
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.072 | X: -0.108 Y: 0.122 Z: 10.070
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.057 | X: -0.103 Y: 0.096 Z: 10.056
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.148 | X: -0.103 Y: 0.117 Z: 10.147
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.093 | X: -0.086 Y: 0.096 Z: 10.092
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.105 | X: -0.069 Y: 0.120 Z: 10.104
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.138 | X: -0.084 Y: 0.077 Z: 10.137
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.067 | X: -0.122 Y: 0.089 Z: 10.066
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.100 | X: -0.105 Y: 0.100 Z: 10.099
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.091 | X: -0.134 Y: 0.098 Z: 10.090
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.076 | X: -0.112 Y: 0.110 Z: 10.075
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.113 | X: -0.141 Y: 0.108 Z: 10.111
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.081 | X: -0.105 Y: 0.120 Z: 10.080
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.115 | X: -0.086 Y: 0.129 Z: 10.113
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.076 | X: -0.120 Y: 0.100 Z: 10.075
+[Vibration] Status: OK | RMS: 0.304 | Magnitude: 10.119 | X: -0.069 Y: 0.122 Z: 10.118
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.093 | X: -0.091 Y: 0.093 Z: 10.092
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.096 | X: -0.110 Y: 0.139 Z: 10.094
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.060 | X: -0.134 Y: 0.139 Z: 10.058
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.124 | X: -0.098 Y: 0.112 Z: 10.123
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.084 | X: -0.103 Y: 0.117 Z: 10.082
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.148 | X: -0.096 Y: 0.098 Z: 10.147
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.047 | X: -0.072 Y: 0.096 Z: 10.046
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.041 | X: -0.110 Y: 0.117 Z: 10.039
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.040 | X: -0.065 Y: 0.067 Z: 10.039
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.105 | X: -0.096 Y: 0.108 Z: 10.104
+[Vibration] Status: OK | RMS: 0.281 | Magnitude: 10.057 | X: -0.110 Y: 0.103 Z: 10.056
+[Vibration] Status: OK | RMS: 0.280 | Magnitude: 10.064 | X: -0.074 Y: 0.108 Z: 10.063
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.120 | X: -0.115 Y: 0.120 Z: 10.118
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.104 | X: -0.172 Y: 0.158 Z: 10.101
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.155 | X: -0.081 Y: 0.115 Z: 10.154
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.095 | X: -0.127 Y: 0.053 Z: 10.094
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.014 | X: -0.110 Y: 0.122 Z: 10.013
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.086 | X: -0.093 Y: 0.129 Z: 10.085
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.047 | X: -0.084 Y: 0.112 Z: 10.046
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.048 | X: -0.108 Y: 0.139 Z: 10.046
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.079 | X: -0.062 Y: 0.132 Z: 10.078
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.043 | X: -0.108 Y: 0.129 Z: 10.042
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 9.998 | X: -0.132 Y: 0.115 Z: 9.996
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.128 | X: -0.093 Y: 0.067 Z: 10.128
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.090 | X: -0.077 Y: 0.105 Z: 10.090
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.074 | X: -0.093 Y: 0.122 Z: 10.073
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.098 | X: -0.093 Y: 0.100 Z: 10.097
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.090 | X: -0.112 Y: 0.086 Z: 10.090
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.036 | X: -0.093 Y: 0.134 Z: 10.034
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.011 | X: -0.091 Y: 0.077 Z: 10.011
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.055 | X: -0.069 Y: 0.124 Z: 10.054
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.112 | X: -0.093 Y: 0.081 Z: 10.111
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.108 | X: -0.112 Y: 0.136 Z: 10.106
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.105 | X: -0.096 Y: 0.112 Z: 10.104
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.110 | X: -0.115 Y: 0.098 Z: 10.109
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.019 | X: -0.115 Y: 0.136 Z: 10.018
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.055 | X: -0.115 Y: 0.146 Z: 10.054
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.079 | X: -0.112 Y: 0.139 Z: 10.078
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.157 | X: -0.093 Y: 0.105 Z: 10.156
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.086 | X: -0.069 Y: 0.112 Z: 10.085
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.078 | X: -0.096 Y: 0.081 Z: 10.078
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.038 | X: -0.100 Y: 0.108 Z: 10.037
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.115 | X: -0.120 Y: 0.103 Z: 10.113
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.083 | X: -0.084 Y: 0.117 Z: 10.082
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.079 | X: -0.098 Y: 0.129 Z: 10.078
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.081 | X: -0.105 Y: 0.124 Z: 10.080
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.105 | X: -0.098 Y: 0.136 Z: 10.104
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.057 | X: -0.108 Y: 0.096 Z: 10.056
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.187 | X: -0.103 Y: 0.132 Z: 10.185
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.098 | X: -0.124 Y: 0.115 Z: 10.097
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.089 | X: -0.136 Y: 0.103 Z: 10.087
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.131 | X: -0.089 Y: 0.120 Z: 10.130
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.108 | X: -0.081 Y: 0.141 Z: 10.106
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.060 | X: -0.103 Y: 0.115 Z: 10.058
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.140 | X: -0.069 Y: 0.093 Z: 10.140
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.081 | X: -0.093 Y: 0.100 Z: 10.080
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.141 | X: -0.091 Y: 0.144 Z: 10.140
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.069 | X: -0.069 Y: 0.127 Z: 10.068
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.067 | X: -0.089 Y: 0.115 Z: 10.066
+[Vibration] Status: OK | RMS: 0.282 | Magnitude: 10.000 | X: -0.108 Y: 0.117 Z: 9.999
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.119 | X: -0.122 Y: 0.093 Z: 10.118
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.028 | X: -0.077 Y: 0.093 Z: 10.027
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.105 | X: -0.105 Y: 0.129 Z: 10.104
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.084 | X: -0.139 Y: 0.089 Z: 10.082
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.098 | X: -0.033 Y: 0.153 Z: 10.097
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.093 | X: -0.086 Y: 0.115 Z: 10.092
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.081 | X: -0.081 Y: 0.117 Z: 10.080
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.103 | X: -0.074 Y: 0.144 Z: 10.101
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.055 | X: -0.077 Y: 0.112 Z: 10.054
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.091 | X: -0.103 Y: 0.163 Z: 10.090
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.128 | X: -0.055 Y: 0.089 Z: 10.128
+[Vibration] Status: OK | RMS: 0.289 | Magnitude: 10.062 | X: -0.103 Y: 0.146 Z: 10.061
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.088 | X: -0.110 Y: 0.110 Z: 10.087
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.122 | X: -0.117 Y: 0.112 Z: 10.121
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.074 | X: -0.084 Y: 0.156 Z: 10.073
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.050 | X: -0.084 Y: 0.139 Z: 10.049
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.071 | X: -0.117 Y: 0.089 Z: 10.070
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.072 | X: -0.103 Y: 0.148 Z: 10.070
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.038 | X: -0.127 Y: 0.117 Z: 10.037
+[Vibration] Status: OK | RMS: 0.288 | Magnitude: 10.101 | X: -0.139 Y: 0.098 Z: 10.099
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.103 | X: -0.079 Y: 0.122 Z: 10.101
+[Vibration] Status: OK | RMS: 0.285 | Magnitude: 10.048 | X: -0.136 Y: 0.100 Z: 10.046
+[Vibration] Status: OK | RMS: 0.287 | Magnitude: 10.072 | X: -0.103 Y: 0.129 Z: 10.070
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.084 | X: -0.132 Y: 0.110 Z: 10.082
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.052 | X: -0.096 Y: 0.127 Z: 10.051
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.055 | X: -0.103 Y: 0.129 Z: 10.054
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.079 | X: -0.160 Y: 0.089 Z: 10.078
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.133 | X: -0.093 Y: 0.100 Z: 10.133
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.081 | X: -0.136 Y: 0.072 Z: 10.080
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.148 | X: -0.084 Y: 0.127 Z: 10.147
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.124 | X: -0.103 Y: 0.105 Z: 10.123
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.048 | X: -0.112 Y: 0.117 Z: 10.046
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.144 | X: -0.141 Y: 0.122 Z: 10.142
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.133 | X: -0.110 Y: 0.077 Z: 10.133
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.095 | X: -0.103 Y: 0.105 Z: 10.094
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.055 | X: -0.093 Y: 0.108 Z: 10.054
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.055 | X: -0.108 Y: 0.139 Z: 10.054
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.127 | X: -0.115 Y: 0.108 Z: 10.125
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.071 | X: -0.124 Y: 0.086 Z: 10.070
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.112 | X: -0.139 Y: 0.069 Z: 10.111
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.098 | X: -0.124 Y: 0.108 Z: 10.097
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.122 | X: -0.060 Y: 0.136 Z: 10.121
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.096 | X: -0.098 Y: 0.141 Z: 10.094
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.089 | X: -0.165 Y: 0.115 Z: 10.087
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.124 | X: -0.096 Y: 0.086 Z: 10.123
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.106 | X: -0.112 Y: 0.167 Z: 10.104
+[Vibration] Status: OK | RMS: 0.290 | Magnitude: 10.050 | X: -0.079 Y: 0.132 Z: 10.049
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.088 | X: -0.098 Y: 0.117 Z: 10.087
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.081 | X: -0.141 Y: 0.108 Z: 10.080
+[Vibration] Status: OK | RMS: 0.286 | Magnitude: 10.093 | X: -0.117 Y: 0.132 Z: 10.092
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.093 | X: -0.045 Y: 0.148 Z: 10.092
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.107 | X: -0.069 Y: 0.127 Z: 10.106
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.122 | X: -0.086 Y: 0.117 Z: 10.121
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.112 | X: -0.081 Y: 0.139 Z: 10.111
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.043 | X: -0.012 Y: 0.175 Z: 10.042
+[Vibration] Status: OK | RMS: 0.291 | Magnitude: 10.125 | X: -0.134 Y: 0.151 Z: 10.123
+[Vibration] Status: OK | RMS: 0.293 | Magnitude: 10.159 | X: -0.103 Y: 0.179 Z: 10.156
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.079 | X: -0.122 Y: 0.112 Z: 10.078
+[Vibration] Status: OK | RMS: 0.292 | Magnitude: 10.058 | X: -0.139 Y: 0.134 Z: 10.056
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.086 | X: -0.112 Y: 0.127 Z: 10.085
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.127 | X: -0.108 Y: 0.112 Z: 10.125
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.079 | X: -0.120 Y: 0.117 Z: 10.078
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.115 | X: -0.124 Y: 0.105 Z: 10.113
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.146 | X: -0.057 Y: 0.148 Z: 10.145
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.141 | X: -0.134 Y: 0.079 Z: 10.140
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.129 | X: -0.124 Y: 0.117 Z: 10.128
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.150 | X: -0.084 Y: 0.053 Z: 10.149
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.081 | X: -0.084 Y: 0.136 Z: 10.080
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.103 | X: -0.100 Y: 0.110 Z: 10.101
+[Vibration] Status: OK | RMS: 0.308 | Magnitude: 10.097 | X: -0.065 Y: 0.110 Z: 10.097
+[Vibration] Status: OK | RMS: 0.311 | Magnitude: 10.169 | X: -0.072 Y: 0.093 Z: 10.168
+[Vibration] Status: OK | RMS: 0.309 | Magnitude: 10.073 | X: -0.077 Y: 0.081 Z: 10.073
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.089 | X: -0.148 Y: 0.139 Z: 10.087
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.105 | X: -0.117 Y: 0.110 Z: 10.104
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.098 | X: -0.105 Y: 0.144 Z: 10.097
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.132 | X: -0.134 Y: 0.100 Z: 10.130
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.130 | X: -0.141 Y: 0.144 Z: 10.128
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.120 | X: -0.134 Y: 0.120 Z: 10.118
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.113 | X: -0.115 Y: 0.146 Z: 10.111
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.110 | X: -0.146 Y: 0.127 Z: 10.109
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.071 | X: -0.055 Y: 0.103 Z: 10.070
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.115 | X: -0.074 Y: 0.132 Z: 10.113
+[Vibration] Status: OK | RMS: 0.305 | Magnitude: 10.160 | X: -0.089 Y: 0.079 Z: 10.159
+[Vibration] Status: OK | RMS: 0.306 | Magnitude: 10.105 | X: -0.103 Y: 0.122 Z: 10.104
+[Vibration] Status: OK | RMS: 0.305 | Magnitude: 10.091 | X: -0.139 Y: 0.096 Z: 10.090
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.043 | X: -0.098 Y: 0.103 Z: 10.042
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.019 | X: -0.115 Y: 0.100 Z: 10.018
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.098 | X: -0.136 Y: 0.091 Z: 10.097
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.091 | X: -0.098 Y: 0.124 Z: 10.090
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.067 | X: -0.105 Y: 0.098 Z: 10.066
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.122 | X: -0.105 Y: 0.165 Z: 10.121
+[Vibration] Status: OK | RMS: 0.298 | Magnitude: 10.141 | X: -0.108 Y: 0.120 Z: 10.140
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.103 | X: -0.120 Y: 0.110 Z: 10.101
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.055 | X: -0.124 Y: 0.122 Z: 10.054
+[Vibration] Status: OK | RMS: 0.296 | Magnitude: 10.064 | X: -0.120 Y: 0.086 Z: 10.063
+[Vibration] Status: OK | RMS: 0.302 | Magnitude: 10.131 | X: -0.098 Y: 0.100 Z: 10.130
+[Vibration] Status: OK | RMS: 0.301 | Magnitude: 10.096 | X: -0.127 Y: 0.122 Z: 10.094
+[Vibration] Status: OK | RMS: 0.303 | Magnitude: 10.084 | X: -0.122 Y: 0.127 Z: 10.082
+[Vibration] Status: OK | RMS: 0.300 | Magnitude: 10.088 | X: -0.067 Y: 0.108 Z: 10.087
+[Vibration] Status: OK | RMS: 0.299 | Magnitude: 10.129 | X: -0.081 Y: 0.105 Z: 10.128
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.089 | X: -0.136 Y: 0.115 Z: 10.087
+[Vibration] Status: OK | RMS: 0.294 | Magnitude: 10.117 | X: -0.069 Y: 0.122 Z: 10.116
+[Vibration] Status: OK | RMS: 0.295 | Magnitude: 10.058 | X: -0.093 Y: 0.165 Z: 10.056
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.131 | X: -0.077 Y: 0.089 Z: 10.130
+[Vibration] Status: OK | RMS: 0.297 | Magnitude: 10.079 | X: -0.096 Y: 0.115 Z: 10.078
+[Vibration] Status: OK | RMS: 0.316 | Magnitude: 10.168 | X: 0.057 Y: 0.194 Z: 10.166
+[Vibration] Status: OK | RMS: 0.323 | Magnitude: 10.213 | X: 0.237 Y: 0.160 Z: 10.209
+[Vibration] Status: OK | RMS: 0.348 | Magnitude: 10.108 | X: 0.012 Y: 0.199 Z: 10.106
+[Vibration] Status: OK | RMS: 0.444 | Magnitude: 10.047 | X: -0.050 Y: 0.093 Z: 10.046
+[Vibration] Status: OK | RMS: 0.435 | Magnitude: 10.050 | X: -0.103 Y: 0.151 Z: 10.049
+[Vibration] Status: OK | RMS: 0.425 | Magnitude: 10.141 | X: 0.120 Y: 0.086 Z: 10.140
+[Vibration] Status: OK | RMS: 0.410 | Magnitude: 10.065 | X: 0.402 Y: 0.134 Z: 10.056
+[Vibration] Status: OK | RMS: 0.337 | Magnitude: 9.967 | X: 0.696 Y: 0.191 Z: 9.941
+[Vibration] Status: OK | RMS: 0.333 | Magnitude: 10.088 | X: 1.495 Y: -0.199 Z: 9.975
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.123 | X: 1.818 Y: 0.108 Z: 9.958
+[Vibration] Status: OK | RMS: 0.351 | Magnitude: 10.104 | X: 1.778 Y: -0.122 Z: 9.946
+[Vibration] Status: CAUTION | RMS: 2.398 | Magnitude: 4.818 | X: -0.715 Y: 0.660 Z: 4.718
+[Vibration] Status: CAUTION | RMS: 2.651 | Magnitude: 8.786 | X: 1.058 Y: 1.845 Z: 8.525
+[Vibration] Status: CAUTION | RMS: 2.666 | Magnitude: 10.438 | X: 1.847 Y: 4.182 Z: 9.384
+[Vibration] Status: CAUTION | RMS: 2.686 | Magnitude: 10.662 | X: 4.120 Y: 3.333 Z: 9.252
+[Vibration] Status: CAUTION | RMS: 1.977 | Magnitude: 9.358 | X: 4.357 Y: 2.220 Z: 7.979
+[Vibration] Status: OK | RMS: 1.389 | Magnitude: 7.455 | X: 2.168 Y: 1.184 Z: 7.034
+[Vibration] Status: OK | RMS: 1.576 | Magnitude: 10.475 | X: 3.299 Y: 3.244 Z: 9.398
+[Vibration] Status: OK | RMS: 1.668 | Magnitude: 9.621 | X: 4.091 Y: 3.271 Z: 8.070
+[Vibration] Status: OK | RMS: 1.324 | Magnitude: 10.074 | X: 5.084 Y: 4.857 Z: 7.214
+[Vibration] Status: OK | RMS: 1.339 | Magnitude: 10.526 | X: 5.290 Y: 4.182 Z: 8.082
+[Vibration] Status: OK | RMS: 1.026 | Magnitude: 10.143 | X: 3.816 Y: 4.630 Z: 8.178
+[Vibration] Status: OK | RMS: 1.274 | Magnitude: 10.059 | X: 3.182 Y: 4.177 Z: 8.580
+[Vibration] Status: OK | RMS: 1.321 | Magnitude: 10.469 | X: 4.204 Y: 4.072 Z: 8.680
+[Vibration] Status: OK | RMS: 1.381 | Magnitude: 10.215 | X: 3.649 Y: 3.354 Z: 8.931
+[Vibration] Status: OK | RMS: 1.518 | Magnitude: 9.311 | X: 3.223 Y: 6.802 Z: 5.481
+[Vibration] Status: OK | RMS: 1.489 | Magnitude: 10.735 | X: 1.376 Y: 4.321 Z: 9.731
+[Vibration] Status: OK | RMS: 1.507 | Magnitude: 8.162 | X: 2.912 Y: 4.199 Z: 6.364
+[Vibration] Status: OK | RMS: 1.730 | Magnitude: 13.671 | X: 4.704 Y: 10.963 Z: 6.678
+[Vibration] Status: CAUTION | RMS: 1.883 | Magnitude: 9.723 | X: 1.715 Y: 3.252 Z: 9.001
+[Vibration] Status: CAUTION | RMS: 2.868 | Magnitude: 8.543 | X: 1.170 Y: 6.154 Z: 5.809
+[Vibration] Status: CAUTION | RMS: 3.006 | Magnitude: 10.159 | X: -2.962 Y: 2.646 Z: 9.350
+[Vibration] Status: CAUTION | RMS: 2.899 | Magnitude: 10.310 | X: -1.778 Y: 2.610 Z: 9.814
+[Vibration] Status: CAUTION | RMS: 2.666 | Magnitude: 10.076 | X: -3.113 Y: 2.531 Z: 9.243
+[Vibration] Status: OK | RMS: 1.157 | Magnitude: 9.973 | X: -3.046 Y: 2.546 Z: 9.149
